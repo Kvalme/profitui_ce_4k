@@ -1,53 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page eq2usescomwndcontrols="true" MaximumSize="1000,70" MinimumSize="85,70" Name="Threat" PackLocation="right,bottom" ScrollExtent="210,70" Size="210,70" UserMovable="true" UserResizable="true" version="1.1">
-<Button Name="TogglePetVis" Size="0,0" OnPress="
-CONDA = Parent.TargetBar.Visible == true
-CONDB = Parent.ImpliedBar.Visible == true
-CONDC = Parent.PetCheck.Text '>' 0
-CONDD = CONDA || CONDB
-CONDE = CONDC &amp;&amp; CONDD
-Parent.PetBar.Visible = CONDE
-Parent.PetValue.Visible = CONDE
-"/>
-
-<Button Name="ToggleColor" Size="0,0" OnPress="
-CONDA = Parent.PetValue.Text '>' 99
-ValColor= CONDA ? '#FF0000' : '#CCCCCC'
-Parent.PetValue.Color = ValColor
-Parent.Petbar.Bar.Color = ValColor
-
-"/>
-
-<Text Name="PetCheck" Size="0,0" DynamicData="/GameData.Pet.Health" />
-    <ProgressbarStyle Bar.Background="progressFill" Name="ProgressBar" />
-    <ImageStyle Name="ProgressFill">
-        <ImageFrame Name="progress_fill" Source="/images/window_elements_specific.dds" SourceRect="385,342,503,354" />
-    </ImageStyle>
-    <Text AbsorbsInput="false" Color="#CCCCCC" DynamicData="/GameData.Pet.Threat" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="9,38" Name="PetValue" ScrollExtent="42,24" ShadowStyle="/ShadowStylesNew.Outline.style" Size="42,24" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false" OnTextChanged="Parent.ToggleColor.Press=true">100</Text>
-    <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.Target.Threat" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="9,8" Name="TargetValue" ScrollExtent="42,24" ShadowStyle="/ShadowStylesNew.Outline.style" Size="42,24" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">100</Text>
-    <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.Target.SecondaryThreat" Font="/TextStyles.Large.LargeStyle" Location="59,8" Margin="0,0,10,0" Name="TargetSecondaryValue" PackSize="a,f" ScrollExtent="141,24" ShadowStyle="/ShadowStylesNew.Outline.style" Size="141,24" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">99</Text>
-    <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.ImpliedTarget.Threat" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="9,8" Name="ImpliedTargetValue" ScrollExtent="42,24" ShadowStyle="/ShadowStylesNew.Outline.style" Size="42,24" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">100</Text>
-    <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.ImpliedTarget.SecondaryThreat" Font="/TextStyles.Large.LargeStyle" Location="59,8" Margin="0,0,10,0" Name="ImpliedSecondaryValue" PackSize="a,f" ScrollExtent="141,24" ShadowStyle="/ShadowStylesNew.Outline.style" Size="141,24" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">99</Text>
-    <Page DynamicData="/GameData.ImpliedTarget.Threat" DynamicDataFilter="0001" Location="5,5" Name="TargetBar" PackSize="absolute,fixed" ScrollExtent="200,30" Size="200,30" Visible="false" OnShow="Parent.TogglePetVis.Press=true" OnHide="Parent.TogglePetVis.Press=true">
-        <Image AbsorbsInput="false" Name="Bkg" ScrollExtent="50,30" Size="50,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
-        <Image AbsorbsInput="false" Location="50,0" Name="ProgressBkg" PackSize="absolute,fixed" ScrollExtent="150,30" Size="150,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
-        <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.ImpliedTarget.Threat" Location="52,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="145,24" Size="145,24" Style="progressBar" />
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="54,2" Name="Frame" PackSize="absolute,fixed" ScrollExtent="141,26" Size="141,26" />
-    </Page>
-    <Page DynamicData="/GameData.Target.Threat" DynamicDataFilter="0001" Location="5,5" Name="ImpliedBar" PackSize="absolute,fixed" ScrollExtent="200,30" Size="200,30" Visible="false" OnShow="Parent.TogglePetVis.Press=true" OnHide="Parent.TogglePetVis.Press=true">
-        <Image AbsorbsInput="false" Name="Bkg" ScrollExtent="50,30" Size="50,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
-        <Image AbsorbsInput="false" Location="50,0" Name="ProgressBkg" PackSize="absolute,fixed" ScrollExtent="150,30" Size="150,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
-        <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Target.Threat" Location="52,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="145,24" Size="145,24" Style="progressBar" />
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="54,2" Name="Frame" PackSize="absolute,fixed" ScrollExtent="141,26" Size="141,26" />
-    </Page>
-    <Page DynamicData="/GameData.Pet.Threat" DynamicDataFilter="0001" Location="5,35" Name="PetBar" PackSize="absolute,fixed" ScrollExtent="200,30" Size="200,30" Visible="false">
-        <Image AbsorbsInput="false" Name="Bkg" ScrollExtent="50,30" Size="50,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
-        <Image AbsorbsInput="false" Location="50,0" Name="ProgressBkg" PackSize="absolute,fixed" ScrollExtent="150,30" Size="150,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
-        <Progressbar AbsorbsInput="false" Color="#CCCCCC" DynamicData="/GameData.Pet.Threat" Location="52,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="145,24" Size="145,24" Style="progressBar" />
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="54,2" Name="Frame" PackSize="absolute,fixed" ScrollExtent="141,26" Size="141,26" />
-    </Page>
-    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="a,a" ScrollExtent="210,70" Size="210,770" Visible="false">
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="210,70" Size="210,70" />
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="210,70" Size="210,70" />
-    </Page>
-</Page>
+        <Page eq2usescomwndcontrols="true" MaximumSize="1000,70" MinimumSize="85,70" Name="Threat" PackLocation="right,bottom" ScrollExtent="210,70" Size="210,70" UserMovable="true" UserResizable="true" version="1.1">
+            <Button CONDA="false" CONDB="false" CONDC="false" CONDD="false" CONDE="false" Name="TogglePetVis" OnPress="&#xD;&#xA;CONDA = Parent.TargetBar.Visible == true&#xD;&#xA;CONDB = Parent.ImpliedBar.Visible == true&#xD;&#xA;CONDC = Parent.PetCheck.Text &apos;&gt;&apos; 0&#xD;&#xA;CONDD = CONDA || CONDB&#xD;&#xA;CONDE = CONDC &amp;&amp; CONDD&#xD;&#xA;Parent.PetBar.Visible = CONDE&#xD;&#xA;Parent.PetValue.Visible = CONDE&#xD;&#xA;" />
+            <Button CONDA="true" Name="ToggleColor" OnPress="&#xD;&#xA;CONDA = Parent.PetValue.Text &apos;&gt;&apos; 99&#xD;&#xA;ValColor= CONDA ? &apos;#FF0000&apos; : &apos;#CCCCCC&apos;&#xD;&#xA;Parent.PetValue.Color = ValColor&#xD;&#xA;Parent.Petbar.Bar.Color = ValColor&#xD;&#xA;&#xD;&#xA;" ValColor="#FF0000" />
+            <Text DynamicData="/GameData.Pet.Health" Name="PetCheck" />
+            <ProgressbarStyle Bar.Background="ProgressFill" Name="ProgressBar" />
+            <ImageStyle Name="ProgressFill">
+                <ImageFrame Name="progress_fill" Source="/images/Window_elements_specific.dds" SourceRect="385,342,503,354" />
+            </ImageStyle>
+            <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.Pet.Threat" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="9,38" Name="PetValue" OnTextChanged="Parent.ToggleColor.Press=true" ScrollExtent="42,76" ShadowStyle="/ShadowStylesNew.Outline.style" Size="42,24" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">100</Text>
+            <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.Target.Threat" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="9,8" Name="TargetValue" ScrollExtent="42,76" ShadowStyle="/ShadowStylesNew.Outline.style" Size="42,24" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">100</Text>
+            <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.Target.SecondaryThreat" Font="/TextStyles.Large.LargeStyle" Location="59,8" Margin="0,0,10,0" Name="TargetSecondaryValue" PackSize="a,f" ScrollExtent="141,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="141,24" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">99</Text>
+            <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.ImpliedTarget.Threat" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="9,8" Name="ImpliedTargetValue" ScrollExtent="42,76" ShadowStyle="/ShadowStylesNew.Outline.style" Size="42,24" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">100</Text>
+            <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.ImpliedTarget.SecondaryThreat" Font="/TextStyles.Large.LargeStyle" Location="59,8" Margin="0,0,10,0" Name="ImpliedSecondaryValue" PackSize="a,f" ScrollExtent="141,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="141,24" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">99</Text>
+            <Page DynamicData="/GameData.ImpliedTarget.Threat" DynamicDataFilter="0001" Location="5,5" Name="TargetBar" OnHide="Parent.TogglePetVis.Press=true" OnShow="Parent.TogglePetVis.Press=true" PackSize="absolute,fixed" ScrollExtent="200,30" Size="200,30" Visible="false">
+                <Image AbsorbsInput="false" Name="Bkg" ScrollExtent="50,30" Size="50,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
+                <Image AbsorbsInput="false" Location="50,0" Name="ProgressBkg" PackSize="absolute,fixed" ScrollExtent="150,30" Size="150,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.ImpliedTarget.Threat" Location="52,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="145,24" Size="145,24" Style="ProgressBar" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="54,2" Name="Frame" PackSize="absolute,fixed" ScrollExtent="141,26" Size="141,26" />
+            </Page>
+            <Page DynamicData="/GameData.Target.Threat" DynamicDataFilter="0001" Location="5,5" Name="ImpliedBar" OnHide="Parent.TogglePetVis.Press=true" OnShow="Parent.TogglePetVis.Press=true" PackSize="absolute,fixed" ScrollExtent="200,30" Size="200,30" Visible="false">
+                <Image AbsorbsInput="false" Name="Bkg" ScrollExtent="50,30" Size="50,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
+                <Image AbsorbsInput="false" Location="50,0" Name="ProgressBkg" PackSize="absolute,fixed" ScrollExtent="150,30" Size="150,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Target.Threat" Location="52,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="145,24" Size="145,24" Style="ProgressBar" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="54,2" Name="Frame" PackSize="absolute,fixed" ScrollExtent="141,26" Size="141,26" />
+            </Page>
+            <Page DynamicData="/GameData.Pet.Threat" DynamicDataFilter="0001" Location="5,35" Name="PetBar" PackSize="absolute,fixed" ScrollExtent="200,30" Size="200,30" Visible="false">
+                <Image AbsorbsInput="false" Name="Bkg" ScrollExtent="50,30" Size="50,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
+                <Image AbsorbsInput="false" Location="50,0" Name="ProgressBkg" PackSize="absolute,fixed" ScrollExtent="150,30" Size="150,30" SourceRect="153,228,230,253" SourceResource="/images/commonelements.dds" />
+                <Progressbar AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.Pet.Threat" Location="52,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="145,24" Size="145,24" Style="ProgressBar" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="54,2" Name="Frame" PackSize="absolute,fixed" ScrollExtent="141,26" Size="141,26" />
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="a,a" ScrollExtent="210,770" Size="210,770" Visible="false">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="210,70" Size="210,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="210,70" Size="210,70" />
+            </Page>
+        </Page>

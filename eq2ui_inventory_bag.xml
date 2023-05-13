@@ -1,27 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="4,110" MaximumSize="2048,2048" MinimumSize="32,32" Name="Bag" OnHoverIn="CloseButton.visible=true
-MoveButton.Visible=true" OnHoverOut="CloseButton.visible=false
-MoveButton.Visible=false" ScrollExtent="129,288" Size="129,288" UserMovable="true" UserResizable="true" version="2.1">
-<Page Name="Grab2ResizeDummyN" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="128,1" Size="128,1"/>
-<Page Name="Grab2ResizeDummyW" PackSize="f,a" PackSizeProp="0002/0003,0000/0001" ScrollExtent="1,288" Size="1,288"/>
-<Page Location="127,0" Name="Grab2ResizeDummyE" PackLocation="right,top" PackLocationProp="-001/0001,0000/0001" PackSize="f,a" PackSizeProp="0002/0003,0000/0001" ScrollExtent="1,288" Size="1,288"/>
-<Page Location="0,287" Name="Grab2ResizeDummyS" PackLocation="left,bottom" PackLocationProp="0000/0001,-001/0001" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="128,1" Size="128,1"/>
-<Image Activated="true" GetsInput="true" LocalTooltip="Bag" Name="MoveButton" OnHoverIn="Tooltip=Parent.Name.LocalText
-Parent.UserResizable=false" OnHoverOut="Parent.UserResizable=true" ScrollExtent="12,12" Size="12,12" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Visible="false"/>
-<Button LocalTooltip="Close" Location="116,0" Name="CloseButton" OnPress="Parent.WC_CloseButton.Press=true" PackLocation="fff,nfn" PackLocationProp="0000/0001,0000/0001" ScrollExtent="12,12" Size="12,12" Style="/ButtonStyles.close_button" Tooltip="Close" Visible="false" />
-<Button Location="116,0" Name="WC_CloseButton" ScrollExtent="12,12" Size="12,12" Style="/ButtonStyles.close_button" Visible="false" />
-<IconBank BackgroundOpacity="1.000" Dragable="true" font="/ProfitUI_Styles.Fonts.FontArial13T" framecolor="#B5935A" iconframepadding="0" iconpadding="0" iconsize="32" iconstyle="/IconStyles.examine" Name="Icons" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" renderframe="true" renderoutlines="false" ScrollExtent="128,288" Size="128,288" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="false"/>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" LocalText=":f4ce1968dc90d15e:Bag" LocalTooltip=":f4ce1968dc90d15e_1:Bag" Location="13,0" MaxLines="1" Name="Name" OnHoverIn="Parent.UserResizable=false" OnHoverOut="Parent.UserResizable=true" PackLocation="cfc,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,fixed" PackSizeProp="0026/0001,0002/0003" ScrollExtent="102,12" Size="102,12" TextAlignment="Center" TextAlignmentVertical="Center" Tooltip=":f4ce1968dc90d15e_1:Bag">:f4ce1968dc90d15e:Bag</Text>
-<Image Name="TitleBackground" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="128,14" Size="128,14" SourceRect="194,378,289,388" SourceResource="/images/window_elements_generic.dds"/>
-<Page Name="WC_Frame" OnHide="Parent.MoveButton.Opacity=1
-Parent.Icons.Location=&apos;0,0&apos;
-Parent.Icons.PackSize=&apos;f,f&apos;
-Parent.Size=Parent.Icons.Size
-Parent.Icons.PackSize=&apos;a,a&apos;
-Parent.OnShow=&apos; &apos;" OnShow="Parent.MoveButton.Opacity=0
-Parent.Icons.Location=&apos;0,13&apos;
-Parent.Icons.PackSize=&apos;f,f&apos;
-Parent.Size=Size
-Parent.Icons.PackSize=&apos;a,a&apos;
-Parent.OnShow=&apos;Size=WC_Frame.Size&apos;" PackSize="a,a" PackSizeProp="0000/0001,-013/0001" ScrollExtent="128,301" Size="128,301" Visible="false"/>
-</Page>
+        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="4,110" MaximumSize="2048,2048" MinimumSize="32,32" Name="Bag" OnHoverIn="CloseButton.visible=true&#xA;MoveButton.Visible=true" OnHoverOut="CloseButton.visible=false&#xA;MoveButton.Visible=false" OnShow=" " ScrollExtent="128,288" Size="128,288" UserMovable="true" UserResizable="true" version="2.1">
+            <Page Name="Grab2ResizeDummyN" PackSize="a,f" ScrollExtent="127,5" Size="127,5" />
+            <Page Name="Grab2ResizeDummyW" PackSize="f,a" ScrollExtent="5,288" Size="5,288" />
+            <Page Location="126,0" Name="Grab2ResizeDummyE" PackLocation="right,top" PackSize="f,a" ScrollExtent="5,288" Size="5,288" />
+            <Page Location="0,287" Name="Grab2ResizeDummyS" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="127,5" Size="127,5" />
+            <Image Activated="true" GetsInput="true" Name="MoveButton" OnHoverIn="Tooltip=Parent.Name.LocalText&#xA;Parent.UserResizable=false" OnHoverOut="Parent.UserResizable=true" ScrollExtent="16,16" Size="16,16" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Tooltip="Bag" Visible="false" />
+            <Button Location="111,0" Name="CloseButton" OnPress="Parent.WC_CloseButton.Press=true" PackLocation="fff,nfn" ScrollExtent="16,16" Size="16,16" Style="/ButtonStyles.close_button" Tooltip="Close" Visible="false" />
+            <Button Location="116,0" Name="WC_CloseButton" ScrollExtent="12,12" Size="12,12" Style="/ButtonStyles.close_button" Visible="false" />
+            <IconBank BackgroundOpacity="1.000" Dragable="true" font="/ProfitUI_Styles.Fonts.FontArial13T" framecolor="#B5935A" iconframepadding="0" iconpadding="0" iconsize="64" iconstyle="/IconStyles.examine" Name="Icons" PackSize="a,a" renderframe="true" renderoutlines="false" ScrollExtent="128,288" Size="128,288" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="false" />
+            <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="14,0" MaxLines="1" Name="Name" OnHoverIn="Parent.UserResizable=false" OnHoverOut="Parent.UserResizable=true" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="101,12" Size="101,12" TextAlignment="Center" TextAlignmentVertical="Center" Tooltip=":f4ce1968dc90d15e_1:Bag" Visible="false">:f4ce1968dc90d15e:Bag</Text>
+            <Image Name="TitleBackground" PackSize="a,f" ScrollExtent="127,14" Size="127,14" SourceRect="194,378,289,388" SourceResource="/images/window_elements_generic.dds" />
+            <Page Name="WC_Frame" OnHide="Parent.MoveButton.Opacity=1&#xA;Parent.Icons.Location=&apos;0,0&apos;&#xA;Parent.Icons.PackSize=&apos;f,f&apos;&#xA;Parent.Size=Parent.Icons.Size&#xA;Parent.Icons.PackSize=&apos;a,a&apos;&#xA;Parent.OnShow=&apos; &apos;" OnShow="Parent.MoveButton.Opacity=0&#xA;Parent.Icons.Location=&apos;0,13&apos;&#xA;Parent.Icons.PackSize=&apos;f,f&apos;&#xA;Parent.Size=Size&#xA;Parent.Icons.PackSize=&apos;a,a&apos;&#xA;Parent.OnShow=&apos;Size=WC_Frame.Size&apos;" PackSize="a,a" ScrollExtent="128,301" Size="128,301" Visible="false" />
+        </Page>

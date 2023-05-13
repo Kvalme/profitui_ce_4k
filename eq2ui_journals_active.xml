@@ -1,81 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Last update 2016-08-24 by user Zidu -->
-<!-- GU101 Public Quests will now show in Active Quest Window -->
-<Page CRLF="&#xD;&#xA;" DynamicData="/GameData.Quest.ActiveWindow" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Location="794,0" MaximumSize="1024,1024" MinimumSize="200,109" Name="ActiveQuest" PackLocation="nfn,nfn" PackSize="f,f" ScrollExtent="224,403" ScrollSize="1,20" Size="224,403" OnShow="QuestTemplate.Contents.SearchAutomation.ProfitUI_StdSrchPlugin.SetNames.Press=true" UserMovable="true" UserResizable="true" version="2.0.0">
-  <Namespace Name="tierstyles">
-    <ImageStyle Filter="true" Name="tier1style">
-      <ImageFrame Name="image" Source="../Default/images/window_elements_specific.dds" SourceRect="296,314,314,333" />
-    </ImageStyle>
-    <ImageStyle Filter="true" Name="tier2style">
-      <ImageFrame Name="image" Source="../Default/images/window_elements_specific.dds" SourceRect="296,294,314,313" />
-    </ImageStyle>
-    <ImageStyle Filter="true" Name="tier3style">
-      <ImageFrame Name="image" Source="../Default/images/window_elements_specific.dds" SourceRect="296,273,314,292" />
-    </ImageStyle>
-  </Namespace>
-  <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="QuestStepStyle" PointSize="12" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" UseCachedFont="true" />
-  <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="QuestNameStyle" PointSize="15" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" UseCachedFont="true" />
-  <EffectorCycleOpacity Duration="6.000" InitialOpacity="1.000" MaxSpeed="2.000" MinSpeed="2.000" Name="FlashEffector" OpacityOne="0.300" Speed="2.000" />
-  <OpacityEffector InitialOpacity="1.000" Name="FadeOutEffector" Speed="3.000" />
-  <OpacityEffector Name="FadeInEffector" Speed="3.000" TargetOpacity="1.000" />
-      <Page AbsorbsInput="false" Location="6,6" Name="PublicQuestTemplate" OnHoverIn="ActiveCheckbox.visible=true" OnHoverOut="ActiveCheckbox.visible=false" PackSize="a,f" ScrollExtent="249,102" Size="249,102" Visible="false">
-        <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="249,102" Size="249,102">
-            <Image Color="#00FF00" Location="0,1" Name="Tier" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" />
-            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="19,0" Margin="2,1,0,0" MaxLines="1" MinimumSize="0,21" Name="QuestName" PackSize="a,f" ScrollExtent="230,21" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="230,21" TextColor="#F0D080">:f67043296981a7eb:Sample Quest Name</Text>
-            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="36,22" Margin="3,0,0,0" MaxLines="1" Name="TimerValue" PackLocation="left,fixed" PackSize="absolute,fixed" ScrollExtent="249,17" Size="249,17" TextColor="#FF2B2B">:f670432927b7e0f2:[DEVL]Time Left 01:10:30</Text>
-            <Composite AbsorbsInput="false" Location="22,37" Name="Parts" PackSize="a,f" ScrollExtent="228,22" Size="228,22" SpacingType="Constant" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page crlf="&#xD;&#xA;" DynamicData="/GameData.Quest.ActiveWindow" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Location="794,0" MaximumSize="1024,1024" MinimumSize="200,109" Name="ActiveQuest" OnShow="QuestTemplate.Contents.SearchAutomation.ProfitUI_StdSrchPlugin.SetNames.Press=true" PackLocation="nfn,nfn" PackSize="f,f" ScrollExtent="224,403" ScrollSize="1,20" Size="224,403" UserMovable="true" UserResizable="true" version="2.0.0">
+            <Namespace Name="tierstyles">
+                <ImageStyle Filter="true" Name="tier1style">
+                    <ImageFrame Name="image" Source="../Default/images/window_elements_specific.dds" SourceRect="296,314,314,333" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="tier2style">
+                    <ImageFrame Name="image" Source="../Default/images/window_elements_specific.dds" SourceRect="296,294,314,313" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="tier3style">
+                    <ImageFrame Name="image" Source="../Default/images/window_elements_specific.dds" SourceRect="296,273,314,292" />
+                </ImageStyle>
+            </Namespace>
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="QuestStepStyle" PointSize="12" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="QuestNameStyle" PointSize="15" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" UseCachedFont="true" />
+            <EffectorCycleOpacity Duration="6.000" InitialOpacity="1.000" MaxSpeed="2.000" MinSpeed="2.000" Name="FlashEffector" OpacityOne="0.300" Speed="2.000" />
+            <OpacityEffector InitialOpacity="1.000" Name="FadeOutEffector" Speed="3.000" />
+            <OpacityEffector Name="FadeInEffector" Speed="3.000" TargetOpacity="1.000" />
+            <Page AbsorbsInput="false" Location="6,6" Name="PublicQuestTemplate" OnHoverIn="ActiveCheckbox.visible=true" OnHoverOut="ActiveCheckbox.visible=false" PackSize="a,f" ScrollExtent="249,102" Size="249,102" Visible="false">
+                <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="249,102" Size="249,102">
+                    <Image Color="#00FF00" Location="0,1" Name="Tier" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="19,0" Margin="2,1,0,0" MaxLines="1" MinimumSize="0,21" Name="QuestName" PackSize="a,f" ScrollExtent="230,27" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="230,21" TextColor="#F0D080">:f67043296981a7eb:Sample Quest Name</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="36,22" Margin="3,0,0,0" MaxLines="1" Name="TimerValue" PackLocation="left,fixed" PackSize="absolute,fixed" ScrollExtent="249,23" Size="249,17" TextColor="#FF2B2B">:f670432927b7e0f2:[DEVL]Time Left 01:10:30</Text>
+                    <Composite AbsorbsInput="false" Location="22,37" Name="Parts" PackSize="a,f" ScrollExtent="228,22" Size="228,22" SpacingType="Constant" />
+                </Page>
+                <Icon DropToParent="true" IconStyle="/IconStyles.button" Location="0,20" MouseOverColor="#FFFF00" Name="QuestBaubleTemplate" PackLocation="left,top" ScrollExtent="22,22" TreatAsButton="true" Visible="false" />
+            </Page>
+            <Page AbsorbsInput="false" Location="56,43" Name="PublicQuestPartTemplate" PackSize="a,f" ScrollExtent="228,20" Size="228,20" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Name="Bullet" ScrollExtent="8,24" Size="8,17">:f670432968224c07:-</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="10,0" Name="PartText" PackSize="a,f" ScrollExtent="214,48" ShadowStyle="/ShadowStylesNew.Outline.style" Size="214,17">:f670432948cbdaa4_1:Some sample quest text</Text>
+            </Page>
+            <Page AbsorbsInput="false" Location="6,6" Name="DailyObjectiveTemplate" OnHoverIn="Contents.Tier.Color=#9F88FF" OnHoverOut="Contents.Tier.Color=#7F00FF" PackSize="a,f" ScrollExtent="213,102" Size="213,102">
+                <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="213,102" Size="213,102">
+                    <Image AbsorbsInput="false" Color="#7F00FF" GetsInput="true" Location="19,1" Name="Tier" Rotation="0.500" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" />
+                    <Text AbsorbsInput="false" Font="QuestNameStyle" Location="38,0" Margin="2,0,0,0" MaxLines="1" MinimumSize="0,22" Name="ObjectiveName" PackSize="a,f" ScrollExtent="175,22" Size="175,22" TextColor="#F0D080">:f67043296981a7eb:Sample Quest Name</Text>
+                    <Composite AbsorbsInput="false" Location="22,37" Name="Parts" PackSize="a,f" ScrollExtent="192,22" Size="192,22" SpacingType="Constant" />
+                </Page>
+                <Icon DropToParent="true" IconStyle="/IconStyles.button" Location="0,20" MouseOverColor="#FFFF00" Name="QuestBaubleTemplate" PackLocation="left,top" ScrollExtent="22,22" TreatAsButton="true" Visible="false" />
+            </Page>
+            <Page AbsorbsInput="false" Location="56,43" Name="DailyObjectivePartTemplate" PackSize="a,f" ScrollExtent="192,22" Size="192,22">
+                <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="0,5" Name="Bullet" ScrollExtent="8,24" Size="8,17">:f670432968224c07:-</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="20,5" Name="PartText" PackSize="a,f" ScrollExtent="168,48" Size="168,17">:f670432948cbdaa4:Some sample quest text</Text>
+            </Page>
+            <Page AbsorbsInput="false" Location="6,6" Name="QuestTemplate" OnHoverIn="ActiveCheckbox.visible=true&#xD;&#xA;Contents.SearchAutomation.Opacity=1" OnHoverOut="ActiveCheckbox.visible=false&#xD;&#xA;Contents.SearchAutomation.Opacity=0" PackSize="a,f" ScrollExtent="213,102" Size="213,102">
+                <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" MinimumSize="20,20" Name="ActiveCheckbox" OnHideEffector="FadeOutEffector" OnPress="set_quest_active QuestCRC Checked" OnShowEffector="FadeInEffector" Opacity="0.000" PackLocation="left,top" ScrollExtent="20,20" Size="20,20" Style="/CommonElements.Checkbox.data.style" Tooltip=":f67043295ee5fe7d:Toggle visibility in active quest window" Visible="false" />
+                <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="213,102" Size="213,102">
+                    <Image Color="#00FF00" Location="19,1" Name="Tier" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" />
+                    <Text AbsorbsInput="false" Font="QuestNameStyle" Location="38,0" Margin="2,0,0,0" MaxLines="1" MinimumSize="0,22" Name="QuestName" PackSize="a,f" ScrollExtent="175,22" Size="175,22" TextColor="#F0D080">:f67043296981a7eb:Sample Quest Name</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="36,22" Margin="3,0,0,0" MaxLines="1" Name="TimerValue" PackLocation="left,fixed" PackSize="absolute,fixed" ScrollExtent="223,23" Size="213,17" TextColor="#FF2B2B">:f670432927b7e0f2:[DEVL]Time Left 01:10:30</Text>
+                    <Page AbsorbsInput="false" Location="38,19" MaximumSize="300,12" MinimumSize="300,12" Name="SearchAutomation" Opacity="0.000" ScrollExtent="300,12" Size="300,12">
+                        <Page AbsorbsInput="false" Name="ProfitUI_StdSrchPlugin" ScrollExtent="300,12" Size="300,12">
+                            <Button BackgroundOpacity="0.000" Name="Search1" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch1.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search1</Button>
+                            <Button BackgroundOpacity="0.000" Location="60,0" Name="Search2" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch2.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search2</Button>
+                            <Button BackgroundOpacity="0.000" Location="120,0" Name="Search3" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch3.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search3</Button>
+                            <Button BackgroundOpacity="0.000" Location="180,0" Name="Search4" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch4.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search4</Button>
+                            <Button BackgroundOpacity="0.000" Location="240,0" Name="Search5" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch5.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search5</Button>
+                            <Button Name="DoSearch" OnPress="Parent.URI=(Parent.URL ## Parent.Parent.Parent.QuestName.LocalText)&#xD;&#xA;browser Parent.URI" />
+                            <Button Name="SetNames" OnPress="Parent.Search1.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch1.Text&#xD;&#xA;Parent.Search2.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch2.Text&#xD;&#xA;Parent.Search3.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch3.Text&#xD;&#xA;Parent.Search4.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch4.Text&#xD;&#xA;Parent.Search5.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch5.Text" />
+                        </Page>
+                    </Page>
+                    <Composite AbsorbsInput="false" Location="22,37" Name="Parts" PackSize="a,f" ScrollExtent="192,22" Size="192,22" SpacingType="Constant" />
+                </Page>
+                <Icon DropToParent="true" IconStyle="/IconStyles.button" Location="0,20" MouseOverColor="#FFFF00" Name="QuestBaubleTemplate" PackLocation="left,top" ScrollExtent="22,22" TreatAsButton="true" Visible="false" />
+            </Page>
+            <Page AbsorbsInput="false" Location="56,43" Name="QuestPartTemplate" PackSize="a,f" ScrollExtent="192,22" Size="192,22">
+                <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="0,5" Name="Bullet" ScrollExtent="8,24" Size="8,17">:f670432968224c07:-</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="10,5" Name="PartText" PackSize="a,f" ScrollExtent="178,48" Size="178,17">:f670432948cbdaa4:Some sample quest text</Text>
+            </Page>
+            <Composite AbsorbsInput="false" Location="6,20" Name="QuestList" PackSize="a,a" ScrollExtent="213,376" ScrollSize="1,20" Size="213,376" SpacingType="Constant" />
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="1,1" ScrollExtent="224,403" Size="224,403">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="224,20" Size="224,20" SizeIncrement="1,0">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="0,1" MaxLines="1" Name="Title" Opacity="0.600" PackSize="a,f" ScrollExtent="224,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="224,20" TextAlignment="Center" TextAlignmentVertical="Center">Active Quests</Text>
+                    <Button Enabled="false" GetsInput="false" Name="TitleBarRight" PackSize="a,f" ScrollExtent="224,20" Size="224,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarRight" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="224,403" Size="224,403" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="224,403" Size="224,403" />
+            </Page>
         </Page>
-        <Icon DropToParent="true" IconStyle="/IconStyles.button" Location="0,20" MouseOverColor="#FFFF00" Name="QuestBaubleTemplate" PackLocation="left,top" ScrollExtent="22,22" TreatAsButton="true" Visible="false" />
-    </Page>
-    <Page AbsorbsInput="false" Location="56,43" Name="PublicQuestPartTemplate" PackSize="a,f" ScrollExtent="228,20" Size="228,20" Visible="false">
-        <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Name="Bullet" ScrollExtent="8,17" Size="8,17">:f670432968224c07:-</Text>
-        <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="10,0" Name="PartText" PackSize="a,f" ScrollExtent="214,17" ShadowStyle="/ShadowStylesNew.Outline.style" Size="214,17">:f670432948cbdaa4_1:Some sample quest text</Text>
-    </Page>
-  <Page AbsorbsInput="false" Location="6,6" Name="DailyObjectiveTemplate" PackSize="a,f" ScrollExtent="213,102" Size="213,102" OnHoverIn="Contents.Tier.Color=#9F88FF" OnHoverOut="Contents.Tier.Color=#7F00FF">
-    <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="213,102" Size="213,102">
-      <Image AbsorbsInput="false" GetsInput="true" Color="#7F00FF" Location="19,1" Name="Tier" Rotation="0.500" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" />
-      <Text AbsorbsInput="false" Font="QuestNameStyle" Location="38,0" Margin="2,0,0,0" MaxLines="1" MinimumSize="0,22" Name="ObjectiveName" PackSize="a,f" ScrollExtent="175,22" Size="175,22" TextColor="#F0D080">:f67043296981a7eb:Sample Quest Name</Text>
-      <Composite AbsorbsInput="false" Location="22,37" Name="Parts" PackSize="a,f" ScrollExtent="192,22" Size="192,22" SpacingType="Constant" />
-    </Page>
-    <Icon BackgroundTint="#FFFFFF" DropToParent="true" IconStyle="/IconStyles.button" Location="0,20" MouseOverColor="#FFFF00" Name="QuestBaubleTemplate" PackLocation="left,top" ScrollExtent="22,22" TreatAsButton="true" Visible="false" />
-  </Page>
-  <Page AbsorbsInput="false" Location="56,43" Name="DailyObjectivePartTemplate" PackSize="a,f" ScrollExtent="192,22" Size="192,22">
-    <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="0,5" Name="Bullet" ScrollExtent="8,17" Size="8,17">:f670432968224c07:-</Text>
-    <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="20,5" Name="PartText" PackSize="a,f" ScrollExtent="168,17" Size="168,17">:f670432948cbdaa4:Some sample quest text</Text>
-  </Page>
-  <Page AbsorbsInput="false" Location="6,6" Name="QuestTemplate" OnHoverIn="ActiveCheckbox.visible=true&#xD;&#xA;Contents.SearchAutomation.Opacity=1" OnHoverOut="ActiveCheckbox.visible=false&#xD;&#xA;Contents.SearchAutomation.Opacity=0" PackSize="a,f" ScrollExtent="213,102" Size="213,102">
-    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="0,0" MinimumSize="20,20" Name="ActiveCheckbox" OnHideEffector="FadeOutEffector" OnPress="set_quest_active QuestCRC Checked" OnShowEffector="FadeInEffector" Opacity="0.000" PackLocation="left,top" ScrollExtent="20,20" Size="20,20" Style="/CommonElements.Checkbox.data.style" Tooltip=":f67043295ee5fe7d:Toggle visibility in active quest window" Visible="false" />
-    <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="213,102" Size="213,102">
-      <Image Color="#00FF00" Location="19,1" Name="Tier" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" />
-      <Text AbsorbsInput="false" Font="QuestNameStyle" Location="38,0" Margin="2,0,0,0" MaxLines="1" MinimumSize="0,22" Name="QuestName" PackSize="a,f" ScrollExtent="175,22" Size="175,22" TextColor="#F0D080">:f67043296981a7eb:Sample Quest Name</Text>
-      <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="36,22" Margin="3,0,0,0" MaxLines="1" Name="TimerValue" PackLocation="left,fixed" PackSize="absolute,fixed" ScrollExtent="213,17" Size="213,17" TextColor="#FF2B2B">:f670432927b7e0f2:[DEVL]Time Left 01:10:30</Text>
-      <Page AbsorbsInput="false" Location="38,19" Name="SearchAutomation" Opacity="0.000" ScrollExtent="300,12" Size="300,12" MaximumSize="300,12" MinimumSize="300,12">
-        <Page AbsorbsInput="false" Name="ProfitUI_StdSrchPlugin" ScrollExtent="300,12" Size="300,12">
-          <Button BackgroundOpacity="0.000" Name="Search1" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch1.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search1</Button>
-          <Button BackgroundOpacity="0.000" Location="60,0" Name="Search2" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch2.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search2</Button>
-          <Button BackgroundOpacity="0.000" Location="120,0" Name="Search3" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch3.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search3</Button>
-          <Button BackgroundOpacity="0.000" Location="180,0" Name="Search4" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch4.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search4</Button>
-          <Button BackgroundOpacity="0.000" Location="240,0" Name="Search5" OnPress="Parent.URL=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch5.URL&#xD;&#xA;Parent.DoSearch.Press=true" ScrollExtent="60,12" Size="60,12" Style="/ProfitUI_Styles.ButtonStyles.button_textonly_c">Search5</Button>
-          <Button Name="DoSearch" OnPress="Parent.URI=(Parent.URL ## Parent.Parent.Parent.QuestName.LocalText)&#xD;&#xA;browser Parent.URI" />
-          <Button Name="SetNames" OnPress="Parent.Search1.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch1.Text&#xD;&#xA;Parent.Search2.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch2.Text&#xD;&#xA;Parent.Search3.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch3.Text&#xD;&#xA;Parent.Search4.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch4.Text&#xD;&#xA;Parent.Search5.Text=Parent.Parent.Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_StdSrch.QuestSearch5.Text" />
-        </Page>
-      </Page>
-      <Composite AbsorbsInput="false" Location="22,37" Name="Parts" PackSize="a,f" ScrollExtent="192,22" Size="192,22" SpacingType="Constant" />
-    </Page>
-    <Icon BackgroundTint="#FFFFFF" DropToParent="true" IconStyle="/IconStyles.button" Location="0,20" MouseOverColor="#FFFF00" Name="QuestBaubleTemplate" PackLocation="left,top" ScrollExtent="22,22" TreatAsButton="true" Visible="false" />
-  </Page>
-  <Page AbsorbsInput="false" Location="56,43" Name="QuestPartTemplate" PackSize="a,f" ScrollExtent="192,22" Size="192,22">
-    <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="0,5" Name="Bullet" ScrollExtent="8,17" Size="8,17">:f670432968224c07:-</Text>
-    <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="10,5" Name="PartText" PackSize="a,f" ScrollExtent="178,17" Size="178,17">:f670432948cbdaa4:Some sample quest text</Text>
-  </Page>
-  <Composite AbsorbsInput="false" Location="6,20" Name="QuestList" PackSize="a,a" ScrollExtent="213,376" ScrollSize="1,20" Size="213,376" SpacingType="Constant" />
-  <Page AbsorbsInput="false" Name="WindowFrame" PackSize="1,1" ScrollExtent="224,417" Size="224,417">
-    <Page AbsorbsInput="false" PackSize="a,f" SizeIncrement="1,0" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" Size="224,20">
-      <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="0,1" MaxLines="1" Name="Title" PackSize="a,f" Size="224,20" TextAlignment="Center" TextAlignmentVertical="Center" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Opacity="0.600" >Active Quests</Text>
-      <Button Enabled="false" GetsInput="false" Name="TitleBarRight" PackSize="a,f" ScrollExtent="224,20" Size="224,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarRight" />
-    </Page>
-
-    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="224,417" Size="224,417" />
-    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="224,417" Size="224,417" />
-  </Page>
-</Page>

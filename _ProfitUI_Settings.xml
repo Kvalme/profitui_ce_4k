@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page Name="ProfitUI_MiscSettings">
-	<include>_ProfitUI_Settings_GroupWindow.txt</include>
-	<include>_ProfitUI_Settings_MarketWindow.txt</include>
-	<include>_ProfitUI_Settings_Zoning.txt</include>
-	<include>_ProfitUI_Settings_Nightvision.txt</include>
-	<include>_ProfitUI_Settings_AutoAttackCalc.txt</include>
-	<include>_ProfitUI_Settings_AutoAttackBar.txt</include>
-	<include>_ProfitUI_Settings_LetterboxOptions.txt</include>
-	<include>_ProfitUI_Settings_EffectsIconSizes.txt</include>
-	<include>_ProfitUI_Settings_LootOptions.txt</include>
-</Page>
+        <Page Name="ProfitUI_MiscSettings">
+<include>_ProfitUI_Settings_GroupWindow.txt.xml</include>
+<include>_ProfitUI_Settings_MarketWindow.txt.xml</include>
+<include>_ProfitUI_Settings_Zoning.txt.xml</include>
+<include>_ProfitUI_Settings_Nightvision.txt.xml</include>
+<include>_ProfitUI_Settings_AutoAttackCalc.txt.xml</include>
+<include>_ProfitUI_Settings_AutoAttackBar.txt.xml</include>
+<include>_ProfitUI_Settings_LetterboxOptions.txt.xml</include>
+<include>_ProfitUI_Settings_EffectsIconSizes.txt.xml</include>
+<include>_ProfitUI_Settings_LootOptions.txt.xml</include>
+        </Page>

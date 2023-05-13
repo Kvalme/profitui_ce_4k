@@ -1,178 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page Subclass="None" Name="ProfitUI_SubclassDetector" OnShow="Visible=false" Visible="false">
-<Textbox DynamicData="/GameData.Self.SubClass" Name="SC" OnChange="show_window Custom.ProfitUI_SubclassDetector
-parent.Detect.Press=true
-parent.parent.parent.MainHUD.Raid.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true
-parent.parent.parent.MainHUD.GroupMembers.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true
-parent.parent.Raid.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true
-parent.parent.GroupMembers.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true
-show_window Custom.ProfitUI_ControlCenter
-hide_window Custom.ProfitUI_ControlCenter" />
-<Button Name="Detect" OnPress="gm9_command=('Parent.Detect') ## (cl_language) ## ('.Press=true Parent.Subclass=Parent.SC.Text') 
-OnPress=gm9_command
-Press=true" />
-<Button name="ForceDetect" OnPress="show_window Custom.ProfitUI_SubclassDetector
-parent.Detect.Press=true
-parent.parent.parent.MainHUD.Raid.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true
-parent.parent.parent.MainHUD.GroupMembers.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true
-parent.parent.Raid.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true
-parent.parent.GroupMembers.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true" />
-<Button Name="DetectEnglish" />
-<Button Name="DetectGerman" OnPress="Parent.Assassin.Activated=(Parent.SC.Text==&apos;Assassine&apos;)
-Parent.Assassin.Activated=(Parent.SC.Text==&apos;Assassine &apos;)
-Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Bestienfürst&apos;)
-Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Bestienfürst &apos;)
-Parent.Berserker.Activated=(Parent.SC.Text==&apos;Berserker&apos;)
-Parent.Berserker.Activated=(Parent.SC.Text==&apos;Berserker &apos;)
-Parent.Brigand.Activated=(Parent.SC.Text==&apos;Brigant&apos;)
-Parent.Brigand.Activated=(Parent.SC.Text==&apos;Brigant &apos;)
-Parent.Bruiser.Activated=(Parent.SC.Text==&apos;Raufbold&apos;)
-Parent.Bruiser.Activated=(Parent.SC.Text==&apos;Raufbold &apos;)
-Parent.Channeler.Activated=(Parent.SC.Text==&apos;Bündler&apos;)
-Parent.Channeler.Activated=(Parent.SC.Text==&apos;Bündler &apos;)
-Parent.Coercer.Activated=(Parent.SC.Text==&apos;Erzwinger&apos;)
-Parent.Coercer.Activated=(Parent.SC.Text==&apos;Erzwinger &apos;)
-Parent.Conjuror.Activated=(Parent.SC.Text==&apos;Elementalist&apos;)
-Parent.Conjuror.Activated=(Parent.SC.Text==&apos;Elementalist &apos;)
-Parent.Defiler.Activated=(Parent.SC.Text==&apos;Schänder&apos;)
-Parent.Defiler.Activated=(Parent.SC.Text==&apos;Schänder &apos;)
-Parent.Dirge.Activated=(Parent.SC.Text==&apos;Klagesänger&apos;)
-Parent.Dirge.Activated=(Parent.SC.Text==&apos;Klagesänger &apos;)
-Parent.Fury.Activated=(Parent.SC.Text==&apos;Furie&apos;)
-Parent.Fury.Activated=(Parent.SC.Text==&apos;Furie &apos;)
-Parent.Guardian.Activated=(Parent.SC.Text==&apos;Wächter&apos;)
-Parent.Guardian.Activated=(Parent.SC.Text==&apos;Wächter &apos;)
-Parent.Illusionist.Activated=(Parent.SC.Text==&apos;Thaumaturgist&apos;)
-Parent.Illusionist.Activated=(Parent.SC.Text==&apos;Thaumaturgist &apos;)
-Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;Inquisitor&apos;)
-Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;Inquisitor &apos;)
-Parent.Monk.Activated=(Parent.SC.Text==&apos;Mönch&apos;)
-Parent.Monk.Activated=(Parent.SC.Text==&apos;Mönch &apos;)
-Parent.Mystic.Activated=(Parent.SC.Text==&apos;Mystiker&apos;)
-Parent.Mystic.Activated=(Parent.SC.Text==&apos;Mystiker &apos;)
-Parent.Necromancer.Activated=(Parent.SC.Text==&apos;Nekromant&apos;)
-Parent.Necromancer.Activated=(Parent.SC.Text==&apos;Nekromant &apos;)
-Parent.Paladin.Activated=(Parent.SC.Text==&apos;Paladin&apos;)
-Parent.Paladin.Activated=(Parent.SC.Text==&apos;Paladin &apos;)
-Parent.Ranger.Activated=(Parent.SC.Text==&apos;Waldläufer&apos;)
-Parent.Ranger.Activated=(Parent.SC.Text==&apos;Waldläufer &apos;)
-Parent.Shadowknight.Activated=(Parent.SC.Text==&apos;Schattenritter&apos;)
-Parent.Shadowknight.Activated=(Parent.SC.Text==&apos;Schattenritter &apos;)
-Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;Säbelrassler&apos;)
-Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;Säbelrassler &apos;)
-Parent.Templar.Activated=(Parent.SC.Text==&apos;Templer&apos;)
-Parent.Templar.Activated=(Parent.SC.Text==&apos;Templer &apos;)
-Parent.Troubador.Activated=(Parent.SC.Text==&apos;Troubadour&apos;)
-Parent.Troubador.Activated=(Parent.SC.Text==&apos;Troubadour &apos;)
-Parent.Warden.Activated=(Parent.SC.Text==&apos;Wärter&apos;)
-Parent.Warden.Activated=(Parent.SC.Text==&apos;Wärter &apos;)
-Parent.Warden.Activated=(Parent.SC.Text==&apos;Wärter(get)&apos;)
-Parent.Warlock.Activated=(Parent.SC.Text==&apos;Hexenmeister&apos;)
-Parent.Warlock.Activated=(Parent.SC.Text==&apos;Hexenmeister &apos;)
-Parent.Wizard.Activated=(Parent.SC.Text==&apos;Zauberer&apos;)
-Parent.Wizard.Activated=(Parent.SC.Text==&apos;Zauberer &apos;)" />
-<Button Name="DetectFrench" OnPress="Parent.Assassin.Activated=(Parent.SC.Text==&apos;Assassin&apos;)
-Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Beastlord&apos;)
-Parent.Berserker.Activated=(Parent.SC.Text==&apos;Berserk&apos;)
-Parent.Brigand.Activated=(Parent.SC.Text==&apos;Brigand&apos;)
-Parent.Bruiser.Activated=(Parent.SC.Text==&apos;Baroudeur&apos;)
-Parent.Channeler.Activated=(Parent.SC.Text==&apos;Canaliseur&apos;)
-Parent.Coercer.Activated=(Parent.SC.Text==&apos;Subjugueur&apos;)
-Parent.Conjuror.Activated=(Parent.SC.Text==&apos;Invocateur&apos;)
-Parent.Defiler.Activated=(Parent.SC.Text==&apos;Destructeur&apos;)
-Parent.Dirge.Activated=(Parent.SC.Text==&apos;Chante-sort&apos;)
-Parent.Fury.Activated=(Parent.SC.Text==&apos;Furie&apos;)
-Parent.Guardian.Activated=(Parent.SC.Text==&apos;Gardien&apos;)
-Parent.Illusionist.Activated=(Parent.SC.Text==&apos;Illusionniste&apos;)
-Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;Inquisiteur&apos;)
-Parent.Monk.Activated=(Parent.SC.Text==&apos;Moine&apos;)
-Parent.Mystic.Activated=(Parent.SC.Text==&apos;Mystique&apos;)
-Parent.Necromancer.Activated=(Parent.SC.Text==&apos;Nécromancien&apos;)
-Parent.Paladin.Activated=(Parent.SC.Text==&apos;Paladin&apos;)
-Parent.Ranger.Activated=(Parent.SC.Text==&apos;Rôdeur&apos;)
-Parent.Shadowknight.Activated=(Parent.SC.Text==&quot;Chevalier de l&apos;ombre&quot;)
-Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;Fier-à-bras&apos;)
-Parent.Templar.Activated=(Parent.SC.Text==&apos;Templier&apos;)
-Parent.Troubador.Activated=(Parent.SC.Text==&apos;Troubadour&apos;)
-Parent.Warden.Activated=(Parent.SC.Text==&apos;Surveillant&apos;)
-Parent.Warlock.Activated=(Parent.SC.Text==&apos;Envoûteur&apos;)
-Parent.Wizard.Activated=(Parent.SC.Text==&apos;Sorcier&apos;)"/>
-<Button Name="DetectJapanese" OnPress="Parent.Assassin.Activated=(Parent.SC.Text==&apos;\rc:アサシン\:Assassin\/r&apos;)
-Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Beastlord&apos;)
-Parent.Berserker.Activated=(Parent.SC.Text==&apos;\rc:バーサーカー\:Berserker\/r&apos;)
-Parent.Brigand.Activated=(Parent.SC.Text==&apos;\rc:ブリガンド\:Brigand\/r&apos;)
-Parent.Bruiser.Activated=(Parent.SC.Text==&apos;\rc:ブルーザー\:Bruiser\/r&apos;)
-Parent.Channeler.Activated=(Parent.SC.Text==&apos;\rc:チャネラー\:Channeler\/r&apos;)
-Parent.Coercer.Activated=(Parent.SC.Text==&apos;\rc:コウアーサー\:Coercer\/r&apos;)
-Parent.Conjuror.Activated=(Parent.SC.Text==&apos;\rc:コンジュラー\:Conjurer\/r&apos;)
-Parent.Defiler.Activated=(Parent.SC.Text==&apos;\rc:デファイラー\:Defiler\/r&apos;)
-Parent.Dirge.Activated=(Parent.SC.Text==&apos;\rc:ダージ\:Dirge\/r&apos;)
-Parent.Fury.Activated=(Parent.SC.Text==&apos;\rc:フューリー\:Fury\/r&apos;)
-Parent.Guardian.Activated=(Parent.SC.Text==&apos;\rc:ガーディアン\:Guardian\/r&apos;)
-Parent.Illusionist.Activated=(Parent.SC.Text==&apos;\rc:イリュージョニスト\:Illusionist\/r&apos;)
-Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;\rc:インクイジター\:Inquisitor\/r&apos;)
-Parent.Monk.Activated=(Parent.SC.Text==&apos;\rc:モンク\:Monk\/r&apos;)
-Parent.Mystic.Activated=(Parent.SC.Text==&apos;\rc:ミスティック\:Mystic\/r&apos;)
-Parent.Necromancer.Activated=(Parent.SC.Text==&apos;\rc:ネクロマンサー\:Necromancer\/r&apos;)
-Parent.Paladin.Activated=(Parent.SC.Text==&apos;\rc:パラディン\:Paladin\/r&apos;)
-Parent.Ranger.Activated=(Parent.SC.Text==&apos;\rc:レンジャー\:Ranger\/r&apos;)
-Parent.Shadowknight.Activated=(Parent.SC.Text==&quot;\rc:シャドウナイト\:Shadowknight\/r&quot;)
-Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;\rc:スワッシュバックラー\:Swashbuckler\/r&apos;)
-Parent.Templar.Activated=(Parent.SC.Text==&apos;\rc:テンプラー\:Templar\/r&apos;)
-Parent.Troubador.Activated=(Parent.SC.Text==&apos;\rc:トルバドール\:Troubador\/r&apos;)
-Parent.Warden.Activated=(Parent.SC.Text==&apos;\rc:ウォーデン\:Warden\/r&apos;)
-Parent.Warlock.Activated=(Parent.SC.Text==&apos;\rc:ウォーロック\:Warlock\/r&apos;)
-Parent.Wizard.Activated=(Parent.SC.Text==&apos;\rc:ウィザード\:Wizard\/r&apos;)"/>
-<Button Name="DetectRussian" OnPress="Parent.Assassin.Activated=(Parent.SC.Text==&apos;убийца&apos;)
-Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Beastlord&apos;)
-Parent.Berserker.Activated=(Parent.SC.Text==&apos;берсерк&apos;)
-Parent.Brigand.Activated=(Parent.SC.Text==&apos;разбойник&apos;)
-Parent.Bruiser.Activated=(Parent.SC.Text==&apos;громила&apos;)
-Parent.Channeler.Activated=(Parent.SC.Text==&apos;Channeler&apos;)
-Parent.Coercer.Activated=(Parent.SC.Text==&apos;гипнотизер&apos;)
-Parent.Conjuror.Activated=(Parent.SC.Text==&apos;заклинатель&apos;)
-Parent.Defiler.Activated=(Parent.SC.Text==&apos;осквернитель&apos;)
-Parent.Dirge.Activated=(Parent.SC.Text==&apos;менестрель&apos;)
-Parent.Fury.Activated=(Parent.SC.Text==&apos;фурия&apos;)
-Parent.Guardian.Activated=(Parent.SC.Text==&apos;страж&apos;)
-Parent.Illusionist.Activated=(Parent.SC.Text==&apos;иллюзионист&apos;)
-Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;инквизитор&apos;)
-Parent.Monk.Activated=(Parent.SC.Text==&apos;монах&apos;)
-Parent.Mystic.Activated=(Parent.SC.Text==&apos;мистик&apos;)
-Parent.Necromancer.Activated=(Parent.SC.Text==&apos;некромант&apos;)
-Parent.Paladin.Activated=(Parent.SC.Text==&apos;паладин&apos;)
-Parent.Ranger.Activated=(Parent.SC.Text==&apos;следопыт&apos;)
-Parent.Shadowknight.Activated=(Parent.SC.Text==&quot;темный&quot;)
-Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;головорез&apos;)
-Parent.Templar.Activated=(Parent.SC.Text==&apos;храмовник&apos;)
-Parent.Troubador.Activated=(Parent.SC.Text==&apos;трубадур&apos;)
-Parent.Warden.Activated=(Parent.SC.Text==&apos;хранитель&apos;)
-Parent.Warlock.Activated=(Parent.SC.Text==&apos;чернокнижник&apos;)
-Parent.Wizard.Activated=(Parent.SC.Text==&apos;волшебник&apos;)"/>
-<Button Name="Assassin" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Beastlord" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Berserker" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Brigand" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Bruiser" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Channeler" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Coercer" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Conjuror" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Defiler" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Dirge" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Fury" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Guardian" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Illusionist" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Inquisitor" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Monk" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Mystic" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Necromancer" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Paladin" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Ranger" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Shadowknight" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Swashbuckler" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Templar" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Troubador" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Warden" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Warlock" OnActivate="Activated=false Parent.Subclass=Name"/>
-<Button Name="Wizard" OnActivate="Activated=false Parent.Subclass=Name"/>
-</Page>
+        <Page Name="ProfitUI_SubclassDetector" OnShow="Visible=false" Subclass="None" Visible="false">
+            <Textbox DynamicData="/GameData.Self.SubClass" Name="SC" OnChange="show_window Custom.ProfitUI_SubclassDetector&#xD;&#xA;parent.Detect.Press=true&#xD;&#xA;parent.parent.parent.MainHUD.Raid.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true&#xD;&#xA;parent.parent.parent.MainHUD.GroupMembers.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true&#xD;&#xA;parent.parent.Raid.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true&#xD;&#xA;parent.parent.GroupMembers.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true&#xD;&#xA;show_window Custom.ProfitUI_ControlCenter&#xD;&#xA;hide_window Custom.ProfitUI_ControlCenter" />
+            <Button Name="Detect" OnPress="gm9_command=(&apos;Parent.Detect&apos;) ## (cl_language) ## (&apos;.Press=true Parent.Subclass=Parent.SC.Text&apos;) &#xD;&#xA;OnPress=gm9_command&#xD;&#xA;Press=true" />
+            <Button Name="ForceDetect" OnPress="show_window Custom.ProfitUI_SubclassDetector&#xD;&#xA;parent.Detect.Press=true&#xD;&#xA;parent.parent.parent.MainHUD.Raid.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true&#xD;&#xA;parent.parent.parent.MainHUD.GroupMembers.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true&#xD;&#xA;parent.parent.Raid.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true&#xD;&#xA;parent.parent.GroupMembers.ProfitUI_QuickRaidButtons.ConfigQRB.Press=true" />
+            <Button Name="DetectEnglish" />
+            <Button Name="DetectGerman" OnPress="Parent.Assassin.Activated=(Parent.SC.Text==&apos;Assassine&apos;)&#xD;&#xA;Parent.Assassin.Activated=(Parent.SC.Text==&apos;Assassine &apos;)&#xD;&#xA;Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Bestienfürst&apos;)&#xD;&#xA;Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Bestienfürst &apos;)&#xD;&#xA;Parent.Berserker.Activated=(Parent.SC.Text==&apos;Berserker&apos;)&#xD;&#xA;Parent.Berserker.Activated=(Parent.SC.Text==&apos;Berserker &apos;)&#xD;&#xA;Parent.Brigand.Activated=(Parent.SC.Text==&apos;Brigant&apos;)&#xD;&#xA;Parent.Brigand.Activated=(Parent.SC.Text==&apos;Brigant &apos;)&#xD;&#xA;Parent.Bruiser.Activated=(Parent.SC.Text==&apos;Raufbold&apos;)&#xD;&#xA;Parent.Bruiser.Activated=(Parent.SC.Text==&apos;Raufbold &apos;)&#xD;&#xA;Parent.Channeler.Activated=(Parent.SC.Text==&apos;Bündler&apos;)&#xD;&#xA;Parent.Channeler.Activated=(Parent.SC.Text==&apos;Bündler &apos;)&#xD;&#xA;Parent.Coercer.Activated=(Parent.SC.Text==&apos;Erzwinger&apos;)&#xD;&#xA;Parent.Coercer.Activated=(Parent.SC.Text==&apos;Erzwinger &apos;)&#xD;&#xA;Parent.Conjuror.Activated=(Parent.SC.Text==&apos;Elementalist&apos;)&#xD;&#xA;Parent.Conjuror.Activated=(Parent.SC.Text==&apos;Elementalist &apos;)&#xD;&#xA;Parent.Defiler.Activated=(Parent.SC.Text==&apos;Schänder&apos;)&#xD;&#xA;Parent.Defiler.Activated=(Parent.SC.Text==&apos;Schänder &apos;)&#xD;&#xA;Parent.Dirge.Activated=(Parent.SC.Text==&apos;Klagesänger&apos;)&#xD;&#xA;Parent.Dirge.Activated=(Parent.SC.Text==&apos;Klagesänger &apos;)&#xD;&#xA;Parent.Fury.Activated=(Parent.SC.Text==&apos;Furie&apos;)&#xD;&#xA;Parent.Fury.Activated=(Parent.SC.Text==&apos;Furie &apos;)&#xD;&#xA;Parent.Guardian.Activated=(Parent.SC.Text==&apos;Wächter&apos;)&#xD;&#xA;Parent.Guardian.Activated=(Parent.SC.Text==&apos;Wächter &apos;)&#xD;&#xA;Parent.Illusionist.Activated=(Parent.SC.Text==&apos;Thaumaturgist&apos;)&#xD;&#xA;Parent.Illusionist.Activated=(Parent.SC.Text==&apos;Thaumaturgist &apos;)&#xD;&#xA;Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;Inquisitor&apos;)&#xD;&#xA;Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;Inquisitor &apos;)&#xD;&#xA;Parent.Monk.Activated=(Parent.SC.Text==&apos;Mönch&apos;)&#xD;&#xA;Parent.Monk.Activated=(Parent.SC.Text==&apos;Mönch &apos;)&#xD;&#xA;Parent.Mystic.Activated=(Parent.SC.Text==&apos;Mystiker&apos;)&#xD;&#xA;Parent.Mystic.Activated=(Parent.SC.Text==&apos;Mystiker &apos;)&#xD;&#xA;Parent.Necromancer.Activated=(Parent.SC.Text==&apos;Nekromant&apos;)&#xD;&#xA;Parent.Necromancer.Activated=(Parent.SC.Text==&apos;Nekromant &apos;)&#xD;&#xA;Parent.Paladin.Activated=(Parent.SC.Text==&apos;Paladin&apos;)&#xD;&#xA;Parent.Paladin.Activated=(Parent.SC.Text==&apos;Paladin &apos;)&#xD;&#xA;Parent.Ranger.Activated=(Parent.SC.Text==&apos;Waldläufer&apos;)&#xD;&#xA;Parent.Ranger.Activated=(Parent.SC.Text==&apos;Waldläufer &apos;)&#xD;&#xA;Parent.Shadowknight.Activated=(Parent.SC.Text==&apos;Schattenritter&apos;)&#xD;&#xA;Parent.Shadowknight.Activated=(Parent.SC.Text==&apos;Schattenritter &apos;)&#xD;&#xA;Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;Säbelrassler&apos;)&#xD;&#xA;Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;Säbelrassler &apos;)&#xD;&#xA;Parent.Templar.Activated=(Parent.SC.Text==&apos;Templer&apos;)&#xD;&#xA;Parent.Templar.Activated=(Parent.SC.Text==&apos;Templer &apos;)&#xD;&#xA;Parent.Troubador.Activated=(Parent.SC.Text==&apos;Troubadour&apos;)&#xD;&#xA;Parent.Troubador.Activated=(Parent.SC.Text==&apos;Troubadour &apos;)&#xD;&#xA;Parent.Warden.Activated=(Parent.SC.Text==&apos;Wärter&apos;)&#xD;&#xA;Parent.Warden.Activated=(Parent.SC.Text==&apos;Wärter &apos;)&#xD;&#xA;Parent.Warden.Activated=(Parent.SC.Text==&apos;Wärter(get)&apos;)&#xD;&#xA;Parent.Warlock.Activated=(Parent.SC.Text==&apos;Hexenmeister&apos;)&#xD;&#xA;Parent.Warlock.Activated=(Parent.SC.Text==&apos;Hexenmeister &apos;)&#xD;&#xA;Parent.Wizard.Activated=(Parent.SC.Text==&apos;Zauberer&apos;)&#xD;&#xA;Parent.Wizard.Activated=(Parent.SC.Text==&apos;Zauberer &apos;)" />
+            <Button Name="DetectFrench" OnPress="Parent.Assassin.Activated=(Parent.SC.Text==&apos;Assassin&apos;)&#xD;&#xA;Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Beastlord&apos;)&#xD;&#xA;Parent.Berserker.Activated=(Parent.SC.Text==&apos;Berserk&apos;)&#xD;&#xA;Parent.Brigand.Activated=(Parent.SC.Text==&apos;Brigand&apos;)&#xD;&#xA;Parent.Bruiser.Activated=(Parent.SC.Text==&apos;Baroudeur&apos;)&#xD;&#xA;Parent.Channeler.Activated=(Parent.SC.Text==&apos;Canaliseur&apos;)&#xD;&#xA;Parent.Coercer.Activated=(Parent.SC.Text==&apos;Subjugueur&apos;)&#xD;&#xA;Parent.Conjuror.Activated=(Parent.SC.Text==&apos;Invocateur&apos;)&#xD;&#xA;Parent.Defiler.Activated=(Parent.SC.Text==&apos;Destructeur&apos;)&#xD;&#xA;Parent.Dirge.Activated=(Parent.SC.Text==&apos;Chante-sort&apos;)&#xD;&#xA;Parent.Fury.Activated=(Parent.SC.Text==&apos;Furie&apos;)&#xD;&#xA;Parent.Guardian.Activated=(Parent.SC.Text==&apos;Gardien&apos;)&#xD;&#xA;Parent.Illusionist.Activated=(Parent.SC.Text==&apos;Illusionniste&apos;)&#xD;&#xA;Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;Inquisiteur&apos;)&#xD;&#xA;Parent.Monk.Activated=(Parent.SC.Text==&apos;Moine&apos;)&#xD;&#xA;Parent.Mystic.Activated=(Parent.SC.Text==&apos;Mystique&apos;)&#xD;&#xA;Parent.Necromancer.Activated=(Parent.SC.Text==&apos;Nécromancien&apos;)&#xD;&#xA;Parent.Paladin.Activated=(Parent.SC.Text==&apos;Paladin&apos;)&#xD;&#xA;Parent.Ranger.Activated=(Parent.SC.Text==&apos;Rôdeur&apos;)&#xD;&#xA;Parent.Shadowknight.Activated=(Parent.SC.Text==&quot;Chevalier de l&apos;ombre&quot;)&#xD;&#xA;Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;Fier-à-bras&apos;)&#xD;&#xA;Parent.Templar.Activated=(Parent.SC.Text==&apos;Templier&apos;)&#xD;&#xA;Parent.Troubador.Activated=(Parent.SC.Text==&apos;Troubadour&apos;)&#xD;&#xA;Parent.Warden.Activated=(Parent.SC.Text==&apos;Surveillant&apos;)&#xD;&#xA;Parent.Warlock.Activated=(Parent.SC.Text==&apos;Envoûteur&apos;)&#xD;&#xA;Parent.Wizard.Activated=(Parent.SC.Text==&apos;Sorcier&apos;)" />
+            <Button Name="DetectJapanese" OnPress="Parent.Assassin.Activated=(Parent.SC.Text==&apos;\rc:アサシン\:Assassin\/r&apos;)&#xD;&#xA;Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Beastlord&apos;)&#xD;&#xA;Parent.Berserker.Activated=(Parent.SC.Text==&apos;\rc:バーサーカー\:Berserker\/r&apos;)&#xD;&#xA;Parent.Brigand.Activated=(Parent.SC.Text==&apos;\rc:ブリガンド\:Brigand\/r&apos;)&#xD;&#xA;Parent.Bruiser.Activated=(Parent.SC.Text==&apos;\rc:ブルーザー\:Bruiser\/r&apos;)&#xD;&#xA;Parent.Channeler.Activated=(Parent.SC.Text==&apos;\rc:チャネラー\:Channeler\/r&apos;)&#xD;&#xA;Parent.Coercer.Activated=(Parent.SC.Text==&apos;\rc:コウアーサー\:Coercer\/r&apos;)&#xD;&#xA;Parent.Conjuror.Activated=(Parent.SC.Text==&apos;\rc:コンジュラー\:Conjurer\/r&apos;)&#xD;&#xA;Parent.Defiler.Activated=(Parent.SC.Text==&apos;\rc:デファイラー\:Defiler\/r&apos;)&#xD;&#xA;Parent.Dirge.Activated=(Parent.SC.Text==&apos;\rc:ダージ\:Dirge\/r&apos;)&#xD;&#xA;Parent.Fury.Activated=(Parent.SC.Text==&apos;\rc:フューリー\:Fury\/r&apos;)&#xD;&#xA;Parent.Guardian.Activated=(Parent.SC.Text==&apos;\rc:ガーディアン\:Guardian\/r&apos;)&#xD;&#xA;Parent.Illusionist.Activated=(Parent.SC.Text==&apos;\rc:イリュージョニスト\:Illusionist\/r&apos;)&#xD;&#xA;Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;\rc:インクイジター\:Inquisitor\/r&apos;)&#xD;&#xA;Parent.Monk.Activated=(Parent.SC.Text==&apos;\rc:モンク\:Monk\/r&apos;)&#xD;&#xA;Parent.Mystic.Activated=(Parent.SC.Text==&apos;\rc:ミスティック\:Mystic\/r&apos;)&#xD;&#xA;Parent.Necromancer.Activated=(Parent.SC.Text==&apos;\rc:ネクロマンサー\:Necromancer\/r&apos;)&#xD;&#xA;Parent.Paladin.Activated=(Parent.SC.Text==&apos;\rc:パラディン\:Paladin\/r&apos;)&#xD;&#xA;Parent.Ranger.Activated=(Parent.SC.Text==&apos;\rc:レンジャー\:Ranger\/r&apos;)&#xD;&#xA;Parent.Shadowknight.Activated=(Parent.SC.Text==&quot;\rc:シャドウナイト\:Shadowknight\/r&quot;)&#xD;&#xA;Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;\rc:スワッシュバックラー\:Swashbuckler\/r&apos;)&#xD;&#xA;Parent.Templar.Activated=(Parent.SC.Text==&apos;\rc:テンプラー\:Templar\/r&apos;)&#xD;&#xA;Parent.Troubador.Activated=(Parent.SC.Text==&apos;\rc:トルバドール\:Troubador\/r&apos;)&#xD;&#xA;Parent.Warden.Activated=(Parent.SC.Text==&apos;\rc:ウォーデン\:Warden\/r&apos;)&#xD;&#xA;Parent.Warlock.Activated=(Parent.SC.Text==&apos;\rc:ウォーロック\:Warlock\/r&apos;)&#xD;&#xA;Parent.Wizard.Activated=(Parent.SC.Text==&apos;\rc:ウィザード\:Wizard\/r&apos;)" />
+            <Button Name="DetectRussian" OnPress="Parent.Assassin.Activated=(Parent.SC.Text==&apos;убийца&apos;)&#xD;&#xA;Parent.Beastlord.Activated=(Parent.SC.Text==&apos;Beastlord&apos;)&#xD;&#xA;Parent.Berserker.Activated=(Parent.SC.Text==&apos;берсерк&apos;)&#xD;&#xA;Parent.Brigand.Activated=(Parent.SC.Text==&apos;разбойник&apos;)&#xD;&#xA;Parent.Bruiser.Activated=(Parent.SC.Text==&apos;громила&apos;)&#xD;&#xA;Parent.Channeler.Activated=(Parent.SC.Text==&apos;Channeler&apos;)&#xD;&#xA;Parent.Coercer.Activated=(Parent.SC.Text==&apos;гипнотизер&apos;)&#xD;&#xA;Parent.Conjuror.Activated=(Parent.SC.Text==&apos;заклинатель&apos;)&#xD;&#xA;Parent.Defiler.Activated=(Parent.SC.Text==&apos;осквернитель&apos;)&#xD;&#xA;Parent.Dirge.Activated=(Parent.SC.Text==&apos;менестрель&apos;)&#xD;&#xA;Parent.Fury.Activated=(Parent.SC.Text==&apos;фурия&apos;)&#xD;&#xA;Parent.Guardian.Activated=(Parent.SC.Text==&apos;страж&apos;)&#xD;&#xA;Parent.Illusionist.Activated=(Parent.SC.Text==&apos;иллюзионист&apos;)&#xD;&#xA;Parent.Inquisitor.Activated=(Parent.SC.Text==&apos;инквизитор&apos;)&#xD;&#xA;Parent.Monk.Activated=(Parent.SC.Text==&apos;монах&apos;)&#xD;&#xA;Parent.Mystic.Activated=(Parent.SC.Text==&apos;мистик&apos;)&#xD;&#xA;Parent.Necromancer.Activated=(Parent.SC.Text==&apos;некромант&apos;)&#xD;&#xA;Parent.Paladin.Activated=(Parent.SC.Text==&apos;паладин&apos;)&#xD;&#xA;Parent.Ranger.Activated=(Parent.SC.Text==&apos;следопыт&apos;)&#xD;&#xA;Parent.Shadowknight.Activated=(Parent.SC.Text==&quot;темный&quot;)&#xD;&#xA;Parent.Swashbuckler.Activated=(Parent.SC.Text==&apos;головорез&apos;)&#xD;&#xA;Parent.Templar.Activated=(Parent.SC.Text==&apos;храмовник&apos;)&#xD;&#xA;Parent.Troubador.Activated=(Parent.SC.Text==&apos;трубадур&apos;)&#xD;&#xA;Parent.Warden.Activated=(Parent.SC.Text==&apos;хранитель&apos;)&#xD;&#xA;Parent.Warlock.Activated=(Parent.SC.Text==&apos;чернокнижник&apos;)&#xD;&#xA;Parent.Wizard.Activated=(Parent.SC.Text==&apos;волшебник&apos;)" />
+            <Button Name="Assassin" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Beastlord" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Berserker" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Brigand" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Bruiser" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Channeler" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Coercer" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Conjuror" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Defiler" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Dirge" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Fury" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Guardian" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Illusionist" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Inquisitor" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Monk" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Mystic" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Necromancer" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Paladin" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Ranger" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Shadowknight" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Swashbuckler" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Templar" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Troubador" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Warden" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Warlock" OnActivate="Activated=false Parent.Subclass=Name" />
+            <Button Name="Wizard" OnActivate="Activated=false Parent.Subclass=Name" />
+        </Page>

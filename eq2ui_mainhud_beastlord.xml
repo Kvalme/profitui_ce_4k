@@ -1,25 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page eq2usescomwndcontrols="true" Location="249,621" MinimumSize="28,28" Name="Beastlord" ScrollExtent="527,57" Size="527,57" UserMovable="true" version="2.0.0">
-	<Image Activated="true" GetsInput="true" Location="514,44" Name="MoveButton" OnHoverIn="Parent.UserResizable=false Parent.MoveButton.Visible=true" OnHoverOut="Parent.UserResizable=true Parent.MoveButton.Visible=false" PackLocation="right,bottom" ScrollExtent="12,12" Size="12,12" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Tooltip="Move here" UserScrollable="false" Visible="false" />
-    <IconBank Dragable="true" font="/TextStyles.NormalOutline.NormalOutlineStyle" framecolor="#B5935A" iconframepadding="0" iconpadding="0" iconstyle="/IconStyles.button" Location="3,3" Name="Icons" PackSize="a,a" renderframe="true" ScrollExtent="436,47" Size="436,47" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" UserMovable="true" UserResizable="true" OnHoverIn="Parent.MoveButton.Visible=true" OnHoverOut="Parent.MoveButton.Visible=false"/>
-    <Page Location="1,-2" Name="Normal" ScrollExtent="523,58" Size="523,58">
-        <Page AbsorbsInput="false" Name="BeastlordBar" ScrollExtent="553,58" Size="553,58">
-            <Image AbsorbsInput="false" Name="BeastlordHotbarLeft" PackLocation="left,bottom" PackSize="absolute,absolute" ScrollExtent="273,58" Size="273,58" Stretch="false" StretchType="ProportionalBound" Style="beastlord_hotbar_left" />
-            <Image AbsorbsInput="false" Location="260,4" Name="BeastlordHotbarRight" PackLocation="left,bottom" PackSize="absolute,absolute" ScrollExtent="263,53" Size="263,53" Stretch="false" StretchType="ProportionalCrop" Style="beastlord_hotbar_right" />
-            <ImageStyle Filter="true" Name="beastlord_hotbar_left">
-                <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="4,97,267,155" />
-            </ImageStyle>
-            <ImageStyle Filter="true" Name="beastlord_hotbar_right">
-                <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="4,157,267,210" />
-            </ImageStyle>
+        <Page eq2usescomwndcontrols="true" Location="249,621" MinimumSize="28,28" Name="Beastlord" ScrollExtent="527,57" Size="527,57" UserMovable="true" version="2.0.0">
+            <Image Activated="true" GetsInput="true" Location="514,44" Name="MoveButton" OnHoverIn="Parent.UserResizable=false Parent.MoveButton.Visible=true" OnHoverOut="Parent.UserResizable=true Parent.MoveButton.Visible=false" PackLocation="right,bottom" ScrollExtent="12,12" Size="12,12" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Tooltip="Move here" UserScrollable="false" Visible="false" />
+            <IconBank Dragable="true" font="/TextStyles.NormalOutline.NormalOutlineStyle" framecolor="#B5935A" iconframepadding="0" iconpadding="0" iconstyle="/IconStyles.button" Location="3,3" Name="Icons" OnHoverIn="Parent.MoveButton.Visible=true" OnHoverOut="Parent.MoveButton.Visible=false" PackSize="a,a" renderframe="true" ScrollExtent="436,47" Size="436,47" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" UserMovable="true" UserResizable="true" />
+            <Page Location="1,-2" Name="Normal" ScrollExtent="523,58" Size="523,58">
+                <Page AbsorbsInput="false" Name="BeastlordBar" ScrollExtent="553,58" Size="553,58">
+                    <Image AbsorbsInput="false" Name="BeastlordHotbarLeft" PackLocation="left,bottom" PackSize="absolute,absolute" ScrollExtent="273,58" Size="273,58" Stretch="false" StretchType="ProportionalBound" Style="beastlord_hotbar_left" />
+                    <Image AbsorbsInput="false" Location="260,4" Name="BeastlordHotbarRight" PackLocation="left,bottom" PackSize="absolute,absolute" ScrollExtent="263,53" Size="263,53" Stretch="false" StretchType="ProportionalCrop" Style="beastlord_hotbar_right" />
+                    <ImageStyle Filter="true" Name="beastlord_hotbar_left">
+                        <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="4,97,267,155" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="beastlord_hotbar_right">
+                        <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="4,157,267,210" />
+                    </ImageStyle>
+                </Page>
+                <IconBank BackgroundOpacity="1.000" Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconstyle="/IconStyles.button" Location="3,9" Name="Exploits" renderframe="true" ScrollExtent="176,44" Size="176,44" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" />
+                <IconBank BackgroundOpacity="1.000" Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconstyle="/IconStyles.button" Location="261,10" Name="Primals" renderframe="true" ScrollExtent="264,44" Size="264,44" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" />
+                <Page Name="Background" ScrollExtent="525,117" Size="525,117" />
+            </Page>
+            <Page AbsorbsInput="false" Location="-2,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="529,60" Size="529,60">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="529,60" Size="529,60" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="526,56" Size="526,56" />
+            </Page>
         </Page>
-        <IconBank BackgroundOpacity="1.000" Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconstyle="/IconStyles.button" Location="3,9" Name="Exploits" renderframe="true" ScrollExtent="176,44" Size="176,44" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" />
-        <IconBank BackgroundOpacity="1.000" Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconstyle="/IconStyles.button" Location="261,10" Name="Primals" renderframe="true" ScrollExtent="264,44" Size="264,44" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" />
-        <Page Name="Background" ScrollExtent="525,117" Size="525,117" />
-    </Page>
-
-    <Page AbsorbsInput="false" Location="-2,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="529,60" Size="529,60">
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="529,60" Size="529,60" />
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="526,56" Size="526,56" />
-    </Page>
-</Page>

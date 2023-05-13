@@ -1,22 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page OnShow="COND=cl_language==English
-gm9_LocalOffset=COND ? 0 : 23
-Earth.Time.Width=Earth.Time.Width - gm9_LocalOffset
-Norrath.Time.Width=Norrath.Time.Width - gm9_LocalOffset" allowcloseontop="false" DynamicDataFilter="0000" eq2usescomwndcontrols="true" Location="578,36" Name="Clock" PackLocation="nfn,nfn" PackLocationProp="0578/0001,0036/0001" PackSize="f,f" PackSizeProp="0002/0003,0002/0003" ScrollExtent="117,60" Size="117,60" UserMovable="true">
-<Checkbox Location="40,1" Name="TimerToggle" OnSet="show_window Custom.ProfitUI_Timer" OnUnset="hide_window Custom.ProfitUI_Timer" ScrollExtent="35,31" Size="35,31" Style="/ProfitUI_Styles.invisible"/>
-<Page Location="4,-2" Name="Earth" ScrollExtent="35,20" Size="35,20">
-<Text AbsorbsInput="false" DynamicData="/GameData.General.EarthTime" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText="20:24 PM" Location="0,3" MaxLines="1" Name="Time" Opacity="0.900" ScrollExtent="58,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="58,17" TextAlignment="Center" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false" UserMovable="true">20:24 PM</Text>
-</Page>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" LocalText="Earth" Location="3,12" MaxLines="1" Name="EarthText" Opacity="0.900" ScrollExtent="38,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="38,17" TextAlignment="Center" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false">Earth</Text>
-<Page Location="74,-2" Name="Norrath" ScrollExtent="35,20" Size="35,20">
-<Text AbsorbsInput="false" DynamicData="/GameData.General.Time" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText="20:24 PM" Location="0,3" MaxLines="1" Name="Time" Opacity="0.900" ScrollExtent="58,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="58,17" TextAlignment="Center" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false" UserMovable="true">20:24 PM</Text>
-</Page>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" LocalText="Norrath" Location="73,12" MaxLines="1" Name="NorrathText" Opacity="0.900" ScrollExtent="40,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="40,17" TextAlignment="Center" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false">Norrath</Text>
-<Image AbsorbsInput="false" BoundaryPolygon="26.000,1.000,10.000,6.000,0.000,26.000,8.000,47.000,26.000,53.000,45.000,45.000,53.000,27.000,47.000,9.000" GetsInput="true" Location="44,3" Name="Frame" ScrollExtent="28,28" Size="28,28" SourceRect="0,47,55,102" SourceResource="images/clock.dds"/>
-<Image AbsorbsInput="false" GetsInput="true" Location="46,19" Name="Land" ScrollExtent="23,12" Size="23,12" SourceRect="54,4,99,33" SourceResource="images/clock.dds"/>
-<Image AbsorbsInput="false" GetsInput="true" Location="46,5" Name="Dial" Rotation="-0.200" ScrollExtent="24,24" Size="24,24" SourceRect="1,1,47,47" SourceResource="images/clock.dds"/>
-<Page AbsorbsInput="false" Enabled="false" GetsInput="false" Location="0,32" Name="WC_Frame" PackSize="a,a" PackSizeProp="0000/0001,0034/0001" ScrollExtent="117,26" Size="117,26">
-<Text AbsorbsInput="false" DynamicData="/GameData.Self.ZoneLocaleName" Font="/ProfitUI_Styles.Fonts.FontArial14T" MaxLines="2" Name="Zone" Opacity="0.900" ScrollExtent="117,26" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="117,26" TextAlignment="Center" TextColor="#FFFF00" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false">This is just a very long zone name</Text>
-</Page>
-<Page Name="WC_Backdrop" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" ScrollExtent="117,60" Size="117,60"/>
-</Page>
+        <Page allowcloseontop="false" DynamicDataFilter="0000" eq2usescomwndcontrols="true" Location="578,36" Name="Clock" OnShow="COND=cl_language==English&#xA;gm9_LocalOffset=COND ? 0 : 23&#xA;Earth.Time.Width=Earth.Time.Width - gm9_LocalOffset&#xA;Norrath.Time.Width=Norrath.Time.Width - gm9_LocalOffset" PackLocation="nfn,nfn" PackSize="f,f" ScrollExtent="117,60" Size="117,60" UserMovable="true">
+            <Checkbox Location="40,1" Name="TimerToggle" OnSet="show_window Custom.ProfitUI_Timer" OnUnset="hide_window Custom.ProfitUI_Timer" ScrollExtent="35,31" Size="35,31" Style="/ProfitUI_Styles.invisible" />
+            <Page Location="4,-2" Name="Earth" ScrollExtent="35,20" Size="35,20">
+                <Text AbsorbsInput="false" DynamicData="/GameData.General.EarthTime" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="0,3" MaxLines="1" Name="Time" Opacity="0.900" ScrollExtent="58,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="58,17" TextAlignment="Center" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false" UserMovable="true">20:24 PM</Text>
+            </Page>
+            <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="3,12" MaxLines="1" Name="EarthText" Opacity="0.900" ScrollExtent="38,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="38,17" TextAlignment="Center" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false">Earth</Text>
+            <Page Location="74,-2" Name="Norrath" ScrollExtent="35,20" Size="35,20">
+                <Text AbsorbsInput="false" DynamicData="/GameData.General.Time" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="0,3" MaxLines="1" Name="Time" Opacity="0.900" ScrollExtent="58,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="58,17" TextAlignment="Center" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false" UserMovable="true">20:24 PM</Text>
+            </Page>
+            <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="73,12" MaxLines="1" Name="NorrathText" Opacity="0.900" ScrollExtent="40,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="40,17" TextAlignment="Center" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false">Norrath</Text>
+            <Image AbsorbsInput="false" BoundaryPolygon="26.000,1.000,10.000,6.000,0.000,26.000,8.000,47.000,26.000,53.000,45.000,45.000,53.000,27.000,47.000,9.000" GetsInput="true" Location="44,3" Name="Frame" ScrollExtent="28,28" Size="28,28" SourceRect="0,47,55,102" SourceResource="images/clock.dds" />
+            <Image AbsorbsInput="false" GetsInput="true" Location="46,19" Name="Land" ScrollExtent="23,12" Size="23,12" SourceRect="54,4,99,33" SourceResource="images/clock.dds" />
+            <Image AbsorbsInput="false" GetsInput="true" Location="46,5" Name="Dial" Rotation="-0.200" ScrollExtent="24,24" Size="24,24" SourceRect="1,1,47,47" SourceResource="images/clock.dds" />
+            <Page AbsorbsInput="false" Enabled="false" GetsInput="false" Location="0,32" Name="WC_Frame" PackSize="a,a" ScrollExtent="117,26" Size="117,26">
+                <Text AbsorbsInput="false" DynamicData="/GameData.Self.ZoneLocaleName" Font="/ProfitUI_Styles.Fonts.FontArial14T" MaxLines="2" Name="Zone" Opacity="0.900" ScrollExtent="117,26" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="117,26" TextAlignment="Center" TextColor="#FFFF00" TooltipStyle="/TooltipStyles.tooltip_default" TruncateElipsis="false">This is just a very long zone name</Text>
+            </Page>
+            <Page Name="WC_Backdrop" PackSize="a,a" ScrollExtent="117,60" Size="117,60" />
+        </Page>

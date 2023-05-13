@@ -1,52 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page eq2usescomwndcontrols="true" Location="701,623" MaximumSize="1024,1024" MinimumSize="32,32" Name="Effects" PackLocation="fff,fff" PackLocationProp="-173/0001,-019/0001" Size="222,126" Tooltip=":420d9f72d322771c:Spell Effects" UserMovable="true" UserResizable="true">
-<VolumePage AbsorbsInput="false" CellCount="1,5" CellPadding="0,0" CellSelectable="false" CellSize="24,24" Location="3,3" MinimumScrollExtent="24,120" Name="Volume" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" Size="216,120" VolumeFill="left2right_down">
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect1" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect2" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect3" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect4" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect5" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect6" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect7" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect8" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect9" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect10" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect11" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect12" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect13" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect14" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect15" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect16" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect17" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect18" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect19" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect20" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect21" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect22" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect23" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect24" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect25" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect26" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect27" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect28" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect29" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect30" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect31" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect32" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect33" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect34" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect35" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect36" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect37" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect38" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect39" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect40" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect41" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect42" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect43" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect44" Size="24,24" TreatAsButton="true" />
-<Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect45" Size="24,24" TreatAsButton="true" />
- </VolumePage>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Frame" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/FrameStyles.single_pixel" Size="222,126" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Backdrop" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" Size="222,126" />
-</Page>
+        <Page eq2usescomwndcontrols="true" Location="701,623" MaximumSize="1024,1024" MinimumSize="32,32" Name="Effects" PackLocation="fff,fff" ScrollExtent="222,126" Size="222,126" Tooltip=":420d9f72d322771c:Spell Effects" UserMovable="true" UserResizable="true">
+            <VolumePage AbsorbsInput="false" CellCount="9,5" CellPadding="0,0" CellSelectable="false" CellSize="24,24" Location="3,3" MinimumScrollExtent="216,120" Name="Volume" PackSize="a,a" ScrollExtent="216,120" Size="216,120">
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect1" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="24,0" MouseOverColor="#FFFF00" Name="Effect2" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="48,0" MouseOverColor="#FFFF00" Name="Effect3" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="72,0" MouseOverColor="#FFFF00" Name="Effect4" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="96,0" MouseOverColor="#FFFF00" Name="Effect5" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="120,0" MouseOverColor="#FFFF00" Name="Effect6" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="144,0" MouseOverColor="#FFFF00" Name="Effect7" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="168,0" MouseOverColor="#FFFF00" Name="Effect8" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="192,0" MouseOverColor="#FFFF00" Name="Effect9" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="0,24" MouseOverColor="#FFFF00" Name="Effect10" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="24,24" MouseOverColor="#FFFF00" Name="Effect11" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="48,24" MouseOverColor="#FFFF00" Name="Effect12" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="72,24" MouseOverColor="#FFFF00" Name="Effect13" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="96,24" MouseOverColor="#FFFF00" Name="Effect14" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="120,24" MouseOverColor="#FFFF00" Name="Effect15" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="144,24" MouseOverColor="#FFFF00" Name="Effect16" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="168,24" MouseOverColor="#FFFF00" Name="Effect17" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="192,24" MouseOverColor="#FFFF00" Name="Effect18" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="0,48" MouseOverColor="#FFFF00" Name="Effect19" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="24,48" MouseOverColor="#FFFF00" Name="Effect20" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="48,48" MouseOverColor="#FFFF00" Name="Effect21" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="72,48" MouseOverColor="#FFFF00" Name="Effect22" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="96,48" MouseOverColor="#FFFF00" Name="Effect23" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="120,48" MouseOverColor="#FFFF00" Name="Effect24" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="144,48" MouseOverColor="#FFFF00" Name="Effect25" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="168,48" MouseOverColor="#FFFF00" Name="Effect26" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="192,48" MouseOverColor="#FFFF00" Name="Effect27" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="0,72" MouseOverColor="#FFFF00" Name="Effect28" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="24,72" MouseOverColor="#FFFF00" Name="Effect29" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="48,72" MouseOverColor="#FFFF00" Name="Effect30" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="72,72" MouseOverColor="#FFFF00" Name="Effect31" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="96,72" MouseOverColor="#FFFF00" Name="Effect32" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="120,72" MouseOverColor="#FFFF00" Name="Effect33" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="144,72" MouseOverColor="#FFFF00" Name="Effect34" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="168,72" MouseOverColor="#FFFF00" Name="Effect35" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="192,72" MouseOverColor="#FFFF00" Name="Effect36" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="0,96" MouseOverColor="#FFFF00" Name="Effect37" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="24,96" MouseOverColor="#FFFF00" Name="Effect38" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="48,96" MouseOverColor="#FFFF00" Name="Effect39" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="72,96" MouseOverColor="#FFFF00" Name="Effect40" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="96,96" MouseOverColor="#FFFF00" Name="Effect41" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="120,96" MouseOverColor="#FFFF00" Name="Effect42" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="144,96" MouseOverColor="#FFFF00" Name="Effect43" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="168,96" MouseOverColor="#FFFF00" Name="Effect44" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="192,96" MouseOverColor="#FFFF00" Name="Effect45" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
+            </VolumePage>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="222,126" Size="222,126" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Backdrop" PackSize="a,a" ScrollExtent="222,126" Size="222,126" />
+        </Page>

@@ -1,29 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page AbsorbsInput="false" alwaysonbottom="true" Enabled="false" GetsInput="false" Name="LetterboxFrame" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768">
-<Button Name="AdjustVerticalLetterbox" OnActivate="Parent.LeftBlackPage.Visible=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.VerticalLetterboxEnabled.Text
-Parent.RightBlackPage.Visible=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.VerticalLetterboxEnabled.Text
-Parent.LeftBlackPage.Width=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.LeftWidth.Text
-Parent.RightBlackPage.Width=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.RightWidth.Text
-Data=Parent.Width-Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.RightWidth.Text
-Parent.RightBlackPage.Location=Data ## ',0'
-Data=Parent.RightBlackPage.Left - 5
-COND=Parent.TopBlackPage.Visible==true
-Parent.TopBlackPage.Height=COND ? Parent.TopBlackPage.Height : 0
-Parent.RightFrame.Location=Data ## ',' ## Parent.TopBlackPage.Height
-Data=Parent.Height - Parent.TopBlackPage.Height 
-Data=Data - Parent.TopBlackPage.Height
-Data=Data + 1
-Parent.RightFrame.Height=Data
-Parent.LeftFrame.Height=Data
-Data=Parent.LeftBlackPage.Width - 5
-Parent.LeftFrame.Location=Data ## ',' ## Parent.TopBlackPage.Height
-Activated=false" Size="0,0" Visible="false" />
-<Image Location="99,99" Name="LeftFrame" PackLocation="left,top" PackSize="f,a" ScrollExtent="8,572" Size="8,572" SourceRect="502,406,510,489" SourceResource="images/window_elements_generic.dds" />
-<Image Location="918,99" Name="RightFrame" PackLocation="right,top" PackSize="f,a" ScrollExtent="8,572" Size="8,572" SourceRect="502,406,510,489" SourceResource="images/window_elements_generic.dds" />
-<Page BackgroundOpacity="1.000" Location="923,-5" Name="RightBlackPage" OnHide="Parent.RightFrame.Visible=false" OnShow="Parent.RightFrame.Visible=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.ShowVerticalEdge.Text" PackLocation="right,top" PackSize="f,a" ScrollExtent="103,775" Size="103,775" UserResizable="true" Visible="false" />
-<Page BackgroundOpacity="1.000" Location="0,-2" Name="LeftBlackPage" OnHide="Parent.LeftFrame.Visible=false" OnShow="Parent.LeftFrame.Visible=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.ShowVerticalEdge.Text" PackLocation="left,top" PackSize="f,a" ScrollExtent="103,775" Size="103,775" UserResizable="true" Visible="false" />
-<Image Location="0,97" Name="TopFrame" OnShow="Parent.AdjustVerticalLetterbox.Activated=true" PackSize="absolute,fixed" ScrollExtent="1024,14" Size="1024,14" SourceRect="219,400,463,414" SourceResource="images/window_elements_generic.dds" Visible="false" />
-<Image Location="0,666" Name="BottomFrame" PackSize="absolute,fixed" ScrollExtent="1024,5" Size="1024,5" SourceRect="222,502,463,507" SourceResource="images/window_elements_generic.dds" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,673" Name="BottomBlackPage" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="1024,100" Size="1024,100" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="TopBlackPage" OnHide="Parent.AdjustVerticalLetterbox.Activated=true" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="1024,92" Size="1024,92" />
-</Page>
+        <Page AbsorbsInput="false" alwaysonbottom="true" Enabled="false" GetsInput="false" Name="LetterboxFrame" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768">
+            <Button Name="AdjustVerticalLetterbox" OnActivate="Parent.LeftBlackPage.Visible=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.VerticalLetterboxEnabled.Text&#xD;&#xA;Parent.RightBlackPage.Visible=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.VerticalLetterboxEnabled.Text&#xD;&#xA;Parent.LeftBlackPage.Width=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.LeftWidth.Text&#xD;&#xA;Parent.RightBlackPage.Width=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.RightWidth.Text&#xD;&#xA;Data=Parent.Width-Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.RightWidth.Text&#xD;&#xA;Parent.RightBlackPage.Location=Data ## &apos;,0&apos;&#xD;&#xA;Data=Parent.RightBlackPage.Left - 5&#xD;&#xA;COND=Parent.TopBlackPage.Visible==true&#xD;&#xA;Parent.TopBlackPage.Height=COND ? Parent.TopBlackPage.Height : 0&#xD;&#xA;Parent.RightFrame.Location=Data ## &apos;,&apos; ## Parent.TopBlackPage.Height&#xD;&#xA;Data=Parent.Height - Parent.TopBlackPage.Height &#xD;&#xA;Data=Data - Parent.TopBlackPage.Height&#xD;&#xA;Data=Data + 1&#xD;&#xA;Parent.RightFrame.Height=Data&#xD;&#xA;Parent.LeftFrame.Height=Data&#xD;&#xA;Data=Parent.LeftBlackPage.Width - 5&#xD;&#xA;Parent.LeftFrame.Location=Data ## &apos;,&apos; ## Parent.TopBlackPage.Height&#xD;&#xA;Activated=false" Visible="false" />
+            <Image Location="99,99" Name="LeftFrame" PackLocation="left,top" PackSize="f,a" ScrollExtent="8,572" Size="8,572" SourceRect="502,406,510,489" SourceResource="images/window_elements_generic.dds" Visible="false" />
+            <Image Location="918,99" Name="RightFrame" PackLocation="right,top" PackSize="f,a" ScrollExtent="8,572" Size="8,572" SourceRect="502,406,510,489" SourceResource="images/window_elements_generic.dds" Visible="false" />
+            <Page BackgroundOpacity="1.000" Location="923,-5" Name="RightBlackPage" OnHide="Parent.RightFrame.Visible=false" OnShow="Parent.RightFrame.Visible=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.ShowVerticalEdge.Text" PackLocation="right,top" PackSize="f,a" ScrollExtent="103,775" Size="103,775" UserResizable="true" Visible="false" />
+            <Page BackgroundOpacity="1.000" Location="0,-2" Name="LeftBlackPage" OnHide="Parent.LeftFrame.Visible=false" OnShow="Parent.LeftFrame.Visible=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LetterboxOptions.ShowVerticalEdge.Text" PackLocation="left,top" PackSize="f,a" ScrollExtent="103,775" Size="103,775" UserResizable="true" Visible="false" />
+            <Image Location="0,97" Name="TopFrame" OnShow="Parent.AdjustVerticalLetterbox.Activated=true" PackSize="absolute,fixed" ScrollExtent="1024,14" Size="1024,14" SourceRect="219,400,463,414" SourceResource="images/window_elements_generic.dds" Visible="false" />
+            <Image Location="0,666" Name="BottomFrame" PackSize="absolute,fixed" ScrollExtent="1024,5" Size="1024,5" SourceRect="222,502,463,507" SourceResource="images/window_elements_generic.dds" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,673" Name="BottomBlackPage" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="1024,100" Size="1024,100" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="TopBlackPage" OnHide="Parent.AdjustVerticalLetterbox.Activated=true" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="1024,92" Size="1024,92" />
+        </Page>

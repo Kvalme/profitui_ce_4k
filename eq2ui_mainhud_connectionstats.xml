@@ -1,52 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="774,1" MaximumSize="300,300" Name="ConnectionStats" ScrollExtent="210,77" Size="210,77" UserMovable="true" UserScrollable="false" version="1.0.1" version_note="AbsorbsInput=false everywhere" Visible="false">
-    <Page AbsorbsInput="false" Location="4,20" Name="Stats" ScrollExtent="84,53" Size="84,53">
-        <Text AbsorbsInput="false" Color="#00FFFF" DynamicData="/GameData.General.Ping" Font="/TextStyles.Small.SmallStyle" Location="45,9" Name="PingValue" ScrollExtent="32,12" Size="32,12" TextAlignment="Right" Tooltip=":a48c658cb7608339:Ping in Milliseconds (Click to view graph)">:a48c658c4bd85ce8:1000</Text>
-        <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.General.PacketLoss" Font="/TextStyles.Small.SmallStyle" Location="45,21" Name="PLValue" ScrollExtent="32,12" Size="32,12" TextAlignment="Right" Tooltip=":a48c658cb7608339_1:Packet Loss (Click to view graph)">:a48c658c5ea2da1e:10</Text>
-        <Text AbsorbsInput="false" Color="#FFFF00" DynamicData="/GameData.General.BytesPerSecond" Font="/TextStyles.Small.SmallStyle" Location="45,33" Name="BPSValue" ScrollExtent="32,12" Size="32,12" TextAlignment="Right" Tooltip=":a48c658cb7608339_2:Bytes per Second (Click to view graph)">:a48c658c777dfdf8:45000</Text>
-        <Text AbsorbsInput="false" Color="#00FF00" DynamicData="/GameData.General.FramesPerSecond" Font="/TextStyles.SuperLarge.SuperLargeStyle" Name="FPSValue" ScrollExtent="60,53" Size="60,53" TextAlignment="Center" TextAlignmentVertical="Center" Tooltip=":a48c658cb7608339_3:Frames Per Second (Click to view graph)">:a48c658c66e47c4f:61</Text>
-    </Page>
-    <Page AbsorbsInput="false" Location="89,21" Name="PingGraph" ScrollExtent="117,52" Size="117,52">
-        <Button Location="100,18" Name="hidegraph" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_right" Tooltip=":a48c658c243cddd6:Hide graph" />
-        <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="75,0" Name="LabelHigh" ScrollExtent="40,12" Size="40,12" TextAlignment="Right">:a48c658c4bd85ce8_1:1000</Text>
-        <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="91,40" Name="LabelLow" ScrollExtent="24,12" Size="24,12" TextAlignment="Right">:a48c658c0b2420de_4:0</Text>
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="88,0" Name="ping30" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="85,0" Name="ping29" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="82,0" Name="ping28" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="79,0" Name="ping27" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="76,0" Name="ping26" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="73,0" Name="ping25" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="70,0" Name="ping24" Progress="0.350" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="67,0" Name="ping23" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="64,0" Name="ping22" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="61,0" Name="ping21" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="58,0" Name="ping20" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="55,0" Name="ping19" Progress="0.200" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="52,0" Name="ping18" Progress="0.150" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="49,0" Name="ping17" Progress="0.100" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="46,0" Name="ping16" Progress="0.150" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="43,0" Name="ping15" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="40,0" Name="ping14" Progress="0.500" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="37,0" Name="ping13" Progress="0.700" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="34,0" Name="ping12" Progress="0.850" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="31,0" Name="ping11" Progress="0.950" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="28,0" Name="ping10" Progress="0.900" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="25,0" Name="ping9" Progress="0.850" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="22,0" Name="ping8" Progress="0.800" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="19,0" Name="ping7" Progress="0.750" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="16,0" Name="ping6" Progress="0.700" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="13,0" Name="ping5" Progress="0.600" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="10,0" Name="ping4" Progress="0.500" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="7,0" Name="ping3" Progress="0.400" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="4,0" Name="ping2" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="1,0" Name="ping1" Progress="0.200" ScrollExtent="2,50" Size="2,50" Style="style" />
-        <ProgressbarStyle Bar.Background="/SpecialElements.AdventureXP.data.progressbar.fill" Layout="Vertical" Name="style" />
-    </Page>
-    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="210,77" Size="210,77">
-        <Page AbsorbsInput="false" PackSize="a,f" SizeIncrement="1,0" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" Size="210,20">
-			<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="0,1" MaxLines="1" Name="Title" PackSize="a,f" Size="210,20" TextAlignment="Center" TextAlignmentVertical="Center" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Opacity="0.600" >Stats</Text>
-			<Button Enabled="false" GetsInput="false" Name="TitleBarRight" PackSize="a,f" ScrollExtent="210,20" Size="210,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarRight" />
-		</Page>
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="207,73" Size="207,73" />
-    </Page>
-</Page>
+        <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="774,1" MaximumSize="300,300" Name="ConnectionStats" ScrollExtent="210,77" Size="210,77" UserMovable="true" UserScrollable="false" version="1.0.1" version_note="AbsorbsInput=false everywhere" Visible="false">
+            <Page AbsorbsInput="false" Location="4,20" Name="Stats" ScrollExtent="84,53" Size="84,53">
+                <Text AbsorbsInput="false" Color="#00FFFF" DynamicData="/GameData.General.Ping" Font="/TextStyles.Small.SmallStyle" Location="45,9" Name="PingValue" ScrollExtent="32,36" Size="32,12" TextAlignment="Right" Tooltip=":a48c658cb7608339:Ping in Milliseconds (Click to view graph)">:a48c658c4bd85ce8:1000</Text>
+                <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.General.PacketLoss" Font="/TextStyles.Small.SmallStyle" Location="45,21" Name="PLValue" ScrollExtent="32,18" Size="32,12" TextAlignment="Right" Tooltip=":a48c658cb7608339_1:Packet Loss (Click to view graph)">:a48c658c5ea2da1e:10</Text>
+                <Text AbsorbsInput="false" Color="#FFFF00" DynamicData="/GameData.General.BytesPerSecond" Font="/TextStyles.Small.SmallStyle" Location="45,33" Name="BPSValue" ScrollExtent="32,36" Size="32,12" TextAlignment="Right" Tooltip=":a48c658cb7608339_2:Bytes per Second (Click to view graph)">:a48c658c777dfdf8:45000</Text>
+                <Text AbsorbsInput="false" Color="#00FF00" DynamicData="/GameData.General.FramesPerSecond" Font="/TextStyles.SuperLarge.SuperLargeStyle" Name="FPSValue" ScrollExtent="60,53" Size="60,53" TextAlignment="Center" TextAlignmentVertical="Center" Tooltip=":a48c658cb7608339_3:Frames Per Second (Click to view graph)">:a48c658c66e47c4f:61</Text>
+            </Page>
+            <Page AbsorbsInput="false" Location="89,21" Name="PingGraph" ScrollExtent="117,52" Size="117,52">
+                <Button Location="100,18" Name="hidegraph" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_right" Tooltip=":a48c658c243cddd6:Hide graph" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="75,0" Name="LabelHigh" ScrollExtent="40,18" Size="40,12" TextAlignment="Right">:a48c658c4bd85ce8_1:1000</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="91,40" Name="LabelLow" ScrollExtent="24,18" Size="24,12" TextAlignment="Right">:a48c658c0b2420de_4:0</Text>
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="88,0" Name="ping30" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="85,0" Name="ping29" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="82,0" Name="ping28" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="79,0" Name="ping27" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="76,0" Name="ping26" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="73,0" Name="ping25" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="70,0" Name="ping24" Progress="0.350" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="67,0" Name="ping23" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="64,0" Name="ping22" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="61,0" Name="ping21" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="58,0" Name="ping20" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="55,0" Name="ping19" Progress="0.200" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="52,0" Name="ping18" Progress="0.150" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="49,0" Name="ping17" Progress="0.100" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="46,0" Name="ping16" Progress="0.150" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="43,0" Name="ping15" Progress="0.250" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="40,0" Name="ping14" Progress="0.500" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="37,0" Name="ping13" Progress="0.700" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="34,0" Name="ping12" Progress="0.850" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="31,0" Name="ping11" Progress="0.950" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="28,0" Name="ping10" Progress="0.900" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="25,0" Name="ping9" Progress="0.850" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="22,0" Name="ping8" Progress="0.800" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="19,0" Name="ping7" Progress="0.750" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="16,0" Name="ping6" Progress="0.700" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="13,0" Name="ping5" Progress="0.600" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="10,0" Name="ping4" Progress="0.500" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="7,0" Name="ping3" Progress="0.400" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="4,0" Name="ping2" Progress="0.300" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <Progressbar BackgroundColor="#000000" Color="#00CCFF" Location="1,0" Name="ping1" Progress="0.200" ScrollExtent="2,50" Size="2,50" Style="style" />
+                <ProgressbarStyle Bar.Background="/SpecialElements.AdventureXP.data.progressbar.fill" Layout="Vertical" Name="style" />
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="210,77" Size="210,77">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="210,20" Size="210,20" SizeIncrement="1,0">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="0,1" MaxLines="1" Name="Title" Opacity="0.600" PackSize="a,f" ScrollExtent="210,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="210,20" TextAlignment="Center" TextAlignmentVertical="Center">Stats</Text>
+                    <Button Enabled="false" GetsInput="false" Name="TitleBarRight" PackSize="a,f" ScrollExtent="210,20" Size="210,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarRight" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="207,73" Size="207,73" />
+            </Page>
+        </Page>

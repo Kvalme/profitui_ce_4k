@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page AbsorbsInput="false" Cursor="default" CursorSet="default_set" IgnoreTab="false" MinimumSize="800,600" Name="root" PackSize="1,1" ScrollExtent="1024,768" Size="1024,768" TooltipStyle="/TooltipStyles.tooltip_default">
+<Page AbsorbsInput="false" Cursor="default" CursorSet="default_set" IgnoreTab="false" MinimumSize="800,600" Name="root" PackSize="1,1" ScrollExtent="1024,768" SearchFilter.Visible="true" Size="1024,768" TooltipStyle="/TooltipStyles.tooltip_default">
 <include>eq2ui_skininfo.xml</include>
 <include>eq2ui_gamedata.xml</include>
 <include>eq2ui_commonelements.xml</include>
@@ -41,6 +41,7 @@
 <include>eq2ui_community.xml</include>
 <include>eq2ui_examine.xml</include>
 <include>eq2ui_mainhud.xml</include>
+<include>eq2ui_custom.xml</include>
 <include>eq2ui_custom.xml</include>
 <include>eq2ui_proxyactor.xml</include>
 <include>eq2ui_ime.xml</include>

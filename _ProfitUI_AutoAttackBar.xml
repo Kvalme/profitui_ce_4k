@@ -1,81 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page OnShow="Data.Visible=WC_Frame.Visible" eq2usescomwndcontrols="true" Location="806,591" MaximumSize="361,50" MinimumSize="150,34" Name="ProfitUI_AutoAttackBar" Size="361,50" UserMovable="true" UserResizable="true" version="3.2">
-<ProgressbarStyle Bar.Background="progress_fill" Name="progress_style"/>
-<ImageStyle Name="progress_fill">
-<ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="221,483,379,489"/>
-</ImageStyle>
-<Page Name="Data" Text="Razieh>Lint>Gaige" Visible="False">
-<Image OnHide="Parent.Parent.CombatCheck.Visible=False" OnShow="" DynamicData="/GameData.Self.IsHated" Name="IsHated" />
-<Page Name="Pswitch" OnHide="Parent.Parent.Rcheck.Visible=True" OnShow="Parent.Parent.Mcheck.Visible=True" DynamicData="/GameData.Self.TimeSinceAutoAttack" />
-<Page Name="Sswitch" OnHide="Parent.Parent.Rcheck.Visible=True" OnShow="Parent.Parent.Mcheck.Visible=True" DynamicData="/GameData.Self.TimeSinceSecondaryAutoAttack" />
-<Page Name="Rswitch" OnHide="Parent.Parent.Mcheck.Visible=True" OnShow="Parent.Parent.Rcheck.Visible=True" DynamicData="/GameData.Self.TimeSinceRangedAutoAttack" />
-<Text DynamicData="/GameData.Stats.Primary_Delay" Name="Pdelay" />
-<Text OnTextChanged="Parent.Parent.SecondaryCheck.Visible=True" DynamicData="/GameData.Stats.Secondary_Delay" Name="Sdelay" />
-</Page>
-<Page Name="Rcheck" OnShow="BtempP=Parent.Data.Pswitch.Visible
-BtempS=Parent.Data.Sswitch.Visible
-Parent.RToggle.Visible=BtempP || BtempS
-Parent.CombatCheck.Visible=Parent.Data.IsHated.Visible
-Visible=False" Visible="False" />
-<Page Name="RToggle" OnHide="Parent.RFix.Visible=Parent.Data.Rswitch.Visible
-Visible=True" Visible="True" />
-<Page Name="RFix" OnShow="Parent.Ranged.Visible=True
-Parent.Melee.Visible=False
-Visible=False" Visible="False" />
-<Page Name="Mcheck" OnShow="BtempP=Parent.Data.Pswitch.Visible
-BtempS=Parent.Data.Sswitch.Visible
-Parent.MToggle.Visible=BtempP || BtempS
-Parent.CombatCheck.Visible=Parent.Data.IsHated.Visible
-Visible=False" Visible="False" />
-<Page Name="MToggle" OnShow="Parent.MFix.Visible=Parent.Data.Rswitch.Visible
-Visible=False" Visible="False" />
-<Page Name="MFix" OnHide="Parent.Ranged.Visible=False
-Parent.Melee.Visible=True
-Parent.Melee.Primary.Visible=True
-Parent.SecondaryCheck.Visible=True
-Visible=True" Visible="True" />
-<Page Name="SecondaryCheck" OnShow="BtempS=(Parent.Data.Sdelay.Text) '>' (0)
-Parent.Melee.Secondary.Visible=BtempS
-Parent.DWCheck.Visible=Parent.Data.Visible
-Visible=False" Visible="False" />
-<Page Name="DWCheck" OnShow="BtempC=(Parent.Data.Sdelay.Text) '!=' (Parent.Data.Pdelay.Text)
-BtempS=(Parent.Data.Sdelay.Text) '>' (0)
-BtempA=(BtempC == True)
-BtempB=(BtempS == True)
-BtempF=(BtempA == BtempB)
-Parent.Melee.Secondary.Visible=BtempF
-Visible=False" Visible="False" />
-<Page Name="CombatCheck" OnHide="BtempP=Parent.Data.Pswitch.Visible
-BtempS=Parent.Data.Sswitch.Visible
-BtempR=Parent.Data.Rswitch.Visible
-Parent.OOC.Visible=BtempP || BtempS || BtempR
-Visible=True" Visible="True" />
-<Page Name="OOC" OnHide="hide_window Custom.ProfitUI_AutoAttackBar
-Visible=True" Visible="True" />
-<Page Location="6,0" Visible="True" AbsorbsInput="false" Name="Ranged" PackSize="a,a" size="349,50">
-<Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Margin="1,0,2,2" Name="MLabel" PackSize="a,f" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="350,20" TextAlignment="Center" TextColor="#F0D080">Ranged Auto Attack</Text>
-<Progressbar Color="#ff7e00" Visible="False" AbsorbsInput="false" BackgroundColor="#000000" Location="3,23" Name="OOC" PackSize="a,f" Progress="1.00" Size="343,8" Style="progress_style"/>
-<Progressbar Onshow="Parent.OOC.Visible=False" OnHide="Parent.OOC.Visible=True" AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Self.TimeSinceRangedAutoAttack" Location="3,23" Name="Bar" PackSize="a,f" Progress="0.500" Size="343,8" Style="progress_style"/>
-<Image AbsorbsInput="false" Location="3,23" Name="Bkg" PackSize="a,f" Size="343,8" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" Location="0,20" BackgroundOpacity="1.000" Name="Frame" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" Size="349,14"/>
-</Page>
-<Page Name="Melee" AbsorbsInput="false" PackSize="a,a" size="349,50" Location="6,0" Visible="True">
-<Page AbsorbsInput="false" Name="Primary" PackSize="a,a" size="349,50">
-<Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Margin="1,0,2,2" Name="MLabel" PackSize="a,f" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="350,20" TextAlignment="Center" TextColor="#F0D080">Melee Auto Attack</Text>
-<Progressbar Color="#ff7e00" Visible="False" AbsorbsInput="false" BackgroundColor="#000000" Location="3,23" Name="OOC" PackSize="a,f" Progress="1.00" Size="343,8" Style="progress_style"/>
-<Progressbar Onshow="Parent.OOC.Visible=False" OnHide="Parent.OOC.Visible=True" AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Self.TimeSinceAutoAttack" Location="3,23" Name="Bar" PackSize="a,f" Progress="0.500" Size="343,8" Style="progress_style"/>
-<Image AbsorbsInput="false" Location="3,23" Name="Bkg" PackSize="a,f" Size="343,8" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" Location="0,20" BackgroundOpacity="1.000" Name="Frame" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" Size="349,14"/>
-</Page>
-<Page AbsorbsInput="false" Name="Secondary" PackSize="a,a" size="349,50">
-<Progressbar Color="#ff7e00" Visible="False" AbsorbsInput="false" BackgroundColor="#000000" Location="3,36" Name="OOC" PackSize="a,f" Progress="1.00" Size="343,8" Style="progress_style"/>
-<Progressbar Onshow="Parent.OOC.Visible=False" OnHide="Parent.OOC.Visible=True" AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Self.TimeSinceSecondaryAutoAttack" Location="3,36" Name="Bar" PackSize="a,f" Progress="0.500" Size="343,8" Style="progress_style"/>
-<Image AbsorbsInput="false" Location="3,36" Name="Bkg" PackSize="a,f" Size="343,8" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" Location="0,33" BackgroundOpacity="1.000" Name="Frame" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" Size="349,14"/>
-</Page>
-</Page>
-<Page Name="WC_Frame" Onshow="Parent.Data.Visible=True
-Parent.SecondaryCheck.Visible=True" OnHide="Parent.Data.Visible=False
-Parent.SecondaryCheck.Visible=True" RStyleDefault="/FrameStyles.single_pixel" PackSize="a,a" AbsorbsInput="false" Size="361,50" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackSize="a,a" Size="361,50" />
-</Page>
+        <Page eq2usescomwndcontrols="true" Location="806,591" MaximumSize="361,50" MinimumSize="150,34" Name="ProfitUI_AutoAttackBar" OnShow="Data.Visible=WC_Frame.Visible" ScrollExtent="361,50" Size="361,50" UserMovable="true" UserResizable="true" version="3.2">
+            <ProgressbarStyle Bar.Background="progress_fill" Name="progress_style" />
+            <ImageStyle Name="progress_fill">
+                <ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="221,483,379,489" />
+            </ImageStyle>
+            <Page Name="Data" Text="Razieh&gt;Lint&gt;Gaige" Visible="false">
+                <Image DynamicData="/GameData.Self.IsHated" Name="IsHated" OnHide="Parent.Parent.CombatCheck.Visible=False" />
+                <Page DynamicData="/GameData.Self.TimeSinceAutoAttack" Name="Pswitch" OnHide="Parent.Parent.Rcheck.Visible=True" OnShow="Parent.Parent.Mcheck.Visible=True" />
+                <Page DynamicData="/GameData.Self.TimeSinceSecondaryAutoAttack" Name="Sswitch" OnHide="Parent.Parent.Rcheck.Visible=True" OnShow="Parent.Parent.Mcheck.Visible=True" />
+                <Page DynamicData="/GameData.Self.TimeSinceRangedAutoAttack" Name="Rswitch" OnHide="Parent.Parent.Mcheck.Visible=True" OnShow="Parent.Parent.Rcheck.Visible=True" />
+                <Text DynamicData="/GameData.Stats.Primary_Delay" Name="Pdelay" />
+                <Text DynamicData="/GameData.Stats.Secondary_Delay" Name="Sdelay" OnTextChanged="Parent.Parent.SecondaryCheck.Visible=True" />
+            </Page>
+            <Page Name="Rcheck" OnShow="BtempP=Parent.Data.Pswitch.Visible&#xD;&#xA;BtempS=Parent.Data.Sswitch.Visible&#xD;&#xA;Parent.RToggle.Visible=BtempP || BtempS&#xD;&#xA;Parent.CombatCheck.Visible=Parent.Data.IsHated.Visible&#xD;&#xA;Visible=False" Visible="false" />
+            <Page Name="RToggle" OnHide="Parent.RFix.Visible=Parent.Data.Rswitch.Visible&#xD;&#xA;Visible=True" />
+            <Page Name="RFix" OnShow="Parent.Ranged.Visible=True&#xD;&#xA;Parent.Melee.Visible=False&#xD;&#xA;Visible=False" Visible="false" />
+            <Page Name="Mcheck" OnShow="BtempP=Parent.Data.Pswitch.Visible&#xD;&#xA;BtempS=Parent.Data.Sswitch.Visible&#xD;&#xA;Parent.MToggle.Visible=BtempP || BtempS&#xD;&#xA;Parent.CombatCheck.Visible=Parent.Data.IsHated.Visible&#xD;&#xA;Visible=False" Visible="false" />
+            <Page Name="MToggle" OnShow="Parent.MFix.Visible=Parent.Data.Rswitch.Visible&#xD;&#xA;Visible=False" Visible="false" />
+            <Page Name="MFix" OnHide="Parent.Ranged.Visible=False&#xD;&#xA;Parent.Melee.Visible=True&#xD;&#xA;Parent.Melee.Primary.Visible=True&#xD;&#xA;Parent.SecondaryCheck.Visible=True&#xD;&#xA;Visible=True" />
+            <Page Name="SecondaryCheck" OnShow="BtempS=(Parent.Data.Sdelay.Text) &apos;&gt;&apos; (0)&#xD;&#xA;Parent.Melee.Secondary.Visible=BtempS&#xD;&#xA;Parent.DWCheck.Visible=Parent.Data.Visible&#xD;&#xA;Visible=False" Visible="false" />
+            <Page Name="DWCheck" OnShow="BtempC=(Parent.Data.Sdelay.Text) &apos;!=&apos; (Parent.Data.Pdelay.Text)&#xD;&#xA;BtempS=(Parent.Data.Sdelay.Text) &apos;&gt;&apos; (0)&#xD;&#xA;BtempA=(BtempC == True)&#xD;&#xA;BtempB=(BtempS == True)&#xD;&#xA;BtempF=(BtempA == BtempB)&#xD;&#xA;Parent.Melee.Secondary.Visible=BtempF&#xD;&#xA;Visible=False" Visible="false" />
+            <Page Name="CombatCheck" OnHide="BtempP=Parent.Data.Pswitch.Visible&#xD;&#xA;BtempS=Parent.Data.Sswitch.Visible&#xD;&#xA;BtempR=Parent.Data.Rswitch.Visible&#xD;&#xA;Parent.OOC.Visible=BtempP || BtempS || BtempR&#xD;&#xA;Visible=True" />
+            <Page Name="OOC" OnHide="hide_window Custom.ProfitUI_AutoAttackBar&#xD;&#xA;Visible=True" />
+            <Page AbsorbsInput="false" Location="6,0" Name="Ranged" PackSize="a,a" ScrollExtent="349,50" Size="349,50">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Margin="1,0,2,2" Name="MLabel" PackSize="a,f" ScrollExtent="350,28" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="350,20" TextAlignment="Center" TextColor="#F0D080">Ranged Auto Attack</Text>
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FF7E00" Location="3,23" Name="OOC" PackSize="a,f" Progress="1.000" ScrollExtent="343,8" Size="343,8" Style="progress_style" Visible="false" />
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Self.TimeSinceRangedAutoAttack" Location="3,23" Name="Bar" OnHide="Parent.OOC.Visible=True" OnShow="Parent.OOC.Visible=False" PackSize="a,f" Progress="0.500" ScrollExtent="343,8" Size="343,8" Style="progress_style" />
+                <Image AbsorbsInput="false" Location="3,23" Name="Bkg" PackSize="a,f" ScrollExtent="343,8" Size="343,8" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,20" Name="Frame" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="349,14" Size="349,14" />
+            </Page>
+            <Page AbsorbsInput="false" Location="6,0" Name="Melee" PackSize="a,a" ScrollExtent="349,50" Size="349,50">
+                <Page AbsorbsInput="false" Name="Primary" PackSize="a,a" ScrollExtent="349,50" Size="349,50">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Margin="1,0,2,2" Name="MLabel" PackSize="a,f" ScrollExtent="350,28" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="350,20" TextAlignment="Center" TextColor="#F0D080">Melee Auto Attack</Text>
+                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FF7E00" Location="3,23" Name="OOC" PackSize="a,f" Progress="1.000" ScrollExtent="343,8" Size="343,8" Style="progress_style" Visible="false" />
+                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Self.TimeSinceAutoAttack" Location="3,23" Name="Bar" OnHide="Parent.OOC.Visible=True" OnShow="Parent.OOC.Visible=False" PackSize="a,f" Progress="0.500" ScrollExtent="343,8" Size="343,8" Style="progress_style" />
+                    <Image AbsorbsInput="false" Location="3,23" Name="Bkg" PackSize="a,f" ScrollExtent="343,8" Size="343,8" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,20" Name="Frame" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="349,14" Size="349,14" />
+                </Page>
+                <Page AbsorbsInput="false" Name="Secondary" PackSize="a,a" ScrollExtent="349,50" Size="349,50">
+                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FF7E00" Location="3,36" Name="OOC" PackSize="a,f" Progress="1.000" ScrollExtent="343,8" Size="343,8" Style="progress_style" Visible="false" />
+                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Self.TimeSinceSecondaryAutoAttack" Location="3,36" Name="Bar" OnHide="Parent.OOC.Visible=True" OnShow="Parent.OOC.Visible=False" PackSize="a,f" Progress="0.500" ScrollExtent="343,8" Size="343,8" Style="progress_style" />
+                    <Image AbsorbsInput="false" Location="3,36" Name="Bkg" PackSize="a,f" ScrollExtent="343,8" Size="343,8" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,33" Name="Frame" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="349,14" Size="349,14" />
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" Name="WC_Frame" OnHide="Parent.Data.Visible=False&#xD;&#xA;Parent.SecondaryCheck.Visible=True" OnShow="Parent.Data.Visible=True&#xD;&#xA;Parent.SecondaryCheck.Visible=True" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="361,50" Size="361,50" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackSize="a,a" ScrollExtent="361,50" Size="361,50" />
+        </Page>

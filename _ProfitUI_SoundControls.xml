@@ -1,78 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page eq2usescomwndcontrols="true" Location="945,340" MinimumSize="74,27" Name="ProfitUI_SoundControls" OnHoverIn="Volume.Enabled=true" OnHoverOut="Volume.Enabled=false" OnShow="TMP=master_volume*20
-Volume.MasterVolume.Slider.Value=TMP
-TMP=music_volume*20
-Volume.MusicVolume.Slider.Value=TMP
-TMP=combat_music_volume*20
-Volume.CombatVolume.Slider.Value=TMP
-TMP=ambient_volume*20
-Volume.AmbientVolume.Slider.Value=TMP
-TMP=sfx_volume*20
-Volume.SFXVolume.Slider.Value=TMP
-TMP=voice_volume*20
-Volume.VoiceVolume.Slider.Value=TMP
-TMP=vocal_volume*20
-Volume.VocalVolume.Slider.Value=TMP
-TMP=resident_sound_volume*20
-Volume.UIVolume.Slider.Value=TMP" PackLocation="fff,fff" Size="79,197" UserMovable="true" UserResizable="true">
-<VolumePage AbsorbsInput="false" CellAlignmentH="left" CellCount="1,8" CellPadding="1,1" CellSize="75,23" Location="1,1" MinimumScrollExtent="77,193" Name="Volume" PackSize="a,a" Size="79,195" VolumeFill="auto">
-<Page AbsorbsInput="false" Location="3,171" Name="UIVolume" Size="75,23">
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">UI</Text>
-<Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;resident_sound_volume=(Value/20)&#xD;&#xA;resident_sound_volume=(Value/20)" PackSize="a,f" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" Size="75,23" Visible="false" />
-</Page>
-<Page AbsorbsInput="false" Location="3,147" Name="VocalVolume" Size="75,23">
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Emote</Text>
-<Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;vocal_volume=(Value/20)&#xD;&#xA;vocal_volume=(Value/20)" PackSize="a,f" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" Size="75,23" Visible="false" />
-</Page>
-<Page AbsorbsInput="false" Location="3,123" Name="VoiceVolume" Size="75,23">
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Voice</Text>
-<Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;voice_volume=(Value/20)&#xD;&#xA;voice_volume=(Value/20)" PackSize="a,f" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" Size="75,23" Visible="false" />
-</Page>
-<Page AbsorbsInput="false" Location="3,99" Name="AmbientVolume" Size="75,23">
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Ambient</Text>
-<Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;ambient_volume=(Value/20)&#xD;&#xA;ambient_volume=(Value/20)" PackSize="a,f" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" Size="75,23" Visible="false" />
-</Page>
-<Page AbsorbsInput="false" Location="3,75" Name="SFXVolume" Size="75,23">
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">SFX</Text>
-<Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;sfx_volume=(Value/20)&#xD;&#xA;sfx_volume=(Value/20)" PackSize="a,f" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" Size="75,23" Visible="false" />
-</Page>
-<Page AbsorbsInput="false" Location="3,51" Name="MusicVolume" Size="75,23">
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">5</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Music</Text>
-<Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;music_volume=(Value/20)&#xD;&#xA;music_volume=(Value/20)" PackSize="a,f" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" Size="75,23" Visible="false" />
-</Page>
-<Page AbsorbsInput="false" Location="3,27" Name="CombatVolume" Size="75,23">
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Combat</Text>
-<Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.text=(Value*5)&#xD;&#xA;combat_music_volume=(Value/20)&#xD;&#xA;combat_music_volume=(Value/20)" PackSize="a,f" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" Size="75,23" Visible="false" />
-</Page>
-<Page AbsorbsInput="false" Location="3,3" Name="MasterVolume" Size="75,23">
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">100</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Master</Text>
-<Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.text=(Value*5)&#xD;&#xA;master_volume=(Value/20)&#xD;&#xA;master_volume=(Value/20)" PackSize="a,f" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" Size="75,23" Visible="false" />
-</Page>
-</VolumePage>
-<Page AbsorbsInput="false" ackSize="a,a" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Frame" RStyleDefault="/FrameStyles.single_pixel" Size="79,197" Visible="false" />
-<Page BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Backdrop" PackSize="a,a" Size="79,197" />
-</Page>
+        <Page eq2usescomwndcontrols="true" Location="945,340" MinimumSize="74,27" Name="ProfitUI_SoundControls" OnHoverIn="Volume.Enabled=true" OnHoverOut="Volume.Enabled=false" OnShow="TMP=master_volume*20&#xD;&#xA;Volume.MasterVolume.Slider.Value=TMP&#xD;&#xA;TMP=music_volume*20&#xD;&#xA;Volume.MusicVolume.Slider.Value=TMP&#xD;&#xA;TMP=combat_music_volume*20&#xD;&#xA;Volume.CombatVolume.Slider.Value=TMP&#xD;&#xA;TMP=ambient_volume*20&#xD;&#xA;Volume.AmbientVolume.Slider.Value=TMP&#xD;&#xA;TMP=sfx_volume*20&#xD;&#xA;Volume.SFXVolume.Slider.Value=TMP&#xD;&#xA;TMP=voice_volume*20&#xD;&#xA;Volume.VoiceVolume.Slider.Value=TMP&#xD;&#xA;TMP=vocal_volume*20&#xD;&#xA;Volume.VocalVolume.Slider.Value=TMP&#xD;&#xA;TMP=resident_sound_volume*20&#xD;&#xA;Volume.UIVolume.Slider.Value=TMP" PackLocation="fff,fff" ScrollExtent="79,197" Size="79,197" UserMovable="true" UserResizable="true">
+            <VolumePage AbsorbsInput="false" CellAlignmentH="left" CellCount="1,8" CellPadding="1,1" CellSize="75,23" Location="1,1" MinimumScrollExtent="77,193" Name="Volume" PackSize="a,a" ScrollExtent="79,195" Size="79,195" VolumeFill="auto">
+                <Page AbsorbsInput="false" Location="3,171" Name="UIVolume" ScrollExtent="75,23" Size="75,23">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ScrollExtent="46,18" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ScrollExtent="15,19" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ScrollExtent="55,16" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">UI</Text>
+                    <Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;resident_sound_volume=(Value/20)&#xD;&#xA;resident_sound_volume=(Value/20)" PackSize="a,f" ScrollExtent="69,10" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="75,23" Size="75,23" Visible="false" />
+                </Page>
+                <Page AbsorbsInput="false" Location="3,147" Name="VocalVolume" ScrollExtent="75,23" Size="75,23">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ScrollExtent="46,18" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ScrollExtent="15,19" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ScrollExtent="55,16" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Emote</Text>
+                    <Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;vocal_volume=(Value/20)&#xD;&#xA;vocal_volume=(Value/20)" PackSize="a,f" ScrollExtent="69,10" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="75,23" Size="75,23" Visible="false" />
+                </Page>
+                <Page AbsorbsInput="false" Location="3,123" Name="VoiceVolume" ScrollExtent="75,23" Size="75,23">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ScrollExtent="46,18" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ScrollExtent="15,19" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ScrollExtent="55,16" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Voice</Text>
+                    <Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;voice_volume=(Value/20)&#xD;&#xA;voice_volume=(Value/20)" PackSize="a,f" ScrollExtent="69,10" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="75,23" Size="75,23" Visible="false" />
+                </Page>
+                <Page AbsorbsInput="false" Location="3,99" Name="AmbientVolume" ScrollExtent="75,23" Size="75,23">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ScrollExtent="46,18" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ScrollExtent="15,19" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ScrollExtent="55,16" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Ambient</Text>
+                    <Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;ambient_volume=(Value/20)&#xD;&#xA;ambient_volume=(Value/20)" PackSize="a,f" ScrollExtent="69,10" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="75,23" Size="75,23" Visible="false" />
+                </Page>
+                <Page AbsorbsInput="false" Location="3,75" Name="SFXVolume" ScrollExtent="75,23" Size="75,23">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ScrollExtent="46,18" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ScrollExtent="15,19" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ScrollExtent="55,16" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">SFX</Text>
+                    <Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;sfx_volume=(Value/20)&#xD;&#xA;sfx_volume=(Value/20)" PackSize="a,f" ScrollExtent="69,10" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="75,23" Size="75,23" Visible="false" />
+                </Page>
+                <Page AbsorbsInput="false" Location="3,51" Name="MusicVolume" ScrollExtent="75,23" Size="75,23">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ScrollExtent="46,18" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">5</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ScrollExtent="15,19" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ScrollExtent="55,16" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Music</Text>
+                    <Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.Text=(Value*5)&#xD;&#xA;music_volume=(Value/20)&#xD;&#xA;music_volume=(Value/20)" PackSize="a,f" ScrollExtent="69,10" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="75,23" Size="75,23" Visible="false" />
+                </Page>
+                <Page AbsorbsInput="false" Location="3,27" Name="CombatVolume" ScrollExtent="75,23" Size="75,23">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ScrollExtent="46,18" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">50</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ScrollExtent="15,19" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ScrollExtent="55,16" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Combat</Text>
+                    <Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.text=(Value*5)&#xD;&#xA;combat_music_volume=(Value/20)&#xD;&#xA;combat_music_volume=(Value/20)" PackSize="a,f" ScrollExtent="69,10" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="75,23" Size="75,23" Visible="false" />
+                </Page>
+                <Page AbsorbsInput="false" Location="3,3" Name="MasterVolume" ScrollExtent="75,23" Size="75,23">
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="14,0" MaxLines="1" Name="Vol" PackLocation="right,top" ScrollExtent="46,18" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="46,18" TextAlignment="Right">100</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="61,0" Name="%" PackLocation="right,top" ScrollExtent="15,19" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,19">%</Text>
+                    <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="4,0" Name="Label" ScrollExtent="55,16" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="55,16">Master</Text>
+                    <Sliderbar Location="3,13" Name="Slider" OnChange="Parent.Vol.text=(Value*5)&#xD;&#xA;master_volume=(Value/20)&#xD;&#xA;master_volume=(Value/20)" PackSize="a,f" ScrollExtent="69,10" Size="69,10" Style="/SliderbarStyles.horz_sliderbar_gold" UpperLimit="20" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="75,23" Size="75,23" Visible="false" />
+                </Page>
+            </VolumePage>
+            <Page AbsorbsInput="false" ackSize="a,a" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Frame" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="79,197" Size="79,197" Visible="false" />
+            <Page BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Backdrop" PackSize="a,a" ScrollExtent="79,197" Size="79,197" />
+        </Page>

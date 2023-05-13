@@ -1,42 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Page Name="ProfitUI_CuresCode">
-<Button Name="CureSpell" OnActivate="useabilityonplayer Parent.SlotName Parent.Cure
-Activated=false"/>
-<Button Name="CurePotion" OnActivate="Parent.GetPotionLocation.Press=true
-use_itemvdl Parent.Potion_1
-use_itemvdl Parent.Potion_2
-use_itemvdl Parent.Potion_3
-Activated=false"/>
-<Button Name="CustomMacro" />
-<Button Name="CureTrauma" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.TraumaMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Trauma&apos;"/>
-<Button Name="CureArcane" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.ArcaneMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Arcane&apos;"/>
-<Button Name="CureNoxious" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.NoxiousMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Noxious&apos;"/>
-<Button Name="CureElemental" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.ElementalMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Elemental&apos;"/>
-<Button Name="CureCurse" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.CurseMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Curse&apos;"/>
-<Button Name="Configure"/>
-<Button Name="GetSpellLocation" OnPress="SpellLocation=&apos;Parent.ProfitUI_Cures.&apos; ## (Parent.Parent.Parent._HUD.ProfitUI_SubclassDetector.Subclass) ## &apos;.&apos; ## (Parent.CureName) ## &apos;Cure&apos;
-Parent.Configure.OnPress=&apos;Parent.Cure=&apos; ## (SpellLocation)
-Parent.Configure.Press=true"/>
-<Button Name="GetPotionLocation" OnPress="PotionLocation=&apos;Parent.ProfitUI_Cures.&apos; ## (Parent.CureName) ## &apos;Potion.potionvdl_1&apos;
-Parent.Configure.OnPress=&apos;Parent.Potion_1=&apos; ## (PotionLocation)
-Parent.Configure.Press=true
-PotionLocation=&apos;Parent.ProfitUI_Cures.&apos; ## (Parent.CureName) ## &apos;Potion.potionvdl_2&apos;
-Parent.Configure.OnPress=&apos;Parent.Potion_2=&apos; ## (PotionLocation)
-Parent.Configure.Press=true
-PotionLocation=&apos;Parent.ProfitUI_Cures.&apos; ## (Parent.CureName) ## &apos;Potion.potionvdl_3&apos;
-Parent.Configure.OnPress=&apos;Parent.Potion_3=&apos; ## (PotionLocation)
-Parent.Configure.Press=true"/>
-<Button Name="GetCancelSpellcastFromFile" OnPress="Parent.CancelSpellcast=Parent.ProfitUI_Cures.CancelSpellcast.Value"/>
-<Button Name="CancelSpellcast" OnActivate="clearallqueuedabilities
-cancel_spellcast
-Activated=false"/>
-<Button Name="DoCure" OnPress="Parent.GetSpellLocation.Press=true
-Parent.CancelSpellcast.Activated=Parent.CancelSpellcast
-COND=Parent.Cure==&apos;NONE&apos;
-HAS_SPELL=COND ? false : true
-Parent.CureSpell.Activated=HAS_SPELL
-COND=(Parent.Target==Parent.Self.Text)
-Parent.CurePotion.Activated=COND ? '!'HAS_SPELL : false"/>
-<Text DynamicData="/GameData.Self.Name" Name="Self"/>
-<include>_ProfitUI_Cures.txt</include>
-</Page>
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Name="ProfitUI_CuresCode">
+            <Button Name="CureSpell" OnActivate="useabilityonplayer Parent.SlotName Parent.Cure&#xD;&#xA;Activated=false" />
+            <Button Name="CurePotion" OnActivate="Parent.GetPotionLocation.Press=true&#xD;&#xA;use_itemvdl Parent.Potion_1&#xD;&#xA;use_itemvdl Parent.Potion_2&#xD;&#xA;use_itemvdl Parent.Potion_3&#xD;&#xA;Activated=false" />
+            <Button Name="CustomMacro" />
+            <Button Name="CureTrauma" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.TraumaMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Trauma&apos;" />
+            <Button Name="CureArcane" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.ArcaneMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Arcane&apos;" />
+            <Button Name="CureNoxious" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.NoxiousMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Noxious&apos;" />
+            <Button Name="CureElemental" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.ElementalMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Elemental&apos;" />
+            <Button Name="CureCurse" OnPress="Parent.CustomMacro.Press=true Parent.CustomMacro.OnPress=Parent.ProfitUI_Cures.CurseMacro.Code Parent.DoCure.Press=true Parent.CureName=&apos;Curse&apos;" />
+            <Button Name="Configure" />
+            <Button Name="GetSpellLocation" OnPress="SpellLocation=&apos;Parent.ProfitUI_Cures.&apos; ## (Parent.Parent.Parent._HUD.ProfitUI_SubclassDetector.Subclass) ## &apos;.&apos; ## (Parent.CureName) ## &apos;Cure&apos;&#xD;&#xA;Parent.Configure.OnPress=&apos;Parent.Cure=&apos; ## (SpellLocation)&#xD;&#xA;Parent.Configure.Press=true" />
+            <Button Name="GetPotionLocation" OnPress="PotionLocation=&apos;Parent.ProfitUI_Cures.&apos; ## (Parent.CureName) ## &apos;Potion.potionvdl_1&apos;&#xD;&#xA;Parent.Configure.OnPress=&apos;Parent.Potion_1=&apos; ## (PotionLocation)&#xD;&#xA;Parent.Configure.Press=true&#xD;&#xA;PotionLocation=&apos;Parent.ProfitUI_Cures.&apos; ## (Parent.CureName) ## &apos;Potion.potionvdl_2&apos;&#xD;&#xA;Parent.Configure.OnPress=&apos;Parent.Potion_2=&apos; ## (PotionLocation)&#xD;&#xA;Parent.Configure.Press=true&#xD;&#xA;PotionLocation=&apos;Parent.ProfitUI_Cures.&apos; ## (Parent.CureName) ## &apos;Potion.potionvdl_3&apos;&#xD;&#xA;Parent.Configure.OnPress=&apos;Parent.Potion_3=&apos; ## (PotionLocation)&#xD;&#xA;Parent.Configure.Press=true" />
+            <Button Name="GetCancelSpellcastFromFile" OnPress="Parent.CancelSpellcast=Parent.ProfitUI_Cures.CancelSpellcast.Value" />
+            <Button Name="CancelSpellcast" OnActivate="clearallqueuedabilities&#xD;&#xA;cancel_spellcast&#xD;&#xA;Activated=false" />
+            <Button Name="DoCure" OnPress="Parent.GetSpellLocation.Press=true&#xD;&#xA;Parent.CancelSpellcast.Activated=Parent.CancelSpellcast&#xD;&#xA;COND=Parent.Cure==&apos;NONE&apos;&#xD;&#xA;HAS_SPELL=COND ? false : true&#xD;&#xA;Parent.CureSpell.Activated=HAS_SPELL&#xD;&#xA;COND=(Parent.Target==Parent.Self.Text)&#xD;&#xA;Parent.CurePotion.Activated=COND ? &apos;!&apos;HAS_SPELL : false" />
+            <Text DynamicData="/GameData.Self.Name" Name="Self" />
+<include>_ProfitUI_Cures.txt.xml</include>
+        </Page>

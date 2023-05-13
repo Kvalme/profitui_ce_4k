@@ -1,98 +1,98 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextStyle Leading="16" Name="FontFranklinGothicMedium16">
-<FontCharacter Advance="2" Code="32" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="0,0,1,16"/>
-<FontCharacter Advance="2" Code="33" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="1,0,2,16"/>
-<FontCharacter Advance="4" Code="34" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="2,0,5,16"/>
-<FontCharacter Advance="7" Code="35" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="5,0,11,16"/>
-<FontCharacter Advance="6" Code="36" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="11,0,16,16"/>
-<FontCharacter Advance="10" Code="37" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="16,0,25,16"/>
-<FontCharacter Advance="8" Code="38" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="25,0,32,16"/>
-<FontCharacter Advance="2" Code="39" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="32,0,33,16"/>
-<FontCharacter Advance="4" Code="40" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="33,0,36,16"/>
-<FontCharacter Advance="4" Code="41" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="36,0,39,16"/>
-<FontCharacter Advance="6" Code="42" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="39,0,44,16"/>
-<FontCharacter Advance="6" Code="43" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="44,0,49,16"/>
-<FontCharacter Advance="3" Code="44" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="49,0,51,16"/>
-<FontCharacter Advance="4" Code="45" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="51,0,54,16"/>
-<FontCharacter Advance="2" Code="46" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="54,0,55,16"/>
-<FontCharacter Advance="8" Code="47" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="55,0,62,16"/>
-<FontCharacter Advance="6" Code="48" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="62,0,67,16"/>
-<FontCharacter Advance="6" Code="49" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="67,0,72,16"/>
-<FontCharacter Advance="6" Code="50" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="72,0,77,16"/>
-<FontCharacter Advance="6" Code="51" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="77,0,82,16"/>
-<FontCharacter Advance="6" Code="52" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="82,0,87,16"/>
-<FontCharacter Advance="6" Code="53" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="87,0,92,16"/>
-<FontCharacter Advance="6" Code="54" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="92,0,97,16"/>
-<FontCharacter Advance="6" Code="55" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="97,0,102,16"/>
-<FontCharacter Advance="6" Code="56" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="102,0,107,16"/>
-<FontCharacter Advance="6" Code="57" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="107,0,112,16"/>
-<FontCharacter Advance="2" Code="58" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="112,0,113,16"/>
-<FontCharacter Advance="3" Code="59" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="113,0,115,16"/>
-<FontCharacter Advance="6" Code="60" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="115,0,120,16"/>
-<FontCharacter Advance="6" Code="61" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="120,0,125,16"/>
-<FontCharacter Advance="6" Code="62" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="0,16,5,32"/>
-<FontCharacter Advance="7" Code="63" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="5,16,11,32"/>
-<FontCharacter Advance="9" Code="64" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="11,16,19,32"/>
-<FontCharacter Advance="8" Code="65" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="19,16,26,32"/>
-<FontCharacter Advance="6" Code="66" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="26,16,31,32"/>
-<FontCharacter Advance="6" Code="67" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="31,16,36,32"/>
-<FontCharacter Advance="7" Code="68" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="36,16,42,32"/>
-<FontCharacter Advance="5" Code="69" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="42,16,46,32"/>
-<FontCharacter Advance="5" Code="70" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="46,16,50,32"/>
-<FontCharacter Advance="7" Code="71" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="50,16,56,32"/>
-<FontCharacter Advance="7" Code="72" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="56,16,62,32"/>
-<FontCharacter Advance="2" Code="73" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="62,16,63,32"/>
-<FontCharacter Advance="4" Code="74" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="63,16,66,32"/>
-<FontCharacter Advance="6" Code="75" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="66,16,71,32"/>
-<FontCharacter Advance="6" Code="76" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="71,16,76,32"/>
-<FontCharacter Advance="8" Code="77" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="76,16,83,32"/>
-<FontCharacter Advance="7" Code="78" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="83,16,89,32"/>
-<FontCharacter Advance="7" Code="79" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="89,16,95,32"/>
-<FontCharacter Advance="6" Code="80" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="95,16,100,32"/>
-<FontCharacter Advance="7" Code="81" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="100,16,106,32"/>
-<FontCharacter Advance="7" Code="82" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="106,16,112,32"/>
-<FontCharacter Advance="7" Code="83" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="112,16,118,32"/>
-<FontCharacter Advance="6" Code="84" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="118,16,123,32"/>
-<FontCharacter Advance="6" Code="85" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="123,16,128,32"/>
-<FontCharacter Advance="7" Code="86" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="0,32,6,48"/>
-<FontCharacter Advance="12" Code="87" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="6,32,17,48"/>
-<FontCharacter Advance="8" Code="88" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="17,32,24,48"/>
-<FontCharacter Advance="8" Code="89" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="24,32,31,48"/>
-<FontCharacter Advance="5" Code="90" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="31,32,35,48"/>
-<FontCharacter Advance="3" Code="91" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="35,32,37,48"/>
-<FontCharacter Advance="8" Code="92" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="37,32,44,48"/>
-<FontCharacter Advance="3" Code="93" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="44,32,46,48"/>
-<FontCharacter Advance="6" Code="94" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="46,32,51,48"/>
-<FontCharacter Advance="7" Code="95" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="51,32,57,48"/>
-<FontCharacter Advance="4" Code="96" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="57,32,60,48"/>
-<FontCharacter Advance="5" Code="97" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="60,32,64,48"/>
-<FontCharacter Advance="5" Code="98" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="64,32,68,48"/>
-<FontCharacter Advance="5" Code="99" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="68,32,72,48"/>
-<FontCharacter Advance="5" Code="100" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="72,32,76,48"/>
-<FontCharacter Advance="5" Code="101" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="76,32,80,48"/>
-<FontCharacter Advance="5" Code="102" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="80,32,84,48"/>
-<FontCharacter Advance="6" Code="103" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="84,32,89,48"/>
-<FontCharacter Advance="5" Code="104" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="89,32,93,48"/>
-<FontCharacter Advance="2" Code="105" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="93,32,94,48"/>
-<FontCharacter Advance="3" Code="106" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="94,32,96,48"/>
-<FontCharacter Advance="7" Code="107" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="96,32,102,48"/>
-<FontCharacter Advance="2" Code="108" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="102,32,103,48"/>
-<FontCharacter Advance="8" Code="109" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="103,32,110,48"/>
-<FontCharacter Advance="5" Code="110" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="110,32,114,48"/>
-<FontCharacter Advance="5" Code="111" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="114,32,118,48"/>
-<FontCharacter Advance="5" Code="112" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="118,32,122,48"/>
-<FontCharacter Advance="5" Code="113" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="122,32,126,48"/>
-<FontCharacter Advance="4" Code="114" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="0,48,3,64"/>
-<FontCharacter Advance="4" Code="115" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="3,48,6,64"/>
-<FontCharacter Advance="4" Code="116" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="6,48,9,64"/>
-<FontCharacter Advance="5" Code="117" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="9,48,13,64"/>
-<FontCharacter Advance="6" Code="118" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="13,48,18,64"/>
-<FontCharacter Advance="8" Code="119" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="18,48,25,64"/>
-<FontCharacter Advance="6" Code="120" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="25,48,30,64"/>
-<FontCharacter Advance="6" Code="121" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="30,48,35,64"/>
-<FontCharacter Advance="4" Code="122" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="35,48,38,64"/>
-<FontCharacter Advance="4" Code="123" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="38,48,41,64"/>
-<FontCharacter Advance="2" Code="124" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="41,48,42,64"/>
-<FontCharacter Advance="4" Code="125" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="42,48,45,64"/>
-<FontCharacter Advance="8" Code="126" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="45,48,52,64"/>
-</TextStyle>
+            <TextStyle Leading="16" Name="FontFranklinGothicMedium16">
+                <FontCharacter Advance="2" Code="32" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="0,0,1,16" />
+                <FontCharacter Advance="2" Code="33" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="1,0,2,16" />
+                <FontCharacter Advance="4" Code="34" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="2,0,5,16" />
+                <FontCharacter Advance="7" Code="35" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="5,0,11,16" />
+                <FontCharacter Advance="6" Code="36" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="11,0,16,16" />
+                <FontCharacter Advance="10" Code="37" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="16,0,25,16" />
+                <FontCharacter Advance="8" Code="38" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="25,0,32,16" />
+                <FontCharacter Advance="2" Code="39" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="32,0,33,16" />
+                <FontCharacter Advance="4" Code="40" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="33,0,36,16" />
+                <FontCharacter Advance="4" Code="41" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="36,0,39,16" />
+                <FontCharacter Advance="6" Code="42" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="39,0,44,16" />
+                <FontCharacter Advance="6" Code="43" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="44,0,49,16" />
+                <FontCharacter Advance="3" Code="44" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="49,0,51,16" />
+                <FontCharacter Advance="4" Code="45" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="51,0,54,16" />
+                <FontCharacter Advance="2" Code="46" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="54,0,55,16" />
+                <FontCharacter Advance="8" Code="47" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="55,0,62,16" />
+                <FontCharacter Advance="6" Code="48" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="62,0,67,16" />
+                <FontCharacter Advance="6" Code="49" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="67,0,72,16" />
+                <FontCharacter Advance="6" Code="50" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="72,0,77,16" />
+                <FontCharacter Advance="6" Code="51" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="77,0,82,16" />
+                <FontCharacter Advance="6" Code="52" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="82,0,87,16" />
+                <FontCharacter Advance="6" Code="53" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="87,0,92,16" />
+                <FontCharacter Advance="6" Code="54" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="92,0,97,16" />
+                <FontCharacter Advance="6" Code="55" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="97,0,102,16" />
+                <FontCharacter Advance="6" Code="56" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="102,0,107,16" />
+                <FontCharacter Advance="6" Code="57" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="107,0,112,16" />
+                <FontCharacter Advance="2" Code="58" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="112,0,113,16" />
+                <FontCharacter Advance="3" Code="59" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="113,0,115,16" />
+                <FontCharacter Advance="6" Code="60" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="115,0,120,16" />
+                <FontCharacter Advance="6" Code="61" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="120,0,125,16" />
+                <FontCharacter Advance="6" Code="62" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="0,16,5,32" />
+                <FontCharacter Advance="7" Code="63" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="5,16,11,32" />
+                <FontCharacter Advance="9" Code="64" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="11,16,19,32" />
+                <FontCharacter Advance="8" Code="65" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="19,16,26,32" />
+                <FontCharacter Advance="6" Code="66" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="26,16,31,32" />
+                <FontCharacter Advance="6" Code="67" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="31,16,36,32" />
+                <FontCharacter Advance="7" Code="68" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="36,16,42,32" />
+                <FontCharacter Advance="5" Code="69" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="42,16,46,32" />
+                <FontCharacter Advance="5" Code="70" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="46,16,50,32" />
+                <FontCharacter Advance="7" Code="71" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="50,16,56,32" />
+                <FontCharacter Advance="7" Code="72" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="56,16,62,32" />
+                <FontCharacter Advance="2" Code="73" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="62,16,63,32" />
+                <FontCharacter Advance="4" Code="74" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="63,16,66,32" />
+                <FontCharacter Advance="6" Code="75" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="66,16,71,32" />
+                <FontCharacter Advance="6" Code="76" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="71,16,76,32" />
+                <FontCharacter Advance="8" Code="77" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="76,16,83,32" />
+                <FontCharacter Advance="7" Code="78" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="83,16,89,32" />
+                <FontCharacter Advance="7" Code="79" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="89,16,95,32" />
+                <FontCharacter Advance="6" Code="80" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="95,16,100,32" />
+                <FontCharacter Advance="7" Code="81" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="100,16,106,32" />
+                <FontCharacter Advance="7" Code="82" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="106,16,112,32" />
+                <FontCharacter Advance="7" Code="83" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="112,16,118,32" />
+                <FontCharacter Advance="6" Code="84" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="118,16,123,32" />
+                <FontCharacter Advance="6" Code="85" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="123,16,128,32" />
+                <FontCharacter Advance="7" Code="86" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="0,32,6,48" />
+                <FontCharacter Advance="12" Code="87" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="6,32,17,48" />
+                <FontCharacter Advance="8" Code="88" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="17,32,24,48" />
+                <FontCharacter Advance="8" Code="89" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="24,32,31,48" />
+                <FontCharacter Advance="5" Code="90" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="31,32,35,48" />
+                <FontCharacter Advance="3" Code="91" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="35,32,37,48" />
+                <FontCharacter Advance="8" Code="92" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="37,32,44,48" />
+                <FontCharacter Advance="3" Code="93" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="44,32,46,48" />
+                <FontCharacter Advance="6" Code="94" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="46,32,51,48" />
+                <FontCharacter Advance="7" Code="95" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="51,32,57,48" />
+                <FontCharacter Advance="4" Code="96" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="57,32,60,48" />
+                <FontCharacter Advance="5" Code="97" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="60,32,64,48" />
+                <FontCharacter Advance="5" Code="98" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="64,32,68,48" />
+                <FontCharacter Advance="5" Code="99" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="68,32,72,48" />
+                <FontCharacter Advance="5" Code="100" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="72,32,76,48" />
+                <FontCharacter Advance="5" Code="101" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="76,32,80,48" />
+                <FontCharacter Advance="5" Code="102" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="80,32,84,48" />
+                <FontCharacter Advance="6" Code="103" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="84,32,89,48" />
+                <FontCharacter Advance="5" Code="104" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="89,32,93,48" />
+                <FontCharacter Advance="2" Code="105" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="93,32,94,48" />
+                <FontCharacter Advance="3" Code="106" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="94,32,96,48" />
+                <FontCharacter Advance="7" Code="107" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="96,32,102,48" />
+                <FontCharacter Advance="2" Code="108" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="102,32,103,48" />
+                <FontCharacter Advance="8" Code="109" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="103,32,110,48" />
+                <FontCharacter Advance="5" Code="110" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="110,32,114,48" />
+                <FontCharacter Advance="5" Code="111" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="114,32,118,48" />
+                <FontCharacter Advance="5" Code="112" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="118,32,122,48" />
+                <FontCharacter Advance="5" Code="113" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="122,32,126,48" />
+                <FontCharacter Advance="4" Code="114" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="0,48,3,64" />
+                <FontCharacter Advance="4" Code="115" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="3,48,6,64" />
+                <FontCharacter Advance="4" Code="116" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="6,48,9,64" />
+                <FontCharacter Advance="5" Code="117" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="9,48,13,64" />
+                <FontCharacter Advance="6" Code="118" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="13,48,18,64" />
+                <FontCharacter Advance="8" Code="119" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="18,48,25,64" />
+                <FontCharacter Advance="6" Code="120" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="25,48,30,64" />
+                <FontCharacter Advance="6" Code="121" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="30,48,35,64" />
+                <FontCharacter Advance="4" Code="122" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="35,48,38,64" />
+                <FontCharacter Advance="4" Code="123" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="38,48,41,64" />
+                <FontCharacter Advance="2" Code="124" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="41,48,42,64" />
+                <FontCharacter Advance="4" Code="125" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="42,48,45,64" />
+                <FontCharacter Advance="8" Code="126" SourceFile="images/fonts/FontFranklinGothicMedium16_0.dds" SourceRect="45,48,52,64" />
+            </TextStyle>

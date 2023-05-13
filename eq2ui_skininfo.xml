@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Page Name="SkinInfoPage" ScrollExtent="1280,1024" Size="1280,1024" Visible="false">
-<Data author="The ProfitUI Community" contact="Therendil at eq2interface.com" description="ProfitUI Community Edition is maintained by the EverQuest II custom UI community." Name="SkinInfo" text="ProfitUI Community Edition" version="1.0.0.0" />
-</Page>
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page Name="SkinInfoPage" ScrollExtent="1280,1024" Size="1280,1024" Visible="false">
+        <Data author="The ProfitUI Community" contact="Therendil at eq2interface.com" description="ProfitUI Community Edition is maintained by the EverQuest II custom UI community." Name="SkinInfo" text="ProfitUI Community Edition" version="1.0.0.0" />
+    </Page>

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Namespace Name="ColorStyles" DarqUI="3.000" Description="This is the standard metallic blue ProfitUI theme.  Choose this to return to the default skin that came with the download."  ThemeName="ProfitUI Classic">
-    <ColorStyle Color="#1f2d3e" Name="paperdoll_background" />
-    <ColorStyle Color="#261414" Name="window_background_dark" />
-    <ColorStyle Color="#1f2d3e" Name="window_background_light" />
-    <ColorStyle Color="#22223e" Name="window_background_selection" />
-</Namespace>
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Namespace darqui="3.000" description="This is the standard metallic blue ProfitUI theme.  Choose this to return to the default skin that came with the download." Name="ColorStyles" themename="ProfitUI Classic">
+        <ColorStyle Color="#1F2D3E" Name="paperdoll_background" />
+        <ColorStyle Color="#261414" Name="window_background_dark" />
+        <ColorStyle Color="#1F2D3E" Name="window_background_light" />
+        <ColorStyle Color="#22223E" Name="window_background_selection" />
+    </Namespace>

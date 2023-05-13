@@ -1,327 +1,288 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="52,87" MinimumSize="155,150" Name="Browser" OnHoverOut="set_focus MainHUD.Browser" ScrollExtent="700,555" Size="700,555" UserMovable="true" UserResizable="true">
-<include>_ProfitUI_Browser_Bookmarks.txt</include>
-<DataSource Name="TabSource">
-<Data Name="1" target="1" text="- 1 -"/>
-<Data Name="2" target="2" text="- 2 -"/>
-<Data Name="3" target="3" text="- 3 -"/>
-<Data Name="4" target="4" text="- 4 -"/>
-<Data Name="5" target="5" text="- 5 -"/>
-<Data Name="6" target="6" text="- 6 -"/>
-<Data Name="7" target="7" text="- 7 -"/>
-<Data Name="8" target="8" text="- 8 -"/>
-</DataSource>
-<Page AbsorbsInput="false" Location="0,25" Name="Tabs" PackSize="a,a" PackSizeProp="0001/0001,0025/0001" ScrollExtent="699,530" Size="699,530">
-<Page AbsorbsInput="false" Browser.Size="Parent.Parent.Parent.DummyBrowserStatus.Size" Name="1" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" ScrollExtent="699,530" Size="699,530">
-<Page Location="0,1" Name="Toolbar" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="699,27" Size="699,27">
-<Button DynamicData="BrowserState.Back" LocalTooltip=":457a4f2e320391f6:Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
-<Button DynamicData="BrowserState.Forward" LocalTooltip=":457a4f2ed7d3e9e5:Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
-<Button DynamicData="BrowserState.Stop" IsCancelButton="true" LocalTooltip=":457a4f2ee69b4677:Stop" Location="49,7" Name="Stop" OnPress="Parent.Parent.Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
-<Button DynamicData="BrowserState.Refresh" LocalTooltip=":457a4f2e50c36698:Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
-<Button LocalTooltip="Go to Homepage" Location="89,6" Name="Home" OnPress="Parent.Parent.Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
-<Button LocalTooltip="Set current page as homepage" Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" PackLocationProp="-027/0001,0006/0001" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
-<Button IsDefaultButton="true" LocalTooltip=":457a4f2edc13480b:Go" Location="1052,7" Name="Go" OnPress="Parent.Parent.Parent.Parent.Browser.URI = Parent.URI.text" PackLocation="fff" PackLocationProp="0353/0001,xxxx/xxxx" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
-<Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" PackSizeProp="0152/0001,0002/0003" ScrollExtent="547,20" Size="547,20"/>
-<Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" PackSizeProp="0154/0001,0002/0003" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
-<Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="500" LocalTooltip="Click to select bookmarks" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;
-SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href
-Parent.Go.Press=SelectedItem.GoFlag" PackSize="a,f" PackSizeProp="0141/0001,0002/0003" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list
-Then move your mouse straight down over the scrollbar to avoid that the list closes again."/>
-</Page>
-<DataSource Name="BrowserState">
-<DynamicData Name="Status"/>
-<DynamicData Name="Progress"/>
-<DynamicData Name="Forward"/>
-<DynamicData Name="Back"/>
-<DynamicData Name="Refresh"/>
-<DynamicData Name="Stop"/>
-<DynamicData Name="URI"/>
-</DataSource>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackLocationProp="-012/0001,-027/0001" PackSize="a,f" PackSizeProp="-025/0001,0002/0003" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42" Visible="true">
-<Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText=":457a4f2e6afb0eca:Status..." Location="17,10" Name="Status" PackLocation="left,bottom" PackLocationProp="0017/0001,-032/0001" PackSize="a,f" PackSizeProp="0266/0001,0002/0003" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
-<Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" PackLocationProp="-242/0001,-032/0001" ScrollExtent="227,14" Size="227,14">
-<Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default"/>
-<Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14"/>
-</Page>
-</Page>
-</Page>
-<Page AbsorbsInput="false" Enabled="false" Name="2" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" ScrollExtent="699,530" Size="699,530" Visible="false">
-<Page Location="0,1" Name="Toolbar" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="699,27" Size="699,27">
-<Button DynamicData="BrowserState.Back" LocalTooltip=":457a4f2e320391f6:Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
-<Button DynamicData="BrowserState.Forward" LocalTooltip=":457a4f2ed7d3e9e5:Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
-<Button DynamicData="BrowserState.Stop" IsCancelButton="true" LocalTooltip=":457a4f2ee69b4677:Stop" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
-<Button DynamicData="BrowserState.Refresh" LocalTooltip=":457a4f2e50c36698:Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
-<Button LocalTooltip="Go to Homepage" Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
-<Button LocalTooltip="Set current page as homepage" Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" PackLocationProp="-027/0001,0006/0001" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
-<Button IsDefaultButton="true" LocalTooltip=":457a4f2edc13480b:Go" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = Parent.URI.text" PackLocation="fff" PackLocationProp="0353/0001,xxxx/xxxx" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
-<Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" PackSizeProp="0152/0001,0002/0003" ScrollExtent="547,20" Size="547,20"/>
-<Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" PackSizeProp="0154/0001,0002/0003" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
-<Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" LocalTooltip="Click to select bookmarks" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;
-SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href
-Parent.Go.Press=SelectedItem.GoFlag
-SelectedItemIndex=0" PackSize="a,f" PackSizeProp="0141/0001,0002/0003" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list
-Then move your mouse straight down over the scrollbar to avoid that the list closes again."/>
-</Page>
-<EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" PackSizeProp="0002/0001,0030/0001" ScrollExtent="697,500" Size="697,500"/>
-<DataSource Name="BrowserState">
-<DynamicData Name="Status"/>
-<DynamicData Name="Progress"/>
-<DynamicData Name="Forward"/>
-<DynamicData Name="Back"/>
-<DynamicData Name="Refresh"/>
-<DynamicData Name="Stop"/>
-<DynamicData Name="URI"/>
-</DataSource>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackLocationProp="-012/0001,-027/0001" PackSize="a,f" PackSizeProp="-025/0001,0002/0003" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42" Visible="true">
-<Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText=":457a4f2e6afb0eca:Status..." Location="17,10" Name="Status" PackLocation="left,bottom" PackLocationProp="0017/0001,-032/0001" PackSize="a,f" PackSizeProp="0266/0001,0002/0003" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
-<Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" PackLocationProp="-242/0001,-032/0001" ScrollExtent="227,14" Size="227,14">
-<Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default"/>
-<Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14"/>
-</Page>
-</Page>
-</Page>
-<Page AbsorbsInput="false" Enabled="false" Name="3" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" ScrollExtent="699,530" Size="699,530" Visible="false">
-<Page Location="0,1" Name="Toolbar" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="699,27" Size="699,27">
-<Button DynamicData="BrowserState.Back" LocalTooltip=":457a4f2e320391f6:Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
-<Button DynamicData="BrowserState.Forward" LocalTooltip=":457a4f2ed7d3e9e5:Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
-<Button DynamicData="BrowserState.Stop" IsCancelButton="true" LocalTooltip=":457a4f2ee69b4677:Stop" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
-<Button DynamicData="BrowserState.Refresh" LocalTooltip=":457a4f2e50c36698:Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
-<Button LocalTooltip="Go to Homepage" Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
-<Button LocalTooltip="Set current page as homepage" Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" PackLocationProp="-027/0001,0006/0001" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
-<Button IsDefaultButton="true" LocalTooltip=":457a4f2edc13480b:Go" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" PackLocationProp="0353/0001,xxxx/xxxx" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
-<Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" PackSizeProp="0152/0001,0002/0003" ScrollExtent="547,20" Size="547,20"/>
-<Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" PackSizeProp="0154/0001,0002/0003" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
-<Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" LocalTooltip="Click to select bookmarks" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;
-SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href
-Parent.Go.Press=SelectedItem.GoFlag
-SelectedItemIndex=0" PackSize="a,f" PackSizeProp="0141/0001,0002/0003" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list
-Then move your mouse straight down over the scrollbar to avoid that the list closes again."/>
-</Page>
-<EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" PackSizeProp="0002/0001,0030/0001" ScrollExtent="697,481" Size="697,481"/>
-<DataSource Name="BrowserState">
-<DynamicData Name="Status"/>
-<DynamicData Name="Progress"/>
-<DynamicData Name="Forward"/>
-<DynamicData Name="Back"/>
-<DynamicData Name="Refresh"/>
-<DynamicData Name="Stop"/>
-<DynamicData Name="URI"/>
-</DataSource>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackLocationProp="-012/0001,-027/0001" PackSize="a,f" PackSizeProp="-025/0001,0002/0003" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42" Visible="true">
-<Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText=":457a4f2e6afb0eca:Status..." Location="17,10" Name="Status" PackLocation="left,bottom" PackLocationProp="0017/0001,-032/0001" PackSize="a,f" PackSizeProp="0266/0001,0002/0003" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
-<Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" PackLocationProp="-242/0001,-032/0001" ScrollExtent="227,14" Size="227,14">
-<Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default"/>
-<Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14"/>
-</Page>
-</Page>
-</Page>
-<Page AbsorbsInput="false" Enabled="false" Name="4" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" ScrollExtent="699,530" Size="699,530" Visible="false">
-<Page Location="0,1" Name="Toolbar" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="699,27" Size="699,27">
-<Button DynamicData="BrowserState.Back" LocalTooltip=":457a4f2e320391f6:Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
-<Button DynamicData="BrowserState.Forward" LocalTooltip=":457a4f2ed7d3e9e5:Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
-<Button DynamicData="BrowserState.Stop" IsCancelButton="true" LocalTooltip=":457a4f2ee69b4677:Stop" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
-<Button DynamicData="BrowserState.Refresh" LocalTooltip=":457a4f2e50c36698:Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
-<Button LocalTooltip="Go to Homepage" Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
-<Button LocalTooltip="Set current page as homepage" Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" PackLocationProp="-027/0001,0006/0001" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
-<Button IsDefaultButton="true" LocalTooltip=":457a4f2edc13480b:Go" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" PackLocationProp="0353/0001,xxxx/xxxx" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
-<Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" PackSizeProp="0152/0001,0002/0003" ScrollExtent="547,20" Size="547,20"/>
-<Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" PackSizeProp="0154/0001,0002/0003" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
-<Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" LocalTooltip="Click to select bookmarks" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;
-SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href
-Parent.Go.Press=SelectedItem.GoFlag
-SelectedItemIndex=0" PackSize="a,f" PackSizeProp="0141/0001,0002/0003" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list
-Then move your mouse straight down over the scrollbar to avoid that the list closes again."/>
-</Page>
-<EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" PackSizeProp="0002/0001,0030/0001" ScrollExtent="697,481" Size="697,481"/>
-<DataSource Name="BrowserState">
-<DynamicData Name="Status"/>
-<DynamicData Name="Progress"/>
-<DynamicData Name="Forward"/>
-<DynamicData Name="Back"/>
-<DynamicData Name="Refresh"/>
-<DynamicData Name="Stop"/>
-<DynamicData Name="URI"/>
-</DataSource>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackLocationProp="-012/0001,-027/0001" PackSize="a,f" PackSizeProp="-025/0001,0002/0003" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42" Visible="true">
-<Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText=":457a4f2e6afb0eca:Status..." Location="17,10" Name="Status" PackLocation="left,bottom" PackLocationProp="0017/0001,-032/0001" PackSize="a,f" PackSizeProp="0266/0001,0002/0003" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
-<Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" PackLocationProp="-242/0001,-032/0001" ScrollExtent="227,14" Size="227,14">
-<Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default"/>
-<Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14"/>
-</Page>
-</Page>
-</Page>
-<Page AbsorbsInput="false" Enabled="false" Name="5" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" ScrollExtent="699,530" Size="699,530" Visible="false">
-<Page Location="0,1" Name="Toolbar" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="699,27" Size="699,27">
-<Button DynamicData="BrowserState.Back" LocalTooltip=":457a4f2e320391f6:Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
-<Button DynamicData="BrowserState.Forward" LocalTooltip=":457a4f2ed7d3e9e5:Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
-<Button DynamicData="BrowserState.Stop" IsCancelButton="true" LocalTooltip=":457a4f2ee69b4677:Stop" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
-<Button DynamicData="BrowserState.Refresh" LocalTooltip=":457a4f2e50c36698:Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
-<Button LocalTooltip="Go to Homepage" Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
-<Button LocalTooltip="Set current page as homepage" Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" PackLocationProp="-027/0001,0006/0001" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
-<Button IsDefaultButton="true" LocalTooltip=":457a4f2edc13480b:Go" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" PackLocationProp="0353/0001,xxxx/xxxx" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
-<Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" PackSizeProp="0152/0001,0002/0003" ScrollExtent="547,20" Size="547,20"/>
-<Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" PackSizeProp="0154/0001,0002/0003" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
-<Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" LocalTooltip="Click to select bookmarks" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;
-SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href
-Parent.Go.Press=SelectedItem.GoFlag
-SelectedItemIndex=0" PackSize="a,f" PackSizeProp="0141/0001,0002/0003" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list
-Then move your mouse straight down over the scrollbar to avoid that the list closes again."/>
-</Page>
-<EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" PackSizeProp="0002/0001,0030/0001" ScrollExtent="697,481" Size="697,481"/>
-<DataSource Name="BrowserState">
-<DynamicData Name="Status"/>
-<DynamicData Name="Progress"/>
-<DynamicData Name="Forward"/>
-<DynamicData Name="Back"/>
-<DynamicData Name="Refresh"/>
-<DynamicData Name="Stop"/>
-<DynamicData Name="URI"/>
-</DataSource>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackLocationProp="-012/0001,-027/0001" PackSize="a,f" PackSizeProp="-025/0001,0002/0003" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42" Visible="true">
-<Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText=":457a4f2e6afb0eca:Status..." Location="17,10" Name="Status" PackLocation="left,bottom" PackLocationProp="0017/0001,-032/0001" PackSize="a,f" PackSizeProp="0266/0001,0002/0003" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
-<Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" PackLocationProp="-242/0001,-032/0001" ScrollExtent="227,14" Size="227,14">
-<Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default"/>
-<Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14"/>
-</Page>
-</Page>
-</Page>
-<Page AbsorbsInput="false" Enabled="false" Name="6" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" ScrollExtent="699,530" Size="699,530" Visible="false">
-<Page Location="0,1" Name="Toolbar" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="699,27" Size="699,27">
-<Button DynamicData="BrowserState.Back" LocalTooltip=":457a4f2e320391f6:Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
-<Button DynamicData="BrowserState.Forward" LocalTooltip=":457a4f2ed7d3e9e5:Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
-<Button DynamicData="BrowserState.Stop" IsCancelButton="true" LocalTooltip=":457a4f2ee69b4677:Stop" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
-<Button DynamicData="BrowserState.Refresh" LocalTooltip=":457a4f2e50c36698:Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
-<Button LocalTooltip="Go to Homepage" Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
-<Button LocalTooltip="Set current page as homepage" Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" PackLocationProp="-027/0001,0006/0001" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
-<Button IsDefaultButton="true" LocalTooltip=":457a4f2edc13480b:Go" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" PackLocationProp="0353/0001,xxxx/xxxx" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
-<Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" PackSizeProp="0152/0001,0002/0003" ScrollExtent="547,20" Size="547,20"/>
-<Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" PackSizeProp="0154/0001,0002/0003" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
-<Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" LocalTooltip="Click to select bookmarks" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;
-SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href
-Parent.Go.Press=SelectedItem.GoFlag
-SelectedItemIndex=0" PackSize="a,f" PackSizeProp="0141/0001,0002/0003" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list
-Then move your mouse straight down over the scrollbar to avoid that the list closes again."/>
-</Page>
-<EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" PackSizeProp="0002/0001,0030/0001" ScrollExtent="697,481" Size="697,481"/>
-<DataSource Name="BrowserState">
-<DynamicData Name="Status"/>
-<DynamicData Name="Progress"/>
-<DynamicData Name="Forward"/>
-<DynamicData Name="Back"/>
-<DynamicData Name="Refresh"/>
-<DynamicData Name="Stop"/>
-<DynamicData Name="URI"/>
-</DataSource>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackLocationProp="-012/0001,-027/0001" PackSize="a,f" PackSizeProp="-025/0001,0002/0003" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42" Visible="true">
-<Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText=":457a4f2e6afb0eca:Status..." Location="17,10" Name="Status" PackLocation="left,bottom" PackLocationProp="0017/0001,-032/0001" PackSize="a,f" PackSizeProp="0266/0001,0002/0003" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
-<Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" PackLocationProp="-242/0001,-032/0001" ScrollExtent="227,14" Size="227,14">
-<Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default"/>
-<Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14"/>
-</Page>
-</Page>
-</Page>
-<Page AbsorbsInput="false" Enabled="false" Name="7" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" ScrollExtent="699,530" Size="699,530" Visible="false">
-<Page Location="0,1" Name="Toolbar" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="699,27" Size="699,27">
-<Button DynamicData="BrowserState.Back" LocalTooltip=":457a4f2e320391f6:Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
-<Button DynamicData="BrowserState.Forward" LocalTooltip=":457a4f2ed7d3e9e5:Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
-<Button DynamicData="BrowserState.Stop" IsCancelButton="true" LocalTooltip=":457a4f2ee69b4677:Stop" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
-<Button DynamicData="BrowserState.Refresh" LocalTooltip=":457a4f2e50c36698:Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
-<Button LocalTooltip="Go to Homepage" Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
-<Button LocalTooltip="Set current page as homepage" Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" PackLocationProp="-027/0001,0006/0001" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
-<Button IsDefaultButton="true" LocalTooltip=":457a4f2edc13480b:Go" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" PackLocationProp="0353/0001,xxxx/xxxx" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
-<Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" PackSizeProp="0152/0001,0002/0003" ScrollExtent="547,20" Size="547,20"/>
-<Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" PackSizeProp="0154/0001,0002/0003" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
-<Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" LocalTooltip="Click to select bookmarks" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;
-SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href
-Parent.Go.Press=SelectedItem.GoFlag
-SelectedItemIndex=0" PackSize="a,f" PackSizeProp="0141/0001,0002/0003" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list
-Then move your mouse straight down over the scrollbar to avoid that the list closes again."/>
-</Page>
-<EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" PackSizeProp="0002/0001,0030/0001" ScrollExtent="697,481" Size="697,481"/>
-<DataSource Name="BrowserState">
-<DynamicData Name="Status"/>
-<DynamicData Name="Progress"/>
-<DynamicData Name="Forward"/>
-<DynamicData Name="Back"/>
-<DynamicData Name="Refresh"/>
-<DynamicData Name="Stop"/>
-<DynamicData Name="URI"/>
-</DataSource>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackLocationProp="-012/0001,-027/0001" PackSize="a,f" PackSizeProp="-025/0001,0002/0003" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42" Visible="true">
-<Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText=":457a4f2e6afb0eca:Status..." Location="17,10" Name="Status" PackLocation="left,bottom" PackLocationProp="0017/0001,-032/0001" PackSize="a,f" PackSizeProp="0266/0001,0002/0003" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
-<Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" PackLocationProp="-242/0001,-032/0001" ScrollExtent="227,14" Size="227,14">
-<Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default"/>
-<Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14"/>
-</Page>
-</Page>
-</Page>
-<Page AbsorbsInput="false" Enabled="false" Name="8" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" ScrollExtent="699,530" Size="699,530" Visible="false">
-<Page Location="0,1" Name="Toolbar" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="699,27" Size="699,27">
-<Button DynamicData="BrowserState.Back" LocalTooltip=":457a4f2e320391f6:Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
-<Button DynamicData="BrowserState.Forward" LocalTooltip=":457a4f2ed7d3e9e5:Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
-<Button DynamicData="BrowserState.Stop" IsCancelButton="true" LocalTooltip=":457a4f2ee69b4677:Stop" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
-<Button DynamicData="BrowserState.Refresh" LocalTooltip=":457a4f2e50c36698:Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
-<Button LocalTooltip="Go to Homepage" Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
-<Button LocalTooltip="Set current page as homepage" Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" PackLocationProp="-027/0001,0006/0001" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
-<Button IsDefaultButton="true" LocalTooltip=":457a4f2edc13480b:Go" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" PackLocationProp="0353/0001,xxxx/xxxx" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
-<Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" PackSizeProp="0152/0001,0002/0003" ScrollExtent="547,20" Size="547,20"/>
-<Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" PackSizeProp="0154/0001,0002/0003" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
-<Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" LocalTooltip="Click to select bookmarks" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;
-SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href
-Parent.Go.Press=SelectedItem.GoFlag
-SelectedItemIndex=0" PackSize="a,f" PackSizeProp="0141/0001,0002/0003" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list
-Then move your mouse straight down over the scrollbar to avoid that the list closes again."/>
-</Page>
-<EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" PackSizeProp="0002/0001,0030/0001" ScrollExtent="697,481" Size="697,481"/>
-<DataSource Name="BrowserState">
-<DynamicData Name="Status"/>
-<DynamicData Name="Progress"/>
-<DynamicData Name="Forward"/>
-<DynamicData Name="Back"/>
-<DynamicData Name="Refresh"/>
-<DynamicData Name="Stop"/>
-<DynamicData Name="URI"/>
-</DataSource>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackLocationProp="-012/0001,-027/0001" PackSize="a,f" PackSizeProp="-025/0001,0002/0003" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42" Visible="true">
-<Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText=":457a4f2e6afb0eca:Status..." Location="17,10" Name="Status" PackLocation="left,bottom" PackLocationProp="0017/0001,-032/0001" PackSize="a,f" PackSizeProp="0266/0001,0002/0003" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
-<Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" PackLocationProp="-242/0001,-032/0001" ScrollExtent="227,14" Size="227,14">
-<Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default"/>
-<Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" PackSizeProp="0006/0001,0006/0001" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14"/>
-</Page>
-</Page>
-</Page>
-</Page>
-<EQIIBrowser dynamicdata_back="Tabs.1.BrowserState.Back" dynamicdata_forward="Tabs.1.BrowserState.Forward" dynamicdata_progress="Tabs.1.BrowserState.Progress" dynamicdata_refresh="Tabs.1.BrowserState.Refresh" dynamicdata_status="Tabs.1.BrowserState.Status" dynamicdata_stop="Tabs.1.BrowserState.Stop" dynamicdata_uri="Tabs.1.BrowserState.URI" Location="2,54" Name="Browser" PackSize="a,a" PackSizeProp="0003/0001,0055/0001" ScrollExtent="697,481" Size="697,481"/>
-<Page Location="2,54" Name="DummyBrowserStatus" PackSize="a,a" PackSizeProp="0003/0001,0074/0001" ScrollExtent="697,481" Size="697,481" Visible="false"/>
-<Page Location="2,54" Name="DummyBrowserFull" PackSize="a,a" PackSizeProp="0003/0001,0055/0001" ScrollExtent="697,500" Size="697,500" Visible="false"/>
-<TabbedPane ActiveTab="0" DataSource="TabSource" Location="171,0" Name="TabbedPane" ScrollExtent="425,24" Size="425,24" Style="/ProfitUI_Styles.tab_data.tabbed_pane_style" TargetPage="Tabs"/>
-<Page AbsorbsInput="false" Location="-12,-1" Name="WindowFrame" PackSize="absolute,absolute" PackSizeProp="-023/0001,-019/0001" ScrollExtent="723,574" Size="723,574">
-<Button Location="655,9" Name="Minimize" OnPress="hide_window MainHUD.Browser" PackLocation="right,top" PackLocationProp="-068/0001,0009/0001" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.arrow_down" Tooltip=":02dd0f7ffb549bea:Minimize" />
-<Button Location="673,8" Name="Maximize" OnPress="Parent.SizeNormal=Parent.Parent.Size
-Parent.LocationNormal=Parent.Parent.Location
-Parent.Parent.Location=&apos;0,0&apos;
-Parent.Parent.Size=Parent.Parent.Parent.Size
-Parent.Restore.Visible=true
-Visible=false" PackLocation="right,top" PackLocationProp="-050/0001,0009/0001" ScrollExtent="15,15" Size="15,15" Style="/WindowElements.WindowFrame.data.maximize.style" Tooltip=":02dd0f7f1095f1b1:Maximize"/>
-<Button Color="#F08080" Location="673,8" Name="Restore" OnPress="Parent.Parent.Size=Parent.SizeNormal
-Parent.Parent.Location=Parent.LocationNormal
-Parent.Maximize.Visible=true
-Visible=false" PackLocation="right,top" PackLocationProp="-050/0001,0009/0001" ScrollExtent="15,15" Size="15,15" Style="/WindowElements.WindowFrame.data.maximize.style" Tooltip="Restore" Visible="false"/>
-<Button Location="690,8" Name="Close" PackLocation="right,top" PackLocationProp="-033/0001,0008/0001" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":457a4f2e2d3f513f:Close" UserMovable="true" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,1" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="236,70" Size="236,70">
-<Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" LocalText=":457a4f2eea51c959:Browser" Location="36,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" PackSizeProp="0115/0001,0002/0003" ScrollExtent="173,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="121,20" TextAlignment="Center" TextColor="#F0D080">:457a4f2eea51c959:Browser</Text>
-</Page>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="555,1" Name="RightGrouper" PackLocation="right,top" PackLocationProp="-168/0001,0001/0001" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,1" Name="Frame" PackLocation="left,top" PackLocationProp="0000/0001,0001/0001" PackSize="absolute,absolute" PackSizeProp="-001/0001,0004/0001" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="724,570" Size="724,570"/>
-<Page AbsorbsInput="false" Location="0,25" BackgroundOpacity="1.000" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="724,36" Size="724,36"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,4" Name="Bkg" PackLocation="left,top" PackLocationProp="0000/0001,0004/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0009/0001" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="723,565" Size="723,565"/>
-</Page>
-</Page>
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="52,87" MinimumSize="155,150" Name="Browser" OnHoverOut="set_focus MainHUD.Browser" ScrollExtent="700,555" Size="700,555" UserMovable="true" UserResizable="true">
+<include>_ProfitUI_Browser_Bookmarks.txt.xml</include>
+            <DataSource Name="TabSource">
+                <Data Name="1" target="1" text="- 1 -" />
+                <Data Name="2" target="2" text="- 2 -" />
+                <Data Name="3" target="3" text="- 3 -" />
+                <Data Name="4" target="4" text="- 4 -" />
+                <Data Name="5" target="5" text="- 5 -" />
+                <Data Name="6" target="6" text="- 6 -" />
+                <Data Name="7" target="7" text="- 7 -" />
+                <Data Name="8" target="8" text="- 8 -" />
+            </DataSource>
+            <Page AbsorbsInput="false" Location="0,25" Name="Tabs" PackSize="a,a" ScrollExtent="699,530" Size="699,530">
+                <Page AbsorbsInput="false" browser.size="Parent.Parent.Parent.DummyBrowserStatus.Size" Name="1" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" ScrollExtent="699,530" Size="699,530">
+                    <Page Location="0,1" Name="Toolbar" PackSize="a,f" ScrollExtent="699,27" Size="699,27">
+                        <Button DynamicData="BrowserState.Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
+                        <Button DynamicData="BrowserState.Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
+                        <Button DynamicData="BrowserState.Stop" IsCancelButton="true" Location="49,7" Name="Stop" OnPress="Parent.Parent.Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
+                        <Button DynamicData="BrowserState.Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
+                        <Button Location="89,6" Name="Home" OnPress="Parent.Parent.Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
+                        <Button Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
+                        <Button IsDefaultButton="true" Location="1052,7" Name="Go" OnPress="Parent.Parent.Parent.Parent.Browser.URI = Parent.URI.text" PackLocation="fff" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
+                        <Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" ScrollExtent="547,20" Size="547,20" />
+                        <Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
+                        <Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="500" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;&#xD;&#xA;SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href&#xD;&#xA;Parent.Go.Press=SelectedItem.GoFlag" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list&#xD;&#xA;Then move your mouse straight down over the scrollbar to avoid that the list closes again." />
+                    </Page>
+                    <DataSource Name="BrowserState">
+                        <DynamicData Name="Status" />
+                        <DynamicData Name="Progress" />
+                        <DynamicData Name="Forward" />
+                        <DynamicData Name="Back" />
+                        <DynamicData Name="Refresh" />
+                        <DynamicData Name="Stop" />
+                        <DynamicData Name="URI" />
+                    </DataSource>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42">
+                        <Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="17,10" Name="Status" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
+                        <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" ScrollExtent="227,14" Size="227,14">
+                            <Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default" />
+                            <Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14" />
+                        </Page>
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Enabled="false" Name="2" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" ScrollExtent="699,530" Size="699,530" Visible="false">
+                    <Page Location="0,1" Name="Toolbar" PackSize="a,f" ScrollExtent="699,27" Size="699,27">
+                        <Button DynamicData="BrowserState.Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
+                        <Button DynamicData="BrowserState.Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
+                        <Button DynamicData="BrowserState.Stop" IsCancelButton="true" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
+                        <Button DynamicData="BrowserState.Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
+                        <Button Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
+                        <Button Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
+                        <Button IsDefaultButton="true" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = Parent.URI.text" PackLocation="fff" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
+                        <Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" ScrollExtent="547,20" Size="547,20" />
+                        <Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
+                        <Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;&#xD;&#xA;SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href&#xD;&#xA;Parent.Go.Press=SelectedItem.GoFlag&#xD;&#xA;SelectedItemIndex=0" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list&#xD;&#xA;Then move your mouse straight down over the scrollbar to avoid that the list closes again." />
+                    </Page>
+                    <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" ScrollExtent="697,500" Size="697,500" />
+                    <DataSource Name="BrowserState">
+                        <DynamicData Name="Status" />
+                        <DynamicData Name="Progress" />
+                        <DynamicData Name="Forward" />
+                        <DynamicData Name="Back" />
+                        <DynamicData Name="Refresh" />
+                        <DynamicData Name="Stop" />
+                        <DynamicData Name="URI" />
+                    </DataSource>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42">
+                        <Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="17,10" Name="Status" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
+                        <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" ScrollExtent="227,14" Size="227,14">
+                            <Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default" />
+                            <Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14" />
+                        </Page>
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Enabled="false" Name="3" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" ScrollExtent="699,530" Size="699,530" Visible="false">
+                    <Page Location="0,1" Name="Toolbar" PackSize="a,f" ScrollExtent="699,27" Size="699,27">
+                        <Button DynamicData="BrowserState.Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
+                        <Button DynamicData="BrowserState.Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
+                        <Button DynamicData="BrowserState.Stop" IsCancelButton="true" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
+                        <Button DynamicData="BrowserState.Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
+                        <Button Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
+                        <Button Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
+                        <Button IsDefaultButton="true" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
+                        <Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" ScrollExtent="547,20" Size="547,20" />
+                        <Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
+                        <Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;&#xD;&#xA;SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href&#xD;&#xA;Parent.Go.Press=SelectedItem.GoFlag&#xD;&#xA;SelectedItemIndex=0" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list&#xD;&#xA;Then move your mouse straight down over the scrollbar to avoid that the list closes again." />
+                    </Page>
+                    <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" ScrollExtent="697,481" Size="697,481" />
+                    <DataSource Name="BrowserState">
+                        <DynamicData Name="Status" />
+                        <DynamicData Name="Progress" />
+                        <DynamicData Name="Forward" />
+                        <DynamicData Name="Back" />
+                        <DynamicData Name="Refresh" />
+                        <DynamicData Name="Stop" />
+                        <DynamicData Name="URI" />
+                    </DataSource>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42">
+                        <Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="17,10" Name="Status" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
+                        <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" ScrollExtent="227,14" Size="227,14">
+                            <Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default" />
+                            <Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14" />
+                        </Page>
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Enabled="false" Name="4" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" ScrollExtent="699,530" Size="699,530" Visible="false">
+                    <Page Location="0,1" Name="Toolbar" PackSize="a,f" ScrollExtent="699,27" Size="699,27">
+                        <Button DynamicData="BrowserState.Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
+                        <Button DynamicData="BrowserState.Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
+                        <Button DynamicData="BrowserState.Stop" IsCancelButton="true" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
+                        <Button DynamicData="BrowserState.Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
+                        <Button Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
+                        <Button Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
+                        <Button IsDefaultButton="true" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
+                        <Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" ScrollExtent="547,20" Size="547,20" />
+                        <Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
+                        <Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;&#xD;&#xA;SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href&#xD;&#xA;Parent.Go.Press=SelectedItem.GoFlag&#xD;&#xA;SelectedItemIndex=0" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list&#xD;&#xA;Then move your mouse straight down over the scrollbar to avoid that the list closes again." />
+                    </Page>
+                    <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" ScrollExtent="697,481" Size="697,481" />
+                    <DataSource Name="BrowserState">
+                        <DynamicData Name="Status" />
+                        <DynamicData Name="Progress" />
+                        <DynamicData Name="Forward" />
+                        <DynamicData Name="Back" />
+                        <DynamicData Name="Refresh" />
+                        <DynamicData Name="Stop" />
+                        <DynamicData Name="URI" />
+                    </DataSource>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42">
+                        <Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="17,10" Name="Status" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
+                        <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" ScrollExtent="227,14" Size="227,14">
+                            <Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default" />
+                            <Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14" />
+                        </Page>
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Enabled="false" Name="5" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" ScrollExtent="699,530" Size="699,530" Visible="false">
+                    <Page Location="0,1" Name="Toolbar" PackSize="a,f" ScrollExtent="699,27" Size="699,27">
+                        <Button DynamicData="BrowserState.Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
+                        <Button DynamicData="BrowserState.Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
+                        <Button DynamicData="BrowserState.Stop" IsCancelButton="true" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
+                        <Button DynamicData="BrowserState.Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
+                        <Button Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
+                        <Button Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
+                        <Button IsDefaultButton="true" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
+                        <Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" ScrollExtent="547,20" Size="547,20" />
+                        <Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
+                        <Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;&#xD;&#xA;SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href&#xD;&#xA;Parent.Go.Press=SelectedItem.GoFlag&#xD;&#xA;SelectedItemIndex=0" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list&#xD;&#xA;Then move your mouse straight down over the scrollbar to avoid that the list closes again." />
+                    </Page>
+                    <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" ScrollExtent="697,481" Size="697,481" />
+                    <DataSource Name="BrowserState">
+                        <DynamicData Name="Status" />
+                        <DynamicData Name="Progress" />
+                        <DynamicData Name="Forward" />
+                        <DynamicData Name="Back" />
+                        <DynamicData Name="Refresh" />
+                        <DynamicData Name="Stop" />
+                        <DynamicData Name="URI" />
+                    </DataSource>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42">
+                        <Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="17,10" Name="Status" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
+                        <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" ScrollExtent="227,14" Size="227,14">
+                            <Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default" />
+                            <Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14" />
+                        </Page>
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Enabled="false" Name="6" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" ScrollExtent="699,530" Size="699,530" Visible="false">
+                    <Page Location="0,1" Name="Toolbar" PackSize="a,f" ScrollExtent="699,27" Size="699,27">
+                        <Button DynamicData="BrowserState.Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
+                        <Button DynamicData="BrowserState.Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
+                        <Button DynamicData="BrowserState.Stop" IsCancelButton="true" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
+                        <Button DynamicData="BrowserState.Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
+                        <Button Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
+                        <Button Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
+                        <Button IsDefaultButton="true" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
+                        <Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" ScrollExtent="547,20" Size="547,20" />
+                        <Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
+                        <Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;&#xD;&#xA;SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href&#xD;&#xA;Parent.Go.Press=SelectedItem.GoFlag&#xD;&#xA;SelectedItemIndex=0" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list&#xD;&#xA;Then move your mouse straight down over the scrollbar to avoid that the list closes again." />
+                    </Page>
+                    <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" ScrollExtent="697,481" Size="697,481" />
+                    <DataSource Name="BrowserState">
+                        <DynamicData Name="Status" />
+                        <DynamicData Name="Progress" />
+                        <DynamicData Name="Forward" />
+                        <DynamicData Name="Back" />
+                        <DynamicData Name="Refresh" />
+                        <DynamicData Name="Stop" />
+                        <DynamicData Name="URI" />
+                    </DataSource>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42">
+                        <Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="17,10" Name="Status" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
+                        <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" ScrollExtent="227,14" Size="227,14">
+                            <Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default" />
+                            <Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14" />
+                        </Page>
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Enabled="false" Name="7" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" ScrollExtent="699,530" Size="699,530" Visible="false">
+                    <Page Location="0,1" Name="Toolbar" PackSize="a,f" ScrollExtent="699,27" Size="699,27">
+                        <Button DynamicData="BrowserState.Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
+                        <Button DynamicData="BrowserState.Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
+                        <Button DynamicData="BrowserState.Stop" IsCancelButton="true" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
+                        <Button DynamicData="BrowserState.Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
+                        <Button Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
+                        <Button Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
+                        <Button IsDefaultButton="true" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
+                        <Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" ScrollExtent="547,20" Size="547,20" />
+                        <Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
+                        <Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;&#xD;&#xA;SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href&#xD;&#xA;Parent.Go.Press=SelectedItem.GoFlag&#xD;&#xA;SelectedItemIndex=0" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list&#xD;&#xA;Then move your mouse straight down over the scrollbar to avoid that the list closes again." />
+                    </Page>
+                    <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" ScrollExtent="697,481" Size="697,481" />
+                    <DataSource Name="BrowserState">
+                        <DynamicData Name="Status" />
+                        <DynamicData Name="Progress" />
+                        <DynamicData Name="Forward" />
+                        <DynamicData Name="Back" />
+                        <DynamicData Name="Refresh" />
+                        <DynamicData Name="Stop" />
+                        <DynamicData Name="URI" />
+                    </DataSource>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42">
+                        <Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="17,10" Name="Status" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
+                        <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" ScrollExtent="227,14" Size="227,14">
+                            <Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default" />
+                            <Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14" />
+                        </Page>
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Enabled="false" Name="8" OnHoverIn="Toolbar.Go.IsDefaultButton=true" OnHoverOut="Toolbar.Go.IsDefaultButton=false" PackSize="a,a" ScrollExtent="699,530" Size="699,530" Visible="false">
+                    <Page Location="0,1" Name="Toolbar" PackSize="a,f" ScrollExtent="699,27" Size="699,27">
+                        <Button DynamicData="BrowserState.Back" Location="9,7" Name="Back" OnPress="Parent.Parent.Browser.action = &quot;back&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BackButton" Tooltip=":457a4f2e320391f6:Back" />
+                        <Button DynamicData="BrowserState.Forward" Location="29,7" Name="Forward" OnPress="Parent.Parent.Browser.action = &quot;forward&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.ForwardButton" Tooltip=":457a4f2ed7d3e9e5:Forward" />
+                        <Button DynamicData="BrowserState.Stop" IsCancelButton="true" Location="49,7" Name="Stop" OnPress="Parent.Parent.Browser.action = &quot;stop&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.StopButton" Tooltip=":457a4f2ee69b4677:Stop" />
+                        <Button DynamicData="BrowserState.Refresh" Location="69,7" Name="Refresh" OnPress="Parent.Parent.Browser.action = &quot;refresh&quot;" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.RefreshButton" Tooltip=":457a4f2e50c36698:Refresh" />
+                        <Button Location="89,6" Name="Home" OnPress="Parent.Parent.Browser.URI=cl_browser_homepage" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.HomeButton" Tooltip="Go to Homepage" />
+                        <Button Location="672,6" Name="SetHomepage" OnPress="cl_browser_homepage=Parent.URI.LocalText cl_browser_homepage=Parent.URI.LocalText" PackLocation="right,top" ScrollExtent="16,16" Size="16,16" Style="/ProfitUI_Styles.ButtonStyles.Browser.BookmarkButton" Tooltip="Set current page as homepage" />
+                        <Button IsDefaultButton="true" Location="1052,7" Name="Go" OnPress="Parent.Parent.Browser.URI = parent.URI.text" PackLocation="fff" Style="/ProfitUI_Styles.ButtonStyles.Browser.GoButton" Tooltip=":457a4f2edc13480b:Go" />
+                        <Rectangle Color="#888888" Location="110,5" Name="URITextbox" PackSize="a,f" ScrollExtent="547,20" Size="547,20" />
+                        <Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" DynamicData="BrowserState.URI" Location="111,6" Name="URI" PackSize="a,f" ScrollExtent="545,18" Size="545,18" Style="/TextboxStyles.simple_textbox" />
+                        <Dropdownbox DataSource="ProfitUI_BookmarksDS" DropBy="400" Location="111,8" Name="Bookmarks" OnHoverIn="Parent.Parent.Parent.Parent.OnHoverOut=&apos; &apos;&#xD;&#xA;SelectedItemIndex=&apos;-1&apos;" OnHoverOut="Parent.Parent.Parent.Parent.OnHoverOut=&apos;set_focus MainHUD.Browser&apos;" OnSelect="Parent.URI.Text=SelectedItem.href&#xD;&#xA;Parent.Go.Press=SelectedItem.GoFlag&#xD;&#xA;SelectedItemIndex=0" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="558,17" Size="558,17" Style="/dropdownlist.dropdown_default" Tooltip="Click to open the bookmarks list&#xD;&#xA;Then move your mouse straight down over the scrollbar to avoid that the list closes again." />
+                    </Page>
+                    <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,29" Name="Browser" PackSize="a,a" ScrollExtent="697,481" Size="697,481" />
+                    <DataSource Name="BrowserState">
+                        <DynamicData Name="Status" />
+                        <DynamicData Name="Progress" />
+                        <DynamicData Name="Forward" />
+                        <DynamicData Name="Back" />
+                        <DynamicData Name="Refresh" />
+                        <DynamicData Name="Stop" />
+                        <DynamicData Name="URI" />
+                    </DataSource>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" DynamicData="BrowserState.Status" DynamicDataFilter="0001" Location="-12,503" Name="StatusPane" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="724,42" Size="724,42">
+                        <Text DynamicData="BrowserState.Status" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="17,10" Name="Status" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="458,16" Size="458,16" TextColor="#F3E9D7">:457a4f2e6afb0eca:Status...</Text>
+                        <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="482,10" Name="Progress" PackLocation="right,bottom" ScrollExtent="227,14" Size="227,14">
+                            <Progressbar Color="#D5C87D" ContextCapable="true" DynamicData="BrowserState.Progress" Location="3,3" Name="Progress" PackSize="a,a" Progress="0.500" ScrollExtent="221,8" Size="221,8" Style="/ProfitUI_Styles.Bars.prog_default" />
+                            <Image AbsorbsInput="false" Color="#FDFDFD" Location="3,3" Name="ProgressBackground" PackSize="a,a" ScrollExtent="221,8" Size="221,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="227,14" Size="227,14" />
+                        </Page>
+                    </Page>
+                </Page>
+            </Page>
+            <EQIIBrowser dynamicdata_back="Tabs.1.BrowserState.Back" dynamicdata_forward="Tabs.1.BrowserState.Forward" dynamicdata_progress="Tabs.1.BrowserState.Progress" dynamicdata_refresh="Tabs.1.BrowserState.Refresh" dynamicdata_status="Tabs.1.BrowserState.Status" dynamicdata_stop="Tabs.1.BrowserState.Stop" dynamicdata_uri="Tabs.1.BrowserState.URI" Location="2,54" Name="Browser" PackSize="a,a" ScrollExtent="697,481" Size="697,481" />
+            <Page Location="2,54" Name="DummyBrowserStatus" PackSize="a,a" ScrollExtent="697,481" Size="697,481" Visible="false" />
+            <Page Location="2,54" Name="DummyBrowserFull" PackSize="a,a" ScrollExtent="697,500" Size="697,500" Visible="false" />
+            <TabbedPane ActiveTab="0" DataSource="TabSource" Location="171,0" Name="TabbedPane" ScrollExtent="425,24" Size="425,24" Style="/ProfitUI_Styles.tab_data.tabbed_pane_style" TargetPage="Tabs" />
+            <Page AbsorbsInput="false" Location="-12,-1" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="723,574" Size="723,574">
+                <Button Location="655,9" Name="Minimize" OnPress="hide_window MainHUD.Browser" PackLocation="right,top" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.arrow_down" Tooltip=":02dd0f7ffb549bea:Minimize" />
+                <Button Location="673,8" Name="Maximize" OnPress="Parent.SizeNormal=Parent.Parent.Size&#xD;&#xA;Parent.LocationNormal=Parent.Parent.Location&#xD;&#xA;Parent.Parent.Location=&apos;0,0&apos;&#xD;&#xA;Parent.Parent.Size=Parent.Parent.Parent.Size&#xD;&#xA;Parent.Restore.Visible=true&#xD;&#xA;Visible=false" PackLocation="right,top" ScrollExtent="15,15" Size="15,15" Style="/WindowElements.WindowFrame.data.maximize.style" Tooltip=":02dd0f7f1095f1b1:Maximize" />
+                <Button Color="#F08080" Location="673,8" Name="Restore" OnPress="Parent.Parent.Size=Parent.SizeNormal&#xD;&#xA;Parent.Parent.Location=Parent.LocationNormal&#xD;&#xA;Parent.Maximize.Visible=true&#xD;&#xA;Visible=false" PackLocation="right,top" ScrollExtent="15,15" Size="15,15" Style="/WindowElements.WindowFrame.data.maximize.style" Tooltip="Restore" Visible="false" />
+                <Button Location="690,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":457a4f2e2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,1" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="236,70" Size="236,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="36,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="121,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="121,20" TextAlignment="Center" TextColor="#F0D080">:457a4f2eea51c959:Browser</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="555,1" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,1" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="724,570" Size="724,570" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,25" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="724,36" Size="724,36" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,4" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="723,565" Size="723,565" />
+            </Page>
+        </Page>

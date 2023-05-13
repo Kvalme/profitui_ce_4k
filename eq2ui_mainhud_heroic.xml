@@ -1,131 +1,131 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="42,570" Name="Heroic" PackLocation="right,center" PackLocationProp="-982/0001,0186/0001" ScrollExtent="202,94" Size="202,94" UserMovable="true">
-<Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="8,8" Name="Starter" ScrollExtent="188,75" Size="188,75">
-<Page AbsorbsInput="false" BackgroundColor="#FF8000" Name="Last" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" PackSizeProp="0006/0001,0006/0001" ScrollExtent="32,32" Size="32,32" Style="demo1"/>
-<Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackLocationProp="0000/0001,0000/0001" PackSize="A,A" PackSizeProp="0000/0001,0000/0001" ScrollExtent="38,38" Size="38,38" Style="backStyle"/>
-</Page>
-<Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="40,0" Name="Chain1" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" PackSizeProp="0006/0001,0006/0001" ScrollExtent="32,32" Size="32,32" Style="demo1"/>
-</Page>
-<Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="76,0" Name="Chain2" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" PackSizeProp="0006/0001,0006/0001" ScrollExtent="32,32" Size="32,32" Style="demo1"/>
-</Page>
-<Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="112,0" Name="Chain3" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" PackSizeProp="0006/0001,0006/0001" ScrollExtent="32,32" Size="32,32" Style="demo1"/>
-</Page>
-<Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="148,0" Name="Chain4" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" PackSizeProp="0006/0001,0006/0001" ScrollExtent="32,32" Size="32,32" Style="demo1"/>
-</Page>
-<Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="0,37" Name="Chain5" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" PackSizeProp="0006/0001,0006/0001" ScrollExtent="32,32" Size="32,32" Style="demo1"/>
-</Page>
-<Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="148,0" Name="Chain6" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" PackSizeProp="0006/0001,0006/0001" ScrollExtent="32,32" Size="32,32" Style="demo1"/>
-</Page>
-<ImageStyle Name="backStyle">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="7,277,57,327"/>
-</ImageStyle>
-</Page>
-<Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="8,8" Name="Wheel" ScrollExtent="189,78" Size="189,78">
-<ImageStyle Name="shiftarrowStyle">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="149,275,169,299"/>
-</ImageStyle>
-<Page AbsorbsInput="false" Location="42,40" Name="Timer" ScrollExtent="141,16" Size="141,16">
-<Image AbsorbsInput="false" BackgroundColor="#FF0000" BackgroundOpacity="0.675" Name="tick0" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FF0000" BackgroundOpacity="0.675" Location="9,0" Name="tick1" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FF0000" BackgroundOpacity="0.675" Location="18,0" Name="tick2" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FF8000" BackgroundOpacity="0.675" Location="27,0" Name="tick3" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FF8000" BackgroundOpacity="0.675" Location="36,0" Name="tick4" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FF8000" BackgroundOpacity="0.675" Location="45,0" Name="tick5" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FF8000" BackgroundOpacity="0.675" Location="54,0" Name="tick6" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="63,0" Name="tick7" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="72,0" Name="tick8" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="81,0" Name="tick9" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="90,0" Name="tick10" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="99,0" Name="tick11" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="108,0" Name="tick12" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="117,0" Name="tick13" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="126,0" Name="tick14" ScrollExtent="8,16" Size="8,16"/>
-<Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="135,0" Name="tick15" ScrollExtent="8,16" Size="8,16"/>
-</Page>
-<Text AbsorbsInput="false" Font="/Fonts.FontZapf15" LocalText="longestnamepossible" Location="39,55" Name="Name" ScrollExtent="144,19" Size="144,19" TextAlignment="Center" TextAlignmentVertical="Center">longestnamepossible</Text>
-<Image GetsInput="true" Location="3,4" Name="orderImage" ScrollExtent="33,28" Size="33,28" Style="Order0.running"/>
-<Page AbsorbsInput="false" BackgroundColor="#FF8000" Name="Last" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" PackSizeProp="0006/0001,0006/0001" ScrollExtent="32,32" Size="32,32" Style="demo1"/>
-<Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackLocationProp="0000/0001,0000/0001" PackSize="A,A" PackSizeProp="0000/0001,0000/0001" ScrollExtent="38,38" Size="38,38" Style="Starter.backStyle"/>
-</Page>
-<Page AbsorbsInput="false" Location="5,4" Name="Order0" ScrollExtent="33,28" Size="33,28">
-<ImageStyle Name="running">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="269,337,314,377"/>
-</ImageStyle>
-<ImageStyle Name="done">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="322,336,367,376"/>
-</ImageStyle>
-<ImageStyle Name="fail">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="373,337,418,377"/>
-</ImageStyle>
-</Page>
-<Page AbsorbsInput="false" Location="5,4" Name="Order1" ScrollExtent="33,28" Size="33,28">
-<ImageStyle Name="running">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="6,338,51,378"/>
-</ImageStyle>
-<ImageStyle Name="done">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="48,338,93,378"/>
-</ImageStyle>
-<ImageStyle Name="fail">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="92,338,137,378"/>
-</ImageStyle>
-</Page>
-<Page AbsorbsInput="false" Location="5,4" Name="Order2" ScrollExtent="33,28" Size="33,28" Visible="false">
-<ImageStyle Name="running">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="135,338,180,378"/>
-</ImageStyle>
-<ImageStyle Name="done">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="178,338,223,378"/>
-</ImageStyle>
-<ImageStyle Name="fail">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="223,338,268,378"/>
-</ImageStyle>
-</Page>
-<Page AbsorbsInput="false" Location="40,0" Name="Criteria1" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="4,3" Name="icon" PackLocation="NFN,NFN" PackLocationProp="0004/0001,0003/0001" PackSize="A,A" PackSizeProp="0008/0001,0008/0001" ScrollExtent="30,30" Size="30,30" Style="demo1"/>
-<Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackLocationProp="0000/0001,0000/0001" PackSize="A,A" PackSizeProp="0000/0001,0000/0001" ScrollExtent="38,38" Size="38,38" Style="backNextStyle"/>
-</Page>
-<Page AbsorbsInput="false" Location="76,0" Name="Criteria4" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="4,3" Name="icon" PackLocation="NFN,NFN" PackLocationProp="0004/0001,0003/0001" PackSize="A,A" PackSizeProp="0008/0001,0008/0001" ScrollExtent="30,30" Size="30,30" Style="demo1"/>
-<Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackLocationProp="0000/0001,0000/0001" PackSize="A,A" PackSizeProp="0000/0001,0000/0001" ScrollExtent="38,38" Size="38,38" Style="backStyle"/>
-</Page>
-<Page AbsorbsInput="false" Location="112,0" Name="Criteria5" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="4,3" Name="icon" PackLocation="NFN,NFN" PackLocationProp="0004/0001,0003/0001" PackSize="A,A" PackSizeProp="0008/0001,0008/0001" ScrollExtent="30,30" Size="30,30" Style="demo1"/>
-<Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackLocationProp="0000/0001,0000/0001" PackSize="A,A" PackSizeProp="0000/0001,0000/0001" ScrollExtent="38,38" Size="38,38" Style="backStyle"/>
-</Page>
-<Page AbsorbsInput="false" Location="148,0" Name="Criteria6" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="4,3" Name="icon" PackLocation="NFN,NFN" PackLocationProp="0004/0001,0003/0001" PackSize="A,A" PackSizeProp="0008/0001,0008/0001" ScrollExtent="30,30" Size="30,30" Style="demo1"/>
-<Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackLocationProp="0000/0001,0000/0001" PackSize="A,A" PackSizeProp="0000/0001,0000/0001" ScrollExtent="38,38" Size="38,38" Style="backStyle"/>
-</Page>
-<ImageStyle Name="shiftStyle">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="183,278,233,328"/>
-</ImageStyle>
-<ImageStyle Name="backStyle">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="7,277,57,327"/>
-</ImageStyle>
-<ImageStyle Name="backNextStyle">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="61,277,111,327"/>
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="7,277,57,327"/>
-</ImageStyle>
-<ImageStyle Name="backDoneStyle">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="61,277,111,327"/>
-</ImageStyle>
-<ImageStyle Name="backgroundStyle">
-<ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="0,0,185,180"/>
-</ImageStyle>
-<Page Location="1,36" Name="Shift" ScrollExtent="38,38" Size="38,38">
-<Image AbsorbsInput="false" Location="23,21" Name="arrow" ScrollExtent="18,19" Size="18,19" Style="shiftarrowStyle" Visible="false"/>
-<Image AbsorbsInput="false" Location="3,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1"/>
-<Image GetsInput="true" Name="back" ScrollExtent="38,38" Size="38,38" Style="shiftStyle"/>
-</Page>
-</Page>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Frame" PackLocation="NFN,NFN" PackLocationProp="0000/0001,0000/0001" PackSize="A,A" PackSizeProp="0000/0001,0000/0001" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="202,94" Size="202,94"/>
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackLocation="NFN,NFN" PackLocationProp="0000/0001,0000/0001" PackSize="A,A" PackSizeProp="0000/0001,0000/0001" ScrollExtent="202,94" Size="202,94"/>
-</Page>
+        <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="42,570" Name="Heroic" PackLocation="right,center" ScrollExtent="202,94" Size="202,94" UserMovable="true">
+            <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="8,8" Name="Starter" ScrollExtent="188,75" Size="188,75">
+                <Page AbsorbsInput="false" BackgroundColor="#FF8000" Name="Last" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+                    <Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="38,38" Size="38,38" Style="backStyle" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="40,0" Name="Chain1" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="76,0" Name="Chain2" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="112,0" Name="Chain3" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="148,0" Name="Chain4" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="0,37" Name="Chain5" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundColor="#FF8000" Location="148,0" Name="Chain6" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+                </Page>
+                <ImageStyle Name="backStyle">
+                    <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="7,277,57,327" />
+                </ImageStyle>
+            </Page>
+            <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="8,8" Name="Wheel" ScrollExtent="189,78" Size="189,78">
+                <ImageStyle Name="shiftarrowStyle">
+                    <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="149,275,169,299" />
+                </ImageStyle>
+                <Page AbsorbsInput="false" Location="42,40" Name="Timer" ScrollExtent="141,16" Size="141,16">
+                    <Image AbsorbsInput="false" BackgroundColor="#FF0000" BackgroundOpacity="0.675" Name="tick0" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FF0000" BackgroundOpacity="0.675" Location="9,0" Name="tick1" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FF0000" BackgroundOpacity="0.675" Location="18,0" Name="tick2" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FF8000" BackgroundOpacity="0.675" Location="27,0" Name="tick3" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FF8000" BackgroundOpacity="0.675" Location="36,0" Name="tick4" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FF8000" BackgroundOpacity="0.675" Location="45,0" Name="tick5" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FF8000" BackgroundOpacity="0.675" Location="54,0" Name="tick6" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="63,0" Name="tick7" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="72,0" Name="tick8" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="81,0" Name="tick9" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="90,0" Name="tick10" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="99,0" Name="tick11" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="108,0" Name="tick12" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="117,0" Name="tick13" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="126,0" Name="tick14" ScrollExtent="8,16" Size="8,16" />
+                    <Image AbsorbsInput="false" BackgroundColor="#00FF00" BackgroundOpacity="0.675" Location="135,0" Name="tick15" ScrollExtent="8,16" Size="8,16" />
+                </Page>
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="39,55" Name="Name" ScrollExtent="144,19" Size="144,19" TextAlignment="Center" TextAlignmentVertical="Center">longestnamepossible</Text>
+                <Image GetsInput="true" Location="3,4" Name="orderImage" ScrollExtent="33,28" Size="33,28" Style="Order0.running" />
+                <Page AbsorbsInput="false" BackgroundColor="#FF8000" Name="Last" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+                    <Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="38,38" Size="38,38" Style="Starter.backStyle" />
+                </Page>
+                <Page AbsorbsInput="false" Location="5,4" Name="Order0" ScrollExtent="33,28" Size="33,28">
+                    <ImageStyle Name="running">
+                        <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="269,337,314,377" />
+                    </ImageStyle>
+                    <ImageStyle Name="done">
+                        <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="322,336,367,376" />
+                    </ImageStyle>
+                    <ImageStyle Name="fail">
+                        <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="373,337,418,377" />
+                    </ImageStyle>
+                </Page>
+                <Page AbsorbsInput="false" Location="5,4" Name="Order1" ScrollExtent="33,28" Size="33,28">
+                    <ImageStyle Name="running">
+                        <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="6,338,51,378" />
+                    </ImageStyle>
+                    <ImageStyle Name="done">
+                        <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="48,338,93,378" />
+                    </ImageStyle>
+                    <ImageStyle Name="fail">
+                        <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="92,338,137,378" />
+                    </ImageStyle>
+                </Page>
+                <Page AbsorbsInput="false" Location="5,4" Name="Order2" ScrollExtent="33,28" Size="33,28" Visible="false">
+                    <ImageStyle Name="running">
+                        <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="135,338,180,378" />
+                    </ImageStyle>
+                    <ImageStyle Name="done">
+                        <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="178,338,223,378" />
+                    </ImageStyle>
+                    <ImageStyle Name="fail">
+                        <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="223,338,268,378" />
+                    </ImageStyle>
+                </Page>
+                <Page AbsorbsInput="false" Location="40,0" Name="Criteria1" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="4,3" Name="icon" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="30,30" Size="30,30" Style="demo1" />
+                    <Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="38,38" Size="38,38" Style="backNextStyle" />
+                </Page>
+                <Page AbsorbsInput="false" Location="76,0" Name="Criteria4" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="4,3" Name="icon" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="30,30" Size="30,30" Style="demo1" />
+                    <Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="38,38" Size="38,38" Style="backStyle" />
+                </Page>
+                <Page AbsorbsInput="false" Location="112,0" Name="Criteria5" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="4,3" Name="icon" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="30,30" Size="30,30" Style="demo1" />
+                    <Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="38,38" Size="38,38" Style="backStyle" />
+                </Page>
+                <Page AbsorbsInput="false" Location="148,0" Name="Criteria6" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="4,3" Name="icon" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="30,30" Size="30,30" Style="demo1" />
+                    <Image GetsInput="true" Name="back" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="38,38" Size="38,38" Style="backStyle" />
+                </Page>
+                <ImageStyle Name="shiftStyle">
+                    <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="183,278,233,328" />
+                </ImageStyle>
+                <ImageStyle Name="backStyle">
+                    <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="7,277,57,327" />
+                </ImageStyle>
+                <ImageStyle Name="backNextStyle">
+                    <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="61,277,111,327" />
+                    <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="7,277,57,327" />
+                </ImageStyle>
+                <ImageStyle Name="backDoneStyle">
+                    <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="61,277,111,327" />
+                </ImageStyle>
+                <ImageStyle Name="backgroundStyle">
+                    <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="0,0,185,180" />
+                </ImageStyle>
+                <Page Location="1,36" Name="Shift" ScrollExtent="38,38" Size="38,38">
+                    <Image AbsorbsInput="false" Location="23,21" Name="arrow" ScrollExtent="18,19" Size="18,19" Style="shiftarrowStyle" Visible="false" />
+                    <Image AbsorbsInput="false" Location="3,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+                    <Image GetsInput="true" Name="back" ScrollExtent="38,38" Size="38,38" Style="shiftStyle" />
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Frame" PackLocation="NFN,NFN" PackSize="A,A" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="202,94" Size="202,94" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackLocation="NFN,NFN" PackSize="A,A" ScrollExtent="202,94" Size="202,94" />
+        </Page>
