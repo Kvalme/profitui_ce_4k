@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="1735,0" MinimumSize="46,46" Name="AdvancementButton" PackLocation="right,top" ScrollExtent="62,62" Size="62,62" UserMovable="true" Visible="false">
+            <Button Location="12,12" Name="Button" PackLocation="cfc,cfc" PackSize="proportional,proportional" ScrollExtent="38,38" Size="38,38" Style="ButtonStyle" />
+            <Image Color="#5EFF46" Location="6,6" Name="ButtonGlow" PackLocation="cfc,cfc" PackSize="proportional,proportional" ScrollExtent="50,51" Size="50,51" SourceRect="47,1,101,58" SourceResource="/images/widgets02.dds" />
+            <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF80" Name="ButtonStyle" NormalTextColor="#F0D080" RStyleActivated="Button.RStylePressed" RStyleDefault="Button.RStyleNormal" RStyleDisabled="Button.RStyleNormal" RStyleMouseOver="Button.RStyleMouseover" RStyleMouseOverSelected="Button.RStylePressed" RStyleSelected="Button.RStylePressed" />
+            <Namespace Name="Button">
+                <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" EastStretch="false" Name="RStyleNormal" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+                <RectangleStyle Center="pressed" CenterShrinkH="true" CenterShrinkV="true" EastStretch="false" Name="RStylePressed" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+                <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" EastStretch="false" Name="RStyleMouseover" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+                <ImageStyle Filter="true" Name="mouseover">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="2,2,43,44" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="pressed">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="2,2,43,44" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="normal">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="2,2,43,44" />
+                </ImageStyle>
+            </Namespace>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="62,62" Size="62,62">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="62,62" Size="62,62" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="59,58" Size="59,58" />
+            </Page>
+        </Page>

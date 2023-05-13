@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="true" MaximumSize="1000,70" MinimumSize="85,70" Name="Threat" PackLocation="right,bottom" ScrollExtent="210,70" Size="210,70" UserMovable="true" UserResizable="true" version="1.1">
+        <Page eq2usescomwndcontrols="true" Location="1024,0" MaximumSize="1000,70" MinimumSize="85,70" Name="Threat" PackLocation="right,bottom" ScrollExtent="210,70" Size="210,70" UserMovable="true" UserResizable="true" version="1.1" Visible="false">
             <Button CONDA="false" CONDB="false" CONDC="false" CONDD="false" CONDE="false" Name="TogglePetVis" OnPress="&#xD;&#xA;CONDA = Parent.TargetBar.Visible == true&#xD;&#xA;CONDB = Parent.ImpliedBar.Visible == true&#xD;&#xA;CONDC = Parent.PetCheck.Text &apos;&gt;&apos; 0&#xD;&#xA;CONDD = CONDA || CONDB&#xD;&#xA;CONDE = CONDC &amp;&amp; CONDD&#xD;&#xA;Parent.PetBar.Visible = CONDE&#xD;&#xA;Parent.PetValue.Visible = CONDE&#xD;&#xA;" />
             <Button CONDA="true" Name="ToggleColor" OnPress="&#xD;&#xA;CONDA = Parent.PetValue.Text &apos;&gt;&apos; 99&#xD;&#xA;ValColor= CONDA ? &apos;#FF0000&apos; : &apos;#CCCCCC&apos;&#xD;&#xA;Parent.PetValue.Color = ValColor&#xD;&#xA;Parent.Petbar.Bar.Color = ValColor&#xD;&#xA;&#xD;&#xA;" ValColor="#FF0000" />
             <Text DynamicData="/GameData.Pet.Health" Name="PetCheck" />

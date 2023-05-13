@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Name="StoryModeScoreboard" ScrollExtent="768,687" Size="768,687" UserMovable="true" version="1.0">
+            <Page Name="Main" PackLocation="center,center" ScrollExtent="768,687" Size="768,687">
+                <Template Name="score_template" Size="521,20">eq2ui_storymodescore_template.xml</Template>
+                <Page Location="20,45" Name="TopFive" PackSize="a,a" ScrollExtent="725,200" Size="725,200">
+                    <Page Name="FirstPlace" PackSize="a,a" ScrollExtent="725,60" Size="725,60">
+                        <Text Color="#F3BE3B" Font="/TextStyles.SuperLarge.SuperLargeStyle" keytype="string" Location="20,0" Name="Rank" ScrollExtent="44,50" Size="44,50" TextAlignment="Right">1</Text>
+                        <Text Color="#F3BE3B" Font="/TextStyles.SuperLarge.SuperLargeStyle" keytype="string" Location="110,0" Name="DisplayName" ScrollExtent="500,50" Size="500,50">Placeholder</Text>
+                        <Text Color="#F3BE3B" Font="/TextStyles.SuperLarge.SuperLargeStyle" keytype="string" Location="500,0" Name="TotalPoints" ScrollExtent="170,50" Size="170,50" TextAlignment="Right">-1</Text>
+                    </Page>
+                    <Page Location="0,58" Name="SecondPlace" PackSize="a,a" ScrollExtent="725,50" Size="725,50">
+                        <Text Color="#A4E7F1" Font="/TextStyles.VeryLarge.VeryLargeStyle" keytype="string" Location="20,0" Name="Rank" ScrollExtent="44,38" Size="44,30" TextAlignment="Right">2</Text>
+                        <Text Color="#A4E7F1" Font="/TextStyles.VeryLarge.VeryLargeStyle" keytype="string" Location="110,0" Name="DisplayName" ScrollExtent="500,38" Size="500,30">Placeholder</Text>
+                        <Text Color="#A4E7F1" Font="/TextStyles.VeryLarge.VeryLargeStyle" keytype="string" Location="500,0" Name="TotalPoints" ScrollExtent="170,38" Size="170,30" TextAlignment="Right">-1</Text>
+                    </Page>
+                    <Page Location="0,100" Name="ThirdPlace" PackSize="a,a" ScrollExtent="725,30" Size="725,30">
+                        <Text Color="#EB8939" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="20,0" Name="Rank" ScrollExtent="44,26" Size="44,20" TextAlignment="Right">3</Text>
+                        <Text Color="#EB8939" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="110,0" Name="DisplayName" ScrollExtent="500,26" Size="500,20">Placeholder</Text>
+                        <Text Color="#EB8939" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="500,0" Name="TotalPoints" ScrollExtent="170,26" Size="170,20" TextAlignment="Right">-1</Text>
+                    </Page>
+                    <Page Location="0,135" Name="FourthPlace" PackSize="a,a" ScrollExtent="725,30" Size="725,30">
+                        <Text Color="#EB8939" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="20,0" Name="Rank" ScrollExtent="44,26" Size="44,20" TextAlignment="Right">4</Text>
+                        <Text Color="#EB8939" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="110,0" Name="DisplayName" ScrollExtent="500,26" Size="500,20">Placeholder</Text>
+                        <Text Color="#EB8939" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="500,0" Name="TotalPoints" ScrollExtent="170,26" Size="170,20" TextAlignment="Right">-1</Text>
+                    </Page>
+                    <Page Location="0,170" Name="FifthPlace" PackSize="a,a" ScrollExtent="725,30" Size="725,30">
+                        <Text Color="#EB8939" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="20,0" Name="Rank" ScrollExtent="44,26" Size="44,20" TextAlignment="Right">5</Text>
+                        <Text Color="#EB8939" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="110,0" Name="DisplayName" ScrollExtent="500,26" Size="500,20">Placeholder</Text>
+                        <Text Color="#EB8939" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="500,0" Name="TotalPoints" ScrollExtent="170,26" Size="170,20" TextAlignment="Right">-1</Text>
+                    </Page>
+                </Page>
+                <Page Location="20,240" Name="Scoreboard" PackSize="absolute,absolute" ScrollExtent="725,340" Size="725,340">
+                    <Namespace Name="ColumnHeaderButtonStyle">
+                        <ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" DisabledTextStyle="/TextStyles.Large.LargeStyle" MouseOverSound="ui_mouseover" MouseOverTextColor="#FFFF80" MouseOverTextShadowStyle="/ShadowStylesNew.Drop.style" MouseOverTextStyle="/TextStyles.Large.LargeStyle" Name="style_center_align" NormalTextColor="#F0D080" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/TextStyles.Large.LargeStyle" PressedTextShadowStyle="/ShadowStylesNew.Drop.style" PressedTextStyle="/TextStyles.Large.LargeStyle" PressSound="ui_pressed" ReleaseSound="ui_released" SelectedTextShadowStyle="/ShadowStylesNew.Drop.style" SelectedTextStyle="/TextStyles.Large.LargeStyle" />
+                    </Namespace>
+                    <Page Location="0,14" Name="OrderHeaders" PackSize="absolute,absolute" ScrollExtent="725,20" Size="725,20">
+                        <Text Font="/TextStyles.Large.LargeStyle" Location="33,0" Name="Sort1" ScrollExtent="45,52" Size="45,18" sortkey="rank" TextAlignmentVertical="Center" TextColor="#F0D080">Rank</Text>
+                        <Page Location="72,0" Name="SortImagePage1" PackSize="absolute,absolute" ScrollExtent="20,20" Size="20,20">
+                            <Image Name="SortImageDown" ScrollExtent="20,20" Size="20,20" Stretch="false" Style="/imagelist.WDShow" />
+                            <Image Name="SortImageUp" ScrollExtent="20,20" Size="20,20" Stretch="false" Style="/imagelist.WDHide" Visible="false" />
+                        </Page>
+                        <Text Font="/TextStyles.Large.LargeStyle" keytype="string" Location="100,0" Name="Sort2" ScrollExtent="58,26" Size="58,18" sortkey="name" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">Name</Text>
+                        <Page Location="160,0" Name="SortImagePage2" PackSize="absolute,absolute" ScrollExtent="20,20" Size="20,20">
+                            <Image Name="SortImageDown" ScrollExtent="20,20" Size="20,20" Stretch="false" Style="/imagelist.WDShow" Visible="false" />
+                            <Image Name="SortImageUp" ScrollExtent="20,20" Size="20,20" Stretch="false" Style="/imagelist.WDHide" />
+                        </Page>
+                        <Text Font="/TextStyles.Large.LargeStyle" keytype="string" Location="300,0" Name="Sort3" ScrollExtent="74,26" Size="74,18" sortkey="guild" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">Guild</Text>
+                        <Page Location="365,0" Name="SortImagePage3" PackSize="absolute,absolute" ScrollExtent="20,20" Size="20,20">
+                            <Image Name="SortImageDown" ScrollExtent="20,20" Size="20,20" Stretch="false" Style="/imagelist.WDShow" Visible="false" />
+                            <Image Name="SortImageUp" ScrollExtent="20,20" Size="20,20" Stretch="false" Style="/imagelist.WDHide" />
+                        </Page>
+                        <Text Font="/TextStyles.Large.LargeStyle" Location="600,0" Name="Sort4" ScrollExtent="74,26" Size="74,18" sortkey="score_totalpoints" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">Points</Text>
+                        <Page Location="665,0" Name="SortImagePage4" PackSize="absolute,absolute" ScrollExtent="20,20" Size="20,20">
+                            <Image Name="SortImageDown" ScrollExtent="20,20" Size="20,20" Stretch="false" Style="/imagelist.WDShow" Visible="false" />
+                            <Image Name="SortImageUp" ScrollExtent="20,20" Size="20,20" Stretch="false" Style="/imagelist.WDHide" />
+                        </Page>
+                    </Page>
+                    <DataSource Name="ScoreboardDS">
+                        <Data color="#f3be3b" displayname="The Greatest Gamer" guild="Test" Name="The Greatest Gamer" rank="1" score_totalpoints="1,200,000" />
+                        <Data color="#a4e7f1" displayname="Definitely Near God-tier" guild="Test" Name="Definitely Near God-tier" rank="999,999" score_totalpoints="999,999" />
+                        <Data color="#eb8939" displayname="Super Perplexed" guild="Test" Name="Super Perplexed" rank="3" score_totalpoints="999,999" />
+                        <Data color="#eb8939" displayname="Something Salty" guild="Test" Name="Something Salty" rank="4" score_totalpoints="999,999" />
+                        <Data color="#eb8939" displayname="Happy To Be Here" guild="Test" Name="Happy To Be Here" rank="5" score_totalpoints="999,999" />
+                        <Data color="#FF0000" displayname="Illusionist" guild="Test" Name="Player6" rank="6" score_totalpoints="9999" />
+                        <Data color="#FF0000" displayname="Troubador" guild="Test" Name="Player7" rank="7" score_totalpoints="9999" />
+                        <Data color="#FF0000" displayname="Warlock" guild="Test" Name="Player8" rank="8" score_totalpoints="9999" />
+                        <Data color="#FF0000" displayname="Monk" guild="Test" Name="Player9" rank="9" score_totalpoints="9999" />
+                        <Data color="#FF0000" displayname="Warden" guild="Test" Name="Player10" rank="10" score_totalpoints="9999" />
+                        <Data color="#FF0000" displayname="Defiler" guild="Test" Name="Player11" rank="11" score_totalpoints="9999" />
+                        <Data color="#FF0000" displayname="Conjuror" guild="Test" Name="Player12" rank="12" score_totalpoints="9999" />
+                        <Data color="#FF0000" displayname="Necromancer" guild="Test" Name="Player13" rank="13" score_totalpoints="9999" />
+                    </DataSource>
+                    <Listbox AutoScrollSpeed="0.000" DataSource="ScoreboardDS" Location="10,38" Name="List" PackSize="absolute,absolute" RowTemplate="score_template" ScrollExtent="683,299" Size="683,299" Style="/listboxlist.clear_listbox_no_selection" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="List" HideIfUnnecessary="false" Location="691,35" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,305" Size="22,305" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    <Page Location="0,28" Name="TableFrame" PackSize="a,a" ScrollExtent="721,318" Size="721,318">
+                        <Page BackgroundOpacity="1.000" Location="0,4" Name="Data" PackSize="absolute,absolute" RStyleDefault="/CommonElements.DataGrouper.data.data_frame.rect" ScrollExtent="721,313" Size="721,313" />
+                    </Page>
+                </Page>
+                <Page Location="20,590" Name="CurrentPlayer" PackSize="a,a" ScrollExtent="725,75" Size="725,75">
+                    <Text Color="#F0D080" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="175,30" Name="Rank" ScrollExtent="102,52" Size="102,25">Current Place:</Text>
+                    <Text Color="#EDE341" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="278,30" Name="RankValue" ScrollExtent="73,52" Size="73,25">Unranked</Text>
+                    <Text Color="#EDE341" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="220,0" Name="DisplayName" ScrollExtent="250,52" Size="250,25" TextAlignment="Center">Current Player [MyGuild];</Text>
+                    <Text Color="#F0D080" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="360,30" Name="TotalPoints" ScrollExtent="110,52" Size="110,25">Current Points:</Text>
+                    <Text Color="#EDE341" Font="/TextStyles.Large.LargeStyle" keytype="string" Location="470,30" Name="TotalPointsValue" ScrollExtent="85,52" Size="85,25">Unranked</Text>
+                </Page>
+                <Page AbsorbsInput="false" Name="WindowFrame" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="768,687" Size="768,687">
+                    <Button Location="725,25" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip="Close" UserMovable="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="24,8" Name="ScoreboardTitle" PackSize="a" ScrollExtent="432,26" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="432,26" TextAlignment="Center" TextColor="#FFEEBB">Lore &amp; Legend Total Points</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="15,23" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="730,653" Size="730,653" />
+                    <Image Location="2,15" Name="ServerNW" ScrollExtent="105,169" Size="105,169" Stretch="false" Style="/imagelist.server_nw" />
+                    <Image Location="655,15" Name="ServerNE" ScrollExtent="108,169" Size="108,169" Stretch="false" Style="/imagelist.server_ne" />
+                    <Image Location="3,524" Name="ServerSW" ScrollExtent="108,169" Size="108,169" Stretch="false" Style="/imagelist.server_sw" />
+                    <Image Location="655,524" Name="ServerSE" ScrollExtent="108,169" Size="108,169" Stretch="false" Style="/imagelist.server_se" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="7,0" Name="TitleDecoration" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="539,70" Size="539,70" />
+                    <Namespace Name="bkg">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/arenachampions/bg_scoreboard_bg.dds" SourceRect="0,0,512,476" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                    </Namespace>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="20,28" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/MainHUD.Welcome.WindowFrame.bkg.rect" ScrollExtent="724,646" Size="724,646" />
+                </Page>
+            </Page>
+        </Page>

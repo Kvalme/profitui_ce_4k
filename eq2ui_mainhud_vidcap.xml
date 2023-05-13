@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Location="639,13" Name="VideoCapture" ScrollExtent="145,54" Size="145,54" UserMovable="true" UserScrollable="false" Visible="false">
+            <Text Font="/Fonts.FontZapf18" Location="2,2" Name="Title1" ScrollExtent="143,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="143,20" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#FBF1D9">:88a2ba88d0f8d12b:YouTube Controls</Text>
+            <Button DynamicData="/GameData.VideoCapture.NotCapturing" Location="111,26" Name="SettingsButton" ScrollExtent="24,24" Size="24,24" Style="SettingsStyle.style" Tooltip=":88a2ba882ebff937:Video Capture Settings" />
+            <Text AbsorbsInput="false" DynamicData="/GameData.VideoCapture.Elapsed" Font="/TextStyles.Large.LargeStyle" Location="43,26" Name="TimerText" ScrollExtent="61,26" Size="61,25" TextAlignment="Center" TextAlignmentVertical="Center">:88a2ba88b8b42edc:00:00</Text>
+            <Button DynamicData="/GameData.VideoCapture.NotCapturing" Location="11,26" Name="RecordButton" ScrollExtent="24,24" Size="24,24" Style="RecStyle.style" Tooltip=":88a2ba88eb07d6c1:Start Recording Video Capture " />
+            <Button DynamicData="/GameData.VideoCapture.Capturing" Location="11,26" Name="StopButton" OnPress="video_stop" ScrollExtent="24,24" Size="24,24" Style="StopStyle.style" Tooltip=":88a2ba884dcf944b:Stop Recording Video Capture " />
+            <Namespace Name="SettingsStyle">
+                <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="pressed.rect" RStyleDefault="default.rect" RStyleDisabled="disabled.rect" RStyleMouseOver="mouseover.rect" RStyleMouseOverSelected="pressed.rect" RStyleSelected="pressed.rect" />
+                <Namespace Name="pressed">
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="29,145,53,169" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="mouseover">
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="29,145,53,169" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="disabled">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="29,145,53,169" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                </Namespace>
+                <Namespace Name="default">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="29,145,53,169" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                </Namespace>
+            </Namespace>
+            <Page AbsorbsInput="false" Name="Window" PackSize="absolute,absolute" ScrollExtent="145,54" Size="145,54">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.MiniWindowFrame.data.frame.rect" ScrollExtent="145,54" Size="145,54" />
+                <Page AbsorbsInput="false" BackgroundOpacity="0.800" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="bkg.rect" ScrollExtent="145,53" Size="145,53" />
+                <Namespace Name="bkg">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="680,199,826,230" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                </Namespace>
+            </Page>
+            <Namespace Name="RecStyle">
+                <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="pressed.rect" RStyleDefault="default.rect" RStyleDisabled="disabled.rect" RStyleMouseOver="mouseover.rect" RStyleMouseOverSelected="pressed.rect" RStyleSelected="pressed.rect" />
+                <Namespace Name="pressed">
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="3,93,27,117" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="mouseover">
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="3,119,27,143" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="disabled">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="3,145,27,169" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                </Namespace>
+                <Namespace Name="default">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="3,93,27,117" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                </Namespace>
+            </Namespace>
+            <Namespace Name="StopStyle">
+                <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="pressed.rect" RStyleDefault="default.rect" RStyleDisabled="disabled.rect" RStyleMouseOver="mouseover.rect" RStyleMouseOverSelected="pressed.rect" RStyleSelected="pressed.rect" />
+                <Namespace Name="pressed">
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="29,93,53,117" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="mouseover">
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="29,93,53,117" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="disabled">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="29,93,53,117" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                </Namespace>
+                <Namespace Name="default">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/widgets03.dds" SourceRect="29,93,53,117" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                </Namespace>
+            </Namespace>
+        </Page>

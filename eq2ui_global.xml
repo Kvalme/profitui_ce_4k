@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page GetsInput="false" ismodule="true" Name="Global" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <Page BackgroundOpacity="0.722" Location="0,-386" Name="Console" PackLocation="left" PackSize="1.0,fixed" ScrollExtent="1024,386" Size="1024,386">
+            <Scrollbar ArrowPressSound="sounds/button" Control="ConsoleDisplay" HideIfUnnecessary="true" Location="1002,0" MaximumSize="22,16384" MinimumSize="22,80" Name="ConsoleScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,360" Size="22,360" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Textbox AbsorbsInput="false" BackgroundColor="#07274E" BackgroundOpacity="0.400" Cursor="/Cursor.Text" Location="0,362" Name="ConsoleInput" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="1023,24" Size="1023,24" Style="InputStyle" />
+            <Text AbsorbsInput="false" Font="/TextStyles.System.SystemStyle" Margin="4,4,4,4" Name="ConsoleDisplay" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="1002,360" ShadowStyle="/ShadowStylesNew.None.style" Size="1002,360" />
+            <TextboxStyle CaratColor="#FFFFFF" Cursor="/Cursor.Text" Name="InputStyle" NormalTextShadowStyle="/ShadowStylesNew.None.style" NormalTextStyle="/TextStyles.System.SystemStyle" SelectionColor="#C28912" SelectionOpacity="1.000" TextColor="#FFFFFF" TextPadding="6,4,6,4" />
+        </Page>
+<include>eq2ui_global_browser.xml</include>
+<include>eq2ui_global_optional_download_required.xml</include>
+        <Page Activated="true" eq2usescomwndcontrols="true" Location="374,185" MaximumSize="416,500" MinimumSize="10,10" Name="FloatingComboBox" ScrollExtent="150,156" Size="150,156">
+            <Page BackgroundOpacity="1.000" Location="0,6" Name="ListBox" PackLocation="top,left" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="150,150" Size="150,150">
+                <List BackgroundColor="#000000" BackgroundOpacity="0.000" DataSource="ListDataSource" Location="12,8" Margin="10,10,10,10" MinimumScrollExtent="108,168" Name="List" PackLocation="top,left" PackSize="a,a" ScrollExtent="108,168" SelectionAllowedMultiRow="false" Size="108,134" Style="/CommonElements.List.data.list_style" />
+                <DataSource Name="ListDataSource">
+                    <Data Name="New Data" text=":68982daf87b22ecd:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_1:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_2:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_3:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_4:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_5:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_6:Test" />
+                </DataSource>
+                <Scrollbar ArrowPressSound="sounds/button" Control="List" HideIfUnnecessary="true" Location="118,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="f,a" ScrollExtent="22,130" Size="22,130" Style="/CommonElements.ScrollbarVertical.data.style" />
+            </Page>
+        </Page>
+<include>eq2ui_global_marketplace.xml</include>
+    </Page>

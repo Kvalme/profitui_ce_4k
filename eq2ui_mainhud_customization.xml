@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="165,-8" Name="Customization" ScrollExtent="637,694" Size="637,694" UserMovable="true" Visible="false">
+            <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="0,17" Name="Header" ScrollExtent="637,38" ShadowStyle="/ShadowStyles.Outline1" Size="637,28" TextAlignment="Center" TextColor="#F2EACE">:c92f196a1a117ebf:Appearance</Text>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="88,18" Name="HeaderDecoration" PackLocation="center,top" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="460,30" Size="460,30" />
+            <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="338,303" Name="HeadShotCheckbox" ScrollExtent="140,20" Size="140,20" Style="/CheckboxStyles.widget_check" Tooltip=":c92f196ababe5f93:Toggles between Head and Body display.">:c92f196a0829ca94:Close-up</Checkbox>
+            <Button Location="172,638" Name="ButtonOK" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:c92f196a28c926d2:OK</Button>
+            <Button Location="324,638" Name="ButtonCancel" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style" Tooltip=":c92f196aae453fbb:Cancel">:c92f196aae453fbb_1:Cancel</Button>
+            <PaperDoll Location="330,62" Name="Paperdoll" paperdollbackgroundcolor="/ColorStyles.paperdoll_background" ScrollExtent="284,265" Size="284,265" />
+            <PaperDoll Location="330,62" Name="HeadshotPaperdoll" paperdollbackgroundcolor="/ColorStyles.paperdoll_background" ScrollExtent="284,265" Size="284,265" />
+            <Page BackgroundOpacity="0.475" Location="20,58" MinimumSize="288,530" Name="Tabs" ScrollExtent="288,568" Size="288,568">
+                <Checkbox BackgroundOpacity="1.000" Location="19,20" MaximumSize="16384,32" MinimumSize="32,32" Name="Tab0" Radio="true" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.ToggleButton.data.style">:c92f196aa2d32088:Tab0</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" Location="19,52" MaximumSize="16384,32" MinimumSize="32,32" Name="Tab1" Radio="true" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.ToggleButton.data.style">:c92f196ad5d4101e:Tab1</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" Location="19,84" MaximumSize="16384,32" MinimumSize="32,32" Name="Tab2" Radio="true" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.ToggleButton.data.style">:c92f196a4cdd41a4:Tab2</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" Location="149,20" MaximumSize="16384,32" MinimumSize="32,32" Name="Tab3" Radio="true" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.ToggleButton.data.style">:c92f196a3bda7132:Tab3</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" Location="149,52" MaximumSize="16384,32" MinimumSize="32,32" Name="Tab4" Radio="true" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.ToggleButton.data.style">:c92f196aa5bee491:Tab4</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" Location="149,84" MaximumSize="16384,32" MinimumSize="32,32" Name="Tab5" Radio="true" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.ToggleButton.data.style">:c92f196ad2b9d407:Tab5</Checkbox>
+                <Page Location="10,134" Name="FeatureList" ScrollExtent="268,260" Size="268,260">
+                    <Composite Location="10,10" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="248,240" Size="248,240" SpacingType="Fill">
+                        <Listbox BackgroundColor="#FFFFFF" DataSource="FeatureListDataSource" Name="Features" PackSize=",a" RowTemplate="/CommonElements.Listbox.data.row_template" ScrollExtent="248,240" Size="248,240" Style="/CommonElements.Listbox.data.listbox_style" />
+                        <Scrollbar ArrowPressSound="sounds/button" Control="Features" HideIfUnnecessary="true" Location="226,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackSize=",a" ScrollExtent="22,240" Size="22,240" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                    </Composite>
+                    <Rectangle Name="Frame" Opacity="0.500" PackSize="a,a" ScrollExtent="268,260" Size="268,260" />
+                </Page>
+                <DataSource Name="FeatureListDataSource">
+                    <Data Name="New Data" text=":c92f196a1322bed4:test value" />
+                    <Data Name="New Data" text=":c92f196a21e1d392:test val 2" />
+                </DataSource>
+                <Button Location="19,412" MaximumSize="16384,32" MinimumSize="32,32" Name="SaveSettings" ScrollExtent="250,32" Size="250,32" Style="/CommonElements.PushButton.data.style">:c92f196a7832f962:Save Settings to File</Button>
+                <Button Location="19,444" MaximumSize="16384,32" MinimumSize="32,32" Name="LoadSettings" ScrollExtent="250,32" Size="250,32" Style="/CommonElements.PushButton.data.style">:c92f196ab548360b:Load Settings from File</Button>
+                <Button Location="19,492" MaximumSize="16384,32" MinimumSize="32,32" Name="UnlockAll" ScrollExtent="250,32" Size="250,32" Style="/CommonElements.PushButton.data.style">:c92f196a11f773f2:Unlock All</Button>
+                <Button Location="19,525" MaximumSize="16384,32" MinimumSize="32,32" Name="RandomizeAll" ScrollExtent="250,32" Size="250,32" Style="/CommonElements.PushButton.data.style">:c92f196a815367b6:Randomize All</Button>
+                <Page BackgroundOpacity="1.000" Name="Edging" RStyleDefault="/WindowElements.HollowFrame.data.frame.rect" ScrollExtent="288,568" Size="288,568" />
+            </Page>
+            <Page BackgroundOpacity="0.475" Location="328,58" Name="HeadShot" ScrollExtent="288,274" Size="288,274">
+                <Page BackgroundOpacity="1.000" Name="Edging" PackSize="a,a" RStyleDefault="/WindowElements.HollowFrame.data.frame.rect" ScrollExtent="288,274" Size="288,274" />
+            </Page>
+            <Page BackgroundOpacity="0.475" Location="328,352" MinimumSize="288,274" Name="Controls" ScrollExtent="288,274" Size="288,274">
+                <Page AbsorbsInput="false" Location="10,10" Name="ListPage" PackSize="a,a" ScrollExtent="268,254" Size="268,254">
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="14,3" Name="Lock" ScrollExtent="16,18" Size="16,18" Style="/CheckboxStyles.lock_gold" Tooltip=":c92f196a9936a28c:When locked, this feature will not be randomized" />
+                    <DataSource Name="ListDataSource" />
+                    <Page Location="0,-1" Name="Table" PackSize="a,a" ScrollExtent="268,210" Size="268,210">
+                        <Text Color="#F0D080" Font="/TextStyles.Large.LargeStyle" Location="0,4" Name="Title" PackSize="a" ScrollExtent="268,26" Size="268,18" TextAlignment="Center">:c92f196a877492a7:Attribute</Text>
+                        <Page Location="0,30" Name="List" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="268,180" Size="268,180">
+                            <Composite Location="11,8" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="246,164" Size="246,164" SpacingType="Fill">
+                                <Listbox BackgroundColor="#FFFFFF" DataSource="ListDataSource" Name="Listbox" PackSize=",a" RowTemplate="/CommonElements.Listbox.data.row_template" ScrollExtent="246,164" Size="246,164" Style="/CommonElements.Listbox.data.listbox_style" />
+                                <Scrollbar ArrowPressSound="sounds/button" Control="Listbox" HideIfUnnecessary="true" Location="224,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackSize=",a" ScrollExtent="22,164" Size="22,164" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            </Composite>
+                            <Rectangle Name="Frame" Opacity="0.500" PackSize="a,a" ScrollExtent="268,180" Size="268,180" />
+                        </Page>
+                    </Page>
+                    <Button Location="9,221" MaximumSize="16384,32" MinimumSize="32,32" Name="RandomizeButton" PackLocation=",fff" PackSize="a" ScrollExtent="250,32" Size="250,32" Style="/CommonElements.PushButton.data.style">:c92f196a6cdf6336:Randomize</Button>
+                </Page>
+                <Page AbsorbsInput="false" Location="10,10" Name="SlidersPage" PackSize="a,a" ScrollExtent="268,254" Size="268,254" Visible="false">
+                    <Page Location="0,-1" Name="Table" PackSize="a,a" ScrollExtent="268,195" Size="268,195">
+                        <Text Color="#F0D080" Font="/TextStyles.Large.LargeStyle" Location="0,4" Name="Title" PackSize="a" ScrollExtent="268,26" Size="268,18" TextAlignment="Center">:c92f196a2cd99348:Facial Features</Text>
+                        <Page Location="0,20" Name="Sliders" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="268,175" Size="268,175">
+                            <Page Location="0,10" Name="Slider0" PackSize="a" ScrollExtent="268,34" Size="268,34">
+                                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="0,7" Name="Lock" PackLocation="left,proportional" ScrollExtent="16,18" Size="16,18" Style="/CheckboxStyles.lock_gold" Tooltip=":c92f196a9936a28c_1:When locked, this feature will not be randomized" />
+                                <Text Color="#F2EFE1" Font="/TextStyles.Normal.NormalStyle" Location="20,-5" Margin="1,1,1,0" Name="LeftText" PackSize="proportional,absolute" ScrollExtent="80,40" Size="80,40" TextAlignment="Right" TextAlignmentVertical="Center">:c92f196a25aab7a9:Left</Text>
+                                <Text Color="#F2EFE1" Font="/TextStyles.Normal.NormalStyle" Location="200,-5" Margin="1,1,1,0" Name="RightText" PackLocation="right,top" PackSize="proportional,absolute" ScrollExtent="71,40" Size="71,40" TextAlignmentVertical="Center">:c92f196a8af4a5ef:Right</Text>
+                                <Sliderbar Location="100,4" LowerLimit="-100" MaximumSize="16384,26" MinimumSize="100,26" Name="Slider" ScrollExtent="100,26" Size="100,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" />
+                            </Page>
+                            <Page Location="0,50" Name="Slider1" PackSize="a" ScrollExtent="268,34" Size="268,34">
+                                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="0,7" Name="Lock" PackLocation="left,proportional" ScrollExtent="16,18" Size="16,18" Style="/CheckboxStyles.lock_gold" Tooltip=":c92f196a9936a28c_2:When locked, this feature will not be randomized" />
+                                <Text Color="#F2EFE1" Font="/TextStyles.Normal.NormalStyle" Location="20,-5" Margin="1,1,1,0" Name="LeftText" PackSize="proportional,absolute" ScrollExtent="80,40" Size="80,40" TextAlignment="Right" TextAlignmentVertical="Center">:c92f196a25aab7a9_1:Left</Text>
+                                <Text Color="#F2EFE1" Font="/TextStyles.Normal.NormalStyle" Location="200,-5" Margin="1,1,1,0" Name="RightText" PackLocation="right,top" PackSize="proportional,absolute" ScrollExtent="71,40" Size="71,40" TextAlignmentVertical="Center">:c92f196a8af4a5ef_1:Right</Text>
+                                <Sliderbar Location="100,4" LowerLimit="-100" MaximumSize="16384,26" MinimumSize="100,26" Name="Slider" ScrollExtent="100,26" Size="100,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" />
+                            </Page>
+                            <Page Location="0,90" Name="Slider2" PackSize="a" ScrollExtent="268,34" Size="268,34">
+                                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="0,7" Name="Lock" PackLocation="left,proportional" ScrollExtent="16,18" Size="16,18" Style="/CheckboxStyles.lock_gold" Tooltip=":c92f196a9936a28c_3:When locked, this feature will not be randomized" />
+                                <Text Color="#F2EFE1" Font="/TextStyles.Normal.NormalStyle" Location="20,-5" Margin="1,1,1,0" Name="LeftText" PackSize="proportional,absolute" ScrollExtent="80,40" Size="80,40" TextAlignment="Right" TextAlignmentVertical="Center">:c92f196a25aab7a9_2:Left</Text>
+                                <Text Color="#F2EFE1" Font="/TextStyles.Normal.NormalStyle" Location="200,-5" Margin="1,1,1,0" Name="RightText" PackLocation="right,top" PackSize="proportional,absolute" ScrollExtent="71,40" Size="71,40" TextAlignmentVertical="Center">:c92f196a8af4a5ef_2:Right</Text>
+                                <Sliderbar Location="100,4" LowerLimit="-100" MaximumSize="16384,26" MinimumSize="100,26" Name="Slider" ScrollExtent="100,26" Size="100,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" />
+                            </Page>
+                            <Page Location="0,130" Name="Slider3" PackSize="a" ScrollExtent="268,34" Size="268,34">
+                                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="0,7" Name="Lock" PackLocation="left,proportional" ScrollExtent="16,18" Size="16,18" Style="/CheckboxStyles.lock_gold" Tooltip=":c92f196a9936a28c_4:When locked, this feature will not be randomized" />
+                                <Text Color="#F2EFE1" Font="/TextStyles.Normal.NormalStyle" Location="20,-5" Margin="1,1,1,0" Name="LeftText" PackSize="proportional,absolute" ScrollExtent="80,40" Size="80,40" TextAlignment="Right" TextAlignmentVertical="Center">:c92f196a25aab7a9_3:Left</Text>
+                                <Text Color="#F2EFE1" Font="/TextStyles.Normal.NormalStyle" Location="200,-5" Margin="1,1,1,0" Name="RightText" PackLocation="right,top" PackSize="proportional,absolute" ScrollExtent="71,40" Size="71,40" TextAlignmentVertical="Center">:c92f196a8af4a5ef_3:Right</Text>
+                                <Sliderbar Location="100,4" LowerLimit="-100" MaximumSize="16384,26" MinimumSize="100,26" Name="Slider" ScrollExtent="100,26" Size="100,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" />
+                            </Page>
+                        </Page>
+                    </Page>
+                    <Button Location="9,221" MaximumSize="16384,32" MinimumSize="32,32" Name="RandomizeButton" PackLocation=",fff" PackSize="a" ScrollExtent="250,32" Size="250,32" Style="/CommonElements.PushButton.data.style">:c92f196a6cdf6336_1:Randomize</Button>
+                </Page>
+                <Page AbsorbsInput="false" Location="10,10" Name="ColorPage" PackSize="a,a" ScrollExtent="268,254" Size="268,254" Visible="false">
+                    <Text Color="#FF0000" Font="/TextStyles.Large.LargeStyle" Name="ErrorText" PackSize="a,a" ScrollExtent="268,254" Size="268,254" TextAlignment="Center" TextAlignmentVertical="Center">:c92f196a14ee4ef4:Error Text</Text>
+                    <Page Location="0,-1" Name="Table" PackSize="absolute,absolute" ScrollExtent="268,195" Size="268,195">
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="4,3" Name="Lock" ScrollExtent="16,18" Size="16,18" Style="/CheckboxStyles.lock_gold" Tooltip=":c92f196a9936a28c_5:When locked, this feature will not be randomized" />
+                        <Text Color="#F0D080" Font="/TextStyles.Large.LargeStyle" Location="22,4" Name="Title" PackSize="a" ScrollExtent="224,26" Size="224,20" TextAlignment="Center">:c92f196a58689812:Color</Text>
+                        <Page Location="0,20" Name="Grouper" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="268,175" Size="268,175">
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="200,13" Name="SampleFrame" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="50,50" Size="50,50" />
+                            <Image BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="208,21" Name="ColorSample" ScrollExtent="34,34" Size="34,34" SourceRect="84,106,85,107" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="59,13" Name="SwatchFrame" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="150,150" Size="150,150" />
+                            <Image GetsInput="true" Location="68,21" Name="ColorSwatch" ScrollExtent="133,134" Size="133,134" SourceRect="0,0,64,64" SourceResource="tints/human_male.tga" />
+                        </Page>
+                    </Page>
+                    <Button Location="9,221" MaximumSize="16384,32" MinimumSize="32,32" Name="RandomizeButton" PackLocation="cfc,bottom" ScrollExtent="250,32" Size="250,32" Style="/CommonElements.PushButton.data.style">:c92f196a6cdf6336_2:Randomize</Button>
+                </Page>
+                <Page BackgroundOpacity="1.000" Name="Edging" PackSize="a,a" RStyleDefault="/WindowElements.HollowFrame.data.frame.rect" ScrollExtent="288,274" Size="288,274" />
+            </Page>
+            <Page AbsorbsInput="false" Location="-12,-11" Name="WindowFrame" PackSize="a,a" ScrollExtent="661,715" Size="661,715">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="661,715" Size="661,715" />
+            </Page>
+        </Page>

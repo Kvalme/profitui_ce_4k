@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+                    <DataSource Name="FavSource5EN">
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="           Consumables" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="RAFFIK ITEMS" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="Blessing of the Prime" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Blessing of the Prime" tier="0" />
+                        <Data itemeffect=" " itemname="Globe of Homecoming" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Globe of Homecoming" tier="0" />
+                        <Data itemeffect=" " itemname="Harvester&apos;s Balm" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Harvester&apos;s Balm" tier="0" />
+                        <Data itemeffect=" " itemname="Mutagenic Essence" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Mutagenic Essence" tier="0" />
+                        <Data itemeffect=" " itemname="Bulwark of Zek" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Bulwark of Zek" tier="0" />
+                        <Data itemeffect=" " itemname="Henchman Adornment Pack" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Henchman Adornment Pack" tier="0" />
+                        <Data itemeffect=" " itemname="Coldain Cure-All" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Coldain Cure-All" tier="0" />
+                        <Data itemeffect=" " itemname="Charm of Expertise" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Charm of Expertise" tier="0" />
+                        <Data itemeffect=" " itemname="Potion of Nimble Fingers" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Potion of Nimble Fingers" tier="0" />
+                        <Data itemeffect=" " itemname="Essence of the Zephyr" itemtype="0" maxlvl="1" minlvl="0" sellername=" " text="-Essence of the Zephyr" tier="0" />
+                        <Data itemeffect=" " itemname="Brew of Readiness" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Brew of Readiness" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="DRINK MC" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="100" minlvl="100" sellername=" " text="(100) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="95" minlvl="95" sellername=" " text="  (95) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="94" minlvl="90" sellername=" " text="  (90) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="89" minlvl="80" sellername=" " text="  (80) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="79" minlvl="70" sellername=" " text="  (70) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="69" minlvl="60" sellername=" " text="  (60) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="59" minlvl="50" sellername=" " text="  (50) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="49" minlvl="40" sellername=" " text="  (40) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="39" minlvl="30" sellername=" " text="  (30) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="29" minlvl="20" sellername=" " text="  (20) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="19" minlvl="10" sellername=" " text="  (10) MC" tier="4" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="DRINK HC" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="100" minlvl="100" sellername=" " text="(100) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="95" minlvl="95" sellername=" " text="  (95) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="94" minlvl="90" sellername=" " text="  (90) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="89" minlvl="80" sellername=" " text="  (80) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="79" minlvl="70" sellername=" " text="  (70) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="69" minlvl="60" sellername=" " text="  (60) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="59" minlvl="50" sellername=" " text="  (50) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="49" minlvl="40" sellername=" " text="  (40) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="39" minlvl="30" sellername=" " text="  (30) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="29" minlvl="20" sellername=" " text="  (20) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="17" maxlvl="19" minlvl="10" sellername=" " text="  (10) HC" tier="2" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="FOOD MC" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="100" minlvl="100" sellername=" " text="(100) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="95" minlvl="95" sellername=" " text="  (95) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="94" minlvl="90" sellername=" " text="  (90) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="89" minlvl="80" sellername=" " text="  (80) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="79" minlvl="70" sellername=" " text="  (70) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="69" minlvl="60" sellername=" " text="  (60) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="59" minlvl="50" sellername=" " text="  (50) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="49" minlvl="40" sellername=" " text="  (40) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="39" minlvl="30" sellername=" " text="  (30) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="29" minlvl="20" sellername=" " text="  (20) MC" tier="4" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="19" minlvl="10" sellername=" " text="  (10) MC" tier="4" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="FOOD HC" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="100" minlvl="100" sellername=" " text="(100) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="95" minlvl="95" sellername=" " text="  (95) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="94" minlvl="90" sellername=" " text="  (90) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="89" minlvl="80" sellername=" " text="  (80) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="79" minlvl="70" sellername=" " text="  (70) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="69" minlvl="60" sellername=" " text="  (60) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="59" minlvl="50" sellername=" " text="  (50) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="49" minlvl="40" sellername=" " text="  (40) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="39" minlvl="30" sellername=" " text="  (30) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="29" minlvl="20" sellername=" " text="  (20) HC" tier="2" />
+                        <Data itemeffect=" " itemname=" " itemtype="19" maxlvl="19" minlvl="10" sellername=" " text="  (10) HC" tier="2" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="PATCH KITS" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="Redwood Patch Kit" itemtype="0" maxlvl="80" minlvl="0" sellername=" " text="-Redwood Patch Kit (50)" tier="0" />
+                        <Data itemeffect=" " itemname="Rosewood Patch Kit" itemtype="0" maxlvl="80" minlvl="0" sellername=" " text="-Rosewood Patch Kit (40)" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="2" text="ELIXIERS" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="Deftness" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Deftness (AGI)" tier="0" />
+                        <Data itemeffect=" " itemname="Constitution" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Constitution (Health)" tier="0" />
+                        <Data itemeffect=" " itemname="Intellect" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Intellect (INT)" tier="0" />
+                        <Data itemeffect=" " itemname="Transcendence" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Transcendence (Power)" tier="0" />
+                        <Data itemeffect=" " itemname="Fortitude" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Fortitude (STR)" tier="0" />
+                        <Data itemeffect=" " itemname="Piety" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Piety (WIS)" tier="0" />
+                        <Data itemeffect=" " itemname="Tactics" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Tactics (Melee Crit)" tier="0" />
+                        <Data itemeffect=" " itemname="Second Sight" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Second Sight (Spell Crit)" tier="0" />
+                        <Data itemeffect=" " itemname="Thorns" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Thorns (Dmg Shield)" tier="0" />
+                        <Data itemeffect=" " itemname="Metallic Hues" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Metallic Hues (PHYS)" tier="0" />
+                        <Data itemeffect=" " itemname="Arctic Awareness" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Arctic Aware. (ELE)" tier="0" />
+                        <Data itemeffect=" " itemname="Noxious Awareness" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Noxious Aware. (NOX)" tier="0" />
+                        <Data itemeffect=" " itemname="Elixir of Combat" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Combat (MultiAttack)" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="2" text="POTIONS" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="Health" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Essence of Health (HP)" tier="0" />
+                        <Data itemeffect=" " itemname="Regeneration" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Essence of Regeneration (HP)" tier="0" />
+                        <Data itemeffect=" " itemname="Power" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Essence of Power (PP)" tier="0" />
+                        <Data itemeffect=" " itemname="Clarity" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Essence of Clarity (PP)" tier="0" />
+                        <Data itemeffect=" " itemname="Essence of Combat" itemtype="28" maxlvl="100" minlvl="0" sellername=" " text="-Essence of Combat (HP/PP)" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="2" text="REMEDIES" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="Arcane Remedy" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Arcane Remedy" tier="0" />
+                        <Data itemeffect=" " itemname="Elemental Remedy" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Elemental Remedy" tier="0" />
+                        <Data itemeffect=" " itemname="Noxious Remedy" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Noxious Remedy" tier="0" />
+                        <Data itemeffect=" " itemname="Trauma Remedy" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Trauma Remedy" tier="0" />
+                        <Data itemeffect=" " itemname="Freedom of Action" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Freedom of Action" tier="0" />
+                        <Data itemeffect=" " itemname="Freedom of Mind" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Freedom of Mind" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="2" text="REPRIEVES(Wards)" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="Arcane Reprieve" itemtype="0" maxlvl="100" minlvl="1" sellername=" " text="-Arcane Reprieve" tier="0" />
+                        <Data itemeffect=" " itemname="Elemental Reprieve" itemtype="0" maxlvl="100" minlvl="1" sellername=" " text="-Elemental Reprieve" tier="0" />
+                        <Data itemeffect=" " itemname="Noxious Reprieve" itemtype="0" maxlvl="100" minlvl="1" sellername=" " text="-Noxious Reprieve" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="2" text="REGEN TOTEMS" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Swamp Elemental" itemtype="0" maxlvl="90" minlvl="90" sellername=" " text="-Health Regen (90)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Holgresh" itemtype="0" maxlvl="90" minlvl="90" sellername=" " text="-Power Regen (90)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Fearstalker" itemtype="0" maxlvl="80" minlvl="80" sellername=" " text="-Health Regen (80)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Bamboo" itemtype="0" maxlvl="80" minlvl="80" sellername=" " text="-Power Regen (80)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Cockatrice" itemtype="0" maxlvl="70" minlvl="70" sellername=" " text="-Health Regen (70)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Goblin" itemtype="0" maxlvl="70" minlvl="70" sellername=" " text="-Power Regen (70)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Carnivorous Plant" itemtype="0" maxlvl="60" minlvl="60" sellername=" " text="-Health Regen (60)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Beholder" itemtype="0" maxlvl="60" minlvl="60" sellername=" " text="-Power Regen (60)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Cobra" itemtype="0" maxlvl="49" minlvl="49" sellername=" " text="-Health Regen (49)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Monkey" itemtype="0" maxlvl="50" minlvl="50" sellername=" " text="-Power Regen (50)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Alpha Feline" itemtype="0" maxlvl="40" minlvl="40" sellername=" " text="-Health Regen (40)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Hawk" itemtype="0" maxlvl="40" minlvl="40" sellername=" " text="-Power Regen (40)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Tiger" itemtype="0" maxlvl="30" minlvl="30" sellername=" " text="-Health Regen (30)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Bat" itemtype="0" maxlvl="30" minlvl="30" sellername=" " text="-Power Regen (30)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Snow Bear" itemtype="0" maxlvl="20" minlvl="20" sellername=" " text="-Health Regen (20)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Winged Viper" itemtype="0" maxlvl="20" minlvl="20" sellername=" " text="-Power Regen (20)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Bear" itemtype="0" maxlvl="10" minlvl="10" sellername=" " text="-Health Regen (10)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Rat" itemtype="0" maxlvl="10" minlvl="10" sellername=" " text="-Power Regen (10)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Frog" itemtype="0" maxlvl="1" minlvl="1" sellername=" " text="-Health Regen (1)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Beetle" itemtype="0" maxlvl="1" minlvl="1" sellername=" " text="-Power Regen (1)" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="2" text="OTHER TOTEMS" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="Totem of the Otter" itemtype="0" maxlvl="1" minlvl="1" sellername=" " text="-Breath Underwater (1)" tier="0" />
+                        <Data itemeffect=" " itemname="Vision Totem of the Turtle" itemtype="0" maxlvl="1" minlvl="1" sellername=" " text="-Fish Vision (1)" tier="0" />
+                        <Data itemeffect=" " itemname="Vision Totem of the Snake" itemtype="0" maxlvl="1" minlvl="1" sellername=" " text="-Infravision (1)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Wolf" itemtype="0" maxlvl="15" minlvl="15" sellername=" " text="-Run Speed 24% (15)" tier="0" />
+                        <Data itemeffect=" " itemname="Vision Totem of the Butterfly" itemtype="0" maxlvl="20" minlvl="20" sellername=" " text="-See Stealth (20)" tier="0" />
+                        <Data itemeffect=" " itemname="Vision Totem of the Owl" itemtype="0" maxlvl="20" minlvl="20" sellername=" " text="-See Invisibility (20)" tier="0" />
+                        <Data itemeffect=" " itemname="Totem of the Jaguar" itemtype="0" maxlvl="30" minlvl="30" sellername=" " text="-Invisibility + Stealth (30)" tier="0" />
+                        <Data itemeffect=" " itemname="Totem of the Chameleon" itemtype="0" maxlvl="30" minlvl="30" sellername=" " text="-Invisibility (30)" tier="0" />
+                        <Data itemeffect=" " itemname="Totem of Escape" itemtype="0" maxlvl="30" minlvl="30" sellername=" " text="-Escape (30)" tier="0" />
+                        <Data itemeffect=" " itemname="Totem of the Great Chameleon" itemtype="0" maxlvl="30" minlvl="30" sellername=" " text="-Invisibility 15% Spd. (30)" tier="0" />
+                        <Data itemeffect=" " itemname="Spirit Totem of the Chokidai" itemtype="0" maxlvl="65" minlvl="65" sellername=" " text="-Run Speed 45% (65)" tier="0" />
+                        <Data itemeffect=" " itemname="Vision Totem of the Cat" itemtype="0" maxlvl="70" minlvl="70" sellername=" " text="-See Invis + Stealth (70)" tier="0" />
+                        <Data itemeffect=" " itemname="Totem of the Sabertooth" itemtype="0" maxlvl="80" minlvl="80" sellername=" " text="-Run Speed 55% (80)" tier="0" />
+                        <Data itemeffect=" " itemname="Totem of the Enduring Spirit" itemtype="0" maxlvl="80" minlvl="80" sellername=" " text="-Breath/Walk/Fish Underwater (80)" tier="0" />
+                        <Data itemeffect=" " itemname="Totem of the Void" itemtype="0" maxlvl="80" minlvl="80" sellername=" " text="-Group Invisibility (80)" tier="0" />
+                        <Data itemeffect=" " itemname="Totem of the Deadly Sabertooth" itemtype="0" maxlvl="90" minlvl="90" sellername=" " text="-Run Speed 75% (90)" tier="0" />
+                    </DataSource>

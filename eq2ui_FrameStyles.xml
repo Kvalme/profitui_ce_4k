@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page Name="FrameStyles" ScrollExtent="870,674" Size="870,674" Visible="false">
+        <RectangleStyle Center="/imagelist.win_blank_space" EastShrink="true" Name="vertical_container_bottom_only" South="vertical_container_bottom" TitleStretch="false" WestShrink="true" />
+        <ImageStyle Filter="true" Name="vertical_container_bottom">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="432,268,506,296" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="vertical_container_top">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="432,229,506,257" />
+        </ImageStyle>
+        <RectangleStyle Center="/imagelist.win_blank_space" EastShrink="true" Name="vertical_container" North="vertical_container_top" South="vertical_container_bottom" TitleStretch="false" WestShrink="true" />
+        <Page Name="ThinBevelled" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="195,7,214,10" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="188,1,194,6" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="195,1,214,6" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="215,1,225,6" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="215,7,225,10" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="215,11,225,18" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="195,11,214,18" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="188,11,194,18" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="188,7,194,10" />
+            </ImageStyle>
+        </Page>
+        <Page Name="ThinRounded" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="40,53,68,67" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="58,4,64,10" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="70,4,100,10" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="102,4,108,10" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="102,19,108,20" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="102,35,108,41" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="71,35,100,41" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="58,35,64,41" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="58,17,64,18" />
+            </ImageStyle>
+        </Page>
+        <Page Name="ThinRoundedGreyscale" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="40,53,68,67" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="63,202,69,208" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="75,202,90,208" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="107,202,113,208" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="107,217,113,230" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="107,233,113,239" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="76,233,95,239" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="63,233,69,239" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="63,215,69,230" />
+            </ImageStyle>
+        </Page>
+        <Page Name="ThickRounded" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="40,53,68,67" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,4,11,9" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="18,4,45,9" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="49,4,55,9" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="49,19,55,20" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="49,36,55,42" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="18,36,46,42" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,36,11,42" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,19,11,21" />
+            </ImageStyle>
+        </Page>
+        <Page Name="ThickRoundedGreyscale" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="40,53,68,67" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="6,202,12,208" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="19,202,46,208" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="50,202,56,208" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="50,218,56,219" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="50,235,56,241" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="26,235,27,241" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="6,235,12,241" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="6,218,12,220" />
+            </ImageStyle>
+        </Page>
+        <Page Name="ThinCornered" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="40,53,68,67" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,85,13,93" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="16,84,128,93" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,85,142,93" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,103,142,104" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,112,142,120" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="35,112,37,120" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,112,13,120" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,105,13,107" />
+            </ImageStyle>
+        </Page>
+        <Page Name="ThinCorneredGreyscale" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="40,53,68,67" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,162,13,170" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="36,162,38,170" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,162,142,170" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,180,142,181" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,189,142,197" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="35,189,37,197" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,189,13,197" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,182,13,184" />
+            </ImageStyle>
+        </Page>
+        <Page Name="ThickCornered" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="40,53,68,67" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,46,13,54" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="16,45,128,54" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,46,142,54" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,61,142,62" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,73,142,82" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="16,73,127,82" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,73,13,82" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,61,13,63" />
+            </ImageStyle>
+        </Page>
+        <Page Name="ThickCorneredGreyscale" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="40,53,68,67" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,123,13,131" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="16,122,128,131" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,123,142,131" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,138,142,139" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="131,150,142,159" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="35,150,37,159" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,150,13,159" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="5,138,13,140" />
+            </ImageStyle>
+        </Page>
+        <Page Name="BkgRoundedGreyscale" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="133,18,150,29" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="112,4,117,9" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="124,4,149,9" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="155,4,160,9" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="155,20,160,31" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="155,34,160,39" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="125,35,148,40" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="112,35,117,40" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="112,15,117,29" />
+            </ImageStyle>
+        </Page>
+        <Page Name="Parchment" ScrollExtent="320,240" Size="320,240">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+            <ImageStyle Name="nw">
+                <ImageFrame Source="images/map_bg01.dds" SourceRect="37,112,60,135" />
+            </ImageStyle>
+            <ImageStyle Name="n">
+                <ImageFrame Source="images/map_bg01.dds" SourceRect="61,112,443,135" />
+            </ImageStyle>
+            <ImageStyle Name="ne">
+                <ImageFrame Source="images/map_bg01.dds" SourceRect="454,112,476,135" />
+            </ImageStyle>
+            <ImageStyle Name="e">
+                <ImageFrame Source="images/map_bg01.dds" SourceRect="454,136,476,379" />
+            </ImageStyle>
+            <ImageStyle Name="se">
+                <ImageFrame Source="images/map_bg01.dds" SourceRect="454,380,476,397" />
+            </ImageStyle>
+            <ImageStyle Name="s">
+                <ImageFrame Source="images/map_bg01.dds" SourceRect="61,380,453,397" />
+            </ImageStyle>
+            <ImageStyle Name="sw">
+                <ImageFrame Source="images/map_bg01.dds" SourceRect="37,380,60,397" />
+            </ImageStyle>
+            <ImageStyle Name="w">
+                <ImageFrame Source="images/map_bg01.dds" SourceRect="37,136,60,379" />
+            </ImageStyle>
+            <ImageStyle Name="center">
+                <ImageFrame Source="images/map_bg01.dds" SourceRect="61,136,453,379" />
+            </ImageStyle>
+        </Page>
+        <Page Name="FancyTopEdge" ScrollExtent="320,240" Size="320,240">
+            <RectangleStyle Center="/imagelist.win_blank_space" CenterShrinkH="true" CenterShrinkV="true" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" SouthStretch="false" TitleStretch="false" WestStretch="false" />
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="/images/Window_elements_specific.dds" SourceRect="26,392,65,407" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="/images/Window_elements_specific.dds" SourceRect="65,392,153,407" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="/images/Window_elements_specific.dds" SourceRect="153,392,193,407" />
+            </ImageStyle>
+        </Page>
+        <Page Name="RoundedGrouper" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="121,302,132,308" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="102,285,108,291" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="110,285,112,291" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="146,285,152,291" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="146,293,152,295" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="146,316,152,323" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="110,316,112,323" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="102,316,108,323" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="102,302,108,305" />
+            </ImageStyle>
+        </Page>
+        <Page Name="CorneredGrouper" ScrollExtent="320,240" Size="320,240" Visible="false">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="181,303,192,309" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="163,286,171,294" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="173,286,186,294" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="289,286,298,294" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="289,296,298,298" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="289,313,298,322" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="280,313,287,322" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="163,313,171,322" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/mugshots_male.dds" SourceRect="163,300,171,303" />
+            </ImageStyle>
+        </Page>
+        <Page Activated="true" Location="-3,398" MaximumSize="1024,1024" MinimumSize="80,80" Name="TEST_WIN_SIMPLE" ScrollExtent="333,196" Size="333,196" UserMovable="true" UserResizable="true">
+            <Text Font="/Fonts.FontArialBold15" Location="18,11" Margin="0,0,5,0" Name="Title" ScrollExtent="85,15" Size="85,15" TextAlignment="Center" TextColor="#F1CE02">:0cc4935da375ebdc:[DEVL]Chat</Text>
+            <Page BackgroundOpacity="1.000" Location="10,9" Name="title" PackLocation="top,left" PackSize="absolute,absolute" RStyleDefault="title_gold_simple" ScrollExtent="310,25" Size="310,25" />
+            <Page BackgroundOpacity="1.000" Location="10,25" Name="frame" PackLocation="top,left" PackSize="absolute,absolute" RStyleDefault="win_gold_simple" ScrollExtent="310,157" Size="310,157" />
+            <Page BackgroundColor="#00FFFF" BackgroundOpacity="0.600" Location="13,31" Name="CONTENT" ScrollExtent="301,144" Size="301,144" />
+        </Page>
+        <Page Activated="true" Location="428,245" MaximumSize="1024,1024" MinimumSize="40,40" Name="TEST_WIN_PLAIN" ScrollExtent="220,141" Size="220,141" UserMovable="true" UserResizable="true">
+            <Page BackgroundOpacity="1.000" Location="0,-1" Name="frame" PackLocation="top,left" PackSize="absolute,absolute" RStyleDefault="/rectlist.win_gold" ScrollExtent="218,135" Size="218,135" />
+            <Page BackgroundColor="#00FFFF" BackgroundOpacity="0.600" Location="3,3" Name="CONTENT" ScrollExtent="207,125" Size="207,125" />
+        </Page>
+        <Page Activated="true" Location="345,404" MaximumSize="1024,1024" MinimumSize="40,40" Name="TEST_WIN_MENU" ScrollExtent="348,179" Size="348,179" UserMovable="true" UserResizable="true">
+            <Page BackgroundOpacity="1.000" Location="0,26" Name="frame" PackLocation="top,left" PackSize="absolute,absolute" RStyleDefault="win_gold_menu" ScrollExtent="346,146" Size="346,146" />
+            <Page BackgroundColor="#00FFFF" BackgroundOpacity="0.600" Location="15,34" Name="CONTENT" ScrollExtent="464,94" Size="464,94" />
+        </Page>
+        <Page Activated="true" Location="32,-22" MaximumSize="1024,1024" MinimumSize="287,198" Name="TEST_WIN" ScrollExtent="661,668" Size="661,668" UserMovable="true" UserResizable="true">
+            <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="71,347" Name="SinglePixel" RStyleDefault="single_pixel" ScrollExtent="243,61" Size="243,61" />
+            <Page BackgroundColor="#8000FF" BackgroundOpacity="0.475" Location="40,85" Name="New Page" ScrollExtent="320,240" Size="320,240">
+                <Image Location="295,7" Name="right_upper" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="25,89" Size="25,89" SourceRect="65,292,92,309" SourceResource="images/window_elements_generic.dds" Style=" " />
+                <Image Location="295,119" Name="right_lower" PackLocation="right,bottom" PackSize="fixed,absolute" ScrollExtent="25,115" Size="25,115" SourceRect="65,292,92,309" SourceResource="images/window_elements_generic.dds" Style=" " />
+                <Image Location="295,96" Name="arrow" PackLocation="right,center" PackSize="fixed,fixed" ScrollExtent="25,23" Size="25,23" SourceRect="65,314,92,336" SourceResource="images/window_elements_generic.dds" Stretch="false" Style=" " />
+            </Page>
+            <Text Font="/Fonts.FontArialBold15" Location="17,29" Margin="0,0,5,0" Name="Title" ScrollExtent="145,17" Size="145,17" TextAlignment="Center" TextColor="#F1CE02">:0cc4935d16dd4181:[DEVL]Inventory</Text>
+            <Page BackgroundOpacity="1.000" Location="0,27" Name="title" PackLocation="top,left" PackSize="absolute,absolute" RStyleDefault="title_gold" ScrollExtent="662,510" Size="662,510" />
+            <Page BackgroundOpacity="1.000" Location="0,40" Name="frame" PackLocation="top,left" PackSize="absolute,absolute" RStyleDefault="win_gold" ScrollExtent="662,627" Size="662,627" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="8,51" Name="WC_Backdrop" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="background_black" ScrollExtent="641,600" Size="641,600" />
+        </Page>
+        <ImageStyle Filter="true" Name="selection_background">
+            <ImageFrame Name="selection_background" Source="images/window_elements_specific.dds" SourceRect="70,294,134,304" />
+        </ImageStyle>
+        <RectangleStyle Center="win_gold_center" CenterShrinkV="true" CenterStretchH="false" EastStretch="false" Name="background_gold_stretch" NorthStretch="false" TitleStretch="false" WestStretch="false" />
+        <RectangleStyle EastStretch="false" Name="null" NorthStretch="false" SouthStretch="false" TitleStretch="false" WestStretch="false" />
+        <RectangleStyle Center="/imagelist.win_blank_space" East="SinglePixel.right" EastStretch="false" Name="single_pixel" North="SinglePixel.top" NorthStretch="false" South="SinglePixel.bottom" SouthStretch="false" TitleStretch="false" West="SinglePixel.left" WestStretch="false" />
+        <Page Name="SinglePixel" ScrollExtent="320,240" Size="320,240">
+            <ImageStyle Filter="true" Name="left">
+                <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="464,18,465,207" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="right">
+                <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="443,22,444,206" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="bottom">
+                <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="62,263,383,264" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="top">
+                <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="43,260,384,261" />
+            </ImageStyle>
+        </Page>
+        <RectangleStyle Center="/imagelist.win_blank_space" EastShrink="true" Name="title_gold_deco2" North="title_gold_top_deco2" NorthEast="title_gold_ne_deco2" NorthStretch="false" NorthWest="title_gold_nw_deco2" SouthShrink="true" TitleStretch="false" WestShrink="true" />
+        <ImageStyle Filter="true" Name="title_gold_nw_deco2">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="0,145,59,177" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="title_gold_ne_deco2">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="176,145,235,177" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="title_gold_top_deco2">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="59,145,174,177" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_tan_fill">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="92,103,256,127" />
+        </ImageStyle>
+        <RectangleStyle Center="win_gold_tan_fill" CenterShrinkH="true" CenterShrinkV="true" EastStretch="false" Name="background_tan" NorthStretch="false" TitleStretch="false" WestStretch="false" />
+        <RectangleStyle Center="win_gold_center_menu" CenterShrinkH="true" CenterShrinkV="true" East="win_gold_right_menu" EastBottom="win_gold_right_menu" EastStretch="false" EastTop="win_gold_right_menu" Name="win_gold_menu" North="win_gold_top_menu" NorthEast="win_gold_ne_menu" NorthStretch="false" NorthWest="win_gold_nw_menu" South="win_gold_bottom_menu" SouthEast="win_gold_se_menu" SouthStretch="false" SouthWest="win_gold_sw_menu" TitleStretch="false" West="win_gold_left_menu" WestBottom="win_gold_left_menu" WestStretch="false" WestTop="win_gold_left_menu" />
+        <ImageStyle Filter="true" Name="win_gold_center_menu">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="2,11,13,34" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_bottom_menu">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="36,354,163,362" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_sw_menu">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="21,354,35,362" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_se_menu">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="164,354,169,362" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_right_menu">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="164,271,169,322" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_left_menu">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="21,305,35,354" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_top_menu">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="36,262,163,270" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_ne_menu">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="164,262,169,270" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_nw_menu">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="21,262,35,270" />
+        </ImageStyle>
+        <RectangleStyle Center="win_gold_back_fill" CenterShrinkH="true" CenterShrinkV="true" EastStretch="false" Name="background_black" NorthStretch="false" TitleStretch="false" WestStretch="false" />
+        <ImageStyle Filter="true" Name="win_gold_back_fill">
+            <ImageFrame Name="image" Source="images/window_elements_background.dds" SourceRect="0,388,512,512" />
+        </ImageStyle>
+        <RectangleStyle Center="win_gold_inv_dots_horiz" CenterStretchH="false" CenterStretchV="false" EastStretch="false" Name="background_inv_dots_horiz" NorthStretch="false" SouthStretch="false" TitleStretch="false" WestStretch="false" />
+        <ImageStyle Filter="true" Name="win_gold_inv_dots_horiz">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="6,129,49,136" />
+        </ImageStyle>
+        <RectangleStyle Center="win_gold_inv_dots_vert" CenterStretchH="false" CenterStretchV="false" EastStretch="false" Name="background_inv_dots_vert" NorthStretch="false" SouthStretch="false" TitleStretch="false" WestStretch="false" />
+        <ImageStyle Filter="true" Name="win_gold_inv_dots_vert">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="6,92,13,136" />
+        </ImageStyle>
+        <RectangleStyle Center="win_gold_center" CenterShrinkH="true" CenterShrinkV="true" EastStretch="false" Name="background_gold" NorthStretch="false" TitleStretch="false" WestStretch="false" />
+        <ImageStyle Filter="true" Name="win_gold_center">
+            <ImageFrame Name="image" Source="images/window_elements_background.dds" SourceRect="0,0,512,512" />
+        </ImageStyle>
+        <TextboxStyle CaratColor="#FFFF00" CaratWidth="2" Cursor="/Cursor.Text" Name="TitleStyle" NormalTextStyle="/Fonts.FontArialBold15" SelectionColor="#C0C020" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,2" />
+        <RectangleStyle Center="/imagelist.win_blank_space" CenterShrinkH="true" CenterShrinkV="true" East="win_gold_right_plain" EastBottom="win_gold_right_plain" EastStretch="false" EastTop="win_gold_right_plain" Name="win_gold_plain" North="win_gold_top_plain" NorthEast="win_gold_ne_plain" NorthStretch="false" NorthWest="win_gold_nw_plain" South="win_gold_bottom_plain" SouthEast="win_gold_se_plain" SouthStretch="false" SouthWest="win_gold_sw_plain" TitleStretch="false" West="win_gold_left_plain" WestBottom="win_gold_left_plain" WestStretch="false" WestTop="win_gold_left_plain" />
+        <ImageStyle Filter="true" Name="win_gold_nw_plain">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="262,301,280,312" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_ne_plain">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="432,301,457,312" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_sw_plain">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="262,355,280,368" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_se_plain">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="432,355,457,368" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_bottom_plain">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="293,355,420,368" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_right_plain">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="432,325,457,347" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_left_plain">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="262,323,280,346" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_top_plain">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="291,301,419,312" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="title_gold_nw_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="191,375,347,397" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="title_gold_ne_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="382,375,508,397" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_top_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="344,400,459,434" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_left_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="187,449,208,484" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_right_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="471,449,512,480" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_bottom_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="222,502,463,512" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_se_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="471,502,512,512" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_sw_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="187,502,208,512" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_ne_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="471,400,512,434" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_nw_simple">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="187,400,208,434" />
+        </ImageStyle>
+        <RectangleStyle Center="/imagelist.win_blank_space" EastShrink="true" Name="title_gold" NorthEast="title_gold_ne" NorthShrink="true" NorthWest="title_gold_nw" SouthShrink="true" TitleStretch="false" WestShrink="true" />
+        <RectangleStyle Center="/imagelist.win_blank_space" EastStretch="false" Name="title_gold_simple" NorthEast="title_gold_ne_simple" NorthStretch="false" NorthWest="title_gold_nw_simple" SouthStretch="false" TitleStretch="false" WestStretch="false" />
+        <RectangleStyle Center="/imagelist.win_blank_space" CenterShrinkH="true" CenterShrinkV="true" East="win_gold_right" EastStretch="false" Name="win_gold" North="win_gold_top" NorthEast="win_gold_ne" NorthStretch="false" NorthWest="win_gold_nw" South="win_gold_bottom" SouthEast="win_gold_se" SouthStretch="false" SouthWest="win_gold_sw" TitleStretch="false" West="win_gold_left" WestStretch="false" />
+        <RectangleStyle Center="/imagelist.win_blank_space" CenterShrinkH="true" CenterShrinkV="true" East="win_gold_right_simple" EastStretch="false" Name="win_gold_simple" North="win_gold_top_simple" NorthEast="win_gold_ne_simple" NorthStretch="false" NorthWest="win_gold_nw_simple" South="win_gold_bottom_simple" SouthEast="win_gold_se_simple" SouthStretch="false" SouthWest="win_gold_sw_simple" TitleStretch="false" West="win_gold_left_simple" WestStretch="false" />
+        <ImageStyle Filter="true" Name="win_gold_right">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="393,92,433,232" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_nw">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="1,33,35,76" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_ne">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="393,33,433,76" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_sw">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="1,243,35,275" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_se">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="393,243,433,275" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_left">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="1,92,35,233" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_top">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="220,33,342,76" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_bottom">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="229,243,387,275" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="title_gold_ne">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="277,4,427,31" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="title_gold_nw">
+            <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="1,4,246,31" />
+        </ImageStyle>
+    </Page>

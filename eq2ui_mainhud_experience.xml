@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page EnableSnapping="False" eq2usescomwndcontrols="true" MinimumSize="159,21" Name="Experience" OnShow="show_window Custom.ProfitUI_ControlCenter&#xD;&#xA;hide_window Custom.ProfitUI_ControlCenter" ScrollExtent="476,79" Size="476,79" UserMovable="true" UserResizable="true" version="1.1">
+        <Page EnableSnapping="False" eq2usescomwndcontrols="true" MinimumSize="159,21" Name="Experience" OnShow="show_window Custom.ProfitUI_ControlCenter&#xD;&#xA;hide_window Custom.ProfitUI_ControlCenter" ScrollExtent="476,79" Size="476,79" UserMovable="true" UserResizable="true" version="1.1" Visible="false">
             <Page AbsorbsInput="false" Location="435,30" Name="ExpContainerNormal" ScrollExtent="63,47" Size="63,47" Visible="false">
                 <Page AbsorbsInput="false" Location="14,6" Name="ExpContainerCounter" ScrollExtent="38,33" Size="38,33">
                     <Text Font="/TextStyles.Large.LargeStyle" Location="1,12" MaxLines="1" Name="FilledCount" PackLocation="right,top" ScrollExtent="30,26" Size="30,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#EBDEAA" TruncateElipsis="false">20</Text>

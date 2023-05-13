@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="50,50" Name="DebugColor" PackSize="fixed,fixed" ScrollExtent="200,450" Size="200,450" UserMovable="true" Visible="false">
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="40,30" Name="Label" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="125,23" Size="125,18" TextAlignment="Center" TextAlignmentVertical="Center">:54fb01256ba356e3:Mode:</Text>
+            <DataSource Name="ModeDS">
+                <Data Name="TexMem" text=":54fb0125aa02dfe4:Texture Memory" />
+                <Data Name="MeshMem" text=":54fb0125e7f438ed:Mesh Memory" />
+                <Data Name="LOD" text=":54fb01257f6e840a:LOD" />
+                <Data Name="SubmeshPrims" text=":54fb01259baf6a22:Submesh Primatives" />
+                <Data Name="None" text=":54fb0125205d500e:None" />
+            </DataSource>
+            <Dropdownbox DataSource="ModeDS" Location="40,50" Name="ModeDropdownbox" PackLocation="left,top" PackSize="fixed,fixed" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="125,19" Size="125,19" Style="/dropdownlist.dropdown_default" />
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="40,90" Name="Label" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="125,23" Size="125,18" TextAlignment="Center" TextAlignmentVertical="Center">:54fb012569a0c83e:Method:</Text>
+            <DataSource Name="MethodDS">
+                <Data Name="OverThreshold" text=":54fb01253537b947:Above Threshold" />
+                <Data Name="UnderThreshold" text=":54fb01259b66bf57:Below Threshold" />
+            </DataSource>
+            <Dropdownbox DataSource="MethodDS" Location="40,110" Name="MethodDropdownbox" PackLocation="left,top" PackSize="fixed,fixed" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="125,19" Size="125,19" Style="/dropdownlist.dropdown_default" />
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="40,150" Name="Label" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="125,23" Size="125,18" TextAlignment="Center" TextAlignmentVertical="Center">:54fb0125bd2b864b:Threshold:</Text>
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="40,170" Name="ThresholdTextbox" PackLocation="left,top" PackSize="fixed,fixed" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="125,30" Size="125,30" Style="/CommonElements.Textfield.data.style" UserScrollable="false" WrapWidth="Automatic" />
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="70,210" Name="Count4" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="100,23" Size="100,18" TextAlignmentVertical="Center">:54fb01254eab32a8:Count0:</Text>
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="70,240" Name="Count3" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="100,23" Size="100,18" TextAlignmentVertical="Center">:54fb012557b003e9:Count1:</Text>
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="70,270" Name="Count2" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="100,23" Size="100,18" TextAlignmentVertical="Center">:54fb01257c9d502a:Count2:</Text>
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="70,300" Name="Count1" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="100,23" Size="100,18" TextAlignmentVertical="Center">:54fb01256586616b:Count3:</Text>
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="70,330" Name="Count0" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="100,23" Size="100,18" TextAlignmentVertical="Center">:54fb01252ac7f7ac:Count4:</Text>
+            <Page AbsorbsInput="false" BackgroundColor="#201020" BackgroundOpacity="1.000" Location="40,210" Name="Color4" PackLocation="left,top" PackSize="fixed,fixed" ScrollExtent="22,22" Size="22,22" />
+            <Page AbsorbsInput="false" BackgroundColor="#201020" BackgroundOpacity="1.000" Location="40,240" Name="Color3" PackLocation="left,top" PackSize="fixed,fixed" ScrollExtent="22,22" Size="22,22" />
+            <Page AbsorbsInput="false" BackgroundColor="#201020" BackgroundOpacity="1.000" Location="40,270" Name="Color2" PackLocation="left,top" PackSize="fixed,fixed" ScrollExtent="22,22" Size="22,22" />
+            <Page AbsorbsInput="false" BackgroundColor="#201020" BackgroundOpacity="1.000" Location="40,300" Name="Color1" PackLocation="left,top" PackSize="fixed,fixed" ScrollExtent="22,22" Size="22,22" />
+            <Page AbsorbsInput="false" BackgroundColor="#201020" BackgroundOpacity="1.000" Location="40,330" Name="Color0" PackLocation="left,top" PackSize="fixed,fixed" ScrollExtent="22,22" Size="22,22" />
+            <Button Location="50,370" Name="ButtonOk" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:54fb012528c926d2:OK</Button>
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="200,450" Size="200,450" />
+        </Page>

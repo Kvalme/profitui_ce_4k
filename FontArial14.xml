@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial20" PointSize="20" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial18" PointSize="18" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial16" PointSize="16" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial14" PointSize="15" UseCachedFont="true" />

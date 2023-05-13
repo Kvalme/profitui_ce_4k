@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="192,138" MaximumSize="617,475" MinimumSize="617,475" Name="MarketDressingRoom" PackLocation="right,cfc" ScrollExtent="617,475" Size="617,475" UserMovable="true" version="1.0.0">
+            <Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="4,30" Name="PaperdollPage" PackLocation="fixed,fixed" PackSize="absolute,absolute" ScrollExtent="296,384" Size="296,384">
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Name="Message" PackLocation="left,top" PackSize="a,a" ScrollExtent="296,384" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="296,384" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">:x:Preview not available</Text>
+                <PaperDoll Name="Paperdoll" PackSize="absolute,absolute" paperdollbackgroundcolor="/ColorStyles.paperdoll_background" paperdollheading="-180.0" paperdolltype="dress" ScrollExtent="296,384" Size="296,384" />
+            </Page>
+            <Page Location="310,30" Name="DescTopPage" PackLocation="right,top" PackSize="f,a" ScrollExtent="300,391" Size="300,391">
+                <Composite Location="1,10" Name="DescPage" Orientation="Horizontal" PackSize="a,f" ScrollExtent="295,374" Size="295,374" SpacingType="Fill">
+                    <Page BackgroundOpacity="0.522" Name="Description" PackLocation="left,top" PackSize="a,a" ScrollExtent="273,374" ScrollSize="1,20" Size="273,374" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Description" HideIfUnnecessary="false" Location="273,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,375" Size="22,375" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Composite>
+            </Page>
+            <Page AbsorbsInput="false" Location="-12,0" Name="WindowFrame" PackSize="a,a" ScrollExtent="640,489" Size="640,489">
+                <Button Location="277,435" MaximumSize="16384,32" MinimumSize="32,32" Name="MPButton" ScrollExtent="186,32" Size="186,32" Style="/CommonElements.PushButton.data.style">:x:Select In Marketplace</Button>
+                <Button Location="587,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip="Window Settings" UserMovable="true" />
+                <Button Location="587,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip="Help" UserMovable="true" Visible="false" />
+                <Button Location="605,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip="Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="245,70" Size="245,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="22,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="151,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="123,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:x:Market Preview</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="470,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="640,489" Size="640,489" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,421" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="614,72" Size="614,72" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="640,489" Size="640,489" />
+            </Page>
+        </Page>

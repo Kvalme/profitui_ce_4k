@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="305,142" Name="Mentor" ScrollExtent="350,304" Size="350,304" UserMovable="true" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="21,18" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="310,38" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="310,28" TextAlignment="Center" TextColor="#FBF1D9">:c8c1303a78469817:Mentor</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="21,38" Name="Label" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="310,92" Size="310,68" TextAlignment="Center" TextAlignmentVertical="Center">:c8c1303aaec069b6:You&apos;re level is currently too high to allow all group members to receive experience.  Would you like to mentor someone?</Text>
+            <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="16,105" Name="DataPage" PackLocation="left,top" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="320,132" Size="320,132">
+                <DataSource Name="MentorDS">
+                    <Data Text="Groden - Guardian (62)" />
+                    <Data Text=":c8c1303ab0004b1a:Autenil - Shadowknight (58)" />
+                    <Data Text=":c8c1303ad4f8593c:Aeralik - Assassin (60)" />
+                    <Data Text=":c8c1303a816f1c2b:Domino  - Dirge (59)" />
+                    <Data Text=":c8c1303ac2477b72:Zoltaroth - Defiler (56)" />
+                </DataSource>
+                <Composite Location="12,11" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="297,113" Size="297,113" SpacingType="Fill">
+                    <Listbox DataSource="MentorDS" Name="Members" PackSize="absolute,absolute" RowTemplate="/CommonElements.Listbox.data.row_template" ScrollExtent="297,113" SelectedItemIndex="4" Size="297,113" Style="/listboxlist.clear_listbox" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Members" HideIfUnnecessary="true" Location="275,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,113" Size="22,113" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                </Composite>
+            </Page>
+            <Button IsDefaultButton="true" Location="48,246" MaximumSize="16384,38" MinimumSize="32,38" Name="MentorButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:c8c1303a78469817_1:Mentor</Button>
+            <Button IsCancelButton="true" Location="182,246" MaximumSize="16384,38" MinimumSize="32,38" Name="CloseButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:c8c1303a2d3f513f:Close</Button>
+            <Page BackgroundOpacity="1.000" Location="12,14" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="327,277" Size="327,277" />
+            <Page BackgroundOpacity="1.000" Location="-12,-10" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="374,324" Size="374,324" />
+        </Page>

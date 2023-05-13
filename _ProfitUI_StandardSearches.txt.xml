@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Name="ProfitUI_StdSrch" Visible="false">
+            <Data Name="QuestSearch1" Text="Wikia" URL="http://eq2.wikia.com/wiki/" />
+            <Data Name="QuestSearch2" Text="ZAM" URL="http://eq2.allakhazam.com/wiki/eq2_quest:" />
+            <Data Name="QuestSearch3" Text="EQ2U" URL="http://u.eq2wire.com/q/" />
+            <Data Name="QuestSearch4" Text="Google" URL="http://www.google.com/search?&amp;num=50&amp;ie=utf-8&amp;oe=utf-8&amp;q=eq2&amp;as_epq=" />
+            <Data Name="QuestSearch5" Text=" " URL=" " />
+            <Data Name="ItemSearch1" Text="Wikia" URL="http://eq2.wikia.com/wiki/" />
+            <Data Name="ItemSearch2" Text="EQ2U" URL="http://u.eq2wire.com/i/" />
+            <Data Name="ItemSearch3" Text="ZAM" URL="http://eq2.allakhazam.com/wiki/eq2_item:" />
+            <Data Name="ItemSearch4" Text="LootDB" URL="http://www.lootdb.com/?t=item&amp;q=" />
+            <Data Name="ItemSearch5" Text="Google" URL="http://www.google.com/search?&amp;num=50&amp;ie=utf-8&amp;oe=utf-8&amp;q=eq2&amp;as_epq=" />
+            <Data Name="MobSearch1" Tooltip="Google" URL="http://www.google.com/search?&amp;num=50&amp;ie=utf-8&amp;oe=utf-8&amp;q=eq2&amp;as_epq=" />
+            <Data Name="MobSearch2" Tooltip="EQ2i" URL="http://eq2.wikia.com/wiki/" />
+            <Data Name="MobSearch3" Tooltip="LootDB" URL="http://www.lootdb.com/eq2/mob/" />
+            <Data Name="MobSearch4" Tooltip="EQ2LLinks" URL="http://www.eq2llinks.com/search.php?searchtype=mob&amp;searchlimit=50&amp;searchfield=" />
+            <Data Name="MobSearch5" Tooltip="EQ2U" URL="http://u.eq2wire.com/c/" />
+        </Page>

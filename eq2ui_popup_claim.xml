@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" IgnoreTab="false" Location="133,132" MaximumSize="1024,1024" Name="Claim" ScrollExtent="805,504" Size="805,504" UserMovable="true" version="3.0.0">
+            <Button Location="565,461" MaximumSize="16384,32" MinimumSize="32,32" Name="ClaimButton" ScrollExtent="160,32" Size="160,32" Style="/CommonElements.PushButton.data.style">:5b747cb199570edc:Claim</Button>
+            <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="32,469" Name="lblSearch" ScrollExtent="59,52" Size="59,18">:5b747cb14ca3216e:Search</Text>
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="81,463" MaximumSize="16384,30" MinimumSize="30,30" Name="txtSearch" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="184,30" Size="184,30" Style="/CommonElements.Textfield.data.style" />
+            <Page Location="0,25" Name="DialogPage" ScrollExtent="805,479" Size="805,479" Visible="false">
+                <Composite Location="225,134" Name="Composite" ScrollExtent="360,227" Size="360,227" SpacingType="Fill">
+                    <Text AbsorbsInput="false" BackgroundColor="#FF0000" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Margin="10,5,10,5" Name="Label" ScrollExtent="360,177" Size="360,177" TextAlignment="Center" TextAlignmentVertical="Center">:5b747cb11f7a0d45:Thank you for your purchase!
+The following items have been placed into your inventory.</Text>
+                    <Page BackgroundColor="#00FF00" Location="0,177" MaximumSize="16384,50" MinimumSize="0,50" Name="ButtonPage" ScrollExtent="360,50" Size="360,50">
+                        <Button Location="120,0" MaximumSize="16384,38" MinimumSize="38,38" Name="OKButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:5b747cb128c926d2:OK</Button>
+                        <Button Location="185,0" MaximumSize="16384,38" MinimumSize="38,38" Name="NoButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:5b747cb10dd1f342:No</Button>
+                        <Button Location="55,0" MaximumSize="16384,38" MinimumSize="38,38" Name="YesButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:5b747cb1b2558cb6:Yes</Button>
+                    </Page>
+                </Composite>
+                <Page AbsorbsInput="false" Location="211,129" Name="WindowFrame" ScrollExtent="388,248" Size="388,248">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="367,236" Size="367,236" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="386,268" Size="386,268" />
+                </Page>
+                <Page BackgroundOpacity="0.400" Name="Bkg" ScrollExtent="805,504" Size="805,504" />
+            </Page>
+            <Page Location="0,25" Name="DeliveryPage" ScrollExtent="805,479" Size="805,479" Visible="false">
+                <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="248,183" Name="Label" ScrollExtent="313,55" Size="313,55" TextAlignment="Center">:5b747cb11537d041:The following items have been placed into your inventory.
+</Text>
+                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="276,244" Name="ItemPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="257,44" Size="257,44">
+                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="2,1" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="48,1" Name="Name" PackSize="a,f" ScrollExtent="207,42" Size="207,42" TextAlignmentVertical="Center">:5b747cb169d2db30:Missing item name</Text>
+                </Page>
+                <Button Location="344,302" MaximumSize="16384,38" MinimumSize="38,38" Name="OKButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:5b747cb128c926d2_1:OK</Button>
+                <Page AbsorbsInput="false" Location="211,129" Name="WindowFrame" ScrollExtent="388,248" Size="388,248">
+                    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="12,16" Name="Title" PackSize="a" ScrollExtent="363,38" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="363,34" TextAlignment="Center" TextColor="#FFEEBB" UserMovable="true" UserResizable="true">:5b747cb16760df12:Claim Complete</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="367,236" Size="367,236" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="386,268" Size="386,268" />
+                </Page>
+                <Page BackgroundOpacity="0.400" Name="Bkg" ScrollExtent="805,504" Size="805,504" />
+            </Page>
+            <Page Location="15,33" Name="ItemListPage" PackSize="a,a" ScrollExtent="474,434" Size="474,434">
+                <Page Location="-4,0" Name="Dropdown" ScrollExtent="450,54" Size="450,54">
+                    <Dropdownbox BackgroundOpacity="1.000" DataSource="dataOptionList" MaximumSize="16384,32" MinimumSize="50,32" Name="comboOptionList" RowTemplate="data.dropdown_template" ScrollExtent="350,32" Size="350,32" Style="/CommonElements.Dropdown.data.style" />
+                    <DataSource Name="dataOptionList">
+                        <Data Name="New Data" text=":5b747cb104533fd9:Default: Sewing and Manequin" />
+                        <Data Name="New Data" text=":5b747cb187b22ecd:Test" />
+                    </DataSource>
+                    <Namespace Name="data">
+                        <Template Name="dropdown_template" Size="320,20">eq2ui_commonelements_dropdown_template.xml</Template>
+                        <Namespace Name="selected">
+                            <ImageStyle Name="downarrow">
+                                <ImageFrame Name="downarrow_normal" Source="images/commonelements.dds" SourceRect="395,238,423,270" />
+                            </ImageStyle>
+                            <ImageStyle Name="bkg">
+                                <ImageFrame Name="dropdown_back_normal" Source="images/commonelements.dds" SourceRect="320,238,394,270" />
+                            </ImageStyle>
+                            <ImageStyle Name="startcap">
+                                <ImageFrame Name="dropdown_back_normal" Source="images/commonelements.dds" SourceRect="301,238,319,270" />
+                            </ImageStyle>
+                        </Namespace>
+                        <Namespace Name="disabled">
+                            <ImageStyle Name="downarrow">
+                                <ImageFrame Name="downarrow_normal" Source="images/commonelements.dds" SourceRect="395,238,423,270" />
+                            </ImageStyle>
+                            <ImageStyle Name="bkg">
+                                <ImageFrame Name="dropdown_back_normal" Source="images/commonelements.dds" SourceRect="320,238,394,270" />
+                            </ImageStyle>
+                            <ImageStyle Name="startcap">
+                                <ImageFrame Name="dropdown_back_normal" Source="images/commonelements.dds" SourceRect="301,238,319,270" />
+                            </ImageStyle>
+                        </Namespace>
+                        <Namespace Name="pressed">
+                            <ImageStyle Name="downarrow">
+                                <ImageFrame Name="downarrow_normal" Source="images/commonelements.dds" SourceRect="395,238,423,270" />
+                            </ImageStyle>
+                            <ImageStyle Name="bkg">
+                                <ImageFrame Name="dropdown_back_normal" Source="images/commonelements.dds" SourceRect="320,238,394,270" />
+                            </ImageStyle>
+                            <ImageStyle Name="startcap">
+                                <ImageFrame Name="dropdown_back_normal" Source="images/commonelements.dds" SourceRect="301,238,319,270" />
+                            </ImageStyle>
+                        </Namespace>
+                        <Namespace Name="normal">
+                            <ImageStyle Name="downarrow">
+                                <ImageFrame Name="downarrow_normal" Source="images/commonelements.dds" SourceRect="395,238,423,270" />
+                            </ImageStyle>
+                            <ImageStyle Name="bkg">
+                                <ImageFrame Name="dropdown_back_normal" Source="images/commonelements.dds" SourceRect="320,238,394,270" />
+                            </ImageStyle>
+                            <ImageStyle Name="startcap">
+                                <ImageFrame Name="dropdown_back_normal" Source="images/commonelements.dds" SourceRect="301,238,319,270" />
+                            </ImageStyle>
+                        </Namespace>
+                        <DropdownboxStyle Disabled.Background="/CommonElements.Dropdown.data.disabled.bkg" Disabled.DownArrow="/CommonElements.Dropdown.data.disabled.downarrow" Disabled.StartCap="/CommonElements.Dropdown.data.disabled.startcap" DropBy="200" Listbox.Style="/CommonElements.DropdownListbox.data.listbox_style" Name="style" Normal.Background="/CommonElements.Dropdown.data.normal.bkg" Normal.DownArrow="/CommonElements.Dropdown.data.normal.downarrow" Normal.StartCap="/CommonElements.Dropdown.data.normal.startcap" Padding="10,6,30,0" Pressed.Background="/CommonElements.Dropdown.data.pressed.bkg" Pressed.DownArrow="/CommonElements.Dropdown.data.pressed.downarrow" Pressed.StartCap="/CommonElements.Dropdown.data.pressed.startcap" Scrollbar.Style="/CommonElements.ScrollbarVertical.data.style" Selected.Background="/CommonElements.Dropdown.data.selected.bkg" Selected.DownArrow="/CommonElements.Dropdown.data.selected.downarrow" Selected.StartCap="/CommonElements.Dropdown.data.selected.startcap" />
+                    </Namespace>
+                    <Page Name="dropdown_template" ScrollExtent="320,20" Size="320,20" Visible="false">
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="5,0" Margin="1,1,1,1" Name="TextLine" PackSize="a,a" ScrollExtent="315,25" Size="315,24" TextColor="#FBF1D9">$text$</Text>
+                    </Page>
+                </Page>
+                <Page Location="0,33" Name="ItemList" PackSize="a,a" ScrollExtent="474,392" Size="474,392">
+                    <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="2,7" Name="LoadingLabel" PackSize="a,f" ScrollExtent="451,375" Size="451,375" TextAlignment="Center" TextAlignmentVertical="Center">:5b747cb1e814373e:Retrieving Items...</Text>
+                    <Page Location="7,8" Name="Rows" PackSize="a,a" ScrollExtent="442,378" ScrollSize="1,20" Size="442,378">
+                        <Page Name="Template" ScrollExtent="442,76" Size="442,76">
+                            <Page Name="Item0" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" OnHoverIn="Bkg.BackgroundTint = #DDDDDD" OnHoverOut="Bkg.BackgroundTint = #AAAAAA" ScrollExtent="221,76" Size="221,76">
+                                <Page AbsorbsInput="false" Location="9,8" Name="HotPage" ScrollExtent="42,42" Size="42,42">
+                                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="HotText" ScrollExtent="42,18" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:5b747cb165d03cb2:HOT</Text>
+                                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                                </Page>
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="9,8" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="58,6" Name="Name" PackSize="a,f" ScrollExtent="153,115" Size="153,52">:5b747cb15af37426:[DEVL] Item With a Very Very Very Very Very Very Long Name</Text>
+                                <Text DropToParent="true" Font="/TextStyles.Small.SmallStyle" Location="58,36" Name="Count" PackSize="a,f" ScrollExtent="153,33" Size="153,33" TextAlignment="Right" TextAlignmentVertical="Bottom">:5b747cb14f0b4b19:5 Remaining</Text>
+                                <Page BackgroundOpacity="1.000" BackgroundTint="#AAAAAA" Location="5,4" Name="Bkg" PackSize="a,a" RStyleDefault="item_bkg.rect" ScrollExtent="210,68" Size="210,68" />
+                                <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="4,3" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="212,70" Size="212,70" Visible="false" />
+                            </Page>
+                            <Page Location="221,0" Name="Item1" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" OnHoverIn="Bkg.BackgroundTint = #DDDDDD" OnHoverOut="Bkg.BackgroundTint = #AAAAAA" ScrollExtent="221,76" Size="221,76">
+                                <Page AbsorbsInput="false" Location="9,8" Name="HotPage" ScrollExtent="42,42" Size="42,42">
+                                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="HotText" ScrollExtent="42,18" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:5b747cb165d03cb2_1:HOT</Text>
+                                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                                </Page>
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="9,8" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="58,6" Name="Name" PackSize="a,f" ScrollExtent="153,69" Size="153,52">:5b747cb1ae25d67d:[DEVL] Item With a Very Long Name</Text>
+                                <Text DropToParent="true" Font="/TextStyles.Small.SmallStyle" Location="58,36" Name="Count" PackSize="a,f" ScrollExtent="153,33" Size="153,33" TextAlignment="Right" TextAlignmentVertical="Bottom">:5b747cb14f0b4b19_1:5 Remaining</Text>
+                                <Page BackgroundOpacity="1.000" BackgroundTint="#AAAAAA" Location="5,4" Name="Bkg" PackSize="a,a" RStyleDefault="item_bkg.rect" ScrollExtent="210,68" Size="210,68" />
+                                <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="4,3" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="212,70" Size="212,70" Visible="false" />
+                            </Page>
+                        </Page>
+                    </Page>
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Rows" HideIfUnnecessary="false" Location="448,6" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,381" Size="22,381" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Name="WindowFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="474,392" Size="474,392" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.400" GetsInput="false" Location="4,5" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="467,383" Size="467,383" />
+                </Page>
+            </Page>
+            <Page Location="500,65" Name="BuyPage" PackLocation="right,top" PackSize="f,a" ScrollExtent="290,392" Size="290,392">
+                <Page Location="10,0" Name="ItemPage" ScrollExtent="271,391" Size="271,391">
+                    <Page BackgroundOpacity="0.275" Location="0,5" Name="Description" PackLocation="left,top" PackSize="a,a" ScrollExtent="249,392" ScrollSize="1,20" Size="249,392" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Description" HideIfUnnecessary="false" Location="249,3" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="f,a" ScrollExtent="22,389" Size="22,389" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Page>
+            </Page>
+            <Namespace Name="item_bkg">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="208,303,342,356" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Page AbsorbsInput="false" Location="-12,-1" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="829,519" Size="829,519">
+                <Button Location="792,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":5b747cb12d3f513f_1:Close" UserMovable="true" />
+                <Button Location="752,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":5b747cb1574a0c6d:Help" UserMovable="true" />
+                <Button Location="772,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":5b747cb1ec278586:Window Settings" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="340,70" Size="340,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="27,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="210,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="210,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:5b747cb19f85e233:Claim Items</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="638,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="828,520" Size="828,520" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,0" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="827,519" Size="827,519" />
+            </Page>
+        </Page>

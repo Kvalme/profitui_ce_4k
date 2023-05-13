@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page actiontype="Mercenary" DynamicDataFilter="0005" eq2usescomwndcontrols="true" Location="124,94" MaximumSize="650,142" MinimumSize="250,97" Name="Mercenary" PackLocation="right,bottom" ScrollExtent="250,142" Size="250,142" UserMovable="true" UserResizable="true">
+        <Page actiontype="Mercenary" DynamicDataFilter="0005" eq2usescomwndcontrols="true" Location="1148,94" MaximumSize="650,142" MinimumSize="250,97" Name="Mercenary" PackLocation="right,bottom" ScrollExtent="250,142" Size="250,142" UserMovable="true" UserResizable="true" Visible="false">
             <ImageStyle Name="MercShrink">
                 <ImageFrame Source="/images/icons/icon_ss24.dds" SourceRect="42,210,84,252" />
             </ImageStyle>

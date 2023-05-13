@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page BackgroundOpacity="0.600" Name="OptionalDownloadRequired" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+            <Page Activated="true" BackgroundOpacity="0.424" Location="192,189" Name="Info" PackLocation="cfc,cfc" ScrollExtent="640,390" Size="640,390" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="0,15" Name="Title" PackSize="a" ScrollExtent="640,42" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="640,42" TextAlignment="Center" UserMovable="true" UserResizable="true">:cf80041155001e59:Additional Download Required</Text>
+                <Page Location="176,55" Name="Rule" ScrollExtent="288,14" Size="288,14">
+                    <Image Name="Left" ScrollExtent="48,14" Size="48,14" Style="/CommonElements.Splitter.data.startcap" />
+                    <Image Location="48,0" Name="Center" PackSize="a" ScrollExtent="192,14" Size="192,14" Style="/CommonElements.Splitter.data.bkg" />
+                    <Image Location="240,0" Name="Right" PackLocation="fff" ScrollExtent="48,14" Size="48,14" Style="/CommonElements.Splitter.data.endcap" />
+                </Page>
+                <Page Location="30,80" Name="Body" PackSize="a,a" ScrollExtent="580,304" Size="580,304">
+                    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="16,7" Margin="5,5,5,5" Name="Header" PackSize="a" ScrollExtent="550,48" ShadowStyle="/NCS2.data.Selected.SelectedShadowStyle" Size="550,30">:cf800411c2e666b9:Neriak and Darklight Wood Required</Text>
+                    <Page BackgroundOpacity="1.000" Location="20,40" Name="IconPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="48,48" Size="48,48">
+                        <Image BackgroundColor="#FFFFFF" GetsInput="true" Location="3,3" Name="Icon" ScrollExtent="42,42" Size="42,42" SourceRect="210,0,252,42" SourceResource="images/icons/icon_ms1.dds" Stretch="false" />
+                    </Page>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="76,40" Name="AboutText" ScrollExtent="490,120" Size="490,66">:cf800411ae877207:To adventure in the areas of Neriak and Darklight Wood, you will need to download additional files onto your PC. If you chose not to download the additional content now, you may do so by returning to this menu and selecting the </Text>
+                    <Page Location="0,97" Name="InfoPage" ScrollExtent="580,100" Size="580,100">
+                        <Page BackgroundOpacity="1.000" Location="20,33" Name="IconPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="48,48" Size="48,48">
+                            <Image BackgroundColor="#FFFFFF" GetsInput="true" Location="3,3" Name="Icon" ScrollExtent="42,42" Size="42,42" SourceRect="42,0,84,42" SourceResource="images/icons/icon_ms1.dds" Stretch="false" />
+                        </Page>
+                        <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="16,0" Margin="5,5,5,5" Name="Header" PackSize="a" ScrollExtent="550,48" ShadowStyle="/NCS2.data.Selected.SelectedShadowStyle" Size="550,30">:cf800411ef2da7df:Getting Started</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="76,33" Name="InfoText" ScrollExtent="490,96" Size="490,66">:cf80041118454453:To download the additional content, EverQuest II will need to be shut down. Once the game is shut down, the patcher will automatically restart and immediately begin downloading the new files.</Text>
+                    </Page>
+                    <Button Location="90,194" MaximumSize="16384,32" MinimumSize="32,32" Name="OK" ScrollExtent="400,32" Size="400,32" Style="/CommonElements.PushButton.data.style">:cf800411630e9e86:Shut Down EverQuest II and Download Neriak Content</Button>
+                    <Button IsCancelButton="true" Location="90,234" MaximumSize="16384,32" MinimumSize="32,32" Name="Cancel" ScrollExtent="400,32" Size="400,32" Style="/CommonElements.PushButton.data.style">:cf8004117cd09b1c:Take No Action At This Time</Button>
+                </Page>
+                <Page BackgroundOpacity="1.000" Name="Edging" PackSize="a,a" RStyleDefault="/WindowElements.HollowFrame.data.frame.rect" ScrollExtent="640,390" Size="640,390" />
+            </Page>
+            <Page Activated="true" BackgroundOpacity="0.424" Location="192,189" Name="Shutdown" PackLocation="cfc,cfc" ScrollExtent="640,390" Size="640,390">
+                <Text AbsorbsInput="false" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="0,15" Name="Title" PackSize="a" ScrollExtent="640,42" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="640,42" TextAlignment="Center" UserMovable="true" UserResizable="true">:cf8004117e6f4ddb:EverQuest II Will Now Be Shut Down</Text>
+                <Page Location="176,55" Name="Rule" ScrollExtent="288,14" Size="288,14">
+                    <Image Name="Left" ScrollExtent="48,14" Size="48,14" Style="/CommonElements.Splitter.data.startcap" />
+                    <Image Location="48,0" Name="Center" PackSize="a" ScrollExtent="192,14" Size="192,14" Style="/CommonElements.Splitter.data.bkg" />
+                    <Image Location="240,0" Name="Right" PackLocation="fff" ScrollExtent="48,14" Size="48,14" Style="/CommonElements.Splitter.data.endcap" />
+                </Page>
+                <Page Location="30,80" Name="Body" PackSize="a,a" ScrollExtent="580,185" Size="580,185">
+                    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="16,7" Margin="5,5,5,5" Name="Header" PackSize="a" ScrollExtent="550,48" ShadowStyle="/NCS2.data.Selected.SelectedShadowStyle" Size="550,30">:cf800411b24d42af:Closing EverQuest II</Text>
+                    <Page BackgroundOpacity="1.000" Location="20,40" Name="IconPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="48,48" Size="48,48">
+                        <Image BackgroundColor="#FFFFFF" GetsInput="true" Location="3,3" Name="Icon" ScrollExtent="42,42" Size="42,42" SourceRect="168,84,210,126" SourceResource="images/icons/icon_ms1.dds" Stretch="false" />
+                    </Page>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="76,40" Name="AboutText" ScrollExtent="490,85" Size="490,85">:cf800411cdc2a8f2:EverQuest II will now be shut down so that the patcher may be restarted to automatically download content for Neriak and Darklight Wood.</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="20,175" Name="Countdown" PackSize="a" ScrollExtent="600,100" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="600,100" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:cf8004110476c845:Shutdown in 10 seconds...</Text>
+                <Button IsCancelButton="true" Location="120,274" MaximumSize="16384,32" MinimumSize="32,32" Name="Cancel" ScrollExtent="400,32" Size="400,32" Style="/CommonElements.PushButton.data.style">:cf80041128fed48f:Cancel Shutdown</Button>
+                <Page BackgroundOpacity="1.000" Name="Edging" PackSize="a,a" RStyleDefault="/WindowElements.HollowFrame.data.frame.rect" ScrollExtent="640,390" Size="640,390" />
+            </Page>
+        </Page>

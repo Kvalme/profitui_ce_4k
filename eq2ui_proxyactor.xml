@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page AbsorbsInput="false" ismodule="true" Name="ProxyActor" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="Font_ChatBubbleMultiLanguage" PointSize="15" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="Font_ChatBubble" PointSize="15" PrivateFontPath="UI/Fonts/zcal801b.TTF" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="russian" Name="Font_Russia_ChatBubble" PointSize="15" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="japanese" Name="Font_Japan_ChatBubble" PointSize="15" UseCachedFont="true" />
+        <Page AbsorbsInput="false" Name="Conversation" ScrollExtent="754,240" Size="754,240" Visible="false">
+            <Composite Name="Replies" ScrollExtent="301,173" Size="301,173" Spacing="10" SpacingType="Constant" />
+            <Button AutoResize="true" Margin="15,10,15,10" MaximumSize="300,16384" MinimumSize="75,28" Name="ReplyTemplate" ScrollExtent="75,28" Size="75,28" Style="/ButtonStyles.text_button_biground" TextMaxLines="255" Visible="false">:78406b312303306e:[DEVL]Tell me more about the person who stole your sword.</Button>
+            <Button AutoResize="true" Margin="15,10,15,10" MaximumSize="300,16384" MinimumSize="75,28" Name="ReplyTemplateAlternate" ScrollExtent="75,28" Size="75,28" Style="/ButtonStyles.text_button_biground_alternate" TextMaxLines="255" Visible="false">:2e2e036e2303306e:[DEVL]Tell me more about the person who stole your sword.</Button>
+            <Page AbsorbsInput="false" BackgroundColor="#FF0000" GetsInput="false" Name="ChatPage" ScrollExtent="222,78" Size="222,78">
+                <Text AbsorbsInput="false" BackgroundColor="#FFFFFF" Cursor="/Cursor.Text" ExtendedTooltip="Displays chat messages." Font="Font_ChatBubble" GetsInput="false" Margin="2,0,2,0" MaximumSize="225,16384" MaxLines="255" MinimumSize="50,35" Name="MessageText" ScrollExtent="225,46" ShadowStyle="/ShadowStylesNew.None.style" Size="225,46" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#000000">:78406b3152860802:[DEVL]This is a sample chat bubble with word wrapping.</Text>
+                <Image Location="10,12" Name="Center" Opacity="0.850" ScrollExtent="10,12" Size="10,12" SourceRect="45,333,55,345" SourceResource="images/window_elements_generic.dds" Style=" " />
+                <Image Name="TopLeft" Opacity="0.850" ScrollExtent="10,12" Size="10,12" SourceRect="6,282,16,294" SourceResource="images/window_elements_generic.dds" Stretch="false" Style=" " />
+                <Image Location="10,0" Name="TopEdge" Opacity="0.850" ScrollExtent="10,12" Size="10,12" SourceRect="47,282,57,294" SourceResource="images/window_elements_generic.dds" Style=" " />
+                <Image Location="20,0" Name="TopRight" Opacity="0.850" ScrollExtent="10,12" Size="10,12" SourceRect="63,282,73,294" SourceResource="images/window_elements_generic.dds" Stretch="false" Style=" " />
+                <Image Location="20,12" Name="RightEdgeTop" Opacity="0.850" ScrollExtent="10,2" Size="10,2" SourceRect="63,319,73,320" SourceResource="images/window_elements_generic.dds" Style=" " />
+                <Image Location="20,12" Name="RightArrow" Opacity="0.850" ScrollExtent="25,16" Size="25,16" SourceRect="63,321,88,337" SourceResource="images/window_elements_generic.dds" Style=" " />
+                <Image Location="20,24" Name="RightEdgeBottom" Opacity="0.850" ScrollExtent="10,2" Size="10,2" SourceRect="63,319,73,320" SourceResource="images/window_elements_generic.dds" Style=" " />
+                <Image Location="20,24" Name="BottomRight" Opacity="0.850" ScrollExtent="10,12" Size="10,12" SourceRect="63,347,73,359" SourceResource="images/window_elements_generic.dds" Stretch="false" Style=" " />
+                <Image Location="10,24" Name="BottomEdge" Opacity="0.850" ScrollExtent="10,12" Size="10,12" SourceRect="50,347,60,359" SourceResource="images/window_elements_generic.dds" Style=" " />
+                <Image Location="0,24" Name="BottomLeft" Opacity="0.850" ScrollExtent="10,12" Size="10,12" SourceRect="6,347,16,359" SourceResource="images/window_elements_generic.dds" Stretch="false" Style=" " />
+                <Image Location="0,12" Name="LeftEdge" Opacity="0.850" ScrollExtent="10,2" Size="10,2" SourceRect="6,335,16,336" SourceResource="images/window_elements_generic.dds" Style=" " />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundColor="#FF00FF" GetsInput="false" Name="CombatBubble" ScrollExtent="154,58" Size="154,58" Visible="false">
+            <Text BackgroundColor="#0000FF" Cursor="/Cursor.Text" Font="/TextStyles.CombatBubble.CombatBubbleStyle" Name="LowerText" ScrollExtent="146,34" Size="146,34" TextAlignment="Center" TextAlignmentVertical="Center">:78406b3108ea8fac:[DEVL]</Text>
+        </Page>
+        <Page AbsorbsInput="false" GetsInput="false" Location="2,3" MaximumSize="1024,16384" Name="ChatBubble" ScrollExtent="272,211" Size="272,211" version="1.2">
+            <Page GetsInput="false" Location="0,29" MaximumSize="272,16384" Name="ChatPage" ScrollExtent="222,78" Size="222,78" Visible="false">
+                <Image Location="137,13" Name="Talking" ScrollExtent="21,21" Size="21,21" SourceRect="126,0,168,42" SourceResource="images/window_elements_tradeskill.dds" Visible="false" />
+                <Text AbsorbsInput="false" Cursor="/Cursor.Text" ExtendedTooltip="Displays chat messages." Font="Font_Japan_ChatBubble" GetsInput="false" Location="6,0" Margin="1,0,1,0" MaximumSize="210,16384" MinimumSize="210,0" Name="ChatText" ScrollExtent="210,78" Size="210,78" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#000000" Visible="false">:78406b319f0e2d08:[DEVL]This is a chat message that should wrap inside of the chat bubble.</Text>
+                <Image Location="72,50" Name="DownArrow" ScrollExtent="17,27" Size="17,27" SourceRect="29,347,46,374" SourceResource="images/window_elements_generic.dds" Style=" " />
+                <Image Location="221,25" Name="ChatArrow" Opacity="0.750" Rotation="0.250" ScrollExtent="16,13" Size="16,13" SourceRect="32,8,48,21" SourceResource="/images/placeholder/chatbubble.dds" Stretch="false" Visible="false" />
+                <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" GetsInput="false" Name="ChatFrame" ScrollExtent="222,78" Size="222,78">
+                    <Image Location="72,30" Name="Center" ScrollExtent="10,12" Size="10,12" SourceRect="45,333,55,345" SourceResource="images/window_elements_generic.dds" Style=" " />
+                    <Image Location="92,50" Name="BottomEdgeRight" ScrollExtent="10,12" Size="10,12" SourceRect="50,347,60,359" SourceResource="images/window_elements_generic.dds" Style=" " />
+                    <Image Location="62,50" Name="BottomEdgeLeft" ScrollExtent="10,12" Size="10,12" SourceRect="50,347,60,359" SourceResource="images/window_elements_generic.dds" Style=" " />
+                    <Image Location="52,50" Name="BottomLeft" ScrollExtent="10,12" Size="10,12" SourceRect="6,347,16,359" SourceResource="images/window_elements_generic.dds" Stretch="false" Style=" " />
+                    <Image Location="52,30" Name="LeftEdge" ScrollExtent="10,2" Size="10,2" SourceRect="6,335,16,336" SourceResource="images/window_elements_generic.dds" Style=" " />
+                    <Image Location="52,10" Name="TopLeft" ScrollExtent="10,12" Size="10,12" SourceRect="6,282,16,294" SourceResource="images/window_elements_generic.dds" Stretch="false" Style=" " />
+                    <Image Location="72,10" Name="TopEdge" ScrollExtent="10,12" Size="10,12" SourceRect="47,282,57,294" SourceResource="images/window_elements_generic.dds" Style=" " />
+                    <Image Location="92,10" Name="TopRight" ScrollExtent="10,12" Size="10,12" SourceRect="63,282,73,294" SourceResource="images/window_elements_generic.dds" Stretch="false" Style=" " />
+                    <Image Location="92,30" Name="RightEdge" ScrollExtent="10,2" Size="10,2" SourceRect="63,319,73,320" SourceResource="images/window_elements_generic.dds" Style=" " />
+                    <Image Location="102,50" Name="BottomRight" ScrollExtent="10,12" Size="10,12" SourceRect="63,347,73,359" SourceResource="images/window_elements_generic.dds" Stretch="false" Style=" " />
+                </Page>
+            </Page>
+            <Page Location="54,19" Name="TagPage" ScrollExtent="42,42" Size="42,42">
+                <Icon Font="/TextStyles.CombatBubble.CombatBubbleStyle" IconID="12" Location="21,21" MaximumSize="42,42" Name="TagNumber" ScrollExtent="21,21" Size="21,21" />
+                <Icon Font="/TextStyles.CombatBubble.CombatBubbleStyle" IconID="12" MaximumSize="42,42" MinimumSize="42,42" Name="TagIcon" ScrollExtent="42,42" Size="42,42" />
+            </Page>
+            <Page Location="54,19" Name="HealthPage" ScrollExtent="68,5" Size="68,5" Visible="false">
+                <Progressbar Color="#FFFF00" ExtendedTooltip="Displays the health of the group member." GetsInput="false" Location="1,1" Name="Health" Progress="1.000" ScrollExtent="66,3" Size="66,3" Style="/progressbarlist.progress_default" Tooltip=":78406b313689d9da:Health" />
+                <Image BackgroundColor="#FFFFFF" BackgroundOpacity="0.722" Color="#444400" Name="HealthBkg" ScrollExtent="68,5" Size="68,5" />
+            </Page>
+            <Page Location="54,19" Name="PowerPage" ScrollExtent="68,5" Size="68,5" Visible="false">
+                <Progressbar Color="#8080FF" ExtendedTooltip="Displays the health of the group member." GetsInput="false" Location="1,1" Name="Power" Progress="1.000" ScrollExtent="66,3" Size="66,3" Style="/progressbarlist.progress_default" Tooltip=":78406b313689d9da_1:Health" />
+                <Image BackgroundColor="#FFFFFF" BackgroundOpacity="0.722" Color="#444400" Name="PowerBkg" ScrollExtent="68,5" Size="68,5" />
+            </Page>
+            <Page Location="54,19" Name="ThreatPage" ScrollExtent="68,5" Size="68,5" Visible="false">
+                <Progressbar Color="#8080FF" ExtendedTooltip="Displays your threat towards this character." GetsInput="false" Location="1,1" Name="Threat" Progress="1.000" ScrollExtent="66,3" Size="66,3" Style="/progressbarlist.progress_default" Tooltip=":2e2e036ed4c4a62e:Threat" />
+                <Image BackgroundColor="#FFFFFF" BackgroundOpacity="0.722" Color="#444400" Name="ThreatBkg" ScrollExtent="68,5" Size="68,5" />
+            </Page>
+            <Page Location="0,19" MinimumSize="250,31" Name="ResearchPage" ScrollExtent="350,31" Size="350,31" Visible="false">
+                <Page AbsorbsInput="false" Location="4,4" Name="ResearchPage" PackLocation="left,top" PackSize="a,a" ScrollExtent="342,24" Size="342,24">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Margin="1,0,2,2" MaxLines="1" Name="RecipeName" PackSize="a,a" ScrollExtent="342,25" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="342,24" TextAlignment="Center" TextAlignmentVertical="Center">:2e2e036e23a09120:[DEVL]Fighting Chance</Text>
+                    <Page Location="1,1" Name="Progress" PackSize="a,a" ScrollExtent="341,22" Size="341,22">
+                        <Page BackgroundOpacity="1.000" Location="4,17" Name="Dot" PackLocation="left,bottom" ScrollExtent="1,1" Size="1,1" />
+                        <Page BackgroundOpacity="1.000" Location="4,4" Name="Dot" PackLocation="left,top" ScrollExtent="1,1" Size="1,1" />
+                        <Page BackgroundOpacity="1.000" Location="-6,-6" Name="Frame" PackSize="a,a" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="353,33" Size="353,33" />
+                        <Progressbar AbsorbsInput="false" Color="#FCE319" ExtendedTooltip="Research progress." Location="4,4" Name="Research" PackSize="a,a" Progress="0.500" ScrollExtent="333,14" Size="333,14" Style="/progressbarlist.Casting.casting_style" Tooltip=":2e2e036e5162cd6b:Research" />
+                        <Page BackgroundOpacity="1.000" Location="3,3" Name="Background" PackSize="a,a" RStyleDefault="/progressbarlist.Casting.Bkg.rect" ScrollExtent="335,16" Size="335,16" Visible="false" />
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Location="4,4" Name="CoachingPage" PackLocation="left,top" PackSize="a,a" ScrollExtent="342,24" Size="342,24">
+                    <Page Location="1,1" Name="Progress" PackSize="a,a" ScrollExtent="341,22" Size="341,22">
+                        <Page BackgroundOpacity="1.000" Location="4,17" Name="Dot" PackLocation="left,bottom" ScrollExtent="1,1" Size="1,1" />
+                        <Page BackgroundOpacity="1.000" Location="4,4" Name="Dot" PackLocation="left,top" ScrollExtent="1,1" Size="1,1" />
+                        <Page BackgroundOpacity="1.000" Location="-6,-6" Name="Frame" PackSize="a,a" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="353,33" Size="353,33" />
+                        <Progressbar AbsorbsInput="false" Color="#40FF19" ExtendedTooltip="Research time that can be reduced through coaching." Location="4,4" Name="Coaching" PackSize="a,a" Progress="0.750" ScrollExtent="333,14" Size="333,14" Style="/progressbarlist.Casting.casting_style" Tooltip=":2e2e036ecc379567:Coaching" />
+                        <Page BackgroundOpacity="1.000" Location="3,3" Name="Background" PackSize="a,a" RStyleDefault="/progressbarlist.Casting.Bkg.rect" ScrollExtent="335,16" Size="335,16" Visible="false" />
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="350,31" Size="350,31">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="350,31" Size="350,31" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="350,31" Size="350,31" />
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" BackgroundColor="#0080FF" BackgroundOpacity="1.000" GetsInput="false" Name="NamePage" RStyleDefault="/FrameStyles.ThinRoundedGreyscale.rect" ScrollExtent="272,29" Size="272,29">
+                <ImageStyle Name="WarriorArchetype">
+                    <ImageFrame Source="/images/widgets01.dds" SourceRect="216,2,250,37" />
+                </ImageStyle>
+                <ImageStyle Name="MageArchetype">
+                    <ImageFrame Source="/images/widgets01.dds" SourceRect="215,83,249,118" />
+                </ImageStyle>
+                <ImageStyle Name="PriestArchetype">
+                    <ImageFrame Source="/images/widgets01.dds" SourceRect="216,41,250,76" />
+                </ImageStyle>
+                <ImageStyle Name="ScoutArchetype">
+                    <ImageFrame Source="/images/widgets01.dds" SourceRect="215,123,249,158" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="CenterWeak">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="4,63,80,71" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="LeftWeak">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="0,54,0,72" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="RightWeak">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="24,53,24,71" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="LeftEpic">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="90,82,124,129" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="RightEpic">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="124,82,158,129" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="LeftHeroic">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="163,177,183,204" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="RightHeroic">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="188,177,208,204" />
+                </ImageStyle>
+                <Image AutoSize="true" BackgroundColor="#00FFFF" Location="4,2" MaximumSize="24,24" Name="ArchetypeIcon" ScrollExtent="24,24" Size="24,24" Style="PriestArchetype" />
+                <Image AutoSize="true" BackgroundColor="#00FFFF" Name="CenterTier" ScrollExtent="25,25" Size="25,25" Visible="false" />
+                <Image AutoSize="true" BackgroundColor="#00FFFF" Name="RightTier" ScrollExtent="25,25" Size="25,25" Visible="false" />
+                <Image AutoSize="true" BackgroundColor="#00FFFF" Name="LeftTier" ScrollExtent="25,25" Size="25,25" Visible="false" />
+                <Text BackgroundColor="#FF00FF" Cursor="/Cursor.Text" ExtendedTooltip="Displays chat messages." Font="/TextStyles.Normal.NormalStyle" GetsInput="false" MaxLines="1" Name="Level" ScrollExtent="317,28" ShadowStyle="/ShadowStylesNew.Outline.style" Size="317,28" TextAlignment="Center" TextColor="#0080FF" Visible="false">:78406b314b948804:[DEVL]Ambassador Rotnaff of</Text>
+                <Image AutoSize="true" BackgroundColor="#00FFFF" Location="4,2" Name="LevelCircle" ScrollExtent="24,24" Size="24,24" SourceRect="223,178,248,203" SourceResource="images/widgets02.dds" />
+                <Image AutoSize="true" BackgroundColor="#00FFFF" Name="QuestIcon" ScrollExtent="24,24" Size="24,24" Visible="false" />
+                <Image AutoSize="true" BackgroundColor="#00FFFF" Location="240,2" Name="QuestCircle" ScrollExtent="24,24" Size="24,24" SourceRect="223,178,248,203" SourceResource="images/widgets02.dds" />
+                <ImageStyle Filter="true" Name="Tough3">
+                    <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="162,4,199,14" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="Tough2">
+                    <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="162,4,187,14" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="Tough1">
+                    <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="162,4,175,14" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="Weak1">
+                    <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="162,15,175,24" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="Weak2">
+                    <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="162,15,187,24" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="Weak3">
+                    <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="162,15,199,24" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="QuestKillTarget">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="224,219,246,241" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="QuestBaubleTarget">
+                    <ImageFrame Name="image" Source="images/icons/icon_is12.dds" SourceRect="217,4,249,39" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="QuestGenericTarget">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="224,219,246,241" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="QuestKillTargetAlly">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="224,138,246,160" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="QuestBaubleTargetAlly">
+                    <ImageFrame Name="image" Source="images/icons/icon_is8.dds" SourceRect="47,212,84,244" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="QuestGenericTargetAlly">
+                    <ImageFrame Name="image" Source="images/widgets02.dds" SourceRect="224,138,246,160" />
+                </ImageStyle>
+                <Image AutoSize="true" BackgroundColor="#00FFFF" Name="TierIndicator" ScrollExtent="25,25" Size="25,25" Visible="false" />
+                <Image Name="EncounterState" ScrollExtent="25,25" Size="25,25" Style="/mouseovericons.broken" Visible="false" />
+                <Text BackgroundColor="#FF00FF" Cursor="/Cursor.Text" ExtendedTooltip="Displays chat messages." Font="/TextStyles.Large.LargeStyle" GetsInput="false" MaxLines="1" Name="Name" ScrollExtent="317,28" ShadowStyle="/ShadowStylesNew.Outline.style" Size="317,28" TextAlignment="Center" TextColor="#0080FF">:78406b314b948804_1:[DEVL]Ambassador Rotnaff of</Text>
+                <Text BackgroundColor="#FF0000" Cursor="/Cursor.Text" ExtendedTooltip="Displays chat messages." Font="/TextStyles.Normal.NormalStyle" GetsInput="false" MaxLines="1" Name="SubName" ScrollExtent="317,28" ShadowStyle="/ShadowStylesNew.Outline.style" Size="317,28" TextAlignment="Center" TextColor="#0080FF">:78406b314b948804_2:[DEVL]Ambassador Rotnaff of</Text>
+                <Text BackgroundColor="#00FF00" Cursor="/Cursor.Text" ExtendedTooltip="Displays chat messages." Font="/TextStyles.Normal.NormalStyle" GetsInput="false" MaxLines="1" Name="PrefixTitle" ScrollExtent="317,28" ShadowStyle="/ShadowStylesNew.Outline.style" Size="317,28" TextAlignment="Center" TextColor="#0080FF">:78406b314b948804_3:[DEVL]Ambassador Rotnaff of</Text>
+                <Text BackgroundColor="#0000FF" Cursor="/Cursor.Text" ExtendedTooltip="Displays chat messages." Font="/TextStyles.Normal.NormalStyle" GetsInput="false" MaxLines="1" Name="SuffixTitle" ScrollExtent="317,28" ShadowStyle="/ShadowStylesNew.Outline.style" Size="317,28" TextAlignment="Center" TextColor="#0080FF">:78406b314b948804_4:[DEVL]Ambassador Rotnaff of</Text>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" GetsInput="false" Location="27,21" MaximumSize="222,16384" Name="SignBubble" ScrollExtent="207,81" Size="207,81" Visible="false">
+            <Text Cursor="/Cursor.Text" ExtendedTooltip="Displays chat messages." Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="6,2" MaximumSize="196,16384" Name="Name" ScrollExtent="196,52" Size="196,19" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DFDCCA">:78406b31db6c707f:[DEVL]John Doe&apos;s Armor Shop</Text>
+            <Text BackgroundColor="#FF0000" Cursor="/Cursor.Text" ExtendedTooltip="Displays chat messages." Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="6,19" MaximumSize="196,16384" Name="Description" ScrollExtent="196,69" Size="196,31" TextAlignment="Center" TextColor="#C4BE9D">:78406b310a0fd03d:[DEVL]Craftsman of the finest dwarven armor in Freeport.</Text>
+            <Text BackgroundColor="#FF0000" Cursor="/Cursor.Text" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="6,47" MaximumSize="196,16384" Name="FailureText" ScrollExtent="196,69" Size="196,31" TextAlignment="Center" TextColor="#DF0000">:2e2e036ebb4ef85a:[DEVL]Zone Name - requires some quest to be completed</Text>
+            <Page BackgroundOpacity="1.000" Location="0,-3" MaximumSize="210,16384" Name="Frame" RStyleDefault="/WindowElements.ThickDesktopWindowFrame.data.frame.rect" ScrollExtent="210,86" Size="210,86" />
+            <Page BackgroundColor="#42282C" BackgroundOpacity="0.875" Location="2,2" MaximumSize="205,16384" Name="Backdrop" ScrollExtent="203,77" Size="203,77" />
+        </Page>
+        <Page AbsorbsInput="false" BackgroundColor="#FF00FF" GetsInput="false" Name="TextBubble" ScrollExtent="154,58" Size="154,58" Visible="false">
+            <Text BackgroundColor="#0000FF" Cursor="/Cursor.Text" Font="/TextStyles.CombatBubble.CombatBubbleStyle" Name="Text" ScrollExtent="146,34" Size="146,34" TextAlignment="Center" TextAlignmentVertical="Center">:78406b3108ea8fac:[DEVL]</Text>
+        </Page>
+    </Page>

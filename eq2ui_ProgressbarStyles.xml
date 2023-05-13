@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Namespace Name="progressbarlist">
+        <Namespace Name="Casting">
+            <ProgressbarStyle Bar.Background="progress_fill" Name="casting_style" />
+            <ImageStyle Name="progress_fill">
+                <ImageFrame Name="progress_fill" Source="images/specialelements.dds" SourceRect="105,353,215,364" />
+            </ImageStyle>
+            <Namespace Name="Bkg">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="/images/window_elements_generic.dds" SourceRect="256,415,337,435" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="w">
+                    <ImageFrame Name="image" Source="/images/window_elements_generic.dds" SourceRect="254,415,256,435" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="e">
+                    <ImageFrame Name="image" Source="/images/window_elements_generic.dds" SourceRect="337,415,339,435" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" East="e" EastShrink="true" Name="rect" West="w" WestShrink="true" />
+            </Namespace>
+        </Namespace>
+        <Namespace Name="Vitality">
+            <ImageStyle Name="progress_fill">
+                <ImageFrame Name="progress_fill" Source="/images/VitVial_UI.tga" SourceRect="26,5,33,35" />
+            </ImageStyle>
+        </Namespace>
+        <ProgressbarStyle Bar.Background="/imagelist.progress_fill" Layout="Vertical" Name="progress_vitality" />
+        <ProgressbarStyle Bar.Background="/imagelist.progress_grayscale_fill" Name="progress_grayscale_default" />
+        <ProgressbarStyle Background="/imagelist.mo_gauge_background" Bar.Background="/imagelist.progress_grayscale_bkg" EndCap="/imagelist.mo_gauge_endcap" Gauge.BackgroundEmpty="/imagelist.mo_gauge_back" Name="mo_progress_normal" StartCap="/imagelist.mo_gauge_startcap" />
+        <ProgressbarStyle Bar.Background="0" Bar.BackgroundEmpty="/imagelist.progress_grayscale_bkg" Inverted="true" Name="progress_inverted" />
+        <ProgressbarStyle Bar.Background="GaugeFill" Bar.BackgroundEmpty="GaugeBackground" EndCap=" " Gauge.Background=" " Gauge.BackgroundEmpty=" " Name="gauge" StartCap="GaugeEndCapLeft" />
+        <ProgressbarStyle Bar.Background="/imagelist.progress_fill" Name="progress_default" />
+    </Namespace>

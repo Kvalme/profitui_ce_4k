@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="25,17" MinimumSize="413,564" Name="Persona" ScrollExtent="425,584" Size="425,584" UserMovable="true" version="3.0.0">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="25,17" MinimumSize="413,564" Name="Persona" ScrollExtent="425,584" Size="425,584" UserMovable="true" version="3.0.0" Visible="false">
             <Page BackgroundOpacity="1.000" Location="0,23" MinimumSize="111,0" Name="Categories" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="111,558" Size="111,558">
                 <DataSource Name="ListDataSource">
                     <Data Name="Equipment" p01="false" p02="false" p03="false" p04="false" text=":a8d7734cae36a8df:Equipment" v1="true" v10="false" v11="false" v12="false" v13="false" v14="false" v15="false" v16="false" v17="false" v18="false" v19="false" v2="true" v20="false" v3="true" v4="false" v5="false" v6="false" v7="false" v8="false" v9="false" />

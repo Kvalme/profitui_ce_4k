@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="349,181" MaximumSize="1024,1024" MinimumSize="235,273" Name="UISettings" PackLocation="cfc,cfc" ScrollExtent="326,327" Size="326,327" UserMovable="true" UserResizable="true">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="19,23" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="283,52" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="283,24" TextAlignment="Center" TextColor="#FBF1D9">:6f1ef220ac304824:Import User Interface Settings</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="19,51" Name="HelpText" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="288,115" Size="288,47" TextAlignment="Center" TruncateElipsis="false">:6f1ef220641e231b:If you wish to import the UI settings from another character, pick the character from this list. Otherwise press the Cancel Button.</Text>
+            <Page Location="19,109" Name="TablePage" PackSize="absolute,absolute" ScrollExtent="289,149" Size="289,149">
+                <TableHeader BackgroundColor="#FFFFFF" BackgroundOpacity="0.000" ButtonStyle="/ButtonStyles.invisible" Location="1,5" MinimumScrollExtent="263,0" Name="TableHeader" PackLocation="left,top" PackSize="absolute" ScrollExtent="284,16" Size="284,16" Table="Table" />
+                <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="-2,2" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="290,22" Size="290,22" />
+                <Page BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="0,4" Name="HeaderBkg" PackLocation="top,left" PackSize="absolute" ScrollExtent="286,17" Size="286,17" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,22" Name="TableFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="289,127" Size="289,127" />
+                <Table BackgroundColor="#000000" BackgroundOpacity="0.475" DefaultTextStyle="/Fonts.FontZapf15" Location="3,25" MinimumScrollExtent="263,0" Name="Table" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="263,121" SelectionAllowedMultiRow="false" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" Size="263,121" TableModel="TableModel" />
+                <Scrollbar ArrowPressSound="sounds/button" Control="Table" HideIfUnnecessary="false" Location="264,25" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,121" Size="22,121" Style="/CommonElements.ScrollbarVertical.data.style" />
+                <Page BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="0,15" Name="TableFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="290,133" Size="290,133" Visible="false" />
+                <DataSourceContainer Name="TableDSContainer">
+                    <DataSource label=":6f1ef22001ee2ec7:Name" Name="NameDS" type="text" />
+                    <DataSource label=":6f1ef220a23e2f3f:Server" Name="ServerDS" type="text" />
+                </DataSourceContainer>
+                <TableModelDefault DataSourceContainer="TableDSContainer" Name="TableModel" />
+            </Page>
+            <Button Location="55,274" Name="OkButton" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style" UserResizable="true">:6f1ef22013a7061a:Ok</Button>
+            <Button Location="171,274" Name="CancelButton" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:6f1ef220ae453fbb:Cancel</Button>
+            <Page BackgroundOpacity="1.000" Location="-12,-10" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="350,348" Size="350,348" />
+        </Page>

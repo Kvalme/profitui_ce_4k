@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-            <Page AbsorbsInput="false" Name="WindowFrameMini" PackSize="a,a" ScrollExtent="1028,768" Size="1028,768">
-                <Page GetsInput="false" Location="3,21" Name="MapRect" PackSize="a,a" ScrollExtent="1020,744" Size="1020,744" />
-                <Page AbsorbsInput="false" Name="WindowFrame" PackSize="1,1" ScrollExtent="1028,768" Size="1028,768">
-                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="1028,20" Size="1028,20" SizeIncrement="1,0">
-                        <Text AbsorbsInput="false" DynamicData="/GameData.Self.ZoneName" Font="/TextStyles.Normal.NormalStyle" Location="0,1" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="1028,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="1028,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:69c2ff87b09b6c34:[DEVL]Zone Name</Text>
-                        <Button Enabled="false" GetsInput="false" Name="TitleBarRight" PackSize="a,f" ScrollExtent="1028,20" Size="1028,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarRight" />
+            <Page AbsorbsInput="false" Name="WindowFrameMini" PackSize="a,a" ScrollExtent="2052,768" Size="2052,768">
+                <Page GetsInput="false" Location="3,21" Name="MapRect" PackSize="a,a" ScrollExtent="2044,744" Size="2044,744" />
+                <Page AbsorbsInput="false" Name="WindowFrame" PackSize="1,1" ScrollExtent="2052,768" Size="2052,768">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="2052,20" Size="2052,20" SizeIncrement="1,0">
+                        <Text AbsorbsInput="false" DynamicData="/GameData.Self.ZoneName" Font="/TextStyles.Normal.NormalStyle" Location="0,1" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="2052,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="2052,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:69c2ff87b09b6c34:[DEVL]Zone Name</Text>
+                        <Button Enabled="false" GetsInput="false" Name="TitleBarRight" PackSize="a,f" ScrollExtent="2052,20" Size="2052,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarRight" />
                     </Page>
-                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="1028,768" Size="1028,768" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="2052,768" Size="2052,768" />
                 </Page>
             </Page>

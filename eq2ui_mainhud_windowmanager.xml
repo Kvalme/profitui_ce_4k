@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="187,644" MaximumSize="16384,40" MinimumSize="300,40" Name="WindowManager" PackSize="a,f" ScrollExtent="1650,40" Size="1650,40" UserMovable="true" UserResizable="true" Visible="false">
+            <Composite Location="4,5" Name="ButtonPage" Orientation="Horizontal" PackSize="a,a" ScrollExtent="1642,32" Size="1642,32" SpacingType="Constant">
+                <Button MaximumSize="16384,32" MinimumSize="32,32" Name="ButtonTemplate" ScrollExtent="130,32" Size="130,32" Style="/CommonElements.PushButton.data.style">:2add889673b70314:Window</Button>
+            </Composite>
+            <Page Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="1650,40" Size="1650,40">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="1650,40" Size="1650,40" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="1650,40" Size="1650,40" />
+            </Page>
+        </Page>

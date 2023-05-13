@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="261,144" MinimumSize="488,415" Name="Character" ScrollExtent="509,470" Size="509,470" UserMovable="true" Visible="false">
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="23,151" Name="TradeskillDataFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="457,39" Size="457,39" />
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="27,155" Name="TSLevelLabel" ScrollExtent="163,15" Size="163,13" TextAlignment="Right">:6cfd5caff3981ea8:Tradeskill Level:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="196,155" Name="TSLevel" ScrollExtent="45,15" Size="45,13">:6cfd5caf05e57d52:25</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="252,155" Name="TSExperienceLabel" ScrollExtent="85,15" Size="85,13" TextAlignment="Right">:6cfd5caff461876c:Experience:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="341,155" Name="TSExperience" ScrollExtent="97,15" Size="97,13">:6cfd5caf7c06acda:4000</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="26,173" Name="TSArchetypeLabel" ScrollExtent="63,15" Size="63,13" TextAlignment="Right">:6cfd5caf9d4eac6e:Archetype:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="93,173" Name="TSArchetype" ScrollExtent="93,15" Size="93,13">:6cfd5caf1274f861:Commoner</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="193,173" Name="TSClassLabel" ScrollExtent="38,15" Size="38,13" TextAlignment="Right">:6cfd5caf8c00093a:Class:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="236,173" Name="TSClass" ScrollExtent="93,15" Size="93,13">:6cfd5caf1274f861_1:Commoner</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="325,173" Name="TSSubClassLabel" ScrollExtent="54,30" Size="54,13" TextAlignment="Right">:6cfd5caf688d03bc:SubClass:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="384,173" Name="TSSubClass" ScrollExtent="93,15" Size="93,13">:6cfd5caf1274f861_2:Commoner</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="190,406" Name="AutoAttackLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5cafd204ccab:Auto Attack:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="265,406" Name="AutoAttack" ScrollExtent="71,17" Size="71,17">:6cfd5caf63cdf295:On</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="30,421" Name="NumDeathsLabel" ScrollExtent="93,30" Size="93,17" TextAlignment="Right">:6cfd5cafdbb4729a:Number of Deaths:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="127,421" Name="NumDeaths" ScrollExtent="71,17" Size="71,17">:6cfd5caf05e57d52_1:25</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="30,405" Name="NumKillsLabel" ScrollExtent="94,17" Size="94,17" TextAlignment="Right">:6cfd5caf7d740b7f:Number of Kills:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="127,406" Name="NumKills" ScrollExtent="71,17" Size="71,17">:6cfd5cafa3b9e509:250</Text>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="24,400" Name="MiscStatsFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="457,49" Size="457,49" />
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="251,320" Name="SpellEffects" ScrollExtent="214,75" Size="214,75">:6cfd5cafeb180017:attackspeed 0</Text>
+            <Scrollbar ArrowPressSound="sounds/button" Control="SpellEffects" Location="457,321" Name="SpellEffectScroll" ScrollExtent="22,75" Size="22,75" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Text AbsorbsInput="false" BackgroundOpacity="1.000" Font="/Fonts.FontArial14" Location="248,296" Name="SpellEffectsLabel" RStyleDefault="/rectlist.win_plain" ScrollExtent="232,26" Size="232,26" TextAlignment="Center" TextAlignmentVertical="Center">:6cfd5cafd322771c:Spell Effects</Text>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="248,317" Name="SpellEffectsFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="232,82" Size="232,82" />
+            <Scrollbar ArrowPressSound="sounds/button" Control="Techniques" Location="220,320" Name="TechniquesScroll" ScrollExtent="22,75" Size="22,75" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="25,321" Name="Techniques" ScrollExtent="205,74" Size="205,74">:6cfd5caf00582350:slashing 17</Text>
+            <Text AbsorbsInput="false" BackgroundOpacity="1.000" Font="/Fonts.FontArial14" Location="23,296" Name="TechniquesLabel" RStyleDefault="/rectlist.win_plain" ScrollExtent="221,26" Size="221,26" TextAlignment="Center" TextAlignmentVertical="Center">:6cfd5cafaaa079ba:Techniques</Text>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="23,318" Name="TechniquesFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="221,81" Size="221,81" />
+            <Text AbsorbsInput="false" BackgroundOpacity="1.000" Font="/Fonts.FontArial14" Location="248,192" Name="KnowledegesLabel" RStyleDefault="/rectlist.win_plain" ScrollExtent="233,26" Size="233,26" TextAlignment="Center" TextAlignmentVertical="Center">:6cfd5cafc83458d3:Knowledges</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="252,215" Name="Knowledges" ScrollExtent="214,76" Size="214,76">:6cfd5cafdfbf5ddd:verylightarmor 5</Text>
+            <Scrollbar ArrowPressSound="sounds/button" Control="Knowledges" Location="457,216" Name="KnowledgesScroll" ScrollExtent="22,75" Size="22,75" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="248,212" Name="KnowledgesFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="233,82" Size="233,82" />
+            <Text AbsorbsInput="false" BackgroundOpacity="1.000" Font="/Fonts.FontArial14" Location="23,191" Name="AttributesLabel" RStyleDefault="/rectlist.win_plain" ScrollExtent="220,26" Size="220,26" TextAlignment="Center" TextAlignmentVertical="Center" Tooltip=":6cfd5caf67c599ac:Attribute: race + class + bonus + spelleffect">:6cfd5caf8139625f:Attributes</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="27,217" Name="Attributes" ScrollExtent="201,72" Size="201,72" Tooltip=":6cfd5caf67c599ac_1:Attribute: race + class + bonus + spelleffect">:6cfd5caf0097d0ff:str: 50 = 50 + 0 + 0 + 0</Text>
+            <Scrollbar ArrowPressSound="sounds/button" Control="Attributes" Location="220,216" Name="AttributesScroll" ScrollExtent="22,75" Size="22,75" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="23,213" Name="AttributesFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="220,81" Size="220,81" />
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="324,92" Name="CopperLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5cafe92679b4:Copper:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="397,93" Name="copper" ScrollExtent="77,17" Size="77,17" TextAlignment="Right">:6cfd5cafe528e8e1:582 </Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="324,77" Name="SilverLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5cafd8da2338:Silver:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="397,78" Name="silver" ScrollExtent="77,17" Size="77,17" TextAlignment="Right">:6cfd5cafbc484b34:15 </Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="324,62" Name="GoldLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5caf361b2ebb:Gold:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="397,62" Name="gold" ScrollExtent="77,17" Size="77,17" TextAlignment="Right">:6cfd5caf587c1d34:180 </Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="324,47" Name="PlatLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5caf5a2ce4ba:Platinum:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="397,47" Name="plat" ScrollExtent="77,17" Size="77,17" TextAlignment="Right">:6cfd5caf92d77133:8 </Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="188,127" Name="EnduranceLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5cafb7e011b8:Endurance:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="262,127" Name="Endurance" ScrollExtent="71,17" Size="71,17">:6cfd5caf17ce3472:50/50</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="188,110" Name="ConcentrationLabel" ScrollExtent="71,30" Size="71,17" TextAlignment="Right">:6cfd5caf35e5eec3:Concentration:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="262,110" Name="Concentration" ScrollExtent="71,17" Size="71,17">:6cfd5caf81fbaf44:1/100</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="188,93" Name="ManaLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5cafe2876102:Mana:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="262,93" Name="Mana" ScrollExtent="71,17" Size="71,17">:6cfd5cafb38cc12e:15/250</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="188,78" Name="HitPointsLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5caf85729bb3:Hit Points:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="262,77" Name="HitPoints" ScrollExtent="71,17" Size="71,17">:6cfd5caf4a29f99c:25/100</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="175,61" Name="ExperienceDebtLabel" ScrollExtent="84,30" Size="84,17" TextAlignment="Right">:6cfd5cafdfaa0acc:ExperienceDebt:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="262,61" Name="ExperienceDebt" ScrollExtent="71,17" Size="71,17">:6cfd5caf905ed3c8:5.25</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="188,46" Name="ExperienceLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5caff461876c_1:Experience:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="262,46" Name="Experience" ScrollExtent="71,17" Size="71,17">:6cfd5caf7c06acda_1:4000</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="26,129" Name="SubClassLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5caf688d03bc_1:SubClass:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="101,129" Name="SubClass" ScrollExtent="71,17" Size="71,17">:6cfd5caf1274f861_3:Commoner</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="26,112" Name="ClassLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5caf8c00093a_1:Class:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="101,112" Name="Class" ScrollExtent="71,17" Size="71,17">:6cfd5caf1274f861_4:Commoner</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="26,95" Name="ArchetypeLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5caf9d4eac6e_1:Archetype:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="101,95" Name="Archetype" ScrollExtent="71,17" Size="71,17">:6cfd5caf1274f861_5:Commoner</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="51,78" Name="RaceLabel" ScrollExtent="46,17" Size="46,17" TextAlignment="Right">:6cfd5caf6c833706:Race:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="101,78" Name="Race" ScrollExtent="71,17" Size="71,17">:6cfd5caf3f96df5a:Barbarian</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="52,61" Name="GenderLabel" ScrollExtent="46,17" Size="46,17" TextAlignment="Right">:6cfd5cafbc5997ea:Gender:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="101,61" Name="Gender" ScrollExtent="71,17" Size="71,17">:6cfd5caf0a40b068:Male</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="27,45" Name="LevelLabel" ScrollExtent="71,17" Size="71,17" TextAlignment="Right">:6cfd5caf687967e4:Level:</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="101,45" Name="Level" ScrollExtent="71,17" Size="71,17">:6cfd5caf05e57d52_2:25</Text>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="23,37" Name="BasicStatsFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="457,113" Size="457,113" />
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="509,470" Size="509,470">
+                <Button Location="451,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":6cfd5cafec278586:Window Settings" UserMovable="true" />
+                <Button Location="456,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":6cfd5caf574a0c6d:Help" UserMovable="true" Visible="false" />
+                <Button Location="473,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":6cfd5caf2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="339,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:6cfd5caf355e7ac8:Character Info</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="509,470" Size="509,470" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="509,470" Size="509,470" />
+            </Page>
+        </Page>

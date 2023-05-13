@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page AbsorbsInput="false" ismodule="true" Name="PlayerHousing" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+<include>eq2ui_playerhousing_housebar.xml</include>
+<include>eq2ui_playerhousing_ratingbutton.xml</include>
+<include>eq2ui_playerhousing_browseratings.xml</include>
+<include>eq2ui_playerhousing_dmcreate.xml</include>
+<include>eq2ui_playerhousing_dmflavortext.xml</include>
+<include>eq2ui_playerhousing_dmtoolbox.xml</include>
+<include>eq2ui_playerhousing_housedisplay.xml</include>
+<include>eq2ui_playerhousing_houseitemedit.xml</include>
+<include>eq2ui_playerhousing_interiorcustomization.xml</include>
+<include>eq2ui_playerhousing_multi_inn.xml</include>
+<include>eq2ui_playerhousing_playerhouse.xml</include>
+<include>eq2ui_playerhousing_psbuybutton.xml</include>
+<include>eq2ui_playerhousing_publish.xml</include>
+<include>eq2ui_playerhousing_purchasehouse.xml</include>
+<include>eq2ui_playerhousing_saverating.xml</include>
+<include>eq2ui_playerhousing_visitinnroom.xml</include>
+<include>eq2ui_playerhousing_omnihouse.xml</include>
+    </Page>

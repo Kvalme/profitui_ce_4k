@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="0,309" Name="Socials" ScrollExtent="529,324" Size="529,324" UserMovable="true">
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="0,309" Name="Socials" ScrollExtent="529,324" Size="529,324" UserMovable="true" Visible="false">
             <DataSource Name="TabSource">
                 <Data Name="Macros" target="MainTabPage.MacrosPage" Text="Macros" />
                 <Data Name="Emotes" target="MainTabPage.EmotesPage" Text="Emotes" />

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Name="MercTypes" ScrollExtent="320,240" Size="320,240">
+            <ImageStyle Filter="true" Name="1">
+                <ImageFrame Source="images/icons/icon_ms3.dds" SourceRect="0,84,42,126" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="2">
+                <ImageFrame Source="images/icons/icon_ms3.dds" SourceRect="42,84,84,126" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="3">
+                <ImageFrame Source="images/icons/icon_ms3.dds" SourceRect="168,84,210,126" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="4">
+                <ImageFrame Source="images/icons/icon_ms3.dds" SourceRect="126,84,168,126" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="5">
+                <ImageFrame Source="images/icons/icon_ms3.dds" SourceRect="84,84,126,126" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="6">
+                <ImageFrame Source="images/icons/icon_ms3.dds" SourceRect="210,84,252,126" />
+            </ImageStyle>
+        </Page>

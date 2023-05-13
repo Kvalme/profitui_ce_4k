@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="314,169" MinimumSize="400,430" Name="LoadSkin" PackLocation="cfc,cfc" ScrollExtent="400,430" Size="400,430" UserMovable="true" UserResizable="true" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="40,40" Name="TitleText" PackSize="a,f" ScrollExtent="320,26" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="320,22" TextAlignment="Center" TextColor="#FBF1D9">:a91b7deee66de68b:Load User Interface Skin</Text>
+            <DataSource Name="ListDataSource">
+                <Data Name="New Data" text=":a91b7dee87b22ecd:Test" />
+            </DataSource>
+            <Page BackgroundOpacity="1.000" Location="35,60" Name="List" PackSize="a,f" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="330,110" Size="330,110">
+                <Scrollbar ArrowPressSound="sounds/button" Control="Listbox" HideIfUnnecessary="true" Location="298,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,90" Size="22,90" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Listbox BackgroundColor="#FFFFFF" DataSource="ListDataSource" Location="12,8" Margin="10,10,10,10" Name="Listbox" PackSize="absolute,absolute" RowTemplate="/CommonElements.Listbox.data.row_template" ScrollExtent="306,94" Size="306,94" Style="/CommonElements.Listbox.data.listbox_style" />
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="35,170" Name="InfoPage" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="330,180" Size="330,180">
+                <Text AbsorbsInput="false" Font="/TextStyles.System.SystemStyle" Location="5,8" Name="AuthorLabel" ScrollExtent="70,22" Size="70,18" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#A0A0A0">:a91b7dee45fc2201:Author</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.System.SystemStyle" Location="83,8" Name="AuthorText" PackSize="a,f" ScrollExtent="230,44" Size="230,18" TextAlignmentVertical="Center">[DEVL]Daybreak Game Company</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.System.SystemStyle" Location="5,25" Name="VersionLabel" ScrollExtent="70,22" Size="70,18" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#A0A0A0">:a91b7dee8f5e15a0:Version</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.System.SystemStyle" Location="83,25" Name="VersionText" PackSize="a,f" ScrollExtent="230,22" Size="230,18" TextAlignmentVertical="Center">:a91b7dee5b3d6c7a:[DEVL]v1.0 Sept 20, 2004</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.System.SystemStyle" Location="5,43" Name="ContactLabel" ScrollExtent="70,22" Size="70,18" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#A0A0A0">:a91b7dee7c20205b:Contact</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.System.SystemStyle" Location="83,43" Name="ContactText" PackSize="a,f" ScrollExtent="230,44" Size="230,18" TextAlignmentVertical="Center">:a91b7dee7f06c07c:[DEVL]http://www.everquest2.com</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.System.SystemStyle" Location="15,70" Name="DescriptionText" PackSize="a,a" ScrollExtent="285,95" Size="285,95">:a91b7dee502db36f:[DEVL]Some really really long descripton. One Two Three Four Five Six Seven</Text>
+                <Scrollbar ArrowPressSound="sounds/button" Control="DescriptionText" HideIfUnnecessary="true" Location="298,70" MaximumSize="22,16384" MinimumSize="22,60" Name="DescriptionScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,95" Size="22,95" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+            </Page>
+            <Button IsDefaultButton="true" Location="40,355" MaximumSize="16384,38" MinimumSize="32,38" Name="OKButton" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:a91b7deef80daa6f:Load UI</Button>
+            <Button Location="150,355" MaximumSize="16384,38" MinimumSize="32,38" Name="DefaultButton" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:a91b7deed31cc6bc:Default</Button>
+            <Button IsCancelButton="true" Location="260,355" MaximumSize="16384,38" MinimumSize="32,38" Name="CancelButton" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:a91b7deeae453fbb:Cancel</Button>
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="340,370" Size="340,370" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="400,430" Size="400,430" />
+        </Page>

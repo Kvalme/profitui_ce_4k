@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="215,160" MaximumSize="1024,1024" MinimumSize="235,273" Name="AchievementMerchant" ScrollExtent="456,357" Size="456,357" UserMovable="true" version="3.0.0">
+            <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="19,20" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="413,38" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="413,28" TextAlignment="Center" TextColor="#FBF1D9">:7a8a7d531f9292d0:Character and AA Respec</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="29,48" Name="HelpText" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="401,47" Size="401,47" TextAlignment="Center" TextAlignmentVertical="Center" TruncateElipsis="false">:7a8a7d53dd24c2a2:Select the appropriate AA tree to respec or choose Character to respec your traits.</Text>
+            <Composite BackgroundOpacity="0.600" Location="28,103" Name="CompositePage" PackLocation="left,top" PackSize="a,a" ScrollExtent="400,194" Size="400,194" SpacingType="Constant">
+                <Page MaximumSize="16384,32" MinimumSize="0,32" Name="ClassPage" PackSize="a,f" ScrollExtent="400,32" Size="400,32">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" MaxLines="1" Name="ClassName" PackLocation="left,top" PackSize="a,f" ScrollExtent="194,32" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="194,32" TextAlignmentVertical="Center">:7a8a7d53f2dafd83:ClassName1</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="197,0" MaxLines="1" Name="ClassCoin" PackLocation="right,top" PackSize="f,f" ScrollExtent="100,32" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="100,32" TextAlignment="Center" TextAlignmentVertical="Center">:7a8a7d53aa9668a2:coin</Text>
+                    <Button Location="300,0" Name="BuyButton" PackLocation="right,top" PackSize="f,f" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:7a8a7d53b172ec4a:Buy Respec</Button>
+                </Page>
+            </Composite>
+            <Scrollbar ArrowPressSound="sounds/button" Control="CompositePage" HideIfUnnecessary="false" Location="428,103" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,194" Size="22,194" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Button Location="178,309" Name="CancelButton" OnPress="cancel_merchant" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:7a8a7d53ae453fbb:Cancel</Button>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="456,357" Size="456,357">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="456,357" Size="456,357" />
+                <Image Location="4,5" Name="ClassImage" PackLocation="left,top" PackSize="a,a" ScrollExtent="449,348" Size="449,348" StretchType="ProportionalCrop" Style="/SpecialElements.ClassBackdrop.data.newaabackground" />
+            </Page>
+        </Page>

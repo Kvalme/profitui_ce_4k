@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page BackgroundOpacity="0.800" Location="740,237" Name="DungeonSelectedAvatars" PackLocation="right,a" PackSize="f,f" ScrollExtent="277,334" Size="277,334">
+            <Text Font="/TextStyles.Large.LargeStyle" Location="29,13" Name="Title" PackLocation="cfc,top" ScrollExtent="219,27" Size="219,27" TextAlignment="Center" TextAlignmentVertical="Center">:48d3ede635ec8859:Group Members</Text>
+            <ImageStyle Name="ready_image">
+                <ImageFrame Name="ready_check" Source="images/mugshots_male.dds" SourceRect="359,299,380,323" />
+            </ImageStyle>
+            <Page BackgroundOpacity="1.000" Location="16,46" Name="ListPage" PackLocation="left,top" PackSize="a,a" ScrollExtent="248,271" Size="248,271">
+                <Template Name="avatar_selected_row_template" Size="388,45">eq2ui_dm_selected_row_template.xml</Template>
+                <DataSource Name="AvatarListDS">
+                    <Data Name="New Data" />
+                </DataSource>
+                <Listbox BackgroundColor="#FFFFFF" DataSource="AvatarListDS" Margin="2,2,2,2" Name="AvatarList" PackLocation="left,top" PackSize="absolute,absolute" RowTemplate="avatar_selected_row_template" ScrollExtent="388,271" SelectedItemIndex="0" Size="248,271" Style="/listboxlist.clear_listbox" />
+            </Page>
+            <Page BackgroundOpacity="1.000" Name="CopyAndPasteMe" PackSize="absolute,absolute" RStyleDefault="/WindowElements.HollowFrame.data.frame.rect" ScrollExtent="277,334" Size="277,334" />
+            <Page BackgroundOpacity="1.000" Location="8,9" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="262,315" Size="262,315" />
+        </Page>

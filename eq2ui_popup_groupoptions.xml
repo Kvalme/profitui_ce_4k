@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="194,105" MaximumSize="1024,1024" MinimumSize="287,198" Name="GroupOptions" ScrollExtent="536,451" Size="536,451" UserMovable="true" version="2.0.0" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="35,40" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="466,26" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="466,24" TextAlignment="Center" TextColor="#FBF1D9">:6247f075a079a021:Group Options</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="35,350" Name="LeaderOnlyText" PackLocation="cfc,bottom" PackSize="absolute,fixed" ScrollExtent="466,46" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="466,20" TextAlignment="Center">:d3b547dc974a46d9:(Only the group leader may change the group-wide options)</Text>
+            <Button Location="86,375" MaximumSize="16384,38" MinimumSize="32,38" Name="ApplyButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:6247f07583115ce4_1:Apply</Button>
+            <Button Location="208,375" MaximumSize="16384,38" MinimumSize="32,38" Name="DefaultButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:6247f075ccb67971:Make Default</Button>
+            <Button IsDefaultButton="true" Location="330,375" MaximumSize="16384,38" MinimumSize="32,38" Name="CancelButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:6247f075ae453fbb_1:Cancel</Button>
+            <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="35,65" Name="LootPage" PackLocation="left,top" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="466,112" Size="466,112">
+                <DataSource Name="LootMethodSource">
+                    <Data Name="TestLM1" text=":6247f0753418e5dd:[DEVL]Loot Method 1" />
+                    <Data Name="TestLM2" text=":6247f075ad11b467:[DEVL]Loot Method 2" />
+                </DataSource>
+                <DataSource Name="ItemTierSource">
+                    <Data Name="TestLM1" text=":d3b547dca5c01af4:[DEVL]Fabled +" />
+                    <Data Name="TestLM2" text=":d3b547dc9491ae4e:[DEVL]Legendary +" />
+                </DataSource>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="16,19" Name="LootMethodLabel" ScrollExtent="166,23" Size="166,20">:6247f0753c4146c0:Looting Method</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="16,52" Name="LootMethodLabel" ScrollExtent="166,23" Size="166,20">:d3b547dc55d61e55:Item Rarity</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="ItemTierSource" Location="185,45" MaximumSize="16384,32" MinimumSize="50,32" Name="ItemTierCombo" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="272,32" Size="272,32" Style="/CommonElements.Dropdown.data.style" Tooltip=":d3b547dc0f5fe072:Select desired item rarity." />
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="LootMethodSource" Location="185,13" MaximumSize="16384,32" MinimumSize="50,32" Name="LootMethodCombo" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="272,32" Size="272,32" Style="/CommonElements.Dropdown.data.style" Tooltip=":d3b547dc5354d9c8:Select desired looting method." />
+                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="187,78" MinimumSize="22,22" Name="AutosplitCheckbox" ScrollExtent="272,22" Size="272,22" Style="/CommonElements.Checkbox.data.style">:6247f0754093417d:Autosplit Coin</Checkbox>
+            </Page>
+            <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="35,177" Name="DataPage" PackLocation="left,top" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="466,112" Size="466,112">
+                <DataSource Name="YellMethodSource">
+                    <Data Name="TestYM1" text=":6247f075da9cbf68:[DEVL]Yell Method 1" />
+                    <Data Name="TestYM2" text=":6247f0754395eed2:[DEVL]Yell Method 2" />
+                </DataSource>
+                <DataSource Name="LockMethodSource">
+                    <Data Name="TestLM1" text=":6247f075e8a7ad7f:[DEVL]Lock Method 1" />
+                    <Data Name="TestLM2" text=":6247f07571aefcc5:[DEVL]Lock Method 2" />
+                </DataSource>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="15,52" Name="LockMethodLabel" ScrollExtent="170,46" Size="170,20">:6247f0758cde4d1c:Encounter Lock Access</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="LockMethodSource" Location="185,45" MaximumSize="16384,32" MinimumSize="50,32" Name="LockMethodCombo" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="272,32" Size="272,32" Style="/CommonElements.Dropdown.data.style" Tooltip=":6247f075b5f3501d:Select who should be allowed to change the encounter lock, within the group." />
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="15,20" Name="YellMethodLabel" ScrollExtent="170,23" Size="170,20">:6247f075e2ec139f:Yell Access</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="YellMethodSource" Location="185,13" MaximumSize="16384,32" MinimumSize="50,32" Name="YellMethodCombo" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="272,32" Size="272,32" Style="/CommonElements.Dropdown.data.style" Tooltip=":6247f075bf5be810:Select who should be allowed to yell for help, within the group." />
+                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="187,78" MinimumSize="22,22" Name="AutoLockCheckbox" ScrollExtent="272,22" Size="272,22" Style="/CommonElements.Checkbox.data.style">:6247f0754f7ed7fd:Autolock Encounters</Checkbox>
+            </Page>
+            <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="35,288" Name="PersonalPage" PackLocation="left,top" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="466,56" Size="466,56">
+                <DataSource Name="AutoLootSource">
+                    <Data Name="ALNone" text=":d3b547dc205d500e:None" />
+                    <Data Name="ALGreedOrAccept" text=":d3b547dcd9f6c30d:Greed or Accept" />
+                    <Data Name="ALDecline" text=":d3b547dca42c8975:Decline" />
+                </DataSource>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="15,20" Name="AutoLootLabel" ScrollExtent="170,23" Size="170,20">:d3b547dcf549addf:Auto Loot Mode</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="AutoLootSource" Location="185,13" MaximumSize="16384,32" MinimumSize="50,32" Name="AutoLootCombo" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="272,32" Size="272,32" Style="/CommonElements.Dropdown.data.style" Tooltip=":d3b547dc578a9053:Set Auto Loot Mode for this character." />
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="476,391" Size="476,391" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="536,451" Size="536,451" />
+        </Page>

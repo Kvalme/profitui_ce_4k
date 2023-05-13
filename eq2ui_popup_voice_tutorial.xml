@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="250,110" Name="VoiceTutorial" OnShow="TestControls.visible = false&#xD;&#xA;Welcome.visible = true&#xD;&#xA;VCDisabled.visible = false&#xD;&#xA;VCEnabled.visible = false&#xD;&#xA;MicTest.visible = false&#xD;&#xA;SetVolume.visible = false&#xD;&#xA;Troubleshooting.visible = false&#xD;&#xA;Options.visible = false&#xD;&#xA;VoiceBar.visible = false&#xD;&#xA;VoiceUsers.visible = false&#xD;&#xA;Indicators.visible = false&#xD;&#xA;&#xD;&#xA;" Page3.visible="true" ScrollExtent="560,500" Size="560,500" UserMovable="true" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="18,20" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="524,40" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="524,40" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:449f846ad1fda473:Voice Chat Tutorial</Text>
+            <Page BackgroundOpacity="1.000" Location="105,233" Name="TestControls" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="350,80" Size="350,80" Visible="false">
+                <Button Location="112,13" MaximumSize="16384,32" MinimumSize="32,32" Name="MicTestButton" PackLocation="cfc,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style" Visible="false">:449f846aab2fd629:Test Mic</Button>
+                <Button Location="182,13" MaximumSize="16384,32" MinimumSize="32,32" Name="PlayButton" PackLocation="cfc,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:449f846af80db5ab:Playback</Button>
+                <Button Location="42,13" MaximumSize="16384,32" MinimumSize="32,32" Name="RecordButton" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:449f846a3f88b348:Record (5 sec)</Button>
+                <Page BackgroundOpacity="1.000" Location="46,50" Name="BarFrame" PackLocation="cfc,top" RStyleDefault="/CommonElements.BarFrame.data.rect.style" ScrollExtent="260,15" Size="260,15">
+                    <Progressbar BackgroundColor="#000000" Color="#22FF22" Location="2,3" Name="VoiceIntensity" PackSize="a,a" ScrollExtent="256,9" Size="256,9" Style="style" />
+                </Page>
+                <ProgressbarStyle Bar.Background="/SpecialElements.AdventureXP.data.progressbar.fill" Name="style" />
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="Welcome" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846a0789a7d0:Welcome</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,42" Margin="10,10,10,0" Name="Text" ScrollExtent="488,355" Size="488,233" TextColor="#FBF1D9" TruncateElipsis="false">:449f846aa4cac31c:EverQuest II now has integrated voice chat!  This tutorial will help you get set up and teach you a little about the basic features.
+
+Voice Chat makes it easy for you to communicate with your guild, group, raid or even players on other servers and in other SOE games.
+
+All you need to get started is a microphone.  If you don&apos;t have a microphone, you can still listen to voice chat, you just won&apos;t be able to speak.
+
+If you choose not to enable voice chat now, you can turn it on later by visiting the options window \#FFFF00(Alt-O)\/c or by running this tutorial again.  \#FFFF00(/voice_tutorial)\/c</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,284" Margin="10,0,0,0" Name="Question" ScrollExtent="488,38" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,38">:449f846ad69817dc:Would you like to enable voice chat?</Text>
+                <Button Location="22,322" MaximumSize="16384,32" MinimumSize="32,32" Name="Yes" OnPress="$vc_enabled = 1&#xD;&#xA;parent.visible = false&#xD;&#xA;parent.parent.VCEnabled.visible = true&#xD;&#xA;" ScrollExtent="230,32" Size="230,32" Style="/CommonElements.PushButton.data.style">:449f846afe21f91c:Yes, enable voice chat.</Button>
+                <Button Location="256,322" MaximumSize="16384,32" MinimumSize="32,32" Name="No" OnPress="$vc_enabled = 0&#xD;&#xA;parent.visible = false&#xD;&#xA;parent.parent.VCDisabled.visible = true&#xD;&#xA;" ScrollExtent="230,32" Size="230,32" Style="/CommonElements.PushButton.data.style">:449f846a2460d769:No, not at this time.</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="VCDisabled" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846a93683579:Voice Chat Disabled</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,42" Margin="10,10,10,0" Name="Text" ScrollExtent="488,233" Size="488,233" TextColor="#FBF1D9" TruncateElipsis="false">:449f846a9068887a:We&apos;ve disabled the voice chat feature.
+
+Remember, if you&apos;d like to turn it on later, just visit the options window by pressing \#FFFF00Alt-O\/c or run this tutorial again by typing \#FFFF00/voice_tutorial\/c.
+</Text>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="VCEnabled" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846a7a122c08:Configure Your Microphone</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,42" Margin="10,10,10,0" Name="Text" ScrollExtent="488,148" Size="488,106" TextColor="#FBF1D9" TruncateElipsis="false">:449f846a156d4cf2:Now that voice chat has been enabled, it&apos;s time to configure and test your microphone.  If you don&apos;t have a microphone, you can skip this step.
+
+Let&apos;s start by first checking to see if your microphone is already configured properly.
+</Text>
+                <Button Location="22,276" MaximumSize="16384,32" MinimumSize="32,32" Name="Test" OnPress="parent.visible = false&#xD;&#xA;parent.parent.MicTest.visible = true&#xD;&#xA;&#xD;&#xA;" ScrollExtent="463,32" Size="463,32" Style="/CommonElements.PushButton.data.style">:449f846acbe63d0a:Test my microphone</Button>
+                <Button Location="22,315" MaximumSize="16384,32" MinimumSize="32,32" Name="Skip" OnPress="parent.visible = false&#xD;&#xA;parent.parent.VoiceBar.visible = true&#xD;&#xA;" ScrollExtent="463,32" Size="463,32" Style="/CommonElements.PushButton.data.style">:449f846a06755b93:Skip this step</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="MicTest" OnHide="parent.TestControls.visible = false" OnShow="MicTestResponse.visible = false&#xD;&#xA;parent.TestControls.MicTestButton.visible = true&#xD;&#xA;parent.TestControls.PlayButton.visible = false&#xD;&#xA;parent.TestControls.RecordButton.visible = false&#xD;&#xA;parent.TestControls.visible = true&#xD;&#xA;" PackSize="f,a" Response.visible="false" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846a13dedf26:Test Your Microphone</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,42" Margin="10,10,10,0" Name="Text" ScrollExtent="488,102" Size="488,85" TextColor="#FBF1D9" TruncateElipsis="false">:449f846ab5ad5c74:Click the button below to begin testing your microphone.  As you speak, you should see the meter moving in response to your voice.  When done, click the button again to finish testing.</Text>
+                <Page Location="0,272" Name="MicTestResponse" ScrollExtent="508,98" Size="508,98">
+                    <Button Location="256,52" MaximumSize="16384,32" MinimumSize="32,32" Name="RunTestButton" OnPress="parent.parent.visible = false&#xD;&#xA;parent.parent.parent.Troubleshooting.visible = true&#xD;&#xA;" ScrollExtent="230,32" Size="230,32" Style="/CommonElements.PushButton.data.style">:449f846a24e70bc3:No, there seems to be a problem</Button>
+                    <Button Location="22,52" MaximumSize="16384,32" MinimumSize="32,32" Name="Yes" OnPress="parent.parent.visible = false&#xD;&#xA;parent.parent.parent.SetVolume.visible = true&#xD;&#xA;" ScrollExtent="230,32" Size="230,32" Style="/CommonElements.PushButton.data.style">:449f846a5928ae30:Yes, it worked fine</Button>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,14" Margin="10,0,0,0" Name="Question" ScrollExtent="488,38" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,38">:449f846a77ccb87e:Did the meter move with your voice?</Text>
+                </Page>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="SetVolume" OnHide="parent.TestControls.visible = false" OnShow="parent.TestControls.MicTestButton.visible = false&#xD;&#xA;parent.TestControls.PlayButton.visible = true&#xD;&#xA;parent.TestControls.RecordButton.visible = true&#xD;&#xA;parent.TestControls.visible = true&#xD;&#xA;" PackSize="f,a" Response.visible="false" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846a13dedf26_1:Test Your Microphone</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,42" Margin="10,10,10,0" Name="Text" ScrollExtent="488,240" Size="488,134" TextColor="#FBF1D9" TruncateElipsis="false">:449f846a5e9a9099:Now that your microphone is working, we can adjust the volume to make sure you are heard clearly.  Press the record button below and then speak into the microphone to record a sample of your voice.  When done, press the Playback button to hear what you&apos;ve recorded.  
+
+Adjust the microphone volume if your voice is too soft or too loud.  Repeat this process until your voice is loud enough without being distorted.</Text>
+                <Page Location="79,254" Name="MicVolume" ScrollExtent="350,64" Size="350,64">
+                    <Sliderbar Location="100,29" MaximumSize="16384,26" MinimumSize="100,26" Name="SensitivitySlider" PackLocation="left,top" PackSize="absolute" ScrollExtent="150,26" Size="150,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="50" />
+                    <Text Font="/Fonts.FontZapf15" Location="50,9" Name="MicSensitivity" PackLocation="left,top" PackSize="absolute" ScrollExtent="250,20" ShadowStyle="/ShadowStylesNew.Drop.style" Size="250,20" TextAlignment="Center" TextAlignmentVertical="Center">:449f846ace4111ae:Microphone Volume</Text>
+                </Page>
+                <Button Location="139,324" MaximumSize="16384,32" MinimumSize="32,32" Name="Done" OnPress="parent.visible = false&#xD;&#xA;parent.parent.VoiceBar.visible = true&#xD;&#xA;" ScrollExtent="230,32" Size="230,32" Style="/CommonElements.PushButton.data.style">:449f846a5be240fd:Next</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="Troubleshooting" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846a94804096:Troubleshooting</Text>
+                <Page Location="10,42" Name="ErrorPage" OnShow="FixedPage.visible = false&#xD;&#xA;NotFixedPage.visible = false&#xD;&#xA;" ScrollExtent="488,318" Size="488,318">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Margin="10,10,10,0" Name="Text" ScrollExtent="488,102" Size="488,77" TextColor="#FBF1D9" TruncateElipsis="false">:449f846abc9340a6:EverQuest II has detected a possible error with your microphone configuration in Windows.  The error is listed below.  Click the Fix button to have EverQuest II attempt to fix the problem.</Text>
+                    <Text Color="#FF2222" Font="/TextStyles.Normal.NormalStyle" Location="0,79" Margin="1,0,1,1" Name="StatusText" PackSize="absolute" ScrollExtent="488,25" Size="488,25" TextAlignment="Center" TextAlignmentVertical="Center">:449f846a4d2ea43c:[DEVL] Status text appears here</Text>
+                    <Button Location="184,106" MaximumSize="16384,32" MinimumSize="32,32" Name="FixButton" PackLocation="right,top" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style" Tooltip=":449f846a4ef9cb95:Press this to attempt to fix the displayed error in the Windows Volume control panel.">:449f846a9e48fe7f:Fix</Button>
+                    <Page Location="0,160" Name="FixedPage" ScrollExtent="488,105" Size="488,105" Visible="false">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Margin="10,10,10,0" Name="Text" ScrollExtent="488,79" Size="488,67" TextColor="#FBF1D9" TruncateElipsis="false">:449f846acc76b9ba:It appears that we&apos;ve fixed an issue with your microphone configuration.  Click the button below to test your microphone once again.</Text>
+                        <Button Location="144,66" MaximumSize="16384,32" MinimumSize="32,32" Name="Button" OnPress="parent.parent.parent.visible = false&#xD;&#xA;parent.parent.parent.parent.MicTest.visible = true&#xD;&#xA;" ScrollExtent="200,32" Size="200,32" Style="/CommonElements.PushButton.data.style">:449f846ad2a9becc:Test again</Button>
+                    </Page>
+                    <Page Location="0,160" Name="NotFixedPage" ScrollExtent="488,113" Size="488,113">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Margin="10,10,10,0" Name="Text" ScrollExtent="488,79" Size="488,77" TextColor="#FBF1D9" TruncateElipsis="false">:449f846a86a4c6c9:There still appears to be an error with your mic configuration.  If the error is different, try clicking the Fix button again.</Text>
+                        <Button Location="104,56" MaximumSize="16384,32" MinimumSize="32,32" Name="Button" OnPress="parent.parent.parent.visible = false&#xD;&#xA;parent.parent.parent.parent.Options.visible = true&#xD;&#xA;" ScrollExtent="280,32" Size="280,32" Style="/CommonElements.PushButton.data.style">:449f846aa5b31083:I&apos;m still experiencing an error</Button>
+                    </Page>
+                </Page>
+                <Page Location="10,42" Name="NoErrorPage" ScrollExtent="488,318" Size="488,318" Visible="false">
+                    <Button Location="119,116" MaximumSize="16384,32" MinimumSize="32,32" Name="Button" OnPress="parent.parent.visible = false&#xD;&#xA;parent.parent.Parent.Options.visible = true&#xD;&#xA;" ScrollExtent="250,32" Size="250,32" Style="/CommonElements.PushButton.data.style">:449f846aa621fbd2:Help me check devices</Button>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Margin="10,10,10,0" Name="Text" ScrollExtent="488,148" Size="488,125" TextColor="#FBF1D9" TruncateElipsis="false">:449f846a1191d840:EverQuest II has not detected any problems with your microphone configuration in Windows.
+
+If your computer has multiple audio devices such as a sound card and USB headset, you&apos;ll need to make sure the proper device is selected.
+</Text>
+                </Page>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="Options" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846aa2daae18:Check Selected Devices</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,42" Margin="10,10,10,0" Name="Text" ScrollExtent="488,171" Size="488,129" TextColor="#FBF1D9" TruncateElipsis="false">:449f846a76eeeedd:If your computer has multiple audio devices, it&apos;s possible that the correct device is not selected.
+
+Click the options button below to open the options window and check your device settings.  If you suspect the wrong device is selected, choose another device and try testing your microphone again.
+</Text>
+                <Button Location="154,174" MaximumSize="16384,32" MinimumSize="32,32" Name="OptionsButton" OnPress="options_game Voice Chat" ScrollExtent="200,32" Size="200,32" Style="/CommonElements.PushButton.data.style">:449f846af67b8af5:Options...</Button>
+                <Button Location="124,232" MaximumSize="16384,32" MinimumSize="32,32" Name="Yes" OnPress="parent.visible = false&#xD;&#xA;parent.parent.MicTest.visible = true&#xD;&#xA;" ScrollExtent="260,32" Size="260,32" Style="/CommonElements.PushButton.data.style">:449f846a6c49e5f8:Try mic tests again</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="VoiceBar" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846ac3f25d67:The Voice Bar Window</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,42" Margin="10,10,10,0" Name="Text" ScrollExtent="488,102" Size="488,79" TextColor="#FBF1D9" TruncateElipsis="false">:449f846a49d5d680:You should see the voice bar window in the lower left corner of your screen.  If you can&apos;t find the voice bar, it might be obscured by other windows.  Click the button below to bring it to the front.</Text>
+                <Button Location="22,124" MaximumSize="16384,32" MinimumSize="32,32" Name="ShowVoiceBar" OnPress="show_window MainHUD.VoiceBar&#xD;&#xA;" ScrollExtent="200,32" Size="200,32" Style="/CommonElements.PushButton.data.style">:449f846a3b826ce6:Show Voice Bar</Button>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,163" Margin="10,10,10,0" Name="Text" ScrollExtent="488,240" Size="488,151" TextColor="#FBF1D9" TruncateElipsis="false">:449f846ac2e20a94:The voice bar can be placed anywhere on the screen or you can snap it to a chat window by dragging it and dropping it onto any chat window.
+
+The voice bar displays a talking indicator that lights up whenever you press a push-to-talk key.  The voice bar also has shortcut buttons to open the voice options window, open the voice users window and to quickly change channels.  The voice bar will also indicate who is currently speaking.
+</Text>
+                <Button Location="139,322" MaximumSize="16384,32" MinimumSize="32,32" Name="Yes" OnPress="parent.visible = false&#xD;&#xA;parent.parent.VoiceUsers.visible = true&#xD;&#xA;" ScrollExtent="230,32" Size="230,32" Style="/CommonElements.PushButton.data.style">:449f846a5be240fd_1:Next</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="VoiceUsers" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846ad538beaa:The Voice Users Window</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,42" Margin="10,10,10,0" Name="Text" ScrollExtent="488,263" Size="488,220" TextColor="#FBF1D9" TruncateElipsis="false">:449f846aedcbd9c8:The Voice Users window can be opened by pressing the V key or by pressing the Voice Users button on the voice bar.  This window shows all users that are in your current channel and their speaking state.
+
+You may adjust an individual&apos;s volume settings by clicking the icon to the left of their name.
+
+There are several different ways to sort the list.  You can try them by right-clicking anywhere in the window.
+</Text>
+                <Button Location="139,322" MaximumSize="16384,32" MinimumSize="32,32" Name="Yes" OnPress="parent.visible = false&#xD;&#xA;parent.parent.Indicators.visible = true&#xD;&#xA;" ScrollExtent="230,32" Size="230,32" Style="/CommonElements.PushButton.data.style">:449f846a5be240fd_2:Next</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="26,58" Name="Indicators" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,369" Size="508,369" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846a086e8459:Other Speaking Indicators</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,42" Margin="10,10,10,0" Name="Text" ScrollExtent="488,217" Size="488,181" TextColor="#FBF1D9" TruncateElipsis="false">:449f846a860ade68:The group and raid windows also display a voice state icon for group members that are in your current voice channel.  This icon works just like the icon in the Voice Users window and may be clicked to adjust a player&apos;s volume.
+
+Players near you will also display a speaking indicator in the chat bubble over their head.  This feature may be disabled from the options window.
+</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,222" Margin="10,0,0,0" Name="Title" ScrollExtent="488,32" ShadowStyle="/ShadowStylesNew.Drop.style" Size="488,32" TextAlignmentVertical="Center" TextColor="#FFFF00">:449f846a541ee177:More Help</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,255" Margin="10,10,10,0" Name="Text" ScrollExtent="488,60" Size="488,60" TextColor="#FBF1D9" TruncateElipsis="false">:449f846a5c3bff22:For more help, open the help window and select the Voice Chat topic, or click the Help button below.
+</Text>
+                <Button Location="139,322" MaximumSize="16384,32" MinimumSize="32,32" Name="Yes" OnPress="help vchat" ScrollExtent="230,32" Size="230,32" Style="/CommonElements.PushButton.data.style">:449f846a09d6ee46:More Help...</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="18,20" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="524,460" Size="524,460">
+                <Button Location="187,413" MaximumSize="16384,38" MinimumSize="38,38" Name="CloseButton" OnPress="hide_window Popup.VoiceTutorial" PackLocation="cfc,bottom" ScrollExtent="150,38" Size="150,38" Style="/CommonElements.LargePushButton.data.style">:449f846a2d3f513f:Close</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="-12,-10" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="584,520" Size="584,520" />
+        </Page>

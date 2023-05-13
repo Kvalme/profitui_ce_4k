@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="64,135" MinimumSize="735,482" Name="ZoneReuse" ScrollExtent="735,482" Size="735,482" UserMovable="true" UserResizable="true" version="3.0" Visible="false">
+            <TabbedPane ActiveTab="0" DataSource="MainPage.TabSource" Location="5,446" Name="TabPane" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="724,27" Size="724,27" Style="/WindowElements.WindowFrame.data.lower_tab_data.tabbed_pane_style" TargetPage="MainPage.TabPages" />
+            <Page Location="2,25" Name="MainPage" PackSize="absolute,absolute" ScrollExtent="730,422" Size="730,422">
+                <Page Location="0,8" Name="TabPages" PackSize="absolute,absolute" ScrollExtent="731,414" Size="731,414">
+                    <Page Name="DungeonFinderPage" PackSize="a,a" ScrollExtent="731,414" Size="731,414" Visible="false">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="4,-3" Name="NotAvailable" PackSize="absolute,fixed" ScrollExtent="723,411" ShadowStyle="/ShadowStylesNew.Outline.style" Size="723,411" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080" Visible="false">:76392ced484b9a23:The dungeon finder requires adventure level 20 or above.</Text>
+                        <Page Name="MainPage" PackSize="a,a" ScrollExtent="731,414" Size="731,414">
+                            <Page Location="7,3" Name="DetailPage" PackLocation="left,top" PackSize="f,a" ScrollExtent="269,370" Size="269,370">
+                                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Name="MapName" PackSize="absolute,fixed" ScrollExtent="269,52" ShadowStyle="/ShadowStylesNew.Outline.style" Size="269,37" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:76392cedd62cd1b0:[DEVL]Really Really Long Dungeon Name</Text>
+                                <Page BackgroundOpacity="1.000" Location="-2,34" Name="MapPreviewFrame" PackLocation="center, fixed" PackSize="f,f" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="272,175" Size="272,175" />
+                                <Image Location="6,42" Name="MapPreviewCurrent" OnHideEffector="/CommonElements.Effectors.SlowFadeOut" OnShowEffector="/CommonElements.Effectors.SlowFadeIn" PackLocation="center, fixed" PackSize="f,f" ScrollExtent="256,160" Size="256,160" Style="DefaultImage" />
+                                <Composite Location="8,217" Name="TextComposite" Orientation="Horizontal" PackLocation="center, fixed" PackSize="f,a" ScrollExtent="252,144" Size="252,144" SpacingType="Fill">
+                                    <Text Font="/TextStyles.Normal.NormalStyle" Margin="1,1,1,1" Name="Description" PackSize="a,a" ScrollExtent="252,144" ShadowStyle="/ShadowStylesNew.None.style" Size="252,144" TextAlignment="Center">:76392ced6be5de84:[DEVL] Description of the map and game type.</Text>
+                                    <Scrollbar ArrowPressSound="sounds/button" Control="Description" HideIfUnnecessary="true" Location="230,0" MaximumSize="22,16384" MinimumSize="22,80" Name="Scrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,144" Size="22,144" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                                </Composite>
+                                <Page BackgroundOpacity="1.000" Location="-2,207" Name="TextFrame" PackLocation="center, fixed" PackSize="f,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="272,163" Size="272,163" />
+                            </Page>
+                            <Page BackgroundOpacity="1.000" Location="276,6" Name="ListPage" PackLocation="left,top" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="447,367" Size="447,367">
+                                <TreeViewStyle CellHeight="20" CellPadding="0,0" DefaultTextShadowStyle="/ShadowStylesNew.Drop.style" DefaultTextStyle="/TextStyles.Normal.NormalStyle" DisabledTextColor="#909090" DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" GridColor="#FFFFFF" ImageStyleChecked="/CommonElements.TreeView.data.checked" ImageStyleCollapsed="/CommonElements.TreeView.data.collapsed" ImageStyleExpanded="/CommonElements.TreeView.data.expanded" ImageStyleUnchecked="/CommonElements.TreeView.data.unchecked" Indentation="20" Name="treestyle" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" SelectionTextShadowStyle="/ShadowStylesNew.Drop.style" />
+                                <DataSourceContainer Name="ZoneListDS">
+                                    <DataSourceContainer checkgroup="true" expand="true" Name="Category1" showcheck="false" text=":76392ced12b72cd4:Category1">
+                                        <DataSourceContainer check="false" Name="Zone1" showcheck="true" text=":76392ceda384be06:Crushbone Keep" />
+                                    </DataSourceContainer>
+                                    <DataSourceContainer check="false" expand="true" Name="Category2" showcheck="false" text=":76392ced8bbe7d6e:Category2">
+                                        <DataSourceContainer check="true" Name="Zone1" showcheck="true" text=":76392cedee8289de:Ruins of Varsoon" />
+                                    </DataSourceContainer>
+                                    <DataSourceContainer check="false" expand="true" Name="Category3" showcheck="false" text=":76392cedfcb94df8:Category3">
+                                        <DataSourceContainer check="true" disabled="true" Name="Zone1" showcheck="true" text=":76392ced648bbb1f:The Condemned Catacomb" />
+                                    </DataSourceContainer>
+                                </DataSourceContainer>
+                                <Composite Location="10,10" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="427,347" Size="427,347" SpacingType="Fill">
+                                    <TreeView BackgroundColor="#000000" BackgroundOpacity="0.000" DataSourceContainer="ZoneListDS" GroupChecks="true" MinimumScrollExtent="427,0" Name="ZoneTreeView" PackSize="absolute,absolute" ScrollExtent="427,347" SelectedRow="0" SelectedRowCount="1" SelectionAllowedMultiRow="false" Size="427,347" Style="treestyle" ToggleChecks="true" />
+                                    <Scrollbar ArrowPressSound="sounds/button" Control="ZoneTreeView" HideIfUnnecessary="true" Location="405,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,347" Size="22,347" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                                </Composite>
+                            </Page>
+                            <Page Location="1,374" Name="ButtonPage" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="729,36" Size="729,36">
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="13,9" MaxLines="1" Name="WaitTime" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="475,23" Size="429,20">:76392ceda4d0e7db:[DEVL]Queued: 00:00  Estimated Wait Time: 50 minutes</Text>
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="13,9" MaxLines="1" Name="QueueLockoutTime" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="475,23" Size="429,20" Visible="false">:76392ceda4d0e7db_1:[DEVL]Queued: 00:00  Estimated Wait Time: 50 minutes</Text>
+                                <Button Location="363,1" MaximumSize="16384,32" MinimumSize="32,32" Name="QueueGroup" PackLocation="right,bottom" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style" TextColor="#F0D080">:76392ced7b6da39c:Queue Group</Button>
+                                <Button Location="482,1" MaximumSize="16384,32" MinimumSize="32,32" Name="QueueSelf" PackLocation="right,bottom" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style" TextColor="#F0D080">:76392ced41c3af98:Queue</Button>
+                                <Button Location="482,1" MaximumSize="16384,32" MinimumSize="32,32" Name="ReinforceButton" PackLocation="right,top" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style" Tooltip=":76392ced7a813e2e:Request additonal group members">:76392ceda0c33f57:Reinforce</Button>
+                                <Button Enabled="false" Location="602,1" MaximumSize="16384,32" MinimumSize="32,32" Name="ReturnButton" OnPress="battleground dungeon_return" PackLocation="right,top" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style" Tooltip=":76392cedc5cfcad6:Return to active dungeon">:76392ced5fcdc5c6:Return</Button>
+                            </Page>
+                        </Page>
+                    </Page>
+                    <Page Enabled="false" Name="BattlegroundsPage" PackSize="a,a" ScrollExtent="731,414" Size="731,414">
+                        <ImageStyle Name="DefaultImage">
+                            <ImageFrame Source="/images/arenachampions/battleground_thumbs.dds" SourceRect="256,0,512,160" />
+                        </ImageStyle>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="17,6" Margin="0,0,5,0" Name="Label" ScrollExtent="262,26" Size="262,20" TextAlignmentVertical="Center" TextColor="#EBDEAA" Visible="false">:76392ceda0432f95:Select a Battleground</Text>
+                        <Page Location="7,3" Name="DetailPage" PackLocation="left,top" PackSize="f,a" ScrollExtent="269,370" Size="269,370">
+                            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Name="MapName" PackSize="absolute,fixed" ScrollExtent="269,37" ShadowStyle="/ShadowStylesNew.Outline.style" Size="269,37" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:76392cedd8fa6b7f:[DEVL]Realm of Prexus</Text>
+                            <Page BackgroundOpacity="1.000" Location="-2,34" Name="MapPreviewFrame" PackLocation="center, fixed" PackSize="f,f" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="272,175" Size="272,175" />
+                            <Image Location="6,42" Name="MapPreviewCurrent" OnHideEffector="/CommonElements.Effectors.SlowFadeOut" OnShowEffector="/CommonElements.Effectors.SlowFadeIn" PackLocation="center, fixed" PackSize="f,f" ScrollExtent="256,160" Size="256,160" Style="DefaultImage" />
+                            <Composite Location="8,217" Name="TextComposite" Orientation="Horizontal" PackLocation="center, fixed" PackSize="f,a" ScrollExtent="252,147" Size="252,147" SpacingType="Fill">
+                                <Text Font="/TextStyles.Normal.NormalStyle" Margin="1,1,1,1" Name="Description" PackSize="a,a" ScrollExtent="252,147" ShadowStyle="/ShadowStylesNew.None.style" Size="252,147" TextAlignment="Center">:76392ced6be5de84_1:[DEVL] Description of the map and game type.</Text>
+                                <Scrollbar ArrowPressSound="sounds/button" Control="Description" HideIfUnnecessary="true" Location="245,0" MaximumSize="22,16384" MinimumSize="22,80" Name="Scrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,147" Size="22,147" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            </Composite>
+                            <Page BackgroundOpacity="1.000" Location="-2,207" Name="TextFrame" PackLocation="center, fixed" PackSize="f,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="272,163" Size="272,163" />
+                        </Page>
+                        <Page BackgroundOpacity="1.000" Location="276,6" Name="ListPage" PackLocation="left,top" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="447,367" Size="447,367">
+                            <Page Name="Template" PackSize="absolute, fixed" ScrollExtent="417,65" Size="417,65" Visible="false">
+                                <Page Location="234,0" Name="RightSide" PackLocation="right,center" PackSize="f,f" ScrollExtent="182,45" Size="182,45">
+                                    <Button Location="22,9" MaximumSize="80,26" MinimumSize="60,26" Name="QueueGroupRaid" OnHideEffector="/Effects.FadeOut" OnPress="battleground $modtype$_$grouptype$ $matchid$" OnShowEffector="/Effects.FadeIn" Opacity="0.000" PackSize="f,f" ScrollExtent="78,26" Size="78,26" Style="/CommonElements.SmallPushButton.data.style">$groupraidbuttontext$</Button>
+                                    <Button Location="103,9" MaximumSize="80,50" MinimumSize="60,26" Name="QueueSelf" OnHideEffector="/Effects.FadeOut" OnPress="battleground $modtype$ $matchid$" OnShowEffector="/Effects.FadeIn" PackSize="f,f" ScrollExtent="80,26" Size="80,26" Style="/CommonElements.SmallPushButton.data.style">$selfbuttontext$</Button>
+                                    <Text Font="/TextStyles.Normal.NormalStyle" Location="16,12" MaxLines="2" Name="QueuedState" PackLocation="a,f" ScrollExtent="93,46" Size="93,20" TextAlignment="Center" TextAlignmentVertical="Center">$queuestate$</Text>
+                                </Page>
+                                <Text Font="/TextStyles.Normal.NormalStyle" Location="8,19" MaxLines="2" Name="Status" PackLocation="left,Top" PackSize="a,f" ScrollExtent="248,40" Size="248,40" TextAlignmentVertical="Center">$queuestatus$</Text>
+                                <Text Font="/TextStyles.Large.LargeStyle" Location="7,1" MaxLines="2" Name="Name" PackLocation="left,Top" PackSize="a,f" ScrollExtent="246,26" Size="246,20" TextAlignmentVertical="Center" TextColor="#F0D080">:76392ced7a2adc1c:[DEVL] Realm of Prexus</Text>
+                            </Page>
+                            <Template Name="bg_row_template" Size="388,65">eq2ui_bg_listboxrow_template.xml</Template>
+                            <DataSource Name="ListDataSource">
+                                <Data Name="New Data" />
+                            </DataSource>
+                            <Scrollbar ArrowPressSound="sounds/button" HideIfUnnecessary="true" Location="416,9" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,350" Size="22,350" Style="/CommonElements.ScrollbarVertical.data.style" />
+                            <Listbox BackgroundColor="#FFFFFF" DataSource="ListDataSource" Location="11,8" Margin="2,2,2,2" Name="Listbox" PackLocation="left,top" PackSize="absolute,absolute" RowTemplate="bg_row_template" ScrollExtent="407,351" Size="407,351" Style="/listboxlist.clear_listbox" />
+                        </Page>
+                        <Page Location="1,374" Name="ButtonPage" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="729,36" Size="729,36">
+                            <Composite Location="384,-1" Name="LeaveButtonPage" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" Orientation="Horizontal" PackLocation="right, center" ScrollExtent="338,36" Size="338,36" SpacingType="Fill">
+                                <Text Font="/TextStyles.Normal.NormalStyle" Location="0,2" Margin="1,1,1,1" MinimumSize="60,32" Name="LeaveAllText" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" ScrollExtent="142,32" Size="142,32" spacingtype="Fill" TextAlignment="Right" TextAlignmentVertical="Center">:76392cede927b090:Leave All:</Text>
+                                <Button Location="142,2" MaximumSize="98,32" MinimumSize="32,32" Name="LeaveAllSelf" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="right,center" ScrollExtent="98,32" Size="98,32" spacingtype="Fill" Style="/CommonElements.PushButton.data.style">:76392ced50cd54d0:Solo</Button>
+                                <Button Location="240,2" MaximumSize="98,32" MinimumSize="32,32" Name="LeaveAllGroup" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="right,center" ScrollExtent="98,32" Size="98,32" spacingtype="Fill" Style="/CommonElements.PushButton.data.style">:76392ced53fe943e:Group</Button>
+                            </Composite>
+                            <Composite Location="9,-2" Name="QueueButtonPage" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" Orientation="Horizontal" PackLocation="left, center" ScrollExtent="267,36" Size="267,36" SpacingType="Constant">
+                                <Text Font="/TextStyles.Normal.NormalStyle" Location="0,2" Margin="1,1,1,1" MinimumSize="68,32" Name="QueueAllText" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="right,center" ScrollExtent="68,48" Size="68,32" spacingtype="Fill" TextAlignment="Right" TextAlignmentVertical="Center">:76392ced2215ecde:Queue All:</Text>
+                                <Button Location="68,2" MaximumSize="98,32" MinimumSize="98,32" Name="QueueAllSelf" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="left,center" ScrollExtent="98,32" Size="98,32" spacingtype="Fill" Style="/CommonElements.PushButton.data.style">:76392ced50cd54d0_1:Solo</Button>
+                                <Button Location="166,2" MaximumSize="98,32" MinimumSize="98,32" Name="QueueAllGroup" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="left,center" ScrollExtent="98,32" Size="98,32" spacingtype="Fill" Style="/CommonElements.PushButton.data.style">:76392ced53fe943e_1:Group</Button>
+                            </Composite>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="19,8" Margin="1,1,1,1" Name="QueueStatus" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" Opacity="0.000" ScrollExtent="531,25" Size="531,20" TextColor="#00FF00" Visible="false">:76392ced0b98bdf4:You are queued for Realm of Prexus</Text>
+                        </Page>
+                    </Page>
+                    <Page Enabled="false" Name="ProvingGroundsPage" PackSize="a,a" ScrollExtent="731,414" Size="731,414">
+                        <ImageStyle Name="DefaultImage">
+                            <ImageFrame Source="/images/arenachampions/battleground_thumbs.dds" SourceRect="256,0,512,160" />
+                        </ImageStyle>
+                        <Page Location="7,3" Name="DetailPage" PackLocation="left,top" PackSize="f,a" ScrollExtent="269,370" Size="269,370">
+                            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Name="PGMapName" PackSize="absolute,fixed" ScrollExtent="269,37" ShadowStyle="/ShadowStylesNew.Outline.style" Size="269,37" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">[DEVL]Proving Ground</Text>
+                            <Page BackgroundOpacity="1.000" Location="-2,34" Name="MapPreviewFrame" PackLocation="center, fixed" PackSize="f,f" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="272,175" Size="272,175" />
+                            <Image Location="6,42" Name="PGMapPreviewCurrent" OnHideEffector="/CommonElements.Effectors.SlowFadeOut" OnShowEffector="/CommonElements.Effectors.SlowFadeIn" PackLocation="center, fixed" PackSize="f,f" ScrollExtent="256,160" Size="256,160" Style="DefaultImage" />
+                            <Composite Location="8,217" Name="TextComposite" Orientation="Horizontal" PackLocation="center, fixed" PackSize="f,a" ScrollExtent="252,147" Size="252,147" SpacingType="Fill">
+                                <Text Font="/TextStyles.Normal.NormalStyle" Margin="1,1,1,1" Name="PGDescription" PackSize="a,a" ScrollExtent="252,147" ShadowStyle="/ShadowStylesNew.None.style" Size="252,147" TextAlignment="Center">[DEVL] Description of the map and game type.</Text>
+                                <Scrollbar ArrowPressSound="sounds/button" Control="Description" HideIfUnnecessary="true" Location="245,0" MaximumSize="22,16384" MinimumSize="22,80" Name="Scrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,147" Size="22,147" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            </Composite>
+                            <Page BackgroundOpacity="1.000" Location="-2,207" Name="TextFrame" PackLocation="center, fixed" PackSize="f,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="272,163" Size="272,163" />
+                        </Page>
+                        <Page BackgroundOpacity="1.000" Location="276,6" Name="ListPage" PackLocation="left,top" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="447,367" Size="447,367">
+                            <Page Name="Template" PackSize="absolute, fixed" ScrollExtent="417,65" Size="417,65" Visible="false">
+                                <Page Location="234,0" Name="RightSide" PackLocation="right,center" PackSize="f,f" ScrollExtent="182,45" Size="182,45">
+                                    <Button Location="22,9" MaximumSize="80,26" MinimumSize="60,26" Name="QueueGroupRaid" OnHideEffector="/Effects.FadeOut" OnPress="battleground $modtype$_$grouptype$ $matchid$" OnShowEffector="/Effects.FadeIn" Opacity="0.000" PackSize="f,f" ScrollExtent="78,26" Size="78,26" Style="/CommonElements.SmallPushButton.data.style">$groupraidbuttontext$</Button>
+                                    <Button Location="103,9" MaximumSize="80,50" MinimumSize="60,26" Name="QueueSelf" OnHideEffector="/Effects.FadeOut" OnPress="battleground $modtype$ $matchid$" OnShowEffector="/Effects.FadeIn" PackSize="f,f" ScrollExtent="80,26" Size="80,26" Style="/CommonElements.SmallPushButton.data.style">$selfbuttontext$</Button>
+                                    <Text Font="/TextStyles.Normal.NormalStyle" Location="16,12" MaxLines="2" Name="QueuedState" PackLocation="a,f" ScrollExtent="93,46" Size="93,20" TextAlignment="Center" TextAlignmentVertical="Center">$queuestate$</Text>
+                                </Page>
+                                <Text Font="/TextStyles.Normal.NormalStyle" Location="8,19" MaxLines="2" Name="Status" PackLocation="left,Top" PackSize="a,f" ScrollExtent="248,46" Size="248,40" TextAlignmentVertical="Center">[DEVL] Upcoming Proving Ground</Text>
+                                <Text Font="/TextStyles.Large.LargeStyle" Location="7,1" MaxLines="2" Name="Name" PackLocation="left,Top" PackSize="a,f" ScrollExtent="246,26" Size="246,20" TextAlignmentVertical="Center" TextColor="#F0D080">[DEVL] Proving Ground</Text>
+                            </Page>
+                            <Template Name="pg_row_template" Size="388,65">eq2ui_pg_listboxrow_template.xml</Template>
+                            <DataSource Name="ListDataSource">
+                                <Data Name="New Data" />
+                            </DataSource>
+                            <Scrollbar ArrowPressSound="sounds/button" HideIfUnnecessary="true" Location="416,9" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,350" Size="22,350" Style="/CommonElements.ScrollbarVertical.data.style" />
+                            <Listbox BackgroundColor="#FFFFFF" DataSource="ListDataSource" Location="11,8" Margin="2,2,2,2" Name="PGListbox" PackLocation="left,top" PackSize="absolute,absolute" RowTemplate="pg_row_template" ScrollExtent="407,351" Size="407,351" Style="/listboxlist.clear_listbox" />
+                        </Page>
+                    </Page>
+                    <Page Enabled="false" Name="PersistentZonePage" PackSize="a,a" ScrollExtent="731,414" Size="731,414" Visible="false">
+                        <Scrollbar ArrowPressSound="sounds/button" Control="ZonePage.OneMorePageForMagic.TablePage.ScrollPage" HideIfUnnecessary="false" Location="697,28" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,338" Size="22,338" Style="/CommonElements.ScrollbarVertical.data.style" />
+                        <Page Location="2,3" Name="ZonePage" OnShow="set_focus RosterBox.FullPath" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="705,410" Size="705,410">
+                            <Button Location="502,370" Name="ResetAllTimersButton" PackLocation="Right,bottom" ScrollExtent="98,30" Size="98,30" Style="/CommonElements.PushButton.data.style">:76392ced08947f3f:Reset All</Button>
+                            <Button Location="603,370" Name="ResetTimerButton" PackLocation="Right,bottom" ScrollExtent="98,30" Size="98,30" Style="/CommonElements.PushButton.data.style">:79f59ff0a0f94300:Reset Timer</Button>
+                            <Page Name="OneMorePageForMagic" PackSize="a,a" ScrollExtent="698,363" Size="698,363">
+                                <Page Location="0,-7" MinimumSize="700,100" Name="TablePage" PackSize="a,a" ScrollExtent="701,367" Size="701,367">
+                                    <Image BackgroundColor="#FFFFFF" GetsInput="true" Location="10,6" Name="LockedHeader" PackLocation="fixed,fixed" PackSize="fixed,fixed" ScrollExtent="21,21" Size="21,21" SourceRect="1,1,41,41" SourceResource="images/icons/icon_is29.dds" Tooltip=":8f67a1d6d01ed9aa_1:Click to sort zones by unlocked/locked." />
+                                    <Button BackgroundOpacity="0.000" Location="33,7" Margin="0,0,5,0" Name="NameHeader" PackSize="absolute,fixed" ScrollExtent="133,20" Size="133,20" Style="Guild.MainTabPage.MembersPage.text_link" textalignment="Left" textalignmentvertical="Top" Tooltip=":8f67a1d6aaa0bce7_1:Click to sort zones by name">:8f67a1d601ee2ec7_1:Name</Button>
+                                    <Button BackgroundOpacity="0.000" Location="171,7" Margin="0,0,5,0" Name="TimerHeader" PackLocation="RightFixed" ScrollExtent="147,20" Size="147,20" Style="LockoutZonePage.ZonePage.text_link" textalignment="Left" textalignmentvertical="Center" Tooltip=":8f67a1d66549d06f:Click to sort zones by time left until the instance will expire.">:8f67a1d671644b39_1:Time Left</Button>
+                                    <Button BackgroundOpacity="0.000" Location="319,7" Margin="0,0,5,0" Name="MinimumDurationHeader" PackLocation="RightFixed" ScrollExtent="203,20" Size="203,20" Style="text_link" textalignment="Right" textalignmentvertical="Center" Tooltip=":8f67a1d67ee0cc07:Click to sort zones by the minimum time required to unlock.">:79f59ff04b77fb51:Minimum Duration</Button>
+                                    <Button BackgroundOpacity="0.000" Location="505,7" Margin="0,0,5,0" Name="MaximumDurationHeader" PackLocation="RightFixed" ScrollExtent="183,20" Size="183,20" Style="text_link" textalignment="Right" textalignmentvertical="Center" Tooltip=":8f67a1d6daf25d90:Click to sort zones by the maximum lifespan of the instance.">:79f59ff01a8e400c:Maximum Duration</Button>
+                                    <Page AbsorbsInput="false" Location="10,35" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="681,332" ScrollSize="1,44" Size="681,332">
+                                        <Image BackgroundColor="#FFFFFF" GetsInput="true" Name="row Icon" PackLocation="fixed,fixed" PackSize="fixed,fixed" ScrollExtent="21,21" Size="21,21" SourceRect="1,1,41,41" SourceResource="images/icons/icon_is29.dds" />
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="26,0" MaxLines="1" Name="row ZoneName" PackSize="absolute,fixed" ScrollExtent="134,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="134,22" TextAlignmentVertical="Center">:8f67a1d6ca57b5e1_1:Zone name</Text>
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="161,0" Name="row TimeLeft" PackLocation="right" ScrollExtent="147,46" ShadowStyle="/ShadowStylesNew.Outline.style" Size="147,22" TextAlignment="Center" TextAlignmentVertical="Center">:8f67a1d63e6923e4_1:4 minutes 25 seconds</Text>
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="309,0" MaxLines="1" Name="row MinimumDuration" PackLocation="right" ScrollExtent="188,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="188,22" TextAlignment="Center" TextAlignmentVertical="Center">:8f67a1d65be2fde1_1:5 hours 32 minutes</Text>
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="498,0" MaxLines="1" Name="row MaximumDuration" PackLocation="right" ScrollExtent="180,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="180,22" TextAlignment="Center" TextAlignmentVertical="Center">:8f67a1d64a8dba71_1:24 hours</Text>
+                                        <Image AbsorbsInput="false" BackgroundColor="#4A404A" BackgroundOpacity="1.000" Name="row Selection" PackSize="absolute,fixed" ScrollExtent="680,22" Size="680,22" Visible="false" />
+                                    </Page>
+                                </Page>
+                            </Page>
+                            <Template Name="TimerDropdownTemplate" Size="400,20">eq2ui_dropdown_template2.xml</Template>
+                            <DataSource Name="TimerTypesDS">
+                                <Data Name="All" text=":8f67a1d67df1bfa5_1:Show all known zones" value="0" />
+                                <Data Name="Unlocked" text=":8f67a1d6293b6493_1:Show unlocked zones" value="1" />
+                                <Data Name="Locked" text=":8f67a1d67d3ec4f8_1:Show locked zones" value="2" />
+                            </DataSource>
+                            <Dropdownbox DataSource="TimerTypesDS" DynamicData="/GameData.UIState.ZoneReuse.Filter" Location="10,370" Name="TimeTypeSelection" OnSelect="ui_filter_zonereuse 1 SelectedItem.Value" PackLocation="left,bottom" RowTemplate="TimerDropdownTemplate" ScrollExtent="217,32" Size="217,32" Style="/CommonElements.Dropdown.data.style" />
+                            <ImageStyle Filter="true" Name="UnlockedStyle">
+                                <ImageFrame Name="image" Source="images/icons/icon_is62.dds" SourceRect="4,215,38,249" />
+                            </ImageStyle>
+                            <ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextStyle="/TextStyles.Large.LargeStyle" MouseOverSound="ui_mouseover" MouseOverTextColor="#FFFF80" MouseOverTextStyle="/TextStyles.Large.LargeStyle" Name="text_link" NormalTextColor="#EBDEAA" NormalTextStyle="/TextStyles.Large.LargeStyle" PressedTextStyle="/TextStyles.Large.LargeStyle" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="/ButtonStyles.invisible_rect" RStyleDefault="/ButtonStyles.invisible_rect" RStyleDisabled="/ButtonStyles.invisible_rect" RStyleMouseOver="/ButtonStyles.invisible_rect" RStyleMouseOverSelected="/ButtonStyles.invisible_rect" RStyleSelected="/ButtonStyles.invisible_rect" SelectedTextStyle="/Fonts.FontZapf15" TextAlignmentVertical="Top" />
+                        </Page>
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,20" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="724,353" Size="724,353" />
+                    </Page>
+                    <Page Enabled="false" Name="LockoutZonePage" PackSize="a,a" ScrollExtent="731,414" Size="731,414" Visible="false">
+                        <Scrollbar ArrowPressSound="sounds/button" Control="ZonePage.OneMorePageForMagic.TablePage.ScrollPage" HideIfUnnecessary="false" Location="697,28" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,338" Size="22,338" Style="/CommonElements.ScrollbarVertical.data.style" />
+                        <Page Location="2,3" Name="ZonePage" OnShow="set_focus RosterBox.FullPath" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="705,410" Size="705,410">
+                            <Page Name="OneMorePageForMagic" PackSize="a,a" ScrollExtent="698,363" Size="698,363">
+                                <Page Location="0,-7" MinimumSize="700,100" Name="TablePage" PackSize="a,a" ScrollExtent="701,367" Size="701,367">
+                                    <Image BackgroundColor="#FFFFFF" GetsInput="true" Location="10,6" Name="LockedHeader" PackLocation="fixed,fixed" PackSize="fixed,fixed" ScrollExtent="21,21" Size="21,21" SourceRect="1,1,41,41" SourceResource="images/icons/icon_is29.dds" Tooltip=":8f67a1d6d01ed9aa:Click to sort zones by unlocked/locked." />
+                                    <Button BackgroundOpacity="0.000" Location="33,7" Margin="0,0,5,0" Name="NameHeader" PackSize="absolute,fixed" ScrollExtent="133,20" Size="133,20" Style="Guild.MainTabPage.MembersPage.text_link" textalignment="Left" textalignmentvertical="Top" Tooltip=":8f67a1d6aaa0bce7:Click to sort zones by name">:8f67a1d601ee2ec7:Name</Button>
+                                    <Button BackgroundOpacity="0.000" Location="171,7" Margin="0,0,5,0" Name="TimerHeader" PackLocation="RightFixed" ScrollExtent="147,20" Size="147,20" Style="text_link" textalignment="Left" textalignmentvertical="Center" Tooltip=":8f67a1d6b79b80ad:Click to sort zones by time left to unlock.">:8f67a1d671644b39:Time Left</Button>
+                                    <Button BackgroundOpacity="0.000" Location="319,7" Margin="0,0,5,0" Name="SuccessHeader" PackLocation="RightFixed" ScrollExtent="103,20" Size="103,20" Style="text_link" textalignment="Right" textalignmentvertical="Center" Tooltip=":8f67a1d6aac4bccc:Click to sort zones by success lockout duration.">:8f67a1d65f4219d1:Success</Button>
+                                    <Button BackgroundOpacity="0.000" Location="422,7" Margin="0,0,5,0" Name="LastSuccessHeader" PackLocation="RightFixed" ScrollExtent="83,20" Size="83,20" Style="text_link" textalignment="Left" textalignmentvertical="Center" Tooltip=":8f67a1d6e1a27ffc:Click to sort zones by last successful completion.">:8f67a1d61516f961:Last</Button>
+                                    <Button BackgroundOpacity="0.000" Location="505,7" Margin="0,0,5,0" Name="FailureHeader" PackLocation="RightFixed" ScrollExtent="103,20" Size="103,20" Style="text_link" textalignment="Right" textalignmentvertical="Center" Tooltip=":8f67a1d6d17d76e0:Click to sort zones by failed locked duration.">:8f67a1d611d9c5a2:Failure</Button>
+                                    <Button BackgroundOpacity="0.000" Location="608,7" Margin="0,0,5,0" Name="LastFailureHeader" PackLocation="RightFixed" ScrollExtent="83,20" Size="83,20" Style="text_link" textalignment="Left" textalignmentvertical="Center" Tooltip=":8f67a1d6370666eb:Click to sort zones by last failed time.">:8f67a1d61516f961_1:Last</Button>
+                                    <Page AbsorbsInput="false" Location="10,35" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="681,322" ScrollSize="1,44" Size="681,322">
+                                        <Image BackgroundColor="#FFFFFF" GetsInput="true" Name="row Icon" PackLocation="fixed,fixed" PackSize="fixed,fixed" ScrollExtent="21,21" Size="21,21" SourceRect="1,1,41,41" SourceResource="images/icons/icon_is29.dds" />
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="26,0" MaxLines="1" Name="row ZoneName" PackSize="absolute,fixed" ScrollExtent="133,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="133,22" TextAlignmentVertical="Center">:8f67a1d6ca57b5e1:Zone name</Text>
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="160,0" Name="row TimeLeft" PackLocation="right" ScrollExtent="147,46" ShadowStyle="/ShadowStylesNew.Outline.style" Size="147,22" TextAlignment="Center" TextAlignmentVertical="Center">:8f67a1d63e6923e4:4 minutes 25 seconds</Text>
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="308,0" MaxLines="1" Name="row Success" PackLocation="right" ScrollExtent="158,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="103,22" TextAlignment="Center" TextAlignmentVertical="Center">:8f67a1d65be2fde1:5 hours 32 minutes</Text>
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="411,0" MaxLines="1" Name="row LastSuccess" PackLocation="right" ScrollExtent="83,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="83,22" TextAlignment="Center" TextAlignmentVertical="Center">:8f67a1d6d1572064:12/12/2006</Text>
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="494,0" MaxLines="1" Name="row Failure" PackLocation="right" ScrollExtent="103,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="103,22" TextAlignment="Center" TextAlignmentVertical="Center">:8f67a1d64a8dba71:24 hours</Text>
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="598,0" MaxLines="1" Name="row LastFailure" PackLocation="right" ScrollExtent="83,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="83,22" TextAlignment="Center" TextAlignmentVertical="Center">:8f67a1d6d1572064_1:12/12/2006</Text>
+                                        <Image AbsorbsInput="false" BackgroundColor="#4A404A" BackgroundOpacity="1.000" Name="row Selection" PackSize="absolute,fixed" ScrollExtent="680,22" Size="680,22" Visible="false" />
+                                    </Page>
+                                </Page>
+                            </Page>
+                            <Template Name="TimerDropdownTemplate" Size="400,20">eq2ui_dropdown_template2.xml</Template>
+                            <DataSource Name="TimerTypesDS">
+                                <Data Name="All" text=":8f67a1d67df1bfa5:Show all known zones" value="0" />
+                                <Data Name="Available" text=":8f67a1d6293b6493:Show available zones" value="1" />
+                                <Data Name="Unavailable" text=":8f67a1d67d3ec4f8:Show unavailable zones" value="2" />
+                            </DataSource>
+                            <Dropdownbox DataSource="TimerTypesDS" DynamicData="/GameData.UIState.ZoneReuse.Filter" Location="10,370" Name="TimeTypeSelection" OnSelect="ui_filter_zonereuse 2 SelectedItem.Value" PackLocation="left,bottom" RowTemplate="TimerDropdownTemplate" ScrollExtent="217,32" Size="217,32" Style="/CommonElements.Dropdown.data.style" />
+                            <ImageStyle Filter="true" Name="UnlockedStyle">
+                                <ImageFrame Name="image" Source="images/icons/icon_is62.dds" SourceRect="4,215,38,249" />
+                            </ImageStyle>
+                            <ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextStyle="/TextStyles.Large.LargeStyle" MouseOverSound="ui_mouseover" MouseOverTextColor="#FFFF80" MouseOverTextStyle="/TextStyles.Large.LargeStyle" Name="text_link" NormalTextColor="#EBDEAA" NormalTextStyle="/TextStyles.Large.LargeStyle" PressedTextStyle="/TextStyles.Large.LargeStyle" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="/ButtonStyles.invisible_rect" RStyleDefault="/ButtonStyles.invisible_rect" RStyleDisabled="/ButtonStyles.invisible_rect" RStyleMouseOver="/ButtonStyles.invisible_rect" RStyleMouseOverSelected="/ButtonStyles.invisible_rect" RStyleSelected="/ButtonStyles.invisible_rect" SelectedTextStyle="/Fonts.FontZapf15" TextAlignmentVertical="Top" />
+                        </Page>
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,20" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="724,353" Size="724,353" />
+                    </Page>
+                </Page>
+                <DataSource Name="TabSource">
+                    <Data Name="DungeonFinder" target="DungeonFinderPage" text=":76392ceda84b97cf:Dungeon Finder" />
+                    <Data Name="Battlegrounds" target="BattlegroundsPage" text=":76392cedc804639a:Battlegrounds" />
+                    <Data Name="ProvingGrounds" target="ProvingGroundsPage" text="Proving Grounds" />
+                    <Data Name="Persistent" target="PersistentZonePage" text=":79f59ff017be80f0:Persistent Instances" />
+                    <Data Name="Lockout" target="LockoutZonePage" text=":79f59ff06c844b17:Lockout" />
+                </DataSource>
+            </Page>
+            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="759,498" Size="759,498">
+                <Button Location="703,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":8f67a1d6ec278586:Window Settings" UserMovable="true" />
+                <Button Location="683,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":8f67a1d6574a0c6d:Help" UserMovable="true" />
+                <Button Location="723,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":8f67a1d62d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="569,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="374,70" Size="374,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="26,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="244,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="244,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:8f67a1d60f019543:Zones</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="759,498" Size="759,498" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="2,442" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="757,56" Size="757,56" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="759,498" Size="759,498" />
+            </Page>
+        </Page>

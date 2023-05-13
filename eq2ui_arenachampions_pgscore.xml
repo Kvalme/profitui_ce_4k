@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="713,421" Name="PGScore" PackLocation="right,center" ScrollExtent="200,73" Size="200,73" UserMovable="true">
+            <ImageStyle Name="stylePGBack">
+                <ImageFrame atlas="none" Name="back" Source="images/window_elements_heroicpanel.dds" SourceRect="696,677,848,730" />
+            </ImageStyle>
+            <Namespace Name="buttonstyle">
+                <ButtonStyle Name="style" RStyleActivated="activated_rect" RStyleDefault="normal_rect" RStyleMouseOver="mouseover_rect" />
+                <ImageStyle Filter="true" Name="normal">
+                    <ImageFrame Name="image" Source="images/icons/icon_map4.dds" SourceRect="210,83,252,125" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="mouseover">
+                    <ImageFrame Name="image" Source="images/icons/icon_map4.dds" SourceRect="210,83,252,125" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/icons/icon_map4.dds" SourceRect="210,83,252,125" />
+                </ImageStyle>
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="mouseover_rect" />
+                <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal_rect" />
+            </Namespace>
+            <Button BackgroundColor="#FFFFFF" Location="171,0" Name="ExitButton" OnPress="battleground run_home_to_momma" ScrollExtent="28,28" Size="28,28" Style="buttonstyle.style" Tooltip="Exit Proving Ground">Exit</Button>
+            <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.ProvingGround.CurrentTime" Font="/TextStyles.VeryLarge.VeryLargeStyle" MaxLines="1" Name="PGTimeText" ScrollExtent="172,38" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center">00:00</Text>
+            <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.ProvingGround.TeamObj" Font="/TextStyles.Large.LargeStyle" Location="10,34" MaxLines="1" Name="TeamObjText" ScrollExtent="25,26" ShadowStyle="/ShadowStylesNew.None.style" Size="22,22" TextAlignment="Center" TextAlignmentVertical="Center">C0</Text>
+            <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.ProvingGround.TeamObjTime" Font="/TextStyles.Large.LargeStyle" Location="31,34" MaxLines="1" Name="TeamObjTimeText" ScrollExtent="52,26" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="52,22" TextAlignment="Center" TextAlignmentVertical="Center">00:00</Text>
+            <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.ProvingGround.OtherTeamObj" Font="/TextStyles.Large.LargeStyle" Location="140,34" MaxLines="1" Name="OtherTeamObjText" ScrollExtent="25,26" ShadowStyle="/ShadowStylesNew.None.style" Size="22,22" TextAlignment="Center" TextAlignmentVertical="Center">C0</Text>
+            <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.ProvingGround.OtherTeamObjTime" Font="/TextStyles.Large.LargeStyle" Location="89,34" MaxLines="1" Name="OtherTeamObjTimeText" ScrollExtent="52,26" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="52,22" TextAlignment="Center" TextAlignmentVertical="Center">00:00</Text>
+            <Image AbsorbsInput="false" Location="10,10" Name="background" ScrollExtent="152,53" Size="152,53" Style="stylePGBack" />
+        </Page>

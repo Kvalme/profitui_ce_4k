@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page clientmarginframe="10,10,10,10" clientmarginnone="10,10,5,10" eq2usescomwndcontrols="true" Location="1737,4" MinimumSize="40,40" Name="Downloading" PackLocation="right, top" ScrollExtent="65,65" Size="65,65" UserMovable="true" UserScrollable="false" Visible="false">
+            <Page DynamicData="/GameData.General.Downloading" Name="DownloadingPage" OnHideEffector="FadeOutEffector" OnShow="Opacity = 1.0" PackLocation="left,top" PackSize="a,a" ScrollExtent="65,65" Size="65,65">
+                <Text AbsorbsInput="false" DynamicData="/GameData.General.Downloading" Font="/TextStyles.Normal.NormalStyle" Location="0,23" Margin="1,1,1,1" MaxLines="1" Name="downloading_text" PackLocation="left,top" PackSize="a,f" ScrollExtent="65,25" Size="65,18" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EACE">:7278e89b9d8228d0:0 KB</Text>
+                <Image Name="downloading" PackSize="a,a" ScrollExtent="65,65" Size="65,65" StretchType="ProportionalBound" Style="downloading_effect" />
+                <OpacityEffector InitialOpacity="1.000" Name="FadeOutEffector" Speed="8.000" />
+                <ImageStyle Name="downloading_effect">
+                    <ImageFrame atlas="none" Name="download01" Source="images/babydragon_animated.dds" SourceRect="0,0,128,128" />
+                    <ImageFrame atlas="none" Name="download02" Source="images/babydragon_animated.dds" SourceRect="128,0,256,128" />
+                    <ImageFrame atlas="none" Name="download03" Source="images/babydragon_animated.dds" SourceRect="256,0,384,128" />
+                    <ImageFrame atlas="none" Name="download04" Source="images/babydragon_animated.dds" SourceRect="384,0,512,128" />
+                    <ImageFrame atlas="none" Name="download05" Source="images/babydragon_animated.dds" SourceRect="0,128,128,256" />
+                    <ImageFrame atlas="none" Name="download06" Source="images/babydragon_animated.dds" SourceRect="128,128,256,256" />
+                    <ImageFrame atlas="none" Name="download07" Source="images/babydragon_animated.dds" SourceRect="256,128,384,256" />
+                    <ImageFrame atlas="none" Name="download08" Source="images/babydragon_animated.dds" SourceRect="384,128,512,256" />
+                    <ImageFrame atlas="none" Name="download09" Source="images/babydragon_animated.dds" SourceRect="0,256,128,384" />
+                    <ImageFrame atlas="none" Name="download10" Source="images/babydragon_animated.dds" SourceRect="128,256,256,384" />
+                    <ImageFrame atlas="none" Name="download11" Source="images/babydragon_animated.dds" SourceRect="256,256,384,384" />
+                    <ImageFrame atlas="none" Name="download12" Source="images/babydragon_animated.dds" SourceRect="384,256,512,384" />
+                    <ImageFrame atlas="none" Name="download13" Source="images/babydragon_animated.dds" SourceRect="0,384,128,512" />
+                </ImageStyle>
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="65,65" Size="65,65" Visible="false">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="65,65" Size="65,65" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="62,61" Size="62,61" />
+            </Page>
+        </Page>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Location="823,175" Name="JunctionChoice" PackLocation="center,center" ScrollExtent="383,266" Size="383,266" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="26,33" Name="MessageText" ScrollExtent="331,58" Size="331,58" UserMovable="true" UserResizable="true">:c68b98150525ae19:You have died.  Please select an area to respawn at.</Text>
+            <Scrollbar ArrowPressSound="sounds/button" Control="JunctionList" Location="331,97" Name="JunctionScroll" ScrollExtent="22,98" Size="22,98" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <List BackgroundColor="#000000" BackgroundOpacity="0.000" DataSource="JunctionSource" Location="26,97" MinimumScrollExtent="311,68" Name="JunctionList" ScrollExtent="311,95" SelectionAllowedMultiRow="false" Size="311,95" Style="/listboxlist.default_list" />
+            <Button Location="145,208" Name="Accept" ScrollExtent="117,38" Size="117,38" Style="/CommonElements.LargePushButton.data.style">:c68b98154b7317fd:Accept</Button>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="23,94" Name="JunctionFrame" PackSize="absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="335,104" Size="335,104" />
+            <DataSource Name="JunctionSource">
+                <Data Name="Reply 1" text=":c68b9815813857c3:This is reply choice number 1" />
+                <Data Name="Reply 2" text=":c68b981518310679:This is reply choice number 2" />
+                <Data Name="Reply 3" text=":c68b98156f3636ef:This is reply choice number 3" />
+                <Data Name="Reply 4" text=":c68b9815f152a34c:This is reply choice number 4" />
+            </DataSource>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="383,266" Size="383,266">
+                <Button Location="325,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":c68b9815ec278586:Window Settings" UserMovable="true" />
+                <Button Location="330,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":c68b9815574a0c6d:Help" UserMovable="true" Visible="false" />
+                <Button Location="347,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":c68b98152d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="213,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:c68b98159b889edb:Junction</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="383,266" Size="383,266" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,196" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="357,70" Size="357,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="383,264" Size="383,264" />
+            </Page>
+        </Page>

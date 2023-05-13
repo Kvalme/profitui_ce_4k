@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" MinimumSize="54,54" Name="Flythrough" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" Opacity="0.000" PackLocation="left, top" PackSize="absolute, absolute" ScrollExtent="2048,768" Size="2048,768" UserScrollable="false" Visible="false">
+            <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="SubTitleTextStyle" PointSize="20" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStylesNew.Drop.style" UseCachedFont="true" />
+            <Text AbsorbsInput="false" Cursor="/Cursor.Text" Font="/TextStyles.VeryLarge.VeryLargeStyle" GetsInput="false" Location="43,37" Margin="0,0,0,1" Name="Time" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="112,72" ShadowStyle="/ShadowStyles.Chat.Outline1" Size="112,72" TextAlignment="Center" TextAlignmentVertical="Center" />
+            <Text BackgroundOpacity="1.000" Name="SceneFade" Opacity="0.000" PackLocation="left, top" PackSize="a, a" ScrollExtent="2048,768" Size="2048,768" Visible="false" />
+            <Text AbsorbsInput="false" Cursor="/Cursor.Text" Font="SubTitleTextStyle" GetsInput="false" Location="684,669" Margin="0,0,0,1" Name="SubTitle" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" Opacity="0.000" PackLocation="center, center" PackSize="fixed, absolute" ScrollExtent="680,99" ShadowStyle="/ShadowStyles.Chat.Outline1" Size="680,99" TextAlignment="Center" TextAlignmentVertical="Center" />
+        </Page>

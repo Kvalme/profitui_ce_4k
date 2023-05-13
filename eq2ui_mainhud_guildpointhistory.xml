@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="false" Location="163,139" MaximumSize="1024,768" MinimumSize="620,340" Name="GuildPointHistory" ScrollExtent="720,440" Size="720,440" UserMovable="true" UserResizable="true" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="20,21" Name="Title" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="680,38" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="680,29" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">[DEVL]Guild Point History for Groden</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="34,51" Margin="5,0,0,0" MaxLines="1" Name="Date" ScrollExtent="90,26" Size="90,20" TextAlignmentVertical="Center" TextColor="#EBDEAA">:94725db2f55367bb:Date</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="124,51" Margin="5,0,0,0" MaxLines="1" Name="ModifiedBy" ScrollExtent="126,26" Size="116,20" TextAlignmentVertical="Center" TextColor="#EBDEAA">:94725db296b333e5:Modified By</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="236,51" Margin="5,0,0,0" MaxLines="1" Name="Points" ScrollExtent="100,26" Size="100,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#EBDEAA">:94725db2dfe974e0:Points</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="346,51" Margin="5,0,0,0" MaxLines="1" Name="Comment" ScrollExtent="309,26" Size="309,20" TextAlignmentVertical="Center" TextColor="#EBDEAA">:94725db2a436940f:Comment</Text>
+            <Page BackgroundOpacity="1.000" Location="24,66" Name="History" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="671,305" Size="671,305">
+                <Page Location="10,10" Name="List" PackSize="a,a" ScrollExtent="631,268" ScrollSize="1,22" Size="631,268">
+                    <Page Name="Row" PackSize="absolute" ScrollExtent="631,22" Size="631,22">
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="2,2" Margin="5,0,0,0" MaxLines="1" Name="Date" ScrollExtent="90,23" Size="90,18" TextColor="#EBDEAA">:94725db201906b39:8/01/2008</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="92,2" Margin="5,0,0,0" MaxLines="1" Name="ModifiedBy" ScrollExtent="140,23" Size="140,18" TextColor="#EBDEAA">[DEVL]Groden</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="232,2" Margin="0,0,5,0" Name="Points" ScrollExtent="75,23" Size="75,18" TextAlignment="Right">:94725db27c2e18f7:7.5</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="312,2" Margin="5,0,0,0" Name="Comment" OnTextTagSelected="examine_item SelectedTextTag" ScrollExtent="317,69" Size="317,18" TextColor="#EBDEAA" TruncateElipsis="false">:94725db27a5ec145:[DEVL]This is a really long comment that should wrap the text down to the next line.</Text>
+                    </Page>
+                </Page>
+                <Scrollbar ArrowPressSound="sounds/button" Control="List" HideIfUnnecessary="false" Location="640,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,270" Size="22,270" Style="/CommonElements.ScrollbarVertical.data.style" />
+                <Scrollbar ArrowPressSound="sounds/button" Control="List" HideIfUnnecessary="false" Location="10,279" MaximumSize="16384,80" MinimumSize="80,22" Name="HScroll" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="631,22" Size="631,22" Style="/CommonElements.ScrollbarHorizontal.data.style" />
+            </Page>
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="29,385" Margin="5,0,0,0" MaxLines="1" Name="Events" PackLocation="left,bottom" ScrollExtent="200,23" Size="200,20" TextAlignmentVertical="Center">:94725db2970ca624:[DEVL]Events: 50 / 50</Text>
+            <Button AbsorbsInput="false" Location="300,376" Name="ButtonOK" PackLocation="center,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:94725db22d3f513f:Close</Button>
+            <Page BackgroundOpacity="1.000" Location="20,20" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="680,400" Size="680,400" />
+            <Page BackgroundOpacity="1.000" Location="-10,-10" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="740,460" Size="740,460" />
+        </Page>

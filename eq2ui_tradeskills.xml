@@ -49,7 +49,7 @@
                                     <Data Name="Refined" text="Refine" />
                                 </DataSource>
                                 <Scrollbar ArrowPressSound="sounds/button" Control="FilterList" HideIfUnnecessary="true" Location="298,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,a" ScrollExtent="22,140" Size="22,140" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
-                                <List BackgroundColor="#000000" BackgroundOpacity="0.000" DataSource="FilterDataSource" Location="12,8" Margin="10,10,10,10" MinimumScrollExtent="306,34" Name="FilterList" PackSize="a,a" ScrollExtent="306,144" Size="306,144" Style="/CommonElements.List.data.list_style" />
+                                <List BackgroundColor="#000000" BackgroundOpacity="0.000" DataSource="FilterDataSource" Location="12,8" Margin="10,10,10,10" MinimumScrollExtent="306,48" Name="FilterList" PackSize="a,a" ScrollExtent="306,144" Size="306,144" Style="/CommonElements.List.data.list_style" />
                             </Page>
                         </Page>
                         <Page AbsorbsInput="false" BackgroundColor="#262422" Location="0,65" Name="ScrollPage" PackSize="a,a" ScrollExtent="330,327" ScrollSize="40,40" Size="330,327" />

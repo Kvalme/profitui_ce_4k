@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page alwaysonbottom="true" DynamicData="/GameData.Spells.MaintainedWindow" eq2usescomwndcontrols="true" Location="0,90" MinimumSize="37,37" Name="Maintained" OnShow="SpellTimer.AddBig.Press=true" PackLocation="left,nfn" PackSize="f,p" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="255,325" Size="255,325" sizefull="255,35" sizeicononly="32,35" UserMovable="true" UserResizable="true" version="2.0">
+        <Page alwaysonbottom="true" DynamicData="/GameData.Spells.MaintainedWindow" eq2usescomwndcontrols="true" Location="0,90" MinimumSize="37,37" Name="Maintained" OnShow="SpellTimer.AddBig.Press=true" PackLocation="left,nfn" PackSize="f,p" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="255,325" Size="255,325" sizefull="255,35" sizeicononly="32,35" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
             <Page Location="2,0" MinimumSize="37,1" Name="SpellTimer" PackLocation="left,top" PackSize="a,f" ScrollExtent="255,1" Size="255,1">
                 <ImageStyle Name="Progress_Fill">
                     <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="221,483,379,489" />
@@ -29,7 +29,7 @@
 <include>_ProfitUI_Maintained_Extras.txt.xml</include>
                 </Page>
                 <Button Name="MaintainedConfig" ScrollExtent="1,1" showbuffname="true" showprogressbar="true" Size="1,1" Visible="false" />
-                <Button Name="AddBig" OnPress="Parent.Parent.Volume.Location=(&apos;5&apos; ## &apos;,&apos; ## ADD) ADD=(Parent.Parent.Volume.Top) + (40)&#xD;&#xA;" ScrollExtent="1,1" Size="1,1" Visible="false" />
+                <Button ADD="4e+001" Name="AddBig" OnPress="Parent.Parent.Volume.Location=(&apos;5&apos; ## &apos;,&apos; ## ADD) ADD=(Parent.Parent.Volume.Top) + (40)&#xD;&#xA;" ScrollExtent="1,1" Size="1,1" Visible="false" />
                 <Button Name="AddHeight" OnPress="Parent.Parent.Volume.Location=(&apos;5&apos; ## &apos;,&apos; ## ADD) ADD=(Parent.Parent.Volume.Top) + (35)&#xD;&#xA;Parent.Height=(ADD) ADD=(Parent.Height) + (35)&#xD;&#xA;" ScrollExtent="1,1" Size="1,1" Visible="false" />
                 <Button Name="SubtractHeight" OnPress="Parent.Parent.Volume.Location=(&apos;5&apos; ## &apos;,&apos; ## SBT) SBT=(Parent.Parent.Volume.Top) - (35)&#xD;&#xA;Parent.Height=(SBT) SBT=(Parent.Height) - (35)&#xD;&#xA;" SBT="-3e+001" ScrollExtent="1,1" Size="1,1" Visible="false" />
                 <Composite AbsorbsInput="false" Location="1,1" Name="Composite" PackSize="a,a" ScrollExtent="255,35" Size="255,35" SpacingType="Fill">

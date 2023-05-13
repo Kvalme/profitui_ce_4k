@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="829,304" Name="DisplayCase" PackLocation="cfc,cfc" ScrollExtent="390,198" Size="390,198" UserMovable="true" Visible="false">
+            <IconBank BackgroundOpacity="1.000" Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconframepadding="0" iconpadding="1" iconsize="42" iconstyle="/IconStyles.examine" Location="23,81" Name="Icons" PackLocation=",fff" renderframe="true" renderoutlines="false" ScrollExtent="345,42" Size="345,42" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="false" />
+            <Sliderbar Location="26,128" MaximumSize="16384,26" MinimumSize="100,26" Name="RotationSpeed" PackLocation=",fff" ScrollExtent="339,26" Size="339,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="50" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="14,28" Name="Help" PackLocation=",fff" ScrollExtent="363,69" ShadowStyle="/ShadowStylesNew.Drop.style" Size="363,53" TextAlignment="Center" TextAlignmentVertical="Center">:8bcb8fece8949660:Drag items to the slots below to add them to this display case. Items dropped here will remain in your inventory.</Text>
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="26,150" Name="Label" PackLocation=",fff" ScrollExtent="339,46" ShadowStyle="/ShadowStylesNew.Drop.style" Size="339,16" TextAlignment="Center" TextAlignmentVertical="Center">:8bcb8fecab655eb2:[DEVL]Rotate Display Every XXX Seconds</Text>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="a,a" ScrollExtent="390,198" Size="390,198">
+                <Button Location="332,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":8bcb8fecec278586:Window Settings" UserMovable="true" />
+                <Button Location="354,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":8bcb8fec2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="220,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:8bcb8feccf1c8862:Display Case</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="390,198" Size="390,198" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="390,198" Size="390,198" />
+            </Page>
+        </Page>

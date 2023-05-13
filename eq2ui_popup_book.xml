@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="154,122" Name="Book_Simple" ScrollExtent="697,509" Size="697,509" UserMovable="true" version="1.1" Visible="false">
+            <Namespace Name="data">
+                <Namespace Name="right_page">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="214,66,278,266" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="214,267,278,331" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="279,267,366,331" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="367,267,431,331" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="367,66,431,266" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="367,1,431,65" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="279,1,366,65" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="214,1,278,65" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="280,67,365,265" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" TitleStretch="false" West="w" WestShrink="true" />
+                </Namespace>
+                <Namespace Name="left_page">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="1,66,65,266" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="1,267,65,331" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="66,267,148,331" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="149,267,213,331" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="149,66,213,266" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="149,1,213,65" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="66,1,148,65" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="1,1,65,65" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/book.dds" SourceRect="67,67,147,264" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" TitleStretch="false" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+            <Button Location="8,470" MaximumSize="16384,32" MinimumSize="32,32" Name="FirstButton" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:e0169fccac4f3eac:First</Button>
+            <Button Location="108,470" MaximumSize="16384,32" MinimumSize="32,32" Name="PreviousButton" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:e0169fcc04460075:Previous</Button>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="218,476" Name="LeftPageFooter" PackLocation="left,bottom" ScrollExtent="70,23" Size="70,18" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:e0169fccca56eabf:Page 1</Text>
+            <Button Location="298,470" MaximumSize="16384,32" MinimumSize="32,32" Name="EditButton" PackLocation="c,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:b678f793def88edb:Edit</Button>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="408,476" Name="RightPageFooter" PackLocation="right,bottom" ScrollExtent="70,23" Size="70,18" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:e0169fcc535fbb05:Page 2</Text>
+            <Button Location="488,470" MaximumSize="16384,32" MinimumSize="32,32" Name="NextButton" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:e0169fcc5be240fd:Next</Button>
+            <Button Location="588,470" MaximumSize="16384,32" MinimumSize="32,32" Name="LastButton" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:e0169fcc1516f961:Last</Button>
+            <Page IgnoreTab="false" Location="0,25" Name="EditPage" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" Opacity="0.000" ScrollExtent="697,484" Size="697,484" Visible="false">
+                <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="56,8" Name="Label" ScrollExtent="91,23" Size="91,20" TextAlignment="Right">:b678f7931508a890:Title</Text>
+                <Textbox BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="158,6" MaxLength="80" Name="TitleText" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="418,18" Size="418,18" Style="TitleStyle" />
+                <Page BackgroundOpacity="1.000" Location="158,6" Name="TextBkg" ScrollExtent="418,18" Size="418,18" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="0.824" Location="-10,-24" Name="UpperTabBkg" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="717,61" Size="717,61" />
+                <Textbox Cursor="/Cursor.Text" Location="69,43" MaxLines="Unlimited" Name="LeftTextEdit" OnHide="parent.EditBkg.visible=false" OnShow="parent.EditBkg.visible=true" ScrollExtent="259,352" Size="259,352" Style="inputStyle" UserScrollable="false" WrapWidth="257">:b678f793924a371f:1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0</Textbox>
+                <Page BackgroundOpacity="0.275" Location="69,43" Name="LeftEditBkg" ScrollExtent="259,352" Size="259,352" />
+                <Textbox Cursor="/Cursor.Text" Location="383,43" MaxLines="Unlimited" Name="RightTextEdit" OnHide="parent.EditBkg.visible=false" OnShow="parent.EditBkg.visible=true" ScrollExtent="259,352" Size="259,352" Style="inputStyle" UserScrollable="false" WrapWidth="257">:b678f793924a371f_1:1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0</Textbox>
+                <Page BackgroundOpacity="0.275" Location="383,43" Name="RightEditBkg" ScrollExtent="259,352" Size="259,352" />
+                <Page Location="17,414" Name="Capacity" PackSize="absolute,fixed" ScrollExtent="220,18" Size="220,18">
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="0,1" Name="Label" ScrollExtent="220,23" Size="220,16" TextAlignment="Center">:b678f7939a44ee21:[DEVL]50%</Text>
+                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#00DD00" Location="3,3" Name="Bar" PackSize="a,a" Progress="0.500" ScrollExtent="214,12" Size="214,12" Style="progress_style" />
+                    <Image AbsorbsInput="false" Color="#008800" Location="3,3" Name="Bkg" PackSize="a,a" ScrollExtent="214,12" Size="214,12" SourceRect="220,491,380,497" SourceResource="/images/window_elements_generic.dds" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="a,a" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="220,18" Size="220,18" />
+                    <ProgressbarStyle Bar.Background="progress_fill" Name="progress_style" />
+                    <ImageStyle Name="progress_fill">
+                        <ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="221,483,379,489" />
+                    </ImageStyle>
+                </Page>
+                <Button Location="249,407" MaximumSize="16384,32" MinimumSize="32,32" Name="SaveButton" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:b678f7930aab6a1f:Save</Button>
+                <Button Location="349,407" MaximumSize="16384,32" MinimumSize="32,32" Name="CancelButton" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:b678f793ae453fbb:Cancel</Button>
+                <Dropdownbox DataSource="LanguageDS" Location="462,415" Name="Language" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="220,19" Size="220,19" Style="/dropdownlist.dropdown_default" />
+                <DataSource Name="LanguageDS">
+                    <Data Text=":b678f7931dbf8a98:Common" />
+                </DataSource>
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="0.824" Location="-11,399" Name="LowerTabBkg" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="718,54" Size="718,54" />
+                <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextStyle="/TextStyles.Normal.NormalStyle" Name="TitleStyle" NormalTextStyle="/TextStyles.Normal.NormalStyle" SelectedTextStyle="/TextStyles.Normal.NormalStyle" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#FFFFFF" TextPadding="3,2,3,0" />
+                <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextShadowStyle="/ShadowStylesNew.None.style" DisabledTextStyle="/TextStyles.Normal.NormalStyle" Name="inputStyle" NormalTextShadowStyle="/ShadowStylesNew.None.style" NormalTextStyle="/TextStyles.Normal.NormalStyle" SelectedTextShadowStyle="/ShadowStylesNew.None.style" SelectedTextStyle="/TextStyles.Normal.NormalStyle" SelectionColor="#4060C0" SelectionOpacity="1.000" TextPadding="0,0,0,0" />
+            </Page>
+            <Page AbsorbsInput="false" Location="69,68" Name="LeftPage" PackLocation="ffc,top" PackSize="fixed,fixed" ScrollExtent="259,352" Size="259,352">
+                <Image AbsorbsInput="false" Location="11,0" Name="Image" ScrollExtent="42,42" Size="42,42" Style="/MainHUD.Skills.HeaderImages.Combat" />
+                <Text AbsorbsInput="false" Color="#554444" Font="/TextStyles.Normal.NormalStyle" Name="Text" ScrollExtent="259,529" ShadowStyle="/ShadowStylesNew.None.style" Size="259,352" TextColor="#FCD781">:b678f793e9e67f81:1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+0
+1
+2
+3
+</Text>
+            </Page>
+            <Page AbsorbsInput="false" Location="383,68" Name="RightPage" PackLocation="nfc,top" PackSize="fixed,fixed" ScrollExtent="259,352" Size="259,352">
+                <Image AbsorbsInput="false" Location="11,0" Name="Image" ScrollExtent="42,42" Size="42,42" Style="/MainHUD.Skills.HeaderImages.Combat" />
+                <Text AbsorbsInput="false" Color="#554444" Font="/TextStyles.Normal.NormalStyle" Name="Text" ScrollExtent="259,352" ShadowStyle="/ShadowStylesNew.None.style" Size="259,352" TextColor="#FCD781">:e0169fcc924a371f_1:1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0</Text>
+            </Page>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="20,38" Name="LeftPageBkg" PackLocation="ffc,top" PackSize="proportional,absolute" RStyleDefault="data.left_page.rect" ScrollExtent="330,415" Size="330,415" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="350,38" Name="RightPageBkg" PackLocation="nfc,top" PackSize="proportional,absolute" RStyleDefault="data.right_page.rect" ScrollExtent="330,415" Size="330,415" />
+            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="720,525" Size="720,525">
+                <Button Location="662,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":e0169fccec278586:Window Settings" UserMovable="true" />
+                <Button Location="667,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":e0169fcc574a0c6d:Help" UserMovable="true" Visible="false" />
+                <Button Location="684,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":e0169fcc2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="445,70" Size="445,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="315,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="315,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:e0169fcc9428f3f0:Book</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="550,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="720,525" Size="720,525" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="0,459" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="720,66" Size="720,66" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="720,515" Size="720,515" />
+            </Page>
+        </Page>

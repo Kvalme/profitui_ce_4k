@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2usescomwndcontrols="true" Location="374,185" MaximumSize="416,500" MinimumSize="10,10" Name="FloatingComboBox" ScrollExtent="150,156" Size="150,156" Visible="false">
+            <Page BackgroundOpacity="1.000" Location="0,6" Name="ListBox" PackLocation="top,left" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="150,150" Size="150,150">
+                <List BackgroundColor="#000000" BackgroundOpacity="0.000" DataSource="ListDataSource" Location="12,8" Margin="10,10,10,10" MinimumScrollExtent="108,168" Name="List" PackLocation="top,left" PackSize="a,a" ScrollExtent="108,168" SelectionAllowedMultiRow="false" Size="108,134" Style="/CommonElements.List.data.list_style" />
+                <DataSource Name="ListDataSource">
+                    <Data Name="New Data" text=":68982daf87b22ecd_7:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_8:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_9:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_10:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_11:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_12:Test" />
+                    <Data Name="New Data" text=":68982daf87b22ecd_13:Test" />
+                </DataSource>
+                <Scrollbar ArrowPressSound="sounds/button" Control="List" HideIfUnnecessary="true" Location="118,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="f,a" ScrollExtent="22,130" Size="22,130" Style="/CommonElements.ScrollbarVertical.data.style" />
+            </Page>
+        </Page>

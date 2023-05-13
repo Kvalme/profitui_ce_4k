@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="100,107" MaximumSize="1000,1000" MinimumSize="346,250" Name="Loot" ScrollExtent="346,250" Size="346,250" UserMovable="true" UserResizable="true" version="2.0.0">
+            <Page Location="8,23" Name="Items" PackSize="a,a" ScrollExtent="330,157" Size="330,157">
+                <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="true" Location="298,30" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,117" Size="22,117" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Page AbsorbsInput="false" Location="10,30" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="310,117" ScrollSize="1,44" Size="310,117">
+                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="absolute,fixed" ScrollExtent="240,42" ShadowStyle="/ShadowStylesNew.Drop.style" Size="240,42" TextAlignmentVertical="Center">:314c36cc225610e3:table entry</Text>
+                    <Image AbsorbsInput="false" BackgroundColor="#4A404A" BackgroundOpacity="1.000" Name="row Selection" PackSize="absolute,fixed" ScrollExtent="309,42" Size="309,42" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,20" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="330,137" Size="330,137" />
+            </Page>
+            <Button Location="223,202" MaximumSize="16384,38" MinimumSize="32,38" Name="button NBGDecline" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:314c36cca42c8975:Decline</Button>
+            <Button Location="23,202" MaximumSize="16384,38" MinimumSize="32,38" Name="button NBGGreed" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:9d9001480e71d7c4:Greed</Button>
+            <Button Location="123,202" MaximumSize="16384,38" MinimumSize="32,38" Name="button NBGNeed" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:9d900148b9393c85:Need</Button>
+            <Button Location="28,197" MaximumSize="16384,38" MinimumSize="32,38" Name="button LootAll" PackLocation="cfc,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:314c36cc30c771a9:Loot All</Button>
+            <Button Location="178,197" MaximumSize="16384,38" MinimumSize="32,38" Name="button LootSelected" PackLocation="cfc,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:314c36cc9a7aa0b6:Loot Item</Button>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="40,179" Margin="1,0,1,1" Name="LottoTimerLabel" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="147,47" Size="147,18" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">:314c36cc869988d9:Lotto will run in: </Text>
+            <Text AbsorbsInput="false" Color="#FD7373" Font="/TextStyles.Normal.NormalStyle" Location="187,179" Margin="1,0,1,1" Name="LottoTimerDisplay" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="25,24" Size="25,18" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">:314c36cc11e34cd9:60</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="212,179" Margin="4,0,0,0" Name="LottoTimerUnitsLabel" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="94,23" Size="94,18" TextAlignmentVertical="Center" Visible="false">:314c36ccd029f619:seconds</Text>
+            <Button Location="23,202" MaximumSize="16384,38" MinimumSize="32,38" Name="button RequestAll" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:314c36ccfcaac8c2:All</Button>
+            <Button Location="123,202" MaximumSize="16384,38" MinimumSize="32,38" Name="button RequestSelected" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:314c36cc9e20222f:Selected</Button>
+            <Button Location="223,202" MaximumSize="16384,38" MinimumSize="32,38" Name="button LottoDecline" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:9d900148a42c8975:Decline</Button>
+            <Button Location="215,179" MaximumSize="16384,30" MinimumSize="30,30" Name="button LeaderAssign" PackLocation="right,bottom" ScrollExtent="120,30" Size="120,30" Style="/CommonElements.PushButton.data.style" Visible="false">:314c36cc8a715368:Assign</Button>
+            <Button Location="215,210" MaximumSize="16384,30" MinimumSize="30,30" Name="button LeaderLoot" PackLocation="right,bottom" ScrollExtent="120,30" Size="120,30" Style="/CommonElements.PushButton.data.style" Visible="false">:9d9001489a7aa0b6:Loot Item</Button>
+            <Dropdownbox DataSource="GroupMemberSource" Location="9,179" Name="GroupMemberCombo" PackLocation="left,bottom" PackSize="absolute,fixed" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="197,32" Size="197,32" Style="/CommonElements.Dropdown.data.style" Visible="false" />
+            <DataSource Name="GroupMemberSource">
+                <Data Name="Test1" text=":314c36ccd2ca0b75:Group Member 1" />
+                <Data Name="Test2" text=":314c36cc4bc35acf:Group Member 2" />
+            </DataSource>
+            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="370,266" Size="370,266">
+                <Button Location="316,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":314c36ccec278586:Window Settings" UserMovable="true" />
+                <Button Location="317,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":314c36cc574a0c6d:Help" UserMovable="true" Visible="false" />
+                <Button Location="334,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":314c36cc2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="240,70" Size="240,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="27,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="110,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="110,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:314c36ccf9ff8936:Loot</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="200,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="370,266" Size="370,266" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="370,266" Size="370,266" />
+            </Page>
+        </Page>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="42,570" Name="Heroic" PackLocation="right,center" ScrollExtent="202,94" Size="202,94" UserMovable="true">
+        <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="1066,570" Name="Heroic" PackLocation="right,center" ScrollExtent="202,94" Size="202,94" UserMovable="true" Visible="false">
             <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="8,8" Name="Starter" ScrollExtent="188,75" Size="188,75">
                 <Page AbsorbsInput="false" BackgroundColor="#FF8000" Name="Last" ScrollExtent="38,38" Size="38,38">
                     <Image AbsorbsInput="false" Location="3,3" Name="icon" PackSize="A,A" ScrollExtent="32,32" Size="32,32" Style="demo1" />

@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Namespace Name="ShadowStyles">
+        <Namespace Name="ChatSimple">
+            <ShadowStyle Name="Outline1" />
+        </Namespace>
+        <Namespace Name="Chat">
+            <ShadowStyle Name="Outline1" />
+        </Namespace>
+        <Namespace Name="Outline">
+            <Namespace Name="BonusCriticals">
+                <Namespace Name="Mythical">
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x0_y_3" NextShadowStyle="Outline_x0_y_2" Offset="0,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x0_y_2" NextShadowStyle="Outline_x0_y2" Offset="0,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x0_y2" NextShadowStyle="Outline_x0_y3" Offset="0,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x0_y3" NextShadowStyle="Outline_x1_y_3" Offset="0,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x1_y_3" NextShadowStyle="Outline_x1_y_2" Offset="1,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x1_y_2" NextShadowStyle="Outline_x1_y2" Offset="1,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x1_y2" NextShadowStyle="Outline_x1_y3" Offset="1,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x1_y3" NextShadowStyle="Outline_x2_y_3" Offset="1,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x2_y_3" NextShadowStyle="Outline_x2_y_2" Offset="2,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x2_y_2" NextShadowStyle="Outline_x2_y_1" Offset="2,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x2_y_1" NextShadowStyle="Outline_x2_y0" Offset="2,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x2_y0" NextShadowStyle="Outline_x2_y1" Offset="2,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x2_y1" NextShadowStyle="Outline_x2_y2" Offset="2,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x2_y2" NextShadowStyle="Outline_x2_y3" Offset="2,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x2_y3" NextShadowStyle="Outline_x3_y_3" Offset="2,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x3_y_3" NextShadowStyle="Outline_x3_y_2" Offset="3,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x3_y_2" NextShadowStyle="Outline_x3_y_1" Offset="3,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x3_y_1" NextShadowStyle="Outline_x3_y0" Offset="3,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x3_y0" NextShadowStyle="Outline_x3_y1" Offset="3,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x3_y1" NextShadowStyle="Outline_x3_y2" Offset="3,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x3_y2" NextShadowStyle="Outline_x3_y3" Offset="3,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x3_y3" NextShadowStyle="Outline_x_3_y_3" Offset="3,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_3_y_3" NextShadowStyle="Outline_x_3_y_2" Offset="-3,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_3_y_2" NextShadowStyle="Outline_x_3_y_1" Offset="-3,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_3_y_1" NextShadowStyle="Outline_x_3_y0" Offset="-3,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_3_y0" NextShadowStyle="Outline_x_3_y1" Offset="-3,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_3_y1" NextShadowStyle="Outline_x_3_y2" Offset="-3,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_3_y2" NextShadowStyle="Outline_x_3_y3" Offset="-3,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_3_y3" NextShadowStyle="Outline_x_2_y_3" Offset="-3,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_2_y_3" NextShadowStyle="Outline_x_2_y_2" Offset="-2,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_2_y_2" NextShadowStyle="Outline_x_2_y_1" Offset="-2,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_2_y_1" NextShadowStyle="Outline_x_2_y0" Offset="-2,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_2_y0" NextShadowStyle="Outline_x_2_y1" Offset="-2,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_2_y1" NextShadowStyle="Outline_x_2_y2" Offset="-2,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_2_y2" NextShadowStyle="Outline_x_2_y3" Offset="-2,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_2_y3" NextShadowStyle="Outline_x_1_y_3" Offset="-2,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_1_y_3" NextShadowStyle="Outline_x_1_y_2" Offset="-1,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_1_y_2" NextShadowStyle="Outline_x_1_y2" Offset="-1,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_1_y2" NextShadowStyle="Outline_x_1_y3" Offset="-1,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF00FF" Name="Outline_x_1_y3" NextShadowStyle="BlackOutline1" Offset="-1,3" Opacity="0.600" />
+                </Namespace>
+                <Namespace Name="Fabled">
+                    <ShadowStyle Color="#FF0000" Name="Outline_x0_y_3" NextShadowStyle="Outline_x0_y_2" Offset="0,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x0_y_2" NextShadowStyle="Outline_x0_y2" Offset="0,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x0_y2" NextShadowStyle="Outline_x0_y3" Offset="0,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x0_y3" NextShadowStyle="Outline_x1_y_3" Offset="0,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x1_y_3" NextShadowStyle="Outline_x1_y_2" Offset="1,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x1_y_2" NextShadowStyle="Outline_x1_y2" Offset="1,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x1_y2" NextShadowStyle="Outline_x1_y3" Offset="1,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x1_y3" NextShadowStyle="Outline_x2_y_3" Offset="1,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x2_y_3" NextShadowStyle="Outline_x2_y_2" Offset="2,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x2_y_2" NextShadowStyle="Outline_x2_y_1" Offset="2,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x2_y_1" NextShadowStyle="Outline_x2_y0" Offset="2,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x2_y0" NextShadowStyle="Outline_x2_y1" Offset="2,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x2_y1" NextShadowStyle="Outline_x2_y2" Offset="2,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x2_y2" NextShadowStyle="Outline_x2_y3" Offset="2,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x2_y3" NextShadowStyle="Outline_x3_y_3" Offset="2,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x3_y_3" NextShadowStyle="Outline_x3_y_2" Offset="3,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x3_y_2" NextShadowStyle="Outline_x3_y_1" Offset="3,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x3_y_1" NextShadowStyle="Outline_x3_y0" Offset="3,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x3_y0" NextShadowStyle="Outline_x3_y1" Offset="3,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x3_y1" NextShadowStyle="Outline_x3_y2" Offset="3,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x3_y2" NextShadowStyle="Outline_x3_y3" Offset="3,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x3_y3" NextShadowStyle="Outline_x_3_y_3" Offset="3,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_3_y_3" NextShadowStyle="Outline_x_3_y_2" Offset="-3,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_3_y_2" NextShadowStyle="Outline_x_3_y_1" Offset="-3,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_3_y_1" NextShadowStyle="Outline_x_3_y0" Offset="-3,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_3_y0" NextShadowStyle="Outline_x_3_y1" Offset="-3,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_3_y1" NextShadowStyle="Outline_x_3_y2" Offset="-3,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_3_y2" NextShadowStyle="Outline_x_3_y3" Offset="-3,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_3_y3" NextShadowStyle="Outline_x_2_y_3" Offset="-3,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_2_y_3" NextShadowStyle="Outline_x_2_y_2" Offset="-2,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_2_y_2" NextShadowStyle="Outline_x_2_y_1" Offset="-2,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_2_y_1" NextShadowStyle="Outline_x_2_y0" Offset="-2,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_2_y0" NextShadowStyle="Outline_x_2_y1" Offset="-2,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_2_y1" NextShadowStyle="Outline_x_2_y2" Offset="-2,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_2_y2" NextShadowStyle="Outline_x_2_y3" Offset="-2,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_2_y3" NextShadowStyle="Outline_x_1_y_3" Offset="-2,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_1_y_3" NextShadowStyle="Outline_x_1_y_2" Offset="-1,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_1_y_2" NextShadowStyle="Outline_x_1_y2" Offset="-1,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_1_y2" NextShadowStyle="Outline_x_1_y3" Offset="-1,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FF0000" Name="Outline_x_1_y3" NextShadowStyle="BlackOutline1" Offset="-1,3" Opacity="0.600" />
+                </Namespace>
+                <Namespace Name="Legendary">
+                    <ShadowStyle Color="#FFC993" Name="Outline_x0_y_3" NextShadowStyle="Outline_x0_y_2" Offset="0,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x0_y_2" NextShadowStyle="Outline_x0_y2" Offset="0,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x0_y2" NextShadowStyle="Outline_x0_y3" Offset="0,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x0_y3" NextShadowStyle="Outline_x1_y_3" Offset="0,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x1_y_3" NextShadowStyle="Outline_x1_y_2" Offset="1,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x1_y_2" NextShadowStyle="Outline_x1_y2" Offset="1,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x1_y2" NextShadowStyle="Outline_x1_y3" Offset="1,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x1_y3" NextShadowStyle="Outline_x2_y_3" Offset="1,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x2_y_3" NextShadowStyle="Outline_x2_y_2" Offset="2,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x2_y_2" NextShadowStyle="Outline_x2_y_1" Offset="2,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x2_y_1" NextShadowStyle="Outline_x2_y0" Offset="2,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x2_y0" NextShadowStyle="Outline_x2_y1" Offset="2,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x2_y1" NextShadowStyle="Outline_x2_y2" Offset="2,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x2_y2" NextShadowStyle="Outline_x2_y3" Offset="2,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x2_y3" NextShadowStyle="Outline_x3_y_3" Offset="2,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x3_y_3" NextShadowStyle="Outline_x3_y_2" Offset="3,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x3_y_2" NextShadowStyle="Outline_x3_y_1" Offset="3,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x3_y_1" NextShadowStyle="Outline_x3_y0" Offset="3,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x3_y0" NextShadowStyle="Outline_x3_y1" Offset="3,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x3_y1" NextShadowStyle="Outline_x3_y2" Offset="3,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x3_y2" NextShadowStyle="Outline_x3_y3" Offset="3,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x3_y3" NextShadowStyle="Outline_x_3_y_3" Offset="3,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_3_y_3" NextShadowStyle="Outline_x_3_y_2" Offset="-3,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_3_y_2" NextShadowStyle="Outline_x_3_y_1" Offset="-3,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_3_y_1" NextShadowStyle="Outline_x_3_y0" Offset="-3,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_3_y0" NextShadowStyle="Outline_x_3_y1" Offset="-3,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_3_y1" NextShadowStyle="Outline_x_3_y2" Offset="-3,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_3_y2" NextShadowStyle="Outline_x_3_y3" Offset="-3,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_3_y3" NextShadowStyle="Outline_x_2_y_3" Offset="-3,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_2_y_3" NextShadowStyle="Outline_x_2_y_2" Offset="-2,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_2_y_2" NextShadowStyle="Outline_x_2_y_1" Offset="-2,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_2_y_1" NextShadowStyle="Outline_x_2_y0" Offset="-2,-1" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_2_y0" NextShadowStyle="Outline_x_2_y1" Offset="-2,0" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_2_y1" NextShadowStyle="Outline_x_2_y2" Offset="-2,1" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_2_y2" NextShadowStyle="Outline_x_2_y3" Offset="-2,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_2_y3" NextShadowStyle="Outline_x_1_y_3" Offset="-2,3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_1_y_3" NextShadowStyle="Outline_x_1_y_2" Offset="-1,-3" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_1_y_2" NextShadowStyle="Outline_x_1_y2" Offset="-1,-2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_1_y2" NextShadowStyle="Outline_x_1_y3" Offset="-1,2" Opacity="0.600" />
+                    <ShadowStyle Color="#FFC993" Name="Outline_x_1_y3" NextShadowStyle="BlackOutline1" Offset="-1,3" Opacity="0.600" />
+                </Namespace>
+            </Namespace>
+            <Namespace Name="White">
+                <ShadowStyle Color="#FFFFFF" Name="Outline1" NextShadowStyle="Outline1_2" Offset="0,-2" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline1_2" NextShadowStyle="Outline2" Offset="1,-2" Opacity="0.800" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline2" NextShadowStyle="Outline2_3" Offset="2,-2" Opacity="0.650" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline2_3" NextShadowStyle="Outline3" Offset="2,-1" Opacity="0.800" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline3" NextShadowStyle="Outline3_4" Offset="2,0" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline3_4" NextShadowStyle="Outline4" Offset="2,1" Opacity="0.800" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline4" NextShadowStyle="Outline4_5" Offset="2,2" Opacity="0.650" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline4_5" NextShadowStyle="Outline5" Offset="1,2" Opacity="0.800" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline5" NextShadowStyle="Outline5_6" Offset="0,2" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline5_6" NextShadowStyle="Outline6" Offset="-1,2" Opacity="0.800" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline6" NextShadowStyle="Outline6_7" Offset="-2,2" Opacity="0.650" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline6_7" NextShadowStyle="Outline7" Offset="-2,1" Opacity="0.800" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline7" NextShadowStyle="Outline7_8" Offset="-2,0" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline7_8" NextShadowStyle="Outline8" Offset="-2,-1" Opacity="0.800" />
+                <ShadowStyle Color="#FFFFFF" Name="Outline8" NextShadowStyle="BlackOutline1" Offset="-2,-2" Opacity="0.650" />
+            </Namespace>
+            <Namespace Name="QuestUpdate">
+                <ShadowStyle Color="#64C8FF" Name="Outline1" NextShadowStyle="Outline1_2" Offset="0,-2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline1_2" NextShadowStyle="Outline2" Offset="1,-2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline2" NextShadowStyle="Outline2_3" Offset="2,-2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline2_3" NextShadowStyle="Outline3" Offset="2,-1" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline3" NextShadowStyle="Outline3_4" Offset="2,0" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline3_4" NextShadowStyle="Outline4" Offset="2,1" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline4" NextShadowStyle="Outline4_5" Offset="2,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline4_5" NextShadowStyle="Outline5" Offset="1,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline5" NextShadowStyle="Outline5_6" Offset="0,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline5_6" NextShadowStyle="Outline6" Offset="-1,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline6" NextShadowStyle="Outline6_7" Offset="-2,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline6_7" NextShadowStyle="Outline7" Offset="-2,1" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline7" NextShadowStyle="Outline7_8" Offset="-2,0" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline7_8" NextShadowStyle="Outline8" Offset="-2,-1" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline8" NextShadowStyle="BlackOutline1" Offset="-2,-2" Opacity="0.300" />
+            </Namespace>
+            <Namespace Name="SoftBlack">
+                <ShadowStyle Name="Outline1" NextShadowStyle="Outline2" Offset="0,-1" Opacity="0.200" />
+                <ShadowStyle Name="Outline2" NextShadowStyle="Outline3" Offset="1,0" Opacity="0.200" />
+                <ShadowStyle Name="Outline3" NextShadowStyle="Outline4" Opacity="0.600" />
+                <ShadowStyle Name="Outline4" NextShadowStyle="Outline5" Offset="0,1" Opacity="0.200" />
+                <ShadowStyle Name="Outline5" Offset="-1,0" Opacity="0.200" />
+            </Namespace>
+            <Namespace Name="SpellAttack">
+                <ShadowStyle Color="#64C8FF" Name="Outline1" NextShadowStyle="Outline1_2" Offset="0,-2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline1_2" NextShadowStyle="Outline2" Offset="1,-2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline2" NextShadowStyle="Outline2_3" Offset="2,-2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline2_3" NextShadowStyle="Outline3" Offset="2,-1" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline3" NextShadowStyle="Outline3_4" Offset="2,0" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline3_4" NextShadowStyle="Outline4" Offset="2,1" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline4" NextShadowStyle="Outline4_5" Offset="2,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline4_5" NextShadowStyle="Outline5" Offset="1,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline5" NextShadowStyle="Outline5_6" Offset="0,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline5_6" NextShadowStyle="Outline6" Offset="-1,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline6" NextShadowStyle="Outline6_7" Offset="-2,2" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline6_7" NextShadowStyle="Outline7" Offset="-2,1" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline7" NextShadowStyle="Outline7_8" Offset="-2,0" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline7_8" NextShadowStyle="Outline8" Offset="-2,-1" Opacity="0.300" />
+                <ShadowStyle Color="#64C8FF" Name="Outline8" NextShadowStyle="BlackOutline1" Offset="-2,-2" Opacity="0.300" />
+            </Namespace>
+            <Namespace Name="Aggro">
+                <ShadowStyle Color="#FF0000" Name="Outline1" NextShadowStyle="Outline1_2" Offset="0,-2" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline1_2" NextShadowStyle="Outline2" Offset="1,-2" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline2" NextShadowStyle="Outline2_3" Offset="2,-2" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline2_3" NextShadowStyle="Outline3" Offset="2,-1" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline3" NextShadowStyle="Outline3_4" Offset="2,0" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline3_4" NextShadowStyle="Outline4" Offset="2,1" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline4" NextShadowStyle="Outline4_5" Offset="2,2" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline4_5" NextShadowStyle="Outline5" Offset="1,2" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline5" NextShadowStyle="Outline5_6" Offset="0,2" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline5_6" NextShadowStyle="Outline6" Offset="-1,2" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline6" NextShadowStyle="Outline6_7" Offset="-2,2" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline6_7" NextShadowStyle="Outline7" Offset="-2,1" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline7" NextShadowStyle="Outline7_8" Offset="-2,0" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline7_8" NextShadowStyle="Outline8" Offset="-2,-1" Opacity="0.300" />
+                <ShadowStyle Color="#FF0000" Name="Outline8" NextShadowStyle="BlackOutline1" Offset="-2,-2" Opacity="0.300" />
+            </Namespace>
+            <Namespace Name="DarkCyan">
+                <ShadowStyle Color="#008080" Name="Outline1" NextShadowStyle="Outline1_2" Offset="0,-2" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline1_2" NextShadowStyle="Outline2" Offset="1,-2" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline2" NextShadowStyle="Outline2_3" Offset="2,-2" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline2_3" NextShadowStyle="Outline3" Offset="2,-1" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline3" NextShadowStyle="Outline3_4" Offset="2,0" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline3_4" NextShadowStyle="Outline4" Offset="2,1" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline4" NextShadowStyle="Outline4_5" Offset="2,2" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline4_5" NextShadowStyle="Outline5" Offset="1,2" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline5" NextShadowStyle="Outline5_6" Offset="0,2" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline5_6" NextShadowStyle="Outline6" Offset="-1,2" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline6" NextShadowStyle="Outline6_7" Offset="-2,2" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline6_7" NextShadowStyle="Outline7" Offset="-2,1" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline7" NextShadowStyle="Outline7_8" Offset="-2,0" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline7_8" NextShadowStyle="Outline8" Offset="-2,-1" Opacity="0.500" />
+                <ShadowStyle Color="#008080" Name="Outline8" NextShadowStyle="BlackOutline1" Offset="-2,-2" Opacity="0.500" />
+            </Namespace>
+            <Namespace Name="Green">
+                <ShadowStyle Color="#00FF00" Name="Outline1" NextShadowStyle="Outline1_2" Offset="0,-2" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline1_2" NextShadowStyle="Outline2" Offset="1,-2" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline2" NextShadowStyle="Outline2_3" Offset="2,-2" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline2_3" NextShadowStyle="Outline3" Offset="2,-1" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline3" NextShadowStyle="Outline3_4" Offset="2,0" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline3_4" NextShadowStyle="Outline4" Offset="2,1" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline4" NextShadowStyle="Outline4_5" Offset="2,2" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline4_5" NextShadowStyle="Outline5" Offset="1,2" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline5" NextShadowStyle="Outline5_6" Offset="0,2" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline5_6" NextShadowStyle="Outline6" Offset="-1,2" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline6" NextShadowStyle="Outline6_7" Offset="-2,2" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline6_7" NextShadowStyle="Outline7" Offset="-2,1" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline7" NextShadowStyle="Outline7_8" Offset="-2,0" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline7_8" NextShadowStyle="Outline8" Offset="-2,-1" Opacity="0.250" />
+                <ShadowStyle Color="#00FF00" Name="Outline8" NextShadowStyle="BlackOutline1" Offset="-2,-2" Opacity="0.250" />
+            </Namespace>
+            <Namespace Name="Cyan">
+                <ShadowStyle Color="#00FFFF" Name="Outline1" NextShadowStyle="Outline1_2" Offset="0,-2" />
+                <ShadowStyle Color="#00FFFF" Name="Outline1_2" NextShadowStyle="Outline2" Offset="1,-2" Opacity="0.800" />
+                <ShadowStyle Color="#00FFFF" Name="Outline2" NextShadowStyle="Outline2_3" Offset="2,-2" Opacity="0.650" />
+                <ShadowStyle Color="#00FFFF" Name="Outline2_3" NextShadowStyle="Outline3" Offset="2,-1" Opacity="0.800" />
+                <ShadowStyle Color="#00FFFF" Name="Outline3" NextShadowStyle="Outline3_4" Offset="2,0" />
+                <ShadowStyle Color="#00FFFF" Name="Outline3_4" NextShadowStyle="Outline4" Offset="2,1" Opacity="0.800" />
+                <ShadowStyle Color="#00FFFF" Name="Outline4" NextShadowStyle="Outline4_5" Offset="2,2" Opacity="0.650" />
+                <ShadowStyle Color="#00FFFF" Name="Outline4_5" NextShadowStyle="Outline5" Offset="1,2" Opacity="0.800" />
+                <ShadowStyle Color="#00FFFF" Name="Outline5" NextShadowStyle="Outline5_6" Offset="0,2" />
+                <ShadowStyle Color="#00FFFF" Name="Outline5_6" NextShadowStyle="Outline6" Offset="-1,2" Opacity="0.800" />
+                <ShadowStyle Color="#00FFFF" Name="Outline6" NextShadowStyle="Outline6_7" Offset="-2,2" Opacity="0.650" />
+                <ShadowStyle Color="#00FFFF" Name="Outline6_7" NextShadowStyle="Outline7" Offset="-2,1" Opacity="0.800" />
+                <ShadowStyle Color="#00FFFF" Name="Outline7" NextShadowStyle="Outline7_8" Offset="-2,0" />
+                <ShadowStyle Color="#00FFFF" Name="Outline7_8" NextShadowStyle="Outline8" Offset="-2,-1" Opacity="0.800" />
+                <ShadowStyle Color="#00FFFF" Name="Outline8" NextShadowStyle="BlackOutline1" Offset="-2,-2" Opacity="0.650" />
+            </Namespace>
+            <Namespace Name="Yellow">
+                <ShadowStyle Color="#FFFF00" Name="Outline1" NextShadowStyle="Outline1_2" Offset="0,-2" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline1_2" NextShadowStyle="Outline2" Offset="1,-2" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline2" NextShadowStyle="Outline2_3" Offset="2,-2" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline2_3" NextShadowStyle="Outline3" Offset="2,-1" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline3" NextShadowStyle="Outline3_4" Offset="2,0" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline3_4" NextShadowStyle="Outline4" Offset="2,1" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline4" NextShadowStyle="Outline4_5" Offset="2,2" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline4_5" NextShadowStyle="Outline5" Offset="1,2" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline5" NextShadowStyle="Outline5_6" Offset="0,2" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline5_6" NextShadowStyle="Outline6" Offset="-1,2" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline6" NextShadowStyle="Outline6_7" Offset="-2,2" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline6_7" NextShadowStyle="Outline7" Offset="-2,1" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline7" NextShadowStyle="Outline7_8" Offset="-2,0" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline7_8" NextShadowStyle="Outline8" Offset="-2,-1" Opacity="0.500" />
+                <ShadowStyle Color="#FFFF00" Name="Outline8" NextShadowStyle="BlackOutline1" Offset="-2,-2" Opacity="0.500" />
+            </Namespace>
+            <ShadowStyle Name="BlackOutline8" Offset="-1,-1" />
+            <ShadowStyle Name="BlackOutline7" NextShadowStyle="BlackOutline8" Offset="-1,0" />
+            <ShadowStyle Name="BlackOutline6" NextShadowStyle="BlackOutline7" Offset="-1,1" />
+            <ShadowStyle Name="BlackOutline5" NextShadowStyle="BlackOutline6" Offset="0,1" />
+            <ShadowStyle Name="BlackOutline4" NextShadowStyle="BlackOutline5" />
+            <ShadowStyle Name="BlackOutline3" NextShadowStyle="BlackOutline4" Offset="1,0" />
+            <ShadowStyle Name="BlackOutline2" NextShadowStyle="BlackOutline3" Offset="1,-1" />
+            <ShadowStyle Name="BlackOutline1" NextShadowStyle="BlackOutline2" Offset="0,-1" />
+        </Namespace>
+        <Namespace Name="BlackOutlineNoShadow">
+            <ShadowStyle Name="Outline8" Offset="-1,-1" Opacity="0.500" />
+            <ShadowStyle Name="Outline7" NextShadowStyle="Outline8" Offset="-1,0" Opacity="0.500" />
+            <ShadowStyle Name="Outline6" NextShadowStyle="Outline7" Offset="-1,1" Opacity="0.500" />
+            <ShadowStyle Name="Outline5" NextShadowStyle="Outline6" Offset="0,1" Opacity="0.500" />
+            <ShadowStyle Name="Outline4" NextShadowStyle="Outline5" Opacity="0.500" />
+            <ShadowStyle Name="Outline3" NextShadowStyle="Outline4" Offset="1,0" Opacity="0.500" />
+            <ShadowStyle Name="Outline2" NextShadowStyle="Outline3" Offset="1,-1" Opacity="0.500" />
+            <ShadowStyle Name="Outline1" NextShadowStyle="Outline2" Offset="0,-1" Opacity="0.500" />
+        </Namespace>
+        <Namespace Name="BlackRedOutlineNoShadow">
+            <ShadowStyle Color="#FF0000" Name="RedOutline7_8" NextShadowStyle="RedOutline8" Offset="-2,-1" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline6_7" NextShadowStyle="RedOutline7" Offset="-2,1" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline5_6" NextShadowStyle="RedOutline6" Offset="-1,2" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline4_5" NextShadowStyle="RedOutline5" Offset="1,2" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline3_4" NextShadowStyle="RedOutline4" Offset="2,1" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline2_3" NextShadowStyle="RedOutline3" Offset="2,-1" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline1_2" NextShadowStyle="RedOutline2" Offset="1,-2" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline2" NextShadowStyle="RedOutline2_3" Offset="2,-2" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline1" NextShadowStyle="RedOutline1_2" Offset="0,-2" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline3" NextShadowStyle="RedOutline3_4" Offset="2,0" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline4" NextShadowStyle="RedOutline4_5" Offset="2,2" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline5" NextShadowStyle="RedOutline5_6" Offset="0,2" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline6" NextShadowStyle="RedOutline6_7" Offset="-2,2" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline7" NextShadowStyle="RedOutline7_8" Offset="-2,0" Opacity="0.500" />
+            <ShadowStyle Color="#FF0000" Name="RedOutline8" NextShadowStyle="BlackOutline1" Offset="-2,-2" Opacity="0.500" />
+            <ShadowStyle Name="BlackOutline8" Offset="-1,-1" />
+            <ShadowStyle Name="BlackOutline7" NextShadowStyle="BlackOutline8" Offset="-1,0" />
+            <ShadowStyle Name="BlackOutline6" NextShadowStyle="BlackOutline7" Offset="-1,1" />
+            <ShadowStyle Name="BlackOutline5" NextShadowStyle="BlackOutline6" Offset="0,1" />
+            <ShadowStyle Name="BlackOutline4" NextShadowStyle="BlackOutline5" />
+            <ShadowStyle Name="BlackOutline3" NextShadowStyle="BlackOutline4" Offset="1,0" />
+            <ShadowStyle Name="BlackOutline2" NextShadowStyle="BlackOutline3" Offset="1,-1" />
+            <ShadowStyle Name="BlackOutline1" NextShadowStyle="BlackOutline2" Offset="0,-1" />
+        </Namespace>
+        <ShadowStyle Name="Outline5" NextShadowStyle="Outline6" Offset="2,2" Opacity="0.500" />
+        <ShadowStyle Name="Outline1" NextShadowStyle="Outline2" />
+        <ShadowStyle Name="Outline2" NextShadowStyle="Outline3" Offset="-1,1" />
+        <ShadowStyle Name="Outline3" NextShadowStyle="Outline4" Offset="-1,-1" />
+        <ShadowStyle Name="Outline4" NextShadowStyle="Outline5" Offset="1,-1" />
+        <ShadowStyle Name="Basic2" Offset="2,2" Opacity="0.500" />
+        <ShadowStyle Name="Basic1" NextShadowStyle="Basic2" Opacity="0.750" />
+        <ShadowStyle Name="LargeText" NextShadowStyle="LargeText2" Opacity="0.750" />
+        <ShadowStyle Name="LargeText2" Offset="2,2" Opacity="0.500" />
+        <ShadowStyle Name="Outline6" Offset="3,3" Opacity="0.250" />
+        <ShadowStyle Name="SmallText" />
+    </Namespace>

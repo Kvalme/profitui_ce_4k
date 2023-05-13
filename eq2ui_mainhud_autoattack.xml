@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="375,511" MaximumSize="900,300" MinimumSize="150,34" Name="AutoAttack" ScrollExtent="361,100" Size="361,100" Tooltip=":d988c5de4015d786:Auto Attack Timer" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
+            <ProgressbarStyle Bar.Background="progress_fill" Name="progress_style" />
+            <ImageStyle Name="progress_fill">
+                <ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="221,483,379,489" />
+            </ImageStyle>
+            <Page AbsorbsInput="false" DynamicData="/GameData.Self.TimeSinceRangedAutoAttack" Location="6,7" Name="Ranged" PackSize="Absolute,Absolute" ScrollExtent="349,100" Size="349,100">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="0,-4" MaximumSize="16384,21" Name="Text" PackSize="a,f" ScrollExtent="349,26" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="349,21" TextAlignment="Center" TextColor="#F0D080">:d988c5de7e9548aa:Ranged Auto Attack</Text>
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Self.TimeSinceRangedAutoAttack" Location="3,19" Name="Bar" PackSize="a,f" Progress="0.500" ScrollExtent="343,8" Size="343,8" Style="progress_style" Visible="false" />
+                <Image AbsorbsInput="false" Location="3,19" Name="Bkg" PackSize="a,f" ScrollExtent="343,8" Size="343,8" SourceRect="220,472,380,478" SourceResource="images/window_elements_generic.dds" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,16" Name="Frame" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="349,14" Size="349,14" />
+            </Page>
+            <Page AbsorbsInput="false" DynamicData="/GameData.Self.TimeSinceAutoAttack" Location="6,39" Name="Melee" PackSize="Absolute,Absolute" ScrollExtent="349,100" Size="349,100">
+                <Page AbsorbsInput="false" Name="Primary" PackSize="Absolute,Absolute" ScrollExtent="349,100" Size="349,100">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Margin="1,0,2,2" Name="MLabel" PackSize="absolute,fixed" ScrollExtent="350,28" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="350,20" TextAlignment="Center" TextColor="#F0D080">:d988c5dea3993fcc:Melee Auto Attack</Text>
+                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Self.TimeSinceAutoAttack" Location="3,23" Name="Bar" PackSize="a,f" Progress="0.500" ScrollExtent="343,8" Size="343,8" Style="progress_style" />
+                    <Image AbsorbsInput="false" Location="3,23" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="343,8" Size="343,8" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,20" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="349,14" Size="349,14" />
+                </Page>
+                <Page AbsorbsInput="false" DynamicData="/GameData.Self.TimeSinceSecondaryAutoAttack" Name="Secondary" PackSize="Absolute,Absolute" ScrollExtent="349,100" Size="349,100">
+                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" DynamicData="/GameData.Self.TimeSinceSecondaryAutoAttack" Location="3,36" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="343,8" Size="343,8" Style="progress_style" />
+                    <Image AbsorbsInput="false" Location="3,36" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="343,8" Size="343,8" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,33" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="349,14" Size="349,14" />
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="361,100" Size="361,100">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="361,100" Size="361,100" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="357,96" Size="357,96" />
+            </Page>
+        </Page>

@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page AlwaysOnTop="false" Location="624,74" MaximumSize="800,600" MinimumSize="800,600" Name="Tutorial" PackLocation="center,center" ScrollExtent="800,600" Size="800,600" UserMovable="true" Visible="false">
+            <Button Location="768,13" Name="CloseButton" OnPress="window_close MainHUD Tutorial" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.MiniWindowFrame.data.close.style" Tooltip=":3c66d8d42d3f513f:Close" UserMovable="true" />
+            <Page Name="DungeonMakerEdit" ScrollExtent="800,600" Size="800,600">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d48e7a0d2d:Dungeon Maker Toolbox</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,33" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4c79090d9:Dungeon Maker lets you create your own dungeon for others to play.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="800,520" Size="800,520">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="228,329" Name="Text" ScrollExtent="544,161" Size="544,161" TextAlignment="Center" TextColor="#403030">:3c66d8d4de41d3ed:Challenge rating measures the size and complexity of your dungeon.  Each spawner and effect object you place increases the challenge rating.  Effect objects increase the point value for each spawner it affects.
+
+The challenge rating value for each object is displayed to the right of the object name.</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="228,297" Name="Text" ScrollExtent="544,33" Size="544,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4de78a495:Challenge Rating</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="228,162" Name="Text" ScrollExtent="544,33" Size="544,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d45835915d:Filtering</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="228,193" Name="Text" ScrollExtent="544,89" Size="544,89" TextAlignment="Center" TextColor="#403030">:3c66d8d47895ddea:Click the filter buttons to toggle display of Spawners, Effect Objects or Decorative Objects.  Search for objects by entering any part of their name into the search box.</Text>
+                    <Image Location="24,22" Name="Image" PackLocation="center,top" ScrollExtent="196,377" Size="196,377" Stretch="false" StretchType="ProportionalBound" Style="ImageList.DMToolbox" />
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="228,26" Name="Text" ScrollExtent="544,33" Size="544,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4493c8359:Placing Objects</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="228,58" Name="Text" ScrollExtent="544,94" Size="544,94" TextAlignment="Center" TextColor="#403030">:3c66d8d456f8610b:Select an object in the list and click Place Object.  The object replaces your mouse cursor and is placed in the world by left clicking.  Hold control when placing items to place multiple copies.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="800,520" Size="800,520" />
+                </Page>
+            </Page>
+            <Page Name="Beastlord_Affinity" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d4237667b4:Affinity</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,33" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d47a10b022:The Beastlord and his warder are a deadly combination.  You have unlocked affinity.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="800,520" Size="800,520">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="425,356" Name="Text" ScrollExtent="349,126" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="349,126" TextAlignment="Center" TextColor="#FFFF00">:3c66d8d428e49e78:Journeyman
+Adept
+Expert
+Master
+Grandmaster
+</Text>
+                    <Image Location="169,119" Name="Image" PackLocation="center,top" Rotation="0.250" ScrollExtent="126,82" Size="126,82" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="425,266" Name="Text" ScrollExtent="349,86" Size="349,86" TextAlignment="Center" TextColor="#403030">:3c66d8d454aa96ca:Raising affinity increases a warder&apos;s rank.  Each rank increases the warder&apos;s health, mana and ability strength.</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="425,232" Name="Text" ScrollExtent="346,33" Size="346,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d486f55400:Warder Ranks</Text>
+                    <Image Location="382,125" Name="Image" PackLocation="center,top" Rotation="0.400" ScrollExtent="126,91" Size="126,91" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="473,68" Name="Text" ScrollExtent="303,33" Size="303,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4d1a15366:Primal Affinities</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="491,102" Name="Text" ScrollExtent="285,73" Size="285,73" TextAlignment="Center" TextColor="#403030">:3c66d8d4f9735bc8:Maximizing affinity unlocks a unique primal tactic for that family.</Text>
+                    <Image Location="23,146" Name="Image" PackLocation="center,top" ScrollExtent="387,353" Size="387,353" StretchType="ProportionalBound" Style="BLImageList.Pet_Window" />
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="43,13" Name="Text" ScrollExtent="388,33" Size="388,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d43d4170cb:Affinity Gain</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="43,45" Name="Text" ScrollExtent="388,75" Size="388,75" TextAlignment="Center" TextColor="#403030">:3c66d8d4be0569d9:Warders gain affinity through the use of primal tactics and advantages.  Affinity is displayed on the Warders tab of the Character window.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="800,520" Size="800,520" />
+                </Page>
+            </Page>
+            <Page Name="Beastlord_Tactics" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d436d47aac:Primal Tactics and Savagery</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,33" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d490c07560:You have unlocked Primal Tactics and Savagery</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="800,253" Size="800,253">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="11,192" Name="Text" ScrollExtent="777,46" Size="777,46" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d41a09daec:Savagery does not decay while in combat, but will decay while out of combat. Switching stances at any time will reset savagery to zero.</Text>
+                    <Image Location="201,135" Name="Image" PackLocation="center,top" ScrollExtent="396,55" Size="396,55" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Savagery" />
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Name="Text" ScrollExtent="777,33" Size="777,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4c9a1375e:Savagery</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="11,45" Name="Text" ScrollExtent="777,88" Size="777,88" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d43053c3ec:Savagery is a measure of how well you and your companion are working together.  Execution of combat arts and advantages earn savagery points.  Every 100 points of savagery generated will raise your savagery level by 1, up to a maximum level of 5.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="800,253" Size="800,253" />
+                </Page>
+                <Page Location="0,341" Name="Element" ScrollExtent="800,259" Size="800,259">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="11,173" Name="Text" ScrollExtent="777,64" Size="777,64" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4e2424b1a:When out of combat you may right-click a Primal Tactic icon on the hotbar to swap the ability for a different Primal Tactic.</Text>
+                    <Image Location="133,106" Name="Image" PackLocation="center,top" ScrollExtent="533,62" Size="533,62" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Primal" />
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Name="Text" ScrollExtent="777,33" Size="777,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d46e7fb524:Primal Tactics</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="11,42" Name="Text" ScrollExtent="777,63" Size="777,63" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d46b8d6fce:Primal Tactics activate a temporary primal buff and expend savagery.  Continued execution of primals will increase the power of the buff.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Location="0,4" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="800,255" Size="800,255" />
+                </Page>
+            </Page>
+            <Page Name="Beastlord_Advantages" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d40a542e7b:Advantages</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,33" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4c86ae43f:Your enemy&apos;s weakness is the key to survival.  You have unlocked advantages and weaknesses.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="395,520" Size="395,520">
+                    <Image Location="40,396" Name="Image" PackLocation="center,top" ScrollExtent="312,68" Size="312,68" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Advantage" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="14,313" Name="Text" PackSize="a,a" ScrollExtent="365,75" Size="365,75" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4a1298a63:While a weakness is in effect you can execute an active advantage.</Text>
+                    <Image Location="135,150" Name="Image" PackLocation="center,top" ScrollExtent="122,133" Size="122,133" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Weakness" />
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Name="Text" PackSize="a,f" ScrollExtent="372,33" Size="372,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4592e8661:Weaknesses</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="14,50" Name="Text" PackSize="a,a" ScrollExtent="365,90" Size="365,90" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4257ecf1e:Your warder can spot a weakness on any successful attack.  When this occurs, the weakness icon will appear for a period of time.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="395,520" Size="395,520" />
+                </Page>
+                <Page Location="405,80" Name="Element" ScrollExtent="395,520" Size="395,520">
+                    <Image Location="90,331" Name="Image" PackLocation="center,top" ScrollExtent="213,151" Size="213,151" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Advantage_Group" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="14,198" Name="Text" PackSize="a,a" ScrollExtent="365,121" Size="365,121" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4b40725c3:To change one of your advantages, right-click the icon on the Beastlord hotbar and select a different advantage from the list. This may only be done out of combat.
+</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Name="Text" PackSize="a,f" ScrollExtent="372,33" Size="372,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d40a542e7b_1:Advantages</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="14,66" Name="Text" PackSize="a,a" ScrollExtent="365,121" Size="365,121" TextAlignment="Center" TextColor="#403030">:3c66d8d45a8332b2:Advantages are in one of four groups.  Only the active advantage within a group can be used.  Each group has a different theme including direct damage, dot and buff groups.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="395,520" Size="395,520" />
+                </Page>
+            </Page>
+            <Page Name="Beastlord_Taming" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d46903d262:Tame Warders</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,33" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d42b2a80c2:What is a Beastlord without a friend?  You have gained the ability to tame a warder.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="290,520" Size="290,520">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="105,446" Name="Text" PackSize="a,a" ScrollExtent="158,44" ShadowStyle="/ShadowStylesNew.Outline.style" Size="158,44">:3c66d8d463d53841:Summon Warder:
+Amphibian</Text>
+                    <Image Location="53,447" Name="Image" PackLocation="center,top" ScrollExtent="43,43" Size="43,43" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Ability_Summon_Warder" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="14,363" Name="Text" PackSize="a,a" ScrollExtent="260,75" Size="260,75" TextAlignment="Center" TextColor="#403030">:3c66d8d4111e37b4:Once complete, you will gain the ability to summon a warder from that family.</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="105,314" Name="Text" PackSize="a,a" ScrollExtent="158,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="158,23">:3c66d8d480de08c8:Stare Down</Text>
+                    <Image Location="53,304" Name="Image" PackLocation="center,top" ScrollExtent="43,43" Size="43,43" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Ability_Stare_Down" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="14,220" Name="Text" PackSize="a,a" ScrollExtent="260,84" Size="260,84" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d482b52a06:Taming can take longer if you are being hit.  Use Stare Down to control the creature you are taming.</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="48,195" Margin="1,1,3,3" Name="Text" PackSize="a,a" ScrollExtent="193,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="193,16" TextAlignment="Center">:3c66d8d405109ce0:Tame Warder</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Name="Text" PackSize="a,f" ScrollExtent="267,33" Size="267,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4fee6de4a:Tame Warder Ability</Text>
+                    <Image Location="53,49" Name="Image" PackLocation="center,top" ScrollExtent="43,43" Size="43,43" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Ability_Tame_Warder" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="105,59" Name="Text" PackSize="a,a" ScrollExtent="158,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="158,23">:3c66d8d405109ce0_1:Tame Warder</Text>
+                    <Image Location="48,191" Name="Image" PackLocation="center,top" ScrollExtent="193,21" Size="193,21" Style="BLImageList.Cast_Bar" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="14,100" Name="Text" PackSize="a,a" ScrollExtent="260,86" Size="260,86" TextAlignment="Center" TextColor="#403030">:3c66d8d471ef6ada:Search for an animal you can tame.  Engage until it is at \#FFFF0050% Health\/c and activate the tame warder ability.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="290,520" Size="290,520" />
+                </Page>
+                <Page Location="300,80" Name="Element" ScrollExtent="500,520" Size="500,520">
+                    <Image Location="300,379" Name="Image" PackLocation="center,top" ScrollExtent="168,124" Size="168,124" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Warder_Hotbar" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="29,398" Name="Text" PackSize="a,f" ScrollExtent="260,89" Size="260,89" TextColor="#403030">:3c66d8d47d408d8c:Right-click a warder spell on your hotbar to switch between families that you&apos;ve tamed.</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="24,322" Name="Text" PackSize="a,f" ScrollExtent="450,56" Size="450,56" TextAlignment="Center" TextColor="#403030">:3c66d8d4c9e6c639:The appearance of each warder family is based on the last creature tamed from that family.</Text>
+                    <Image Location="165,265" Name="Image" PackLocation="center,top" ScrollExtent="168,42" Size="168,42" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Warder_Exotic" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="24,231" Name="Text" PackSize="a,f" ScrollExtent="450,27" Size="450,27" TextAlignment="Center" TextColor="#403030">:3c66d8d405edd97b:...and 4 exotic families.</Text>
+                    <Image Location="123,176" Name="Image" PackLocation="center,top" ScrollExtent="252,42" Size="252,42" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Warder_Normal2" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="24,101" Name="Text" PackSize="a,f" ScrollExtent="450,27" Size="450,27" TextAlignment="Center" TextColor="#403030">:3c66d8d42f93089c:There are 12 normal families...</Text>
+                    <Image Location="123,134" Name="Image" PackLocation="center,top" ScrollExtent="252,42" Size="252,42" Stretch="false" StretchType="ProportionalBound" Style="BLImageList.Warder_Normal1" />
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,11" Name="Text" PackSize="a,f" ScrollExtent="475,33" Size="475,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4895f8858:Warder Families</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="24,44" Name="Text" PackSize="a,f" ScrollExtent="450,56" Size="450,56" TextAlignment="Center" TextColor="#403030">:3c66d8d4530bab7a:Warders are divided among 16 families.
+Each family has a unique set of abilities.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="500,520" Size="500,520" />
+                </Page>
+            </Page>
+            <Page Name="Movement" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Margin="1,1,3,3" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d4f513581e:Basic Movement</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,31" Margin="1,1,3,3" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4a6667dba:Norrath has many places to explore, and knowing how to move in the world is very important.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="280,520" Size="280,520">
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="255,33" Size="255,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d48e176325:Keyboard Movement</Text>
+                    <Image Location="44,324" Name="Image" ScrollExtent="188,85" Size="188,85" StretchType="ProportionalBound" Style="ImageList.Spacebar" />
+                    <Text AbsorbsInput="false" Font="Styles.BodyTextStyle" Location="11,409" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="255,55" Size="255,55" TextAlignment="Center" TextColor="#403030">:3c66d8d48b726e15:Press Spacebar to jump.</Text>
+                    <Image Location="41,77" Name="Image" ScrollExtent="194,99" Size="194,99" StretchType="ProportionalBound" Style="ImageList.MovementKeys" />
+                    <Text AbsorbsInput="false" Font="Styles.BodyTextStyle" Location="11,194" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="255,126" Size="255,126" TextAlignment="Center" TextColor="#403030">:3c66d8d40c260562:W - Move Forward
+A - Turn Left
+S - Move Backward
+D - Turn Right</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="280,520" Size="280,520" />
+                </Page>
+                <Page Location="290,80" Name="Element" ScrollExtent="510,520" Size="510,520">
+                    <Text AbsorbsInput="false" Font="Styles.BodyTextStyle" Location="254,354" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="234,123" Size="234,123" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4920cb319:Hold the left button, while moving the mouse, to look around.</Text>
+                    <Image Location="68,366" Name="Image" ScrollExtent="124,120" Size="124,120" StretchType="ProportionalBound" Style="ImageList.Mouse_Left" />
+                    <Image Location="166,368" Name="Image" Rotation="0.950" ScrollExtent="50,50" Size="50,50" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Image Location="40,404" Name="Image" Rotation="0.450" ScrollExtent="50,50" Size="50,50" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Image Location="79,54" Name="Image" ScrollExtent="97,120" Size="97,120" StretchType="ProportionalBound" Style="ImageList.Mouse_Both" />
+                    <Text AbsorbsInput="false" Font="Styles.BodyTextStyle" Location="219,57" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="213,103" Size="213,103" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4de815c6c:Hold both buttons to move forward.</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="488,33" Size="488,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4f71ba9b0:Mouse Movement</Text>
+                    <Image Location="289,241" Name="Image" Rotation="0.450" ScrollExtent="50,50" Size="50,50" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Image Location="415,199" Name="Image" Rotation="0.950" ScrollExtent="50,50" Size="50,50" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Image Location="318,196" Name="Image" ScrollExtent="124,120" Size="124,120" StretchType="ProportionalBound" Style="ImageList.Mouse_Right" />
+                    <Text AbsorbsInput="false" Font="Styles.BodyTextStyle" Location="35,196" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="234,115" Size="234,115" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4a07d59f1:Hold the right button, while moving the mouse, to turn your character.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="510,520" Size="510,520" />
+                </Page>
+            </Page>
+            <Page Name="Quests" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Margin="1,1,3,3" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d460cda7fd:Quests</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,31" Margin="1,1,3,3" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d41a2750f2:Quests reward you with items, experience and the rich lore of Norrath.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="320,220" Size="320,220">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="20,107" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="193,94" Size="193,94" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d489c436ae:This symbol indicates that the character will complete a quest.</Text>
+                    <Image Location="11,14" Name="Image" ScrollExtent="101,97" Size="101,97" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Quest_Feather" />
+                    <Image Location="211,109" Name="Image" ScrollExtent="101,102" Size="101,102" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Quest_Book" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="110,11" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="200,94" Size="200,94" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4ed8f87ec:This symbol over a character&apos;s head indicates that a quest is available.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="320,220" Size="320,220" />
+                </Page>
+                <Page Location="0,310" Name="Element" ScrollExtent="320,290" Size="320,290">
+                    <Image Location="97,149" Name="Image" ScrollExtent="42,34" Size="42,34" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="125,195" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="176,77" Size="176,77" TextColor="#403030">:3c66d8d4b2f22792:Right-click to open the available options on the character.</Text>
+                    <Image Location="143,141" Name="Image" ScrollExtent="126,48" Size="126,48" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Context_Menu" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="124,21" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="176,94" Size="176,94" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d488966f16:Double-click a character to open dialog with them.</Text>
+                    <Image Location="22,162" Name="Image" ScrollExtent="100,100" Size="100,100" StretchType="ProportionalBound" Style="ImageList.Mouse_Right" />
+                    <Image Location="22,28" Name="Image" ScrollExtent="100,100" Size="100,100" StretchType="ProportionalBound" Style="ImageList.Mouse_Left" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="320,290" Size="320,290" />
+                </Page>
+                <Page Location="330,80" Name="Element" ScrollExtent="470,520" Size="470,520">
+                    <Text AbsorbsInput="false" Font="Styles.BodyTextStyle" Location="214,237" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="231,248" Size="231,248" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4b622509e:The quest window summarizes the offered quest.  
+
+Click \#FFDF8FAccept Quest\/c to begin the quest.</Text>
+                    <Image Location="31,231" Name="Image" ScrollExtent="186,272" Size="186,272" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Quest_Window" />
+                    <Image Location="266,16" Name="Image" ScrollExtent="194,194" Size="194,194" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Mini_Map" />
+                    <Text AbsorbsInput="false" Font="Styles.BodyTextStyle" Location="20,25" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="241,176" Size="241,176" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d46ec25429:The mini-map displays icons for quest-givers near you.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="470,520" Size="470,520" />
+                </Page>
+            </Page>
+            <Page Name="Tradeskills" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Margin="1,1,3,3" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d40c675a27:Tradeskills</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,31" Margin="1,1,3,3" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4596ad6ec:Tradeskills allow you to create many items from armor and weapons to furniture for your home.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="380,220" Size="380,220">
+                    <Image Location="103,15" Name="Image" ScrollExtent="200,134" Size="200,134" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Tradeskill_Station" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="19,147" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="343,55" Size="343,55" TextAlignment="Center" TextColor="#403030">:3c66d8d49834dcf9:To begin tradeskilling, click on a tradeskill station.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="380,220" Size="380,220" />
+                </Page>
+                <Page Location="0,310" Name="Element" ScrollExtent="380,290" Size="380,290">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="211,20" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="154,248" Size="154,248" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d41df409a7:Use the recipe window to find the recipe you want to complete.
+
+Enter a keyword to filter the list of recipes.</Text>
+                    <Image Location="13,18" Name="Image" ScrollExtent="203,250" Size="203,250" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Tradeskill_Recipes" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="380,290" Size="380,290" />
+                </Page>
+                <Page Location="390,80" Name="Element" ScrollExtent="410,520" Size="410,520">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="22,43" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="157,184" Size="157,184" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4691ec697:The progress window shows how close you are to completion of the recipe.</Text>
+                    <Image Location="184,31" Name="Quest_Window" ScrollExtent="212,244" Size="212,244" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Tradeskill_Window" />
+                    <Image Location="48,307" Name="Map" ScrollExtent="310,57" Size="310,57" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Tradeskill_Abilities" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="24,381" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="357,93" Size="357,93" TextAlignment="Center" TextColor="#403030">:3c66d8d47c06c366:Use your tradeskill abilities to counteract complications and advance the progress and durability bars.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="410,520" Size="410,520" />
+                </Page>
+            </Page>
+            <Page Name="Broker" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Margin="1,1,3,3" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d40ef90af2:Broker</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,31" Margin="1,1,3,3" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d420391707:Brokers allow you to buy and sell goods with other players.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="380,180" Size="380,180">
+                    <Image Location="16,16" Name="Image" ScrollExtent="138,144" Size="138,144" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Broker_NPC" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="154,21" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="206,131" Size="206,131" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d46affb156:Double-click a broker to access the broker window.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="380,180" Size="380,180" />
+                </Page>
+                <Page Location="0,270" Name="Element" ScrollExtent="380,330" Size="380,330">
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="356,33" Size="356,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4440637ef:Buying</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="11,192" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="356,115" Size="356,115" TextAlignment="Center" TextColor="#403030">:3c66d8d4585f1689:Use the Search field to find specific items.
+
+Click \#FFDF8FAdvanced Search\/c for more options.
+
+Click \#FFDF8FBuy\/c to purchase the selected item.</Text>
+                    <Image Location="14,37" Name="Image" ScrollExtent="353,160" Size="353,160" StretchType="ProportionalBound" Style="ImageList.Broker_Window" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="380,330" Size="380,330" />
+                </Page>
+                <Page Location="390,80" Name="Element" ScrollExtent="410,520" Size="410,520">
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="22,13" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="356,33" Size="356,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d46a0bddc8:Selling</Text>
+                    <Image Location="153,343" Name="Image" ScrollExtent="63,61" Size="63,61" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="20,341" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="140,109" Size="140,109" TextColor="#403030">:3c66d8d46f6904d7:Click \#FFDF8FSet Price\/c to set the price of the selected item.</Text>
+                    <Image Location="152,179" Name="Image" ScrollExtent="63,61" Size="63,61" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Image Location="159,64" Name="Image" ScrollExtent="63,61" Size="63,61" StretchType="ProportionalBound" Style="ImageList.Arrow_Down_Right" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="20,49" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="140,147" Size="140,147" TextColor="#403030">:3c66d8d4b4146828:To sell, place a container in one of the empty slots under the &quot;Sell&quot; tab.</Text>
+                    <Image Location="188,62" Name="Image" ScrollExtent="208,358" Size="208,358" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Broker_Window2" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="20,196" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="140,131" Size="140,131" TextColor="#403030">:3c66d8d465f71dda:Drag your item to the &quot;Drop to Add Item&quot; field.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="410,520" Size="410,520" />
+                </Page>
+            </Page>
+            <Page Name="Combat" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Margin="1,1,3,3" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d475021951:Combat</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,31" Margin="1,1,3,3" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d41d002013:Knowing the basics of combat will prepare you for the dangers within Norrath.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="380,320" Size="380,320">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="19,165" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="343,131" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="343,131" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#403030">:3c66d8d4e3a06c8d:\#C0C0C0Grey = Trivial
+\#00E060Green = Very Easy
+\#30C0F0Blue = Easy
+\#FFFFFFWhite = Equal
+\#FFFF00Yellow = Challenging
+\#FF4040Red = Very Challenging
+</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="109,37" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="155,30" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="155,30" TextAlignment="Center" TextColor="#30C0F0">:3c66d8d4a8f2c4cb:Level 3</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="111,16" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="155,30" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="155,30" TextAlignment="Center" TextColor="#30C0F0">:3c66d8d413707879:a gnoll scout</Text>
+                    <Image Location="109,11" Name="Image" ScrollExtent="162,66" Size="162,66" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Combat_Target" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="19,73" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="343,103" Size="343,103" TextAlignment="Center" TextColor="#403030">:3c66d8d4df51418f:This is your target&apos;s health bar.
+
+The color of the name indicates it&apos;s difficulty relative to you.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="380,320" Size="380,320" />
+                </Page>
+                <Page Location="0,410" Name="Element" ScrollExtent="380,190" Size="380,190">
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="356,33" Size="356,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d47e91745a:Attacking</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="124,59" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="233,106" Size="233,106" TextColor="#403030">:3c66d8d4a77e154e:Double-click your enemy, press your auto-attack key or use any of your special abilities to begin attacking.</Text>
+                    <Image Location="23,54" Name="Image" ScrollExtent="95,113" Size="95,113" StretchType="ProportionalBound" Style="ImageList.Mouse_Left" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="380,190" Size="380,190" />
+                </Page>
+                <Page Location="390,80" Name="Element" ScrollExtent="410,210" Size="410,210">
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,13" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="385,33" Size="385,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4ecb84572:Hotbars</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="20,132" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="363,61" Size="363,61" TextColor="#403030">:3c66d8d4d4347cc5:When you gain new abilities they will appear here automatically if there is room.</Text>
+                    <Image Location="239,46" Name="Image" ScrollExtent="165,65" Size="165,65" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Combat_Hotbar" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="20,48" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="216,82" Size="216,82" TextColor="#403030">:3c66d8d42b7c011e:The hotbar allows you to use abilities by pressing their corresponding key.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="410,210" Size="410,210" />
+                </Page>
+                <Page Location="390,300" Name="Element" ScrollExtent="410,300" Size="410,300">
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,16" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="385,33" Size="385,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4823ca79b:Special Abilities</Text>
+                    <Image Location="16,62" Name="Image" ScrollExtent="206,221" Size="206,221" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Knowledge_Window" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="223,79" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="169,166" Size="169,166" TextColor="#403030">:3c66d8d49c289364:Abilities can be found in your Knowledge Window \#FFFF00(K)\/c and dragged to a hotbar.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="410,300" Size="410,300" />
+                </Page>
+            </Page>
+            <Page Name="Grouping" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Margin="1,1,3,3" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d40e731ab1:Grouping</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,31" Margin="1,1,3,3" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4a91ec9e1:Grouping will allow you to experience more challenging content and earn greater rewards.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="290,190" Size="290,190">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="149,16" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="126,159" Size="126,159" TextColor="#403030">:3c66d8d4578f858c:The group window displays the health and power of your groupmates.</Text>
+                    <Image Location="14,112" Name="Image" ScrollExtent="128,31" Size="128,31" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Health_Power" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="19,98" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="112,27" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="112,23" TextColor="#E0E0E0">:3c66d8d4694e40b3:Gandorff</Text>
+                    <Image Location="14,72" Name="Image" ScrollExtent="128,31" Size="128,31" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Health_Power" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="19,58" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="112,27" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="112,23" TextColor="#E0E0E0">:3c66d8d49a093fc6:Healerhank</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="19,18" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="112,27" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="112,23" TextColor="#E0E0E0">:3c66d8d44eefc036:Slayerbob</Text>
+                    <Image Location="14,32" Name="Image" ScrollExtent="128,31" Size="128,31" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Health_Power" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="290,190" Size="290,190" />
+                </Page>
+                <Page Location="0,280" Name="Element" ScrollExtent="290,320" Size="290,320">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="19,128" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="257,57" Size="257,57" TextColor="#403030">:3c66d8d44df3bb27:You can also type \#FFDF8F/invite &lt;name&gt;\/c in your chat window.</Text>
+                    <Image Location="19,17" Name="Image" ScrollExtent="95,94" Size="95,94" StretchType="ProportionalBound" Style="ImageList.Mouse_Right" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="114,19" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="156,100" Size="156,100" TextColor="#403030">:3c66d8d43a5fd1e3:Right-click another player to invite them to your group.</Text>
+                    <Image Location="55,180" Name="Image" ScrollExtent="196,137" Size="196,137" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Chat_Window" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="290,320" Size="290,320" />
+                </Page>
+                <Page Location="300,80" Name="Element" ScrollExtent="500,270" Size="500,270">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="8,138" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="219,53" Size="219,53" TextAlignment="Center" TextColor="#403030">:3c66d8d4694adc20:&quot;Looking for Group&quot; button</Text>
+                    <Image Location="79,168" Name="Image" Rotation="0.250" ScrollExtent="64,43" Size="64,43" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Image Location="13,213" Name="Image" ScrollExtent="261,46" Size="261,46" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Nav_Bar_Left" />
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,11" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="475,33" Size="475,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d47b8b5e28:Looking for Group (LFG)</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="17,46" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="207,126" Size="207,126" TextColor="#403030">:3c66d8d432a07d6b:Use the &quot;Looking for Group&quot; tool to connect with other players looking to group.</Text>
+                    <Image Location="230,42" Name="Image" ScrollExtent="257,172" Size="257,172" Stretch="false" StretchType="ProportionalBound" Style="ImageList.LFG_Window" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="500,270" Size="500,270" />
+                </Page>
+                <Page Location="300,360" Name="Element" ScrollExtent="500,240" Size="500,240">
+                    <Image Location="32,45" Name="Image" ScrollExtent="128,20" Size="128,20" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Concentration" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="314,37" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="155,30" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="155,30" TextAlignment="Center" TextColor="#30C0F0">:3c66d8d4a8f2c4cb_1:Level 3</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="19,69" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="155,27" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="155,24" TextAlignment="Center" TextColor="#FFFF90">:3c66d8d4497d819b:&quot;Player&quot;</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="164,69" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="155,27" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="155,24" TextAlignment="Center" TextColor="#FFFF90">:3c66d8d4c070dc2e:&quot;Target&quot;</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="315,69" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="155,27" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="155,24" TextAlignment="Center" TextColor="#FFFF90">:3c66d8d49689683d:&quot;Implied Target&quot;</Text>
+                    <Image Location="34,28" Name="Image" ScrollExtent="125,26" Size="125,26" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Health_Power" />
+                    <Text DynamicData="/GameData.Self.Name" Font="/TextStyles.Normal.NormalStyle" Location="19,16" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="155,30" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="155,30" TextAlignment="Center" TextColor="#E0E0E0">:3c66d8d475c3577f:XXX</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="164,16" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="155,30" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="155,30" TextAlignment="Center" TextColor="#E0E0E0">:3c66d8d44eefc036_1:Slayerbob</Text>
+                    <Image Location="179,34" Name="Image" ScrollExtent="125,21" Size="125,21" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Friendly_Target" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="317,16" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="155,30" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="155,30" TextAlignment="Center" TextColor="#30C0F0">:3c66d8d413707879_1:a gnoll scout</Text>
+                    <Image Location="315,11" Name="Image" ScrollExtent="162,66" Size="162,66" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Combat_Target" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="24,112" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="456,117" Size="456,117" TextAlignment="Center" TextColor="#403030">:3c66d8d46bd23a50:Select a group member and their target becomes your &quot;implied target&quot;.  
+
+Your hostile actions will be directed towards the enemy while beneficial actions will be directed towards your groupmate.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="500,240" Size="500,240" />
+                </Page>
+            </Page>
+            <Page Name="Inventory" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Margin="1,1,3,3" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d4cc23376a:Inventory</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,31" Margin="1,1,3,3" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d47a0df1e8:Your inventory is where all of the equipment you wear, and items you carry, are stored.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="800,520" Size="800,520">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="206,416" Margin="1,1,3,3" Name="Text" ScrollExtent="372,76" Size="372,76" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4543c94d7:Some items can be used or consumed from inventory.  Right-click them for options.</Text>
+                    <Image Location="587,363" Name="Image" ScrollExtent="98,55" Size="98,55" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Food_Drink" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="511,275" Margin="1,1,3,3" Name="Text" ScrollExtent="260,86" Size="260,86" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4d8392a5a:Food and drink will give bonuses such as health and mana regeneration.</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="511,27" Margin="1,1,3,3" Name="Text" ScrollExtent="260,86" Size="260,86" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d474838997:Drop a piece of gear on your character portrait to equip the item.</Text>
+                    <Image Location="465,148" Name="Image" Rotation="0.500" ScrollExtent="80,62" Size="80,62" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Image Location="542,109" Name="Image" ScrollExtent="188,164" Size="188,164" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Bag_Window2" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="21,158" Margin="1,1,3,3" Name="Text" ScrollExtent="260,77" Size="260,77" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#403030">:3c66d8d406bfae75:Double-click a bag or press \#FFFF00(B)\/c to access the items inside your bags.</Text>
+                    <Image Location="208,324" Name="Image" Rotation="0.500" ScrollExtent="76,62" Size="76,62" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Image Location="76,249" Name="Image" ScrollExtent="138,167" Size="138,167" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Bag_Window" />
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="21,40" Margin="1,1,3,3" Name="Text" ScrollExtent="260,102" Size="260,102" TextAlignment="Center" TextColor="#403030">:3c66d8d4b72c8ed6:This is your Character window \#FFFF00(C)\/c.  It shows your equipped items and inventory.</Text>
+                    <Image Location="289,20" Name="Image" ScrollExtent="213,389" Size="213,389" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Character_Window" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="800,520" Size="800,520" />
+                </Page>
+            </Page>
+            <Page Name="Interface" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Margin="1,1,3,3" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d449fa9181:Interface</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,31" Margin="1,1,3,3" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4953712b0:The game interface provides you with valuable information as you play the game.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="380,280" Size="380,280">
+                    <Image Location="22,59" Name="Image" ScrollExtent="128,20" Size="128,20" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Concentration" />
+                    <Text AbsorbsInput="false" Font="Styles.BodyTextStyle" Location="28,86" Margin="1,1,3,3" Name="Text" PackSize="a,a" ScrollExtent="322,162" Size="322,162" TextColor="#403030">:3c66d8d414a94efc:The player window displays your \#00FF00health\/c, \#0000FFpower\/c and \#00F0FFconcentration\/c.
+
+Most of your special abilities require power or concentration.
+</Text>
+                    <Text DynamicData="/GameData.Self.Name" Font="/TextStyles.Normal.NormalStyle" Location="22,28" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="128,27" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="128,23" TextAlignment="Center" TextColor="#E0E0E0">:3c66d8d44eefc036_2:Slayerbob</Text>
+                    <Image Location="24,42" Name="Image" ScrollExtent="128,31" Size="128,31" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Health_Power" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="380,280" Size="380,280" />
+                </Page>
+                <Page Location="390,80" Name="Element" ScrollExtent="410,280" Size="410,280">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="24,24" Margin="1,1,3,3" Name="Text" PackSize="a,a" ScrollExtent="181,238" Size="181,238" TextColor="#403030">:3c66d8d4d9419e54:The mini map shows your \#cF0000current position\/c as well as icons representing important characters and landmarks.
+
+Mouse over them for more information.</Text>
+                    <Image Location="215,13" Name="Image" ScrollExtent="187,195" Size="187,195" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Mini_Map" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="410,280" Size="410,280" />
+                </Page>
+                <Page Location="0,370" Name="Element" ScrollExtent="800,230" Size="800,230">
+                    <Image Location="110,165" Name="Image" ScrollExtent="225,41" Size="225,41" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Nav_Bar_Left" />
+                    <Image Location="301,165" Name="Image" ScrollExtent="166,48" Size="166,48" Stretch="false" StretchType="ProportionalCrop" Style="ImageList.XP_Bar" />
+                    <Image Location="445,165" Name="Image" ScrollExtent="244,41" Size="244,41" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Nav_Bar_Right" />
+                    <Text AbsorbsInput="false" Font="Styles.BodyTextStyle" Location="53,7" Margin="1,1,3,3" Name="Text" PackSize="a,a" ScrollExtent="693,158" Size="693,158" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d4e8b81b9e:The Navigation Bar displays your experience and common shortcuts.
+
+The orange bar shows progress towards your next level.  The blue bar fills with each 10 percent of a level.
+</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="800,230" Size="800,230" />
+                </Page>
+            </Page>
+            <Page Name="LevelUp" ScrollExtent="800,600" Size="800,600" Visible="false">
+                <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">
+                    <Text AbsorbsInput="false" Font="Styles.TitleTextStyle" Margin="1,1,3,3" Name="TitleText" PackSize="a,f" ScrollExtent="800,44" Size="800,44" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:3c66d8d42e4bc0d5:Character Advancement</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubtitleTextStyle" Location="0,31" Margin="1,1,3,3" Name="SubtitleText" PackSize="a,f" ScrollExtent="800,33" Size="800,33" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#403030">:3c66d8d447e1ab13:As you adventure through Norrath, you will gain experience through combat and quests.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialTitle.data.default_bkg.rect" ScrollExtent="800,70" Size="800,70" />
+                </Page>
+                <Page Location="0,80" Name="Element" ScrollExtent="500,140" Size="500,140">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="17,74" Margin="1,1,3,3" Name="Text" PackSize="a,a" ScrollExtent="464,52" Size="464,52" TextAlignment="Center" TextColor="#403030">:3c66d8d4289a945b:When your Experience Bar fills up, you gain a level.</Text>
+                    <Image Location="109,12" Name="Image" PackLocation="center,top" ScrollExtent="281,72" Size="281,72" StretchType="ProportionalBound" Style="ImageList.XP_Bar" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="500,140" Size="500,140" />
+                </Page>
+                <Page Location="510,80" Name="Element" ScrollExtent="290,520" Size="290,520">
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="20,312" Margin="1,1,3,3" Name="Text" PackSize="a,a" ScrollExtent="252,139" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="252,139" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#FF9090">:3c66d8d4817a75c1:Apprentice
+Journeyman
+Adept
+Expert
+Master
+Grandmaster
+</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,21" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="267,33" Size="267,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d443956077:New Abilities</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="20,138" Margin="1,1,3,3" Name="Text" PackSize="a,a" ScrollExtent="252,195" Size="252,195" TextAlignment="Center" TextColor="#403030">:3c66d8d4fe41fd96:You gain new abilities with every level.  
+
+These abilities are placed in your Knowledge Book \#FFFF00(K)\/c and hotbar.
+
+Abilities become more powerful with each tier.</Text>
+                    <Image Location="68,61" Name="Image" PackLocation="center,top" ScrollExtent="154,65" Size="154,65" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Combat_Hotbar" />
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="290,520" Size="290,520" />
+                </Page>
+                <Page Location="0,230" Name="Element" ScrollExtent="500,370" Size="500,370">
+                    <Image Location="21,295" Name="Image" PackLocation="center,top" ScrollExtent="247,50" Size="247,50" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Nav_Bar_Right" />
+                    <Image Location="82,240" Name="Image" Rotation="0.250" ScrollExtent="71,53" Size="71,53" StretchType="ProportionalBound" Style="ImageList.Arrow_Right" />
+                    <Image Location="273,49" Name="Image" ScrollExtent="217,277" Size="217,277" Stretch="false" StretchType="ProportionalBound" Style="ImageList.Character_Stats" />
+                    <Text AbsorbsInput="false" Font="Styles.SubHeaderTextStyle" Location="11,11" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="475,33" Size="475,33" TextAlignment="Center" TextColor="#F0D080">:3c66d8d4e50bd1b9:Character Stats</Text>
+                    <Text AbsorbsInput="false" Font="Styles.SmallBodyTextStyle" Location="24,62" Margin="1,1,3,3" Name="Text" PackSize="a,f" ScrollExtent="255,160" Size="255,160" TextColor="#403030">:3c66d8d48dce30f2:Gaining a level and equipping better items will increase your character&apos;s statistics.
+
+Statistics can be found in the Character \#FFFF00(C)\/c window.</Text>
+                    <Page BackgroundOpacity="0.922" BackgroundTint="#D0D0D0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.TutorialPage.data.default_bkg.rect" ScrollExtent="500,370" Size="500,370" />
+                </Page>
+            </Page>
+            <Namespace Name="Styles">
+                <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="SubHeaderTextStyle" PointSize="21" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" UseCachedFont="true" />
+                <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="SmallBodyTextStyle" PointSize="19" PrivateFontPath="UI/Fonts/zcal801b.TTF" UseCachedFont="true" />
+                <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="BodyTextStyle" PointSize="21" PrivateFontPath="UI/Fonts/zcal801b.TTF" UseCachedFont="true" />
+                <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="SubtitleTextStyle" PointSize="18" PrivateFontPath="UI/Fonts/zcal801b.TTF" UseCachedFont="true" />
+                <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="TitleTextStyle" PointSize="36" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" UseCachedFont="true" />
+            </Namespace>
+            <Namespace Name="ImageList">
+                <ImageStyle Name="DMToolbox">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="833,360,1020,733" />
+                </ImageStyle>
+                <ImageStyle Name="DMToolbox">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="830,359,1024,750" />
+                </ImageStyle>
+                <ImageStyle Name="Concentration">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="210,56,335,72" />
+                </ImageStyle>
+                <ImageStyle Name="Item_Menu">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="255,930,365,1006" />
+                </ImageStyle>
+                <ImageStyle Name="Nav_Bar_Right">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="246,453,485,496" />
+                </ImageStyle>
+                <ImageStyle Name="Character_Stats">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="817,747,1024,1024" />
+                </ImageStyle>
+                <ImageStyle Name="XP_Bar">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="177,406,378,449" />
+                </ImageStyle>
+                <ImageStyle Name="Food_Drink">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="522,5,617,53" />
+                </ImageStyle>
+                <ImageStyle Name="Bag_Window2">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="298,631,477,782" />
+                </ImageStyle>
+                <ImageStyle Name="Bag_Window">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="489,456,620,622" />
+                </ImageStyle>
+                <ImageStyle Name="Character_Window">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="403,83,618,422" />
+                </ImageStyle>
+                <ImageStyle Name="Friendly_Target">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="212,76,338,84" />
+                </ImageStyle>
+                <ImageStyle Name="Nav_Bar_Left">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="0,453,245,496" />
+                </ImageStyle>
+                <ImageStyle Name="LFG_Window">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="5,499,288,733" />
+                </ImageStyle>
+                <ImageStyle Name="Chat_Window">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="300,498,482,624" />
+                </ImageStyle>
+                <ImageStyle Name="Health_Power">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="212,70,338,96" />
+                </ImageStyle>
+                <ImageStyle Name="Knowledge_Window">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="181,206,379,410" />
+                </ImageStyle>
+                <ImageStyle Name="Combat_Hotbar">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="194,0,350,59" />
+                </ImageStyle>
+                <ImageStyle Name="Combat_Autoattack">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="195,0,261,59" />
+                </ImageStyle>
+                <ImageStyle Name="Combat_Target">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="361,0,517,59" />
+                </ImageStyle>
+                <ImageStyle Name="Arrow_Down_Right">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="73,960,139,1023" />
+                </ImageStyle>
+                <ImageStyle Name="Broker_Window2">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="620,345,845,688" />
+                </ImageStyle>
+                <ImageStyle Name="Broker_Window">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="406,789,784,949" />
+                </ImageStyle>
+                <ImageStyle Name="Broker_NPC">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="490,631,620,774" />
+                </ImageStyle>
+                <ImageStyle Name="Tradeskill_Station">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="843,216,1024,348" />
+                </ImageStyle>
+                <ImageStyle Name="Tradeskill_Abilities">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="408,953,718,1005" />
+                </ImageStyle>
+                <ImageStyle Name="Tradeskill_Recipes">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="620,6,816,292" />
+                </ImageStyle>
+                <ImageStyle Name="Tradeskill_Window">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="816,0,1023,215" />
+                </ImageStyle>
+                <ImageStyle Name="Mini_Map">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="3,0,190,190" />
+                </ImageStyle>
+                <ImageStyle Name="Context_Menu">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="652,296,756,344" />
+                </ImageStyle>
+                <ImageStyle Name="Quest_Book">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="298,97,399,192" />
+                </ImageStyle>
+                <ImageStyle Name="Quest_Feather">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="185,97,286,192" />
+                </ImageStyle>
+                <ImageStyle Name="Mouse_Both">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="295,807,367,898" />
+                </ImageStyle>
+                <ImageStyle Name="Arrow_Up_Right">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="138,959,211,1022" />
+                </ImageStyle>
+                <ImageStyle Name="Head_Look">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="226,899,403,1016" />
+                </ImageStyle>
+                <ImageStyle Name="Arrow_Right">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="2,959,75,1022" />
+                </ImageStyle>
+                <ImageStyle Name="Mouse_Right">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="221,807,293,898" />
+                </ImageStyle>
+                <ImageStyle Name="Mouse_Left">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="146,807,217,898" />
+                </ImageStyle>
+                <ImageStyle Name="Spacebar">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="2,905,215,957" />
+                </ImageStyle>
+                <ImageStyle Name="Quest_Window">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="4,192,174,452" />
+                </ImageStyle>
+                <ImageStyle Name="MovementKeys">
+                    <ImageFrame Name="image" Source="images/tutorial_window_elements.dds" SourceRect="0,805,139,901" />
+                </ImageStyle>
+            </Namespace>
+            <Namespace Name="BLImageList">
+                <ImageStyle Name="Pet_Window">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="3,59,489,493" />
+                </ImageStyle>
+                <ImageStyle Name="Primal">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="491,247,1024,311" />
+                </ImageStyle>
+                <ImageStyle Name="Savagery">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="610,311,1008,368" />
+                </ImageStyle>
+                <ImageStyle Name="Advantage_Group">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="492,51,714,183" />
+                </ImageStyle>
+                <ImageStyle Name="Advantage">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="488,182,1021,246" />
+                </ImageStyle>
+                <ImageStyle Name="Warder_Hotbar">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="723,61,893,183" />
+                </ImageStyle>
+                <ImageStyle Name="Warder_Exotic">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="701,6,869,48" />
+                </ImageStyle>
+                <ImageStyle Name="Warder_Normal1">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="178,6,430,48" />
+                </ImageStyle>
+                <ImageStyle Name="Warder_Normal2">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="440,6,692,48" />
+                </ImageStyle>
+                <ImageStyle Name="Cast_Bar">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="717,372,1009,394" />
+                </ImageStyle>
+                <ImageStyle Name="Ability_Summon_Warder">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="220,6,262,48" />
+                </ImageStyle>
+                <ImageStyle Name="Ability_Stare_Down">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="928,6,970,48" />
+                </ImageStyle>
+                <ImageStyle Name="Ability_Tame_Warder">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="974,6,1016,48" />
+                </ImageStyle>
+                <ImageStyle Name="Weakness">
+                    <ImageFrame Name="image" Source="images/tutorial_window_beastlord.dds" SourceRect="895,54,1019,186" />
+                </ImageStyle>
+            </Namespace>
+        </Page>

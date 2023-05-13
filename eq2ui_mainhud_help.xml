@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="62,84" MinimumSize="676,584" Name="Help" ScrollExtent="876,584" Size="876,584" UserMovable="true" UserResizable="true" version="2" Visible="false">
+            <Page Activated="true" Location="3,63" Name="TabPage" PackSize="a,a" RStyleMouseOver=" " RStyleMouseOverActivated=" " RStyleMouseOverSelected=" " RStyleSelected=" " ScrollExtent="870,515" Size="870,515">
+                <Page Activated="true" Name="TutorialPage" PackSize="a,a" ScrollExtent="870,515" Size="870,515">
+                    <Page BackgroundOpacity="1.000" Location="5,5" Name="TutorialBackground" PackSize="f,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="250,470" Size="250,470">
+                        <DataSourceContainer Name="TutorialDSContainer">
+                            <DataSourceContainer Name="data 1" text=":fd00e2a6e432a5fc:[DEVL]1.0 Welcome to EverQuest 2!">
+                                <DataSourceContainer Name="New DataSourceContainer" text=":fd00e2a660712367:[DEVL]1.1 Griefing Other Players" />
+                            </DataSourceContainer>
+                            <DataSourceContainer Name="data 2" text=":fd00e2a6e4d42d26:[DEVL]2.0 Gameplay Overview" />
+                        </DataSourceContainer>
+                        <TreeView BackgroundColor="#555555" BackgroundOpacity="0.000" DataSourceContainer="TutorialDSContainer" Location="10,10" MinimumScrollExtent="210,138" Name="TutorialTreeView" PackSize="a,a" ScrollExtent="210,450" SelectionAllowedMultiRow="false" ShowChecks="false" Size="210,450" Style="/CommonElements.TreeView.data.style" />
+                        <Scrollbar ArrowPressSound="sounds/button" Control="TutorialTreeView" HideIfUnnecessary="true" Location="218,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,450" Size="22,450" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                    </Page>
+                    <Page BackgroundOpacity="1.000" Location="255,5" Name="ContentBackground" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="610,470" Size="610,470">
+                        <DataSource Name="BrowserState">
+                            <DynamicData comment="Browser&apos;s status (typially DD for a text control)" Name="Status" />
+                            <DynamicData comment="Brower&apos;s progress loading the current page (typically DD for a progress control)" Name="Progress" />
+                            <DynamicData comment="Browser&apos;s forward state (typially DD for a button)" Name="Forward" />
+                            <DynamicData comment="Browser&apos;s back state (typially DD for a button)" Name="Back" />
+                            <DynamicData comment="Browser&apos;s refresh state (typially DD for a button)" Name="Refresh" />
+                            <DynamicData comment="Browser&apos;s stop state (typially DD for a button)" Name="Stop" />
+                            <DynamicData comment="URI of browser&apos;s current page (typically DD for a text control)" Name="URI" />
+                        </DataSource>
+                        <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="9,9" Name="Browser" PackSize="a,a" ScrollExtent="592,453" Size="592,453" />
+                    </Page>
+                    <Button Location="666,475" MaximumSize="16384,32" MinimumSize="32,32" Name="Petition" OnPress="petition" PackLocation="right,bottom" ScrollExtent="198,32" Size="198,32" Style="/CommonElements.PushButton.data.style" Tooltip=":fd00e2a6db44d43d:Click to contact Customer Service for help.">:fd00e2a6f9d016aa:Petition</Button>
+                    <Button DynamicData="ContentBackground.BrowserState.Back" Location="7,475" MaximumSize="16384,32" MinimumSize="32,32" Name="Back" OnPress="parent.ContentBackground.Browser.action = &quot;back&quot;" PackLocation="left,bottom" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:fd00e2a6320391f6:Back</Button>
+                    <Button DynamicData="ContentBackground.BrowserState.Forward" Location="132,475" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" OnPress="parent.ContentBackground.Browser.action = &quot;forward&quot;" PackLocation="left,bottom" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:fd00e2a65be240fd:Forward</Button>
+                </Page>
+                <Page Activated="true" Name="TopicsPage" PackSize="a,a" ScrollExtent="870,515" Size="870,515">
+                    <Page BackgroundOpacity="1.000" Location="5,5" Name="TopicBackground" PackSize="f,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="250,470" Size="250,470">
+                        <DataSourceContainer Name="TopicDSContainer">
+                            <DataSourceContainer Name="data 1" text=":834a1c39e432a5fc:[DEVL]1.0 Welcome to EverQuest 2!">
+                                <DataSourceContainer Name="New DataSourceContainer" text=":834a1c3960712367:[DEVL]1.1 Griefing Other Players" />
+                            </DataSourceContainer>
+                            <DataSourceContainer Name="data 2" text=":834a1c39e4d42d26:[DEVL]2.0 Gameplay Overview" />
+                        </DataSourceContainer>
+                        <TreeView BackgroundColor="#555555" BackgroundOpacity="0.000" DataSourceContainer="TopicDSContainer" Location="10,10" MinimumScrollExtent="210,138" Name="TopicTreeView" PackSize="a,a" ScrollExtent="210,450" SelectionAllowedMultiRow="false" ShowChecks="false" Size="210,450" Style="/CommonElements.TreeView.data.style" />
+                        <Scrollbar ArrowPressSound="sounds/button" Control="TopicTreeView" HideIfUnnecessary="true" Location="218,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,450" Size="22,450" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                    </Page>
+                    <Page BackgroundOpacity="1.000" Location="255,5" Name="ContentBackground" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="610,470" Size="610,470">
+                        <DataSource Name="BrowserState">
+                            <DynamicData comment="Browser&apos;s status (typially DD for a text control)" Name="Status" />
+                            <DynamicData comment="Brower&apos;s progress loading the current page (typically DD for a progress control)" Name="Progress" />
+                            <DynamicData comment="Browser&apos;s forward state (typially DD for a button)" Name="Forward" />
+                            <DynamicData comment="Browser&apos;s back state (typially DD for a button)" Name="Back" />
+                            <DynamicData comment="Browser&apos;s refresh state (typially DD for a button)" Name="Refresh" />
+                            <DynamicData comment="Browser&apos;s stop state (typially DD for a button)" Name="Stop" />
+                            <DynamicData comment="URI of browser&apos;s current page (typically DD for a text control)" Name="URI" />
+                        </DataSource>
+                        <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="9,9" Name="Browser" PackSize="a,a" ScrollExtent="592,453" Size="592,453" />
+                    </Page>
+                    <Button Location="666,475" MaximumSize="16384,32" MinimumSize="32,32" Name="Petition" OnPress="petition" PackLocation="right,bottom" ScrollExtent="198,32" Size="198,32" Style="/CommonElements.PushButton.data.style" Tooltip=":834a1c39db44d43d:Click to contact Customer Service for help.">:834a1c39f9d016aa:Petition</Button>
+                    <Button DynamicData="ContentBackground.BrowserState.Back" Location="7,475" MaximumSize="16384,32" MinimumSize="32,32" Name="Back" OnPress="parent.ContentBackground.Browser.action = &quot;back&quot;" PackLocation="left,bottom" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:834a1c39320391f6:Back</Button>
+                    <Button DynamicData="ContentBackground.BrowserState.Forward" Location="132,475" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" OnPress="parent.ContentBackground.Browser.action = &quot;forward&quot;" PackLocation="left,bottom" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:834a1c39d7d3e9e5:Forward</Button>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="260,475" Name="GotoCommonProblems" PackLocation=",FFF" PackSize="a,f" ScrollExtent="600,46" Size="600,33" TextAlignment="Center" TextColor="#00FF00" UserMovable="true" UserResizable="true">:fd00e2a6d180edc2:Need more help? Click here to get HELP WITH COMMON PROBLEMS.</Text>
+                </Page>
+                <Page Activated="true" Name="CommonIssuesPage" PackSize="a,a" ScrollExtent="870,515" Size="870,515" Visible="false">
+                    <Page BackgroundOpacity="1.000" Location="5,11" Name="Contents" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="860,464" Size="860,464">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="10,10" Name="CommonProblems" PackSize="a,a" ScrollExtent="820,444" Size="820,444" />
+                        <Scrollbar ArrowPressSound="sounds/button" Control="CommonProblems" HideIfUnnecessary="true" Location="828,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,444" Size="22,444" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                    </Page>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="5,475" Name="GotoKnowledgeBase" PackLocation=",FFF" PackSize="a,f" ScrollExtent="860,33" Size="860,33" TextAlignment="Center" TextColor="#00FF00" UserMovable="true" UserResizable="true">:fd00e2a6c4e83f9f:Need help with a problem not on this list? Click here to SEARCH FOR HELP.</Text>
+                </Page>
+                <Page Activated="true" Name="KnowledgeBasePage" PackSize="a,a" ScrollExtent="870,515" Size="870,515" Visible="false">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,9" Name="SearchLabel" ScrollExtent="426,23" Size="426,20" TextColor="#EBDEAA">:fd00e2a6951f13f5:Search topic or article ID</Text>
+                    <Page Location="-5,15" Name="Search" PackSize="a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="870,55" Size="870,55">
+                        <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="13,13" MaximumSize="16384,30" MinimumSize="30,30" Name="SearchTextbox" PackSize="a" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="724,30" Size="724,30" Style="/CommonElements.Textfield.data.style" />
+                        <Button IsDefaultButton="true" Location="745,11" MaximumSize="16384,32" MinimumSize="32,32" Name="SearchButton" PackLocation="FFF" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:fd00e2a64ca3216e:Search</Button>
+                    </Page>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,65" Name="ResultsLabel" ScrollExtent="547,23" Size="547,20" TextColor="#EBDEAA">:fd00e2a69a243609:Search Results</Text>
+                    <Page BackgroundOpacity="1.000" Location="5,80" Name="Results" PackSize="a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="860,140" Size="860,140">
+                        <DataSource Name="KBDataSource">
+                            <Data Name="New Data" text=":fd00e2a610c3667c:This is the name of an article returned from searching the knowledge base" />
+                            <Data Name="New Data" text=":fd00e2a6e5bc49e4:..." />
+                        </DataSource>
+                        <Scrollbar ArrowPressSound="sounds/button" Control="KBListbox" HideIfUnnecessary="true" Location="828,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,120" Size="22,120" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                        <Listbox BackgroundColor="#FFFFFF" DataSource="KBDataSource" Location="15,10" Margin="10,10,10,10" Name="KBListbox" PackSize="absolute,absolute" RowTemplate="/CommonElements.Listbox.data.row_template" ScrollExtent="810,120" Size="810,120" Style="/CommonElements.Listbox.data.listbox_style" />
+                    </Page>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,225" Name="ContentsLabel" ScrollExtent="550,23" Size="550,21" TextColor="#EBDEAA">:fd00e2a6dfbe0fcc:Article Contents</Text>
+                    <Page BackgroundOpacity="1.000" Location="5,240" Name="Contents" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="860,235" Size="860,235">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="10,10" Name="InfoText" PackSize="a,a" ScrollExtent="820,215" Size="820,215" />
+                        <Scrollbar ArrowPressSound="sounds/button" Control="InfoText" HideIfUnnecessary="true" Location="828,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,215" Size="22,215" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                    </Page>
+                    <Button Location="5,475" MaximumSize="16384,32" MinimumSize="32,32" Name="NewTicketButton" PackLocation=",FFF" PackSize="a" ScrollExtent="860,32" Size="860,32" Style="/CommonElements.PushButton.data.style">:fd00e2a6b0953c05:If the article did not answer your question, click here to contact customer service</Button>
+                </Page>
+                <Page Activated="true" Enabled="false" Name="TicketsPage" PackSize="a,a" ScrollExtent="870,515" Size="870,515" Visible="false">
+                    <Page alwaysontop="true" BackgroundColor="#00FF00" DynamicDataFilter="0001" eq2usescomwndcontrols="false" Name="NewTicketPage" PackSize="a,a" ScrollExtent="870,515" Size="870,515" Visible="false">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,5" Name="TitleText" ScrollExtent="550,23" Size="550,20" TextColor="#EBDEAA" UserMovable="true" UserResizable="true">:fd00e2a6c214cc52:New Ticket</Text>
+                        <Page BackgroundOpacity="1.000" Location="5,20" Name="IssueHierarchyPage" PackSize="a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="860,115" Size="860,115">
+                            <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="15,10" Name="CategoryLabel" PackSize="a" ScrollExtent="829,20" Size="829,20" TextColor="#EBDEAA">:fd00e2a600c58468:Category</Text>
+                            <Dropdownbox DataSource="CategoryDS" DropBy="500" Location="10,25" Name="Category" PackSize="a" RowTemplate="Guild.MainTabPage.MembersPage.MemberSelectionTemplate" ScrollExtent="840,32" SelectedItemIndex="2" Size="840,32" Style="/CommonElements.Dropdown.data.style" />
+                            <DataSource Name="CategoryDS">
+                                <Data Name="Placeholder1" text=":fd00e2a6c68bf386:[DEVL] category 1" />
+                                <Data Name="Placeholder2" text=":fd00e2a65f82a23c:[DEVL] category 2" />
+                            </DataSource>
+                            <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="15,55" Name="SubCategoryLabel" PackSize="a" ScrollExtent="829,20" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="829,20" TextColor="#EBDEAA">:fd00e2a674bfd460:Subcategory</Text>
+                            <Dropdownbox DataSource="SubcategoryDS" DropBy="500" Location="10,70" Name="Subcategory" PackSize="a" RowTemplate="Guild.MainTabPage.MembersPage.MemberSelectionTemplate" ScrollExtent="840,32" SelectedItemIndex="2" Size="840,32" Style="/CommonElements.Dropdown.data.style" />
+                            <DataSource Name="SubcategoryDS">
+                                <Data Name="Placeholder1" text=":fd00e2a655115be4:[DEVL] subcategory 1" />
+                                <Data Name="Placeholder2" text=":fd00e2a6cc180a5e:[DEVL] subcategory 2" />
+                            </DataSource>
+                        </Page>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,140" Name="DetailsLabel" ScrollExtent="549,23" Size="549,20" TextColor="#EBDEAA">:fd00e2a6d507d56a:Please enter details below</Text>
+                        <Page BackgroundOpacity="1.000" Location="5,155" Name="DetailsPage" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="860,313" Size="860,313">
+                            <Scrollbar ArrowPressSound="sounds/button" Control="DetailsTextbox" HideIfUnnecessary="true" Location="828,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,293" Size="22,293" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            <Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,10" MaxLines="Unlimited" Name="DetailsTextbox" PackSize="absolute,absolute" ScrollExtent="821,291" Size="821,291" Style="/CommonElements.Textbox.data.style" WrapWidth="Automatic" />
+                        </Page>
+                        <Button Location="250,475" MaximumSize="16384,32" MinimumSize="32,32" Name="SubmitButton" PackLocation="CFC,FFF" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:fd00e2a6c762498a:Submit</Button>
+                        <Button Location="450,475" MaximumSize="16384,32" MinimumSize="32,32" Name="CancelButton" PackLocation="CFC,FFF" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:fd00e2a6ae453fbb:Cancel</Button>
+                    </Page>
+                    <Page alwaysontop="true" BackgroundColor="#00FF00" DynamicData="/GameData.Self.Breath" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Name="AddCommentPage" PackSize="a,a" ScrollExtent="870,515" Size="870,515" Visible="false">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,5" Name="TitleText" ScrollExtent="547,23" Size="547,21" TextAlignmentVertical="Center" TextColor="#EBDEAA" UserMovable="true" UserResizable="true">:fd00e2a61721778a:Add Ticket Comments</Text>
+                        <Page BackgroundOpacity="1.000" Location="5,20" Name="DetailsPage" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="860,455" Size="860,455">
+                            <Scrollbar ArrowPressSound="sounds/button" Control="CommentTextbox" HideIfUnnecessary="true" Location="828,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,435" Size="22,435" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            <Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,10" MaxLines="Unlimited" Name="CommentTextbox" PackSize="a,a" ScrollExtent="820,435" Size="820,435" Style="/CommonElements.Textbox.data.style" WrapWidth="Automatic" />
+                        </Page>
+                        <Button Location="250,475" MaximumSize="16384,32" MinimumSize="32,32" Name="SubmitButton" PackLocation="CFC,FFF" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:fd00e2a6c762498a_1:Submit</Button>
+                        <Button Location="450,475" MaximumSize="16384,32" MinimumSize="32,32" Name="CancelButton" PackLocation="CFC,FFF" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:fd00e2a6ae453fbb_1:Cancel</Button>
+                    </Page>
+                    <Page Activated="true" Name="ExistingTicketsPage" PackSize="a,a" ScrollExtent="870,515" Size="870,515" Visible="false">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,20" Name="TicketLabel" ScrollExtent="550,23" Size="550,20" TextColor="#EBDEAA">:fd00e2a664045b97:Tickets</Text>
+                        <Button Location="765,10" MaximumSize="16384,26" MinimumSize="26,26" Name="RefreshTicketsButton" PackLocation="FFF" ScrollExtent="100,26" Size="100,26" Style="/CommonElements.SmallPushButton.data.style">:fd00e2a650c36698:Refresh</Button>
+                        <Page Location="5,40" Name="TablePage" PackSize="a" ScrollExtent="860,145" Size="860,145">
+                            <TableModelDefault DataSourceContainer="TableDSContainer" Name="TableModel" />
+                            <DataSourceContainer Name="TableDSContainer">
+                                <DataSource label=":fd00e2a6fc491189:Ticket ID" Name="TicketId" type="text" />
+                                <DataSource label=":fd00e2a6ee74cd68:Character" Name="Character" type="text" />
+                                <DataSource label=":fd00e2a600c58468_1:Category" Name="Category" type="text" />
+                                <DataSource label=":fd00e2a606b3df52:Date Modified" Name="Date Modified" type="text" />
+                                <DataSource label=":fd00e2a683539fd5:Status" Name="Status" type="text" />
+                            </DataSourceContainer>
+                            <Table BackgroundColor="#FFFFFF" BackgroundOpacity="0.000" DefaultTextStyle="/Fonts.FontZapf15" Location="10,30" MinimumScrollExtent="820,0" Name="Table" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="820,105" SelectionAllowedMultiRow="false" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" Size="820,105" TableModel="TableModel" />
+                            <Page BackgroundOpacity="1.000" MaximumSize="16384,25" MinimumSize="0,25" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="860,25" Size="860,25">
+                                <TableHeader BackgroundColor="#000000" ButtonStyle="/ButtonStyles.invisible" Location="10,5" MinimumScrollExtent="820,0" Name="TableHeader" PackSize="a" ScrollExtent="820,16" Size="820,16" Table="Table" />
+                            </Page>
+                            <Scrollbar ArrowPressSound="sounds/button" Control="Table" HideIfUnnecessary="true" Location="828,30" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,105" Size="22,105" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,20" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="860,125" Size="860,125" />
+                        </Page>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,185" Name="DetailLabel" ScrollExtent="550,23" Size="550,20" TextColor="#EBDEAA">:fd00e2a6b2738cde:Contents</Text>
+                        <Page BackgroundOpacity="1.000" Location="5,200" Name="Contents" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="860,275" Size="860,275">
+                            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="10,10" Name="DetailText" PackSize="a,a" ScrollExtent="820,255" Size="820,255" />
+                            <Scrollbar ArrowPressSound="sounds/button" Control="DetailText" HideIfUnnecessary="true" Location="828,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,255" Size="22,255" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                        </Page>
+                        <Button Location="250,475" MaximumSize="16384,32" MinimumSize="32,32" Name="AddCommentButton" PackLocation="CFC,FFF" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:fd00e2a665ee2a46:Add Comment</Button>
+                        <Button Location="450,475" MaximumSize="16384,32" MinimumSize="32,32" Name="DeleteButton" PackLocation="CFC,FFF" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:fd00e2a6c241864e:Delete</Button>
+                    </Page>
+                </Page>
+                <Page Activated="true" Enabled="false" Name="BrowserPage" PackSize="a,a" ScrollExtent="870,515" Size="870,515" Visible="false">
+                    <DataSource Name="BrowserState">
+                        <DynamicData comment="Browser&apos;s status (typially DD for a text control)" Name="Status" />
+                        <DynamicData comment="Brower&apos;s progress loading the current page (typically DD for a progress control)" Name="Progress" />
+                        <DynamicData comment="Browser&apos;s forward state (typially DD for a button)" Name="Forward" />
+                        <DynamicData comment="Browser&apos;s back state (typially DD for a button)" Name="Back" />
+                        <DynamicData comment="Browser&apos;s refresh state (typially DD for a button)" Name="Refresh" />
+                        <DynamicData comment="Browser&apos;s stop state (typially DD for a button)" Name="Stop" />
+                        <DynamicData comment="URI of browser&apos;s current page (typically DD for a text control)" Name="URI" />
+                    </DataSource>
+                    <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Name="Browser" PackSize="a,a" ScrollExtent="870,477" Size="870,477" />
+                    <Text DynamicData="BrowserState.Status" Font="/TextStyles.Normal.NormalStyle" Location="4,483" Name="Status" PackLocation=",fff" PackSize="a" ScrollExtent="665,32" Size="665,32" TextAlignmentVertical="Center" TextColor="#F3E9D7">:fd00e2a66afb0eca:Status...</Text>
+                    <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="670,483" MaximumSize="16384,32" MinimumSize="60,32" Name="Progress" OnHide="parent.Back.visible = true" OnShow="parent.Back.visible = false" PackLocation="fff,fff" ScrollExtent="200,32" Size="200,32">
+                        <Text DynamicData="BrowserState.Progress" Font="/TextStyles.Normal.NormalStyle" Name="Progress" ScrollExtent="200,32" Size="200,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F3E9D7">:fd00e2a646ba84ca:Progress...</Text>
+                        <Page BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/SpecialElements.SkillProgressBar.data.frame.rect" ScrollExtent="200,32" Size="200,32" />
+                        <Progressbar BackgroundOpacity="1.000" Color="#EF8450" DynamicData="BrowserState.Progress" Name="Progress" PackSize="absolute,fixed" Progress="1.000" ScrollExtent="200,32" Size="200,32" Style="/SpecialElements.SkillProgressBar.data.style" />
+                        <Page BackgroundOpacity="1.000" Name="Bkg" PackSize="absolute,fixed" RStyleDefault="/SpecialElements.SkillProgressBar.data.bkg.rect" ScrollExtent="200,32" Size="200,32" />
+                    </Page>
+                    <Button comment="Browser&apos;s back state (typially DD for a button)" DynamicData="BrowserState.Back" Location="670,483" MaximumSize="16384,32" MinimumSize="32,32" Name="Back" OnPress="parent.Browser.action = &quot;back&quot;" PackLocation="fff,fff" ScrollExtent="200,32" Size="200,32" Style="/CommonElements.PushButton.data.style" Visible="false">:fd00e2a6320391f6_1:Back</Button>
+                    <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="-13,470" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="1100,70" Size="1100,70" />
+                    <Page BackgroundOpacity="1.000" Name="Fill" PackSize="a,a" ScrollExtent="870,515" Size="870,515" />
+                </Page>
+            </Page>
+            <RectangleStyle Color="#FFDDAA" Name="RectStyle" />
+            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="900,600" Size="900,600">
+                <DataSource Name="TabSource">
+                    <Data Name="Tutorial" target="TutorialPage" text=":834a1c39c0e26240:Tutorial" />
+                    <Data Name="Topics" target="TopicsPage" text=":834a1c39a9970864:Player Guide" />
+                    <Data Name="CommonIssues" target="CommonIssuesPage" text=":fd00e2a669885312:Help With Common Problems" />
+                    <Data Name="KnowledgeBase" target="KnowledgeBasePage" text=":fd00e2a6b183e19f:Search For Help" />
+                    <Data Name="Tickets" target="TicketsPage" text=":fd00e2a68247d86a:Customer Service Tickets" />
+                </DataSource>
+                <TabbedPane ActiveTab="0" DataSource="TabSource" Location="30,36" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="840,36" Size="840,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="TabPage" />
+                <Button Location="844,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":fd00e2a6ec278586:Window Settings" UserMovable="true" />
+                <Button Location="847,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":fd00e2a6574a0c6d:Help" UserMovable="true" Visible="false" />
+                <Button Location="864,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":fd00e2a62d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:fd00e2a6574a0c6d_1:Help</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="730,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="900,600" Size="900,600" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,26" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="874,44" Size="874,44" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,35" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="900,565" Size="900,565" />
+            </Page>
+        </Page>

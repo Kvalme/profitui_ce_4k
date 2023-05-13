@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="10,91" MinimumSize="380,192" Name="ScriptExecutor" ScrollExtent="380,320" Size="380,320" UserMovable="true" UserResizable="true" Visible="false">
+            <Page BackgroundOpacity="1.000" Location="25,40" Name="Script" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="330,170" Size="330,170">
+                <Scrollbar ArrowPressSound="sounds/button" Control="Textbox" HideIfUnnecessary="true" Location="298,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,150" Size="22,150" Style="/CommonElements.ScrollbarVertical.data.style" />
+                <Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,10" MaxLines="Unlimited" Name="Textbox" PackSize="absolute,absolute" ScrollExtent="288,150" Size="288,150" Style="/CommonElements.Textbox.data.system_style" WrapWidth="Automatic" />
+            </Page>
+            <Text AbsorbsInput="false" Font="/TextStyles.System.SystemStyle" Location="25,215" Name="HelpText" PackLocation="cfc,bottom" PackSize="absolute,fixed" ScrollExtent="330,66" Size="330,35" TextAlignment="Center" TextAlignmentVertical="Center" TruncateElipsis="false">:e98f9a11b2cb6b4e:[DEVL]Multiline scripts can be executed and tested while being connected to the server.</Text>
+            <Button Location="30,260" MaximumSize="16384,32" MinimumSize="32,32" Name="ClearTextButton" PackLocation="cfc,bottom" ScrollExtent="150,32" Size="150,32" Style="/CommonElements.PushButton.data.style">:e98f9a11db8f21fd:Clear</Button>
+            <Button Location="200,260" MaximumSize="16384,32" MinimumSize="32,32" Name="ExecuteButton" PackLocation="cfc,bottom" ScrollExtent="150,32" Size="150,32" Style="/CommonElements.PushButton.data.style">:e98f9a1132183385:Execute Script</Button>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="380,320" Size="380,320">
+                <Button Location="322,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":e98f9a11ec278586:Window Settings" UserMovable="true" />
+                <Button Location="327,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":e98f9a11574a0c6d:Help" UserMovable="true" Visible="false" />
+                <Button Location="344,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":e98f9a112d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:e98f9a11c07084ae:Script Executor</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="210,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="380,320" Size="380,320" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="380,320" Size="380,320" />
+            </Page>
+        </Page>

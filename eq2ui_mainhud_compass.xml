@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page allowcloseontop="false" alwaysonbottom="true" eq2usescomwndcontrols="true" Location="404,0" MaximumSize="461,96" MinimumSize="117,20" Name="Compass" PackLocation="nfn,nfn" PackSize="f,f" ScrollExtent="461,96" Size="461,96" UserMovable="true" UserResizable="true">
+        <Page allowcloseontop="false" alwaysonbottom="true" eq2usescomwndcontrols="true" Location="404,0" MaximumSize="461,96" MinimumSize="117,20" Name="Compass" PackLocation="nfn,nfn" PackSize="f,f" ScrollExtent="461,96" Size="461,96" UserMovable="true" UserResizable="true" Visible="false">
             <Image Location="225,0" Name="CompassPointer" PackLocation="center,top" PackSize="fixed,fixed" ScrollExtent="11,10" Size="11,10" SourceRect="261,225,272,233" SourceResource="images/profit.dds" Stretch="false" Style=" " />
             <Page AbsorbsInput="false" Location="176,1" Name="CropPage" PackLocation="center,top" ScrollExtent="109,20" Size="109,20">
                 <Page Location="-215,-1" Name="ScrollPage" PackLocation="left,top" PackSize="a,a" ScrollExtent="484,20" Size="484,20">

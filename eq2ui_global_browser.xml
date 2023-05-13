@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="10,10" MinimumSize="500,200" Name="Browser" ScrollExtent="1000,760" Size="1000,760" UserMovable="true" UserResizable="true">
+            <Button comment="Browser&apos;s back state (typially DD for a button)" DynamicData="BrowserState.Back" Location="18,38" MaximumSize="16384,32" MinimumSize="32,32" Name="Back" OnPress="parent.Browser.action = &quot;back&quot;" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:8b36b9f6320391f6:Back</Button>
+            <Button DynamicData="BrowserState.Forward" Location="118,38" MaximumSize="16384,32" MinimumSize="32,32" Name="Forward" OnPress="parent.Browser.action = &quot;forward&quot;" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:8b36b9f6d7d3e9e5:Forward</Button>
+            <Button DynamicData="BrowserState.Stop" IsCancelButton="true" Location="218,38" MaximumSize="16384,32" MinimumSize="32,32" Name="Stop" OnPress="parent.Browser.action = &quot;stop&quot;" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:8b36b9f6e69b4677:Stop</Button>
+            <Button DynamicData="BrowserState.Refresh" Location="328,38" MaximumSize="16384,32" MinimumSize="32,32" Name="Refresh" OnPress="parent.Browser.action = &quot;refresh&quot;" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:8b36b9f650c36698:Refresh</Button>
+            <DataSource Name="BrowserState">
+                <DynamicData comment="Browser&apos;s status (typially DD for a text control)" Name="Status" />
+                <DynamicData comment="Brower&apos;s progress loading the current page (typically DD for a progress control)" Name="Progress" />
+                <DynamicData comment="Browser&apos;s forward state (typially DD for a button)" Name="Forward" />
+                <DynamicData comment="Browser&apos;s back state (typially DD for a button)" Name="Back" />
+                <DynamicData comment="Browser&apos;s refresh state (typially DD for a button)" Name="Refresh" />
+                <DynamicData comment="Browser&apos;s stop state (typially DD for a button)" Name="Stop" />
+                <DynamicData comment="URI of browser&apos;s current page (typically DD for a text control)" Name="URI" />
+            </DataSource>
+            <EQIIBrowser dynamicdata_back="BrowserState.Back" dynamicdata_forward="BrowserState.Forward" dynamicdata_progress="BrowserState.Progress" dynamicdata_refresh="BrowserState.Refresh" dynamicdata_status="BrowserState.Status" dynamicdata_stop="BrowserState.Stop" dynamicdata_uri="BrowserState.URI" Location="2,86" Name="Browser" PackSize="a,a" ScrollExtent="996,627" Size="996,627" />
+            <Text DynamicData="BrowserState.Status" Font="/TextStyles.Normal.NormalStyle" Location="8,720" Name="Status" PackLocation=",fff" PackSize="a" ScrollExtent="780,32" Size="780,32" TextAlignmentVertical="Center" TextColor="#F3E9D7">:8b36b9f66afb0eca:Status...</Text>
+            <Page DynamicData="BrowserState.Progress" DynamicDataFilter="0001" Location="790,720" MaximumSize="16384,32" MinimumSize="60,32" Name="Progress" PackLocation="fff,fff" ScrollExtent="200,32" Size="200,32">
+                <Text DynamicData="BrowserState.Progress" Font="/TextStyles.Normal.NormalStyle" Name="Progress" ScrollExtent="200,32" Size="200,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F3E9D7">:8b36b9f646ba84ca:Progress...</Text>
+                <Page BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/SpecialElements.SkillProgressBar.data.frame.rect" ScrollExtent="200,32" Size="200,32" />
+                <Progressbar BackgroundOpacity="1.000" Color="#EF8450" DynamicData="BrowserState.Progress" Name="Progress" PackSize="absolute,fixed" Progress="1.000" ScrollExtent="200,32" Size="200,32" Style="/SpecialElements.SkillProgressBar.data.style" />
+                <Page BackgroundOpacity="1.000" Name="Bkg" PackSize="absolute,fixed" RStyleDefault="/SpecialElements.SkillProgressBar.data.bkg.rect" ScrollExtent="200,32" Size="200,32" />
+            </Page>
+            <Page AbsorbsInput="false" Location="-12,-3" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="1022,779" Size="1022,779">
+                <Button Location="967,9" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":8b36b9f6ec278586:Window Settings" UserMovable="true" />
+                <Button Location="947,9" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":8b36b9f6574a0c6d:Help" UserMovable="true" />
+                <Button Location="987,9" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":8b36b9f62d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,1" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="24,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:8b36b9f6ea51c959:Browser</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="833,1" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,1" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="1023,775" Size="1023,775" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,26" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="997,68" Size="997,68" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,709" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="997,68" Size="997,68" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,3" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="1023,770" Size="1023,770" />
+            </Page>
+        </Page>

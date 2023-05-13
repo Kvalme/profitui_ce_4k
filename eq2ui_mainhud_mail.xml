@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_mailbox_open" eq2usescomwndcontrols="true" Location="330,82" MaximumSize="16384,446" MinimumSize="352,446" Name="Mail" q2closesound="ui_mailbox_close" ScrollExtent="352,446" Size="352,446" UserMovable="true" UserResizable="true" version="2.0.0">
+        <Page eq2opensound="ui_mailbox_open" eq2usescomwndcontrols="true" Location="330,82" MaximumSize="16384,446" MinimumSize="352,446" Name="Mail" q2closesound="ui_mailbox_close" ScrollExtent="352,446" Size="352,446" UserMovable="true" UserResizable="true" version="2.0.0" Visible="false">
             <Page Location="14,26" Name="SendToPage" PackSize="a,a" ScrollExtent="324,404" Size="324,404" Visible="false">
                 <Text Font="/TextStyles.Normal.NormalStyle" Location="59,29" Margin="1,1,1,1" Name="Label" PackSize="a,f" ScrollExtent="204,71" Size="204,50" TextAlignment="Center" TextAlignmentVertical="Center">Select the guild ranks you would like to send a message to.</Text>
                 <Button cond="true" Location="60,306" Name="OKButton" rank1="false" rank2="false" ScrollExtent="100,30" Size="100,30" Style="/CommonElements.PushButton.data.style">OK</Button>

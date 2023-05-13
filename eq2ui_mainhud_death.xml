@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page allowcloseontop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="335,255" MaximumSize="16384,284" MinimumSize="354,284" Name="Death" PackLocation="center,top" ScrollExtent="354,284" Size="354,284" UserMovable="true" UserResizable="true" Visible="false">
+        <Page allowcloseontop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="847,255" MaximumSize="16384,284" MinimumSize="354,284" Name="Death" PackLocation="center,top" ScrollExtent="354,284" Size="354,284" UserMovable="true" UserResizable="true" Visible="false">
             <Text AbsorbsInput="false" Font="/TextStyles.Death.DeathStyle" Location="32,25" Name="Title" PackSize="a" ScrollExtent="289,34" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="289,34" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFB164" UserMovable="true" UserResizable="true">:5d1d56c3b3799205:YOU HAVE DIED</Text>
             <Page AbsorbsInput="false" Location="36,85" Name="RespawnLocations" PackSize="a" ScrollExtent="284,107" Size="284,107">
                 <Composite Location="10,10" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="264,86" Size="264,86" SpacingType="Fill">

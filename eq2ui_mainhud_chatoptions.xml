@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="215,177" Name="ChatOptions" ScrollExtent="620,470" Size="620,470" UserMovable="true" Visible="false">
+            <Button Location="320,430" Name="Cancel" PackSize="fixed,fixed" ScrollExtent="100,30" Size="100,30" Style="/CommonElements.PushButton.data.style">:156772d3ae453fbb:Cancel</Button>
+            <Button Location="200,430" Name="Ok" PackSize="fixed,fixed" ScrollExtent="100,30" Size="100,30" Style="/CommonElements.PushButton.data.style">:156772d313a7061a:Ok</Button>
+            <Text Font="/Fonts.FontZapf18" Location="16,31" Name="Title1" PackLocation="left,top" PackSize="absolute" ScrollExtent="196,20" Size="196,20" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#EBDEAA">:156772d367f4e0c1:Message Filter</Text>
+            <Text Font="/Fonts.FontZapf18" Location="232,31" Name="Title2" PackLocation="left,top" PackSize="absolute" ScrollExtent="162,20" Size="162,20" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#EBDEAA">:156772d3e2038aba:World Channels</Text>
+            <Text Font="/Fonts.FontZapf18" Location="402,31" Name="Title3" PackLocation="left,top" PackSize="absolute" ScrollExtent="205,20" Size="205,20" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#EBDEAA">:156772d3b790aae1:Custom Channels</Text>
+            <Page eq2usescomwndcontrols="true" Location="22,54" MinimumSize="40,40" Name="MessageFilter" PackLocation="left,top" PackSize="fixed,fixed" ScrollExtent="217,270" Size="217,270">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="MainFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="213,269" Size="213,269" />
+                <Page Location="1,2" Name="TreeContainer" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="189,265" Size="189,265">
+                    <RectangleStyle Color="#FFDDAA" Name="RectStyle" />
+                    <TreeViewStyle CellHeight="20" CellPadding="0,0" DefaultTextStyle="/Fonts.FontZapf15" DisabledTextColor="#A0A0A0" GridColor="#FFDDAA" ImageStyleChecked="/CommonElements.TreeView.data.checked" ImageStyleCollapsed="/CommonElements.TreeView.data.collapsed" ImageStyleExpanded="/CommonElements.TreeView.data.expanded" ImageStyleUnchecked="/CommonElements.TreeView.data.unchecked" Indentation="20" Name="StageTreeViewStyle" RStyleActivated="RectStyle" RStyleDefault="RectStyle" RStyleSelected="RectStyle" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
+                    <TreeView BackgroundColor="#FFFFFF" BackgroundOpacity="0.000" DataSourceContainer="StageTreeDSContainer" MinimumScrollExtent="189,40" Name="StageTreeView" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="189,266" SelectionAllowedMultiRow="false" Size="189,266" Style="StageTreeViewStyle" ToggleChecks="true" UserResizable="true" />
+                    <DataSourceContainer Name="StageTreeDSContainer" text=":156772d3738c9ade:foo">
+                        <DataSourceContainer disabled="true" Name="StageTreeDSContainer" text=":156772d3738c9ade_1:foo">
+                            <DataSourceContainer Name="StageTreeDSContainer" text=":156772d3738c9ade_2:foo" />
+                        </DataSourceContainer>
+                        <DataSourceContainer Name="StageTreeDSContainer" text=":156772d3738c9ade_3:foo" />
+                    </DataSourceContainer>
+                </Page>
+                <Scrollbar ArrowPressSound="sounds/button" Control="TreeContainer.StageTreeView" Location="188,1" Name="StageTreeViewScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="19,267" Size="19,267" Style="/CommonElements.ScrollbarVertical.data.style" />
+                <Page BackgroundColor="#181716" BackgroundOpacity="1.000" Location="1,2" Name="Bkg" ScrollExtent="209,266" Size="209,266" />
+            </Page>
+            <Page eq2usescomwndcontrols="true" Location="247,54" MinimumSize="40,40" Name="WorldChannels" PackLocation="left,top" PackSize="fixed,fixed" ScrollExtent="155,270" Size="155,270">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="MainFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="151,269" Size="151,269" />
+                <Page Location="1,3" Name="TreeContainer" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="127,264" Size="127,264">
+                    <RectangleStyle Color="#FFDDAA" Name="RectStyle" />
+                    <TreeViewStyle CellHeight="20" CellPadding="0,0" DefaultTextStyle="/Fonts.FontZapf15" GridColor="#FFDDAA" ImageStyleChecked="/CommonElements.TreeView.data.checked" ImageStyleCollapsed="/CommonElements.TreeView.data.collapsed" ImageStyleExpanded="/CommonElements.TreeView.data.expanded" ImageStyleUnchecked="/CommonElements.TreeView.data.unchecked" Indentation="24" Name="StageTreeViewStyle" RStyleActivated="RectStyle" RStyleDefault="RectStyle" RStyleSelected="RectStyle" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
+                    <TreeView BackgroundColor="#181716" BackgroundOpacity="0.000" DataSourceContainer="StageTreeDSContainer" Location="-25,0" MinimumScrollExtent="152,0" Name="StageTreeView" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="152,264" SelectionAllowedMultiRow="false" Size="152,264" Style="StageTreeViewStyle" ToggleChecks="true" UserResizable="true" />
+                    <DataSourceContainer Name="StageTreeDSContainer" text=":156772d3738c9ade_4:foo" />
+                </Page>
+                <Scrollbar ArrowPressSound="sounds/button" Control="TreeContainer.StageTreeView" Location="126,1" Name="StageTreeViewScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="19,267" Size="19,267" Style="/CommonElements.ScrollbarVertical.data.style" />
+                <Page BackgroundColor="#181716" BackgroundOpacity="1.000" Location="1,2" Name="Bkg" ScrollExtent="147,266" Size="147,266" />
+            </Page>
+            <Page BackgroundColor="#181716" BackgroundOpacity="1.000" eq2usescomwndcontrols="true" Location="408,54" MinimumSize="40,40" Name="CustomChannels" PackLocation="left,top" PackSize="fixed,fixed" ScrollExtent="195,353" Size="195,353">
+                <Text Font="/Fonts.FontZapf15" Location="10,5" Name="Title1" PackLocation="left,top" PackSize="absolute" ScrollExtent="174,20" Size="174,20" TextAlignmentVertical="Center">:156772d3fe09215f:Channel Name</Text>
+                <Text Font="/Fonts.FontZapf15" Location="10,54" Name="Title2" PackLocation="left,top" PackSize="absolute" ScrollExtent="174,20" Size="174,20" TextAlignmentVertical="Center">:156772d3334bdb7c:Password</Text>
+                <Textbox BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,25" Name="ChannelName" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="174,22" Size="174,22" Style="inputStyle" />
+                <Textbox BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,74" Name="ChannelPassword" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="174,22" Size="174,22" Style="inputStyle" />
+                <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" Name="inputStyle" NormalTextStyle="/Fonts.FontArial14" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0" />
+                <Button Location="39,103" Name="JoinCreate" PackSize="fixed,fixed" ScrollExtent="116,30" Size="116,30" Style="/CommonElements.PushButton.data.style">:156772d39d8aae5c:Join / Create</Button>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="8,140" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="177,176" Size="177,176" />
+                <Page Location="9,140" Name="ScrollPage" PackLocation="left,top" PackSize="fixed,fixed" ScrollExtent="175,176" Size="175,176" Tooltip=":156772d324656fff:Custom Channel List">
+                    <TreeView BackgroundColor="#FFFFFF" BackgroundOpacity="0.000" DataSourceContainer="StageTreeDSContainer" Location="-22,1" MinimumScrollExtent="178,0" Name="StageTreeView" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="178,171" SelectionAllowedMultiRow="false" Size="178,171" Style="StageTreeViewStyle" ToggleChecks="true" UserResizable="true" />
+                    <RectangleStyle Center="true" Color="#FFDDAA" Name="RectStyle" />
+                    <TreeViewStyle CellHeight="20" CellPadding="0,0" DefaultTextStyle="/Fonts.FontArial14" ImageStyleChecked="/CommonElements.TreeView.data.checked" ImageStyleCollapsed="/CommonElements.TreeView.data.collapsed" ImageStyleExpanded="/CommonElements.TreeView.data.expanded" ImageStyleUnchecked="/CommonElements.TreeView.data.unchecked" Indentation="22" Name="StageTreeViewStyle" RStyleActivated="RectStyle" RStyleDefault="RectStyle" RStyleSelected="RectStyle" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
+                    <DataSourceContainer Name="StageTreeDSContainer" text=":156772d3738c9ade_5:foo" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="StageTreeView" Location="154,0" Name="StageTreeViewScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,176" Size="22,176" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Page>
+                <Button Location="39,318" Name="Leave" PackSize="fixed,fixed" ScrollExtent="116,30" Size="116,30" Style="/CommonElements.PushButton.data.style">:156772d3a58e502b:Leave</Button>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="MainFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="195,353" Size="195,353" />
+            </Page>
+            <Page Location="21,332" Name="WindowTitleEntry" ScrollExtent="216,35" Size="216,35">
+                <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontArial14" Name="inputStyle" NormalTextStyle="/Fonts.FontArial14" SelectedTextStyle="/Fonts.FontArial14" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0" />
+                <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="7,2" Name="Label" PackLocation="left,center" PackSize="fixed,absolute" ScrollExtent="104,46" Size="104,30" TextAlignmentVertical="Center">:156772d3228c3f33:Window Title</Text>
+                <Textbox BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="116,7" MaxLength="10" Name="Title" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="90,22" Size="90,22" Style="inputStyle" />
+                <Page BackgroundOpacity="1.000" Color="#262422" Name="BioGrouperBkg" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="216,35" Size="216,35" />
+            </Page>
+            <Page Location="21,373" Name="FontSize" ScrollExtent="353,35" Size="353,35">
+                <TextboxStyle CaratColor="#FFFFC0" CaratWidth="2" Cursor="/Cursor.Text" Name="InputStyle" NormalTextStyle="/Fonts.FontZapf15" SelectedTextStyle="InputStyle" SelectionColor="#4A404A" TextColor="#AAAAFF" TextPadding="7,2,3,0" />
+                <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="7,2" Name="LabelSlider" PackLocation="left,center" PackSize="fixed,absolute" ScrollExtent="81,30" Size="81,30" TextAlignmentVertical="Center">:156772d3e1ca8fd6:Font size</Text>
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="44,4" Name="LabelSliderLeft" PackLocation="left,center" ScrollExtent="77,26" Size="77,26" TextAlignment="Right" TextAlignmentVertical="Center">:156772d34b7b3ae8:Small</Text>
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="268,4" Name="LabelSliderRight" PackLocation="left,center" ScrollExtent="70,26" Size="70,26" TextAlignmentVertical="Center">:156772d36755f945:Large</Text>
+                <Sliderbar ControlInput="Value" Location="119,4" LowerLimit="10" MaximumSize="16384,26" MinimumSize="100,26" Name="Slider" PackLocation="left,center" ScrollExtent="150,26" Size="150,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="40" Value="14" />
+                <Textbox BackgroundOpacity="1.000" Cursor="Text" Location="309,8" Margin="2,0,2,0" Name="Value" NumericInteger="true" PackLocation="left,center" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="28,20" Size="28,20" Style="InputStyle" textalignment="Center">14</Textbox>
+                <Page BackgroundOpacity="1.000" Color="#262422" Name="BioGrouperBkg" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="353,35" Size="353,35" />
+            </Page>
+            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="644,487" Size="644,487">
+                <Button Location="588,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":156772d3ec278586:Window Settings" UserMovable="true" />
+                <Button Location="568,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":156772d3574a0c6d:Help" UserMovable="true" />
+                <Button Location="608,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":156772d32d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="454,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:156772d3c138a849:Chat Options</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="644,487" Size="644,487" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="2,417" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="642,70" Size="642,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="644,485" Size="644,485" />
+            </Page>
+        </Page>

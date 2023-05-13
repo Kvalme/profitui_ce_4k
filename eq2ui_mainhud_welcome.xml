@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="false" hideonce="False" IgnoreTab="false" Location="112,72" MaximumSize="1024,1024" Name="Welcome" OnShow="visible=HideOnce&#xD;&#xA;HideOnce=true" PackLocation="center,center" ScrollExtent="702,496" Size="702,496" UserMovable="true" UserScrollable="false" version="2.0">
+        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="false" hideonce="true" IgnoreTab="false" Location="624,72" MaximumSize="1024,1024" Name="Welcome" OnShow="visible=HideOnce&#xD;&#xA;HideOnce=true" PackLocation="center,center" ScrollExtent="702,496" Size="702,496" UserMovable="true" UserScrollable="false" version="2.0" Visible="false">
             <Image Location="19,116" Name="Seperator" ScrollExtent="668,2" Size="668,2" Style="seperator_style" />
             <ImageStyle Filter="true" Name="seperator_style">
                 <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="297,302,371,304" />
@@ -130,7 +130,7 @@
                 <Button Location="39,79" MaximumSize="16384,38" MinimumSize="30,30" Name="AllAccessAction" OnPress="allaccess claimsc" ScrollExtent="140,32" Size="140,32" Style="/CommonElements.PushButton.data.style" textalignmentvertical="Center">:ea411a69aea87110:Click Here...</Button>
                 <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="-26,47" Name="Title" PackSize="a,f" ScrollExtent="177,38" Size="177,25" TextAlignment="Right" TextColor="#D3A90A">:ea411a6978d96b1b:Redeem 500</Text>
                 <Image AbsorbsInput="false" Location="22,10" Name="AllAccessImage" ScrollExtent="175,29" Size="175,29" SourceRect="313,296,512,326" SourceResource="images/window_elements_specific.dds" />
-                <Page BackgroundOpacity="0.725" Location="0,-6" Name="AllAccessBlackFrame" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="217,168" Size="217,168" />
+                <Page BackgroundOpacity="0.722" Location="0,-6" Name="AllAccessBlackFrame" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="217,168" Size="217,168" />
             </Page>
             <ListboxStyle Name="listbox_style" />
             <DataSource Name="WelcomeDS">

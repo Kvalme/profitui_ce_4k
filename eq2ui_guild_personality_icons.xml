@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Name="GuildPersonalityIcons" ScrollExtent="320,240" Size="320,240">
+            <ImageStyle Filter="true" Name="Mentor">
+                <ImageFrame Source="/images/widgets03.dds" SourceRect="172,28,190,42" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Casual">
+                <ImageFrame Source="images/icons/icon_is9.dds" SourceRect="212,45,250,83" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Fighter">
+                <ImageFrame Source="/images/widgets01.dds" SourceRect="217,4,249,34" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Hardcore">
+                <ImageFrame Source="images/icons/icon_is64.dds" SourceRect="0,128,38,166" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Mage">
+                <ImageFrame Source="/images/widgets01.dds" SourceRect="215,83,249,118" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Priest">
+                <ImageFrame Source="/images/widgets01.dds" SourceRect="217,43,249,74" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Scout">
+                <ImageFrame Source="/images/widgets01.dds" SourceRect="216,125,248,156" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Tradeskill">
+                <ImageFrame Source="images/icons/icon_is1.dds" SourceRect="85,46,119,82" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="WeTrain">
+                <ImageFrame Source="images/icons/icon_is20.dds" SourceRect="170,170,208,208" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="1">
+                <ImageFrame Source="images/icons/icon_is33.dds" SourceRect="169,128,207,166" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="2">
+                <ImageFrame Source="images/icons/icon_is63.dds" SourceRect="2,87,40,125" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="3">
+                <ImageFrame Source="images/widgets01.dds" SourceRect="123,202,138,217" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="4">
+                <ImageFrame Source="images/icons/icon_is35.dds" SourceRect="211,42,252,81" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="5">
+                <ImageFrame Source="images/icons/icon_is61.dds" SourceRect="212,128,250,166" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="6">
+                <ImageFrame Source="images/icons/icon_is11.dds" SourceRect="86,86,124,124" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="7">
+                <ImageFrame Source="images/icons/icon_is11.dds" SourceRect="3,129,41,167" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="8">
+                <ImageFrame Source="images/icons/icon_is71.dds" SourceRect="169,211,207,249" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="9">
+                <ImageFrame Source="images/icons/icon_is24.dds" SourceRect="85,170,126,209" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="10">
+                <ImageFrame Source="images/icons/icon_is54.dds" SourceRect="214,169,250,205" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="11">
+                <ImageFrame Source="images/icons/icon_is9.dds" SourceRect="132,130,166,165" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="12">
+                <ImageFrame Source="images/icons/icon_is22.dds" SourceRect="45,214,81,250" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="13">
+                <ImageFrame Source="images/icons/icon_is23.dds" SourceRect="2,45,40,83" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="14">
+                <ImageFrame Source="images/icons/icon_is9.dds" SourceRect="172,170,210,208" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="15">
+                <ImageFrame Source="images/icons/icon_is29.dds" SourceRect="128,212,166,250" />
+            </ImageStyle>
+        </Page>

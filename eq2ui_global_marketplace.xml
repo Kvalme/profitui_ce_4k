@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" IgnoreTab="false" Location="122,115" MaximumSize="805,1024" MinimumSize="805,504" Name="Marketplace" ScrollExtent="805,504" Size="805,504" UserMovable="true" UserResizable="true" version="3.0.0">
+            <Page Name="AAClaimPage" ScrollExtent="805,504" Size="805,504">
+                <Text Color="#FFFF00" Font="/TextStyles.Large.LargeStyle" Location="413,198" Name="TimeLeftValue" ScrollExtent="57,52" Size="57,20">:x:00:15:00</Text>
+                <Text Font="/TextStyles.Large.LargeStyle" Location="341,198" Name="TimeLeftLabel" ScrollExtent="70,52" Size="70,20">:x:Time Left</Text>
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="493,419" Name="ButtonCurrencyIcon" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                <Text Color="#EFC410" Font="/TextStyles.Large.LargeStyle" Location="413,125" Name="InBlockDiscountAmount" ScrollExtent="22,52" Size="22,20" TextAlignment="Right">500</Text>
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="437,124" Name="InBlockCurrencyIcon" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                <Text DropToParent="true" Font="/TextStyles.Large.LargeStyle" Location="250,107" Name="InfoBlock1" PackSize="a,a" ScrollExtent="320,156" ShadowStyle="/ShadowStylesNew/Drop/style" Size="320,80" TextAlignment="Center" TextColor="#F0F0F0">:x:For a limited time, you can purchase one of the following items for            . This offer will no longer be available if you close this window or if the offer time has expired.</Text>
+                <Text Color="#F0D090" Font="/TextStyles.Large.LargeStyle" Location="287,90" Name="ThankYouMember" ScrollExtent="240,52" ShadowStyle="/ShadowStylesNew/Drop/style" Size="240,20" TextAlignment="Center">:x:Thank you for being a Member!</Text>
+                <Page Location="250,217" Name="ClaimItem1" ScrollExtent="320,60" Size="320,60">
+                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="6,6" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                    <Button BackgroundOpacity="0.000" Name="ClaimButton" ScrollExtent="315,56" Size="315,56" />
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="290,40" Name="TotalPriceCurrencyIcon" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="290,21" Name="DiscountsCurrencyIcon" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="290,3" Name="PriceCurrencyIcon" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                    <Text Color="#FFFF00" Font="/TextStyles.Normal.NormalStyle" Location="255,39" Name="TotalPriceValue" ScrollExtent="35,46" Size="35,20" TextAlignment="Right">1111</Text>
+                    <Text Color="#00FF00" Font="/TextStyles.Normal.NormalStyle" Location="255,21" Name="DiscountsValue" ScrollExtent="35,69" Size="35,20" TextAlignment="Right">-9999</Text>
+                    <Text Color="#FFFF00" Font="/TextStyles.Normal.NormalStyle" Location="255,3" Name="PriceValue" ScrollExtent="35,46" Size="35,20" TextAlignment="Right">9999</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="185,39" Name="TotalPriceLabel" ScrollExtent="70,46" Size="70,20" TextAlignment="Right">:x:Total Price</Text>
+                    <Text Color="#00FF00" Font="/TextStyles.Normal.NormalStyle" Location="185,21" Name="DiscountsLabel" ScrollExtent="70,46" Size="70,20" TextAlignment="Right">:x:Discounts</Text>
+                    <Text Color="#F0D090" Font="/TextStyles.Normal.NormalStyle" Location="185,3" Name="PriceLabel" ScrollExtent="70,46" Size="70,20" TextAlignment="Right">:x:Item Price</Text>
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="53,4" Name="Name" PackSize="a,a" ScrollExtent="130,92" Size="130,32" TextColor="#F0F0F0">:aef3f1e25af37426:[DEVL] Item With a Very Very Long Name</Text>
+                    <Page BackgroundOpacity="0.722" Location="-6,-6" Name="SelectionHighlight" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="328,71" Size="328,71" />
+                    <Page BackgroundOpacity="1.000" BackgroundTint="#DDDDDD" Location="1,1" Name="Bkg" PackSize="a,a" RStyleDefault="item_bkg.rect" ScrollExtent="314,56" Size="314,56" />
+                </Page>
+                <Page Location="250,280" Name="ClaimItem2" ScrollExtent="320,60" Size="320,60">
+                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="6,6" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                    <Button BackgroundOpacity="0.000" Name="ClaimButton" ScrollExtent="315,56" Size="315,56" />
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="290,40" Name="TotalPriceCurrencyIcon" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="290,21" Name="DiscountsCurrencyIcon" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="290,3" Name="PriceCurrencyIcon" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                    <Text Color="#FFFF00" Font="/TextStyles.Normal.NormalStyle" Location="255,39" Name="TotalPriceValue" ScrollExtent="35,46" Size="35,20" TextAlignment="Right">1111</Text>
+                    <Text Color="#00FF00" Font="/TextStyles.Normal.NormalStyle" Location="255,21" Name="DiscountsValue" ScrollExtent="35,69" Size="35,20" TextAlignment="Right">-9999</Text>
+                    <Text Color="#FFFF00" Font="/TextStyles.Normal.NormalStyle" Location="255,3" Name="PriceValue" ScrollExtent="35,46" Size="35,20" TextAlignment="Right">9999</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="185,39" Name="TotalPriceLabel" ScrollExtent="70,46" Size="70,20" TextAlignment="Right">:x:Total Price</Text>
+                    <Text Color="#00FF00" Font="/TextStyles.Normal.NormalStyle" Location="185,21" Name="DiscountsLabel" ScrollExtent="70,46" Size="70,20" TextAlignment="Right">:x:Discounts</Text>
+                    <Text Color="#F0D090" Font="/TextStyles.Normal.NormalStyle" Location="185,3" Name="PriceLabel" ScrollExtent="70,46" Size="70,20" TextAlignment="Right">:x:Item Price</Text>
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="53,4" Name="Name" PackSize="a,a" ScrollExtent="130,92" Size="130,32" TextColor="#F0F0F0">:aef3f1e25af37426:[DEVL] Item With a Very Very Long Name</Text>
+                    <Page BackgroundOpacity="0.722" Location="-6,-6" Name="SelectionHighlight" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="328,71" Size="328,71" />
+                    <Page BackgroundOpacity="1.000" BackgroundTint="#DDDDDD" Location="1,1" Name="Bkg" PackSize="a,a" RStyleDefault="item_bkg.rect" ScrollExtent="314,56" Size="314,56" />
+                </Page>
+                <Page Location="250,343" Name="ClaimItem3" ScrollExtent="320,60" Size="320,60">
+                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="6,6" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                    <Button BackgroundOpacity="0.000" Name="ClaimButton" ScrollExtent="315,56" Size="315,56" />
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="290,40" Name="TotalPriceCurrencyIcon" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="290,21" Name="DiscountsCurrencyIcon" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="290,3" Name="PriceCurrencyIcon" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                    <Text Color="#FFFF00" Font="/TextStyles.Normal.NormalStyle" Location="255,39" Name="TotalPriceValue" ScrollExtent="35,46" Size="35,20" TextAlignment="Right">1111</Text>
+                    <Text Color="#00FF00" Font="/TextStyles.Normal.NormalStyle" Location="255,21" Name="DiscountsValue" ScrollExtent="35,69" Size="35,20" TextAlignment="Right">-9999</Text>
+                    <Text Color="#FFFF00" Font="/TextStyles.Normal.NormalStyle" Location="255,3" Name="PriceValue" ScrollExtent="35,46" Size="35,20" TextAlignment="Right">9999</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="185,39" Name="TotalPriceLabel" ScrollExtent="70,46" Size="70,20" TextAlignment="Right">:x:Total Price</Text>
+                    <Text Color="#00FF00" Font="/TextStyles.Normal.NormalStyle" Location="185,21" Name="DiscountsLabel" ScrollExtent="70,46" Size="70,20" TextAlignment="Right">:x:Discounts</Text>
+                    <Text Color="#F0D090" Font="/TextStyles.Normal.NormalStyle" Location="185,3" Name="PriceLabel" ScrollExtent="70,46" Size="70,20" TextAlignment="Right">:x:Item Price</Text>
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="53,4" Name="Name" PackSize="a,a" ScrollExtent="130,92" Size="130,32" TextColor="#F0F0F0">:aef3f1e25af37426:[DEVL] Item With a Very Very Long Name</Text>
+                    <Page BackgroundOpacity="0.722" Location="-6,-6" Name="SelectionHighlight" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="328,71" Size="328,71" />
+                    <Page BackgroundOpacity="1.000" BackgroundTint="#DDDDDD" Location="1,1" Name="Bkg" PackSize="a,a" RStyleDefault="item_bkg.rect" ScrollExtent="314,56" Size="314,56" />
+                </Page>
+                <Button Location="270,412" MaximumSize="16384,38" MinimumSize="38,38" Name="PurchaseButton" ScrollExtent="275,38" Size="275,38" Style="/SpecialElements.GreenGradientButton.data.style">:aef3f1e2679e4c92:Claim this item for 500    </Button>
+                <Page AbsorbsInput="false" Location="211,46" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="388,440" Size="388,440">
+                    <Button Location="353,36" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":13a20c742d3f513f_2:Close" />
+                    <Image Location="-1,332" Name="SW_Corner" PackLocation="left,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+                    <Image Location="283,333" Name="SE_Corner" PackLocation="right,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+                    <Image Location="-2,17" Name="NW_Corner" PackLocation="left,top" ScrollExtent="106,107" Size="106,107" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+                    <Image Location="282,17" Name="NE_Corner" PackLocation="right,top" ScrollExtent="108,96" Size="108,96" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="15,31" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.CenterFrame.data.frame.rect" ScrollExtent="362,397" Size="362,397" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="16,36" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="CartItemsPage.WindowFrame.bkg.rect" ScrollExtent="357,387" Size="357,387" />
+                    <Namespace Name="bkg">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/welcome_screen_bg.dds" SourceRect="77,0,434,383" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                    </Namespace>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="74,0" Name="LeftGrouper" PackSize="a,f" RStyleDefault="/WindowElements.CenterFrame.data.left_grouper.rect" ScrollExtent="240,34" Size="240,34">
+                        <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="54,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="166,38" ShadowStyle="/ShadowStylesNew.Outline.style" Size="133,30" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:x:Offer Claim</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="0.400" Location="0,25" Name="Bkg" ScrollExtent="805,479" Size="805,479" />
+            </Page>
+            <Page IgnoreTab="false" Location="176,92" Name="BidPage" ScrollExtent="481,250" Size="481,250" Visible="false">
+                <Button Location="255,158" MaximumSize="16384,38" MinimumSize="38,38" Name="Cancel" ScrollExtent="160,38" Size="160,38" Style="/CommonElements.LargePushButton.data.style">:aef3f1e2ae453fbb:Cancel</Button>
+                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="302,93" MinimumSize="22,22" Name="BuyoutCheckbox" ScrollExtent="107,22" Size="107,22" Style="/CommonElements.Checkbox.data.style">:aef3f1e26d03c119:Buyout</Checkbox>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="117,44" Name="Info" ScrollExtent="247,46" ShadowStyle="/ShadowStylesNew.Drop.style" Size="247,40" TextAlignment="Center" TextAlignmentVertical="Center">:aef3f1e2a6d2fc48:Please enter your maximum bid.</Text>
+                <Button Location="66,158" MaximumSize="16384,38" MinimumSize="38,38" Name="Confirm" ScrollExtent="160,38" Size="160,38" Style="/CommonElements.LargePushButton.data.style">:13a20c74bf916527:Confirm</Button>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="69,89" Name="BidText" ScrollExtent="107,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="107,30" TextAlignment="Right" TextAlignmentVertical="Center">:aef3f1e2d28531d7:Bid amount</Text>
+                <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="187,89" MaximumSize="16384,30" MinimumSize="30,30" Name="BidAmount" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="107,30" Size="107,30" Style="/CommonElements.Textfield.data.style" />
+                <Page AbsorbsInput="false" Location="39,32" Name="WindowFrame" ScrollExtent="402,194" Size="402,194">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="381,182" Size="381,182" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="400,214" Size="400,214" />
+                </Page>
+            </Page>
+            <Page Name="DialogPage" ScrollExtent="805,504" Size="805,504" Visible="false">
+                <Composite Location="225,64" Name="Composite" ScrollExtent="360,440" Size="360,406" SpacingType="Fill">
+                    <Text AbsorbsInput="false" BackgroundColor="#FF0000" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Margin="10,5,10,5" Name="Label" ScrollExtent="360,88" Size="360,45" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c741f7a0d45:Thank you for your purchase!
+The following items have been placed into your inventory.</Text>
+                    <Page Location="0,45" Name="RebatePage" ScrollExtent="360,45" Size="360,45">
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="80,50" Name="Decoration" PackLocation="center,top" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="215,30" Size="215,30" />
+                        <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.VeryLarge.VeryLargeStyle" GetsInput="false" Location="138,49" Name="RebateAmount" ScrollExtent="68,38" Size="68,24" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFCC00">:aef3f1e24d139e03:1500</Text>
+                        <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="53,16" Name="Label" PackLocation="center,top" ScrollExtent="261,24" Size="261,24" TextAlignment="Center" TextAlignmentVertical="Center">:aef3f1e23b1932f3:Your Instant Rebate will be:</Text>
+                        <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="210,48" Name="RebateCoin" ScrollExtent="24,24" Size="24,24" Style="/imagelist.coins.StationCash" />
+                    </Page>
+                    <Page BackgroundColor="#00FF00" Location="0,90" MaximumSize="16384,50" MinimumSize="0,50" Name="PriceEachPage" ScrollExtent="360,50" Size="360,50">
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Name="PriceEachLabel" ScrollExtent="200,26" Size="200,20" TextAlignment="Right" TextAlignmentVertical="Center">:aef3f1e25ccc3a7a:Price Each:</Text>
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" Color="#FFFF00" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="210,0" Name="PriceEachValue" ScrollExtent="100,26" Size="100,20" TextAlignmentVertical="Center">:aef3f1e2da436dfe:400</Text>
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="0,20" Name="MemberDiscEachLabel" ScrollExtent="200,52" Size="200,20" TextAlignment="Right" TextAlignmentVertical="Center">:aef3f1e2292bdb07:Membership Discount:</Text>
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" Color="#FFFF00" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="210,20" Name="MemberDiscEachValue" ScrollExtent="100,26" Size="100,20" TextAlignmentVertical="Center">:aef3f1e23ace1f1a:50</Text>
+                    </Page>
+                    <Page BackgroundColor="#00FF00" Location="0,140" MaximumSize="16384,50" MinimumSize="0,50" Name="PriceTotalPage" ScrollExtent="360,50" Size="360,50">
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Name="TotalPriceLabel" ScrollExtent="200,26" Size="200,20" TextAlignment="Right" TextAlignmentVertical="Center">:aef3f1e2d99d3688:Total Price:</Text>
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" Color="#FFFF00" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="210,0" Name="TotalPriceValue" ScrollExtent="100,26" Size="100,20" TextAlignmentVertical="Center">:aef3f1e2da436dfe_1:400</Text>
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="0,20" Name="InstantRebateLabel" ScrollExtent="200,26" Size="200,20" TextAlignment="Right" TextAlignmentVertical="Center">:aef3f1e2f8b93936:Instant Rebate:</Text>
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" Color="#FFFF00" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="210,20" Name="InstantRebateValue" ScrollExtent="100,26" Size="100,20" TextAlignmentVertical="Center">:aef3f1e23ace1f1a_1:50</Text>
+                    </Page>
+                    <Page BackgroundColor="#00FF00" Location="0,190" MaximumSize="16384,50" MinimumSize="0,50" Name="DiscountPage" ScrollExtent="360,50" Size="360,50">
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" Color="#56F610" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Margin="10,5,10,5" Name="PercentageLabel" ScrollExtent="360,50" Size="360,50" TextAlignment="Center" TextAlignmentVertical="Center">:aef3f1e2099301e9:You have saved 50SC (10%)</Text>
+                    </Page>
+                    <Page BackgroundColor="#00FF00" Location="0,240" MaximumSize="16384,50" MinimumSize="0,50" Name="InformationPage" ScrollExtent="360,50" Size="360,50">
+                        <Text AbsorbsInput="false" BackgroundColor="#FF0000" Color="#000000" DropToParent="true" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Margin="10,5,10,5" Name="InformationMessage" ScrollExtent="360,88" Size="360,50" TextAlignment="Center" TextAlignmentVertical="Center">:aef3f1e27a92e8cc:NOTE: You are currently on an exchange server, you may only move to other exchange servers.</Text>
+                    </Page>
+                    <Page BackgroundColor="#00FF00" Location="0,290" MaximumSize="16384,50" MinimumSize="0,50" Name="ButtonPageSC" ScrollExtent="360,50" Size="360,50">
+                        <Button Location="73,0" MaximumSize="16384,38" MinimumSize="38,38" Name="OKButtonSC" ScrollExtent="214,38" Size="214,38" Style="/CommonElements.LargePushButton.data.style">:aef3f1e2c8e5c97b:100 Daybreak Cash</Button>
+                    </Page>
+                    <Page BackgroundColor="#00FF00" Location="0,340" MaximumSize="16384,50" MinimumSize="0,50" Name="ButtonPageDM" ScrollExtent="360,50" Size="360,50">
+                        <Button Location="73,0" MaximumSize="16384,38" MinimumSize="38,38" Name="OKButtonDM" ScrollExtent="214,38" Size="214,38" Style="/CommonElements.LargePushButton.data.style">:aef3f1e2598bbd28:250 Dungeon Marks</Button>
+                    </Page>
+                    <Page BackgroundColor="#00FF00" Location="0,390" MaximumSize="16384,50" MinimumSize="0,50" Name="ButtonPageCancel" ScrollExtent="360,50" Size="360,50">
+                        <Button Location="73,0" MaximumSize="16384,38" MinimumSize="38,38" Name="CancelButton" ScrollExtent="214,38" Size="214,38" Style="/CommonElements.LargePushButton.data.style">:aef3f1e2ae453fbb_1:Cancel</Button>
+                    </Page>
+                    <Page BackgroundColor="#00FF00" Location="0,356" MaximumSize="16384,50" MinimumSize="0,50" Name="ButtonPage" ScrollExtent="360,50" Size="360,50" Visible="false">
+                        <Button Location="120,0" MaximumSize="16384,38" MinimumSize="38,38" Name="OKButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:13a20c7428c926d2:OK</Button>
+                        <Button Location="185,0" MaximumSize="16384,38" MinimumSize="38,38" Name="NoButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:13a20c740dd1f342:No</Button>
+                        <Button Location="55,0" MaximumSize="16384,38" MinimumSize="38,38" Name="YesButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:13a20c74b2558cb6:Yes</Button>
+                    </Page>
+                </Composite>
+                <Page AbsorbsInput="false" Location="211,46" Name="RebateWindowFrame" PackSize="absolute,absolute" ScrollExtent="388,440" Size="388,440">
+                    <Image Location="282,0" Name="NE_Corner" PackLocation="right,top" ScrollExtent="108,96" Size="108,96" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+                    <Image Location="-2,0" Name="NW_Corner" PackLocation="left,top" ScrollExtent="106,107" Size="106,107" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+                    <Image Location="283,332" Name="SE_Corner" PackLocation="right,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+                    <Image Location="-1,332" Name="SW_Corner" PackLocation="left,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="15,14" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.CenterFrame.data.frame.rect" ScrollExtent="362,413" Size="362,413" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="16,18" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/MainHUD.Welcome.WindowFrame.bkg.rect" ScrollExtent="357,405" Size="357,405" />
+                    <Namespace Name="bkg">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/welcome_screen_bg.dds" SourceRect="0,0,512,383" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                    </Namespace>
+                </Page>
+                <Page AbsorbsInput="false" Location="211,46" Name="WindowFrame" ScrollExtent="388,440" Size="388,440">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="367,428" Size="367,428" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="386,460" Size="386,460" />
+                </Page>
+                <Page BackgroundOpacity="0.400" Location="0,25" Name="Bkg" ScrollExtent="805,479" Size="805,479" />
+            </Page>
+            <Page Name="CartItemsPage" ScrollExtent="805,504" Size="805,504">
+                <DataSource Name="PurchaseWithDS">
+                    <Data Name="New Data" text=":aef3f1e20e2d929c:Purchase using Daybreak Cash" />
+                    <Data Name="New Data" text=":aef3f1e287b22ecd:Test" />
+                </DataSource>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="PurchaseWithDS" Location="252,44" MaximumSize="16384,32" MinimumSize="50,32" Name="PurchaseCurrencyDropdown" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="307,32" Size="307,32" Style="/CommonElements.Dropdown.data.style" />
+                <DataSource Name="CouponDropdownDS" />
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="CouponDropdownDS" Location="252,76" MaximumSize="16384,32" MinimumSize="50,32" Name="CouponDropdown" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="307,32" Size="307,32" Style="/CommonElements.Dropdown.data.style" />
+                <Text Font="/TextStyles.Large.LargeStyle" Location="307,118" Name="ItemName" ScrollExtent="248,52" Size="248,42">:aef3f1e2c7766785:Brewmaster Furniture Bundle</Text>
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="260,118" MouseOverColor="#FFFF00" Name="ItemIcon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.coin" Location="531,173" MouseOverColor="#FFFF00" Name="PriceSecondaryCurrencyIcon" PackLocation="left,top" ScrollExtent="20,20" Size="20,20" Visible="false" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="531,173" Name="PricePrimaryCurrencyIcon" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                <Text Color="#FFFF00" Font="/TextStyles.BigLarge.BigLargeStyle" Location="429,171" Name="PriceAmount" ScrollExtent="100,32" Size="100,24" TextAlignment="Right">:aef3f1e2dece114c_2:200</Text>
+                <Text Color="#F0D090" Font="/TextStyles.BigLarge.BigLargeStyle" Location="260,171" Name="PriceLabel" ScrollExtent="169,32" Size="169,24">:aef3f1e213986ea4:Price:</Text>
+                <Text Font="/TextStyles.BigLarge.BigLargeStyle" Location="429,203" Name="QuantityAmount" ScrollExtent="100,32" Size="100,24" TextAlignment="Right">:aef3f1e2dece114c_1:200</Text>
+                <Text Color="#F0D090" Font="/TextStyles.BigLarge.BigLargeStyle" Location="260,203" Name="QuantityLabel" ScrollExtent="169,32" Size="169,24">:aef3f1e2c60393a5:Qty:</Text>
+                <Splitter AbsorbsInput="false" Location="258,237" MaximumSize="16384,14" MinimumSize="100,14" Name="TopSplitter" ScrollExtent="300,14" Size="300,14" Style="/CommonElements.Splitter.data.style" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.coin" Location="531,263" MouseOverColor="#FFFF00" Name="SubtotalSecondaryCurrencyIcon" PackLocation="left,top" ScrollExtent="20,20" Size="20,20" Visible="false" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="531,263" Name="SubtotalPrimaryCurrencyIcon" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                <Text Color="#FFFF00" Font="/TextStyles.BigLarge.BigLargeStyle" Location="429,261" Name="SubtotalAmount" ScrollExtent="100,32" Size="100,24" TextAlignment="Right">:aef3f1e2dece114c:200</Text>
+                <Text Color="#F0D090" Font="/TextStyles.BigLarge.BigLargeStyle" Location="260,261" Name="SubtotalLabel" ScrollExtent="169,32" Size="169,24">:aef3f1e2836d9054:Subtotal:</Text>
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.coin" Location="531,290" MouseOverColor="#FFFF00" Name="SaleSecondaryCurrencyIcon" PackLocation="left,top" ScrollExtent="20,20" Size="20,20" Visible="false" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="531,290" Name="SalePrimaryCurrencyIcon" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                <Text Color="#00FF00" Font="/TextStyles.BigLarge.BigLargeStyle" Location="429,288" Name="SaleAmount" ScrollExtent="100,32" Size="100,24" TextAlignment="Right">:aef3f1e2fb829783:-20</Text>
+                <Text Color="#00FF00" Font="/TextStyles.BigLarge.BigLargeStyle" Location="260,288" Name="SaleLabel" ScrollExtent="169,32" Size="169,24">:aef3f1e2ed0a7001:Sale (-10%):</Text>
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.coin" Location="531,319" MouseOverColor="#FFFF00" Name="CouponDiscountSecondaryCurrencyIcon" PackLocation="left,top" ScrollExtent="20,20" Size="20,20" Visible="false" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="531,319" Name="CouponDiscountPrimaryCurrencyIcon" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                <Text Color="#00FF00" Font="/TextStyles.BigLarge.BigLargeStyle" Location="429,317" Name="CouponDiscountAmount" ScrollExtent="100,32" Size="100,24" TextAlignment="Right">:x:-20</Text>
+                <Text Color="#00FF00" Font="/TextStyles.BigLarge.BigLargeStyle" Location="260,317" Name="CouponDiscountLabel" ScrollExtent="169,64" Size="169,24">:x:Coupon (-10%):</Text>
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.coin" Location="531,348" MouseOverColor="#FFFF00" Name="MemberDiscountSecondaryCurrencyIcon" PackLocation="left,top" ScrollExtent="20,20" Size="20,20" Visible="false" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="531,348" Name="MemberDiscountPrimaryCurrencyIcon" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                <Text Color="#00FF00" Font="/TextStyles.BigLarge.BigLargeStyle" Location="429,346" Name="MembersDiscountAmount" ScrollExtent="100,32" Size="100,24" TextAlignment="Right">:aef3f1e2fb829783_1:-20</Text>
+                <Text Color="#00FF00" Font="/TextStyles.BigLarge.BigLargeStyle" Location="260,346" Name="MembersDiscountLabel" ScrollExtent="169,64" Size="169,24">:aef3f1e262ef050a:Members* (-10%):</Text>
+                <Splitter AbsorbsInput="false" Location="258,370" MaximumSize="16384,14" MinimumSize="100,14" Name="BottomSplitter" ScrollExtent="300,14" Size="300,14" Style="/CommonElements.Splitter.data.style" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.coin" Location="531,392" MouseOverColor="#FFFF00" Name="TotalSecondaryCurrencyIcon" PackLocation="left,top" ScrollExtent="24,24" Size="24,24" Visible="false" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="531,391" Name="TotalPrimaryCurrencyIcon" ScrollExtent="24,24" Size="24,24" Style="/imagelist.coins.StationCash" />
+                <Text Color="#FFFF00" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="424,383" Margin="1,1,3,3" Name="TotalAmount" ScrollExtent="109,45" Size="109,38" TextAlignment="Right">:aef3f1e28ad20893:160</Text>
+                <Text Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="260,383" Margin="1,1,3,3" Name="TotalLabel" ScrollExtent="168,45" Size="168,38">:aef3f1e2604c9fe4:Total:</Text>
+                <Button Location="388,427" MaximumSize="16384,38" MinimumSize="38,38" Name="PurchaseButton" ScrollExtent="171,38" Size="171,38" Style="/SpecialElements.GreenGradientButton.data.style">:aef3f1e2679e4c92:Purchase</Button>
+                <Button Location="260,427" MaximumSize="16384,38" MinimumSize="38,38" Name="CancelButton" ScrollExtent="102,38" Size="102,38" Style="/SpecialElements.RedGradientButton.data.style">:aef3f1e2ae453fbb_2:Cancel</Button>
+                <Text Font="/TextStyles.Large.LargeStyle" Location="260,462" Name="MemberDiscountReminderText" ScrollExtent="300,26" Size="300,21" TextAlignment="Center">:aef3f1e244e3f4d3:*Members receive 10% off</Text>
+                <Page AbsorbsInput="false" Location="211,0" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="388,500" Size="388,500">
+                    <Image Location="-1,392" Name="SW_Corner" PackLocation="left,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+                    <Image Location="283,393" Name="SE_Corner" PackLocation="right,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+                    <Image Location="-2,17" Name="NW_Corner" PackLocation="left,top" ScrollExtent="106,107" Size="106,107" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+                    <Image Location="282,17" Name="NE_Corner" PackLocation="right,top" ScrollExtent="108,96" Size="108,96" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="15,31" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.CenterFrame.data.frame.rect" ScrollExtent="362,457" Size="362,457" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="16,36" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="bkg.rect" ScrollExtent="357,447" Size="357,447" />
+                    <Namespace Name="bkg">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/welcome_screen_bg.dds" SourceRect="77,0,434,383" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                    </Namespace>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="74,0" Name="LeftGrouper" PackSize="a,f" RStyleDefault="/WindowElements.CenterFrame.data.left_grouper.rect" ScrollExtent="240,34" Size="240,34">
+                        <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="54,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="165,38" ShadowStyle="/ShadowStylesNew.Outline.style" Size="133,30" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:aef3f1e25d48bddd:Cart Item(s)</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="0.400" Location="0,25" Name="Bkg" ScrollExtent="805,479" Size="805,479" />
+            </Page>
+            <Page IgnoreTab="false" Location="176,92" Name="StateAndZipPage" ScrollExtent="481,250" Size="481,250" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="117,44" Name="Info" ScrollExtent="247,46" ShadowStyle="/ShadowStylesNew.Drop.style" Size="247,40" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c747da90124:Please confirm your state and zip code.</Text>
+                <Button Location="162,158" MaximumSize="16384,38" MinimumSize="38,38" Name="Confirm" ScrollExtent="160,38" Size="160,38" Style="/CommonElements.LargePushButton.data.style">:aef3f1e2bf916527:Confirm</Button>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="93,122" Name="ZipLabel" ScrollExtent="107,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="107,30" TextAlignment="Right" TextAlignmentVertical="Center">:13a20c74c69174b0:State:</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="StateDS" Location="210,120" MaximumSize="16384,32" MinimumSize="50,32" Name="State" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="141,32" Size="141,32" Style="/CommonElements.Dropdown.data.style" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="93,89" Name="ZipLabel" ScrollExtent="107,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="107,30" TextAlignment="Right" TextAlignmentVertical="Center">:13a20c7437a4ae54:Zip Code:</Text>
+                <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="210,89" MaximumSize="16384,30" MinimumSize="30,30" Name="ZipCode" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="107,30" Size="107,30" Style="/CommonElements.Textfield.data.style" />
+                <Page AbsorbsInput="false" Location="39,32" Name="WindowFrame" ScrollExtent="402,194" Size="402,194">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="381,182" Size="381,182" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="400,214" Size="400,214" />
+                </Page>
+                <DataSource Name="StateDS">
+                    <Data text=":13a20c74f3b6c4c3_1:- Select State -" />
+                </DataSource>
+            </Page>
+            <Page AbsorbsInput="false" IgnoreTab="false" Name="GiftPage" PackSize="absolute,absolute" ScrollExtent="805,504" Size="805,504" Visible="false">
+                <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontZapf15" Name="RecipientInputStyle" NormalTextStyle="/Fonts.FontZapf15" SelectedTextStyle="/Fonts.FontZapf15" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0" />
+                <Text AbsorbsInput="false" Color="#F0D090" Font="/Fonts.FontZapf15" Location="228,61" Name="RecipientLabel" ScrollExtent="72,18" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="72,18" TextAlignment="Center" UserMovable="true" UserResizable="true">:aef3f1e2abc437df:Recipient:</Text>
+                <TextboxPlayerName BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="311,59" Name="Recipient" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="280,22" Size="280,22" style="/MainHUD.Mail.MainTabPage.SendPage.RecipientInputStyle" Tooltip=":aef3f1e2a7d8c957:The name of the character to whom this gift should go.  For example: Zoltaroth or Antonia Bayle.Zoltaroth" />
+                <Page BackgroundColor="#262422" BackgroundOpacity="1.000" Color="#262422" Location="311,59" Name="RecipientBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="280,22" Size="280,22" />
+                <Text AbsorbsInput="false" Color="#F0D090" Font="/Fonts.FontZapf15" Location="228,87" Name="SubjectLabel" ScrollExtent="72,18" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="72,18" TextAlignment="Center" UserMovable="true" UserResizable="true">:aef3f1e2a2acfd8a:Subject:</Text>
+                <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontZapf15" Name="SubjectInputStyle" NormalTextStyle="/Fonts.FontZapf15" SelectedTextStyle="/Fonts.FontZapf15" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0" />
+                <Textbox BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="311,84" Name="Subject" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="280,22" Size="280,22" Style="/MainHUD.Mail.MainTabPage.SendPage.SubjectInputStyle" />
+                <Page BackgroundColor="#262422" BackgroundOpacity="1.000" Color="#262422" Location="311,84" Name="SubjectBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="280,22" Size="280,22" />
+                <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontZapf15" Name="BodyInputStyle" NormalTextStyle="/Fonts.FontZapf15" SelectedTextStyle="/Fonts.FontZapf15" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#F1E8DA" TextPadding="0,0,0,0" />
+                <Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="230,112" MaximumSize="360,16384" MaxLines="Unlimited" Name="Body" ScrollExtent="360,214" Size="360,214" Style="/MainHUD.Mail.MainTabPage.SendPage.BodyInputStyle" WrapWidth="Automatic" />
+                <Scrollbar ArrowPressSound="sounds/button" Control="Body" Location="591,109" Name="BodyScroll" ScrollExtent="22,217" Size="22,217" Style="/CommonElements.ScrollbarVertical.data.style" />
+                <Page BackgroundOpacity="1.000" Location="226,109" Name="BodyGrouperFrame" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="368,218" Size="368,218" />
+                <Page BackgroundOpacity="1.000" Color="#2D251C" Location="224,109" Name="BodyGrouperBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="368,218" Size="368,218" />
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="285,353" Name="GiftName" PackSize="a,a" ScrollExtent="311,46" Size="311,34" TextColor="#F0F0F0">:13a20c745af37426:[DEVL] Item With a Very Very Very Very Very Very Long Name</Text>
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.tradeskill" Location="232,350" MouseOverColor="#FFFF00" Name="GiftIcon" ScrollExtent="42,42" Size="42,42" text=":aef3f1e23c2ca329:Attach Coin..." TreatAsButton="true" />
+                <Page BackgroundOpacity="1.000" Location="226,345" Name="AttachmentGrouperFrame" RStyleDefault="/FrameStyles.ThinRounded.rect" ScrollExtent="383,53" Size="383,53" text=":aef3f1e23c2ca329_1:Attach Coin..." />
+                <Page BackgroundOpacity="1.000" Color="#262422" Location="226,344" Name="AttachmentGrouperBkg" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="383,53" Size="383,53" text=":aef3f1e23c2ca329_2:Attach Coin..." />
+                <Button Location="412,407" Name="SendButton" ScrollExtent="100,30" Size="100,30" Style="/CommonElements.PushButton.data.style">:aef3f1e2f8be6a0c:Send</Button>
+                <Button Location="509,407" Name="CancelButton" ScrollExtent="100,30" Size="100,30" Style="/CommonElements.PushButton.data.style">:aef3f1e2ae453fbb_3:Cancel</Button>
+                <Page AbsorbsInput="false" Location="208,45" Name="WindowFrame" ScrollExtent="420,415" Size="420,415">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="399,403" Size="399,403" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="418,435" Size="418,435" />
+                </Page>
+                <Page BackgroundOpacity="0.400" Location="0,25" Name="Bkg" ScrollExtent="805,479" Size="805,479" />
+            </Page>
+            <Page Name="PaymentSourcePage" ScrollExtent="805,504" Size="805,504" Visible="false">
+                <Namespace Name="verisign_button">
+                    <ButtonStyle Name="style" RStyleActivated="default.rect" RStyleDefault="default.rect" RStyleDisabled="default.rect" RStyleMouseOver="default.rect" RStyleMouseOverSelected="default.rect" RStyleSelected="default.rect" />
+                    <Namespace Name="default">
+                        <RectangleStyle Center="center" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/station_cash_logos.dds" SourceRect="8,133,121,196" />
+                        </ImageStyle>
+                    </Namespace>
+                </Namespace>
+                <Button Location="223,371" MinimumSize="32,32" Name="Verisign" OnPress="browser &quot;https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=account.station.sony.com&amp;lang=en&quot;" ScrollExtent="116,63" Size="116,63" Style="verisign_button.style">:13a20c74484dc9b4_1:X</Button>
+                <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="221,370" Name="Verisign_BG" ScrollExtent="117,65" Size="117,65" />
+                <Button Location="541,61" MaximumSize="16384,32" MinimumSize="32,32" Name="Cancel" ScrollExtent="41,32" Size="41,32" Style="/CommonElements.PushButton.data.style">:aef3f1e2484dc9b4:X</Button>
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="305,73" Name="Logo" PackLocation="right,top" ScrollExtent="192,48" Size="192,48" Style="/imagelist.sc_logo_large" />
+                <Page BackgroundOpacity="1.000" Location="252,123" Name="Separator" RStyleDefault="/FrameStyles.FancyTopEdge.rect" ScrollExtent="302,27" Size="302,27" />
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf24" Location="254,144" Name="Title" PackSize="a" ScrollExtent="299,28" Size="299,28" TextAlignment="Center" TextColor="#FFEEBB">:13a20c7455a5c636:Payment Source</Text>
+                <Page Location="246,213" Name="PPSMSPage" ScrollExtent="310,125" Size="310,125" Visible="false">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="32,22" Name="Info" ScrollExtent="247,92" ShadowStyle="/ShadowStylesNew.Drop.style" Size="247,81" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c74463780f1:After clicking Continue you will be taken to an external web browser to complete this transaction.</Text>
+                </Page>
+                <Page Location="246,213" Name="RedeemPage" ScrollExtent="310,125" Size="310,125" Visible="false">
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="0,6" Name="Label" PackSize="a" ScrollExtent="310,22" Size="310,22" TextAlignment="Center" TextAlignmentVertical="Center">:aef3f1e25a21002a:To Redeem for Membership Time or SC</Text>
+                    <Button Location="75,27" MaximumSize="16384,32" MinimumSize="32,32" Name="RedeemButton" OnPress="open_url_redeem" ScrollExtent="160,32" Size="160,32" Style="/CommonElements.PushButton.data.style">:aef3f1e2aea87110:Click Here...</Button>
+                </Page>
+                <Page Location="246,213" Name="CCOnFilePage" ScrollExtent="310,125" Size="310,125">
+                    <Page Location="8,38" Name="InfoPage" ScrollExtent="302,73" Size="302,73" Visible="false">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="32,-6" Name="Info" ScrollExtent="247,138" ShadowStyle="/ShadowStylesNew.Drop.style" Size="247,81" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c74a81b8da5:After clicking Continue you will be taken to an external web browser to complete this transaction.  You can use your new card by clicking Add Funds again.</Text>
+                    </Page>
+                    <Page Location="8,83" Name="PasswordPage" ScrollExtent="302,32" Size="302,32">
+                        <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="8,0" Name="Label" PackSize="a" ScrollExtent="129,30" Size="129,30" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFDD33">:13a20c74cce34249:Parental Password:</Text>
+                        <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="146,0" MaximumSize="16384,30" MinimumSize="30,30" Name="PasswordText" Password="true" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="140,30" Size="140,30" Style="/CommonElements.Textfield.data.style" />
+                    </Page>
+                    <Page Location="8,47" Name="CVVPage" ScrollExtent="302,32" Size="302,32">
+                        <Button Location="231,6" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":13a20c742081ad60:Enter the 3 or 4 digit card verification number normally located on the back of your credit card." UserMovable="true" />
+                        <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="146,0" MaximumSize="16384,30" MinimumSize="30,30" Name="CVVText" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="80,30" Size="80,30" Style="/CommonElements.Textfield.data.style" />
+                        <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="16,6" Name="Label" PackSize="a" ScrollExtent="121,21" Size="121,21" TextAlignment="Right" TextColor="#FFDD33">:13a20c740f3fcce4:Security Code:</Text>
+                    </Page>
+                    <Dropdownbox BackgroundOpacity="1.000" DataSource="PaymentSourceDS" Location="42,9" MaximumSize="16384,32" MinimumSize="50,32" Name="PaymentSource" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="228,32" Size="228,32" Style="/CommonElements.Dropdown.data.style" />
+                    <DataSource Name="PaymentSourceDS">
+                        <Data text=":13a20c74baa468a7:- Select a card on file -" />
+                        <Data Name="AddNewCard" text=":13a20c743001480d:Add New Card" />
+                    </DataSource>
+                </Page>
+                <DataSource Name="PaymentTypeDS">
+                    <Data text=":13a20c74356153f1:- Select a Payment Method -" />
+                    <Data Name="SMS" text=":13a20c74d9f18702:SMS" />
+                    <Data Name="PayPal" text=":13a20c74a488be65:PayPal" />
+                    <Data Name="StationCard" text=":13a20c7426497636:Daybreak Cash Card" />
+                    <Data Name="CreditCard" text=":13a20c74b3058fe6:Credit Card" />
+                </DataSource>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="PaymentTypeDS" Location="288,174" MaximumSize="16384,32" MinimumSize="50,32" Name="PaymentType" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="228,32" Size="228,32" Style="/CommonElements.Dropdown.data.style" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="230,335" Name="Disclaimer" ScrollExtent="345,46" ShadowStyle="/ShadowStylesNew.Drop.style" Size="345,36" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c74ea6e178f:All items are no-drop; non-transferable; no refund or exchange.</Text>
+                <Button Location="439,384" MaximumSize="16384,32" MinimumSize="32,32" Name="Purchase" ScrollExtent="130,32" Size="130,32" Style="/CommonElements.PushButton.data.style">:13a20c74156ab776:Continue</Button>
+                <Page AbsorbsInput="false" Location="201,50" Name="WindowFrame" ScrollExtent="402,406" Size="402,406">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="381,394" Size="381,394" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="400,426" Size="400,426" />
+                </Page>
+                <Page BackgroundOpacity="0.400" Location="0,25" Name="Bkg" ScrollExtent="805,479" Size="805,479" />
+            </Page>
+            <Page Name="SelectAmountPage" ScrollExtent="805,504" Size="805,504" Visible="false">
+                <Button Location="539,63" MaximumSize="16384,32" MinimumSize="32,32" Name="Cancel" ScrollExtent="41,32" Size="41,32" Style="/CommonElements.PushButton.data.style">:13a20c74484dc9b4:X</Button>
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="305,75" Name="Logo" PackLocation="right,top" ScrollExtent="192,48" Size="192,48" Style="/imagelist.sc_logo_large" />
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="229,128" Name="Label" PackSize="a" ScrollExtent="346,42" Size="346,42" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:13a20c74c0e3bc68:Select the amount of Daybreak Cash you&apos;d like to purchase.</Text>
+                <Page BackgroundOpacity="1.000" Location="282,178" Name="SC1" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" RStyleDefault="/FrameStyles.ThinRounded.rect" ScrollExtent="240,32" Size="240,32" sku="500">
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="20,4" Name="Price" ScrollExtent="118,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="118,24" UserMovable="true" UserResizable="true">:13a20c74197dc885:5.00 USD</Text>
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="139,4" Name="Amount" PackLocation="right,top" ScrollExtent="60,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="60,24" TextAlignment="Right" UserMovable="true" UserResizable="true">:13a20c74db8107c9:500</Text>
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="204,5" Name="Coin" PackLocation="right,top" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                    <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.200" Location="2,2" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="236,28" Size="236,28" Visible="false" />
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="282,215" Name="SC2" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" RStyleDefault="/FrameStyles.ThinRounded.rect" ScrollExtent="240,32" Size="240,32" sku="1000">
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="20,4" Name="Price" ScrollExtent="118,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="118,24" UserMovable="true" UserResizable="true">:13a20c74df7effcf:10.00 USD</Text>
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="139,4" Name="Amount" PackLocation="right,top" ScrollExtent="60,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="60,24" TextAlignment="Right" UserMovable="true" UserResizable="true">:13a20c74928c6a9d:1,000</Text>
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="204,5" Name="Coin" PackLocation="right,top" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                    <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.200" Location="2,2" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="236,28" Size="236,28" Visible="false" />
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="282,252" Name="SC3" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" RStyleDefault="/FrameStyles.ThinRounded.rect" ScrollExtent="240,32" Size="240,32" sku="2000">
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="20,4" Name="Price" ScrollExtent="118,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="118,24" UserMovable="true" UserResizable="true">:13a20c74f453ac0c:20.00 USD</Text>
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="139,4" Name="Amount" PackLocation="right,top" ScrollExtent="60,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="60,24" TextAlignment="Right" UserMovable="true" UserResizable="true">:13a20c74d52c104d:2,000</Text>
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="204,5" Name="Coin" PackLocation="right,top" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                    <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.200" Location="2,2" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="236,28" Size="236,28" Visible="false" />
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="282,289" Name="SC4" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" RStyleDefault="/FrameStyles.ThinRounded.rect" ScrollExtent="240,32" Size="240,32" sku="2500">
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="20,4" Name="Price" ScrollExtent="118,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="118,24" UserMovable="true" UserResizable="true">:13a20c74c4a76b8d:25.00 USD</Text>
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="139,4" Name="Amount" PackLocation="right,top" ScrollExtent="60,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="60,24" TextAlignment="Right" UserMovable="true" UserResizable="true">:13a20c74d3e7d2a6:2,500</Text>
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="204,5" Name="Coin" PackLocation="right,top" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                    <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.200" Location="2,2" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="236,28" Size="236,28" Visible="false" />
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="282,326" Name="SC5" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" RStyleDefault="/FrameStyles.ThinRounded.rect" ScrollExtent="240,32" Size="240,32" sku="5000">
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="20,4" Name="Price" ScrollExtent="118,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="118,24" UserMovable="true" UserResizable="true">:13a20c742ddd9172:50.00 USD</Text>
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="139,4" Name="Amount" PackLocation="right,top" ScrollExtent="60,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="60,24" TextAlignment="Right" UserMovable="true" UserResizable="true">:13a20c74172ac19b:5,000</Text>
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="204,5" Name="Coin" PackLocation="right,top" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                    <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.200" Location="2,2" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="236,28" Size="236,28" Visible="false" />
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="282,363" Name="SC6" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" RStyleDefault="/FrameStyles.ThinRounded.rect" ScrollExtent="240,32" Size="240,32" sku="10000">
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="20,4" Name="Price" ScrollExtent="118,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="118,24" UserMovable="true" UserResizable="true">:13a20c742003d8b1:100.00 USD</Text>
+                    <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="139,4" Name="Amount" PackLocation="right,top" ScrollExtent="60,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="60,24" TextAlignment="Right" UserMovable="true" UserResizable="true">:13a20c74172ac19b_1:10,000</Text>
+                    <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="204,5" Name="Coin" PackLocation="right,top" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                    <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.200" Location="2,2" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="236,28" Size="236,28" Visible="false" />
+                </Page>
+                <Button Location="246,406" MaximumSize="16384,32" MinimumSize="32,32" Name="Prev" ScrollExtent="130,32" Size="130,32" Style="/CommonElements.PushButton.data.style">:aef3f1e2320391f6:Back</Button>
+                <Button Location="436,406" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" ScrollExtent="130,32" Size="130,32" Style="/CommonElements.PushButton.data.style">:aef3f1e2156ab776:Continue</Button>
+                <Page AbsorbsInput="false" Location="201,50" Name="WindowFrame" ScrollExtent="402,421" Size="402,421">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="381,409" Size="381,409" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="400,441" Size="400,441" />
+                </Page>
+                <Page BackgroundOpacity="0.400" Location="0,25" Name="Bkg" ScrollExtent="805,479" Size="805,479" />
+            </Page>
+            <Page Name="ConfirmationPage" ScrollExtent="805,504" Size="805,504" Visible="false">
+                <Page BackgroundOpacity="1.000" Location="242,213" Name="Separator" RStyleDefault="/FrameStyles.FancyTopEdge.rect" ScrollExtent="322,27" Size="322,27" />
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf24" Location="254,135" Name="Title" PackSize="a" ScrollExtent="299,28" Size="299,28" TextAlignment="Center" TextColor="#FFEEBB">:aef3f1e2a30a733a:Confirm Purchase</Text>
+                <Button Location="539,63" MaximumSize="16384,32" MinimumSize="32,32" Name="Cancel" ScrollExtent="41,32" Size="41,32" Style="/CommonElements.PushButton.data.style">:aef3f1e2484dc9b4_1:X</Button>
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="305,75" Name="Logo" PackLocation="right,top" ScrollExtent="192,48" Size="192,48" Style="/imagelist.sc_logo_large" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="245,191" Name="Coin" PackLocation="right,top" ScrollExtent="20,20" Size="20,20" Style="/imagelist.coins.StationCash" />
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="270,190" Name="Amount" PackLocation="right,top" ScrollExtent="207,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="207,24" UserMovable="true" UserResizable="true">:aef3f1e21cd485fc:500 Daybreak Cash</Text>
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="479,190" Name="Price" PackLocation="right,top" ScrollExtent="79,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="79,24" TextAlignment="Right" UserMovable="true" UserResizable="true">:aef3f1e20125e400:$5.00</Text>
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="355,239" Name="Label" PackSize="a" ScrollExtent="113,20" Size="113,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C0C0C0" UserMovable="true" UserResizable="true">:aef3f1e2f22b334d:Tax:</Text>
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="480,239" Name="Tax" PackSize="a" ScrollExtent="78,20" Size="78,20" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:aef3f1e209d0767a:$0.75</Text>
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="355,266" Name="Label" PackSize="a" ScrollExtent="113,20" Size="113,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C0C0C0" UserMovable="true" UserResizable="true">:aef3f1e2a1d2f40b:Order Total:</Text>
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="479,264" Name="Total" PackLocation="right,top" ScrollExtent="79,24" ShadowStyle="/ShadowStylesNew.Drop.style" Size="79,24" TextAlignment="Right" UserMovable="true" UserResizable="true">:aef3f1e23e0e8648:$5.75</Text>
+                <Button Location="246,406" MaximumSize="16384,32" MinimumSize="32,32" Name="Prev" ScrollExtent="130,32" Size="130,32" Style="/CommonElements.PushButton.data.style">:aef3f1e2320391f6_1:Back</Button>
+                <Button Location="400,406" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" ScrollExtent="164,32" Size="164,32" Style="/CommonElements.PushButton.data.style">:aef3f1e2ab1df6e6:Complete Order</Button>
+                <Page AbsorbsInput="false" Location="201,50" Name="WindowFrame" ScrollExtent="402,421" Size="402,421">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="381,409" Size="381,409" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="400,441" Size="400,441" />
+                </Page>
+                <Page BackgroundOpacity="0.400" Location="0,25" Name="Bkg" ScrollExtent="805,479" Size="805,479" />
+            </Page>
+            <Page Name="DeliveryWithRebatePage" ScrollExtent="805,504" Size="805,504" Visible="false">
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="425,283" Name="Coin" ScrollExtent="24,24" Size="24,24" Style="/imagelist.coins.StationCash" />
+                <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="277,250" Name="Label" ScrollExtent="261,24" Size="261,24" TextAlignment="Center" TextAlignmentVertical="Center">:aef3f1e2b4877918:Your Instant Rebate is:</Text>
+                <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.VeryLarge.VeryLargeStyle" GetsInput="false" Location="353,284" Name="RebateLabel" ScrollExtent="68,38" Size="68,24" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFCC00">:aef3f1e24d139e03_1:1500</Text>
+                <Button Location="347,327" MaximumSize="16384,38" MinimumSize="38,38" Name="OKButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:13a20c7428c926d2_1:OK</Button>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="300,285" Name="Decoration" PackLocation="center,top" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="215,30" Size="215,30" />
+                <Page AbsorbsInput="false" Location="237,202" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="336,185" Size="336,185">
+                    <Image Location="230,17" Name="NE_Corner" PackLocation="right,top" ScrollExtent="108,96" Size="108,96" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+                    <Image Location="-2,17" Name="NW_Corner" PackLocation="left,top" ScrollExtent="106,107" Size="106,107" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+                    <Image Location="231,77" Name="SE_Corner" PackLocation="right,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+                    <Image Location="-1,77" Name="SW_Corner" PackLocation="right,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="15,31" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.CenterFrame.data.frame.rect" ScrollExtent="310,141" Size="310,141" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="16,35" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/MainHUD.Welcome.WindowFrame.bkg.rect" ScrollExtent="305,133" Size="305,133" />
+                    <Namespace Name="bkg">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/welcome_screen_bg.dds" SourceRect="0,0,512,383" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                    </Namespace>
+                </Page>
+            </Page>
+            <Page Name="DeliveryPage" ScrollExtent="805,504" Size="805,504" Visible="false">
+                <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="248,180" Name="Label" ScrollExtent="313,69" Size="313,48" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c74a6c44fd4:Thank you for your purchase!
+The following item has been delivered.</Text>
+                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="276,242" Name="ItemPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="257,48" Size="257,48">
+                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="48,1" Name="Name" PackSize="a,f" ScrollExtent="207,42" Size="207,42" TextAlignmentVertical="Center">:13a20c7469d2db30:Missing item name</Text>
+                </Page>
+                <Button Location="344,302" MaximumSize="16384,38" MinimumSize="38,38" Name="OKButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:aef3f1e228c926d2:OK</Button>
+                <Page AbsorbsInput="false" Location="211,129" Name="WindowFrame" ScrollExtent="388,248" Size="388,248">
+                    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="12,20" Name="Title" PackSize="a" ScrollExtent="363,38" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="363,34" TextAlignment="Center" TextColor="#FFEEBB" UserMovable="true" UserResizable="true">:13a20c746c956026:Purchase Complete</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="367,236" Size="367,236" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="386,268" Size="386,268" />
+                </Page>
+                <Page BackgroundOpacity="0.400" Location="0,25" Name="Bkg" ScrollExtent="805,479" Size="805,479" />
+            </Page>
+            <Page Location="17,38" Name="ItemListPage" PackSize="a,a" ScrollExtent="465,417" Size="465,417">
+                <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Large.LargeStyle" Location="148,3" Name="CategoryName" PackSize="a,f" ScrollExtent="315,26" Size="315,24" TextAlignmentVertical="Center" TextColor="#F0D080">:13a20c7429cfa88a:[DEVL]Potions</Text>
+                <Button Location="-2,3" Margin="10,0,10,0" MaximumSize="16384,26" MinimumSize="26,26" Name="BackButton" ScrollExtent="140,26" Size="140,26" Style="/CommonElements.SmallPushButton.data.style">:13a20c74b73e15a6:[DEVL]Home</Button>
+                <Page BackgroundOpacity="0.675" Location="0,30" Name="ItemList" PackSize="a,a" ScrollExtent="465,352" Size="465,352">
+                    <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="2,2" Name="LoadingLabel" PackSize="a,f" ScrollExtent="442,348" Size="442,348" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c74e814373e:Retrieving Items...</Text>
+                    <VolumePage CellCount="2,5" CellSize="218,58" Location="2,2" MinimumScrollExtent="442,302" MultiSelection="false" Name="Items" ScrollExtent="442,348" Size="442,348">
+                        <Page Location="2,2" MaximumSize="218,58" MinimumSize="218,58" Name="CategoryTemplate" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" OnHoverIn="Bkg.BackgroundTint = #FFFFFF" OnHoverOut="Bkg.BackgroundTint = #C0C0C0" ScrollExtent="218,58" Size="218,58">
+                            <Text DropToParent="true" Font="/TextStyles.Large.LargeStyle" Location="10,7" Name="Name" PackSize="a,a" ScrollExtent="198,42" Size="198,42" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:13a20c7429cfa88a_1:[DEVL]Potions</Text>
+                            <Page BackgroundOpacity="1.000" BackgroundTint="#C0C0C0" Location="3,3" Name="Bkg" PackSize="a,a" RStyleDefault="category.default.rect" ScrollExtent="212,52" Size="212,52" />
+                        </Page>
+                        <Page Location="222,2" MaximumSize="218,58" MinimumSize="218,58" Name="CategoryTemplate2" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" OnHoverIn="Bkg.BackgroundTint = #FFFFFF" OnHoverOut="Bkg.BackgroundTint = #C0C0C0" ScrollExtent="218,58" Size="218,58">
+                            <Text DropToParent="true" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="10,8" Name="Name" PackSize="a,a" ScrollExtent="198,42" Size="198,42" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFFF60">:aef3f1e28049f059:[DEVL]New</Text>
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="9,15" Name="Decoration" PackLocation="center,top" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="200,30" Size="200,30" />
+                            <Page BackgroundOpacity="1.000" BackgroundTint="#C0C0C0" Location="3,3" Name="Bkg" PackSize="a,a" RStyleDefault="category.default.rect" ScrollExtent="212,52" Size="212,52" />
+                        </Page>
+                        <Page Location="2,62" MaximumSize="218,58" MinimumSize="218,58" Name="CategoryTemplateNew" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" ScrollExtent="218,58" Size="218,58">
+                            <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="10,8" Name="Name" PackSize="a,a" ScrollExtent="198,42" Size="198,42" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFFF60">:aef3f1e28049f059_1:[DEVL]New</Text>
+                            <Button Location="2,3" Name="NewButton" ScrollExtent="214,54" Size="214,54" Style="/ButtonStyles.mp_new" />
+                        </Page>
+                        <Page Location="222,62" MaximumSize="218,58" MinimumSize="218,58" Name="CategoryTemplate3" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" ScrollExtent="218,58" Size="218,58">
+                            <Button Location="2,3" Name="PSButton" ScrollExtent="214,54" Size="214,54" Style="/ButtonStyles.mp_ps" />
+                        </Page>
+                        <Page Location="2,122" MaximumSize="218,58" MinimumSize="218,58" Name="CategoryTemplateEQNL" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" ScrollExtent="218,58" Size="218,58">
+                            <Button Location="2,3" Name="EQNLButton" ScrollExtent="214,54" Size="214,54" Style="/ButtonStyles.mp_eqnl" />
+                        </Page>
+                        <Page Location="222,122" MaximumSize="218,58" MinimumSize="218,58" Name="CategoryTemplateLT" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" ScrollExtent="218,58" Size="218,58">
+                            <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="10,8" Name="Name" PackSize="a,a" ScrollExtent="198,76" Size="198,42" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFFF60">:aef3f1e2e62b1ff2:[DEVL]Loyalty</Text>
+                            <Button Location="2,3" Name="LTButton" ScrollExtent="214,54" Size="214,54" Style="/ButtonStyles.mp_lt" />
+                        </Page>
+                        <Page Location="2,182" MaximumSize="218,58" MinimumSize="218,58" Name="CategoryTemplateVault" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" ScrollExtent="218,58" Size="218,58">
+                            <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="10,8" Name="Name" PackSize="a,a" ScrollExtent="198,42" Size="198,42" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFFF60">[DEVL]Vault</Text>
+                            <Button Location="2,3" Name="VaultButton" ScrollExtent="214,54" Size="214,54" Style="/ButtonStyles.mp_vault" />
+                        </Page>
+                        <Page Location="222,182" MaximumSize="218,58" MinimumSize="218,58" Name="CategoryTemplatePromo" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" ScrollExtent="218,58" Size="218,58">
+                            <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="10,8" Name="Name" PackSize="a,a" ScrollExtent="198,76" Size="198,42" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFFF60">[DEVL]Promo</Text>
+                            <Button Location="2,3" Name="PromoButton" ScrollExtent="214,54" Size="214,54" Style="/ButtonStyles.mp_promo" />
+                        </Page>
+                        <Page Location="2,242" MaximumSize="218,58" MinimumSize="218,58" Name="ItemTemplate" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" OnHoverIn="Bkg.BackgroundTint = #FFFFFF" OnHoverOut="Bkg.BackgroundTint = #DDDDDD" ScrollExtent="218,58" Size="218,58">
+                            <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="52,35" Name="TimeLeft" PackLocation="right,bottom" ScrollExtent="88,23" Size="88,19" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FF0000">:aef3f1e293fbd44c:00:00:00</Text>
+                            <Image Location="26,27" Name="PSLogo" PackLocation="right,bottom" ScrollExtent="30,30" Size="30,30" Style="/imagelist.PSOverlay" />
+                            <Image Location="28,29" Name="GoldOnlyLogo" PackLocation="right,bottom" ScrollExtent="26,26" Size="26,26" Style="/imagelist.GFOverlay" />
+                            <Page AbsorbsInput="false" Location="6,6" Name="RebatePage" ScrollExtent="42,42" Size="42,42">
+                                <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="RebateText" ScrollExtent="42,36" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:aef3f1e2074c7a97:REBATE</Text>
+                                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                            </Page>
+                            <Page AbsorbsInput="false" Location="6,6" Name="SalePage" ScrollExtent="42,42" Size="42,42">
+                                <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="SaleText" ScrollExtent="42,18" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:13a20c742c21d24e:SALE</Text>
+                                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                            </Page>
+                            <Page AbsorbsInput="false" Location="6,6" Name="NewPage" ScrollExtent="42,42" Size="42,42">
+                                <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="NewText" ScrollExtent="42,18" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:13a20c7402bbf930:NEW</Text>
+                                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                            </Page>
+                            <Page AbsorbsInput="false" Location="6,6" Name="HotPage" ScrollExtent="42,42" Size="42,42">
+                                <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="HotText" ScrollExtent="42,18" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:13a20c7465d03cb2:HOT</Text>
+                                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                            </Page>
+                            <Page AbsorbsInput="false" Location="6,12" Name="SoldOutPage" ScrollExtent="42,42" Size="42,42">
+                                <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="SoldOutText" ScrollExtent="42,54" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,28" TextAlignment="Center">SOLD OUT</Text>
+                                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,28" Size="42,28" />
+                            </Page>
+                            <Page AbsorbsInput="false" Location="6,6" Name="LimitedPage" ScrollExtent="42,42" Size="42,42">
+                                <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Normal.NormalStyle" Location="0,2" Name="LimitedText" ScrollExtent="42,23" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,20" TextAlignment="Center">0</Text>
+                                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,20" Size="42,20" />
+                            </Page>
+                            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="6,6" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                            <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="53,4" Name="Name" PackSize="a,a" ScrollExtent="160,69" Size="160,34" TextColor="#F0F0F0">:aef3f1e25af37426:[DEVL] Item With a Very Very Long Name</Text>
+                            <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="67,35" Name="Price" PackLocation="right,bottom" ScrollExtent="125,23" Size="125,19" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCC00">:13a20c742ec82e91:15</Text>
+                            <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="58,35" Name="PriceOverride" PackLocation="right,bottom" ScrollExtent="159,23" Size="159,19" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCC00" Visible="false">:13a20c742ec82e91_1:15</Text>
+                            <Image Location="196,37" Name="Coin" PackLocation="right,bottom" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" Visible="false" />
+                            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.coin" Location="196,37" MouseOverColor="#FFFF00" Name="CurrencyIcon" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" Visible="false" />
+                            <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="107,35" Name="PriceOR" PackLocation="right,bottom" ScrollExtent="33,23" Size="33,19" TextAlignment="Center" TextAlignmentVertical="Center">:aef3f1e2e2488a78:or</Text>
+                            <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="77,35" Name="Price2" PackLocation="right,bottom" ScrollExtent="125,23" Size="125,19" TextAlignmentVertical="Center" TextColor="#00CCFF">:aef3f1e22ec82e91:15</Text>
+                            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.coin" Location="56,37" MouseOverColor="#FFFF00" Name="CurrencyIcon2" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" Visible="false" />
+                            <Image Location="56,37" Name="Coin2" PackLocation="right,bottom" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StatusPoints" />
+                            <Page BackgroundOpacity="1.000" BackgroundTint="#DDDDDD" Location="1,1" Name="Bkg" PackSize="a,a" RStyleDefault="item_bkg.rect" ScrollExtent="216,56" Size="216,56" />
+                            <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="218,58" Size="218,58" Visible="false" />
+                        </Page>
+                    </VolumePage>
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Items" HideIfUnnecessary="false" Location="443,1" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,351" Size="22,351" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,387" Name="FilterPage" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="465,29" Size="465,29">
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="4,6" Margin="1,0,0,0" Name="Label" ScrollExtent="75,23" Size="75,19" TextAlignment="Center" TextColor="#EFEFEF">:13a20c744ca3216e:Search</Text>
+                    <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" DragAccepts="icon" IME="true" Location="83,0" MaximumSize="16384,30" MinimumSize="30,30" Name="FilterText" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="140,30" Size="140,30" Style="/CommonElements.Textfield.data.style" Tooltip=":13a20c7497c48f88:Enter a search term and press enter." />
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="240,4" MinimumSize="22,22" Name="HideUnusable" ScrollExtent="140,22" Size="140,22" Style="/CommonElements.Checkbox.data.style">:13a20c74e847f72c:Hide Unusable</Checkbox>
+                </Page>
+            </Page>
+            <Page Location="323,25" Name="AllAccessPage" ScrollExtent="482,440" Size="482,440">
+                <Image AbsorbsInput="false" Location="213,279" Name="AllAccessImage" ScrollExtent="199,30" Size="199,30" SourceRect="313,296,512,326" SourceResource="images/window_elements_specific.dds" />
+                <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="196,317" Name="Title" PackSize="a,f" ScrollExtent="210,38" Size="210,20" TextAlignment="Center" TextColor="#D3A90A">:aef3f1e278d96b1b:Redeem 500</Text>
+                <Image Location="358,317" Name="Coin" ScrollExtent="24,24" Size="24,24" Style="/imagelist.coins.StationCash" />
+                <Button Location="243,350" MaximumSize="16384,38" MinimumSize="30,30" Name="AllAccessAction" OnPress="allaccess claim" ScrollExtent="140,32" Size="140,32" Style="/CommonElements.PushButton.data.style" textalignmentvertical="Center">:aef3f1e2aea87110_1:Click Here...</Button>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="188,384" Name="AllAccessMessage" ScrollExtent="251,52" Size="251,37" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#B59A62">:aef3f1e296d9cab7:Days Until Grant Expires: [XX]</Text>
+                <Page BackgroundOpacity="0.722" Location="178,259" Name="AllAccessBlackFrame" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="270,175" Size="270,175" />
+                <Image AbsorbsInput="false" Name="Nagafen" PackLocation="bottom" ScrollExtent="483,344" Size="483,344" SourceRect="0,0,483,344" SourceResource="images/commonelements2.dds" />
+            </Page>
+            <TabbedPane Activated="true" ActiveTab="0" DataSource="TabSource" IgnoreTab="false" Location="488,44" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="287,36" Size="287,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="PreviewPage" />
+            <Button Location="754,47" MaximumSize="16384,26" MinimumSize="26,26" Name="CompareButton" ScrollExtent="47,26" Size="47,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip=":x:Open Market Preview">:x:&gt; &gt;</Button>
+            <Page Location="491,38" Name="PreviewPage" PackLocation="right,top" PackSize="f,a" ScrollExtent="300,417" Size="300,417">
+                <Page BackgroundOpacity="1.000" Location="-7,26" Name="WindowFrame" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="288,392" Size="288,392" />
+                <Composite Location="1,37" Name="DescPage" Orientation="Horizontal" PackSize="a,f" ScrollExtent="295,374" Size="295,374" SpacingType="Fill" Visible="false">
+                    <Page BackgroundOpacity="0.522" Name="Description" PackLocation="left,top" PackSize="a,a" ScrollExtent="273,374" ScrollSize="1,20" Size="273,374" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Description" HideIfUnnecessary="false" Location="273,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,375" Size="22,375" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Composite>
+                <Page Location="2,31" Name="PaperdollPage" ScrollExtent="296,384" Size="296,384">
+                    <Page Location="0,359" Name="CounterPage" PackLocation="Left,Bottom" PackSize="A,F" ScrollExtent="296,26" Size="296,26" Visible="false">
+                        <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="78,0" Name="Counter" PackSize="a,f" ScrollExtent="142,26" Size="142,26" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c74b8820a89:0 / 0</Text>
+                        <Button Location="-2,0" MaximumSize="16384,26" MinimumSize="26,26" Name="PrevButton" ScrollExtent="80,26" Size="80,26" Style="/CommonElements.SmallPushButton.data.style">:13a20c7404460075:Previous</Button>
+                        <Button Location="219,0" MaximumSize="16384,26" MinimumSize="26,26" Name="NextButton" ScrollExtent="80,26" Size="80,26" Style="/CommonElements.SmallPushButton.data.style">:13a20c745be240fd_1:Next</Button>
+                    </Page>
+                    <Text AbsorbsInput="false" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Name="Message" PackSize="a,f" ScrollExtent="296,384" Size="296,384" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c740599048a:[DEVL]Loading...</Text>
+                    <PaperDoll Name="Paperdoll" PackSize="a,a" paperdollbackgroundcolor="/ColorStyles.paperdoll_background" ScrollExtent="296,384" Size="296,384" />
+                </Page>
+                <Page AbsorbsInput="false" Location="1,36" Name="HousePage" ScrollExtent="295,375" Size="295,375">
+                    <Scrollbar ArrowPressSound="sounds/button" Control="InfoPage" HideIfUnnecessary="false" Location="273,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,375" Size="22,375" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    <Text Font="/TextStyles.Large.LargeStyle" Location="23,5" Name="HouseName" ScrollExtent="213,36" Size="213,36" TextAlignment="Center" TextColor="#F0D080">:aef3f1e2fc4311cd:Terrogaunt&apos;s Palace</Text>
+                    <Composite Location="2,37" Name="InfoPage" PackSize="a,a" ScrollExtent="275,596" ScrollSize="40,40" Size="275,338" Spacing="5" SpacingType="Constant">
+                        <Page Location="10,0" Name="ScreenshotPage" ScrollExtent="243,177" Size="243,177">
+                            <Page BackgroundOpacity="1.000" Location="-2,-2" Name="CopyAndPasteMe" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="247,181" Size="247,181" />
+                            <Image BackgroundOpacity="1.000" Location="7,6" Name="ScreenshotImage" PackSize="f,f" ScrollExtent="230,164" Size="230,164" />
+                        </Page>
+                        <Page Location="0,182" Name="AuctionTimerPage" ScrollExtent="256,51" Size="256,51">
+                            <Text Font="/TextStyles.Large.LargeStyle" Name="TimerLabel" PackSize="a,f" ScrollExtent="254,26" Size="254,22" TextAlignment="Center" TextColor="#F0D080">:aef3f1e271644b39:Time Left</Text>
+                            <Text BackgroundOpacity="1.000" Font="/TextStyles.Large.LargeStyle" Location="6,22" Name="TimerInfo" PackLocation="Top,Center" PackSize="a,f" ScrollExtent="248,26" Size="248,18" TextAlignment="Center" TextColor="#FF0000">:aef3f1e293fbd44c_1:00:00:00</Text>
+                        </Page>
+                        <Page Location="0,238" Name="OwnerInfoPage" ScrollExtent="256,51" Size="256,51">
+                            <Text Font="/TextStyles.Large.LargeStyle" Name="OwnerLabel" PackSize="a,f" ScrollExtent="254,26" Size="254,22" TextAlignment="Center" TextColor="#F0D080">:aef3f1e2b5219107:Owner</Text>
+                            <Text BackgroundOpacity="1.000" Font="/TextStyles.Large.LargeStyle" Location="6,22" Name="OwnerInfo" PackLocation="Top,Center" PackSize="a,f" ScrollExtent="248,26" Size="248,18" TextAlignment="Center" TextColor="#80FF80">:aef3f1e2b7f8383a:[DEVL]Terrogaunt</Text>
+                        </Page>
+                        <Page Location="0,294" Name="HouseDescPage" ScrollExtent="257,84" Size="257,84">
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="4,30" Margin="1,1,1,1" Name="HouseDescText" ScrollExtent="251,50" Size="251,50" TextAlignment="Center">:aef3f1e2eaa677b6:Some fairly long text that describes the house</Text>
+                            <Text Font="/TextStyles.Large.LargeStyle" Name="DescLabel" PackSize="a,f" ScrollExtent="254,26" Size="254,22" TextAlignment="Center" TextColor="#F0D080">:aef3f1e21487300e:Description</Text>
+                            <Page BackgroundOpacity="0.475" Location="0,27" Name="Bkg" ScrollExtent="258,94" Size="258,94" />
+                        </Page>
+                        <Page Location="4,383" Name="Ratings" ScrollExtent="252,79" Size="252,79">
+                            <Text Font="/TextStyles.Large.LargeStyle" Name="RatingsLabel" PackSize="a,f" ScrollExtent="249,26" Size="249,22" TextAlignment="Center" TextColor="#F0D080">:aef3f1e2fef4c1aa:Ratings</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="11,28" Name="Rating1Label" ScrollExtent="98,23" Size="98,18" TextAlignment="Right" TextColor="#F0F0F0">:aef3f1e26d2e0999:Creativity</Text>
+                            <Image Location="115,25" Name="image1" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.thumbs_up" />
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="139,28" Name="Rating1Text" PackSize="a,f" ScrollExtent="121,23" Size="121,18" TextColor="#F0F0F0">:aef3f1e2a5c3545c:12 Likes</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="11,51" Name="Rating2Label" ScrollExtent="98,23" Size="98,18" TextAlignment="Right" TextColor="#F0F0F0">:aef3f1e20d836891:Style</Text>
+                            <Image Location="115,48" Name="image2" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.thumbs_up" />
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="139,51" Name="Rating2Text" PackSize="a,f" ScrollExtent="121,23" Size="121,18" TextColor="#F0F0F0">:aef3f1e216ed5352:9 Likes</Text>
+                            <Page BackgroundOpacity="0.475" Location="6,27" Name="Bkg" ScrollExtent="240,94" Size="240,94" />
+                        </Page>
+                        <Page Location="17,467" Name="Awards" ScrollExtent="229,129" Size="229,129">
+                            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="2,2" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="IconTemplate" ScrollExtent="42,42" Size="42,42" Visible="false" />
+                            <Text Font="/TextStyles.Large.LargeStyle" Name="AwardsLabel" PackSize="a,f" ScrollExtent="226,26" Size="226,22" TextAlignment="Center" TextColor="#F0D080">:aef3f1e2ddb91937:Awards</Text>
+                            <VolumePage CellSize="42,42" Location="2,29" MinimumScrollExtent="2,2" Name="AwardVolume" ScrollExtent="222,91" Size="222,91" />
+                            <Page BackgroundOpacity="0.475" Location="0,27" Name="Bkg" ScrollExtent="226,94" Size="226,94" />
+                        </Page>
+                    </Composite>
+                    <Button Location="172,16970" MaximumSize="16384,32" MinimumSize="32,32" Name="VisitButton" PackLocation="cfc,bottom" ScrollExtent="180,32" Size="180,32" Style="/CommonElements.PushButton.data.style" Visible="false">:aef3f1e2351ca9a8:Tour</Button>
+                    <DataSource Name="DropdownDataSource">
+                        <Data Name="New Data" text=":aef3f1e24276ffac:[DEVL]Overall Rating" />
+                        <Data Name="New Data" text=":aef3f1e25820cbdb:[DEVL]Most Recent" />
+                    </DataSource>
+                    <Page BackgroundOpacity="0.522" Location="-10,-1" Name="Bkg" ScrollExtent="283,557" Size="283,557" />
+                </Page>
+            </Page>
+            <DataSource Name="TabSource">
+                <Data Name="Desc" target="DescPage" text=":13a20c741487300e:Description" />
+                <Data Name="Preview" target="PaperdollPage" text=":13a20c7489c7e953:Preview" />
+                <Data Name="House" target="HousePage" text=":aef3f1e2f8f53b72:House Info" />
+            </DataSource>
+            <Page Location="492,460" Name="QuantityPage" PackLocation="right,bottom" ScrollExtent="304,32" Size="304,32">
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="0,7" Margin="1,0,0,0" Name="Label" ScrollExtent="59,46" Size="59,19" TextAlignment="Right" TextColor="#EFEFEF">:13a20c74997a8b9f:Quantity:</Text>
+                <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="67,1" MaximumSize="16384,30" MinimumSize="30,30" Name="Quantity" NumericInteger="true" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="30,35" Size="30,30" Style="/CommonElements.Textfield.data.style">:13a20c747c231048:1</Textbox>
+                <Button Location="102,0" MaximumSize="16384,32" MinimumSize="32,32" Name="BidButton" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style" Visible="false">:aef3f1e28d400aec:Bid</Button>
+                <Button Location="102,0" MaximumSize="16384,32" MinimumSize="32,32" Name="CancelHouseButton" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style" Tooltip=":aef3f1e20f5b8b1e:Cancel your house listing and return the house to your character if the house has not yet sold a copy." Visible="false">:aef3f1e2eeaac91f:Delist</Button>
+                <Button Location="204,0" MaximumSize="16384,32" MinimumSize="32,32" Name="VisitButton" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style" Visible="false">:aef3f1e27d4039c2_1:Visit</Button>
+                <Button Location="204,0" MaximumSize="16384,32" MinimumSize="32,32" Name="GiftButton" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:aef3f1e2fbb1c9cc:Gift</Button>
+                <Button Location="102,0" MaximumSize="16384,32" MinimumSize="32,32" Name="BuyButton" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:13a20c7408313b68:Buy</Button>
+            </Page>
+            <Page Location="17,460" Name="BalancePage" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="481,32" Size="481,32">
+                <Button Location="357,0" MaximumSize="16384,32" MinimumSize="32,32" Name="AddCardButton" ScrollExtent="106,32" Size="106,32" Style="/CommonElements.PushButton.data.style">:aef3f1e2c5d500aa:Add Card</Button>
+                <Text DropToParent="true" Font="/TextStyles.Large.LargeStyle" Location="0,5" Margin="1,0,0,0" Name="Label" ScrollExtent="131,52" Size="131,22" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#EFEFEF">:13a20c74e69ded2e:Wallet Balance:</Text>
+                <Text DropToParent="true" Font="/TextStyles.Large.LargeStyle" Location="138,5" Name="Balance" ScrollExtent="60,26" Size="60,22" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCC00">:13a20c7453bfdad4_1:25,000</Text>
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="208,4" Name="Coin" ScrollExtent="24,24" Size="24,24" Style="/imagelist.coins.StationCash" />
+                <Button Location="241,0" MaximumSize="16384,32" MinimumSize="32,32" Name="FundButton" ScrollExtent="106,32" Size="106,32" Style="/CommonElements.PushButton.data.style">:13a20c74fd6daadc:Add Funds</Button>
+            </Page>
+            <Namespace Name="item_bkg">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="208,303,342,356" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="category">
+                <Namespace Name="default">
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="228,115,300,121" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="228,91,300,97" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="221,115,227,121" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="301,115,307,121" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="301,91,307,97" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="221,91,227,97" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="east" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="west" WestShrink="true" />
+                    <ImageStyle Filter="true" Name="east">
+                        <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="301,98,307,114" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="west">
+                        <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="221,98,227,114" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="228,98,300,114" />
+                    </ImageStyle>
+                </Namespace>
+                <ButtonStyle Name="style" NormalTextColor="#F0D080" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/TextStyles.Large.LargeStyle" RStyleActivated="default.rect" RStyleDefault="default.rect" RStyleDisabled="default.rect" RStyleMouseOver="default.rect" RStyleMouseOverSelected="default.rect" RStyleSelected="default.rect" />
+            </Namespace>
+            <Page AbsorbsInput="false" Location="-12,-1" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="829,519" Size="829,519">
+                <Button Location="792,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":13a20c742d3f513f_2:Close" UserMovable="true" />
+                <Button Location="752,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":13a20c74574a0c6d:Help" UserMovable="true" />
+                <Button Location="772,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":13a20c74ec278586:Window Settings" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="340,70" Size="340,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="27,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="210,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="210,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:13a20c741f57aa4e:Marketplace</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="638,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="828,520" Size="828,520" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="1,0" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="827,519" Size="827,519" />
+            </Page>
+        </Page>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="111,48" MinimumSize="700,482" Name="VoiceOptions" PackSize="f,f" ScrollExtent="700,482" Size="700,482" UserMovable="true" Visible="false">
+            <Button Location="297,436" Name="Ok" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="100,30" Size="100,30" Style="/CommonElements.PushButton.data.style">:d04a0e1813a7061a:Ok</Button>
+            <Button Location="545,31" Name="OptionsButton" OnPress="options_game VoiceOptions" PackLocation="left,bottom" ScrollExtent="114,26" Size="114,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip="Edit more Voice Chat options.">:d04a0e187610020d:More Options</Button>
+            <TabbedPane ActiveTab="0" DataSource="TabSource" Location="9,35" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="565,36" ScrollLeftButton="Achievements.tableft" ScrollRightButton="Achievements.tabright" Size="565,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="TabPages" />
+            <DataSource Name="TabSource">
+                <Data Name="VoiceChat" Target="VoiceChat" text=":d04a0e18234cf17e:Voice Chat" />
+            </DataSource>
+            <Page Location="4,65" Name="TabPages" PackLocation="left,top" PackSize="f,f" RStyleMouseOver=" " RStyleMouseOverActivated=" " RStyleMouseOverSelected=" " RStyleSelected=" " ScrollExtent="694,364" Size="694,364">
+                <Page Name="VoiceChat" ScrollExtent="700,417" Size="700,417">
+                    <Page Location="17,21" Name="EnableVoice" ScrollExtent="143,20" Size="143,20">
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="122,-1" MinimumSize="22,22" Name="Checkbox" PackLocation="left,top" PackSize="a,f" ScrollExtent="22,22" Size="22,22" Style="/CommonElements.Checkbox.data.style" TextColor="#EBDEAA" Tooltip=":d04a0e18db86d180:Enable Voice" />
+                        <Text AbsorbsInput="false" Font="/Fonts.FontZapf18" Name="Label" PackLocation="left,top" PackSize="f,f" ScrollExtent="115,21" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="115,21" TextAlignmentVertical="Center" TextColor="#FBF1D9">:d04a0e18db86d180_1:Enable Voice</Text>
+                    </Page>
+                    <Page Location="176,45" Name="VoiceUsers" ScrollExtent="160,310" Size="160,310">
+                        <Template Name="VoiceUsersDropdownTemplate" Size="400,20">eq2ui_dropdown_template2.xml</Template>
+                        <Dropdownbox DataSource="/GameData.VoiceChat.Sessions" Location="-1,0" Name="ChannelDropdown" OnSelect="vcjoin_session SelectedItem.Session" PackLocation="left,top" PackSize="a,f" RowTemplate="VoiceUsersDropdownTemplate" ScrollExtent="162,32" Size="162,32" Style="/CommonElements.Dropdown.data.style" />
+                        <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="0,32" Name="ListFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="161,278" Size="161,278" />
+                        <Composite Location="6,38" Name="Speakers" Orientation="Horizontal" PackSize="a,a" ScrollExtent="150,268" Size="150,268" SpacingType="Fill">
+                            <Listbox DataSource="/GameData.VoiceChat.Participants" Margin="1,1,0,0" Name="Players" PackSize="absolute,absolute" RowTemplate="voicetemplate" ScrollExtent="150,268" SelectedItemIndex="1" Size="150,268" Style="/listboxlist.clear_listbox_no_selection" />
+                            <Scrollbar ArrowPressSound="sounds/button" Control="Players" HideIfUnnecessary="true" Location="128,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,268" Size="22,268" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                        </Composite>
+                        <Template Name="voicetemplate" Size="130,17">eq2ui_voice_template.xml</Template>
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,35" Name="ListBackground" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="158,275" Size="158,275" />
+                    </Page>
+                    <DataSource Name="SampleDS">
+                        <Data Name="New Data" text=":d04a0e1809588c0a:Sample" />
+                    </DataSource>
+                    <Text Font="/Fonts.FontZapf18" Location="175,21" Name="Title1" ScrollExtent="160,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="160,20" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#FBF1D9">:d04a0e1847798daa:Voice Users</Text>
+                    <Text Font="/Fonts.FontZapf18" Location="512,21" Name="Title2" ScrollExtent="166,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="166,20" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#FBF1D9">:d04a0e18ab8b8b59:Muted List</Text>
+                    <Text Font="/Fonts.FontZapf18" Location="344,21" Name="Title3" ScrollExtent="160,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="160,20" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#FBF1D9">:d04a0e18b790aae1:Custom Channels</Text>
+                    <Page Location="10,103" MinimumSize="40,40" Name="Options" ScrollExtent="165,252" Size="165,252">
+                        <Text Font="/Fonts.FontZapf16" Location="7,128" Name="Local Channels" PackLocation="left,top" PackSize="absolute" ScrollExtent="150,20" ShadowStyle="/ShadowStylesNew.Drop.style" Size="150,20" TextAlignmentVertical="Center">:d04a0e188477215b:Local Channels</Text>
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="14,184" MinimumSize="22,22" Name="AutoJoinLocalCheckbox" ScrollExtent="122,22" Size="122,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":d04a0e18834f6889:Automatically join local cannels where available. ">:d04a0e18456c6916:Auto-Join</Checkbox>
+                        <Text Font="/Fonts.FontZapf16" Location="7,2" Name="Volume" PackLocation="left,top" PackSize="absolute" ScrollExtent="150,20" ShadowStyle="/ShadowStylesNew.Drop.style" Size="150,20" TextAlignmentVertical="Center">:d04a0e188d548485:Voice Chat Volume</Text>
+                        <Sliderbar Location="7,22" MaximumSize="16384,26" MinimumSize="100,26" Name="VolumeSlider" PackLocation="left,top" PackSize="absolute" ScrollExtent="150,26" Size="150,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="50" />
+                        <Text Font="/Fonts.FontZapf16" Location="7,52" Name="MicSensitivity" PackLocation="left,top" PackSize="absolute" ScrollExtent="150,20" ShadowStyle="/ShadowStylesNew.Drop.style" Size="150,20" TextAlignmentVertical="Center">:d04a0e1819dcdbe9:Mic Volume</Text>
+                        <Sliderbar Location="7,72" MaximumSize="16384,26" MinimumSize="100,26" Name="SensitivitySlider" PackLocation="left,top" PackSize="absolute" ScrollExtent="150,26" Size="150,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="50" />
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="14,154" MinimumSize="22,22" Name="EnableLocalCheckbox" ScrollExtent="122,22" Size="122,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":d04a0e18aca26684:Allows you to hear and chat with players near your character in houses and guild halls.">:d04a0e180bf332fb:Enable</Checkbox>
+                    </Page>
+                    <Page BackgroundColor="#181716" BackgroundOpacity="1.000" Location="512,46" MinimumSize="40,40" Name="MutedList" ScrollExtent="160,309" Size="160,309">
+                        <Text Font="/Fonts.FontZapf15" Location="8,2" Name="Title1" PackLocation="left,top" PackSize="absolute" ScrollExtent="142,20" Size="142,20" TextAlignmentVertical="Center">:d04a0e1801ee2ec7:Name</Text>
+                        <Textbox BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,23" Name="MuteUserName" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="141,22" Size="141,22" Style="inputStyle" />
+                        <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontArial14" Name="inputStyle" NormalTextStyle="/Fonts.FontArial14" SelectedTextStyle="/Fonts.FontArial14" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0" />
+                        <Button Location="23,55" Name="Mute" PackSize="fixed,fixed" ScrollExtent="116,30" Size="116,30" Style="/CommonElements.PushButton.data.style">:d04a0e189374239d:Mute</Button>
+                        <Button Location="21,273" Name="Unmute" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="116,30" Size="116,30" Style="/CommonElements.PushButton.data.style">:d04a0e18d981a274:Unmute</Button>
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="10,98" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="140,173" Size="140,173" />
+                        <Composite Location="12,100" Name="ListPage" Orientation="Horizontal" PackSize="a,a" ScrollExtent="136,169" Size="136,169" SpacingType="Fill">
+                            <Listbox DataSource="SampleDS" Margin="1,1,0,0" Name="List" PackSize="absolute,absolute" RowTemplate="/CommonElements.Listbox.data.row_template" ScrollExtent="136,169" Size="136,169" Style="/listboxlist.clear_listbox" />
+                            <Scrollbar ArrowPressSound="sounds/button" Control="List" HideIfUnnecessary="true" Location="114,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,169" Size="22,169" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                        </Composite>
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="MainFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="162,309" Size="162,309" />
+                    </Page>
+                    <Page BackgroundColor="#181716" BackgroundOpacity="1.000" Location="344,46" MinimumSize="40,40" Name="CustomChannels" ScrollExtent="160,309" Size="160,309">
+                        <Text Font="/Fonts.FontZapf15" Location="8,2" Name="Title1" PackLocation="left,top" PackSize="absolute" ScrollExtent="142,20" Size="142,20" TextAlignmentVertical="Center">:d04a0e18fe09215f:Channel Name</Text>
+                        <Text Font="/Fonts.FontZapf15" Location="10,51" Name="Title2" PackLocation="left,top" PackSize="absolute" ScrollExtent="145,20" Size="145,20" TextAlignmentVertical="Center">:d04a0e18334bdb7c:Password</Text>
+                        <Textbox BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,23" Name="ChannelName" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="141,22" Size="141,22" Style="inputStyle" />
+                        <Textbox BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="11,72" Name="ChannelPassword" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="141,22" Size="141,22" Style="inputStyle" />
+                        <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontArial14" Name="inputStyle" NormalTextStyle="/Fonts.FontArial14" SelectedTextStyle="/Fonts.FontArial14" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0" />
+                        <Button Location="21,102" Name="JoinCreate" PackSize="fixed,fixed" ScrollExtent="116,30" Size="116,30" Style="/CommonElements.PushButton.data.style">:d04a0e183aa8caf8:Add</Button>
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="10,139" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="140,132" Size="140,132" />
+                        <Composite Location="12,141" Name="ListPage" Orientation="Horizontal" PackSize="a,a" ScrollExtent="136,128" Size="136,128" SpacingType="Fill">
+                            <Listbox DataSource="SampleDS" Margin="1,1,0,0" Name="List" PackSize="absolute,absolute" RowTemplate="/CommonElements.Listbox.data.row_template" ScrollExtent="136,128" Size="136,128" Style="/listboxlist.clear_listbox" />
+                            <Scrollbar ArrowPressSound="sounds/button" Control="List" HideIfUnnecessary="true" Location="114,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,128" Size="22,128" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                        </Composite>
+                        <Button Location="21,273" Name="Leave" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="116,30" Size="116,30" Style="/CommonElements.PushButton.data.style">:d04a0e1890d3e7f9:Remove</Button>
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="MainFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="162,309" Size="162,309" />
+                    </Page>
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" Location="-10,-3" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="712,519" Size="712,519">
+                <Button Location="638,9" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":d04a0e18574a0c6d:Help" UserMovable="true" />
+                <Button Location="658,9" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":d04a0e18ec278586:Window Settings" UserMovable="true" />
+                <Button Location="678,9" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":d04a0e182d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,1" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="280,70" Size="280,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="24,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="150,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="150,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">Voice Chat</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="523,1" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,1" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="713,493" Size="713,493" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,27" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="687,45" Size="687,45" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,425" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="687,68" Size="687,68" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,43" Name="MidBkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="711,405" Size="711,405" />
+            </Page>
+        </Page>

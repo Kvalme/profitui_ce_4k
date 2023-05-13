@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+            <Page Name="Nightvision">
+                <Text Description="This defines the ambient light value when nightvision is OFF" Name="AmbientDefault">0.3</Text>
+                <Text Description="This defines the ambient light value when nightvision is ON" Name="AmbientMax">0.8</Text>
+            </Page>

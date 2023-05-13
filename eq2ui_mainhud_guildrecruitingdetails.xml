@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="1246,262" Name="GuildRecruiterSettings" PackLocation="right,top" ScrollExtent="560,315" Size="560,315" UserMovable="true" version="1" Visible="false">
+            <Text Font="/TextStyles.Large.LargeStyle" Location="35,40" Name="Header" PackSize="a" ScrollExtent="480,52" Size="480,21" TextAlignment="Center">:a3a083ef16b4d84e:This is how you currently appear in the guild browser.</Text>
+            <Page Location="40,70" Name="SampleRow" ScrollExtent="480,100" Size="480,100">
+                <ImageStyle Filter="true" Name="chat_bubble">
+                    <ImageFrame Source="images/widgets01.dds" SourceRect="122,202,137,217" />
+                </ImageStyle>
+                <Page BackgroundOpacity="1.000" Name="Paperdoll" PackSize="f,a" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="66,100" Size="66,100">
+                    <Image BackgroundOpacity="1.000" Location="9,9" Name="Image" ScrollExtent="48,83" Size="48,83" />
+                </Page>
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="-20,70" Margin="1,1,1,1" Name="Link" PackLocation="nfn,fff" PackSize="a,f" ScrollExtent="480,25" Size="480,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#00FF00">:a3a083ef9773a523:I&apos;m online now, click here to chat with me</Text>
+                <Text DynamicData="/GameData.Self.Name" Font="/TextStyles.Large.LargeStyle" Location="65,5" Name="Name" PackSize="a,f" ScrollExtent="200,26" Size="200,20" TextColor="#F0D080">:a3a083efd05e14b6:[DEVL] Player Name</Text>
+                <Text DynamicData="/GameData.Self.GuildRecruitingClass" Font="/TextStyles.Large.LargeStyle" Location="257,5" Name="ClassLevel" PackSize="a,f" ScrollExtent="200,52" Size="200,20" TextAlignment="Right" TextColor="#F0D080">:a3a083ef7f19f226:Level 34 Necromancer</Text>
+                <Text DynamicData="/GameData.Self.GuildRecruitingMessage" Font="/TextStyles.Normal.NormalStyle" Location="75,30" Margin="1,1,1,1" Name="Message" PackSize="a,a" ScrollExtent="405,50" Size="405,50">:a3a083ef1b552e35:[DEVL] This is a description written by the helper</Text>
+                <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="208,72" Name="LinkIcon" ScrollExtent="20,20" Size="20,20" Style="chat_bubble" />
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="30,60" Name="Grouper" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="500,120" Size="500,120" />
+            <Button DynamicData="/GameData.UIState.Self.UpdateRecruitingImage" Location="40,187" MaximumSize="16384,38" MinimumSize="38,38" Name="ChangePaperdoll" OnPress="ui_set_recruiter_image" ScrollExtent="230,38" Size="230,38" Style="/CommonElements.LargePushButton.data.style">:a3a083efa6af30cf:Take New Picture</Button>
+            <Button DynamicData="/GameData.UIState.Self.SubmitRecruitingImage" Location="40,227" MaximumSize="16384,38" MinimumSize="38,38" Name="SubmitPaperdoll" OnPress="ui_submit_recruiter_image" ScrollExtent="230,38" Size="230,38" Style="/CommonElements.LargePushButton.data.style">:a3a083efb01df81f:Submit Picture</Button>
+            <Button DynamicData="/GameData.UIState.Self.UpdateRecruitingMessage" Location="300,187" MaximumSize="16384,38" MinimumSize="38,38" Name="ChangeDescription" OnPress="ui_set_recruiter_description" ScrollExtent="230,38" Size="230,38" Style="/CommonElements.LargePushButton.data.style">:a3a083eff2bf1c10:Set Message</Button>
+            <Button Location="300,227" MaximumSize="16384,38" MinimumSize="38,38" Name="ChangeClass" OnPress="guild recruiter_adventure_class toggle" ScrollExtent="230,38" Size="230,38" Style="/CommonElements.LargePushButton.data.style">:a3a083efc08cdb7f:Toggle Class</Button>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="560,315" Size="560,315">
+                <Button Location="504,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":a3a083efec278586:Window Settings" UserMovable="true" />
+                <Button Location="484,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":a3a083ef574a0c6d:Help" UserMovable="true" />
+                <Button Location="524,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":a3a083ef2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="370,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="299,70" Size="299,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="233,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="169,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:a3a083ef69a6326c:Guild Recruiter Settings</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="560,315" Size="560,315" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="560,315" Size="560,315" />
+            </Page>
+        </Page>

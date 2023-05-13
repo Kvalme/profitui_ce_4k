@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" cascadelayout="true" Location="313,235" Name="Choice" PackLocation="cfc,cfc" ScrollExtent="399,315" Size="399,315" UserMovable="true">
+            <Page Location="45,180" Name="SCPage" ScrollExtent="308,70" Size="308,70" Visible="false">
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" font="/TextStyles.SuperLarge.SuperLargeStyle" Location="264,5" Name="Coin" PackLocation="center,center" ScrollExtent="24,24" Size="24,24" Style="/imagelist.coins.StationCash" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="0,35" Name="SCDiscountText" PackLocation="center,center" ScrollExtent="312,34" Size="312,34" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#00FF00">:b008dde498c6329a:BlahBlah</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="77,5" Name="SCPriceText" PackLocation="center,center" ScrollExtent="184,38" Size="184,24" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCC00">:b008dde4b44da1e9:1,000,000</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="17,5" Name="SCPriceLabel" PackLocation="center,center" ScrollExtent="75,26" Size="75,24" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b008dde413986ea4:Price:</Text>
+            </Page>
+            <Page Location="45,180" Name="ItemPage" ScrollExtent="308,64" Size="308,64" Visible="false">
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="10,22" MouseOverColor="#FFFF00" Name="ItemIcon" PackLocation="left,center" ScrollExtent="42,42" Size="42,42" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="58,35" Name="ItemName" PackLocation="center,center" ScrollExtent="312,34" Size="312,34" TextAlignmentVertical="Center">:f:Test text</Text>
+            </Page>
+            <Button Location="39,252" Margin="15,5,15,5" MaximumSize="16384,38" MinimumSize="38,38" Name="Choice1" ScrollExtent="130,38" Size="130,38" Style="/CommonElements.LargePushButton.data.style">:e666b5bbb2558cb6:Yes</Button>
+            <Button Location="229,252" Margin="15,5,15,5" MaximumSize="16384,38" MinimumSize="38,38" Name="Choice2" ScrollExtent="130,38" Size="130,38" Style="/CommonElements.LargePushButton.data.style">:e666b5bb0dd1f342:No</Button>
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="39,50" Name="Text" ScrollExtent="320,180" Size="320,180" TextAlignment="Center" TextAlignmentVertical="Center">:e666b5bb4cc0bace:[DEVL]This is test text to attempt to determine if the choice window looks decent.</Text>
+            <Page Location="39,206" Name="TimerPage" ScrollExtent="320,24" Size="320,24" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="0,1" Name="Timer" ScrollExtent="320,26" Size="320,24" TextAlignment="Center" TextColor="#F0D080">:e666b5bb08ea8fac:[DEVL]</Text>
+            </Page>
+            <Page Location="39,198" Name="InputPage" ScrollExtent="320,32" Size="320,32" Visible="false">
+                <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="20,0" MaximumSize="16384,30" MinimumSize="30,30" Name="Input" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="280,30" Size="280,30" Style="/CommonElements.Textfield.data.style" />
+            </Page>
+            <Page Location="34,115" Name="MultiLineInputPage" ScrollExtent="330,120" Size="330,120" Visible="false">
+                <Composite Location="10,5" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="315,110" Size="315,110" SpacingType="Fill">
+                    <Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Margin="5,0,5,0" MaxLines="Unlimited" Name="Input" ScrollExtent="315,110" Size="315,110" Style="/CommonElements.Textbox.data.style" WrapWidth="Automatic" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Input" HideIfUnnecessary="true" Location="298,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackSize=",a" ScrollExtent="22,110" Size="22,110" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                </Composite>
+                <Page BackgroundOpacity="1.000" Location="5,5" Name="Fill" PackSize="a,a" ScrollExtent="320,110" Size="320,110" />
+                <Page BackgroundOpacity="1.000" Location="4,3" Name="Frame" PackSize="a,a" RStyleDefault="/WindowElements.HollowFrame.data.frame.rect" ScrollExtent="323,115" Size="323,115" />
+            </Page>
+            <Page Location="29,49" Name="RoundedGrouper" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="340,200" Size="340,200" />
+            <Page Location="-13,4" Name="InteriorGrouper" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="424,290" Size="424,290" />
+            <Page BackgroundOpacity="1.000" Location="5,5" Name="DialogFrame" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="389,289" Size="389,289" />
+        </Page>

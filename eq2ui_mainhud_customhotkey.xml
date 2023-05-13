@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page BackgroundColor="#00FF00" clientmarginframe="0,0,5,10" clientmarginnone="0,0,5,10" eq2usescomwndcontrols="true" Location="817,300" MaximumSize="1536,1024" MinimumSize="50,50" Name="CustomHotkey" PackLocation="center,bottom" ScrollExtent="372,52" Size="372,52" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
+            <Page Location="348,5" Name="EndPage" PackLocation="right,top" PackSize="f,a" ScrollExtent="20,42" Size="20,42">
+                <Image Location="1,0" Name="BkgImage" PackLocation="right,cfc" Rotation="1.000" ScrollExtent="18,42" Size="18,42" Stretch="false" Style="Bkg" />
+                <ImageStyle Name="Bkg">
+                    <ImageFrame Name="image" Source="images/beastlord_ui.dds" SourceRect="450,107,468,149" />
+                </ImageStyle>
+            </Page>
+            <IconBank Dragable="true" font="/TextStyles.NormalOutline.NormalOutlineStyle" framecolor="#B5935A" iconframepadding="0" iconstyle="/IconStyles.button" Location="5,5" Name="Icons" PackSize="a,a" renderframe="true" ScrollExtent="342,42" Size="342,42" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" />
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="a,a" ScrollExtent="372,52" Size="372,52">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-1,-2" Name="Frame" PackSize="a,a" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="374,55" Size="374,55" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="372,52" Size="372,52" />
+            </Page>
+        </Page>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Location="946,304" Name="QuantitySelector" PackLocation="center,center" ScrollExtent="236,101" Size="236,101" Visible="false">
+            <TextboxStyle CaratColor="#FFFF00" Name="InputStyle" NormalTextStyle="/Fonts.FontArial14" SelectionColor="#495256" SelectionOpacity="1.000" TextColor="#F2EFE1" TextPadding="3,2,3,0" />
+            <Textbox BackgroundOpacity="1.000" Cursor="Text" Location="75,40" Margin="2,0,2,0" Name="Current" NumericInteger="true" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="86,20" Size="86,20" Style="InputStyle" textalignment="Center">56</Textbox>
+            <Button IsCancelButton="true" Location="126,63" Name="Cancel" ScrollExtent="75,32" Size="75,32" Style="/CommonElements.PushButton.data.style">:9ca1d1d5ae453fbb:Cancel</Button>
+            <Button IsDefaultButton="true" Location="36,63" Name="Accept" ScrollExtent="75,32" Size="75,32" Style="/CommonElements.PushButton.data.style">:9ca1d1d54b7317fd:Accept</Button>
+            <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="75,40" Name="Current" PackLocation="top,left" ScrollExtent="86,20" Size="86,20" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">:9ca1d1d5dc88af15:100</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="163,25" Name="Max" PackLocation="top,left" ScrollExtent="68,16" Size="68,16" TextAlignmentVertical="Center">2000000000</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="13,25" Name="Min" PackLocation="top,left" ScrollExtent="28,16" Size="28,16" TextAlignment="Right" TextAlignmentVertical="Center">1</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="24,5" Name="Label" PackLocation="top,left" PackSize="absolute" ScrollExtent="194,18" Size="194,18" TextAlignment="Center" TextAlignmentVertical="Center">:9ca1d1d52ccc17db:Select Quantity</Text>
+            <Sliderbar ControlInput="Current" ControlMax="Max" ControlMin="Min" Location="45,28" LowerLimit="1" Name="Slider" ScrollExtent="116,10" Size="116,10" Style="/SliderbarStyles.horz_sliderbar_gold" textalignment="Right" UpperLimit="2000000000" Value="56" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Background" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="236,101" Size="236,101" />
+            <Page AbsorbsInput="false" BackgroundColor="/ColorStyles.window_background_dark" BackgroundOpacity="0.875" Location="3,2" Name="Backdrop" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="230,97" Size="230,97" />
+        </Page>

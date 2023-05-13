@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page allowcloseontop="true" eq2usescomwndcontrols="true" Location="103,91" Name="ArenaMatch" ScrollExtent="810,578" Size="810,578" UserMovable="true" version="2.0.0">
+            <Page BackgroundOpacity="0.624" Location="25,40" Name="Modal" OnHideEffector="/CommonElements.Effectors.FadeOut" OnShowEffector="/CommonElements.Effectors.FadeIn" Opacity="0.000" PackSize="absolute,absolute" ScrollExtent="760,508" Size="760,508">
+                <Text Font="/TextStyles.Large.LargeStyle" Location="211,204" Margin="1,1,1,1" Name="Text" ScrollExtent="345,87" ShadowStyle="/ShadowStylesNew.Drop.style" Size="345,87" TextAlignment="Center" TextAlignmentVertical="Center">:3f658283a14bd4d2:Entering arena...</Text>
+                <Button Location="314,295" MaximumSize="16384,38" MinimumSize="38,38" Name="Ok" PackLocation="left,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:3f65828313a7061a:Ok</Button>
+                <Page BackgroundOpacity="1.000" Location="183,145" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="402,215" Size="402,215" />
+            </Page>
+            <Page Location="25,40" Name="ChampionSelect" PackSize="absolute,absolute" ScrollExtent="760,508" Size="760,508">
+                <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="true" Location="675,95" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,312" Size="22,312" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Page AbsorbsInput="false" Location="440,95" Name="Entry" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="254,24" Size="254,24">
+                    <Text Font="/TextStyles.Large.LargeStyle" Location="3,0" Name="Name" PackSize="absolute,fixed" ScrollExtent="247,24" Size="247,24" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:3f65828370142eab:{Champion Name}</Text>
+                    <Page BackgroundColor="#495256" Name="SelectedBkg" PackLocation="left,top" PackSize="1,1" ScrollExtent="254,24" Size="254,24" />
+                </Page>
+                <Page AbsorbsInput="false" Location="440,95" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="254,312" ScrollSize="1,24" Size="254,312" />
+                <Page BackgroundOpacity="1.000" Location="425,80" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="285,342" Size="285,342" TooltipStyle="Map" />
+            </Page>
+            <Page AbsorbsInput="false" BackgroundOpacity="0.624" Location="25,40" Name="Rules" OnHideEffector="/CommonElements.Effectors.FastFadeOut" OnShowEffector="/CommonElements.Effectors.FastFadeIn" Opacity="0.000" PackSize="absolute,absolute" ScrollExtent="760,508" Size="760,508">
+                <Button Location="314,415" MaximumSize="16384,38" MinimumSize="38,38" Name="Ok" PackLocation="left,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:3f65828313a7061a_1:Ok</Button>
+                <Page Location="9,45" Name="Settings" PackSize="absolute,absolute" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="740,408" Size="740,408">
+                    <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="10,5" Margin="1,1,1,1" Name="ArenaName" PackSize="absolute,fixed" ScrollExtent="720,39" ShadowStyle="/ShadowStylesNew.Drop.style" Size="720,39" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFD680">:3f6582837414e5af:{ArenaName}</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="25,12" Name="Flair" PackLocation="top,left" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="693,32" Size="693,32" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="20,64" Margin="1,1,1,1" Name="GameTypeLabel" ScrollExtent="142,25" Size="142,20">:3f658283c1759e79:Game Type</Text>
+                    <Page Location="171,59" MaximumSize="16384,30" MinimumSize="87,30" Name="GameType" ScrollExtent="215,30" Size="215,30">
+                        <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" Visible="false" />
+                        <Button Location="189,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" Visible="false" />
+                        <Text BackgroundOpacity="1.000" Font="/TextStyles.Normal.NormalStyle" Location="26,0" Margin="1,-1,0,0" Name="Value" PackSize="absolute,fixed" RStyleDefault="/CommonElements.Spinner.data.value.default.rect" RStyleDisabled="/CommonElements.Spinner.data.value.disabled.rect" RStyleDisabledActivated="/CommonElements.Spinner.data.value.disabled.rect" ScrollExtent="163,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="163,30" TextAlignment="Center" TextAlignmentVertical="Center">:3f658283bf5de8ef:{GameType}</Text>
+                    </Page>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="20,144" Margin="1,1,1,1" Name="CombatantsAllowedLabel" ScrollExtent="142,48" ShadowStyle="/ShadowStylesNew.Drop.style" Size="142,20">:3f658283132d17f4:Combatants Allowed</Text>
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="173,147" MinimumSize="22,22" Name="StockChampions" ScrollExtent="162,22" Size="162,22" Style="/CommonElements.RadioButton.data.style">:3f658283aa4986bc:Champions</Checkbox>
+                    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="173,170" MinimumSize="22,22" Name="PlayerCharacters" ScrollExtent="162,22" Size="162,22" Style="/CommonElements.RadioButton.data.style">:3f6582839657add3:Player Characters</Checkbox>
+                    <Page Location="194,192" MaximumSize="16384,30" MinimumSize="87,30" Name="MinLevel" ScrollExtent="169,30" Size="169,30">
+                        <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" Visible="false" />
+                        <Button Location="143,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" Visible="false" />
+                        <Text BackgroundOpacity="1.000" Font="/TextStyles.Normal.NormalStyle" Location="26,0" Margin="1,-1,0,0" Name="Value" PackSize="absolute,fixed" RStyleDefault="/CommonElements.Spinner.data.value.default.rect" RStyleDisabled="/CommonElements.Spinner.data.value.disabled.rect" RStyleDisabledActivated="/CommonElements.Spinner.data.value.disabled.rect" ScrollExtent="117,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="117,30" TextAlignment="Center" TextAlignmentVertical="Center">:3f65828333dce811:Level 20</Text>
+                    </Page>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="20,104" Margin="1,1,1,1" Name="VictoryConditionLabel" ScrollExtent="142,48" ShadowStyle="/ShadowStylesNew.Drop.style" Size="142,20">:3f6582836d67b4b6:Victory Condition</Text>
+                    <Page Location="171,100" MaximumSize="16384,30" MinimumSize="87,30" Name="VictoryCondition" ScrollExtent="215,30" Size="215,30">
+                        <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" Visible="false" />
+                        <Button Location="189,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" Visible="false" />
+                        <Text BackgroundOpacity="1.000" Font="/TextStyles.Normal.NormalStyle" Location="26,0" Margin="1,-1,0,0" Name="Value" PackSize="absolute,fixed" RStyleDefault="/CommonElements.Spinner.data.value.default.rect" RStyleDisabled="/CommonElements.Spinner.data.value.disabled.rect" RStyleDisabledActivated="/CommonElements.Spinner.data.value.disabled.rect" ScrollExtent="163,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="163,30" TextAlignment="Center" TextAlignmentVertical="Center">:3f658283da7e334a:20 Kills</Text>
+                    </Page>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="20,258" Margin="1,1,1,1" Name="MatchTimeLimitLabel" ScrollExtent="142,48" ShadowStyle="/ShadowStylesNew.Drop.style" Size="142,20">:3f65828304975f93:Match time limit</Text>
+                    <Page Location="171,253" MaximumSize="16384,30" MinimumSize="87,30" Name="MatchTimeLimit" ScrollExtent="215,30" Size="215,30">
+                        <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" Visible="false" />
+                        <Button Location="189,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" Visible="false" />
+                        <Text BackgroundOpacity="1.000" Font="/TextStyles.Normal.NormalStyle" Location="26,0" Margin="1,-1,0,0" Name="Value" PackSize="absolute,fixed" RStyleDefault="/CommonElements.Spinner.data.value.default.rect" RStyleDisabled="/CommonElements.Spinner.data.value.disabled.rect" RStyleDisabledActivated="/CommonElements.Spinner.data.value.disabled.rect" ScrollExtent="163,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="163,30" TextAlignment="Center" TextAlignmentVertical="Center">:3f6582839a33f2d5:20 minutes</Text>
+                    </Page>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="19,289" Margin="1,1,1,1" Name="TimeBetweenMatchesLabel" ScrollExtent="142,48" ShadowStyle="/ShadowStylesNew.Drop.style" Size="142,20">:3f65828372ab2808:Time between matches</Text>
+                    <Page Location="171,284" MaximumSize="16384,30" MinimumSize="87,30" Name="TimeBetweenMatches" ScrollExtent="215,30" Size="215,30">
+                        <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" Visible="false" />
+                        <Button Location="189,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" Visible="false" />
+                        <Text BackgroundOpacity="1.000" Font="/TextStyles.Normal.NormalStyle" Location="26,0" Margin="1,-1,0,0" Name="Value" PackSize="absolute,fixed" RStyleDefault="/CommonElements.Spinner.data.value.default.rect" RStyleDisabled="/CommonElements.Spinner.data.value.disabled.rect" RStyleDisabledActivated="/CommonElements.Spinner.data.value.disabled.rect" ScrollExtent="163,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="163,30" TextAlignment="Center" TextAlignmentVertical="Center">:3f658283fa4cdaae:30 seconds</Text>
+                    </Page>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="20,321" Margin="1,1,1,1" Name="AllowObserversLabel" ScrollExtent="142,48" ShadowStyle="/ShadowStylesNew.Drop.style" Size="142,20">:3f658283f288cc99:Allow Observers?</Text>
+                    <Page Location="171,316" MaximumSize="16384,30" MinimumSize="87,30" Name="AllowObservers" ScrollExtent="215,30" Size="215,30">
+                        <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" Visible="false" />
+                        <Button Location="189,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" Visible="false" />
+                        <Text BackgroundOpacity="1.000" Font="/TextStyles.Normal.NormalStyle" Location="26,0" Margin="1,-1,0,0" Name="Value" PackSize="absolute,fixed" RStyleDefault="/CommonElements.Spinner.data.value.default.rect" RStyleDisabled="/CommonElements.Spinner.data.value.disabled.rect" RStyleDisabledActivated="/CommonElements.Spinner.data.value.disabled.rect" ScrollExtent="163,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="163,30" TextAlignment="Center" TextAlignmentVertical="Center">:3f658283b2558cb6:Yes</Text>
+                    </Page>
+                    <Page BackgroundOpacity="1.000" Location="431,67" Name="MapPreviewFrame" PackLocation="right,top" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="292,180" Size="292,180" />
+                    <Image Location="440,75" Name="MapPreviewPrevious" PackLocation="right,top" ScrollExtent="275,165" Size="275,165" />
+                    <Image Location="440,75" Name="MapPreviewCurrent" OnHideEffector="/CommonElements.Effectors.SlowFadeOut" OnShowEffector="/CommonElements.Effectors.SlowFadeIn" PackLocation="right,top" ScrollExtent="275,165" Size="275,165" />
+                    <Page Location="426,253" MaximumSize="16384,30" MinimumSize="87,30" Name="MapName" PackLocation="right,top" ScrollExtent="300,30" Size="300,30">
+                        <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" Visible="false" />
+                        <Button Location="274,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" Visible="false" />
+                        <Text BackgroundOpacity="1.000" Font="/TextStyles.Normal.NormalStyle" Location="26,0" Margin="1,-1,0,0" Name="Value" PackSize="absolute,fixed" RStyleDefault="/CommonElements.Spinner.data.value.default.rect" RStyleDisabled="/CommonElements.Spinner.data.value.disabled.rect" RStyleDisabledActivated="/CommonElements.Spinner.data.value.disabled.rect" ScrollExtent="248,30" ShadowStyle="/ShadowStylesNew.Drop.style" Size="248,30" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFD680">:3f658283ed1397ab:{MapName}</Text>
+                    </Page>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="432,286" Margin="1,1,1,1" Name="MapDesc" PackLocation="right,top" ScrollExtent="289,60" ShadowStyle="/ShadowStylesNew.Drop.style" Size="289,60">:3f658283682331a1:{MapDesc}</Text>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="0,25" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="760,460" Size="760,460" />
+            </Page>
+            <Page AbsorbsInput="false" BackgroundOpacity="0.624" Location="25,40" Name="ExitConfirm" OnHideEffector="/CommonElements.Effectors.FastFadeOut" OnShowEffector="/CommonElements.Effectors.FastFadeIn" Opacity="0.000" PackSize="absolute,absolute" ScrollExtent="760,508" Size="760,508">
+                <Text Font="/TextStyles.Large.LargeStyle" Location="211,186" Margin="1,1,1,1" Name="Text" ScrollExtent="345,92" ShadowStyle="/ShadowStylesNew.Drop.style" Size="345,92" TextAlignment="Center" TextAlignmentVertical="Center">:3f658283b400f3df:Are you sure you want to leave the arena?</Text>
+                <Button Location="234,295" MaximumSize="16384,38" MinimumSize="38,38" Name="Yes" PackLocation="left,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:3f658283b2558cb6_1:Yes</Button>
+                <Button Location="395,295" MaximumSize="16384,38" MinimumSize="38,38" Name="No" PackLocation="left,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:3f6582830dd1f342:No</Button>
+                <Page BackgroundOpacity="1.000" Location="183,145" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="402,215" Size="402,215" />
+            </Page>
+            <Page Location="25,40" Name="Teams" ScrollExtent="760,460" Size="760,460">
+                <Scrollbar ArrowPressSound="sounds/button" Control="Roster.ScrollPage" HideIfUnnecessary="true" Location="360,20" MaximumSize="22,16384" MinimumSize="22,60" Name="RosterScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,420" Size="22,420" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Page BackgroundOpacity="1.000" Location="10,10" Name="Roster" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="355,440" Size="355,440">
+                    <Page BackgroundColor="#8080FF" BackgroundOpacity="0.224" Location="10,10" Name="TeamHeader" PackSize="absolute,fixed" ScrollExtent="335,30" Size="335,30">
+                        <Text Font="/TextStyles.Large.LargeStyle" Location="6,3" Name="Name" PackSize="absolute,fixed" ScrollExtent="172,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="172,20" TextColor="#EAEAFF">:3f6582839fa8c523:{TeamName} Team</Text>
+                        <Button Location="235,0" MaximumSize="16384,26" MinimumSize="26,26" Name="Join" PackLocation="right,top" ScrollExtent="100,26" Size="100,26" Style="/CommonElements.SmallPushButton.data.style">:3f65828377ac8816:Join</Button>
+                        <Page AbsorbsInput="false" BackgroundColor="#8080FF" BackgroundOpacity="1.000" Location="4,24" Name="Divider" PackSize="absolute" ScrollExtent="326,2" Size="326,2" />
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundColor="#8080FF" BackgroundOpacity="0.224" Location="10,40" Name="TeamMember" PackSize="absolute,fixed" ScrollExtent="335,25" Size="335,25">
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="20,0" Name="PlayerName" PackSize="absolute,absolute" ScrollExtent="310,25" Size="310,25" TextAlignmentVertical="Center">:3f65828351db9038:{PlayerName} (ChampionName)</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="189,0" Margin="1,0,2,0" Name="Status" PackSize="absolute,absolute" ScrollExtent="143,25" Size="143,25" TextAlignment="Right" TextAlignmentVertical="Center">:3f658283d1faf594:{Status}</Text>
+                        <Page BackgroundColor="#8080FF" BackgroundOpacity="0.722" Name="SelectedBkg" PackSize="absolute,fixed" ScrollExtent="335,25" Size="335,25" Visible="false" />
+                    </Page>
+                    <Page AbsorbsInput="false" Location="10,10" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="335,420" Size="335,420" />
+                </Page>
+                <Page Location="385,10" Name="ForcedObserver" ScrollExtent="365,440" Size="365,440" Visible="false">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="20,20" Margin="0,-6,0,0" Name="Text" PackSize="fixed,fixed" ScrollExtent="325,400" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="325,400" TextAlignment="Center" TextAlignmentVertical="Center">:3f6582835278680d:You may only observe this match because you have no champions in your inventory. To play a champions match, please purchase a champion from the merchants near the arena entrance.</Text>
+                </Page>
+                <Page Location="385,10" Name="SelectedChampion" ScrollExtent="365,440" Size="365,440" Visible="false">
+                    <Namespace Name="plain_progressbar">
+                        <ProgressbarStyle Bar.Background="highlight" Name="style_highlight" />
+                        <ImageStyle Name="frame">
+                            <ImageFrame Name="image" Source="images/arenachampions.dds" SourceRect="1,841,122,850" />
+                        </ImageStyle>
+                        <ImageStyle Name="highlight">
+                            <ImageFrame Name="image" Source="images/arenachampions.dds" SourceRect="1,853,122,862" />
+                        </ImageStyle>
+                        <ImageStyle Name="progress">
+                            <ImageFrame Name="image" Source="images/arenachampions.dds" SourceRect="1,865,122,874" />
+                        </ImageStyle>
+                        <ImageStyle Name="bkg">
+                            <ImageFrame Name="image" Source="images/arenachampions.dds" SourceRect="1,877,122,886" />
+                        </ImageStyle>
+                        <ProgressbarStyle Bar.Background="progress" Name="style_progress" />
+                    </Namespace>
+                    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="61,-10" Margin="0,-6,0,0" Name="ChampionName" PackSize="fixed,fixed" ScrollExtent="242,70" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="242,55" TextAlignment="Center" TextAlignmentVertical="Bottom">:3f65828321de83bb:{ChampionName</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,14" Name="Flair" PackLocation="top,left" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="345,32" Size="345,32" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,42" MaxLines="1" Name="PlayerName" PackSize="fixed,fixed" ScrollExtent="345,30" Size="345,30" TextAlignment="Center" TextAlignmentVertical="Center">:3f658283179c493a:{PlayerName}</Text>
+                    <Page Location="69,43" MaximumSize="16384,30" MinimumSize="87,30" Name="ChampionSpinner" ScrollExtent="223,30" Size="223,30" Visible="false">
+                        <Button Location="24,-1" MaximumSize="16384,32" MinimumSize="32,32" Name="OpenList" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:3f658283f1e7ad39:Select champion...</Button>
+                        <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" Visible="false" />
+                        <Button Location="197,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" Visible="false" />
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="192,82" Name="Spells" PackLocation="fixed,fixed" ScrollExtent="160,60" Size="160,60">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,2" Name="Label" ScrollExtent="160,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="160,20" TextAlignment="Center" TextAlignmentVertical="Center">:3f658283c536f0f8:Abilities</Text>
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="6,25" MouseOverColor="#FFFF00" Name="Spell0" ScrollExtent="35,35" Size="35,35" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="43,25" MouseOverColor="#FFFF00" Name="Spell1" ScrollExtent="35,35" Size="35,35" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="81,25" MouseOverColor="#FFFF00" Name="Spell2" ScrollExtent="35,35" Size="35,35" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="119,25" MouseOverColor="#FFFF00" Name="Spell3" ScrollExtent="35,35" Size="35,35" TreatAsButton="true" />
+                    </Page>
+                    <Page Location="192,153" Name="Stat0" PackSize="absolute,fixed" ScrollExtent="160,35" Size="160,35">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Name="Label" PackSize="absolute,fixed" ScrollExtent="160,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="160,20" TextAlignment="Center" TextAlignmentVertical="Bottom">:3f658283d0307c71:Strength</Text>
+                        <Image Location="138,21" Name="RightBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Image Location="8,21" Name="LeftBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Page AbsorbsInput="false" Location="19,24" Name="Display" PackSize="absolute,fixed" ScrollExtent="121,8" Size="121,8">
+                            <Image AbsorbsInput="false" Name="frame" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.frame" />
+                            <Progressbar AbsorbsInput="false" Name="Highlight" Opacity="0.500" PackLocation="top,left" PackSize="absolute,absolute" Progress="0.800" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_highlight" />
+                            <Progressbar AbsorbsInput="false" Color="#FF0000" Name="Bar" Opacity="0.800" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_progress" />
+                            <Image AbsorbsInput="false" Color="#FF0000" Name="Bkg" Opacity="0.250" ScrollExtent="121,9" Size="121,9" Style="plain_progressbar.bkg" />
+                        </Page>
+                    </Page>
+                    <Page Location="192,191" Name="Stat1" PackSize="absolute,fixed" ScrollExtent="160,35" Size="160,35">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Name="Label" PackSize="absolute,fixed" ScrollExtent="160,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="160,20" TextAlignment="Center" TextAlignmentVertical="Bottom">:3f658283659b3696:Toughness</Text>
+                        <Image Location="138,21" Name="RightBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Image Location="8,21" Name="LeftBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Page AbsorbsInput="false" Location="19,24" Name="Display" PackSize="absolute,fixed" ScrollExtent="121,8" Size="121,8">
+                            <Image AbsorbsInput="false" Name="frame" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.frame" />
+                            <Progressbar AbsorbsInput="false" Name="Highlight" Opacity="0.500" PackLocation="top,left" PackSize="absolute,absolute" Progress="0.800" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_highlight" />
+                            <Progressbar AbsorbsInput="false" Color="#FF0000" Name="Bar" Opacity="0.800" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_progress" />
+                            <Image AbsorbsInput="false" Color="#FF0000" Name="Bkg" Opacity="0.250" ScrollExtent="121,9" Size="121,9" Style="plain_progressbar.bkg" />
+                        </Page>
+                    </Page>
+                    <Page Location="192,229" Name="Stat2" PackSize="absolute,fixed" ScrollExtent="160,35" Size="160,35">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Name="Label" PackSize="absolute,fixed" ScrollExtent="160,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="160,20" TextAlignment="Center" TextAlignmentVertical="Bottom">:3f6582835d3c0ce7:Resilience</Text>
+                        <Image Location="138,21" Name="RightBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Image Location="8,21" Name="LeftBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Page AbsorbsInput="false" Location="19,24" Name="Display" PackSize="absolute,fixed" ScrollExtent="121,8" Size="121,8">
+                            <Image AbsorbsInput="false" Name="frame" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.frame" />
+                            <Progressbar AbsorbsInput="false" Name="Highlight" Opacity="0.500" PackLocation="top,left" PackSize="absolute,absolute" Progress="0.800" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_highlight" />
+                            <Progressbar AbsorbsInput="false" Color="#FF0000" Name="Bar" Opacity="0.800" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_progress" />
+                            <Image AbsorbsInput="false" Color="#FF0000" Name="Bkg" Opacity="0.250" ScrollExtent="121,9" Size="121,9" Style="plain_progressbar.bkg" />
+                        </Page>
+                    </Page>
+                    <Page Location="192,267" Name="Stat3" PackSize="absolute,fixed" ScrollExtent="160,35" Size="160,35">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Name="Label" PackSize="absolute,fixed" ScrollExtent="160,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="160,20" TextAlignment="Center" TextAlignmentVertical="Bottom">:3f6582835cfe9a12:Focus</Text>
+                        <Image Location="138,21" Name="RightBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Image Location="8,21" Name="LeftBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Page AbsorbsInput="false" Location="19,24" Name="Display" PackSize="absolute,fixed" ScrollExtent="121,8" Size="121,8">
+                            <Image AbsorbsInput="false" Name="frame" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.frame" />
+                            <Progressbar AbsorbsInput="false" Name="Highlight" Opacity="0.500" PackLocation="top,left" PackSize="absolute,absolute" Progress="0.800" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_highlight" />
+                            <Progressbar AbsorbsInput="false" Color="#FF0000" Name="Bar" Opacity="0.800" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_progress" />
+                            <Image AbsorbsInput="false" Color="#FF0000" Name="Bkg" Opacity="0.250" ScrollExtent="121,9" Size="121,9" Style="plain_progressbar.bkg" />
+                        </Page>
+                    </Page>
+                    <Page Location="192,305" Name="Stat4" PackSize="absolute,fixed" ScrollExtent="160,35" Size="160,35">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Name="Label" PackSize="absolute,fixed" ScrollExtent="160,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="160,20" TextAlignment="Center" TextAlignmentVertical="Bottom">:3f65828331182e0d:Speed</Text>
+                        <Image Location="138,21" Name="RightBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Image Location="8,21" Name="LeftBullet" ScrollExtent="14,14" Size="14,14" Style="/CommonElements.BulletPoint.data.style" />
+                        <Page AbsorbsInput="false" Location="19,24" Name="Display" PackSize="absolute,fixed" ScrollExtent="121,8" Size="121,8">
+                            <Image AbsorbsInput="false" Name="frame" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.frame" />
+                            <Progressbar AbsorbsInput="false" Name="Highlight" Opacity="0.500" PackLocation="top,left" PackSize="absolute,absolute" Progress="0.800" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_highlight" />
+                            <Progressbar AbsorbsInput="false" Color="#FF0000" Name="Bar" Opacity="0.800" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="121,8" Size="121,8" Style="plain_progressbar.style_progress" />
+                            <Image AbsorbsInput="false" Color="#FF0000" Name="Bkg" Opacity="0.250" ScrollExtent="121,9" Size="121,9" Style="plain_progressbar.bkg" />
+                        </Page>
+                    </Page>
+                    <Image Location="15,80" Name="PaperDollFlairTop" ScrollExtent="177,15" Size="177,15" SourceRect="325,0,512,15" SourceResource="/images/Window_elements_specific.dds" />
+                    <Image Location="13,343" Name="PaperDollFlairBottom" PackLocation="left,bottom" Rotation="0.500" ScrollExtent="176,15" Size="176,15" SourceRect="325,0,512,15" SourceResource="/images/Window_elements_specific.dds" />
+                    <Page BackgroundOpacity="1.000" Location="15,86" Name="PaperDollFrame" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="175,265" Size="175,265" />
+                    <Page BackgroundOpacity="1.000" Location="23,94" Name="PaperDoll" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="158,249" Size="158,249">
+                        <Image AbsorbsInput="false" GetsInput="true" Name="Doll" PackSize="absolute,absolute" ScrollExtent="158,249" Size="158,249" SourceRect="1,1,150,250" SourceResource="images/arenachampions/champions01.dds" />
+                        <Image AbsorbsInput="false" Color="#000000" GetsInput="true" Location="1,-52" Name="Fog0" PackSize="absolute,absolute" ScrollExtent="158,500" Size="158,500" SourceRect="169,589,325,839" SourceResource="images/arenachampions.dds" />
+                        <Image AbsorbsInput="false" Color="#000000" GetsInput="true" Location="-13,3" Name="Fog1" PackSize="absolute,absolute" ScrollExtent="546,249" Size="546,249" SourceRect="333,589,489,839" SourceResource="images/arenachampions.dds" />
+                        <Image AbsorbsInput="false" Color="#000000" GetsInput="true" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="158,249" Size="158,249" SourceRect="6,588,162,838" SourceResource="images/arenachampions.dds" />
+                    </Page>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="20,355" Margin="1,1,1,1" Name="Desc" PackSize="fixed,fixed" ScrollExtent="313,72" ShadowStyle="/ShadowStylesNew.Outline.style" Size="313,72" TextAlignment="Center" TextAlignmentVertical="Center">:3f658283475c6d8f:The frozen magi once stalked the icy halls of Permafrost.</Text>
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Desc" HideIfUnnecessary="true" Location="333,355" MaximumSize="22,16384" MinimumSize="22,60" Name="DescScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,72" Size="22,72" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Page>
+                <Page Location="385,10" Name="SelectedPlayerCharacter" ScrollExtent="365,440" Size="365,440">
+                    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="10,8" MaxLines="1" Name="Name" PackSize="fixed,fixed" ScrollExtent="340,30" ShadowStyle="/ShadowStylesNew.Outline.style" Size="340,30" TextAlignment="Center">:3f658283179c493a_1:{PlayerName}</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,8" Name="Flair" PackLocation="top,left" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="345,32" Size="345,32" />
+                    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="98,69" Name="Stats" PackLocation="fixed,fixed" ScrollExtent="165,286" Size="165,286">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="11,-2" Margin="0,0,5,0" Name="AdvLevelClass" ScrollExtent="148,46" Size="148,20" TextAlignment="Center" TextAlignmentVertical="Center">:3f6582831d942986:50 (50) Shadowknight</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="11,13" Margin="0,0,5,0" Name="TSLevelClass" ScrollExtent="148,23" Size="148,20" TextAlignment="Center" TextAlignmentVertical="Center">:3f65828304bb3d50:30 Blacksmith</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="5,33" Margin="0,0,5,0" Name="HitPointsLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f65828317ab6b68:Hit Points</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="96,33" Margin="0,0,5,0" Name="HP" ScrollExtent="65,23" Size="65,20" TextAlignmentVertical="Center">:3f658283884382ba:10000</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="5,47" Margin="0,0,5,0" Name="PowerLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f65828395b4d15b:Power</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="96,47" Margin="0,0,5,0" Name="Power" ScrollExtent="64,23" Size="64,20" TextAlignmentVertical="Center">:3f658283884382ba_1:10000</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="5,74" Margin="0,0,5,0" Name="DEFLabel_Mitigation" ScrollExtent="91,46" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f658283eb522776:Mitigation</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="96,74" Margin="0,0,5,0" Name="Mitigation" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283884382ba_3:10000</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="5,88" Margin="0,0,5,0" Name="AvoidanceLabel" ScrollExtent="91,46" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f658283364c0cee:Avoidance</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="96,88" Margin="0,0,5,0" Name="Avoidance" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283884382ba_4:10000</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="6,107" Margin="0,0,5,0" Name="STRLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f658283d0307c71_1:Strength</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="97,107" Margin="0,0,5,0" Name="STR" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283884382ba_5:10000</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="6,122" Margin="0,0,5,0" Name="AGILabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f6582835540b9ec:Agility</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="97,121" Margin="0,0,5,0" Name="AGI" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283884382ba_6:10000</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="6,135" Margin="0,0,5,0" Name="STALabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f6582830bce0a17:Stamina</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="97,135" Margin="0,0,5,0" Name="STA" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283884382ba_7:10000</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="6,149" Margin="0,0,5,0" Name="INTLabel" ScrollExtent="91,46" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f6582833016c2c4:Intelligence</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="97,149" Margin="0,0,5,0" Name="INT" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283884382ba_8:10000</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="6,163" Margin="0,0,5,0" Name="WISLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f6582832ca6752c:Wisdom</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="97,163" Margin="0,0,5,0" Name="WIS" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283884382ba_9:10000</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="7,182" Margin="0,0,5,0" Name="ColdLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f6582839706dac7:Cold</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="98,182" Margin="0,0,5,0" Name="Cold" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283b2d19f90:30%</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="7,196" Margin="0,0,5,0" Name="DiseaseLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f6582833f79aca2:Disease</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="98,196" Margin="0,0,5,0" Name="Disease" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283b2d19f90_1:30%</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="7,210" Margin="0,0,5,0" Name="DivineLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f6582838122df0b:Divine</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="98,210" Margin="0,0,5,0" Name="Divine" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283b2d19f90_2:30%</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="7,224" Margin="0,0,5,0" Name="HeatLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f658283e589b639:Heat</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="98,224" Margin="0,0,5,0" Name="Heat" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283b2d19f90_3:30%</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="7,238" Margin="0,0,5,0" Name="MagicLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f658283373839d5:Magic</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="98,238" Margin="0,0,5,0" Name="Magic" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283b2d19f90_4:30%</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="7,252" Margin="0,0,5,0" Name="MentalLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f6582831cca88fa:Mental</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="98,252" Margin="0,0,5,0" Name="Mental" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283b2d19f90_5:30%</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="7,266" Margin="0,0,5,0" Name="PoisonLabel" ScrollExtent="91,23" Size="91,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">:3f6582830127e380:Poison</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="98,266" Margin="0,0,5,0" Name="Poison" ScrollExtent="69,23" Size="69,20" TextAlignmentVertical="Center">:3f658283b2d19f90_6:30%</Text>
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="38,35" Name="Equipment" PackLocation="fixed,fixed" ScrollExtent="285,401" Size="285,401">
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" Location="75,321" Name="DotFrameBottom" RStyleDefault="/FrameStyles.background_inv_dots_horiz" ScrollExtent="145,6" Size="145,6" Visible="false" />
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" Location="248,20" Name="DotFrameRight" RStyleDefault="/FrameStyles.background_inv_dots_vert" ScrollExtent="8,324" Size="8,324" Visible="false" />
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" Location="32,20" Name="DotFrameLeft" RStyleDefault="/FrameStyles.background_inv_dots_vert" ScrollExtent="9,318" Size="9,318" Visible="false" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="101,354" MouseOverColor="#FFFF00" Name="primary" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283b28fe160:Primary Hand" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="144,354" MouseOverColor="#FFFF00" Name="secondary" ScrollExtent="42,42" Size="42,42" Tooltip=":3f65828318fd19d9:Secondary Hand" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="15,2" MouseOverColor="#FFFF00" Name="head" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283f83ea65d:Head" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="15,46" MouseOverColor="#FFFF00" Name="cloak" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283b2730ceb:Cloak" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="15,90" MouseOverColor="#FFFF00" Name="chest" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283c57a634c:Chest" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="15,134" MouseOverColor="#FFFF00" Name="shoulders" ScrollExtent="42,42" Size="42,42" Tooltip=":3f65828305a945b3:Shoulders" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="15,178" MouseOverColor="#FFFF00" Name="forearms" ScrollExtent="42,42" Size="42,42" Tooltip=":3f6582834e622748:Wrists" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="15,222" MouseOverColor="#FFFF00" Name="hands" ScrollExtent="42,42" Size="42,42" Tooltip=":3f6582835810e303:Hands" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="15,266" MouseOverColor="#FFFF00" Name="legs" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283a2d5134b:Legs" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="15,310" MouseOverColor="#FFFF00" Name="feet" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283613a040e:Feet" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="230,134" MouseOverColor="#FFFF00" Name="left_ring" ScrollExtent="42,42" Size="42,42" Tooltip=":3f6582830ee529c5:Left Ring" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="230,178" MouseOverColor="#FFFF00" Name="right_ring" ScrollExtent="42,42" Size="42,42" Tooltip=":3f6582836cfbb8a4:Right Ring" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="230,2" MouseOverColor="#FFFF00" Name="neck" ScrollExtent="42,42" Size="42,42" Tooltip=":3f6582837fdc8692:Neck" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="230,46" MouseOverColor="#FFFF00" Name="ears2" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283b4022330:Ear" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="230,90" MouseOverColor="#FFFF00" Name="ears" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283b4022330_1:Ear" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="230,266" MouseOverColor="#FFFF00" Name="left_wrist" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283d871f80d:Left Wrist" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="230,222" MouseOverColor="#FFFF00" Name="right_wrist" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283e2a6b752:Right Wrist" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="187,354" MouseOverColor="#FFFF00" Name="ranged" ScrollExtent="42,42" Size="42,42" Tooltip=":3f6582834986e952:Ranged Weapon" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="230,354" MouseOverColor="#FFFF00" Name="ammo" ScrollExtent="42,42" Size="42,42" Tooltip=":3f658283b0422eeb:Ammo" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="230,310" MouseOverColor="#FFFF00" Name="waist" ScrollExtent="42,42" Size="42,42" Tooltip=":3f6582832408e4e0:Waist" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="15,354" MouseOverColor="#FFFF00" Name="food" ScrollExtent="42,42" Size="42,42" Tooltip=":3f6582838bf57936:Food" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="58,354" MouseOverColor="#FFFF00" Name="drink" ScrollExtent="42,42" Size="42,42" Tooltip=":3f6582833380902a:Drink" TreatAsButton="true" />
+                        <Image AbsorbsInput="false" Location="51,3" Name="PaperDollFrame" ScrollExtent="184,362" Size="184,362" SourceRect="325,16,509,322" SourceResource="images/window_elements_specific.dds" Style=" " />
+                        <Image AbsorbsInput="false" BackgroundColor="#FF5050" BackgroundOpacity="0.224" GetsInput="true" Location="59,4" Name="PaperDoll" ScrollExtent="168,346" Size="168,346" />
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="385,10" Name="SelectedBkg" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="365,440" Size="365,440" />
+            </Page>
+            <Button Location="45,503" MaximumSize="16384,32" MinimumSize="32,32" Name="LeaveArena" ScrollExtent="162,32" Size="162,32" Style="/CommonElements.PushButton.data.style">:3f658283ab936649:Leave Arena</Button>
+            <Button Location="220,503" MaximumSize="16384,32" MinimumSize="32,32" Name="ViewRules" ScrollExtent="162,32" Size="162,32" Style="/CommonElements.PushButton.data.style">:3f65828381e27cc6:Rules...</Button>
+            <Button Location="585,500" MaximumSize="16384,38" MinimumSize="38,38" Name="Ready" PackLocation="left,bottom" ScrollExtent="180,38" Size="180,38" Style="/CommonElements.LargePushButton.data.style">:3f65828316ab5554:Ready</Button>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="810,578" Size="810,578">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="809,578" Size="809,578" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" BackgroundTint="#6A6A6A" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="810,578" Size="810,578">
+                    <Namespace Name="backdrop">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/arenachampions.dds" SourceRect="1,1,1023,577" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                    </Namespace>
+                    <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="25,40" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="ArenaMain.WindowFrame.Bkg.backdrop.rect" ScrollExtent="760,508" Size="760,508" />
+                </Page>
+            </Page>
+        </Page>

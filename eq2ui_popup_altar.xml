@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_alter_open" eq2usescomwndcontrols="true" Location="274,41" MinimumSize="529,564" Name="Altar" PackLocation="top,center" ScrollExtent="529,573" Size="529,573" UserMovable="true" version="2" Visible="false">
+            <Page AbsorbsInput="false" Location="12,479" Name="SacrificePage" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="505,76" Size="505,76">
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="1,1" MaxLines="1" Name="OfferText" ScrollExtent="78,53" Size="71,53" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true">:b505476d2fe58da8:Offering:</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" DropToParent="true" IconStyle="/IconStyles.button" Location="78,13" MaximumSize="32,32" MinimumSize="32,32" MouseOverColor="#FFFF00" Name="SacrificeItem" PackLocation="left,top" ScrollExtent="32,32" Size="32,32" Tooltip=":b505476d919712aa:Items of value to your deity may be sacrificed for favor here." TreatAsButton="true" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="113,-3" Name="ItemInfo" ScrollExtent="234,64" Size="234,64" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">:b505476d30ad9f81:Item Info</Text>
+                <Button Location="346,13" MaximumSize="16384,32" MinimumSize="32,32" Name="SacrificeButton" PackLocation="right,top" ScrollExtent="147,32" Size="147,32" Style="/CommonElements.PushButton.data.style">:b505476d462ba3aa:Make Offering</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="21,98" Name="RewardPage" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="486,383" Size="486,383">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="70,8" MaxLines="1" Name="Blessing header" PackSize="absolute,fixed" ScrollExtent="147,28" ShadowStyle="/ShadowStylesNew.Outline.style" Size="147,28" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d634b7053:Blessings</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="300,8" MaxLines="1" Name="Miracle header" PackSize="absolute,fixed" ScrollExtent="147,28" ShadowStyle="/ShadowStylesNew.Outline.style" Size="147,28" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d6d0bd966:Miracles</Text>
+                <Page BackgroundOpacity="1.000" Location="0,347" Name="FactionPage" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="486,36" Size="486,36">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="384,5" MaxLines="1" Name="FactionReaction" PackSize="absolute,fixed" ScrollExtent="91,27" ShadowStyle="/ShadowStylesNew.Outline.style" Size="91,27" TextAlignment="Right" TextAlignmentVertical="Center">:b505476d87b22ecd:Test</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="100,5" MaxLines="1" Name="CurrentFavor" PackSize="absolute,fixed" ScrollExtent="70,27" ShadowStyle="/ShadowStylesNew.Outline.style" Size="70,27" TextAlignment="Center" TextAlignmentVertical="Center">:b505476d87b22ecd_1:Test</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,5" MaxLines="1" Name="FactionName" PackSize="absolute,fixed" ScrollExtent="199,27" ShadowStyle="/ShadowStylesNew.Outline.style" Size="199,27" TextAlignmentVertical="Center">:b505476d87b22ecd_2:Test</Text>
+                    <Progressbar BackgroundOpacity="1.000" Color="#FF0000" Location="5,3" Name="FactionBar" PackLocation="left,top" PackSize="a,f" Progress="0.800" ScrollExtent="475,32" Size="475,32" Style="/SpecialElements.SkillProgressBar.data.style" />
+                    <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="5,3" Name="BarBkg" Opacity="0.200" PackLocation="left,top" PackSize="a,f" RStyleDefault="/SpecialElements.SkillProgressBar.data.progress.rect" ScrollExtent="477,32" Size="477,32" />
+                    <DataSource Name="FactionColors">
+                        <Data Name="Faction0" progresscolor="#FF0000" />
+                        <Data Name="Faction1" progresscolor="#FF8040" />
+                        <Data Name="Faction2" progresscolor="#FFFF00" />
+                        <Data Name="Faction3" progresscolor="#FFFFAA" />
+                        <Data Name="Faction4" progresscolor="#FFFFFF" />
+                        <Data Name="Faction5" progresscolor="#AAFFAA" />
+                        <Data Name="Faction6" progresscolor="#008080" />
+                        <Data Name="Faction7" progresscolor="#00FFFF" />
+                        <Data Name="Faction8" progresscolor="#0000FF" />
+                    </DataSource>
+                </Page>
+                <VolumePage CellCount="1,5" CellPadding="2,15" CellSize="220,50" Location="7,18" MinimumScrollExtent="224,340" Name="BlessingPage" PackSize="absolute,fixed" ScrollExtent="239,340" Size="239,340">
+                    <Page AbsorbsInput="false" Location="2,15" MaximumSize="220,50" MinimumSize="220,50" Name="Blessing1" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_1:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                    <Page AbsorbsInput="false" Location="2,80" MaximumSize="220,50" MinimumSize="220,50" Name="Blessing2" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec_2:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_3:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                    <Page AbsorbsInput="false" Location="2,145" MaximumSize="220,50" MinimumSize="220,50" Name="Blessing3" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec_4:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_5:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                    <Page AbsorbsInput="false" Location="2,210" MaximumSize="220,50" MinimumSize="220,50" Name="Blessing4" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec_6:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_7:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                    <Page AbsorbsInput="false" Location="2,275" MaximumSize="220,50" MinimumSize="220,50" Name="Blessing5" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec_8:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_9:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                </VolumePage>
+                <VolumePage CellCount="1,5" CellPadding="2,15" CellSize="220,50" Location="239,18" MinimumScrollExtent="224,340" Name="MiraclePage" PackSize="absolute,fixed" ScrollExtent="240,342" Size="240,342">
+                    <Page AbsorbsInput="false" Location="2,15" MaximumSize="220,50" MinimumSize="220,50" Name="Miracle1" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec_10:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_11:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                    <Page AbsorbsInput="false" Location="2,80" MaximumSize="220,50" MinimumSize="220,50" Name="Miracle2" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec_12:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_13:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                    <Page AbsorbsInput="false" Location="2,145" MaximumSize="220,50" MinimumSize="220,50" Name="Miracle3" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec_14:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_15:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                    <Page AbsorbsInput="false" Location="2,210" MaximumSize="220,50" MinimumSize="220,50" Name="Miracle4" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec_16:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_17:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                    <Page AbsorbsInput="false" Location="2,275" MaximumSize="220,50" MinimumSize="220,50" Name="Miracle5" ScrollExtent="220,50" Size="220,50">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,5" Name="Name" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:b505476d05ffa8ec_18:8</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="48,25" Name="Cost" ScrollExtent="172,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="172,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d05ffa8ec_19:8</Text>
+                        <Icon BackgroundTint="#000000" IconRect="0,0,42,42" IconResource="/images/icons/icon_as2.dds" IconStyle="/MainHUD.Skills.TabPages.Achievement.Grouper.achievement" IconType="achievement" Location="4,4" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="56,55" Size="56,55" />
+                    </Page>
+                </VolumePage>
+                <Image Location="7,7" Name="BackDropImage" PackSize="absolute,fixed" ScrollExtent="472,347" Size="472,347" Style="/SpecialElements.DeityBackdrop.data.Rallos Zek" />
+            </Page>
+            <Page AbsorbsInput="false" Location="27,49" Name="DeityTitle" PackLocation="absolute,fixed" ScrollExtent="474,74" Size="474,74">
+                <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" MaxLines="1" Name="AltarName" PackSize="absolute,fixed" ScrollExtent="474,38" ShadowStyle="/ShadowStylesNew.Outline.style" Size="474,38" TextAlignment="Center" TextAlignmentVertical="Center">:b505476d87b22ecd_3:Test</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="0,20" MaxLines="1" Name="DeityInfo" PackSize="absolute,fixed" ScrollExtent="474,38" ShadowStyle="/ShadowStylesNew.Outline.style" Size="474,38" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d87b22ecd_4:Test</Text>
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="529,563" Size="529,563">
+                <Button Location="470,20" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":b505476dec278586:Window Settings" UserMovable="true" />
+                <Button Location="450,20" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":4e876560574a0c6d:Help" UserMovable="true" />
+                <Button Location="490,20" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":b505476d2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,12" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="360,70" Size="360,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="230,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="230,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:b505476d82bba52d:Altar</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="338,12" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,12" Name="Frame" PackLocation="center,center" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="528,545" Size="528,545" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,13" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="531,543" Size="531,543" />
+            </Page>
+        </Page>

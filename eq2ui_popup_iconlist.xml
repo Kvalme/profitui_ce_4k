@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Name="IconList" ScrollExtent="44,240" Size="44,240">
+            <IconBank BackgroundOpacity="1.000" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" IconSize="36" iconstyle="/IconStyles.button" Name="Icons" renderframe="true" ScrollExtent="44,240" Size="44,240" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="false" />
+        </Page>

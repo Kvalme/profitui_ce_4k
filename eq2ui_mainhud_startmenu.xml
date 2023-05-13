@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" allowcloseontop="true" alwaysontop="true" eq2usescomwndcontrols="true" Location="268,440" MaximumSize="1024,1024" Name="StartMenu" ScrollExtent="232,54" Size="232,54">
+        <Page Activated="true" allowcloseontop="true" alwaysontop="true" eq2usescomwndcontrols="true" Location="268,440" MaximumSize="1024,1024" Name="StartMenu" ScrollExtent="232,54" Size="232,54" Visible="false">
             <Button Location="38,12" Margin="10,0,0,0" Name="ButtonTemplate" PressSound=" " ScrollExtent="178,22" Size="178,22" Style="/ButtonStyles.start_menu">:3b7bf4adff86467e:ButtonTemplate</Button>
             <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="10,12" MouseOverColor="#FFFF00" Name="IconTemplate" PackSize="fixed,fixed" ScrollExtent="22,22" Size="22,22" TreatAsButton="true" Visible="false" />
             <Image Location="1,-12" Name="ManaDoohickeyTop" ScrollExtent="227,15" Size="227,15" SourceRect="325,0,512,15" SourceResource="/images/Window_elements_specific.dds" Visible="false" />

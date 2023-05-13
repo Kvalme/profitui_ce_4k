@@ -86,15 +86,15 @@
             </Page>
             <Page Location="5,30" Name="CalendarPage" PackSize="a,a" ScrollExtent="665,591" Size="665,591">
                 <Page BackgroundOpacity="1.000" Location="371,415" Name="TooltipPage" ScrollExtent="272,160" Size="272,160">
-                    <Composite Location="10,10" Name="Composite" ScrollExtent="252,140" Size="252,140" SpacingType="Constant">
-                        <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" MaxLines="1" MinimumSize="0,20" Name="Name" ScrollExtent="295,26" Size="252,20" TextColor="#F1CE02">[DEVL]Sample Calendar Event</Text>
-                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,20" MinimumSize="0,16" Name="Category" ScrollExtent="252,23" Size="252,16" TextColor="#C0C0C0">Category:</Text>
-                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,36" MinimumSize="0,16" Name="StartDate" ScrollExtent="252,23" Size="252,16" TextColor="#C0C0C0">Start Date:</Text>
-                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,52" MinimumSize="0,16" Name="EndDate" ScrollExtent="252,23" Size="252,16" TextColor="#C0C0C0">End Date:</Text>
-                        <Page Location="0,68" Name="Divider" PackSize="a,f" ScrollExtent="252,5" Size="252,5">
+                    <Composite Location="10,10" Name="Composite" ScrollExtent="252,169" Size="252,140" SpacingType="Constant">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" MaxLines="1" MinimumSize="0,20" Name="Name" ScrollExtent="295,26" Size="252,26" TextColor="#F1CE02">[DEVL]Sample Calendar Event</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,26" MinimumSize="0,16" Name="Category" ScrollExtent="252,23" Size="252,23" TextColor="#C0C0C0">Category:</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,49" MinimumSize="0,16" Name="StartDate" ScrollExtent="252,23" Size="252,23" TextColor="#C0C0C0">Start Date:</Text>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,72" MinimumSize="0,16" Name="EndDate" ScrollExtent="252,23" Size="252,23" TextColor="#C0C0C0">End Date:</Text>
+                        <Page Location="0,95" Name="Divider" PackSize="a,f" ScrollExtent="252,5" Size="252,5">
                             <Page BackgroundColor="#CFB000" BackgroundOpacity="1.000" Location="0,2" Name="Line" PackSize="a,f" ScrollExtent="252,1" Size="252,1" />
                         </Page>
-                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,73" Name="Description" OnHide="parent.Divider.visible=false" OnShow="parent.Divider.visible=true" ScrollExtent="252,69" Size="252,45">:43a26ad53fd68238_1:Description goes here...
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,100" Name="Description" OnHide="parent.Divider.visible=false" OnShow="parent.Divider.visible=true" ScrollExtent="252,69" Size="252,69">:43a26ad53fd68238_1:Description goes here...
 Blah blah
 blah.
 </Text>

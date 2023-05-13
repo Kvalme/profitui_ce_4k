@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="true" Location="967,539" MinimumSize="19,19" Name="StartButton" OnHoverIn="Volume.Enabled=true" OnHoverOut="Volume.Enabled=false" PackLocation="right,bottom" ScrollExtent="57,57" Size="57,57" UserMovable="true" UserResizable="true">
+        <Page eq2usescomwndcontrols="true" Location="1991,539" MinimumSize="19,19" Name="StartButton" OnHoverIn="Volume.Enabled=true" OnHoverOut="Volume.Enabled=false" PackLocation="right,bottom" ScrollExtent="57,57" Size="57,57" UserMovable="true" UserResizable="true" Visible="false">
             <VolumePage CellAlignmentH="left" CellCount="3,3" CellPadding="0,0" CellSelectable="false" CellSize="19,19" Enabled="false" MinimumScrollExtent="57,57" Name="Volume" PackLocation="fff,fff" PackSize="a,a" ScrollExtent="57,57" Size="57,57" VolumeFill="down_left2right">
                 <Page Name="SoundControls" ScrollExtent="19,19" Size="19,19">
                     <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />

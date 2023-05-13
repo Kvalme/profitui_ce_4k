@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="284,255" Name="SaveRating" ScrollExtent="457,294" Size="457,294" UserMovable="true" version="1.0">
+            <Text AbsorbsInput="false" DynamicData="/GameData.Self.ZoneName" Font="/TextStyles.Large.LargeStyle" Location="35,31" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="387,26" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="387,24" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:03544557b1550b52:Bubba&apos;s Personal Dojo</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="35,159" Name="Desc" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="387,69" Size="387,61" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#EFEFEF">:03544557fd9f4cfe:You may rate this house as often as you like, but only the most recent rating given from this account will be counted.</Text>
+            <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="35,63" Name="DataPage" PackLocation="left,bottom" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="387,94" Size="387,94">
+                <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="70,22" Margin="1,0,1,1" Name="Label1" ScrollExtent="100,24" Size="100,24" TextAlignment="Right" TextAlignmentVertical="Center">:035445576d2e0999:Creativity</Text>
+                <Image Location="182,23" Name="image1" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.thumbs_up" />
+                <Button Location="209,17" MaximumSize="16384,32" MinimumSize="32,32" Name="Button1" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:03544557f3ae1072:Like</Button>
+                <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="70,52" Margin="1,0,1,1" Name="Label2" ScrollExtent="100,24" Size="100,24" TextAlignment="Right" TextAlignmentVertical="Center">:035445570d836891:Style</Text>
+                <Image Location="182,53" Name="image2" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.thumbs_up" />
+                <Button Location="209,47" MaximumSize="16384,32" MinimumSize="32,32" Name="Button2" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:03544557f3ae1072_1:Like</Button>
+            </Page>
+            <Button Location="98,224" MaximumSize="16384,38" MinimumSize="32,38" Name="SaveButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:035445570aab6a1f:Save</Button>
+            <Button Location="238,223" MaximumSize="16384,38" MinimumSize="32,38" Name="CancelButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:03544557ae453fbb:Cancel</Button>
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="457,296" Size="457,296" />
+        </Page>
