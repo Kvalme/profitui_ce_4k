@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSource Name="FavSource5EN">
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="           Consumables" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="RAFFIK ITEMS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="Blessing of the Prime" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Blessing of the Prime" Tier="0"/>
+<Data ItemName="Globe of Homecoming" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Globe of Homecoming" Tier="0"/>
+<Data ItemName="Harvester's Balm" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Harvester's Balm" Tier="0"/>
+<Data ItemName="Mutagenic Essence" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Mutagenic Essence" Tier="0"/>
+<Data ItemName="Bulwark of Zek" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Bulwark of Zek" Tier="0"/>
+<Data ItemName="Henchman Adornment Pack" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Henchman Adornment Pack" Tier="0"/>
+<Data ItemName="Coldain Cure-All" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Coldain Cure-All" Tier="0"/>
+<Data ItemName="Charm of Expertise" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Charm of Expertise" Tier="0"/>
+<Data ItemName="Potion of Nimble Fingers" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Potion of Nimble Fingers" Tier="0"/>
+<Data ItemName="Essence of the Zephyr" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="0" SellerName=" " Text="-Essence of the Zephyr" Tier="0"/>
+<Data ItemName="Brew of Readiness" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Brew of Readiness" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="DRINK MC" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="100" MinLvl="100" SellerName=" " Text="(100) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="95" MinLvl="95" SellerName=" " Text="  (95) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="94" MinLvl="90" SellerName=" " Text="  (90) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="89" MinLvl="80" SellerName=" " Text="  (80) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="79" MinLvl="70" SellerName=" " Text="  (70) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="69" MinLvl="60" SellerName=" " Text="  (60) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="59" MinLvl="50" SellerName=" " Text="  (50) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="49" MinLvl="40" SellerName=" " Text="  (40) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="39" MinLvl="30" SellerName=" " Text="  (30) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="29" MinLvl="20" SellerName=" " Text="  (20) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="19" MinLvl="10" SellerName=" " Text="  (10) MC" Tier="4"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="DRINK HC" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="100" MinLvl="100" SellerName=" " Text="(100) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="95" MinLvl="95" SellerName=" " Text="  (95) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="94" MinLvl="90" SellerName=" " Text="  (90) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="89" MinLvl="80" SellerName=" " Text="  (80) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="79" MinLvl="70" SellerName=" " Text="  (70) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="69" MinLvl="60" SellerName=" " Text="  (60) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="59" MinLvl="50" SellerName=" " Text="  (50) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="49" MinLvl="40" SellerName=" " Text="  (40) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="39" MinLvl="30" SellerName=" " Text="  (30) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="29" MinLvl="20" SellerName=" " Text="  (20) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="17" MaxLvl="19" MinLvl="10" SellerName=" " Text="  (10) HC" Tier="2"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="FOOD MC" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="100" MinLvl="100" SellerName=" " Text="(100) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="95" MinLvl="95" SellerName=" " Text="  (95) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="94" MinLvl="90" SellerName=" " Text="  (90) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="89" MinLvl="80" SellerName=" " Text="  (80) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="79" MinLvl="70" SellerName=" " Text="  (70) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="69" MinLvl="60" SellerName=" " Text="  (60) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="59" MinLvl="50" SellerName=" " Text="  (50) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="49" MinLvl="40" SellerName=" " Text="  (40) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="39" MinLvl="30" SellerName=" " Text="  (30) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="29" MinLvl="20" SellerName=" " Text="  (20) MC" Tier="4"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="19" MinLvl="10" SellerName=" " Text="  (10) MC" Tier="4"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="FOOD HC" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="100" MinLvl="100" SellerName=" " Text="(100) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="95" MinLvl="95" SellerName=" " Text="  (95) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="94" MinLvl="90" SellerName=" " Text="  (90) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="89" MinLvl="80" SellerName=" " Text="  (80) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="79" MinLvl="70" SellerName=" " Text="  (70) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="69" MinLvl="60" SellerName=" " Text="  (60) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="59" MinLvl="50" SellerName=" " Text="  (50) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="49" MinLvl="40" SellerName=" " Text="  (40) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="39" MinLvl="30" SellerName=" " Text="  (30) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="29" MinLvl="20" SellerName=" " Text="  (20) HC" Tier="2"/>
+<Data ItemName=" " ItemEffect=" " ItemType="19" MaxLvl="19" MinLvl="10" SellerName=" " Text="  (10) HC" Tier="2"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="PATCH KITS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="Redwood Patch Kit" ItemEffect=" " ItemType="0" MaxLvl="80" MinLvl="0" SellerName=" " Text="-Redwood Patch Kit (50)" Tier="0"/>
+<Data ItemName="Rosewood Patch Kit" ItemEffect=" " ItemType="0" MaxLvl="80" MinLvl="0" SellerName=" " Text="-Rosewood Patch Kit (40)" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="ELIXIERS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="Deftness" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Deftness (AGI)" Tier="0"/>
+<Data ItemName="Constitution" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Constitution (Health)" Tier="0"/>
+<Data ItemName="Intellect" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Intellect (INT)" Tier="0"/>
+<Data ItemName="Transcendence" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Transcendence (Power)" Tier="0"/>
+<Data ItemName="Fortitude" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Fortitude (STR)" Tier="0"/>
+<Data ItemName="Piety" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Piety (WIS)" Tier="0"/>
+<Data ItemName="Tactics" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Tactics (Melee Crit)" Tier="0"/>
+<Data ItemName="Second Sight" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Second Sight (Spell Crit)" Tier="0"/>
+<Data ItemName="Thorns" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Thorns (Dmg Shield)" Tier="0"/>
+<Data ItemName="Metallic Hues" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Metallic Hues (PHYS)" Tier="0"/>
+<Data ItemName="Arctic Awareness" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Arctic Aware. (ELE)" Tier="0"/>
+<Data ItemName="Noxious Awareness" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Noxious Aware. (NOX)" Tier="0"/>
+<Data ItemName="Elixir of Combat" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Combat (MultiAttack)" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="POTIONS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="Health" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Essence of Health (HP)" Tier="0"/>
+<Data ItemName="Regeneration" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Essence of Regeneration (HP)" Tier="0"/>
+<Data ItemName="Power" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Essence of Power (PP)" Tier="0"/>
+<Data ItemName="Clarity" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Essence of Clarity (PP)" Tier="0"/>
+<Data ItemName="Essence of Combat" ItemEffect=" " ItemType="28" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Essence of Combat (HP/PP)" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="REMEDIES" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="Arcane Remedy" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Arcane Remedy" Tier="0"/>
+<Data ItemName="Elemental Remedy" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Elemental Remedy" Tier="0"/>
+<Data ItemName="Noxious Remedy" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Noxious Remedy" Tier="0"/>
+<Data ItemName="Trauma Remedy" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Trauma Remedy" Tier="0"/>
+<Data ItemName="Freedom of Action" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Freedom of Action" Tier="0"/>
+<Data ItemName="Freedom of Mind" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Freedom of Mind" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="REPRIEVES(Wards)" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="Arcane Reprieve" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="1" SellerName=" " Text="-Arcane Reprieve" Tier="0"/>
+<Data ItemName="Elemental Reprieve" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="1" SellerName=" " Text="-Elemental Reprieve" Tier="0"/>
+<Data ItemName="Noxious Reprieve" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="1" SellerName=" " Text="-Noxious Reprieve" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="REGEN TOTEMS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="Spirit Totem of the Swamp Elemental" ItemEffect=" " ItemType="0" MaxLvl="90" MinLvl="90" SellerName=" " Text="-Health Regen (90)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Holgresh" ItemEffect=" " ItemType="0" MaxLvl="90" MinLvl="90" SellerName=" " Text="-Power Regen (90)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Fearstalker" ItemEffect=" " ItemType="0" MaxLvl="80" MinLvl="80" SellerName=" " Text="-Health Regen (80)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Bamboo" ItemEffect=" " ItemType="0" MaxLvl="80" MinLvl="80" SellerName=" " Text="-Power Regen (80)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Cockatrice" ItemEffect=" " ItemType="0" MaxLvl="70" MinLvl="70" SellerName=" " Text="-Health Regen (70)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Goblin" ItemEffect=" " ItemType="0" MaxLvl="70" MinLvl="70" SellerName=" " Text="-Power Regen (70)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Carnivorous Plant" ItemEffect=" " ItemType="0" MaxLvl="60" MinLvl="60" SellerName=" " Text="-Health Regen (60)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Beholder" ItemEffect=" " ItemType="0" MaxLvl="60" MinLvl="60" SellerName=" " Text="-Power Regen (60)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Cobra" ItemEffect=" " ItemType="0" MaxLvl="49" MinLvl="49" SellerName=" " Text="-Health Regen (49)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Monkey" ItemEffect=" " ItemType="0" MaxLvl="50" MinLvl="50" SellerName=" " Text="-Power Regen (50)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Alpha Feline" ItemEffect=" " ItemType="0" MaxLvl="40" MinLvl="40" SellerName=" " Text="-Health Regen (40)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Hawk" ItemEffect=" " ItemType="0" MaxLvl="40" MinLvl="40" SellerName=" " Text="-Power Regen (40)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Tiger" ItemEffect=" " ItemType="0" MaxLvl="30" MinLvl="30" SellerName=" " Text="-Health Regen (30)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Bat" ItemEffect=" " ItemType="0" MaxLvl="30" MinLvl="30" SellerName=" " Text="-Power Regen (30)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Snow Bear" ItemEffect=" " ItemType="0" MaxLvl="20" MinLvl="20" SellerName=" " Text="-Health Regen (20)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Winged Viper" ItemEffect=" " ItemType="0" MaxLvl="20" MinLvl="20" SellerName=" " Text="-Power Regen (20)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Bear" ItemEffect=" " ItemType="0" MaxLvl="10" MinLvl="10" SellerName=" " Text="-Health Regen (10)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Rat" ItemEffect=" " ItemType="0" MaxLvl="10" MinLvl="10" SellerName=" " Text="-Power Regen (10)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Frog" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="1" SellerName=" " Text="-Health Regen (1)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Beetle" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="1" SellerName=" " Text="-Power Regen (1)" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="OTHER TOTEMS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="Totem of the Otter" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="1" SellerName=" " Text="-Breath Underwater (1)" Tier="0"/>
+<Data ItemName="Vision Totem of the Turtle" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="1" SellerName=" " Text="-Fish Vision (1)" Tier="0"/>
+<Data ItemName="Vision Totem of the Snake" ItemEffect=" " ItemType="0" MaxLvl="1" MinLvl="1" SellerName=" " Text="-Infravision (1)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Wolf" ItemEffect=" " ItemType="0" MaxLvl="15" MinLvl="15" SellerName=" " Text="-Run Speed 24% (15)" Tier="0"/>
+<Data ItemName="Vision Totem of the Butterfly" ItemEffect=" " ItemType="0" MaxLvl="20" MinLvl="20" SellerName=" " Text="-See Stealth (20)" Tier="0"/>
+<Data ItemName="Vision Totem of the Owl" ItemEffect=" " ItemType="0" MaxLvl="20" MinLvl="20" SellerName=" " Text="-See Invisibility (20)" Tier="0"/>
+<Data ItemName="Totem of the Jaguar" ItemEffect=" " ItemType="0" MaxLvl="30" MinLvl="30" SellerName=" " Text="-Invisibility + Stealth (30)" Tier="0"/>
+<Data ItemName="Totem of the Chameleon" ItemEffect=" " ItemType="0" MaxLvl="30" MinLvl="30" SellerName=" " Text="-Invisibility (30)" Tier="0"/>
+<Data ItemName="Totem of Escape" ItemEffect=" " ItemType="0" MaxLvl="30" MinLvl="30" SellerName=" " Text="-Escape (30)" Tier="0"/>
+<Data ItemName="Totem of the Great Chameleon" ItemEffect=" " ItemType="0" MaxLvl="30" MinLvl="30" SellerName=" " Text="-Invisibility 15% Spd. (30)" Tier="0"/>
+<Data ItemName="Spirit Totem of the Chokidai" ItemEffect=" " ItemType="0" MaxLvl="65" MinLvl="65" SellerName=" " Text="-Run Speed 45% (65)" Tier="0"/>
+<Data ItemName="Vision Totem of the Cat" ItemEffect=" " ItemType="0" MaxLvl="70" MinLvl="70" SellerName=" " Text="-See Invis + Stealth (70)" Tier="0"/>
+<Data ItemName="Totem of the Sabertooth" ItemEffect=" " ItemType="0" MaxLvl="80" MinLvl="80" SellerName=" " Text="-Run Speed 55% (80)" Tier="0"/>
+<Data ItemName="Totem of the Enduring Spirit" ItemEffect=" " ItemType="0" MaxLvl="80" MinLvl="80" SellerName=" " Text="-Breath/Walk/Fish Underwater (80)" Tier="0"/>
+<Data ItemName="Totem of the Void" ItemEffect=" " ItemType="0" MaxLvl="80" MinLvl="80" SellerName=" " Text="-Group Invisibility (80)" Tier="0"/>
+<Data ItemName="Totem of the Deadly Sabertooth" ItemEffect=" " ItemType="0" MaxLvl="90" MinLvl="90" SellerName=" " Text="-Run Speed 75% (90)" Tier="0"/>
+</DataSource>

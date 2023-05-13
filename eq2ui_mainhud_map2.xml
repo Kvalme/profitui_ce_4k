@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" MinimumSize="100,100" Name="Map2" OnShow="RecenterMap.Activated='!'WindowFrame.IsMinimap ShiftingPOIsWorkaround.Press=true" OnHoverIn="ShiftingPOIsWorkaround.Press=true" PackSize="a,a" Size="1027,774" UserMovable="true" UserResizable="true" version="2.0">
+	<Button Name="RecenterMap" OnActivate="map2_center_map_on_player
+Activated=false" />
+	<Button Name="ShiftingPOIsWorkaround" OnPress="Parent.MapSubGroup.MapPage.Icons.Location=0,0 Parent.MapSubGroup.MapPage.Icons.Size=Parent.MapSubGroup.MapPage.Size" />
+	<include>eq2map2/_Skinnable_SearchBar.xml</include>
+	<include>eq2map2/_Skinnable_SearchResults.xml</include>
+	<include>eq2map2/_Skinnable_Controls.xml</include>
+	<Namespace Name="MapStyles">
+		<include>eq2map2/_User_MapStyles.xml</include> 
+		<include>eq2map2/core_mapstyles.xml</include>
+	</Namespace>
+	<include>eq2map2/_Skinnable_WindowElementsMini.xml</include>
+	<include>eq2map2/_Skinnable_WindowElements.xml</include>
+	<Page Activated="true" Location="2,25" Name="MapSubGroup" OnHoverIn="ToggleIcons.Visible=Parent.WindowFrame.IsMinimap" OnHoverOut="ToggleIcons.Visible=false" PackLocation="left,top" PackSize="a,a" Size="1024,768">
+		<Button Location="2,2" Name="ToggleIcons" OnPress="Parent.MapPage.Icons.Visible='!'Parent.MapPage.Icons.Visible" Size="15,15" Style="Skinnable_Styles.ToggleIcons" Tooltip="Toggle Visibility of POI Icons" Visible="false" />
+		<Page AbsorbsInput="false" Location="4,88" Name="LocationPage" PackSize="a,a" Size="438,510" Visible="false">
+			<include>eq2map2/_Skinnable_Location_Images.xml</include>
+		</Page>
+		<Page Name="NoMap" PackSize="a,a" Size="1024,768">
+			<include>eq2map2/core_nomap.xml</include>
+			<ImageStyle Name="NoMapBkg">
+				<ImageFrame Name="imageFrame" Source="images/maps2/dungeon_parch_blank.dds" SourceRect="0,0,436,506" />
+			</ImageStyle>
+			<Image Location="2,2" Name="bkg" PackSize="a,a" Size="1020,764" Style="NoMapBkg" />
+		</Page>
+		<Page AbsorbsInput="false" Name="MapPage" PackSize="a,a" Size="1024,768">
+			<Page AbsorbsInput="false" Name="Icons" PackSize="a,a" Size="1024,768">
+				<include>eq2map2/_Skinnable_POI_Icons.xml</include>
+			</Page>
+		</Page>
+		<Page Name="MapControlPage" PackSize="a,a" Size="1024,768">
+			<Map AbsorbsInput="false" Name="MapControl" PackSize="a,a" Size="1024,768" />
+		</Page>
+	</Page>
+	<include>eq2map2/_Skinnable_Styles.xml</include>
+</Page>

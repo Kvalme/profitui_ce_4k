@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="305,141" MaximumSize="1024,1024" MinimumSize="287,198" Name="HirelingOptions" ScrollExtent="457,323" Size="457,323" UserMovable="true" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="35,34" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="387,24" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="387,24" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:c2bfd531e8c7be9f:Hireling Options</Text>
+            <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="35,61" Name="DataPage" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="387,177" Size="387,177">
+                <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="17,17" Margin="1,0,1,1" Name="NameLabel" ScrollExtent="85,30" Size="85,30" TextAlignmentVertical="Center">:c2bfd53101ee2ec7:Name</Text>
+                <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="111,17" MaximumSize="16384,30" MaxLength="40" MinimumSize="30,30" Name="Name" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="260,30" Size="260,30" Style="/CommonElements.Textfield.data.style" />
+                <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="17,51" Margin="1,0,1,1" Name="RaceLabel" ScrollExtent="85,32" Size="85,32" TextAlignmentVertical="Center">:c2bfd53185a2eb6e:Race</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="RaceDS" Location="109,51" MaximumSize="16384,32" MinimumSize="50,32" Name="Race" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="180,32" Size="180,32" Style="/CommonElements.Dropdown.data.style" />
+                <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="17,88" Margin="1,0,1,1" Name="GenderLabel" ScrollExtent="85,32" Size="85,32" TextAlignmentVertical="Center">:c2bfd5313f14f08b:Gender</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="GenderDS" Location="109,88" MaximumSize="16384,32" MinimumSize="50,32" Name="Gender" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.Dropdown.data.style" />
+                <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="17,125" Margin="1,0,1,1" Name="UniformLabel" ScrollExtent="85,32" Size="85,32" TextAlignmentVertical="Center">:c2bfd531c66ebfd4:Uniform</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="UniformDS" Location="109,125" MaximumSize="16384,32" MinimumSize="50,32" Name="Uniform" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="264,32" Size="264,32" Style="/CommonElements.Dropdown.data.style" />
+                <DataSource Name="UniformDS">
+                    <Data Text=":c2bfd53122a1fc94:&lt;None&gt;" />
+                </DataSource>
+                <DataSource Name="RaceDS">
+                    <Data Text=":c2bfd5319b5c050e:Human" />
+                </DataSource>
+                <DataSource Name="GenderDS">
+                    <Data Text=":c2bfd5310a40b068:Male" />
+                    <Data Text=":c2bfd531b22770a5:Female" />
+                </DataSource>
+            </Page>
+            <Button IsDefaultButton="true" Location="42,246" MaximumSize="16384,38" MinimumSize="32,38" Name="OkButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:c2bfd53113a7061a:Ok</Button>
+            <Button IsDefaultButton="true" Location="169,246" MaximumSize="16384,38" MinimumSize="32,38" Name="ApplyButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:c2bfd53183115ce4:Apply</Button>
+            <Button IsCancelButton="true" Location="295,246" MaximumSize="16384,38" MinimumSize="32,38" Name="CancelButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:c2bfd531ae453fbb:Cancel</Button>
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="397,263" Size="397,263" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="457,325" Size="457,325" />
+        </Page>

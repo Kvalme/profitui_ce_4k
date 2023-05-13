@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Last update 2016-07-19 by user Zidu -->
+<!-- Added Amends to Paladin quickcast per user request -->
+<!-- Fixed Spell ID of Ro's Balde VIII for Wizard -->
+<!-- Last update 2016-06-11 by user Zidu -->
+<!-- Added level 96+ spells to quickcast -->
+
+<Page ButtonOpacityLevel="0.500" Name="ProfitUI_QuickRaidButtons">
+<Text DynamicData="/GameData.Self.ActualLevel" Name="ActualLevel">80</Text>
+
+<Page Name="Assassin">
+<Data Name="Button1" Macro="SpellForLevel='705062542'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 53)
+SpellForLevel=COND ? '3598453043' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 39)
+SpellForLevel=COND ? '4115775947' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 25)
+SpellForLevel=COND ? '1939112048' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Murderous Design"/>
+<Data Name="Button2" Macro="SpellForLevel='1565463360'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 92)
+SpellForLevel=COND ? '3837053096' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 82)
+SpellForLevel=COND ? '2829320935' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 72)
+SpellForLevel=COND ? '4191452681' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Apply Poison"/>
+<Data Name="Button3" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="assist Parent.Target" Tooltip="Assist"/>
+</Page>
+
+<Page Name="Beastlord">
+<Data Name="Button1" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button2" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button3" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="assist Parent.Target" Tooltip="Assist"/>
+</Page>
+
+<Page Name="Berserker">
+<Data Name="Button1" Macro="SpellForLevel='101378472'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 34)
+SpellForLevel=COND ? '1768432098' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 20)
+SpellForLevel=COND ? '3033583038' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Intercept"/>
+<Data Name="Button2" Macro="SpellForLevel='761844627'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 60)
+SpellForLevel=COND ? '4268098652' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 46)
+SpellForLevel=COND ? '759160778' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 32)
+SpellForLevel=COND ? '2229994418' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Reckless Aide"/>
+<Data Name="Button3" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+</Page>
+
+<Page Name="Brigand">
+<Data Name="Button1" Macro="SpellForLevel='2744273247'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 68)
+SpellForLevel=COND ? '2558517702' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '2911860733' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 40)
+SpellForLevel=COND ? '3332700454' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Beg for Mercy"/>
+<Data Name="Button2" Macro="assist Parent.Target" Tooltip="Assist"/>
+<Data Name="Button3" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+</Page>
+
+<Page Name="Bruiser">
+<Data Name="Button1" Macro="SpellForLevel='2029225881'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 60)
+SpellForLevel=COND ? '1767335325' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 46)
+SpellForLevel=COND ? '44714223' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 32)
+SpellForLevel=COND ? '699446630' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Shrug Off"/>
+<Data Name="Button2" Macro="SpellForLevel='101378472'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 34)
+SpellForLevel=COND ? '1768432098' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 20)
+SpellForLevel=COND ? '3033583038' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Intercept"/>
+<Data Name="Button3" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+</Page>
+
+<Page Name="Channeler">
+<Data Name="Button1" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button2" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button3" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="assist Parent.Target" Tooltip="Assist"/>
+</Page>
+
+<Page Name="Coercer">
+<Data Name="Button1" Macro="SpellForLevel='1945409072'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Mana Flow"/>
+<Data Name="Button2" Macro="SpellForLevel='237735835'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Sever Hate"/>
+<Data Name="Button3" Macro="SpellForLevel='2421103160'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Touch of Empathy"/>
+<Data Name="Button4" Macro="SpellForLevel='2177252207'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Channeled Focus"/>
+<Data Name="Button5" Macro="SpellForLevel='3491920474'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Coercive Shout"/>
+</Page>
+
+<Page Name="Conjuror">
+<Data Name="Button1" Macro="SpellForLevel='3814592930'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Shard of Essence"/>
+<Data Name="Button2" Macro="SpellForLevel='Fire Seed VII'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 97)
+SpellForLevel=COND ? '3842085846' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 87)
+SpellForLevel=COND ? '274641691' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 77)
+SpellForLevel=COND ? '710768599' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 65)
+SpellForLevel=COND ? '1600602994' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 51)
+SpellForLevel=COND ? '895367827' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 37)
+SpellForLevel=COND ? '363638977' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Fire Seed"/>
+<Data Name="Button3" Macro="assist Parent.Target" Tooltip="Assist"/>
+<Data Name="Button4" Macro="SpellForLevel='Flameshield VII'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 96)
+SpellForLevel=COND ? '4285749358' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 86)
+SpellForLevel=COND ? '3832402452' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 76)
+SpellForLevel=COND ? '3419662531' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 64)
+SpellForLevel=COND ? '3604369406' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 50)
+SpellForLevel=COND ? '932738302' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 35)
+SpellForLevel=COND ? '2384202484' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Flameshield"/>
+<Data Name="Button5" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+</Page>
+
+<Page Name="Defiler">
+<Data Name="Button1" Macro="SpellForLevel='Ancient Shroud IX'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 98)
+SpellForLevel=COND ? '3812059741' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 88)
+SpellForLevel=COND ? '632641928' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 78)
+SpellForLevel=COND ? '279943205' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 68)
+SpellForLevel=COND ? '1352085168' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '1566069660' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 40)
+SpellForLevel=COND ? '2492058635' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 26)
+SpellForLevel=COND ? '753499921' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 19)
+SpellForLevel=COND ? '2819125823' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Ancient Shroud"/>
+<Data Name="Button2" Macro="SpellForLevel='3151334405'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 91)
+SpellForLevel=COND ? '544260202' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 81)
+SpellForLevel=COND ? '1390698267' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 71)
+SpellForLevel=COND ? '633707383' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 57)
+SpellForLevel=COND ? '3173001762' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 43)
+SpellForLevel=COND ? '4156312428' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 29)
+SpellForLevel=COND ? '3384996850' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 22)
+SpellForLevel=COND ? '989024464' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 15)
+SpellForLevel=COND ? '45204546' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 7)
+SpellForLevel=COND ? '1455620557' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Dire Balm"/>
+<Data Name="Button3" Macro="SpellForLevel='51554718'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 93)
+SpellForLevel=COND ? '3826192137' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 83)
+SpellForLevel=COND ? '1776638355' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 73)
+SpellForLevel=COND ? '4222340933' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 60)
+SpellForLevel=COND ? '3291929854' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 46)
+SpellForLevel=COND ? '1817814869' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 32)
+SpellForLevel=COND ? '2609951372' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 18)
+SpellForLevel=COND ? '3547336263' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 10)
+SpellForLevel=COND ? '589856008' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Sacrificial Restoration"/>
+<Data Name="Button4" Macro="SpellForLevel='Deathward III'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 100)
+SpellForLevel=COND ? '1779652007' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 90)
+SpellForLevel=COND ? '4055243208' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Deathward"/>
+<Data Name="Button5" Macro="SpellForLevel='758673695'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Vivication"/>
+</Page>
+
+<Page Name="Dirge">
+<Data Name="Button1" Macro="SpellForLevel='1033316620'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Elegy at Death&apos;s Door"/>
+<Data Name="Button2" Macro="SpellForLevel='3390154729'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Elegy of Awakening"/>
+<Data Name="Button3" Macro="SpellForLevel='Oration of Sacrifice IV'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 96)
+SpellForLevel=COND ? '3867707565' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 86)
+SpellForLevel=COND ? '1492846922' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 78)
+SpellForLevel=COND ? '847451313' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Oration of Sacrifice"/>
+<Data Name="Button4" Macro="SpellForLevel='3677033782'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Gravitas"/>
+<Data Name="Button5" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+</Page>
+
+<Page Name="Fury">
+<Data Name="Button1" Macro="SpellForLevel='Regrowth IX'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 98)
+SpellForLevel=COND ? '2873747467' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 88)
+SpellForLevel=COND ? '2460326851' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 78)
+SpellForLevel=COND ? '2624085369' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 68)
+SpellForLevel=COND ? '3643277861' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '791522586' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 40)
+SpellForLevel=COND ? '3150960155' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 26)
+SpellForLevel=COND ? '1069989296' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 19)
+SpellForLevel=COND ? '3341174343' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Regrowth"/>
+<Data Name="Button2" Macro="SpellForLevel='1728602909'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 93)
+SpellForLevel=COND ? '3769542750' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 83)
+SpellForLevel=COND ? '3584665359' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 73)
+SpellForLevel=COND ? '2286085178' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 60)
+SpellForLevel=COND ? '2443722274' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 46)
+SpellForLevel=COND ? '1302573832' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 32)
+SpellForLevel=COND ? '880694377' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 18)
+SpellForLevel=COND ? '2693769062' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 10)
+SpellForLevel=COND ? '1978430617' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Nature&apos;s Elixir"/>
+<Data Name="Button3" Macro="SpellForLevel='1039706647'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 92)
+SpellForLevel=COND ? '2720147849' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 82)
+SpellForLevel=COND ? '598732465' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 72)
+SpellForLevel=COND ? '3225276758' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Back into the Fray"/>
+<Data Name="Button4" Macro="SpellForLevel='4053498313'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 91)
+SpellForLevel=COND ? '1609820248' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 81)
+SpellForLevel=COND ? '2027130211' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 71)
+SpellForLevel=COND ? '4100820878' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 57)
+SpellForLevel=COND ? '2589372575' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 43)
+SpellForLevel=COND ? '2796412562' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 29)
+SpellForLevel=COND ? '3124574221' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 22)
+SpellForLevel=COND ? '1622671014' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 15)
+SpellForLevel=COND ? '8141107' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 7)
+SpellForLevel=COND ? '1790945610' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Nature&apos;s Salve"/>
+<Data Name="Button5" Macro="SpellForLevel='3371933150'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Primeval Awakening"/>
+</Page>
+
+<Page Name="Guardian">
+<Data Name="Button1" Macro="SpellForLevel='101378472'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 34)
+SpellForLevel=COND ? '1768432098' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 20)
+SpellForLevel=COND ? '3033583038' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Intercept"/>
+<Data Name="Button2" Macro="assist Parent.Target" Tooltip="Assist"/>
+<Data Name="Button3" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+</Page>
+
+<Page Name="Illusionist">
+<Data Name="Button1" Macro="SpellForLevel='1945409072'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Mana Flow"/>
+<Data Name="Button2" Macro="SpellForLevel='1841550714'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 95)
+SpellForLevel=COND ? '4133918997' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 85)
+SpellForLevel=COND ? '3073128528' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 75)
+SpellForLevel=COND ? '4158816328' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 63)
+SpellForLevel=COND ? '2337256011' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 49)
+SpellForLevel=COND ? '2005616945' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Synergism"/>
+<Data Name="Button3" Macro="SpellForLevel='2421103160'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Touch of Empathy"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+</Page>
+
+<Page Name="Inquisitor">
+<Data Name="Button1" Macro="SpellForLevel='Penance IX'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 98)
+SpellForLevel=COND ? '3396606575' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 88)
+SpellForLevel=COND ? '998195682' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 78)
+SpellForLevel=COND ? '2126014885' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 68)
+SpellForLevel=COND ? '1287978567' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '872144021' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 40)
+SpellForLevel=COND ? '2453909181' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 26)
+SpellForLevel=COND ? '555361766' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 19)
+SpellForLevel=COND ? '2739911483' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Penance"/>
+<Data Name="Button2" Macro="SpellForLevel='1719748221'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 91)
+SpellForLevel=COND ? '3749354901' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 81)
+SpellForLevel=COND ? '2347916808' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 71)
+SpellForLevel=COND ? '1834882570' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 57)
+SpellForLevel=COND ? '2750594157' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 43)
+SpellForLevel=COND ? '966134467' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 29)
+SpellForLevel=COND ? '2395571978' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 22)
+SpellForLevel=COND ? '467053480' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 15)
+SpellForLevel=COND ? '2766199209' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 7)
+SpellForLevel=COND ? '759839429' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Ministration"/>
+<Data Name="Button3" Macro="SpellForLevel='745790527'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 93)
+SpellForLevel=COND ? '1226106745' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 83)
+SpellForLevel=COND ? '4124612351' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 73)
+SpellForLevel=COND ? '4089064119' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 60)
+SpellForLevel=COND ? '900403021' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 46)
+SpellForLevel=COND ? '4004566745' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 32)
+SpellForLevel=COND ? '1666305466' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 18)
+SpellForLevel=COND ? '1236046508' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 10)
+SpellForLevel=COND ? '2493734826' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Fanatical Healing"/>
+<Data Name="Button4" Macro="SpellForLevel='Redemption VI'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 100)
+SpellForLevel=COND ? '1479991338' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 90)
+SpellForLevel=COND ? '1007543134' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 80)
+SpellForLevel=COND ? '2611307269' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 69)
+SpellForLevel=COND ? '2773745123' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 55)
+SpellForLevel=COND ? '1252901005' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Redemption"/>
+<Data Name="Button5" Macro="SpellForLevel='363447997'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Conversion of the Soul"/>
+</Page>
+
+<Page Name="Monk">
+<Data Name="Button1" Macro="SpellForLevel='934078257'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 48)
+SpellForLevel=COND ? '80636041' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 34)
+SpellForLevel=COND ? '112342185' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 20)
+SpellForLevel=COND ? '721957876' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 10)
+SpellForLevel=COND ? '3242124289' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Mend"/>
+<Data Name="Button2" Macro="SpellForLevel='101378472'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 34)
+SpellForLevel=COND ? '1768432098' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 20)
+SpellForLevel=COND ? '3033583038' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Intercept"/>
+<Data Name="Button3" Macro="assist Parent.Target" Tooltip="Assist"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+</Page>
+
+<Page Name="Mystic">
+<Data Name="Button1" Macro="SpellForLevel='Ancestral Ward IX'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 98)
+SpellForLevel=COND ? '4270332227' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 88)
+SpellForLevel=COND ? '1663775277' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 78)
+SpellForLevel=COND ? '3604463143' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 68)
+SpellForLevel=COND ? '3396252746' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '4145349802' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 40)
+SpellForLevel=COND ? '3356446724' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 26)
+SpellForLevel=COND ? '827722767' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 19)
+SpellForLevel=COND ? '1804412850' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Ancestral Ward"/>
+<Data Name="Button2" Macro="SpellForLevel='4096931318'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 91)
+SpellForLevel=COND ? '1305079326' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 81)
+SpellForLevel=COND ? '423701891' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 71)
+SpellForLevel=COND ? '3537124650' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 57)
+SpellForLevel=COND ? '916924469' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 43)
+SpellForLevel=COND ? '2490559713' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 29)
+SpellForLevel=COND ? '3145543790' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 22)
+SpellForLevel=COND ? '2232343269' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 15)
+SpellForLevel=COND ? '3408448735' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 7)
+SpellForLevel=COND ? '3274438181' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Rejuvenation"/>
+<Data Name="Button3" Macro="SpellForLevel='2665512940'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 93)
+SpellForLevel=COND ? '424064175' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 83)
+SpellForLevel=COND ? '3754198906' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 73)
+SpellForLevel=COND ? '742510228' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 60)
+SpellForLevel=COND ? '1678922074' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 46)
+SpellForLevel=COND ? '4160279742' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 32)
+SpellForLevel=COND ? '4120970950' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 18)
+SpellForLevel=COND ? '1980933536' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 10)
+SpellForLevel=COND ? '2385577370' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Ritual Healing"/>
+<Data Name="Button4" Macro="SpellForLevel='2447023010'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 92)
+SpellForLevel=COND ? '2258735073' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 82)
+SpellForLevel=COND ? '2039140121' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 72)
+SpellForLevel=COND ? '902524875' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Torpor"/>
+<Data Name="Button5" Macro="SpellForLevel='3484670453'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Bolster"/>
+</Page>
+
+<Page Name="Necromancer">
+<Data Name="Button1" Macro="SpellForLevel='1852049104'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Dark Heart"/>
+<Data Name="Button2" Macro="SpellForLevel='3009440871'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 94)
+SpellForLevel=COND ? '487128566' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 84)
+SpellForLevel=COND ? '1244024435' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 74)
+SpellForLevel=COND ? '214045967' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 61)
+SpellForLevel=COND ? '1042106285' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 47)
+SpellForLevel=COND ? '3450843944' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Transfer Life"/>
+<Data Name="Button3" Macro="SpellForLevel='403740096'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Revivication"/>
+<Data Name="Button4" Macro="SpellForLevel='Vampirism III'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 100)
+SpellForLevel=COND ? '1726439588' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 90)
+SpellForLevel=COND ? '4248972491' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Vampirism"/>
+<Data Name="Button5" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+</Page>
+
+<Page Name="Paladin">
+<Data Name="Button1" Macro="SpellForLevel='Holy Aid VIII'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 96)
+SpellForLevel=COND ? '1478040442' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 86)
+SpellForLevel=COND ? '3420581820' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 76)
+SpellForLevel=COND ? '845213229' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 64)
+SpellForLevel=COND ? '2431844110' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 50)
+SpellForLevel=COND ? '2061621054' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 36)
+SpellForLevel=COND ? '1838859133' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 22)
+SpellForLevel=COND ? '3063029855' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Holy Aid"/>
+<Data Name="Button2" Macro="SpellForLevel='Demonstration of Faith VIII'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 99)
+SpellForLevel=COND ? '2069985831' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 89)
+SpellForLevel=COND ? '3305085423' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 79)
+SpellForLevel=COND ? '1698381326' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 68)
+SpellForLevel=COND ? '1402585519' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '2868612197' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 40)
+SpellForLevel=COND ? '4070937418' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 26)
+SpellForLevel=COND ? '2029186056' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Demonstration of Faith"/>
+<Data Name="Button3" Macro="SpellForLevel='2024910418'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Elixir of Resuscitation"/>
+<Data Name="Button4" Macro="SpellForLevel='3824506796'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 49)
+SpellForLevel=COND ? '1055233082' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 35)
+SpellForLevel=COND ? '1127918058' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Amends"/>
+<Data Name="Button5" Macro="SpellForLevel='101378472'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 34)
+SpellForLevel=COND ? '1768432098' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 20)
+SpellForLevel=COND ? '3033583038' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Intercept"/>
+</Page>
+
+<Page Name="Ranger">
+<Data Name="Button1" Macro="SpellForLevel='182657177'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 67)
+SpellForLevel=COND ? '220170012' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '497000173' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Killing Instinct"/>
+<Data Name="Button2" Macro="SpellForLevel='3655255681'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Honed Reflexes"/>
+<Data Name="Button3" Macro="SpellForLevel='3684663834'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 64)
+SpellForLevel=COND ? '773886649' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 50)
+SpellForLevel=COND ? '3093200593' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 36)
+SpellForLevel=COND ? '1896571032' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Focus Aim"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+</Page>
+
+<Page Name="Shadowknight">
+<Data Name="Button1" Macro="SpellForLevel='Unholy Blessing VIII'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 99)
+SpellForLevel=COND ? '1989277570' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 89)
+SpellForLevel=COND ? '4057210147' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 79)
+SpellForLevel=COND ? '4009986594' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 68)
+SpellForLevel=COND ? '750326434' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '199101013' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 40)
+SpellForLevel=COND ? '2829832338' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 26)
+SpellForLevel=COND ? '1693136731' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Unholy Blessing"/>
+<Data Name="Button2" Macro="SpellForLevel='101378472'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 34)
+SpellForLevel=COND ? '1768432098' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 20)
+SpellForLevel=COND ? '3033583038' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Intercept"/>
+<Data Name="Button3" Macro="SpellForLevel='2130014620'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 63)
+SpellForLevel=COND ? '2730632393' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 49)
+SpellForLevel=COND ? '1678827880' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 35)
+SpellForLevel=COND ? '3853171077' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Mortal Embrace"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+</Page>
+
+<Page Name="Swashbuckler">
+<Data Name="Button1" Macro="assist Parent.Target" Tooltip="Assist"/>
+<Data Name="Button2" Macro="SpellForLevel='1064363633'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 62)
+SpellForLevel=COND ? '4076332660' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 48)
+SpellForLevel=COND ? '1982111103' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 34)
+SpellForLevel=COND ? '4277398471' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Swarthy Deception"/>
+<Data Name="Button3" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+<Data Name="Button4" Macro="SpellForLevel='Sleight of Hand III'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 100)
+SpellForLevel=COND ? '1283334309' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 90)
+SpellForLevel=COND ? '2737608260' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Sleight of Hand"/>
+<Data Name="Button5" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+</Page>
+
+<Page Name="Templar">
+<Data Name="Button1" Macro="SpellForLevel='2659219001'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 91)
+SpellForLevel=COND ? '86325846' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 81)
+SpellForLevel=COND ? '2008130855' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 71)
+SpellForLevel=COND ? '748855261' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 57)
+SpellForLevel=COND ? '117904398' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 43)
+SpellForLevel=COND ? '3822996630' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 29)
+SpellForLevel=COND ? '1530301492' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 22)
+SpellForLevel=COND ? '882183196' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 15)
+SpellForLevel=COND ? '4105544774' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 7)
+SpellForLevel=COND ? '4116243794' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Meliorate"/>
+<Data Name="Button2" Macro="SpellForLevel='1057106300'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 93)
+SpellForLevel=COND ? '2718812170' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 83)
+SpellForLevel=COND ? '3553854409' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 73)
+SpellForLevel=COND ? '1668131513' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 60)
+SpellForLevel=COND ? '2536189314' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 46)
+SpellForLevel=COND ? '3340399949' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 32)
+SpellForLevel=COND ? '3375721743' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 18)
+SpellForLevel=COND ? '3993156297' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 10)
+SpellForLevel=COND ? '4128489925' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Restoration"/>
+<Data Name="Button3" Macro="SpellForLevel='Vital Intercession IX'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 98)
+SpellForLevel=COND ? '3827170577' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 88)
+SpellForLevel=COND ? '2819125823' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 78)
+SpellForLevel=COND ? '236122270' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 68)
+SpellForLevel=COND ? '125769492' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '2205405453' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 40)
+SpellForLevel=COND ? '1899956381' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 26)
+SpellForLevel=COND ? '995249343' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 19)
+SpellForLevel=COND ? '153147335' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Vital Intercession"/>
+<Data Name="Button4" Macro="SpellForLevel='3329267101'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Reverence"/>
+<Data Name="Button5" Macro="SpellForLevel='2202530924'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Resurrect"/>
+</Page>
+
+<Page Name="Troubador">
+<Data Name="Button1" Macro="SpellForLevel='2991120526'
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Jester&apos;s Cap"/>
+<Data Name="Button2" Macro="assist Parent.Target" Tooltip="Assist"/>
+<Data Name="Button3" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+<Data Name="Button4" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+<Data Name="Button5" Macro="NONE" Tooltip="NO MACRO CONFIGURED"/>
+</Page>
+
+<Page Name="Warden">
+<Data Name="Button1" Macro="SpellForLevel='2611576458'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 91)
+SpellForLevel=COND ? '575841634' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 81)
+SpellForLevel=COND ? '1994024703' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 71)
+SpellForLevel=COND ? '2046615093' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 57)
+SpellForLevel=COND ? '2994512655' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 43)
+SpellForLevel=COND ? '1555095324' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 29)
+SpellForLevel=COND ? '2689295207' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 22)
+SpellForLevel=COND ? '1317653653' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 15)
+SpellForLevel=COND ? '1205207997' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 7)
+SpellForLevel=COND ? '972042084' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Sylvan Bloom"/>
+<Data Name="Button2" Macro="SpellForLevel='4117441602'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 93)
+SpellForLevel=COND ? '439982755' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 83)
+SpellForLevel=COND ? '2977442704' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 73)
+SpellForLevel=COND ? '807066005' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 60)
+SpellForLevel=COND ? '2674414587' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 46)
+SpellForLevel=COND ? '1510183539' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 32)
+SpellForLevel=COND ? '3709094785' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 18)
+SpellForLevel=COND ? '934663489' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 10)
+SpellForLevel=COND ? '1229655748' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Nature&apos;s Embrace"/>
+<Data Name="Button3" Macro="SpellForLevel='Photosynthesis IX'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 98)
+SpellForLevel=COND ? '4100068827' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 88)
+SpellForLevel=COND ? '853550606' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 78)
+SpellForLevel=COND ? '1300426726' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 68)
+SpellForLevel=COND ? '1623618216' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 54)
+SpellForLevel=COND ? '2957438681' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 40)
+SpellForLevel=COND ? '1309925' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 26)
+SpellForLevel=COND ? '1002176663' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 19)
+SpellForLevel=COND ? '1634151210' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Photosynthesis"/>
+<Data Name="Button4" Macro="SpellForLevel='Nature&apos;s Renewal VI'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 100)
+SpellForLevel=COND ? '3013922856' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 90)
+SpellForLevel=COND ? '1559652041' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 80)
+SpellForLevel=COND ? '924928466' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 69)
+SpellForLevel=COND ? '4237648378' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 55)
+SpellForLevel=COND ? '974014601' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Nature&apos;s Renewal"/>
+<Data Name="Button5" Macro="SpellForLevel='Hierophantic Genesis V'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 100)
+SpellForLevel=COND ? '2124305548' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 90)
+SpellForLevel=COND ? '4259559649' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 80)
+SpellForLevel=COND ? '107280614' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 70)
+SpellForLevel=COND ? '3124080057' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Hierophantic Genesis"/>
+</Page>
+
+<Page Name="Warlock">
+<Data Name="Button1" Macro="SpellForLevel='102443374'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 94)
+SpellForLevel=COND ? '3219190406' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 84)
+SpellForLevel=COND ? '3949474075' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 74)
+SpellForLevel=COND ? '4227623449' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 61)
+SpellForLevel=COND ? '22146178' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 47)
+SpellForLevel=COND ? '3098198600' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Mana Trickle"/>
+<Data Name="Button2" Macro="SpellForLevel='1284427314'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 93)
+SpellForLevel=COND ? '3545517484' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 83)
+SpellForLevel=COND ? '957759862' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 73)
+SpellForLevel=COND ? '3394582416' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 61)
+SpellForLevel=COND ? '3788180172' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 47)
+SpellForLevel=COND ? '3463782684' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 33)
+SpellForLevel=COND ? '789042833' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Boon of the Damned"/>
+<Data Name="Button3" Macro="SpellForLevel='Shroud of Bertoxxulous VII'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 96)
+SpellForLevel=COND ? '2560698741' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 86)
+SpellForLevel=COND ? '2063222378' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 76)
+SpellForLevel=COND ? '542411599' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 64)
+SpellForLevel=COND ? '87067240' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 50)
+SpellForLevel=COND ? '4130221467' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 35)
+SpellForLevel=COND ? '4293827309' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Shroud of Bertoxxulous"/>
+<Data Name="Button4" Macro="SpellForLevel='Grasp of Bertoxxulous VIII'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 98)
+SpellForLevel=COND ? '1467888968' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 88)
+SpellForLevel=COND ? '3026927233' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 78)
+SpellForLevel=COND ? '3908830069' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 67)
+SpellForLevel=COND ? '4117480559' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 53)
+SpellForLevel=COND ? '3907212079' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 39)
+SpellForLevel=COND ? '3222678259' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 25)
+SpellForLevel=COND ? '1084797273' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Grasp of Bertoxxulous"/>
+<Data Name="Button5" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+</Page>
+
+<Page Name="Wizard">
+<Data Name="Button1" Macro="SpellForLevel='Iceshield VII'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 96)
+SpellForLevel=COND ? '1272806773' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 86)
+SpellForLevel=COND ? '2842470836' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 76)
+SpellForLevel=COND ? '4202698666' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 64)
+SpellForLevel=COND ? '719577128' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 50)
+SpellForLevel=COND ? '3438753180' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 35)
+SpellForLevel=COND ? '706097448' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Iceshield"/>
+<Data Name="Button2" Macro="SpellForLevel='3801554963'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 94)
+SpellForLevel=COND ? '2280659797' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 84)
+SpellForLevel=COND ? '4218383220' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 74)
+SpellForLevel=COND ? '1946853459' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 61)
+SpellForLevel=COND ? '3407821414' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 47)
+SpellForLevel=COND ? '1124179970' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Mana Intromission"/>
+<Data Name="Button3" Macro="tell Parent.Target Heart/Shard please" Tooltip="Heart/Shard request"/>
+<Data Name="Button4" Macro="SpellForLevel='2746900896'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 93)
+SpellForLevel=COND ? '1647623776' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 83)
+SpellForLevel=COND ? '4056697510' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 73)
+SpellForLevel=COND ? '2985618841' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 61)
+SpellForLevel=COND ? '1910286257' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 47)
+SpellForLevel=COND ? '2977123919' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 33)
+SpellForLevel=COND ? '2837552003' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Converge"/>
+<Data Name="Button5" Macro="SpellForLevel='1257063831'
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 98)
+SpellForLevel=COND ? '3511159288' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 88)
+SpellForLevel=COND ? '2749142665' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 78)
+SpellForLevel=COND ? '1277302037' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 67)
+SpellForLevel=COND ? '3493415812' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 53)
+SpellForLevel=COND ? '169417704' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 38)
+SpellForLevel=COND ? '2335795735' : SpellForLevel
+COND=(Parent.Parent.Parent.Parent.Custom.ProfitUI_QuickRaidButtons.ActualLevel.Text < 25)
+SpellForLevel=COND ? '1152953154' : SpellForLevel
+useabilityonplayer Parent.Target SpellForLevel" Tooltip="Ro&apos;s Blade"/>
+</Page>
+
+</Page>

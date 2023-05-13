@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page allowcloseontop="false" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="13,102" Name="RewardPack" ScrollExtent="334,330" Size="334,330" UserMovable="true" version="2.1">
+            <Page BackgroundOpacity="1.000" Location="251,40" Name="IconPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="50,50" Size="50,50" Visible="false">
+                <Image AbsorbsInput="false" Location="3,3" Name="TitleImage" ScrollExtent="44,44" Size="44,44" Style="RewardImageStyle" />
+            </Page>
+            <ImageStyle Name="OfferImageStyle" progresscolor="#536AA6" tab="1">
+                <ImageFrame Source="images/tp_default_5.dds" SourceRect="621,631,654,662" />
+            </ImageStyle>
+            <ImageStyle Name="RewardImageStyle" progresscolor="#536AA6" tab="1">
+                <ImageFrame Source="images/tp_default_5.dds" SourceRect="654,631,687,662" />
+            </ImageStyle>
+            <Text AbsorbsInput="false" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="37,41" Name="Title" PackLocation="center,top" ScrollExtent="258,42" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="258,42" TextAlignment="Center" UserMovable="true" UserResizable="true">:dcd55f6cce2c9d0e:Quest Reward!</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="36,40" Margin="5,5,5,5" Name="OfferText" PackSize="a,f" ScrollExtent="260,76" Size="260,76">:dcd55f6cd606a25e:[DEVL]You have been offered the quest:</Text>
+            <Text Font="/TextStyles.Large.LargeStyle" Interactive="false" Location="38,40" Name="SummaryTitle" PackSize="absolute,fixed" ScrollExtent="259,24" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="259,24" TextColor="#FBF1D9" Visible="false">:dcd55f6c21a07385:Description:</Text>
+            <Composite BackgroundOpacity="1.000" Location="31,142" MaximumSize="294,156" Name="SummaryComposite" Orientation="Horizontal" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="257,100" Size="257,100" SpacingType="Fill">
+                <Text AbsorbsInput="false" BackgroundColor="#00FFFF" Color="#F1E8DA" Font="/TextStyles.Normal.NormalStyle" Location="0,3" Margin="5,5,5,5" MaximumSize="294,150" Name="SummaryText" ScrollExtent="257,100" Size="257,100">:dcd55f6cf9286321:Summary Text</Text>
+                <Scrollbar ArrowPressSound="sounds/button" Control="SummaryText" HideIfUnnecessary="true" Location="235,0" MaximumSize="22,16384" MinimumSize="22,80" Name="SummaryScroll" PackSize=",a" ScrollExtent="22,100" Size="22,100" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+            </Composite>
+            <Text Font="/TextStyles.Large.LargeStyle" Interactive="false" Location="38,40" Name="RewardTitle" PackSize="absolute,fixed" ScrollExtent="259,24" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="259,24" TextColor="#FBF1D9">:dcd55f6cd6602160:Reward:</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="40,151" Name="ExperienceText" ScrollExtent="257,23" Size="257,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#D39614" UserMovable="true" UserResizable="true">:dcd55f6c22662384:Experience: 1.0% at level 15</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="40,151" Name="CustomRewardText" ScrollExtent="257,23" Size="257,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:dcd55f6cdade17b9:Unlocked Kitchen</Text>
+            <Page AbsorbsInput="false" Activated="true" Location="42,126" Name="CoinPage" PackLocation="center,top" ScrollExtent="251,18" Size="251,18">
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,2" Name="MinimumText" ScrollExtent="62,46" Size="62,20" TextAlignment="Right" UserMovable="true" UserResizable="true">:dcd55f6c2a34b091:At least</Text>
+                <Icon ActionData="coin 7" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" MouseOverColor="#FFFF00" Name="CoinPlatinum" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="21,0" Margin="0,0,5,0" Name="Platinum" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center">:dcd55f6c29a34c65:9999</Text>
+                <Icon ActionData="coin 6" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" Location="62,0" MouseOverColor="#FFFF00" Name="CoinGold" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="83,0" Margin="0,0,5,0" Name="Gold" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#FFEE70">:dcd55f6c29a34c65_1:9999</Text>
+                <Icon ActionData="coin 5" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" Location="124,0" MouseOverColor="#FFFF00" Name="CoinSilver" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="145,0" Margin="0,0,5,0" Name="Silver" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#A0A0A0">:dcd55f6c29a34c65_2:9999</Text>
+                <Icon ActionData="coin 4" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" Location="186,0" MouseOverColor="#FFFF00" Name="CoinCopper" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="207,0" Margin="0,0,5,0" Name="Copper" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#EA9129">:dcd55f6c29a34c65_3:9999</Text>
+            </Page>
+            <Scrollbar ArrowPressSound="sounds/button" Control="GrantedRewardPage.ScrollPage" Location="273,71" Name="GrantedRewardScroll" PackLocation="right" ScrollExtent="22,57" Size="22,57" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,72" Name="GrantedRewardPage" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="257,44" Size="257,44">
+                <Page AbsorbsInput="false" Location="1,3" Name="ScrollPage" PackSize="a,a" ScrollExtent="254,43" Size="254,43">
+                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="3,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="40,40" Size="40,40" TreatAsButton="true" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="207,42" Size="207,42" TextAlignmentVertical="Center">:dcd55f6c69d2db30:Missing item name</Text>
+                </Page>
+            </Page>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="39,183" Name="StatusText" ScrollExtent="259,20" Size="259,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true" />
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="39,171" Name="FactionText" ScrollExtent="259,23" Size="259,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:dcd55f6ce52f3809:The Freeport Militia +20</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="31,151" Name="SelectionText" PackSize="absolute,fixed" ScrollExtent="263,23" Size="263,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:dcd55f6c6ca14420:Select one of the following:</Text>
+            <Scrollbar ArrowPressSound="sounds/button" Control="SelectedRewardPage.ScrollPage" HideIfUnnecessary="true" Location="273,197" Name="SelectedRewardScroll" PackLocation="right" ScrollExtent="22,67" Size="22,67" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+            <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,198" Name="SelectedRewardPage" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="258,47" Size="258,47">
+                <Page AbsorbsInput="false" Location="3,2" Name="ScrollPage" PackSize="a,a" ScrollExtent="253,42" Size="253,42">
+                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="206,42" Size="206,42" TextAlignmentVertical="Center">:dcd55f6c69d2db30_1:Missing item name</Text>
+                    <Image BackgroundColor="#4A404A" BackgroundOpacity="1.000" Name="row Selection" PackSize="a,f" ScrollExtent="253,42" Size="253,42" />
+                </Page>
+            </Page>
+            <Composite Alignment="Center" Location="26,253" Name="ButtonComposite" Orientation="Horizontal" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="280,39" Size="280,39" SpacingType="Constant">
+                <Button Location="70,0" MaximumSize="16384,38" MinimumSize="32,38" Name="Receive" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:dcd55f6c5f31f752:Receive</Button>
+                <Button Location="140,0" MaximumSize="16384,38" MinimumSize="32,38" Name="ReceiveAndShop" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:3b870bf0416793ce:Receive &amp; Shop</Button>
+                <Button Location="125,0" MaximumSize="16384,38" MinimumSize="32,38" Name="Accept" ScrollExtent="125,38" Size="125,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:dcd55f6c3dd1093e:Accept Quest</Button>
+                <Button Location="140,0" MaximumSize="16384,38" MinimumSize="32,38" Name="Cancel" ScrollExtent="125,38" Size="125,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:dcd55f6ca42c8975:Decline</Button>
+            </Composite>
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="274,270" Size="274,270" Visible="false" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="334,330" Size="334,330" />
+        </Page>

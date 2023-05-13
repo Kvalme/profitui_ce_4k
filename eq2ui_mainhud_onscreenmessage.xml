@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page alwaysontop="false" BackgroundColor="#FF0000" eq2usescomwndcontrols="true" Location="282,120" Name="OnscreenMessage" PackLocation="center,top" ScrollExtent="480,100" Size="480,100" UserMovable="true" Visible="false">
+            <Text AbsorbsInput="false" BackgroundColor="#00FF00" Cursor="/Cursor.Text" Font="/TextStyles.OnscreenMsg.OnscreenMsgStyle" GetsInput="false" Location="10,10" Margin="1,0,1,3" MaximumSize="458,16000" Name="MessageText" ScrollExtent="458,80" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="458,80" TextAlignment="Center" TextColor="#F3DB7A">:ebbd1cb4bcefd118:[DEVL]You have reached level 10!   jlkjlk jkl jkl jkl jkl jk jkl jkl jkl jkl llklj;;kjl;klsklf;kjalsdkfk;lsadklfak;sld;kfaskldkfaklsd</Text>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="480,100" Size="480,100">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="480,100" Size="480,100" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="477,96" Size="477,96" />
+            </Page>
+        </Page>

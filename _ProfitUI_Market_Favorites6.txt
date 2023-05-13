@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSource Name="FavSource6EN">
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="80" MinLvl="0" SellerName=" " Text="        Ammo &amp; Poisons" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="AMMO (HC+MC)" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="100" MinLvl="100" SellerName=" " Slot="1" Text="-Arrows (100)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="100" MinLvl="100" SellerName=" " Slot="1" Text="-Daggers (100)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="100" MinLvl="100" SellerName=" " Slot="1" Text="-Axes (100)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="100" MinLvl="100" SellerName=" " Slot="1" Text="-Hammmers (100)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="100" MinLvl="100" SellerName=" " Slot="1" Text="-Shurikens (100)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="95" MinLvl="95" SellerName=" " Slot="1" Text="-Arrows (95)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="95" MinLvl="95" SellerName=" " Slot="1" Text="-Daggers (95)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="95" MinLvl="95" SellerName=" " Slot="1" Text="-Axes (95)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="95" MinLvl="95" SellerName=" " Slot="1" Text="-Hammmers (95)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="95" MinLvl="95" SellerName=" " Slot="1" Text="-Shurikens (95)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="90" MinLvl="90" SellerName=" " Slot="1" Text="-Arrows (90)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="90" MinLvl="90" SellerName=" " Slot="1" Text="-Daggers (90)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="90" MinLvl="90" SellerName=" " Slot="1" Text="-Axes (90)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="90" MinLvl="90" SellerName=" " Slot="1" Text="-Hammmers (90)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="90" MinLvl="90" SellerName=" " Slot="1" Text="-Shurikens (90)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Arrows (80)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Daggers (80)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Axes (80)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Hammmer (80)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Shurikens (80)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Arrows (70)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Daggers (70)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Axes (70)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Hammers (70)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Shurikens (70)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Arrows (60)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Daggers (60)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Axes (60)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Hammers (60)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Shurikens (60)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Arrows (50)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Daggers (50)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Axes (50)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Hammers (50)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Shurikens (50)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Arrows (40)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Daggers (40)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Axes (40)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Hammers (40)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Shurikens (40)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Arrows (30)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Daggers (30)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Axes (30)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Hammers (30)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Shurikens (30)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Arrows (20)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Daggers (20)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Axes (20)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Hammers (20)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Shurikens (20)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Arrows (10)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Daggers (10)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Axes (10)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Hamnmers (10)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Shurikens (10)" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="Arrow" ItemEffect=" " ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Arrows (1)" Tier="0"/>
+<Data ItemName="Dagger" ItemEffect=" " ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Daggers (1)" Tier="0"/>
+<Data ItemName="Axe" ItemEffect=" " ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Axes (1)" Tier="0"/>
+<Data ItemName="Hammer" ItemEffect=" " ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Hamnmers (1)" Tier="0"/>
+<Data ItemName="Shuriken" ItemEffect=" " ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Shurikens (1)" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="" Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="POISONS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="Blue (40-95)" Tier="0"/>
+<Data ItemName="Essence of Turgur" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Essence of Turgur" Tier="0"/>
+<Data ItemName="Fettering Poison" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Fettering Poison" Tier="0"/>
+<Data ItemName="Ignorant Bliss" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Ignorant Bliss" Tier="0"/>
+<Data ItemName="Stupefying Poison" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Stupefying Poison" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="Purple (40-95)" Tier="0"/>
+<Data ItemName="Cerebral Ebb" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Cerebral Ebb" Tier="0"/>
+<Data ItemName="Enfeebling Poison" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Enfeebling Poison" Tier="0"/>
+<Data ItemName="Gracelessness" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Gracelessness" Tier="0"/>
+<Data ItemName="Warding Ebb" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Warding Ebb" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="Red (40-95)" Tier="0"/>
+<Data ItemName="Caustic Poison" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Caustic Poison" Tier="0"/>
+<Data ItemName="Hemotoxin" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Hemotoxin" Tier="0"/>
+<Data ItemName="Mental Breach" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Mental Breach" Tier="0"/>
+<Data ItemName="Vitality Breach" ItemEffect=" " ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Viality Breach" Tier="0"/>
+</DataSource>

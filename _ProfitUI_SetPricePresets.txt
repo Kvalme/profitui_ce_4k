@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Location="241,23" Name="WC_Frame" OnHide="Parent.Size=&quot;261,235&quot;" OnShow="Parent.Size=&quot;382,235&quot;" ScrollExtent="124,180" Size="124,180">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="Presets" Location="20,0" Name="LabelPresets" ScrollExtent="82,15" Size="82,15" TextAlignment="Center">Presets</Text>
+<Button LocalText="1c" Location="0,14" Name="ButtonPreset1" OnPress="
+
+Parent.Parent.Numpad.Button1.Press=true
+Parent.Parent.Numpad.ButtonCopper.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="10c" Location="0,41" Name="ButtonPreset2" OnPress="
+
+Parent.Parent.Numpad.Button1.Press=true
+Parent.Parent.Numpad.Button0.Press=true
+Parent.Parent.Numpad.ButtonCopper.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="50c" Location="0,68" Name="ButtonPreset3" OnPress="
+
+Parent.Parent.Numpad.Button5.Press=true
+Parent.Parent.Numpad.Button0.Press=true
+Parent.Parent.Numpad.ButtonCopper.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="1s" Location="0,95" Name="ButtonPreset4" OnPress="
+
+Parent.Parent.Numpad.Button1.Press=true
+Parent.Parent.Numpad.ButtonSilver.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="10s" Location="0,122" Name="ButtonPreset5" OnPress="
+
+Parent.Parent.Numpad.Button1.Press=true
+Parent.Parent.Numpad.Button0.Press=true
+Parent.Parent.Numpad.ButtonSilver.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="50s" Location="0,149" Name="ButtonPreset6" OnPress="
+
+Parent.Parent.Numpad.Button5.Press=true
+Parent.Parent.Numpad.Button0.Press=true
+Parent.Parent.Numpad.ButtonSilver.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="1g" Location="58,14" Name="ButtonPreset7" OnPress="
+
+Parent.Parent.Numpad.Button1.Press=true
+Parent.Parent.Numpad.ButtonGold.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="1g50s" Location="58,41" Name="ButtonPreset8" OnPress="
+
+Parent.Parent.Numpad.Button1.Press=true
+Parent.Parent.Numpad.ButtonGold.Press=true
+Parent.Parent.Numpad.Button5.Press=true
+Parent.Parent.Numpad.Button0.Press=true
+Parent.Parent.Numpad.ButtonSilver.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="2g" Location="58,68" Name="ButtonPreset9" OnPress="
+
+Parent.Parent.Numpad.Button2.Press=true
+Parent.Parent.Numpad.ButtonGold.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="1p" Location="58,95" Name="ButtonPreset10" OnPress="
+
+Parent.Parent.Numpad.Button1.Press=true
+Parent.Parent.Numpad.ButtonPlatinum.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="1p50g" Location="58,122" Name="ButtonPreset11" OnPress="
+
+Parent.Parent.Numpad.Button1.Press=true
+Parent.Parent.Numpad.ButtonPlatinum.Press=true
+Parent.Parent.Numpad.Button5.Press=true
+Parent.Parent.Numpad.Button0.Press=true
+Parent.Parent.Numpad.ButtonGold.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+<Button LocalText="2p" Location="58,149" Name="ButtonPreset12" OnPress="
+
+Parent.Parent.Numpad.Button2.Press=true
+Parent.Parent.Numpad.ButtonPlatinum.Press=true
+
+Parent.Parent.ButtonOk.Press=True" ScrollExtent="64,32" Size="64,32" Style="/CommonElements.PushButton.data.style"></Button>
+</Page>

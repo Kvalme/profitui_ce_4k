@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page ismodule="true" Name="StoryMode" PackSize="1,1" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+<include>eq2ui_storymode_storymodescoreboard.xml</include>
+    </Page>

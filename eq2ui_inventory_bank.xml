@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" IsCancelButton="true" Location="60,211" Name="Bank" ScrollExtent="235,210" Size="235,210" UserMovable="true" Version="2.0">
+<Button Location="217,24" Name="WC_CloseButton" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip="Close" UserMovable="true" />
+<Page Location="-1,16" Name="Character" ScrollExtent="233,119" Size="233,119">
+<Icon ActionData="coin 7" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="164,14" MouseOverColor="#FFFF00" Name="CoinPlatinum" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+<Text Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.BankCoin_3" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="185,13" Margin="0,0,5,0" MaxLines="1" Name="Platinum" ScrollExtent="92,20" Size="92,20" TextAlignmentVertical="Center">0</Text>
+<Icon ActionData="coin 6" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="164,32" MouseOverColor="#FFFF00" Name="CoinGold" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+<Text Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.BankCoin_2" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="185,31" Margin="0,0,5,0" MaxLines="1" Name="Gold" ScrollExtent="42,20" Size="42,20" TextAlignmentVertical="Center" TextColor="#FFEE70">0</Text>
+<Icon ActionData="coin 5" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="164,51" MouseOverColor="#FFFF00" Name="CoinSilver" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+<Text Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.BankCoin_1" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="185,50" Margin="0,0,5,0" MaxLines="1" Name="Silver" ScrollExtent="42,20" Size="42,20" TextAlignmentVertical="Center" TextColor="#A0A0A0">0</Text>
+<Icon ActionData="coin 4" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="164,69" MouseOverColor="#FFFF00" Name="CoinCopper" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+<Text Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.BankCoin_0" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="185,68" Margin="0,0,5,0" MaxLines="1" Name="Copper" ScrollExtent="42,20" Size="42,20" TextAlignmentVertical="Center" TextColor="#EA9129">0</Text>
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="8,15" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="32,32" Size="32,32" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="41,15" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="74,15" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="107,15" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="8,48" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="41,48" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="74,48" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="107,48" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="8,81" MouseOverColor="#FFFF00" Name="Slot 8" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="41,81" MouseOverColor="#FFFF00" Name="Slot 9" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="74,81" MouseOverColor="#FFFF00" Name="Slot 10" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="107,81" MouseOverColor="#FFFF00" Name="Slot 11" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Page BackgroundOpacity="1.000" Location="2,9" Name="Grouper" RStyleDefault="/rectlist.win_plain" ScrollExtent="143,110" Size="143,110" Visible="false" />
+<Image AbsorbsInput="false" Location="167,91" Name="AutoBankIcon" Opacity="0.800" ScrollExtent="24,24" Size="24,24" Style="/ProfitUI_Styles.ButtonStyles.BankButtons.AutoBank" />
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="164,91" Name="AutobankMsg" ScrollExtent="24,24" Size="24,24" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080" Visible="false" />
+<Page BackgroundOpacity="1.000" DragAccepts="icon" Location="164,88" Name="Autobank" OnHoverIn="Parent.AutoBankIcon.Opacity=1" OnHoverOut="Parent.AutoBankIcon.Opacity=0.8" RStyleDefault="/rectlist.win_plain" ScrollExtent="30,30" Size="30,30" Tooltip="Drop items here to automatically move them into the next free bank slot" />
+<Button Location="198,91" Name="OpenAll" NormalTextColor="#F0D080" OnPress="togglebankbags" ScrollExtent="24,24" Size="24,24" Style="/ProfitUI_Styles.ButtonStyles.ToggleBags" Tooltip="Click here to open all containers in your bank" />
+<Page BackgroundOpacity="1.000" DragAccepts="icon" Location="195,88" Name="OpenAllFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="30,30" Size="30,30" />
+<Page Name="CoinData" Location="0,0" Size="0,0" Visibile="false">
+<Text Name="Coin3" DynamicData="/GameData.Coins.Coin_3">0</Text>
+<Text Name="Coin2" DynamicData="/GameData.Coins.Coin_2">0</Text>
+<Text Name="Coin1" DynamicData="/GameData.Coins.Coin_1">0</Text>
+<Text Name="Coin0" DynamicData="/GameData.Coins.Coin_0">0</Text>
+</Page>
+<Button Location="142,21" Name="DepositAllPersonal" BackgroundOpacity="1.000" NormalTextColor="#F0D080" OnPress="
+Plat=Parent.CoinData.Coin3.Text
+Gold=Parent.CoinData.Coin2.Text * 10000
+Silv=Parent.CoinData.Coin1.Text * 100
+Copp=Parent.CoinData.Coin0.Text
+Total=Gold + Silv + Copp
+TotalTotal=Plat ## Total
+bank_deposit TotalTotal
+" ScrollExtent="19,19" Size="19,19" Style="/ProfitUI_Styles.ButtonStyles.box_button" Tooltip="Click to deposit all coin in Personal Bank." >D</Button>
+<Page BackgroundOpacity="1.000" DragAccepts="icon" Location="139,18" Name="DepositAllPersonalFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="25,25" Size="25,25" />
+<Button Location="142,55" Name="WithdrawAllPersonal" NormalTextColor="#F0D080" OnPress="
+Plat=Parent.Platinum.Text
+Gold=Parent.Gold.Text * 10000
+Silv=Parent.Silver.Text * 100
+Copp=Parent.Copper.Text
+Total=Gold + Silv + Copp
+TotalTotal=Plat ## Total
+Bank_withdraw TotalTotal
+" ScrollExtent="19,19" Size="19,19" Style="/ProfitUI_Styles.ButtonStyles.box_button" Tooltip="Click to withdraw all coin in Personal Bank." >W</Button>
+<Page BackgroundOpacity="1.000" DragAccepts="icon" Location="139,52" Name="WithdrawAllPersonalFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="25,25" Size="25,25" />
+</Page>
+<Page Location="-1,130" Name="Shared" ScrollExtent="233,79" Size="233,79">
+<Button Location="142,15" Name="DepositAllShared" NormalTextColor="#F0D080" OnPress="
+Plat=Parent.Parent.Character.CoinData.Coin3.Text
+Gold=Parent.Parent.Character.CoinData.Coin2.Text * 10000
+Silv=Parent.Parent.Character.CoinData.Coin1.Text * 100
+Copp=Parent.Parent.Character.CoinData.Coin0.Text
+Total=Gold + Silv + Copp
+TotalTotal=Plat ## Total
+ToolTip=TotalTotal
+shared_deposit TotalTotal
+" ScrollExtent="19,19" Size="19,19" Style="/ProfitUI_Styles.ButtonStyles.box_button" Tooltip="Click to deposit all coin in Shared Bank." >D</Button>
+<Page BackgroundOpacity="1.000" DragAccepts="icon" Location="139,12" Name="DepositAllSharedFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="25,25" Size="25,25" />
+<Button Location="142,47" Name="WithdrawAllShared" NormalTextColor="#F0D080" OnPress="
+Plat=Parent.Platinum.Text
+Gold=Parent.Gold.Text * 10000
+Silv=Parent.Silver.Text * 100
+Copp=Parent.Copper.Text
+Total=Gold + Silv + Copp
+TotalTotal=Plat ## Total
+shared_withdraw TotalTotal
+" ScrollExtent="19,19" Size="19,19" Style="/ProfitUI_Styles.ButtonStyles.box_button" Tooltip="Click to withdraw all coin in Shared Bank." >W</Button>
+<Page BackgroundOpacity="1.000" DragAccepts="icon" Location="139,44" Name="WithdrawAllSharedFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="25,25" Size="25,25" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="107,41" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="74,41" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="41,41" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="8,41" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+
+<Text Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.SharedCoin_0" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="185,57" Margin="0,0,5,0" MaxLines="1" Name="Copper" ScrollExtent="42,20" Size="42,20" TextAlignmentVertical="Center" TextColor="#EA9129">0</Text>
+<Icon ActionData="coin 12" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="164,58" MouseOverColor="#FFFF00" Name="CoinCopper" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+<Text Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.SharedCoin_1" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="185,39" Margin="0,0,5,0" MaxLines="1" Name="Silver" ScrollExtent="42,20" Size="42,20" TextAlignmentVertical="Center" TextColor="#A0A0A0">0</Text>
+<Icon ActionData="coin 13" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="164,40" MouseOverColor="#FFFF00" Name="CoinSilver" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+<Text Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.SharedCoin_2" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="185,20" Margin="0,0,5,0" MaxLines="1" Name="Gold" ScrollExtent="42,20" Size="42,20" TextAlignmentVertical="Center" TextColor="#FFEE70">0</Text>
+<Icon ActionData="coin 14" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="164,21" MouseOverColor="#FFFF00" Name="CoinGold" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+<Text Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.SharedCoin_3" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="185,2" Margin="0,0,5,0" MaxLines="1" Name="Platinum" ScrollExtent="92,20" Size="92,20" TextAlignmentVertical="Center">0</Text>
+<Icon ActionData="coin 15" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="164,3" MouseOverColor="#FFFF00" Name="CoinPlatinum" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="8,8" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="41,8" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="74,8" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.inventory" Location="107,8" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+<Page BackgroundOpacity="1.000" Location="2,2" Name="Grouper" RStyleDefault="/rectlist.win_plain" ScrollExtent="143,77" Size="143,77" Visible="false" />
+</Page>
+<Page AbsorbsInput="false" Location="-12,0" Name="WindowFrame" PackSize="a,a" ScrollExtent="258,225" Size="258,225">
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="176,70" Size="176,70">
+<Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="18,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="88,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="88,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">Bank</Text>
+</Page>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="88,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" Visible="false" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="258,225" Size="258,225" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="258,225" Size="258,225" />
+</Page>
+</Page>

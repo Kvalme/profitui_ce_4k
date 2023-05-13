@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="196,133" MaximumSize="1024,1024" MinimumSize="287,108" Name="Knowledge" PackLocation="center,center" ScrollExtent="640,525" Size="640,525" UserMovable="true" Visible="false">
+            <Button Location="285,444" MaximumSize="16384,26" MinimumSize="26,26" Name="Sort" PackLocation="right,cfc" ScrollExtent="70,26" Size="70,26" Style="/CommonElements.SmallPushButton.data.style">:a26a52e70b418549:Sort...</Button>
+            <Namespace Name="data">
+                <ImageStyle Name="tradeskills_bkg">
+                    <ImageFrame atlas="none" Name="img" Source="images/kw_com_spec.dds" SourceRect="0,0,564,366" />
+                </ImageStyle>
+                <ImageStyle Name="combat_arts_bkg">
+                    <ImageFrame atlas="none" Name="img" Source="images/kw_com_spec.dds" SourceRect="0,373,563,742" />
+                </ImageStyle>
+                <ImageStyle Name="spells_bkg">
+                    <ImageFrame atlas="none" Name="img" Source="images/kw_spell_rec.dds" SourceRect="0,373,563,742" />
+                </ImageStyle>
+                <ImageStyle Name="abilities_bkg">
+                    <ImageFrame atlas="none" Name="img" Source="images/kw_com_spec.dds" SourceRect="0,0,564,366" />
+                </ImageStyle>
+            </Namespace>
+            <Page Location="35,40" Name="TabsPage" PackLocation="fixed, fixed" PackSize="a,f" ScrollExtent="570,33" Size="570,33">
+                <Checkbox BackgroundOpacity="1.000" Location="475,0" MaximumSize="16384,32" MinimumSize="32,32" Name="AscensionCheckbox" Radio="true" ScrollExtent="95,32" Size="95,32" Style="/CommonElements.ToggleButton.data.style">Ascension</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" Location="380,0" MaximumSize="16384,32" MinimumSize="32,32" Name="ResearchCheckbox" Radio="true" ScrollExtent="95,32" Size="95,32" Style="/CommonElements.ToggleButton.data.style">:5b34dfdce052cdac:Upgrades</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" MaximumSize="16384,32" MinimumSize="32,32" Name="AbilitiesCheckbox" Radio="true" ScrollExtent="95,32" Size="95,32" Style="/CommonElements.ToggleButton.data.style">:a26a52e7c536f0f8:Abilities</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" Location="95,0" MaximumSize="16384,32" MinimumSize="32,32" Name="SpellsCheckbox" Radio="true" ScrollExtent="95,32" Size="95,32" Style="/CommonElements.ToggleButton.data.style">:a26a52e77084f592:Spells</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" Location="190,0" MaximumSize="16384,32" MinimumSize="32,32" Name="ArtsCheckbox" Radio="true" ScrollExtent="95,32" Size="95,32" Style="/CommonElements.ToggleButton.data.style">:a26a52e74eed97a5:Combat Arts</Checkbox>
+                <Checkbox BackgroundOpacity="1.000" Location="285,0" MaximumSize="16384,32" MinimumSize="32,32" Name="TradeskillsCheckbox" Radio="true" ScrollExtent="95,32" Size="95,32" Style="/CommonElements.ToggleButton.data.style">:a26a52e70c675a27:Tradeskills</Checkbox>
+            </Page>
+            <Page AbsorbsInput="false" Location="35,90" Name="AscensionPage" PackLocation="cfc,cfc" PackSize="f,a" ScrollExtent="570,405" Size="570,405" Visible="false">
+                <Page Location="20,25" Name="Entry0" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,25" Name="Entry1" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,103" Name="Entry2" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_1:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,103" Name="Entry3" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_2:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="19,179" Name="Entry4" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_3:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,179" Name="Entry5" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_4:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,256" Name="Entry6" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_5:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,256" Name="Entry7" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_6:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="294,25" Name="Entry8" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_1:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,25" Name="Entry9" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_7:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="294,103" Name="Entry10" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_8:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,103" Name="Entry11" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_9:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="295,179" Name="Entry12" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_10:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="427,179" Name="Entry13" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_11:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,256" Name="Entry14" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_12:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,255" Name="Entry15" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_13:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="200,373" Name="PageText" PackLocation="cfc,bottom" ScrollExtent="170,32" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,32" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:a26a52e721ec01bd:Page 1 of 10</Text>
+                <Button Location="0,373" MaximumSize="16384,32" MinimumSize="32,32" Name="First" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e7ac4f3eac:First</Button>
+                <Button Location="100,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Previous" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e704460075:Previous</Button>
+                <Button Location="370,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e75be240fd:Next</Button>
+                <Button Location="470,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Last" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e71516f961:Last</Button>
+                <Image Color="#CCCCCC" Location="3,0" Name="Bkg" ScrollExtent="563,359" Size="563,359" Style="data.abilities_bkg" />
+            </Page>
+            <Page AbsorbsInput="false" Location="35,90" Name="ResearchPage" PackLocation="cfc,cfc" PackSize="f,a" ScrollExtent="570,405" Size="570,405">
+                <Text Font="/TextStyles.Large.LargeStyle" Name="NotResearching" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" Opacity="0.000" PackSize="a,f" ScrollExtent="570,49" Size="570,49" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">:5b34dfdcec24bc2a:Select a spell from the list below and press Start Researching to begin</Text>
+                <Text Font="/TextStyles.Large.LargeStyle" Location="120,74" Name="Help" OnShow="parent.NotResearching.Visible=false" PackSize="a,f" ScrollExtent="333,212" Size="333,212" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">:5b34dfdcc3622b53:None of your spells are eligible for an upgrade.</Text>
+                <Composite Location="14,0" Name="TopFrame" Orientation="Horizontal" ScrollExtent="546,57" Size="546,57" SpacingType="Fill">
+                    <Page MaximumSize="546,48" Name="StatusPage" PackSize="f,a" ScrollExtent="404,48" Size="404,48">
+                        <Page Location="57,17" MaximumSize="16384,32" MinimumSize="150,32" Name="Progress" PackSize="a,a" ScrollExtent="338,32" Size="338,32">
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-1,1" Name="Frame" PackSize="a,a" RStyleDefault="/SpecialElements.SkillProgressBar.data.frame.rect" ScrollExtent="340,32" Size="340,32" />
+                            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,7" Margin="0,0,15,0" Name="ProgressText" PackSize="a,a" ScrollExtent="334,23" Size="334,18" TextAlignment="Center" UserMovable="true">:5b34dfdc74d326cb:[DEVL] 30 days 15 hours remaining</Text>
+                            <Progressbar BackgroundOpacity="1.000" Color="#EF8450" Name="Progressbar" PackSize="a,a" Progress="0.500" ScrollExtent="336,32" Size="336,32" Style="/SpecialElements.SkillProgressBar.data.style" />
+                            <Page BackgroundOpacity="1.000" Name="Bkg" PackSize="a,a" RStyleDefault="/SpecialElements.SkillProgressBar.data.bkg.rect" ScrollExtent="336,32" Size="336,32" />
+                        </Page>
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" ScrollExtent="42,42" Size="42,42" />
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="56,1" Name="Label" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackSize="a,f" ScrollExtent="347,23" Size="347,20">:ca3ed93d631e4874:[DEVL]Researching: Ice Bolt (Master I)</Text>
+                    </Page>
+                    <Page Location="404,0" MaximumSize="142,57" MinimumSize="142,57" Name="PonPage" ScrollExtent="142,57" Size="142,57">
+                        <Text Font="/TextStyles.Large.LargeStyle" Location="13,8" Name="Label" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="right,top" PackSize="f,f" ScrollExtent="76,69" Size="76,41" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:5b34dfdc90a3766e:Instant Upgrade!</Text>
+                        <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="126,42" Name="Coin" PackLocation="right,top" PackSize="f,f" ScrollExtent="12,12" Size="12,12" Style="/imagelist.coins.StationCash" />
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="73,40" Name="SCCost" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="right,top" PackSize="f,f" ScrollExtent="49,23" Size="49,16" TextAlignment="Right" TextAlignmentVertical="Center">:5b34dfdc928c6a9d:1,000</Text>
+                        <Button Location="90,0" Name="SpeedUpButton" OnPress="smp pon sc_research_complete" RStyleDefault="sc_pon" ScrollExtent="50,41" Size="50,41" Style="/ButtonStyles.sc_pon" Tooltip=":5b34dfdccfa97ab6:Instantly complete researching" />
+                    </Page>
+                </Composite>
+                <Page BackgroundOpacity="1.000" Location="7,55" MaximumSize="16384,25" MinimumSize="0,25" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="557,25" Size="557,25">
+                    <Button BackgroundOpacity="0.000" Location="400,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort4" PackLocation="left,top" PackSize="a,f" ScrollExtent="78,25" Size="78,25" Style="/CommonElements.Table.data.sort.style_center_align">:ca3ed93da4d41ce8:Level</Button>
+                    <Button BackgroundOpacity="0.000" Location="55,1" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort1" PackLocation="left,top" PackSize="a,f" ScrollExtent="106,25" Size="106,25" Style="/CommonElements.Table.data.sort.style_left_align">:ca3ed93d01ee2ec7:Name</Button>
+                    <Button BackgroundOpacity="0.000" Location="203,1" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort2" PackLocation="left,top" PackSize="a,f" ScrollExtent="198,25" Size="198,25" Style="/CommonElements.Table.data.sort.style_left_align">:ca3ed93d24886fef:Progress</Button>
+                </Page>
+                <Composite Location="16,86" Name="Items" Orientation="Horizontal" PackSize="a,a" ScrollExtent="539,264" Size="539,264" SpacingType="Fill">
+                    <Page AbsorbsInput="false" DropToParent="true" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="517,264" ScrollSize="1,44" Size="517,264">
+                        <Icon BackgroundTint="#000000" DropToParent="true" IconStyle="/IconStyles.item_list" Location="1,4" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="absolute,fixed" ScrollExtent="340,50" ShadowStyle="/ShadowStylesNew.Drop.style" Size="340,50" TextAlignmentVertical="Center">:ca3ed93d225610e3:table entry</Text>
+                        <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="395,0" Name="row Level" PackLocation="right,top" PackSize="f,f" ScrollExtent="68,50" ShadowStyle="/ShadowStylesNew.Drop.style" Size="68,50" TextAlignment="Center" TextAlignmentVertical="Center">:ca3ed93d651533ec:level</Text>
+                        <Button Location="475,7" Name="row Research Max" PackSize="fixed,fixed" ScrollExtent="41,51" Size="41,51" Style="/ButtonStyles.sc_pon_rmax" Tooltip=":5b34dfdc6de3895e:Use research to acquire the maximum tier you can use">:5b34dfdc0d0cd83b:Research To Max</Button>
+                        <Image AbsorbsInput="false" BackgroundColor="/ColorStyles.window_background_selection" BackgroundOpacity="1.000" DropToParent="true" Name="row Selection" PackSize="absolute,fixed" ScrollExtent="516,50" Size="516,50" />
+                    </Page>
+                    <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="false" Location="517,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,264" Size="22,264" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Composite>
+                <Text Font="/TextStyles.Large.LargeStyle" Location="7,377" Name="SearchLabel" PackLocation="left,bottom" ScrollExtent="55,46" Size="55,23">:f:Search</Text>
+                <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="65,373" MaximumSize="16384,30" MinimumSize="30,30" Name="SearchInput" PackLocation="left,bottom" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="145,30" Size="145,30" Style="/CommonElements.Textfield.data.style" />
+                <Button Location="400,373" Name="ResearchButton" PackSize="fixed,fixed" ScrollExtent="160,30" Size="160,30" Style="/CommonElements.PushButton.data.style" Tooltip=":ca3ed93d05c6ee50:Begin researching the selected spell or ability.">:ca3ed93d5162cd6b:Research</Button>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="7,77" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="557,281" Size="557,281" />
+            </Page>
+            <Page AbsorbsInput="false" Location="35,90" Name="AbilitiesPage" PackLocation="cfc,cfc" PackSize="f,a" ScrollExtent="570,405" Size="570,405" Visible="false">
+                <Page Location="20,25" Name="Entry0" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,25" Name="Entry1" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,103" Name="Entry2" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_1:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,103" Name="Entry3" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_2:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="19,179" Name="Entry4" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_3:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,179" Name="Entry5" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_4:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,256" Name="Entry6" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_5:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,256" Name="Entry7" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_6:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="294,25" Name="Entry8" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_1:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,25" Name="Entry9" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_7:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="294,103" Name="Entry10" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_8:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,103" Name="Entry11" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_9:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="295,179" Name="Entry12" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_10:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="427,179" Name="Entry13" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_11:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,256" Name="Entry14" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_12:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,255" Name="Entry15" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_13:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="200,373" Name="PageText" PackLocation="cfc,bottom" ScrollExtent="170,32" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,32" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:a26a52e721ec01bd:Page 1 of 10</Text>
+                <Button Location="0,373" MaximumSize="16384,32" MinimumSize="32,32" Name="First" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e7ac4f3eac:First</Button>
+                <Button Location="100,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Previous" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e704460075:Previous</Button>
+                <Button Location="370,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e75be240fd:Next</Button>
+                <Button Location="470,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Last" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e71516f961:Last</Button>
+                <Image Color="#CCCCCC" Location="3,0" Name="Bkg" ScrollExtent="563,359" Size="563,359" Style="data.abilities_bkg" />
+            </Page>
+            <Page AbsorbsInput="false" Location="35,90" Name="SpellsPage" PackLocation="cfc,cfc" PackSize="f,a" ScrollExtent="570,405" Size="570,405" Visible="false">
+                <Page Location="20,27" Name="Entry0" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_2:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,27" Name="Entry1" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_14:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,103" Name="Entry2" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_15:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,103" Name="Entry3" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_16:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="19,179" Name="Entry4" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_17:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,179" Name="Entry5" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_18:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,256" Name="Entry6" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_19:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,256" Name="Entry7" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_20:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="295,27" Name="Entry8" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_3:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,27" Name="Entry9" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_21:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="295,103" Name="Entry10" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_22:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,103" Name="Entry11" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_23:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,179" Name="Entry12" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_24:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="427,179" Name="Entry13" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_25:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,256" Name="Entry14" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_26:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,255" Name="Entry15" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_27:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="200,373" Name="PageText" PackLocation="cfc,bottom" ScrollExtent="170,32" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,32" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:a26a52e721ec01bd_1:Page 1 of 10</Text>
+                <Button Location="0,373" MaximumSize="16384,32" MinimumSize="32,32" Name="First" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e7ac4f3eac_1:First</Button>
+                <Button Location="100,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Previous" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e704460075_1:Previous</Button>
+                <Button Location="370,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e75be240fd_1:Next</Button>
+                <Button Location="470,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Last" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e71516f961_1:Last</Button>
+                <Image Color="#CCCCCC" Location="3,0" Name="Bkg" ScrollExtent="563,359" Size="563,359" Style="data.spells_bkg" />
+            </Page>
+            <Page AbsorbsInput="false" Location="35,90" Name="ArtsPage" PackLocation="cfc,cfc" PackSize="f,a" ScrollExtent="570,405" Size="570,405" Visible="false">
+                <Page Location="20,27" Name="Entry0" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_4:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,27" Name="Entry1" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_28:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,103" Name="Entry2" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_29:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,103" Name="Entry3" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_30:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="19,179" Name="Entry4" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_31:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,179" Name="Entry5" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_32:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,256" Name="Entry6" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_33:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,256" Name="Entry7" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_34:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="295,27" Name="Entry8" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_5:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,27" Name="Entry9" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_35:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="295,103" Name="Entry10" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_36:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,103" Name="Entry11" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_37:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,179" Name="Entry12" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_38:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="427,179" Name="Entry13" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_39:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,256" Name="Entry14" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_40:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,255" Name="Entry15" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_41:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="200,373" Name="PageText" PackLocation="cfc,bottom" ScrollExtent="170,32" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,32" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:a26a52e721ec01bd_2:Page 1 of 10</Text>
+                <Button Location="0,373" MaximumSize="16384,32" MinimumSize="32,32" Name="First" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e7ac4f3eac_2:First</Button>
+                <Button Location="100,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Previous" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e704460075_2:Previous</Button>
+                <Button Location="370,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e75be240fd_2:Next</Button>
+                <Button Location="470,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Last" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e71516f961_2:Last</Button>
+                <Image Color="#CCCCCC" Location="3,0" Name="Bkg" ScrollExtent="563,359" Size="563,359" Style="data.spells_bkg" />
+            </Page>
+            <Page AbsorbsInput="false" Location="35,90" Name="_ArtsPage" PackLocation="cfc,cfc" PackSize="f,a" ScrollExtent="570,405" Size="570,405" Visible="false">
+                <Page Location="20,25" Name="Entry0" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_6:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="153,25" Name="Entry1" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_42:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,103" Name="Entry2" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_43:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="153,102" Name="Entry3" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_44:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,179" Name="Entry4" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_45:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="153,179" Name="Entry5" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_46:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="21,255" Name="Entry6" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_47:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="153,255" Name="Entry7" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_48:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,25" Name="Entry8" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_7:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="429,25" Name="Entry9" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_49:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,102" Name="Entry10" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_50:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="430,102" Name="Entry11" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_51:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="298,178" Name="Entry12" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_52:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="429,178" Name="Entry13" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_53:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="298,255" Name="Entry14" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_54:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="429,255" Name="Entry15" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_55:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="200,373" Name="PageText" PackLocation="cfc,bottom" ScrollExtent="170,32" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,32" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:a26a52e721ec01bd_3:Page 1 of 10</Text>
+                <Button Location="0,373" MaximumSize="16384,32" MinimumSize="32,32" Name="First" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e7ac4f3eac_3:First</Button>
+                <Button Location="100,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Previous" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e704460075_3:Previous</Button>
+                <Button Location="370,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e75be240fd_3:Next</Button>
+                <Button Location="470,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Last" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e71516f961_3:Last</Button>
+                <Image Location="3,0" Name="Bkg" ScrollExtent="563,359" Size="563,359" Style="data.combat_arts_bkg" />
+            </Page>
+            <Page AbsorbsInput="false" Location="35,90" Name="TradeskillsPage" PackLocation="cfc,cfc" PackSize="f,a" ScrollExtent="570,405" Size="570,405" Visible="false">
+                <Page Location="20,25" Name="Entry0" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_8:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,25" Name="Entry1" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_56:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,103" Name="Entry2" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_57:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,102" Name="Entry3" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_58:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,179" Name="Entry4" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_59:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,179" Name="Entry5" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_60:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="20,255" Name="Entry6" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_61:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="152,255" Name="Entry7" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_62:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="295,25" Name="Entry8" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,69" Size="121,33" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e730f53c7b_9:Firefist is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,25" Name="Entry9" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_63:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="295,102" Name="Entry10" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_64:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,102" Name="Entry11" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_65:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,178" Name="Entry12" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_66:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,178" Name="Entry13" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_67:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="296,255" Name="Entry14" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_68:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Page Location="428,255" Name="Entry15" ScrollExtent="121,84" Size="121,84">
+                    <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="39,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,46" Name="Name" ScrollExtent="121,92" Size="121,34" TextAlignment="Center" UserMovable="true" UserResizable="true">:a26a52e77f1f9e45_69:Call of the Hero is a Very Nice Spell</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="200,373" Name="PageText" PackLocation="cfc,bottom" ScrollExtent="170,32" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,32" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:a26a52e721ec01bd_4:Page 1 of 10</Text>
+                <Button Location="0,373" MaximumSize="16384,32" MinimumSize="32,32" Name="First" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e7ac4f3eac_4:First</Button>
+                <Button Location="100,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Previous" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e704460075_4:Previous</Button>
+                <Button Location="370,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Next" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e75be240fd_4:Next</Button>
+                <Button Location="470,373" MaximumSize="16384,32" MinimumSize="32,32" Name="Last" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:a26a52e71516f961_4:Last</Button>
+                <Image Color="#CCCCCC" Location="3,0" Name="Bkg" ScrollExtent="563,359" Size="563,359" Style="data.tradeskills_bkg" />
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="640,525" Size="640,525">
+                <Button Location="584,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":a26a52e7ec278586:Window Settings" UserMovable="true" />
+                <Button Location="564,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":a26a52e7574a0c6d:Help" UserMovable="true" />
+                <Button Location="604,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":a26a52e72d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="275,70" Size="275,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="145,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="145,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:a26a52e7e3095341:Knowledge</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="450,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="640,525" Size="640,525" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,450" Name="LowerTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="614,75" Size="614,75" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,24" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="614,61" Size="614,61" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="640,525" Size="640,525" />
+            </Page>
+        </Page>

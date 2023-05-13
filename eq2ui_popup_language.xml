@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="355,268" MaximumSize="1024,768" MinimumSize="416,198" Name="LanguageSelection" ScrollExtent="445,268" Size="445,268" UserMovable="true" UserResizable="true" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="26,35" Name="Title" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="390,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="390,21" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:1c2e370877cf6c44:Language Selection</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="17,55" Name="LanguageLabel" PackLocation="center,top" PackSize="fixed,fixed" ScrollExtent="201,23" Size="201,21" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FBF1D9">:1c2e370820188a52:Current Language:</Text>
+            <Text AbsorbsInput="false" DynamicData="/GameData.Self.CurrentLanguage" Font="/TextStyles.Normal.NormalStyle" Location="222,55" Name="LanguageText" PackLocation="center,top" PackSize="fixed,fixed" ScrollExtent="206,46" Size="206,21" TextAlignmentVertical="Center" TextColor="#FBF1D9">:1c2e370868649926:[DEVL]CurrentLanguage</Text>
+            <Button AbsorbsInput="false" Location="261,194" Name="ButtonCancel" PackLocation="right,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style" Tooltip=":1c2e3708ae453fbb_1:Cancel">:1c2e3708ae453fbb:Cancel</Button>
+            <Button AbsorbsInput="false" Location="82,194" Name="ButtonOK" PackLocation="left,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:1c2e370828c926d2:OK</Button>
+            <Scrollbar ArrowPressSound="sounds/button" Control="SelectionLB" Location="382,87" Name="SelectionScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="19,101" Size="19,101" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Listbox Activated="true" DataSource="SelectionDataSource" Location="46,85" Name="SelectionLB" PackLocation="left,top" PackSize="absolute,absolute" RowTemplate="SelectionTemplate" ScrollExtent="1024,101" Size="339,101" Style="/HUD.Selection.SelectionLBStyle" />
+            <Page BackgroundOpacity="1.000" Location="35,76" Name="RoundedGrouper" PackSize="absolute,absolute" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="376,118" Size="376,118" />
+            <ListboxStyle GridStyle="/gridlist.gold_style" Name="SelectionLBStyle" RStyleDefault=" " />
+            <DataSource Name="SelectionDataSource">
+                <Data Name="test item 1" text=":1c2e3708997bd863:[DEVL]Creature or thing name 1 that is longer than the available space to test on resize" />
+                <Data Name="test item 2" text=":1c2e370885093676:[DEVL]Another thing that is long too" />
+                <Data Name="test item 3" text=":1c2e37084e8e431b:[DEVL]A third thing that is lonigish" />
+            </DataSource>
+            <Template Name="SelectionTemplate" Size="1024,16">eq2ui_generictexttemplate.xml</Template>
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="385,208" Size="385,208" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="445,268" Size="445,268" />
+        </Page>

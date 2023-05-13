@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="355,68" MinimumSize="970,900" Name="ItemizedMemory" PackSize="fixed,fixed" ScrollExtent="970,900" Size="970,900" UserMovable="true" UserResizable="true" Visible="false">
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="80,80" Name="MemoryTreeLabel" PackLocation="left,top" PackSize="fixed, fixed" ScrollExtent="120,46" Size="120,18" TextAlignment="Right" TextAlignmentVertical="Center">:cee9b5415b07f0cb:Itemized Memory:</Text>
+            <Page Activated="true" BackgroundOpacity="1.000" Location="75,97" Name="MemoryTreePage" PackLocation="left,top" PackSize="absolute,absolute" RStyleActivated="true" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="820,650" Size="820,650">
+                <TextStyle Algorithm="Bold" FontName="Courier New Bold" Language="english" Name="FontCourierNewBold15" PointSize="15" UseCachedFont="true" />
+                <DataSourceContainer Name="MemoryTreeDSContainer" />
+                <Scrollbar ArrowPressSound="sounds/button" Control="MemoryTree" HideIfUnnecessary="true" Location="788,10" Name="MemoryTreeScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,630" Size="22,630" Style="/CommonElements.ScrollbarVertical.data.style" />
+                <TreeView BackgroundColor="#201020" BackgroundOpacity="0.000" DataSourceContainer="MemoryTreeDSContainer" Location="10,10" MinimumScrollExtent="778,0" Name="MemoryTree" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="778,630" SelectionAllowedMultiRow="false" ShowChecks="false" Size="778,630" Style="TreeViewStyle" UserResizable="true" />
+                <TreeViewStyle CellHeight="18" DefaultTextStyle="FontCourierNewBold15" GridColor="#FFDDAA" ImageStyleChecked="/imagelist.widget_check_on" ImageStyleCheckGroup="/imagelist.widget_check_group" ImageStyleCollapsed="/imagelist.widget_tree_expand" ImageStyleExpanded="/imagelist.widget_tree_contract" ImageStyleUnchecked="/imagelist.widget_check_off" Indentation="15" Name="TreeViewStyle" RStyleActivated="RectStyle" RStyleDefault="RectStyle" RStyleSelected="RectStyle" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
+                <RectangleStyle Color="#FFDDAA" Name="RectStyle" />
+            </Page>
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="50,758" Name="Label" PackLocation="left,bottom" PackSize="fixed, fixed" ScrollExtent="125,23" Size="125,18" TextAlignment="Center" TextAlignmentVertical="Center">:cee9b541e3b485b6:Units:</Text>
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="200,758" Name="Label" PackLocation="left,bottom" PackSize="fixed, fixed" ScrollExtent="125,23" Size="125,18" TextAlignment="Center" TextAlignmentVertical="Center">:cee9b541bead3555:Actors Shown:</Text>
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="350,758" Name="Label" PackLocation="left,bottom" PackSize="fixed, fixed" ScrollExtent="125,23" Size="125,18" TextAlignment="Center" TextAlignmentVertical="Center">:cee9b54165253a5e:Tree Type:</Text>
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="650,758" Name="Label" PackLocation="left,bottom" PackSize="fixed, fixed" ScrollExtent="125,23" Size="125,18" TextAlignment="Center" TextAlignmentVertical="Center">:cee9b541ce5d9812:Report:</Text>
+            <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Normal.NormalStyle" Location="200,820" Name="Label" PackLocation="left,bottom" PackSize="fixed, fixed" ScrollExtent="125,23" Size="125,18" TextAlignment="Center" TextAlignmentVertical="Center">:cee9b541ff0183d2:Sort:</Text>
+            <DataSource Name="UnitDS">
+                <Data Name="Bytes" text=":cee9b5418fa79335:Bytes" />
+                <Data Name="Kilobytes" text=":cee9b541489ae2d6:Kilobytes" />
+                <Data Name="Megabytes" text=":cee9b5415422bb99:Megabytes" />
+            </DataSource>
+            <Dropdownbox DataSource="UnitDS" Location="50,785" Name="UnitDropdownbox" PackLocation="left,bottom" PackSize="fixed,fixed" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="125,19" Size="125,19" Style="/dropdownlist.dropdown_default" />
+            <DataSource Name="AnimatedDS">
+                <Data Name="AnimatedDontCare" text=":cee9b541a41769d0:Both" />
+                <Data Name="AnimatedYes" text=":cee9b541680d527a:Animated" />
+                <Data Name="AnimatedNo" text=":cee9b54129627e0d:Non-animated" />
+            </DataSource>
+            <Dropdownbox DataSource="AnimatedDS" Location="200,785" Name="AnimatedDropdownbox" PackLocation="left,bottom" PackSize="fixed,fixed" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="125,19" Size="125,19" Style="/dropdownlist.dropdown_default" />
+            <DataSource Name="DetailLevelDS">
+                <Data Name="Details" text=":cee9b541625278ea:Actor Map Details" />
+                <Data Name="ActorMapResources" text=":cee9b541024ea204:Actor Map Resources" />
+                <Data Name="AppearanceSummary" text=":cee9b54134d4d3b7:Appearance Summary" />
+                <Data Name="Zone" text=":cee9b54191119615:Zone Details" />
+                <Data Name="ZoneResources" text=":cee9b541d6d8634a:Zone Resources" />
+                <Data Name="AllResources" text=":cee9b54123c5aa56:All Resources" />
+                <Data Name="AppCache" text=":cee9b541d12f0b66:App Cache" />
+            </DataSource>
+            <Dropdownbox DataSource="DetailLevelDS" Location="350,785" Name="DetailLevelDropdownbox" PackLocation="left,bottom" PackSize="fixed,fixed" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="125,19" Size="125,19" Style="/dropdownlist.dropdown_default" />
+            <Button Location="500,782" Name="ButtonRefreshTree" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="125,26" Size="125,26" Style="/CommonElements.SmallPushButton.data.style">:cee9b54121e0b0b9:Refresh Tree</Button>
+            <DataSource Name="ReportLevelDS">
+                <Data Name="Current" text=":cee9b54172bf208c:Expanded Rows" />
+                <Data Name="All" text=":cee9b54106f6a0d2:All Rows" />
+            </DataSource>
+            <Dropdownbox DataSource="ReportLevelDS" Location="650,785" Name="ReportLevelDropdownbox" PackLocation="left,bottom" PackSize="fixed,fixed" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="125,19" Size="125,19" Style="/dropdownlist.dropdown_default" />
+            <Button Location="800,782" Name="ButtonWriteLog" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="125,26" Size="125,26" Style="/CommonElements.SmallPushButton.data.style">:cee9b541cfcd9810:Write Report</Button>
+            <Button Location="75,830" Name="ButtonOk" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:cee9b54128c926d2:OK</Button>
+            <DataSource Name="SortDS">
+                <Data Name="SortNone" text=":cee9b541205d500e:None" />
+                <Data Name="SortTotalMemory" text=":cee9b541d83b96d0:Total Memory" />
+                <Data Name="SortSharedMemory" text=":cee9b541d89827ff:Shared Memory" />
+                <Data Name="SortInstanceMemory" text=":cee9b541c3be27db:Instance Memory" />
+                <Data Name="SortRefs" text=":cee9b5410b0802a6:Refs" />
+            </DataSource>
+            <Dropdownbox DataSource="SortDS" Location="200,847" Name="SortDropdownbox" PackLocation="left,bottom" PackSize="fixed,fixed" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="125,19" Size="125,19" Style="/dropdownlist.dropdown_default" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="970,900" Size="970,900" />
+        </Page>

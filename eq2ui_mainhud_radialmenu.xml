@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page alwaysontop="true" BackgroundOpacity="1.000" Name="RadialMenu" RStyleDefault="/FrameStyles.win_gold_menu" ScrollExtent="117,135" Size="117,135" Visible="false">
+            <RadialMenu DataSource="RadialSource" MaximumSize="121,52" MinimumSize="121,52" Name="RadialMenuControl" ScrollExtent="121,52" Size="121,52" Style="RadialStyle" />
+            <DataSource Name="RadialSource">
+                <Data Name="Choice1" text=":01575474fbf63870:Menu Choice 1" />
+                <Data Name="Choice4" text=":015754748b9cccff:Menu Choice 4" />
+            </DataSource>
+            <RadialMenuStyle ButtonStyleN="/ButtonStyles.text_button_menu" ItemHeight="18" ItemMargin="4,8" Name="RadialStyle" />
+        </Page>

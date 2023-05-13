@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" Location="702,57" Name="SearchResults" PackLocation="right,top" PackSize="f,a" Size="319,708" Visible="false">
+<DataSourceContainer Name="TreeDSContainer" />
+<Scrollbar ArrowPressSound="sounds/button" Control="TreeView" HideIfUnnecessary="true" Location="298,0" Name="TreeViewScroll" PackLocation="right,top" PackSize="f,a" Size="22,708" Style="/CommonElements.ScrollbarVertical.data.style" />
+<TreeView BackgroundColor="#201020" BackgroundOpacity="0.498" DataSourceContainer="TreeDSContainer" MinimumScrollExtent="302,0" Name="TreeView" PackLocation="left,top" PackSize="a,a" SelectionAllowedMultiRow="false" ShowChecks="false" Size="302,708" Style="TreeViewStyle" UserResizable="true" />
+<TreeViewStyle CellHeight="18" DefaultTextStyle="/Fonts.FontArial14" GridColor="#FFDDAA" ImageStyleChecked="/imagelist.widget_check_on" ImageStyleCollapsed="/imagelist.widget_tree_expand" ImageStyleExpanded="/imagelist.widget_tree_contract" ImageStyleUnchecked="/imagelist.widget_check_off" Indentation="15" Name="TreeViewStyle" RStyleActivated="RectStyle" RStyleDefault="RectStyle" RStyleSelected="RectStyle" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
+<RectangleStyle Color="#FFDDAA" Name="RectStyle" />
+<Page AbsorbsInput="false" BackgroundColor="#201020" BackgroundOpacity="0.498" Location="302,0" Name="ScrollBkg" PackLocation="right,top" PackSize="f,a" Size="22,736" />
+<Page AbsorbsInput="false" BackgroundColor="#201020" BackgroundOpacity="0.498" Location="0,721" Name="MarginBkg" PackLocation="left,bottom" Size="302,15" UserResizable="true" />
+</Page>

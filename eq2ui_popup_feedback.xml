@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="234,129" Name="FeedbackReport" ScrollExtent="580,510" Size="580,510" UserMovable="true" version="1.0.1" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="35,38" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="495,24" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="495,24" TextAlignment="Center" TextColor="#FBF1D9">:f:Provide Feedback</Text>
+            <Button Location="38,435" MaximumSize="16384,38" MinimumSize="38,38" Name="CopyButton" PackLocation="cfc,bottom" ScrollExtent="170,38" Size="170,38" Style="/CommonElements.LargePushButton.data.style">:f:Copy to Forums</Button>
+            <Button Location="205,435" MaximumSize="16384,38" MinimumSize="38,38" Name="SendButton" PackLocation="cfc,bottom" ScrollExtent="170,38" Size="170,38" Style="/CommonElements.LargePushButton.data.style">:d572af9ce2189b2a:Send Feedback</Button>
+            <Button Location="372,435" MaximumSize="16384,38" MinimumSize="38,38" Name="CancelButton" PackLocation="cfc,bottom" ScrollExtent="170,38" Size="170,38" Style="/CommonElements.LargePushButton.data.style">:d572af9cae453fbb:Cancel</Button>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="36,59" Name="Help" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="508,178" Size="508,178">
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,10" Name="Text" PackSize="a,a" ScrollExtent="483,322" Size="483,161" TextAlignment="Center" TextAlignmentVertical="Center" TruncateElipsis="false">:f:Use this form to send any comments or suggestions that you may have about the game. If you have witnessed a potential bug, use the /bug command to report the problem. If you have an issue regarding another player, use the /report command, followed by /petition to notify customer service. If you notice any spelling mistakes, please use the /typo command.
+                
+                Please note you will not receive a response when submitting feedback through this window. Pressing the \#FFFF00Copy to Forums\/c button will copy your report to your clipboard and redirect you to the general section of the forums where you are encouraged to provide your feedback there, as well.</Text>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="38,239" Name="Feedback" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="504,193" Size="504,193">
+                <Scrollbar ArrowPressSound="sounds/button" Control="Textbox" HideIfUnnecessary="true" Location="472,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,173" Size="22,173" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,10" MaximumSize="485,16384" MaxLines="Unlimited" Name="Textbox" PackSize="absolute,absolute" ScrollExtent="459,173" Size="459,173" Style="/CommonElements.Textbox.data.system_style" WrapWidth="Automatic" />
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="520,450" Size="520,450" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="580,510" Size="580,510" />
+        </Page>

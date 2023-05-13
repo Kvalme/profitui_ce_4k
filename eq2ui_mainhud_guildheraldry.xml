@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="252,134" Name="GuildHeraldry" ScrollExtent="515,500" Size="515,500" UserMovable="true" version="1.0" Visible="false">
+            <Namespace Name="Checkboxes">
+                <Namespace Name="Emblem">
+                    <CheckboxStyle Name="style" RStyleActivated="checked.rect" RStyleDefault="unchecked.rect" RStyleMouseOver="mouseover.rect" />
+                    <Namespace Name="checked">
+                        <ImageStyle Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="826,750,864,788" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <ImageStyle Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="864,750,902,788" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="unchecked">
+                        <ImageStyle Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="902,750,940,788" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                </Namespace>
+                <Namespace Name="Edge">
+                    <CheckboxStyle Name="style" RStyleActivated="checked.rect" RStyleDefault="unchecked.rect" RStyleMouseOver="mouseover.rect" />
+                    <Namespace Name="checked">
+                        <ImageStyle Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="940,750,978,788" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <ImageStyle Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="978,750,1016,788" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="unchecked">
+                        <ImageStyle Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="274,789,312,827" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                </Namespace>
+                <Namespace Name="Pattern">
+                    <CheckboxStyle Name="style" RStyleActivated="checked.rect" RStyleDefault="unchecked.rect" RStyleMouseOver="mouseover.rect" />
+                    <Namespace Name="checked">
+                        <ImageStyle Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="312,789,350,827" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <ImageStyle Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="350,789,388,827" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="unchecked">
+                        <ImageStyle Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="388,789,426,827" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                </Namespace>
+            </Namespace>
+            <Namespace Name="Arrows">
+                <ButtonStyle Name="left" RStyleActivated="data.pressed.startcap_rect" RStyleDefault="data.default.startcap_rect" />
+                <ButtonStyle Name="right" RStyleActivated="data.pressed.endcap_rect" RStyleDefault="data.default.endcap_rect" />
+                <Namespace Name="data">
+                    <Namespace Name="pressed">
+                        <RectangleStyle Center="startcap" Name="startcap_rect" />
+                        <RectangleStyle Center="endcap" Name="endcap_rect" />
+                        <ImageStyle Name="startcap">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="959,433,981,456" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="endcap">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="981,433,1003,456" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="default">
+                        <RectangleStyle Center="endcap" Name="endcap_rect" />
+                        <ImageStyle Name="startcap">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="891,789,913,812" />
+                        </ImageStyle>
+                        <RectangleStyle Center="startcap" Name="startcap_rect" />
+                        <ImageStyle Filter="true" Name="endcap">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="913,789,935,812" />
+                        </ImageStyle>
+                    </Namespace>
+                </Namespace>
+            </Namespace>
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="246,136" Name="ErrorText" ScrollExtent="220,150" Size="220,150" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FF0000">:279938be53cd6062:Error Text Goes Here</Text>
+            <Page ContextCapable="true" Location="22,414" Name="Emblem" ScrollExtent="54,60" Size="54,60">
+                <Checkbox BackgroundOpacity="1.000" Location="8,4" Name="EmblemCheck" ScrollExtent="38,38" Size="38,38" Style="Checkboxes.Emblem.style" />
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="0,44" Margin="1,1,1,1" Name="Label" ScrollExtent="54,48" Size="54,16" TextAlignment="Center">:279938be8b61f9b4:Emblem</Text>
+            </Page>
+            <Page ContextCapable="true" Location="85,414" Name="Edge" ScrollExtent="54,60" Size="54,60">
+                <Checkbox BackgroundOpacity="1.000" Location="8,4" Name="EdgeCheck" ScrollExtent="38,38" Size="38,38" Style="Checkboxes.Edge.style" />
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="0,44" Margin="1,1,1,1" Name="Label" ScrollExtent="54,25" Size="54,16" TextAlignment="Center">:279938be2acb83a7:Edge</Text>
+            </Page>
+            <Page ContextCapable="true" Location="148,414" Name="Pattern" ScrollExtent="54,60" Size="54,60">
+                <Checkbox BackgroundOpacity="1.000" Location="8,4" Name="PatternCheck" ScrollExtent="38,38" Size="38,38" Style="Checkboxes.Pattern.style" />
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="0,44" Margin="1,1,1,1" Name="Label" ScrollExtent="54,48" Size="54,16" TextAlignment="Center">:279938be93fe3aed:Pattern</Text>
+            </Page>
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="220,44" Name="EmblemLabel" ScrollExtent="274,23" Size="274,20" TextAlignment="Center">:279938be6ff7de38:Emblem Image</Text>
+            <Page ContextCapable="true" Location="220,60" Name="EmblemPage" ScrollExtent="274,128" Size="274,128">
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="72,0" Name="NoEmblem" ScrollExtent="128,128" Size="128,128" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FF0000">:279938be0c8c1fa7:No Emblem</Text>
+                <Image Location="72,0" Name="EmblemImage" ScrollExtent="128,128" Size="128,128" />
+                <Button Location="40,53" Name="Prev" ScrollExtent="22,22" Size="22,22" Style="Arrows.left" />
+                <Button Location="210,53" Name="Next" ScrollExtent="22,22" Size="22,22" Style="Arrows.right" />
+            </Page>
+            <Page BackgroundOpacity="1.000" ContextCapable="true" Location="229,220" Name="Color1" ScrollExtent="257,65" Size="257,65" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="227,204" Name="Color1Label" ScrollExtent="260,23" Size="260,20" TextAlignment="Center">:279938becc9c928e:Emblem Color</Text>
+            <Page BackgroundOpacity="1.000" ContextCapable="true" Location="229,320" Name="Color2" ScrollExtent="257,65" Size="257,65" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="227,304" Name="Color2Label" ScrollExtent="260,23" Size="260,20" TextAlignment="Center">:279938be603ab68a:Cloak Color</Text>
+            <PaperDoll Location="15,30" Name="Paperdoll" paperdollbackgroundcolor="/ColorStyles.paperdoll_background" ScrollExtent="200,375" Size="200,375" />
+            <Page backdropcontrol="true" BackgroundOpacity="0.824" Location="15,30" Name="Tint" ScrollExtent="200,374" Size="200,374" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="214,410" Margin="1,1,1,1" Name="ChangeCost" ScrollExtent="286,48" Size="286,35" TextAlignment="Center" TextAlignmentVertical="Center">:279938be96c9e4d2:2#FFFFFFp/c 45#FFFF00g/c to change</Text>
+            <Button Location="213,446" Name="Change" ScrollExtent="92,32" Size="92,32" Style="/CommonElements.PushButton.data.style">:279938beb80404e9:Change</Button>
+            <Button Location="308,446" Name="Link" ScrollExtent="92,32" Size="92,32" Style="/CommonElements.PushButton.data.style" Tooltip=":279938bed27c6cc5_1:Link this cloak design into chat">:279938be6961c930_1:Link</Button>
+            <Button Location="403,446" Name="Close" ScrollExtent="92,32" Size="92,32" Style="/CommonElements.PushButton.data.style">:279938be2d3f513f:Close</Button>
+            <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="203,4" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="308,415" Size="308,415" />
+            <Page ContextCapable="true" Location="20,30" Name="ContextCatcher" ScrollExtent="480,450" Size="480,450" />
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="515,500" Size="515,500">
+                <Button Location="459,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":279938beec278586:Window Settings" UserMovable="true" />
+                <Button Location="439,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":0907f5af574a0c6d:Help" UserMovable="true" />
+                <Button Location="479,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":279938be2d3f513f_1:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="325,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:279938bed393d1d7:Guild Heraldry</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="515,500" Size="515,500" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,398" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="489,102" Size="489,102" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="515,500" Size="515,500" />
+            </Page>
+        </Page>

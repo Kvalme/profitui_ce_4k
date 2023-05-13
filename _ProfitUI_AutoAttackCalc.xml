@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="254,53" MaximumSize="100,153" Name="ProfitUI_AutoAttackCalc" OnHoverOut="User_Melee_Casting_Speed.Enabled=false
+User_Ranged_Casting_Speed.Enabled=false
+User_Melee_Recovery_Speed.Enabled=false
+User_Ranged_Recovery_Speed.Enabled=false
+Spell_Cast_Percent.Enabled=false
+Spell_Recovery_Percent.Enabled=false
+EnableInput.GetsInput=true" OnShow="
+COND=cl_language==German
+Calculate.gm9_LocalAdjustment=COND ? 10 : 1
+COND=cl_language==French
+Calculate.gm9_LocalAdjustment=COND ? 10 : Calculate.gm9_LocalAdjustment
+COND=cl_language==English
+gm9_LocalOffset=COND ? 0 : 3
+DisplayFrame.P.Left=DisplayFrame.P.Left + gm9_LocalOffset
+DisplayFrame.S.Left=DisplayFrame.S.Left + gm9_LocalOffset
+DisplayFrame.R.Left=DisplayFrame.R.Left + gm9_LocalOffset
+Spell_Cast_Percent.Text=ProfitUI_AutoAttackCalc_Presets.Spell_Cast_Percent
+Spell_Recovery_Percent.Text=ProfitUI_AutoAttackCalc_Presets.Spell_Recovery_Percent
+User_Melee_Casting_Speed.Text=ProfitUI_AutoAttackCalc_Presets.User_Melee_Casting_Speed
+User_Melee_Recovery_Speed.Text=ProfitUI_AutoAttackCalc_Presets.User_Melee_Recovery_Speed
+User_Ranged_Casting_Speed.Text=ProfitUI_AutoAttackCalc_Presets.User_Ranged_Casting_Speed
+User_Ranged_Recovery_Speed.Text=ProfitUI_AutoAttackCalc_Presets.User_Ranged_Recovery_Speed
+Calculate.Press=true" PackLocation="center,center" ScrollExtent="100,153" Size="100,153" Startup.Press="true" UserMovable="true" UserResizable="true">
+<Button Location="2,70" Name="EnableInput" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0" OnPress="Parent.User_Melee_Casting_Speed.Enabled=true
+Parent.User_Ranged_Casting_Speed.Enabled=true
+Parent.User_Melee_Recovery_Speed.Enabled=true
+Parent.User_Ranged_Recovery_Speed.Enabled=true
+Parent.Spell_Cast_Percent.Enabled=true
+Parent.Spell_Recovery_Percent.Enabled=true
+GetsInput=false" Opacity="0.000" PackLocation="left,top" PackSize="a,a" ScrollExtent="95,79" Size="95,79" Style="/ProfitUI_Styles.invisible" TextMaxLines="0" Tooltip="Click here to enable editing of parameters. The input fields will be disabled again after you move your mouse away from the window." UserMovable="true">Click
+to
+enable
+input</Button>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="-1,69" Name="User_Melee_Casting_Speed_Label" Opacity="0.600" PackLocation="right,top" ScrollExtent="64,20" Size="64,20" TextAlignment="Right" TextAlignmentVertical="Center">Casting (M):</Text>
+<Textbox Cursor="/Cursor.Text" Enabled="false" Location="73,71" Name="User_Melee_Casting_Speed" OnHoverIn="BackgroundOpacity=1" OnHoverOut="BackgroundOpacity=0 
+set_focus Custom.ProfitUI_AutoAttackCalc
+Parent.Calculate.Press=true" PackLocation="right,top" ScrollExtent="22,20" Size="22,20" Style="/CommonElements.Textbox.data.style" Tooltip="Enter the mean melee casting speed for your CAs (not saved).
+The preset value can be permanently edited in _ProfitUI_AutoAttackCalc_Presets.txt" WrapWidth="Automatic">0.5</Textbox>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="-1,89" Name="User_Melee_Recovery_Speed_Label" Opacity="0.600" PackLocation="right,top" ScrollExtent="64,20" Size="64,20" TextAlignment="Right" TextAlignmentVertical="Center">Recov. (M):</Text>
+<Textbox Cursor="/Cursor.Text" Enabled="false" Location="73,91" Name="User_Melee_Recovery_Speed" OnHoverIn="BackgroundOpacity=1" OnHoverOut="BackgroundOpacity=0 
+set_focus Custom.ProfitUI_AutoAttackCalc
+Parent.Calculate.Press=true" PackLocation="right,top" ScrollExtent="22,20" Size="22,20" Style="/CommonElements.Textbox.data.style" Tooltip="Enter the mean melee recovery speed for your CAs (not saved).
+The preset value can be permanently edited in _ProfitUI_AutoAttackCalc_Presets.txt" WrapWidth="Automatic">0.5</Textbox>
+<include>_ProfitUI_AutoAttackCalc_Presets.txt</include>
+<Button Enabled="false" Location="0,136" Name="ManualRecalc" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0" OnPress="Parent.Calculate.Press=true" Opacity="0.000" PackLocation="left,bottom" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip="Force recalculation (will otherwise happen automatically each time you fight)" />
+<Button Name="CloseButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0" OnPress="Parent.WC_CloseButton.Press=true" Opacity="0.000" PackLocation="left,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":e98f9a112d3f513f:Close" />
+<Button Name="WC_CloseButton" Visible="false" />
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="-1,109" Name="User_Ranged_Casting_Speed_Label" Opacity="0.600" PackLocation="right,top" ScrollExtent="64,20" Size="64,20" TextAlignment="Right" TextAlignmentVertical="Center">Casting (R):</Text>
+<Textbox Cursor="/Cursor.Text" Enabled="false" Location="73,111" Name="User_Ranged_Casting_Speed" OnHoverIn="BackgroundOpacity=1" OnHoverOut="BackgroundOpacity=0 
+set_focus Custom.ProfitUI_AutoAttackCalc
+Parent.Calculate.Press=true" PackLocation="right,top" ScrollExtent="22,20" Size="22,20" Style="/CommonElements.Textbox.data.style" Tooltip="Enter the mean ranged casting speed for your CAs (not saved).
+The preset value can be permanently edited in _ProfitUI_AutoAttackCalc_Presets.txt" WrapWidth="Automatic">1.5</Textbox>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="-1,129" Name="User_Ranged_Recovery_Speed_Label" Opacity="0.600" PackLocation="right,top" ScrollExtent="64,20" Size="64,20" TextAlignment="Right" TextAlignmentVertical="Center">Recov. (R):</Text>
+<Textbox Cursor="/Cursor.Text" Enabled="false" Location="73,131" Name="User_Ranged_Recovery_Speed" OnHoverIn="BackgroundOpacity=1" OnHoverOut="BackgroundOpacity=0 
+set_focus Custom.ProfitUI_AutoAttackCalc
+Parent.Calculate.Press=true" PackLocation="right,top" ScrollExtent="22,20" Size="22,20" Style="/CommonElements.Textbox.data.style" Tooltip="Enter the mean ranged recovery speed for your CAs (not saved).
+The preset value can be permanently edited in _ProfitUI_AutoAttackCalc_Presets.txt" WrapWidth="Automatic">0.5</Textbox>
+<Page AbsorbsInput="false" Location="2,4" Name="DisplayFrame" PackLocation="right,top" ScrollExtent="88,68" Size="88,68">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Name="P_Label" Opacity="0.600" ScrollExtent="61,20" Size="61,20" TextAlignment="Right" TextAlignmentVertical="Center">Primary:</Text>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="0,23" Name="S_Label" Opacity="0.600" ScrollExtent="61,20" Size="61,20" TextAlignment="Right" TextAlignmentVertical="Center">Secondary:</Text>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="0,46" Name="R_Label" Opacity="0.600" ScrollExtent="61,20" Size="61,20" TextAlignment="Right" TextAlignmentVertical="Center">Ranged:</Text>
+<Text DynamicData="/GameData.Stats.Primary_Delay" DynamicDataFilter="0001" Font="/TextStyles.Large.LargeStyle" Location="51,0" Name="P" PackLocation="right,top" ScrollExtent="51,20" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="37,20" TextAlignment="Right" TextAlignmentVertical="Center" Tooltip="Mean number of melee CAs possible between auto attacks with primary weapon">0.0</Text>
+<Text DynamicData="/GameData.Stats.Secondary_Delay" DynamicDataFilter="0001" Font="/TextStyles.Large.LargeStyle" Location="51,23" Name="S" PackLocation="right,top" ScrollExtent="51,20" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="37,20" TextAlignment="Right" TextAlignmentVertical="Center" Tooltip="Mean number of melee CAs possible between auto attacks with secondary weapon">0.0</Text>
+<Text DynamicData="/GameData.Stats.Ranged_Delay" DynamicDataFilter="0001" Font="/TextStyles.Large.LargeStyle" Location="51,46" Name="R" PackLocation="right,top" ScrollExtent="51,20" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="37,20" TextAlignment="Right" TextAlignmentVertical="Center" Tooltip="Mean number of ranged CAs possible between auto attacks with ranged weapon">0.0</Text>
+</Page>
+<Button DynamicData="/GameData.Self.AutoAttack" Name="Calculate" OnPress="Left=Parent.Spell_Cast_Percent.Text
+Top=Parent.Spell_Recovery_Percent.Text
+gm9_TMP=Parent.User_Melee_Casting_Speed.Text * Left / 100
+gm9_CASTING=Parent.User_Melee_Casting_Speed.Text - gm9_TMP
+gm9_TMP=Parent.User_Melee_Recovery_Speed.Text * Top / 100
+gm9_RECOVERY=Parent.User_Melee_Recovery_Speed.Text - gm9_TMP
+gm9_DIVISOR=gm9_CASTING + gm9_RECOVERY
+Parent.DisplayFrame.P.Text=Parent.Primary_Delay.Text / gm9_DIVISOR
+Parent.DisplayFrame.P.Text=Parent.DisplayFrame.P.Text / gm9_LocalAdjustment
+Parent.DisplayFrame.S.Text=Parent.Secondary_Delay.Text / gm9_DIVISOR
+Parent.DisplayFrame.S.Text=Parent.DisplayFrame.S.Text/ gm9_LocalAdjustment
+gm9_TMP=Parent.User_Ranged_Casting_Speed.Text * Left / 100
+gm9_CASTING=Parent.User_Ranged_Casting_Speed.Text - gm9_TMP
+gm9_TMP=Parent.User_Ranged_Recovery_Speed.Text * Top / 100
+gm9_RECOVERY=Parent.User_Ranged_Recovery_Speed.Text - gm9_TMP
+gm9_DIVISOR=gm9_CASTING + gm9_RECOVERY
+Parent.DisplayFrame.R.Text=Parent.Ranged_Delay.Text / gm9_DIVISOR
+Parent.DisplayFrame.R.Text=Parent.DisplayFrame.R.Text / gm9_LocalAdjustment" OnShow="Press=true" Visible="false" />
+<Text DynamicData="/GameData.Stats.Spell_Cast_Percent" Name="Spell_Cast_Percent" Visible="false" />
+<Text DynamicData="/GameData.Stats.Spell_Recovery_Percent" Name="Spell_Recovery_Percent" Visible="false" />
+<Text DynamicData="/GameData.Stats.Primary_Delay" Name="Primary_Delay" Visible="false" />
+<Text DynamicData="/GameData.Stats.Secondary_Delay" Name="Secondary_Delay" Visible="false" />
+<Text DynamicData="/GameData.Stats.Ranged_Delay" Name="Ranged_Delay" Visible="false" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" framecontrol="true" Location="-12,-24" Name="Frame" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="123,192" Size="123,192" />
+<Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="-107,-38" Name="Bkg" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="296,263" Size="296,263" />
+</Page>

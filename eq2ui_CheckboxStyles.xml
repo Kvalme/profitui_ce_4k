@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Namespace Name="CheckboxStyles">
+        <Namespace Name="LFG">
+            <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+            <RectangleStyle Center="activated_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="activated_mouseover_rect" />
+            <ImageStyle Filter="true" Name="default">
+                <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="230,793,260,813" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="default_mouseover">
+                <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="260,793,290,813" />
+            </ImageStyle>
+            <RectangleStyle Center="default" CenterShrinkH="true" CenterShrinkV="true" Name="default_rect" />
+            <RectangleStyle Center="default_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="default_mouseover_rect" />
+            <CheckboxStyle MouseOverSound="ui_mouseover" Name="style" NormalTextStyle="/Fonts.FontZapf15" RStyleActivated="activated_rect" RStyleDefault="default_rect" RStyleMouseOver="default_mouseover_rect" RStyleMouseOverActivated="activated_mouseover_rect" SetSound="ui_released" UnsetSound="ui_released" />
+            <ImageStyle Filter="true" Name="activated">
+                <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="290,793,320,813" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="activated_mouseover">
+                <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="320,793,350,813" />
+            </ImageStyle>
+        </Namespace>
+        <CheckboxStyle Name="widget_check" NormalTextStyle="/Fonts.FontZapf15" RStyleActivated="/rectlist.widget_check_on" RStyleDefault="/rectlist.widget_check_off" RStyleDisabled="/rectlist.widget_check_off_disabled" RStyleDisabledActivated="/rectlist.widget_check_on_disabled" RStyleMouseOver=" " TextOffset="20,1" />
+        <CheckboxStyle CheckboxOffset="0,2" Name="collapse_check" NormalTextStyle="/Fonts.FontZapf18" RStyleActivated="/rectlist.collapse_on" RStyleDefault="/rectlist.collapse_off" RStyleMouseOver=" " style="/CheckboxStyles.widget_check" TextOffset="20,1" />
+        <CheckboxStyle Name="lock_gold" RStyleActivated="/rectlist.lock_gold_closed" RStyleDefault="/rectlist.lock_gold_open" />
+    </Namespace>

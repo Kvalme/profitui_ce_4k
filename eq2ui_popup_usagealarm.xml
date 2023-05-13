@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2usescomwndcontrols="true" Location="264,259" MaximumSize="1024,1024" MinimumSize="287,198" Name="UsageAlarm" ScrollExtent="500,250" Size="500,250" UserMovable="true" Visible="false">
+            <Text Font="/TextStyles.Large.LargeStyle" Location="55,50" Name="MsgText" PackSize="absolute,absolute" ScrollExtent="390,110" Size="390,110" TextAlignment="Center" TextAlignmentVertical="Center">:4551d1d086fff61c:Message</Text>
+            <Page BackgroundOpacity="1.000" Location="40,40" Name="RoundedGrouper" PackSize="absolute,absolute" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="420,130" Size="420,130" />
+            <Button Location="345,177" MaximumSize="16384,38" MinimumSize="38,38" Name="OkButton" PackLocation="right,bottom" ScrollExtent="105,38" Size="105,38" Style="/CommonElements.LargePushButton.data.style">:4551d1d013a7061a:Ok</Button>
+            <Button Location="50,177" MaximumSize="16384,38" MinimumSize="38,38" Name="ConfigAlarmsButton" PackLocation="left,bottom" ScrollExtent="280,38" Size="280,38" Style="/CommonElements.LargePushButton.data.style">:4551d1d070d50e8e:Configure Usage Alarms</Button>
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="440,190" Size="440,190" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="500,250" Size="500,250" />
+        </Page>

@@ -1,0 +1,983 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page BackgroundColor="#00FF00" BackgroundOpacity="0.475" Name="WindowElements" PackSize="1,1" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <Page Location="365,65" Name="CenterFrame" ScrollExtent="540,413" Size="540,413">
+            <Page AbsorbsInput="false" Name="CopyAndPasteMeMiniWindow" PackSize="absolute,absolute" ScrollExtent="540,413" Size="540,413">
+                <Image Location="-1,306" Name="SW_Corner" PackLocation="right,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="data.ne_corner.center" />
+                <Image Location="435,306" Name="SE_Corner" PackLocation="right,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="data.nw_corner.center" />
+                <Image Location="-2,17" Name="NW_Corner" PackLocation="left,top" ScrollExtent="106,107" Size="106,107" Stretch="false" Style="data.nw_corner.center" />
+                <Image Location="434,17" Name="NE_Corner" PackLocation="right,top" ScrollExtent="108,96" Size="108,96" Stretch="false" Style="data.ne_corner.center" />
+                <Button Location="501,42" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.close.style" Tooltip=":cf6d745a2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="15,31" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="514,370" Size="514,370" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="17,34" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.bkg.rect" ScrollExtent="507,363" Size="507,363" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="90,0" Name="LeftGrouper" PackSize="a,f" RStyleDefault="data.left_grouper.rect" ScrollExtent="360,34" Size="360,34">
+                    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="54,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="253,30" ShadowStyle="/ShadowStylesNew.Outline.style" Size="253,30" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:cf6d745a7dd810c9:CenterFrame</Text>
+                </Page>
+            </Page>
+            <Namespace Name="data">
+                <Namespace Name="nw_corner">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="813,407,921,501" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="frame">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="922,964,942,1024" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="1004,699,1024,710" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="842,533,907,544" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="1004,714,1024,725" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="942,964,962,1024" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="1004,899,1024,911" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="777,533,842,545" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="1004,684,1024,696" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="611,163,669,221" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+                </Namespace>
+                <Namespace Name="ne_corner">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="705,407,813,503" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="close">
+                    <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="WindowFrame.data.close.pressed.rect" RStyleDefault="WindowFrame.data.close.default.rect" RStyleDisabled="WindowFrame.data.close.disabled.rect" RStyleMouseOver="WindowFrame.data.close.mouseover.rect" RStyleMouseOverSelected="WindowFrame.data.close.pressed.rect" RStyleSelected="WindowFrame.data.close.pressed.rect" />
+                    <Namespace Name="pressed">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="812,793,830,811" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="830,793,848,811" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="disabled">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="848,793,866,811" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="default">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="866,793,884,811" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                </Namespace>
+                <Namespace Name="left_grouper">
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="438,260,494,294" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="494,260,550,294" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="832,948,1004,982" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" East="e" Name="rect" West="w" />
+                </Namespace>
+                <Namespace Name="bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="139,0,197,270" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="727,163,785,219" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="434,589,766,645" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="381,260,438,316" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="197,0,254,270" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="843,163,900,218" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="0,948,332,1003" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="785,163,843,218" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="371,668,703,938" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Location="763,515" Name="ThickDesktopWindowFrame" ScrollExtent="200,200" Size="200,200">
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="39,49" Name="Label" ScrollExtent="151,46" ShadowStyle="/ShadowStylesNew.Drop.style" Size="151,19">:63b143de5f518caa:DesktopWindowFrame</Text>
+            <Page Name="CopyAndPasteMe" PackSize="absolute,absolute" ScrollExtent="200,200" Size="200,200">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="200,200" Size="200,200" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,3" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.bkg.rect" ScrollExtent="195,194" Size="195,194" />
+            </Page>
+            <Namespace Name="data">
+                <Namespace Name="right_grouper">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="40,895,76,974" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="551,163,611,242" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="443,684,579,763" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterStretchH="false" East="e" Name="rect" West="w" />
+                </Namespace>
+                <Namespace Name="frame">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="320,200,340,260" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="320,270,340,281" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="337,270,402,281" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="402,270,422,281" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="402,200,422,260" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="402,179,422,191" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="337,179,402,191" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="320,179,340,191" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="341,202,399,260" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+                </Namespace>
+                <Namespace Name="bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="305,141,315,221" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="768,763,778,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="904,229,984,239" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="778,763,788,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="315,141,325,221" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="788,763,798,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="332,990,412,1000" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="798,763,808,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="359,932,437,1010" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Location="0,500" Name="DesktopWindowFrame" ScrollExtent="200,200" Size="200,200">
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="39,49" Name="Label" ScrollExtent="151,46" ShadowStyle="/ShadowStylesNew.Drop.style" Size="151,19">:cf6d745a5f518caa:DesktopWindowFrame</Text>
+            <Page Name="CopyAndPasteMe" PackSize="absolute,absolute" ScrollExtent="200,200" Size="200,200">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="200,200" Size="200,200" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.bkg.rect" ScrollExtent="197,196" Size="197,196" />
+            </Page>
+            <Namespace Name="data">
+                <Namespace Name="frame">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="962,964,982,1024" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="956,298,976,303" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="961,1017,1021,1022" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="976,298,996,303" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="982,964,1002,1024" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="1004,975,1024,981" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="962,995,1022,1001" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="717,1009,737,1015" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="669,163,727,221" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+                </Namespace>
+                <Namespace Name="bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="164,190,174,270" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="164,271,174,281" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="175,271,255,281" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="256,271,266,281" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="256,190,266,270" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="256,179,266,189" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="175,179,255,189" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="164,179,174,189" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="176,191,254,269" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Location="520,0" Name="DialogFrame" ScrollExtent="500,500" Size="500,500">
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="39,49" Name="Label" ScrollExtent="151,23" ShadowStyle="/ShadowStylesNew.Drop.style" Size="151,19">:63b143dec953cced:DialogFrame</Text>
+            <Page BackgroundOpacity="1.000" Name="CopyAndPasteMe" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="400,300" Size="400,300" />
+            <Namespace Name="data">
+                <Namespace Name="frame">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="951,0,1024,251" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="585,932,658,1003" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="283,383,559,454" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="511,932,585,1003" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="0,589,74,840" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="515,800,589,870" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="559,383,835,453" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="589,800,662,870" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="0,617,276,868" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" TitleStretch="false" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Location="520,300" Name="FloaterFrame" ScrollExtent="500,500" Size="500,500" Visible="false">
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="39,49" Name="Label" ScrollExtent="151,23" ShadowStyle="/ShadowStylesNew.Drop.style" Size="151,19">:63b143de6f2b5153:FloaterFrame</Text>
+            <Page BackgroundOpacity="1.000" Name="CopyAndPasteMe" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="400,300" Size="400,300" />
+            <Namespace Name="data">
+                <Namespace Name="frame">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="4,586,77,837" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="4,837,77,908" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="77,837,353,908" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="353,837,427,908" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="353,586,427,837" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="353,516,427,586" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="77,516,353,586" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="4,516,77,586" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="77,586,353,837" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Location="212,508" Name="HollowFrame" ScrollExtent="293,181" Size="293,181">
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="39,49" Name="Label" ScrollExtent="151,23" ShadowStyle="/ShadowStylesNew.Drop.style" Size="151,19">:63b143de3ccecba1:HollowFrame</Text>
+            <Page BackgroundOpacity="1.000" Name="CopyAndPasteMe" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="293,181" Size="293,181" />
+            <Namespace Name="data">
+                <Namespace Name="frame">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="1016,212,1024,222" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="20,550,22,909" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="1022,995,1024,1001" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="580,259,973,265" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="1022,924,1024,930" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="22,550,24,909" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="1021,251,1023,256" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="580,265,973,270" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="1022,298,1024,303" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Name="WindowFrame" ScrollExtent="500,500" Size="500,500">
+            <Page AbsorbsInput="false" Name="CopyAndPasteMeSplitWindow" PackSize="absolute,absolute" ScrollExtent="415,366" Size="415,366" Visible="false">
+                <Button Location="357,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.settings.style" Tooltip=":63b143deec278586:Window Settings" UserMovable="true" />
+                <Button Location="362,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.help.style" Tooltip=":63b143de574a0c6d:Help" UserMovable="true" Visible="false" />
+                <Button Location="379,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.close.style" Tooltip=":63b143de2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="245,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:63b143deec278586_1:Window Settings</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="415,366" Size="415,366" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="0,296" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="data.lower_tab_bkg.rect" ScrollExtent="415,70" Size="415,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,3" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.bkg.rect" ScrollExtent="405,310" Size="405,310" />
+            </Page>
+            <Page AbsorbsInput="false" Name="CopyAndPasteMeUntabbedWindow" PackSize="absolute,absolute" ScrollExtent="500,500" Size="500,500" Visible="false">
+                <Button Location="446,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.settings.style" Tooltip=":63b143deec278586_4:Window Settings" UserMovable="true" />
+                <Button Location="447,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.help.style" Tooltip=":63b143de574a0c6d_1:Help" UserMovable="true" Visible="false" />
+                <Button Location="464,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.close.style" Tooltip=":63b143de2d3f513f_3:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="330,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="26,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:63b143def1cdb8d8:WindowFrame</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="500,500" Size="500,500" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.bkg.rect" ScrollExtent="500,500" Size="500,500" />
+            </Page>
+            <Page AbsorbsInput="false" Name="CopyAndPasteMeTabbedWindow" PackSize="absolute,absolute" ScrollExtent="491,490" Size="491,490">
+                <TabbedPane ActiveTab="0" DataSource="SampleSource" Location="30,426" Name="LowerTabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="431,28" Size="431,28" Style="data.lower_tab_data.tabbed_pane_style" />
+                <DataSource Name="SampleSource">
+                    <Data Name="Tab1" text=":63b143ded5d4101e:Tab1" />
+                    <Data Name="Tab2" text=":63b143de4cdd41a4:Tab2" />
+                    <Data Name="Tab3" text=":63b143de3bda7132:Tab3" />
+                </DataSource>
+                <TabbedPane ActiveTab="0" DataSource="SampleSource" Location="30,36" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="431,36" Size="431,36" Style="data.tab_data.tabbed_pane_style" />
+                <Button Location="433,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.settings.style" Tooltip=":63b143deec278586_3:Window Settings" UserMovable="true" />
+                <Button Location="438,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.help.style" Tooltip=":63b143de574a0c6d_2:Help" UserMovable="true" Visible="false" />
+                <Button Location="455,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.close.style" Tooltip=":63b143de2d3f513f_2:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="321,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:63b143def1cdb8d8_1:WindowFrame</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="491,490" Size="491,490" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="0,420" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="data.lower_tab_bkg.rect" ScrollExtent="491,70" Size="491,70" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="12,27" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="data.upper_tab_bkg.rect" ScrollExtent="467,43" Size="467,43" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,35" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.bkg.rect" ScrollExtent="491,455" Size="491,455" />
+            </Page>
+            <Namespace Name="data">
+                <Namespace Name="maximize">
+                    <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="pressed.rect" RStyleDefault="default.rect" RStyleDisabled="disabled.rect" RStyleMouseOver="mouseover.rect" RStyleMouseOverSelected="pressed.rect" RStyleSelected="pressed.rect" />
+                    <Namespace Name="pressed">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="884,793,902,811" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="902,793,920,811" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="disabled">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="920,793,938,811" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="default">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="938,793,956,811" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                </Namespace>
+                <Namespace Name="lower_tab_data">
+                    <Namespace Name="inactive">
+                        <RectangleStyle Center="center" CenterShrinkH="true" East="east" Name="rect" West="west" />
+                        <ImageStyle Filter="true" Name="east">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="950,716,976,744" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="west">
+                            <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="1000,1,1024,29" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="844,95,898,123" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="active">
+                        <RectangleStyle Center="center" CenterShrinkH="true" East="east" Name="rect" West="west" />
+                        <ImageStyle Filter="true" Name="east">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="976,716,1001,744" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="west">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="1001,316,1024,344" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="898,95,952,123" />
+                        </ImageStyle>
+                    </Namespace>
+                    <ButtonStyle DisabledTextColor="#FBF1D9" DisabledTextStyle="/TextStyles.Large.LargeStyle" MouseOverSound="ui_mouseover" MouseOverTextStyle="/TextStyles.Normal.NormalStyle" Name="tab_button_style" NormalTextColor="#C7C7C7" NormalTextStyle="/TextStyles.Normal.NormalStyle" PressedTextStyle="/TextStyles.Large.LargeStyle" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="active.rect" RStyleDefault="inactive.rect" RStyleDisabled="active.rect" RStyleDisabledActivated="active.rect" RStyleMouseOver="inactive.rect" RStyleMouseOverActivated="active.rect" RStyleMouseOverSelected="active.rect" RStyleSelected="active.rect" SelectedTextStyle="/TextStyles.Large.LargeStyle" />
+                    <TabbedPaneStyle ButtonStyle="tab_button_style" Name="tabbed_pane_style" />
+                </Namespace>
+                <Namespace Name="lower_tab_bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="116,840,154,884" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="428,780,466,796" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="580,354,951,370" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="466,780,502,796" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="230,840,266,884" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="907,533,943,543" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="533,474,904,484" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="984,229,1022,239" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="580,310,952,354" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+                </Namespace>
+                <Namespace Name="tab_data">
+                    <Namespace Name="inactive">
+                        <RectangleStyle Center="center" CenterShrinkH="true" East="east" Name="rect" West="west" />
+                        <ImageStyle Filter="true" Name="east">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="940,934,958,962" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="west">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="958,934,976,962" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="644,653,706,681" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="active">
+                        <RectangleStyle Center="center" CenterShrinkH="true" East="east" Name="rect" West="west" />
+                        <ImageStyle Filter="true" Name="east">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="886,934,904,966" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="west">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="904,934,922,966" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="458,653,520,685" />
+                        </ImageStyle>
+                    </Namespace>
+                    <ButtonStyle DisabledTextColor="#FBF1D9" DisabledTextStyle="/TextStyles.Large.LargeStyle" MouseOverSound="ui_mouseover" MouseOverTextStyle="/TextStyles.Normal.NormalStyle" Name="tab_button_style" NormalTextColor="#C7C7C7" NormalTextStyle="/TextStyles.Normal.NormalStyle" PressedTextStyle="/TextStyles.Large.LargeStyle" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="active.rect" RStyleDefault="inactive.rect" RStyleDisabled="active.rect" RStyleDisabledActivated="active.rect" RStyleMouseOver="inactive.rect" RStyleMouseOverActivated="active.rect" RStyleMouseOverSelected="active.rect" RStyleSelected="active.rect" SelectedTextStyle="/TextStyles.Large.LargeStyle" />
+                    <TabbedPaneStyle ButtonStyle="tab_button_style" Name="tabbed_pane_style" />
+                </Namespace>
+                <Namespace Name="upper_tab_bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="550,260,598,290" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="0,1005,369,1020" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="974,307,1024,332" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="434,534,803,559" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="952,95,1002,120" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="434,559,801,589" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" EastShrink="true" Name="rect" NorthShrink="true" South="s" SouthShrink="true" WestShrink="true" />
+                </Namespace>
+                <Namespace Name="settings">
+                    <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="pressed.rect" RStyleDefault="default.rect" RStyleDisabled="disabled.rect" RStyleMouseOver="mouseover.rect" RStyleMouseOverSelected="pressed.rect" RStyleSelected="pressed.rect" />
+                    <Namespace Name="pressed">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="956,793,974,811" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="974,793,992,811" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="disabled">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="992,793,1010,811" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="default">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="551,242,569,260" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                </Namespace>
+                <Namespace Name="help">
+                    <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="pressed.rect" RStyleDefault="default.rect" RStyleDisabled="disabled.rect" RStyleMouseOver="mouseover.rect" RStyleMouseOverSelected="pressed.rect" RStyleSelected="pressed.rect" />
+                    <Namespace Name="pressed">
+                        <RectangleStyle Center="center" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="569,242,587,260" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <RectangleStyle Center="center" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="587,242,605,260" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="disabled">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="605,242,623,260" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="default">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="623,242,641,260" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" Name="rect" />
+                    </Namespace>
+                </Namespace>
+                <Namespace Name="close">
+                    <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="pressed.rect" RStyleDefault="default.rect" RStyleDisabled="disabled.rect" RStyleMouseOver="mouseover.rect" RStyleMouseOverSelected="pressed.rect" RStyleSelected="pressed.rect" />
+                    <Namespace Name="pressed">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,67,499,85" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,46,499,64" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="disabled">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,25,499,43" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="default">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,4,499,22" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                </Namespace>
+                <Namespace Name="right_grouper">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="806,558,930,628" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="288,0,314,70" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="314,0,332,70" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" East="e" Name="rect" West="w" WestStretch="false" />
+                </Namespace>
+                <Namespace Name="frame">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="0,270,50,550" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="165,391,215,461" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="512,881,883,951" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="215,391,265,461" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="50,270,100,550" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="265,391,315,461" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="434,464,805,534" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="315,391,365,461" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/windowelements.tga" SourceRect="56,150,56,150" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+                </Namespace>
+                <Namespace Name="left_grouper">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="365,391,415,461" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="415,800,515,870" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="656,558,806,628" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" Name="rect" West="w" />
+                </Namespace>
+                <Namespace Name="bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="0,0,70,270" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="658,932,728,1003" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="668,80,1000,151" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="728,932,797,1003" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="70,0,139,270" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="859,0,928,79" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="668,1,1000,80" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="789,0,859,79" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="587,84,919,354" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Location="540,471" Name="MiniWindowFrame" ScrollExtent="209,272" Size="209,272">
+            <Page AbsorbsInput="false" Name="CopyAndPasteMeMiniWindow" PackSize="absolute,absolute" ScrollExtent="209,272" Size="209,272">
+                <Button Location="167,5" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.settings.style" Tooltip=":cf6d745aec278586:Window Settings" UserMovable="true" />
+                <Button Location="185,5" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="data.close.style" Tooltip=":cf6d745a2d3f513f_1:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="167,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="data.right_grouper.rect" ScrollExtent="40,21" Size="40,21" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,0" Name="LeftGrouper" PackSize="a,f" RStyleDefault="data.left_grouper.rect" ScrollExtent="165,21" Size="165,21">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="21,2" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="167,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="137,20" TextAlignmentVertical="Center" TextColor="#F0D080">:cf6d745a1809f3bc:MiniWindowFrame</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,21" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.frame.rect" ScrollExtent="209,251" Size="209,251" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,22" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.bkg.rect" ScrollExtent="209,250" Size="209,250" />
+            </Page>
+            <Namespace Name="data">
+                <Namespace Name="settings">
+                    <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="WindowFrame.data.settings.pressed.rect" RStyleDefault="WindowFrame.data.settings.default.rect" RStyleDisabled="WindowFrame.data.settings.disabled.rect" RStyleMouseOver="WindowFrame.data.settings.mouseover.rect" RStyleMouseOverSelected="WindowFrame.data.settings.pressed.rect" RStyleSelected="WindowFrame.data.settings.pressed.rect" />
+                    <Namespace Name="pressed">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,239,499,257" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,218,499,236" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="disabled">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,197,499,215" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="default">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,176,499,194" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                </Namespace>
+                <Namespace Name="close">
+                    <ButtonStyle MouseOverSound="ui_mouseover" Name="style" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="WindowFrame.data.close.pressed.rect" RStyleDefault="WindowFrame.data.close.default.rect" RStyleDisabled="WindowFrame.data.close.disabled.rect" RStyleMouseOver="WindowFrame.data.close.mouseover.rect" RStyleMouseOverSelected="WindowFrame.data.close.pressed.rect" RStyleSelected="WindowFrame.data.close.pressed.rect" />
+                    <Namespace Name="pressed">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,67,499,85" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,46,499,64" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="disabled">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,25,499,43" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                    <Namespace Name="default">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="481,4,499,22" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterStretchH="false" CenterStretchV="false" Name="rect" />
+                    </Namespace>
+                </Namespace>
+                <Namespace Name="right_grouper">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="982,471,1022,495" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" Name="rect" />
+                </Namespace>
+                <Namespace Name="frame">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="100,270,138,550" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="40,840,78,895" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="512,243,883,298" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="78,840,116,895" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="138,270,176,550" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="154,840,192,884" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="512,951,883,995" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="192,840,230,884" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/windowelements.tga" SourceRect="56,150,56,150" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastStretch="false" Name="rect" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+                </Namespace>
+                <Namespace Name="left_grouper">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="1002,95,1024,119" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="745,996,832,1020" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" Name="rect" West="w" />
+                </Namespace>
+                <Namespace Name="bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="529,84,587,354" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="529,354,587,410" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="587,354,919,410" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="919,354,976,410" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="919,84,976,354" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="919,29,976,84" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="587,29,919,84" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="529,29,587,84" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="587,84,919,354" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Location="526,318" Name="InteriorGrouper" ScrollExtent="450,430" Size="450,430">
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="28,22" Name="Label" ScrollExtent="151,23" ShadowStyle="/ShadowStylesNew.Drop.style" Size="151,19">:63b143de8df9eb14:InteriorGrouper</Text>
+            <Page BackgroundOpacity="1.000" Name="CopyAndPasteMe" PackSize="absolute,absolute" RStyleDefault="data.default_bkg.rect" ScrollExtent="450,430" Size="450,430" />
+            <Namespace Name="data">
+                <Namespace Name="default_bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="221,380,231,500" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="808,763,818,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="904,474,1024,484" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="818,763,828,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="231,380,241,500" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="828,763,838,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="904,0,1024,11" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="838,763,848,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="0,668,371,948" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" EastShrink="true" Name="rect" NorthShrink="true" SouthShrink="true" TitleStretch="false" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Location="630,48" Name="TutorialTitle" ScrollExtent="380,67" Size="380,67">
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="28,22" Name="Label" ScrollExtent="151,46" ShadowStyle="/ShadowStylesNew.Drop.style" Size="151,19">:cf6d745ac31773f6:Tutorial Title Page</Text>
+            <Page BackgroundOpacity="1.000" Name="CopyAndPasteMe" PackSize="absolute,absolute" RStyleDefault="data.default_bkg.rect" ScrollExtent="380,67" Size="380,67" />
+            <Namespace Name="data">
+                <Namespace Name="default_bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="815,966,825,1022" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="848,763,858,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="533,434,1013,444" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="858,763,868,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="825,966,835,1022" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="868,763,878,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="533,444,1013,454" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="878,763,888,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="533,370,1013,426" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" TitleStretch="false" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+        <Page Location="631,124" Name="TutorialPage" ScrollExtent="380,332" Size="380,332">
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="28,22" Name="Label" ScrollExtent="151,46" ShadowStyle="/ShadowStylesNew.Drop.style" Size="151,19">:cf6d745ac31773f6_1:Tutorial Title Page</Text>
+            <Page BackgroundOpacity="1.000" Name="CopyAndPasteMe" PackSize="absolute,absolute" RStyleDefault="data.default_bkg.rect" ScrollExtent="380,332" Size="380,332" />
+            <Namespace Name="data">
+                <Namespace Name="default_bkg">
+                    <ImageStyle Filter="true" Name="w">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="0,550,10,956" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="sw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="888,763,898,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="s">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="533,454,1013,464" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="se">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="898,763,908,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="e">
+                        <ImageFrame Name="image" Source="images/tp_default_6.dds" SourceRect="10,550,20,956" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="ne">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="908,763,918,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="n">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="533,464,1013,474" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="nw">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="918,763,928,773" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/tutorial_bg.dds" SourceRect="17,94,497,500" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" TitleStretch="false" West="w" WestShrink="true" />
+                </Namespace>
+            </Namespace>
+        </Page>
+    </Page>

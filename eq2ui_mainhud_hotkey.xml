@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page clientmarginframe="10,10,5,10" clientmarginnone="10,10,5,10" eq2usescomwndcontrols="true" Location="307,717" Name="Hotkey" OnShow="MinimumSize=&apos;0,0&apos;
+VerticalSizeOf40ResizeBugAndOnShowNotWorkingOnNewHotbarOpenBugWorkaround.Size=IconPage.Icons.Size
+IconsSize=IconPage.Icons.Size
+Size=VerticalSizeOf40ResizeBugAndOnShowNotWorkingOnNewHotbarOpenBugWorkaround.RealHotkeySize.Size
+IconPage.Icons.Size=IconsSize
+ConfigureOverlay.Press=true" PackLocation="npn,fff" PackSize="f,f" ScrollExtent="396,32" Size="396,32" UserMovable="true" UserResizable="true" version="2.0">
+<Button Name="ConfigureOverlay" OnPress="
+TMP1=Parent.IconPage.Icons.IconSize + Parent.IconPage.Icons.IconPadding
+Size=TMP1 ## &apos;,0&apos;
+Parent.IconPage.Overlay.CellSize=Width ## &apos;,&apos; ## Width
+
+TMP1=Parent.IconPage.Width + Parent.IconPage.Icons.IconPadding
+TMP2=Parent.IconPage.Height + Parent.IconPage.Icons.IconPadding
+Size=TMP1 ## &apos;,&apos; ## TMP2
+Parent.IconPage.Overlay.Size=Size
+
+TMP1=Parent.IconPage.Icons.IconSize ## &apos;,&apos; ## Parent.IconPage.Icons.IconSize
+Parent.IconPage.Overlay.1.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.2.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.3.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.4.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.5.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.6.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.7.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.8.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.9.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.10.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.11.ReuseSec.Size=TMP1
+Parent.IconPage.Overlay.12.ReuseSec.Size=TMP1
+
+Parent.UpdateOverlayBank.BankNo=Parent.BankPage.CurrentBank.Text
+Parent.UpdateOverlayBank.Press=true
+" Visible="false" />
+<Button Name="UpdateOverlayBank" BankNo="0" OnPress="
+Size=BankNo ## ',0'
+BankNo=Width
+Parent.IconPage.Overlay.1.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_1.ReuseSec'
+Parent.IconPage.Overlay.2.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_2.ReuseSec'
+Parent.IconPage.Overlay.3.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_3.ReuseSec'
+Parent.IconPage.Overlay.4.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_4.ReuseSec'
+Parent.IconPage.Overlay.5.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_5.ReuseSec'
+Parent.IconPage.Overlay.6.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_6.ReuseSec'
+Parent.IconPage.Overlay.7.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_7.ReuseSec'
+Parent.IconPage.Overlay.8.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_8.ReuseSec'
+Parent.IconPage.Overlay.9.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_9.ReuseSec'
+Parent.IconPage.Overlay.10.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_10.ReuseSec'
+Parent.IconPage.Overlay.11.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_11.ReuseSec'
+Parent.IconPage.Overlay.12.ReuseSec.DynamicData='/GameData.SpellInfo.Bank_' ## BankNo ## '.Key_12.ReuseSec'
+" Visible="false" />
+<Page Name="Grab2ResizeDummyN" PackLocation="left,top" PackSize="a,f" ScrollExtent="396,1" Size="396,1" />
+<Page Name="Grab2ResizeDummyW" PackLocation="left,top" PackSize="f,a" ScrollExtent="1,32" Size="1,32" />
+<Page Location="395,0" Name="Grab2ResizeDummyE" PackLocation="right,top" PackSize="f,a" ScrollExtent="1,32" Size="1,32" />
+<Page Location="0,31" Name="Grab2ResizeDummyS" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="396,1" Size="396,1" />
+<Page AbsorbsInput="false" Name="BankPage" OnHide="Parent.MinimumSize=&apos;0,0&apos;" OnShow="Parent.MinimumSize=&apos;0,0&apos;" PackLocation="left,center" RStyleDefault=" " ScrollExtent="12,32" Size="12,32">
+<Text AbsorbsInput="false" Color="#F0D080" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="0,9" Name="CurrentBank" ScrollExtent="12,14" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline2" Size="12,14" TextAlignment="Center" TextAlignmentVertical="Center">10</Text>
+<Checkbox AbsorbsInput="false" Location="0,11" Name="ToggleMoveTarget" OnSet="Parent.Parent.IconPage.MoveButton.Visible=true
+Tooltip=&apos;Hide move target&apos;" OnUnset="Parent.Parent.IconPage.MoveButton.Visible=false
+Tooltip=&apos;Show move target&apos;" ScrollExtent="12,10" Size="12,10" Tooltip="Show move target" />
+<Button AbsorbsInput="false" Location="1,22" Name="DownArrow" OnPress="Parent.Parent.UpdateOverlayBank.BankNo=Parent.CurrentBank.Text - 1
+Parent.Parent.UpdateOverlayBank.Press=true" ScrollExtent="10,10" Size="10,10" Style="/ProfitUI_Styles.ButtonStyles.BankSelector_down" Tooltip=":b7d61af6404eacdc:Previous Bank">Up</Button>
+<Button AbsorbsInput="false" Location="1,0" Name="UpArrow" OnPress="Parent.Parent.UpdateOverlayBank.BankNo=Parent.CurrentBank.Text + 1
+Parent.Parent.UpdateOverlayBank.Press=true" ScrollExtent="10,10" Size="10,10" Style="/ProfitUI_Styles.ButtonStyles.BankSelector_up" Tooltip=":b7d61af6b99ebb95:Next Bank">Dn</Button>
+</Page>
+<Button Name="BankPageToggle" OnHoverIn="Parent.BankPage.Visible=true" OnHoverOut="Parent.BankPage.Visible=false" Opacity="0.000" PackLocation="nfn,cfc" PackSize="f,p" ScrollExtent="14,32" Size="14,32" />
+<Page Location="12,0" Name="IconPage" PackSize="a,a" ScrollExtent="384,32" Size="384,32">
+<Image Activated="true" GetsInput="true" Location="372,20" Name="MoveButton" OnHoverIn="Parent.Parent.UserResizable=false" OnHoverOut="Parent.Parent.UserResizable=true" PackLocation="right,bottom" ScrollExtent="12,12" Size="12,12" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Tooltip="Move/Access right-click menu here" UserScrollable="false" Visible="false" />
+<VolumePage AbsorbsInput="false" CellCount="1,1" CellPadding="0,0" CellSelectable="false" Name="Overlay" PackSize="a,a" ScrollExtent="384,32" Size="384,32" Visible="false">
+<Page AbsorbsInput="false" Name="1">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="2">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="3">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" RShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="4">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="5">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="6">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" RShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="7">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" RShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="8">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="9">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="10">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="11">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+<Page AbsorbsInput="false" Name="12">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" MaxLines="1" Name="ReuseSec" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+</Page>
+</VolumePage>
+<IconBank ShadowStyle="/ShadowStyles.Outline1" Dragable="true" font="/ProfitUI_Styles.Fonts.FontArial13T" framecolor="#B5B5B5" iconframepadding="0" iconpadding="0" iconstyle="/IconStyles.button" Name="Icons" PackSize="a,a" renderframe="true" renderoutlines="true" ScrollExtent="384,32" Size="384,32" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" />
+</Page>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Backdrop" PackSize="p,p" ScrollExtent="396,32" Size="396,32" />
+<Page Name="WC_Frame" OnHide="Parent.BankPageToggle.Visible=true" OnShow="Parent.BankPageToggle.Visible=false" PackSize="a,a" ScrollExtent="396,32" Size="396,32" Visible="false" />
+<Page Name="WC_Titlebar" OnHide="Parent.IconPage.Overlay.Visible=false Parent.OnHoverIn=&apos; &apos;" OnShow="Parent.IconPage.Overlay.Visible=true Parent.OnHoverIn=&apos;ConfigureOverlay.Press=true&apos; Parent.ConfigureOverlay.Press=true" />
+<Page Location="4000,4000" Name="VerticalSizeOf40ResizeBugAndOnShowNotWorkingOnNewHotbarOpenBugWorkaround" PackSize="a,a" ScrollExtent="384,32" Size="384,32">
+<Page Name="RealHotkeySize" PackSize="a,a" ScrollExtent="396,32" Size="396,32" />
+</Page>
+</Page>

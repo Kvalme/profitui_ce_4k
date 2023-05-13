@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="15,46" minimizedheight="25" MinimumSize="280,460" Name="DMToolbox" ScrollExtent="280,594" Size="280,594" UserMovable="true" UserResizable="true">
+            <Page Location="0,29" Name="DungeonPage" PackSize="a,f" ScrollExtent="280,28" Size="280,28">
+                <Text AbsorbsInput="false" DynamicData="/GameData.UIState.Housing.Dungeon_TotalPoints" Font="/TextStyles.Large.LargeStyle" Location="156,0" MaxLines="1" Name="ChallengeRating" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="45,24" Size="45,24" TextAlignment="Right" TextAlignmentVertical="Center">:547594ee5e1c0754:1145</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,0" MaxLines="1" Name="Label" PackSize="absolute,fixed" ScrollExtent="167,24" Size="167,24" TextAlignmentVertical="Center">:547594ee46b7c6dd:Challenge Rating:</Text>
+                <Icon IconRect="84,168,126,210" IconResource="images/icons/icon_is110.dds" IconStyle="/IconStyles.button" Location="214,0" Name="Publish" OnPress="publish_house" PackLocation="right,top" ScrollExtent="28,28" Size="28,28" Tooltip=":547594ee2e3fcb97:Publish / Unpublish Dungeon" TreatAsButton="true" />
+                <Icon IconRect="168,84,210,126" IconResource="images/icons/icon_ms2.dds" IconStyle="/IconStyles.button" Location="246,0" Name="Exit" OnPress="house" PackLocation="right,top" ScrollExtent="28,28" Size="28,28" Tooltip=":547594ee7ceb6c81:Dungeon Maker Window" TreatAsButton="true" />
+            </Page>
+            <Page Location="0,82" Name="FilterPage" PackSize="a,f" ScrollExtent="280,42" Size="280,42">
+                <Icon IconRect="439,97,471,129" IconResource="images/specialelements.dds" IconStyle="/IconStyles.coin" Location="8,5" Name="FilterSpawner" ScrollExtent="32,32" Size="32,32" Tooltip=":547594eed0da2d53:Filter Spawners" TreatAsButton="true" />
+                <Icon IconRect="439,23,471,55" IconResource="images/specialelements.dds" IconStyle="/IconStyles.coin" Location="44,5" Name="FilterObject" ScrollExtent="32,32" Size="32,32" Tooltip=":547594eef59ddf6c:Filter Effect Objects" TreatAsButton="true" />
+                <Icon IconRect="439,60,471,92" IconResource="images/specialelements.dds" IconStyle="/IconStyles.coin" Location="80,5" Name="FilterHouseItem" ScrollExtent="32,32" Size="32,32" Tooltip=":547594ee0ab1dde9:Filter Decorative Objects" TreatAsButton="true" />
+                <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="115,6" MaximumSize="16384,30" MinimumSize="30,30" Name="FilterText" PackSize="a,f" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="157,35" Size="157,30" Style="/CommonElements.Textfield.data.style">:547594ee2313fdba:[DEVL]Filter</Textbox>
+            </Page>
+            <TabbedPane ActiveTab="0" DataSource="TabDS" Location="2,51" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="255,36" Size="255,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="TabPage" />
+            <Page Location="6,121" MinimumSize="0,122" Name="TabPage" PackLocation="left,top" PackSize="a,a" ScrollExtent="268,252" Size="268,252">
+                <Page AbsorbsInput="false" Name="ToolPage" PackLocation="left,top" PackSize="a,a" ScrollExtent="268,252" Size="268,252">
+                    <DataSource Name="ToolDS">
+                        <Data Name="New Data" text=":547594eed5e810ce:Goblin Fighter" value="8" />
+                        <Data Name="New Data" text=":547594ee87183f10:Goblin Priest" value="8" />
+                        <Data Name="New Data" text=":547594ee6428000c:Goblin Mage" value="8" />
+                        <Data Name="New Data" text=":547594ee7ca794cd:Goblin Rogue" value="8" />
+                        <Data Name="New Data" text=":547594ee97350cb6:Orc Fighter" value="16" />
+                        <Data Name="New Data" text=":547594eee89c2b39:Orc Priest" value="16" />
+                        <Data Name="New Data" text=":547594ee69392a65:Orc Mage" value="16" />
+                        <Data Name="New Data" text=":547594ee48c45c1b:Orc Rogue" value="16" />
+                    </DataSource>
+                    <Listbox BackgroundColor="#FFFFFF" DataSource="ToolDS" Location="10,10" Name="ToolListbox" PackSize="absolute,absolute" RowTemplate="listdata.row_template" ScrollExtent="227,196" SelectedItemIndex="7" Size="227,196" Style="listdata.listbox_style" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="ToolListbox" HideIfUnnecessary="false" Location="237,10" MaximumSize="22,16384" MinimumSize="22,0" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,195" Size="22,195" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    <Page BackgroundOpacity="1.000" Name="Bkg" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="265,215" Size="265,215" />
+                    <Button Location="2,217" MaximumSize="16384,32" MinimumSize="32,32" Name="PlaceButton" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="264,32" Size="264,32" Style="/CommonElements.PushButton.data.style" Tooltip=":547594eea2e62a22:Hold control to place multiple objects.">:547594eef0212d76:Place Object</Button>
+                </Page>
+                <Page AbsorbsInput="false" Enabled="false" Name="PlacedPage" PackLocation="left,top" PackSize="a,a" ScrollExtent="268,252" Size="268,252" Visible="false">
+                    <DataSource Name="PlacedDS">
+                        <Data Name="New Data" text=":547594eed5e810ce_1:Goblin Fighter" value="8" />
+                        <Data Name="New Data" text=":547594ee87183f10_1:Goblin Priest" value="8" />
+                        <Data Name="New Data" text=":547594ee6428000c_1:Goblin Mage" value="8" />
+                        <Data Name="New Data" text=":547594ee7ca794cd_1:Goblin Rogue" value="8" />
+                        <Data Name="New Data" text=":547594ee97350cb6_1:Orc Fighter" value="16" />
+                        <Data Name="New Data" text=":547594eee89c2b39_1:Orc Priest" value="16" />
+                        <Data Name="New Data" text=":547594ee69392a65_1:Orc Mage" value="16" />
+                        <Data Name="New Data" text=":547594ee48c45c1b_1:Orc Rogue" value="16" />
+                    </DataSource>
+                    <Listbox BackgroundColor="#FFFFFF" DataSource="PlacedDS" Location="10,10" Name="PlacedListbox" PackSize="absolute,absolute" RowTemplate="listdata.row_template_placed" ScrollExtent="227,196" SelectedItemIndex="0" Size="227,196" Style="listdata.listbox_style" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="PlacedListbox" HideIfUnnecessary="false" Location="237,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,195" Size="22,195" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    <Page BackgroundOpacity="1.000" Name="Bkg" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="265,215" Size="265,215" />
+                    <Button Location="0,217" MaximumSize="16384,32" MinimumSize="32,32" Name="PickupButton" PackLocation="left,bottom" ScrollExtent="90,32" Size="90,32" Style="/CommonElements.PushButton.data.style">:547594eeb9cdc334:Pickup</Button>
+                    <Button Location="90,217" MaximumSize="16384,32" MinimumSize="32,32" Name="MoveButton" PackLocation="left,bottom" ScrollExtent="90,32" Size="90,32" Style="/CommonElements.PushButton.data.style">:547594eeb0f367b9:Move</Button>
+                    <Button Location="180,217" MaximumSize="16384,32" MinimumSize="32,32" Name="GotoButton" PackLocation="left,bottom" ScrollExtent="90,32" Size="90,32" Style="/CommonElements.PushButton.data.style">:547594ee1e58ed35:Go to</Button>
+                </Page>
+            </Page>
+            <Splitter ControlAfter="PropertiesPage" ControlBefore="TabPage" Location="10,368" MaximumSize="16384,14" MinimumSize="100,14" Name="Splitter" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="260,14" Size="260,14" Style="/CommonElements.Splitter.data.style" />
+            <Page Location="6,379" MinimumSize="0,150" Name="PropertiesPage" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="268,209" Size="268,209">
+                <Composite Location="10,10" Name="LayoutPage" PackLocation="a,a" PackSize="a,a" ScrollExtent="248,189" Size="248,189" SpacingType="Fill">
+                    <Page Name="DescriptionPage" PackLocation="a,a" PackSize="a,a" ScrollExtent="248,89" Size="248,89" />
+                    <IconBank BackgroundOpacity="1.000" BackgroundTint="#000000" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconframepadding="0" iconpadding="1" iconsize="42" iconstyle="/IconStyles.effect" Location="5,89" MaximumSize="16384,44" MinimumSize="0,44" Name="Icons" PackSize="a,f" renderoutlines="false" ScrollExtent="240,44" Size="240,44" textcolor="#FFFFFF" textmargin="2,-1,2,-2" />
+                    <Composite Alignment="Center" Location="0,133" MaximumSize="16384,30" MinimumSize="0,30" Name="PathingPage" Orientation="Horizontal" PackSize="a,f" ScrollExtent="249,30" Size="249,30" SpacingType="Fill">
+                        <Button DynamicData="/GameData.Target.DM_NoPath" Location="0,3" MaximumSize="16384,26" MinimumSize="26,26" Name="NoPath" OnPress="house_item no_path" ScrollExtent="83,26" Size="83,26" Style="/CommonElements.SmallPushButton.data.style">:2e3561662d0ee1dd:Static</Button>
+                        <Button DynamicData="/GameData.Target.DM_WanderPath" Location="83,3" MaximumSize="16384,26" MinimumSize="26,26" Name="WanderPath" OnPress="house_item wander_path" ScrollExtent="83,26" Size="83,26" Style="/CommonElements.SmallPushButton.data.style">:2e356166c94254d0:Wander</Button>
+                        <Button DynamicData="/GameData.Target.DM_PointPath" Location="166,3" MaximumSize="16384,26" MinimumSize="26,26" Name="PointPath" OnPress="house_item place_path_point" ScrollExtent="83,26" Size="83,26" Style="/CommonElements.SmallPushButton.data.style">:2e3561666e5aff52:Patrol</Button>
+                    </Composite>
+                    <Composite Alignment="Center" Location="0,163" MaximumSize="16384,26" MinimumSize="0,26" Name="NamePage" Orientation="Horizontal" PackSize="a,f" ScrollExtent="249,26" Size="249,26" SpacingType="Fill">
+                        <Button MaximumSize="16384,26" MinimumSize="26,26" Name="SetName" OnPress="house_item set_name" ScrollExtent="83,26" Size="83,26" Style="/CommonElements.SmallPushButton.data.style">:547594ee16ddd906:Set Name</Button>
+                        <Button Location="83,0" MaximumSize="16384,26" MinimumSize="26,26" Name="ClearName" OnPress="house_item clear_name" ScrollExtent="83,26" Size="83,26" Style="/CommonElements.SmallPushButton.data.style">:547594ee3e1b3dfe:Clear Name</Button>
+                        <Button Location="166,0" MaximumSize="16384,26" MinimumSize="26,26" Name="FlavorText" OnPress="house_item flavor" ScrollExtent="83,26" Size="83,26" Style="/CommonElements.SmallPushButton.data.style">:547594ee00511c96:Flavor Text</Button>
+                    </Composite>
+                </Composite>
+                <Page BackgroundOpacity="1.000" Name="InteriorGrouper" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="268,209" Size="268,209" />
+            </Page>
+            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="304,610" Size="304,610">
+                <Button Location="248,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":547594eeec278586:Window Settings" UserMovable="true" />
+                <Button Location="228,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":547594ee574a0c6d:Help" UserMovable="true" />
+                <Button Location="268,8" Name="Minimize" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.maximize.style" Tooltip=":547594ee1073d3ad:Minimize/Maximize" UserMovable="true" />
+                <Button Location="268,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":547594ee2d3f513f:Close" UserMovable="true" Visible="false" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="208,70" Size="208,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="21,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="91,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="91,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:547594eed1d169a5:Toolbox</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="114,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" MinimumSize="0,100" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="304,610" Size="304,610" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,26" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="278,61" Size="278,61" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" MinimumSize="0,100" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="304,608" Size="304,608" />
+            </Page>
+            <SizeEffector Name="SizeEffector" Speed="2,2" />
+            <Namespace Name="listdata">
+                <Template Name="row_template" Size="191,24">eq2ui_listboxrow_dmtoolbox_template.xml</Template>
+                <Template Name="row_template_placed" Size="191,24">eq2ui_listboxrow_dmtoolbox_placed_template.xml</Template>
+                <GridStyle Name="grid_style" Normal.HBackground=" " Normal.Junction=" " />
+                <ListboxStyle GridStyle="grid_style" Name="listbox_style" SelectedBackgroundAlpha="1.000" SelectedBackgroundColor="#404040" />
+            </Namespace>
+            <DataSource Name="TabDS">
+                <Data Name="Tab1" target="ToolPage" text=":547594eed1d169a5_1:Toolbox" />
+                <Data Name="Tab2" target="PlacedPage" text=":547594ee852f135b:Placed" />
+            </DataSource>
+        </Page>

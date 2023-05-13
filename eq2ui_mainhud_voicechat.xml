@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page AllowCloseOnTop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="735,289" MinimumSize="120,135" Name="VoiceChat" ScrollExtent="150,222" Size="150,222" UserMovable="true" UserResizable="true">
+    <Composite Location="2,46" Name="Speakers" Orientation="Horizontal" PackSize="a,a" ScrollExtent="138,164" Size="138,164" SpacingType="Fill">
+        <Listbox DataSource="/GameData.VoiceChat.Participants" Margin="1,1,0,0" Name="Players" PackSize="absolute,absolute" RowTemplate="voicetemplate" ScrollExtent="138,164" SelectedItemIndex="1" Size="138,164" Style="/listboxlist.clear_listbox_no_selection" />
+        <Scrollbar ArrowPressSound="sounds/button" Control="Players" HideIfUnnecessary="true" Location="116,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,164" Size="22,164" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+    </Composite>
+    <Template Name="voicetemplate" Size="130,17">eq2ui_voice_template.xml</Template>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="150,222" Size="150,222">
+        <Button Location="132,4" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.MiniWindowFrame.data.close.style" Tooltip=":d3ff36412d3f513f:Close" UserMovable="true" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-1,0" Name="LeftGrouper" PackSize="a,f" RStyleDefault="/WindowElements.MiniWindowFrame.data.left_grouper.rect" ScrollExtent="152,21" Size="152,21">
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="1,2" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="120,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="120,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:d3ff364147798daa:Voice Users</Text>
+        	<Button Enabled="false" GetsInput="false" Name="TitleBarBoxed" PackSize="a,f" Size="152,21" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed" />
+		</Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,21" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.MiniWindowFrame.data.frame.rect" ScrollExtent="150,201" Size="150,201" />
+        <Page AbsorbsInput="false" Location="0,21" Name="Bkg" PackSize="a,a" ScrollExtent="150,201" Size="150,201">
+            <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,20" Name="ListFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="144,177" Size="144,177" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,20" Name="ListBackground" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="144,177" Size="144,177" />
+            <Dropdownbox DataSource="/GameData.VoiceChat.Sessions" Location="3,2" Name="ChannelDropdown" OnSelect="vcjoin_session SelectedItem.Session" PackLocation="left,top" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="144,17" Size="144,17" Style="/dropdownlist.dropdown_default" />
+            <Namespace Name="data">
+                <Namespace Name="unchecked_disabled">
+                    <ImageStyle Name="center">
+                        <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="295,148,314,167" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" Name="rect" />
+                </Namespace>
+                <CheckboxStyle DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" DisabledTextStyle="/TextStyles.Normal.NormalStyle" Name="style" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/TextStyles.Normal.NormalStyle" RStyleActivated="checked.rect" RStyleDefault="unchecked.rect" RStyleDisabled="unchecked_disabled.rect" RStyleDisabledActivated="checked_disabled.rect" RStyleMouseOver=" " TextOffset="24,3" />
+                <Namespace Name="checked">
+                    <ImageStyle Name="center">
+                        <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="295,169,314,188" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" Name="rect" />
+                </Namespace>
+                <Namespace Name="checked_disabled">
+                    <ImageStyle Name="center">
+                        <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="295,169,314,188" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" Name="rect" />
+                </Namespace>
+                <Namespace Name="unchecked">
+                    <ImageStyle Name="center">
+                        <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="295,148,314,167" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" Name="rect" />
+                </Namespace>
+            </Namespace>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="PageBackground" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.MiniWindowFrame.data.bkg.rect" ScrollExtent="150,201" Size="150,201" />
+        </Page>
+    </Page>
+</Page>

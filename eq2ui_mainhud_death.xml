@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page allowcloseontop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="335,255" MaximumSize="16384,284" MinimumSize="354,284" Name="Death" PackLocation="center,top" ScrollExtent="354,284" Size="354,284" UserMovable="true" UserResizable="true" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Death.DeathStyle" Location="32,25" Name="Title" PackSize="a" ScrollExtent="289,34" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="289,34" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFB164" UserMovable="true" UserResizable="true">:5d1d56c3b3799205:YOU HAVE DIED</Text>
+<Page AbsorbsInput="false" Location="36,85" Name="RespawnLocations" PackSize="a" ScrollExtent="284,107" Size="284,107">
+<Composite Location="10,10" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="264,86" Size="264,86" SpacingType="Fill">
+<List BackgroundColor="#000000" BackgroundOpacity="0.000" DataSource="JunctionSource" MinimumScrollExtent="264,85" Name="JunctionList" PackSize="a,a" ScrollExtent="264,92" SelectionAllowedMultiRow="false" Size="264,92" Style="list_style" />
+<Scrollbar ArrowPressSound="sounds/button" Control="JunctionList" HideIfUnnecessary="true" Location="440,0" MaximumSize="22,16384" MinimumSize="22,80" Name="JunctionScroll" PackSize=",a" ScrollExtent="22,92" Size="22,92" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+</Composite>
+<DataSource Name="JunctionSource">
+<Data Name="Reply 1" text=":5d1d56c3813857c3:This is reply choice number 1" />
+<Data Name="Reply 1" text=":5d1d56c3813857c3_1:This is reply choice number 1" />
+<Data Name="Reply 1" text=":5d1d56c3813857c3_2:This is reply choice number 1" />
+<Data Name="Reply 1" text=":5d1d56c3813857c3_3:This is reply choice number 1" />
+<Data Name="Reply 1" text=":5d1d56c3813857c3_4:This is reply choice number 1" />
+</DataSource>
+<ListStyle CellPadding="0,1" DefaultTextStyle="/TextStyles.Normal.NormalStyle" Name="list_style" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
+<Page BackgroundOpacity="1.000" Name="Grouper" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="284,106" Size="284,106" />
+</Page>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="41,57" Margin="1,1,1,1" MaxLines="2" Name="Prompt" PackSize="a" ScrollExtent="274,35" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="274,35" TextAlignment="Center" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:5d1d56c3a1ae8cb8:You may either wait for a player to resurrect you, or select a location to revive from.</Text>
+<Button Location="36,205" MaximumSize="16384,38" MinimumSize="38,38" Name="Respawn" PackLocation="cpc,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:5d1d56c313464bd5:Revive</Button>
+
+<Page Location="256,191" MaximumSize="60,57" MinimumSize="60,57" Name="PonPage" ScrollExtent="60,57" Size="60,57">
+    <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="44,42" Name="Coin" PackLocation="right,top" PackSize="f,f" ScrollExtent="12,12" Size="12,12" Style="/imagelist.coins.StationCash" />
+    <Text Font="/TextStyles.Normal.NormalStyle" Location="-9,40" Name="SCCostText" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="right,top" PackSize="f,f" ScrollExtent="49,16" Size="49,16" TextAlignment="Right" TextAlignmentVertical="Center">:3dd392e8928c6a9d:1,000</Text>
+    <Button Location="0,-1" Name="SCReviveButton" RStyleDefault="sc_pon" ScrollExtent="50,41" Size="50,41" Style="/ButtonStyles.sc_pon" Tooltip=":3dd392e8e4061021:Instantly revive where you stand" />
+</Page>
+
+<Page BackgroundOpacity="0.600" Location="30,30" Name="InteriorGrouper" PackSize="a,a" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="294,224" Size="294,224" />
+<Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="a,a" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="354,284" Size="354,284" />
+</Page>

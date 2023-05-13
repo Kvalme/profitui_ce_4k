@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Bookmarks for ProfitUI browser window, based upon Othesus browser window
+Feel free to add your own bookmarks.
+GoFlag="0" if you don't want the Go button pressed (usually for a divider) otherwise GoFlag="1"
+Text is what will show in the dropdown list.
+href is the web adress.
+-->
+
+<DataSource Name="ProfitUI_BookmarksDS">
+<Data GoFlag="0" Text=" " href=" " NOTICE="Best leave this line as it is (you can make this a bookmark, but your browser will always go there if you inadvertantly close the bookmarks)"/>
+<Data GoFlag="1" Text="Google" href="http://www.google.com"/>
+<Data GoFlag="0" Text="----------------------------------------   Update Notes  ---------------------------------------- " href=" "/>
+<Data GoFlag="1" Text="US Server Update Notes (from Launchpad)" href="http://patch.everquest2.com:7010/patch/eq2/motd/en/updates_live.html"/>
+<Data GoFlag="1" Text="Test Server Update Notes (from Launchpad)" href="http://patch.everquest2.com:7010/patch/eq2/motd/en/updates_test.html"/>
+<Data GoFlag="1" Text="UK Server Update Notes (from Launchpad)" href="http://patch.everquest2.com:7010/patch/eq2/motd/uk/updates_live.html"/>
+<Data GoFlag="1" Text="Server Status & Scheduled Downtimes" href="http://eq2players.station.sony.com/network_status.vm"/>
+<Data GoFlag="0" Text="-------------------------------------------  Forums  ------------------------------------------- " href=" "/>
+<Data GoFlag="1" Text="EQ2Flames" href="http://www.eq2flames.com/index.php?referrerid=3169"/>
+<Data GoFlag="1" Text="Official Forums" href="http://forums.station.sony.com/eq2/"/>
+<Data GoFlag="0" Text="-----------------------------------------  Databases  ----------------------------------------- " href=" "/>
+<Data GoFlag="1" Text="Players: EQ2 Players" href="http://eq2players.station.sony.com/"/>
+<Data GoFlag="1" Text="Players: EQ2U" href="http://www.u.eq2wire.com/"/>
+<Data GoFlag="1" Text="Players: EQ2 Census" href="http://www.eq2census.com/"/>
+<Data GoFlag="1" Text="Quests: EQ2 Questlist" href="http://eq2.fluffy.dk/"/>
+<Data GoFlag="1" Text="Quests: MMO DB" href="http://eq2.mmodb.com/"/>
+<Data GoFlag="1" Text="Quests &amp; Items: EQ2 Allakhazam" href="http://eq2.allakhazam.com/"/>
+<Data GoFlag="1" Text="Items: EQ2 Item Database" href="http://www.eq2idb.com/"/>
+<Data GoFlag="1" Text="Items: EQ2 LLinks" href="http://www.eq2llinks.com/"/>
+<Data GoFlag="1" Text="Items: EQ2 LootDB" href="http://www.lootdb.com/"/>
+<Data GoFlag="1" Text="Spells/Skills: EQ2ref.com" href="http://www.eq2ref.com/"/>
+<Data GoFlag="1" Text="Spells/Skills: EQ2gamedata" href="http://home.comcast.net/~eq2gamedata/main.html"/>
+<Data GoFlag="1" Text="EQ2 Heritage Tracker" href="http://eq2hq.org/index.php/"/>
+<Data GoFlag="0" Text="-----------------------------------------   Reference  ----------------------------------------- " href=" "/>
+<Data GoFlag="1" Text="Wiki: EQ2i" href="http://eq2.wikia.com"/>
+<Data GoFlag="1" Text="Wiki: EQ2-Daily" href="http://www.eq2daily.com/eq2wiki/Main_Page"/>
+<Data GoFlag="1" Text="Wiki: Allakhazam's EQ2 Wikibase" href="http://eq2.allakhazam.com/wiki/EverQuest_II"/>
+<Data GoFlag="1" Text="Maps: EQ2Map" href="http://maps.eq2interface.com/"/>
+<Data GoFlag="1" Text="Maps: EQ2 Atlas (Gamepressure)" href="http://eq2.gamepressure.com/"/>
+<Data GoFlag="1" Text="Raiding: EQ2 Raid Mobs" href="http://eq2.raidmobs.com/"/>
+<Data GoFlag="1" Text="Raiding: RaidWiki" href="http://www.raidwiki.org/"/>
+<Data GoFlag="1" Text="Mount Guide" href="http://forums.station.sony.com/eq2/posts/list.m?topic_id=347452"/>
+<Data GoFlag="1" Text="Potions &amp; Poisons Chart" href="http://www.eq2alchemy.com/potions-poisons.html"/>
+<Data GoFlag="1" Text="Adornments calculator" href="http://adornments.h0b0.net/"/>
+<Data GoFlag="0" Text="-------------------------------------------  Crafting  ------------------------------------------- " href=" "/>
+<Data GoFlag="1" Text="EQ2 Traders Corner" href="http://eq2.eqtraders.com/"/>
+<Data GoFlag="1" Text="EQ2 Craft" href="http://www.eq2craft.com/"/>
+<Data GoFlag="1" Text="EQ2 Alchemy" href="http://www.eq2alchemy.com/"/>
+<Data GoFlag="1" Text="Furniture &amp; Housing: everseek.com" href="http://www.everseek.com/"/>
+<Data GoFlag="1" Text="EQ2 Traders Crafted Dress Clothes" href="http://eq2.eqtraders.com/articles/article_page.php?article=g93"/>
+<Data GoFlag="1" Text="Rijacki's Closet" href="http://www.eq2alchemy.com/closet/index.html"/>
+<Data GoFlag="0" Text="---------------------------------------------   Lore  --------------------------------------------- " href=" "/>
+<Data GoFlag="1" Text="Lore of Norrath" href="http://lorenorrath.free.fr/"/>
+<Data GoFlag="1" Text="Eiwyn's Library" href="http://www.eiwyn.arcanya.com/"/>
+<Data GoFlag="1" Text="Library of Arcan Knowledge" href="http://lomonmanor.home.comcast.net/library/index.html"/>
+<Data GoFlag="1" Text="The Athenacum" href="http://www.lorelibrary.com/"/>
+<Data GoFlag="0" Text="--------------------------------------   User Interface  --------------------------------------- " href=" "/>
+<Data GoFlag="1" Text="ProfitUI Reborn Portal Page" href="http://gm9.eq2interface.com"/>
+<Data GoFlag="1" Text="EQ2 Interface" href="http://www.eq2interface.com"/>
+</DataSource>

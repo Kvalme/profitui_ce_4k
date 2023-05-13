@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="10,683" MaximumSize="16384,29" MinimumSize="280,29" Name="VoiceBar" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="423,29" Size="423,29" UserMovable="true" UserResizable="true" Version="1.1" Visible="false">
+            <Page Location="5,0" Name="VoiceControlsPage" ScrollExtent="129,29" Size="129,29">
+                <Button BackgroundColor="#FFFFFF" DynamicData="/GameData.VoiceChat.Info.SelectedTalkIndicator" Location="69,5" Name="btnTalk" PackLocation="left,top" ScrollExtent="21,20" Size="21,20" Style="talk.style" Tooltip=":03c96663a9ea99e9:Talking" />
+                <Button BackgroundColor="#FFFFFF" Location="34,5" Name="btnChannel" OnPress="vcselect_session" PackLocation="left,top" ScrollExtent="29,20" Size="29,20" Style="channel.style" Tooltip=":03c96663f4e83d99:Select Channel" />
+                <Button BackgroundColor="#FFFFFF" Location="-1,5" Name="btnUsers" OnPress="togglevoicechat" PackLocation="left,top" ScrollExtent="30,20" Size="30,20" Style="users.style" Tooltip=":03c9666347798daa:Voice Users" />
+            </Page>
+            <Namespace Name="talk">
+                <ButtonStyle Name="style" RStyleActivated="activated_rect" RStyleDefault="normal_rect" RStyleMouseOver="normal_rect" RStyleMouseOverSelected="activated_rect" RStyleSelected="activated_rect" />
+                <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal_rect" />
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="790,142,811,162" />
+                </ImageStyle>
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <ImageStyle Filter="true" Name="normal">
+                    <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="811,142,832,162" />
+                </ImageStyle>
+            </Namespace>
+            <EffectorCycleOpacity Duration="10.000" InitialOpacity="1.000" MaxSpeed="2.000" MinSpeed="2.000" Name="FlashEffector" OpacityOne="0.300" Speed="2.000" />
+            <Composite Location="100,5" Name="container" Orientation="Horizontal" PackSize="a,f" ScrollExtent="320,20" Size="320,20" SpacingType="Fill">
+                <Button BackgroundColor="#FFFFFF" MaximumSize="30,20" Name="btnOtherGame" OnPress="vcforce_login" PackLocation="left,top" ScrollExtent="30,20" Size="30,20" Style="other_game.style" Tooltip=":86fc5d4da5fd9f8c:You are logged into Voice Chat as a different character.  Click here to change this." />
+                <Text AbsorbsInput="false" DynamicData="/GameData.VoiceChat.Info.TalkingStatus" Font="/TextStyles.Chat.ChatStyle" Location="30,0" Margin="5,0,0,0" MaxLines="1" MinimumSize="0,20" Name="lblTalkStatus" PackLocation="left,top" PackSize="a,f" ScrollExtent="359,32" Size="290,20" TextAlignmentVertical="Center">:03c96663e1c0e52d:You are speaking to the guild</Text>
+            </Composite>
+            <Namespace Name="options">
+                <ButtonStyle Name="style" RStyleActivated="activated_rect" RStyleDefault="normal_rect" RStyleMouseOver="mouseover_rect" />
+                <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal_rect" />
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="440,793,469,813" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="mouseover">
+                    <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="469,793,498,813" />
+                </ImageStyle>
+                <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="mouseover_rect" />
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <ImageStyle Filter="true" Name="normal">
+                    <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="498,793,527,813" />
+                </ImageStyle>
+            </Namespace>
+            <Namespace Name="channel">
+                <ButtonStyle Name="style" RStyleActivated="activated_rect" RStyleDefault="normal_rect" RStyleMouseOver="mouseover_rect" />
+                <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal_rect" />
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="527,793,556,813" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="mouseover">
+                    <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="556,793,585,813" />
+                </ImageStyle>
+                <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="mouseover_rect" />
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <ImageStyle Filter="true" Name="normal">
+                    <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="585,793,614,813" />
+                </ImageStyle>
+            </Namespace>
+            <Namespace Name="users">
+                <ButtonStyle Name="style" RStyleActivated="activated_rect" RStyleDefault="normal_rect" RStyleMouseOver="mouseover_rect" />
+                <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal_rect" />
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="350,793,380,813" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="mouseover">
+                    <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="380,793,410,813" />
+                </ImageStyle>
+                <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="mouseover_rect" />
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <ImageStyle Filter="true" Name="normal">
+                    <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="410,793,440,813" />
+                </ImageStyle>
+            </Namespace>
+            <Namespace Name="other_game">
+                <ButtonStyle Name="style" RStyleActivated="activated_rect" RStyleDefault="normal_rect" RStyleMouseOver="mouseover_rect" />
+                <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal_rect" />
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="146,98,176,118" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="mouseover">
+                    <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="146,120,176,140" />
+                </ImageStyle>
+                <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="mouseover_rect" />
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <ImageStyle Filter="true" Name="normal">
+                    <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="146,142,176,162" />
+                </ImageStyle>
+            </Namespace>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="423,29" Size="423,29">
+                <Namespace Name="background">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="587,84,919,354" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+                </Namespace>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="423,29" Size="423,29" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="423,29" Size="423,29" />
+            </Page>
+        </Page>

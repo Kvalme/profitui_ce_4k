@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IgnoreList>
+	<!--<File Name="eq2ui_popup_add_poi.xml" />-->
+	<!--<File Name="_Skinnable_Controls.xml" />-->
+	<!--<File Name="_Skinnable_Location_Images.xml" />-->
+	<!--<File Name="_Skinnable_MiniElements.xml" />-->
+	<!--<File Name="_Skinnable_SearchBar.xml" />-->
+	<!--<File Name="_Skinnable_SearchResults.xml" />-->
+	<!--<File Name="_Skinnable_Styles.xml" />-->
+	<!--<File Name="_Skinnable_WindowElements.xml" />-->
+	<File Name="_Skinnable_WindowElementsMini.xml" />
+</IgnoreList>

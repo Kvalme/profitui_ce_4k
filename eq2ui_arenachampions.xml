@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page ismodule="true" Name="ArenaChampions" PackSize="1,1" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+<include>eq2ui_arenachampions_arenamain.xml</include>
+<include>eq2ui_arenachampions_arenamatch.xml</include>
+<include>eq2ui_arenachampions_arenaresults.xml</include>
+<include>eq2ui_arenachampions_arenarevive.xml</include>
+<include>eq2ui_arenachampions_arenascore.xml</include>
+<include>eq2ui_arenachampions_bgscore.xml</include>
+<include>eq2ui_arenachampions_bgleaderboard.xml</include>
+<include>eq2ui_arenachampions_pgscore.xml</include>
+<include>eq2ui_arenachampions_pgleaderboard.xml</include>
+    </Page>

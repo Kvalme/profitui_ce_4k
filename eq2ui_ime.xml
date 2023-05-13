@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page Name="IME" PackSize="1,1" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <Page Activated="true" eq2usescomwndcontrols="true" Location="294,398" MaximumSize="1024,1024" MinimumSize="350,49" Name="HorizontalIMEPage" ScrollExtent="408,49" Size="408,49" UserMovable="true" UserResizable="true" Visible="false">
+            <Text AbsorbsInput="false" Color="#C7C7C7" Font="/Fonts.Font_Chat" Location="6,3" Name="CandidateList" PackLocation="left,top" PackSize="absolute" ScrollExtent="290,64" Size="290,22" TextAlignmentVertical="Center">:5ef80cbd11a1eb4c:1: Z 2: Y 3: X 4: W 5: V 6: U 7: T 8: S 9: R</Text>
+            <Text AbsorbsInput="false" Color="#C7C7C7" Font="/Fonts.Font_Chat" Location="300,3" Name="CandidateInfo" PackLocation="left,top" PackSize="absolute" ScrollExtent="36,96" Size="36,22" TextAlignmentVertical="Center">:5ef80cbd2df11b28:61/62</Text>
+            <Page BackgroundOpacity="1.000" Location="0,2" Name="CandidateListFrame" PackSize="absolute, fixed" RStyleDefault="/FrameStyles.ThickRounded.rect" ScrollExtent="341,28" Size="341,28" />
+            <Page BackgroundOpacity="1.000" Color="#262422" Location="0,2" Name="CandidateListBkg" PackSize="absolute, fixed" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="341,28" Size="341,28" />
+        </Page>
+        <Page Activated="true" eq2usescomwndcontrols="true" Location="12,181" MaximumSize="1024,1024" MinimumSize="90,200" Name="VerticalIMEPage" ScrollExtent="90,200" Size="90,200" UserMovable="true" UserResizable="true" Visible="false">
+            <ListboxStyle GridStyle="/gridlist.gold_style" Name="SelectionLBStyle" RStyleDefault=" " />
+            <DataSource Name="CandidateListData">
+                <Data Name="1" text=":5ef80cbd38e31293:1: Y" />
+                <Data Name="2" text=":5ef80cbd2a56bd7d:2: Y" />
+                <Data Name="3" text=":5ef80cbd92eada18:3: Y" />
+                <Data Name="4" text=":5ef80cbd0f3de2a1:4: Y" />
+                <Data Name="5" text=":5ef80cbdb78185c4:5: Y" />
+                <Data Name="6" text=":5ef80cbda5342a2a:6: Y" />
+                <Data Name="7" text=":5ef80cbd84811cf5:7: Z" />
+                <Data Name="8" text=":5ef80cbd45eb5d19:8: Y" />
+                <Data Name="9" text=":5ef80cbdfd573a7c:9: Y" />
+            </DataSource>
+            <Page BackgroundOpacity="1.000" Location="12,162" Name="InfoFrame" PackSize="absolute, fixed" RStyleDefault="/FrameStyles.ThickRounded.rect" ScrollExtent="63,25" Size="63,25" />
+            <Text AbsorbsInput="false" Color="#C7C7C7" Font="/Fonts.Font_Chat" Location="11,163" Name="CandidateInfo" PackLocation="left,top" PackSize="absolute" ScrollExtent="67,64" Size="67,22" TextAlignment="Center" TextAlignmentVertical="Center">:5ef80cbd2df11b28_1:61/62</Text>
+            <Listbox Activated="true" DataSource="CandidateListData" Location="10,10" Name="CandidateList" RowTemplate="SelectionTemplate" ScrollExtent="1024,150" SelectedItemIndex="1" Size="70,150" Style="SelectionLBStyle" />
+            <Template Name="SelectionTemplate" Size="1024,16">eq2ui_generictexttemplate_chatfont.xml</Template>
+            <Page BackgroundOpacity="1.000" Location="0,2" Name="CandidateListFrame" PackSize="absolute, fixed" RStyleDefault="/FrameStyles.ThickRounded.rect" ScrollExtent="92,197" Size="92,197" />
+            <Page BackgroundOpacity="1.000" Color="#262422" Location="0,2" Name="CandidateListBkg" PackSize="absolute, fixed" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="92,197" Size="92,197" />
+        </Page>
+    </Page>

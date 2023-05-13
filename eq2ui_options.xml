@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page Name="Options" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <Page Activated="true" eq2usescomwndcontrols="true" Location="257,209" MaximumSize="1024,1024" MinimumSize="287,198" Name="ColorChooser" ScrollExtent="510,362" Size="510,362" UserMovable="true" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="35,38" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="435,24" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="435,24" TextAlignment="Center" TextColor="#FBF1D9">:5cb72c79ee5ed987:Color Chooser</Text>
+            <Text Color="#FF8080" Font="/TextStyles.Large.LargeStyle" Location="269,71" Margin="1,1,1,1" Name="RedLabel" ScrollExtent="130,25" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="130,22">:5cb72c793dd3e690:Red</Text>
+            <Sliderbar Location="261,91" MaximumSize="16384,26" MinimumSize="100,26" Name="RedSlider" ScrollExtent="140,26" Size="140,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="100" />
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="405,86" MaximumSize="16384,34" MaxLength="3" MinimumSize="40,34" Name="RedTextbox" NumericInteger="true" RStyleActivated="/CommonElements.LargeTextfield.data.selected.rect" RStyleDefault="/CommonElements.LargeTextfield.data.default.rect" RStyleDisabled="/CommonElements.LargeTextfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.LargeTextfield.data.disabled.rect" RStyleMouseOver="/CommonElements.LargeTextfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.LargeTextfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.LargeTextfield.data.selected.rect" RStyleSelected="/CommonElements.LargeTextfield.data.selected.rect" ScrollExtent="50,34" Size="50,34" Style="/CommonElements.LargeTextfield.data.style">:5cb72c79d3d31186:255</Textbox>
+            <Text Color="#80FF80" Font="/TextStyles.Large.LargeStyle" Location="269,121" Margin="1,1,1,1" Name="GreenLabel" ScrollExtent="130,25" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="130,22">:5cb72c79eea43eda:Green</Text>
+            <Sliderbar Location="261,141" MaximumSize="16384,26" MinimumSize="100,26" Name="GreenSlider" ScrollExtent="140,26" Size="140,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="100" />
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="405,136" MaximumSize="16384,34" MaxLength="3" MinimumSize="40,34" Name="GreenTextbox" NumericInteger="true" RStyleActivated="/CommonElements.LargeTextfield.data.selected.rect" RStyleDefault="/CommonElements.LargeTextfield.data.default.rect" RStyleDisabled="/CommonElements.LargeTextfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.LargeTextfield.data.disabled.rect" RStyleMouseOver="/CommonElements.LargeTextfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.LargeTextfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.LargeTextfield.data.selected.rect" RStyleSelected="/CommonElements.LargeTextfield.data.selected.rect" ScrollExtent="50,34" Size="50,34" Style="/CommonElements.LargeTextfield.data.style">:5cb72c79d3d31186_1:255</Textbox>
+            <Text Color="#8080FF" Font="/TextStyles.Large.LargeStyle" Location="269,171" Margin="1,1,1,1" Name="BlueLabel" ScrollExtent="130,25" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="130,22">:5cb72c79c1fb9a75:Blue</Text>
+            <Sliderbar Location="261,191" MaximumSize="16384,26" MinimumSize="100,26" Name="BlueSlider" ScrollExtent="140,26" Size="140,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="100" />
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="405,186" MaximumSize="16384,34" MaxLength="3" MinimumSize="40,34" Name="BlueTextbox" NumericInteger="true" RStyleActivated="/CommonElements.LargeTextfield.data.selected.rect" RStyleDefault="/CommonElements.LargeTextfield.data.default.rect" RStyleDisabled="/CommonElements.LargeTextfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.LargeTextfield.data.disabled.rect" RStyleMouseOver="/CommonElements.LargeTextfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.LargeTextfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.LargeTextfield.data.selected.rect" RStyleSelected="/CommonElements.LargeTextfield.data.selected.rect" ScrollExtent="50,34" Size="50,34" Style="/CommonElements.LargeTextfield.data.style">:5cb72c79d3d31186_2:255</Textbox>
+            <Page BackgroundOpacity="1.000" Location="250,61" Name="RoundedGrouper" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="220,170" Size="220,170" />
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="262,243" Name="TextSample" ScrollExtent="194,23" Size="194,20" TextAlignment="Center" TextAlignmentVertical="Center">:5cb72c79256e2d82:Sample Text</Text>
+            <Page BackgroundOpacity="1.000" Location="250,231" Name="CorneredGrouper" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="220,45" Size="220,45" />
+            <Page AbsorbsInput="false" BackgroundColor="#0000FF" BackgroundOpacity="1.000" Location="252,50" Name="ColorSample" ScrollExtent="173,25" Size="173,25" Visible="false" />
+            <Page BackgroundOpacity="1.000" Location="36,61" Name="ColorButtons" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="216,215" Size="216,215">
+                <Button Location="14,13" Name="Color0" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#000055" Location="38,13" Name="Color1" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#0000AA" Location="62,13" Name="Color2" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#0000FF" Location="86,13" Name="Color3" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#005500" Location="110,13" Name="Color4" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#005555" Location="134,13" Name="Color5" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#0055AA" Location="158,13" Name="Color6" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#0055FF" Location="182,13" Name="Color7" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#00AA00" Location="14,37" Name="Color8" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#00AA55" Location="38,37" Name="Color9" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#00AAAA" Location="62,37" Name="Color10" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#00AAFF" Location="86,37" Name="Color11" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#00FF00" Location="110,37" Name="Color12" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#00FF55" Location="134,37" Name="Color13" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#00FFAA" Location="158,37" Name="Color14" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#00FFFF" Location="182,37" Name="Color15" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#550000" Location="14,61" Name="Color16" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#550055" Location="38,61" Name="Color17" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#5500AA" Location="62,61" Name="Color18" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#5500FF" Location="86,61" Name="Color19" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#555500" Location="110,61" Name="Color20" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#555555" Location="134,61" Name="Color21" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#5555AA" Location="158,61" Name="Color22" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#5555FF" Location="182,61" Name="Color23" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#55AA00" Location="14,85" Name="Color24" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#55AA55" Location="38,85" Name="Color25" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#55AAAA" Location="62,85" Name="Color26" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#55AAFF" Location="86,85" Name="Color27" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#55FF00" Location="110,85" Name="Color28" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#55FF55" Location="134,85" Name="Color29" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#55FFAA" Location="158,85" Name="Color30" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#55FFFF" Location="182,85" Name="Color31" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CC0000" Location="14,109" Name="Color32" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CC0055" Location="38,109" Name="Color33" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CC00AA" Location="62,109" Name="Color34" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CC00FF" Location="86,109" Name="Color35" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CC5500" Location="110,109" Name="Color36" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CC5555" Location="134,109" Name="Color37" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CC55AA" Location="158,109" Name="Color38" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CC55FF" Location="182,109" Name="Color39" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CCAA00" Location="14,133" Name="Color40" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CCAA55" Location="38,133" Name="Color41" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CCAAAA" Location="62,133" Name="Color42" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CCAAFF" Location="86,133" Name="Color43" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CCFF00" Location="110,133" Name="Color44" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CCFF55" Location="134,133" Name="Color45" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CCFFAA" Location="158,133" Name="Color46" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#CCFFFF" Location="182,133" Name="Color47" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FF0000" Location="14,158" Name="Color48" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FF0055" Location="38,158" Name="Color49" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FF00AA" Location="62,158" Name="Color50" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FF00FF" Location="86,158" Name="Color51" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FF5500" Location="110,158" Name="Color52" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FF5555" Location="134,158" Name="Color53" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FF55AA" Location="158,158" Name="Color54" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FF55FF" Location="182,158" Name="Color55" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FFAA00" Location="14,182" Name="Color56" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FFAA55" Location="38,182" Name="Color57" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FFAAAA" Location="62,182" Name="Color58" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FFAAFF" Location="86,182" Name="Color59" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FFFF00" Location="110,182" Name="Color60" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FFFF55" Location="134,182" Name="Color61" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FFFFAA" Location="158,182" Name="Color62" ScrollExtent="20,20" Size="20,20" />
+                <Button BackgroundColor="#FFFFFF" Location="182,182" Name="Color63" ScrollExtent="20,20" Size="20,20" />
+            </Page>
+            <Button Location="115,284" MaximumSize="16384,38" MinimumSize="38,38" Name="ApplyButton" PackLocation="left, bottom" ScrollExtent="130,38" Size="130,38" Style="/CommonElements.LargePushButton.data.style">:5cb72c7913a7061a:Ok</Button>
+            <Button Location="265,284" MaximumSize="16384,38" MinimumSize="38,38" Name="CancelButton" PackLocation="right, bottom" ScrollExtent="130,38" Size="130,38" Style="/CommonElements.LargePushButton.data.style">:5cb72c79ae453fbb:Cancel</Button>
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="445,302" Size="445,302" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="510,362" Size="510,362" />
+        </Page>
+        <Page AllowCloseOnTop="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="62,110" MaximumSize="1600,1200" MinimumSize="890,420" Name="OptionGame" ScrollExtent="890,597" Size="890,597" UserMovable="true" UserResizable="true">
+            <Button Location="720,31" MaximumSize="16384,26" MinimumSize="26,26" Name="AdvancedButton" PackLocation="right,top" ScrollExtent="130,26" Size="130,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip=":8dd83dd89731eafd:Click to toggle Advanced and Basic options.">:8dd83dd8ba07f5d8:Advanced</Button>
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="32,35" Name="Title" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="821,24" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="821,24" TextAlignment="Center" TextColor="#FBF1D9">:5cb72c79e0773ce4:Options</Text>
+            <Page Location="187,160" Name="PopupPage" PackLocation="cfc,cfc" ScrollExtent="520,280" Size="520,280" Visible="false">
+                <Page BackgroundOpacity="1.000" Location="35,35" Name="Warning" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="450,125" Size="450,125">
+                    <Text Font="/TextStyles.Large.LargeStyle" Location="10,10" Name="Text" ScrollExtent="410,106" Size="410,106" TextAlignment="Center" TextAlignmentVertical="Center">:5cb72c79ddb56ff9:Error Message</Text>
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Text" HideIfUnnecessary="true" Location="418,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,108" Size="22,108" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                </Page>
+                <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="45,160" MinimumSize="22,22" Name="CheckboxWarning" PackLocation="left,bottom" ScrollExtent="22,22" Size="22,22" Style="/CommonElements.Checkbox.data.style" />
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="70,160" Margin="1,3,1,1" Name="CheckboxWarningLabel" PackSize="a,f" ScrollExtent="410,50" Size="410,40">:5cb72c79d1b2c603:Do not show this warning again; always reuse keys for multiple events.</Text>
+                <Button Location="200,202" MaximumSize="16384,38" MinimumSize="38,38" Name="ButtonPopupOK" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:5cb72c7913a7061a_1:Ok</Button>
+                <Button Location="130,202" MaximumSize="16384,38" MinimumSize="38,38" Name="ButtonPopupYes" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:5cb72c79b2558cb6:Yes</Button>
+                <Button Location="270,202" MaximumSize="16384,38" MinimumSize="38,38" Name="ButtonPopupNo" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:5cb72c790dd1f342:No</Button>
+                <Page BackgroundOpacity="0.600" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="460,220" Size="460,220">
+                    <Page BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,absolute" RStyleDefault="rect" ScrollExtent="460,220" Size="460,220" />
+                </Page>
+                <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="520,280" Size="520,280" />
+            </Page>
+            <Page Location="38,65" Name="TabTemplate" ScrollExtent="180,34" Size="180,34">
+                <Checkbox BackgroundOpacity="1.000" MaximumSize="16384,32" MinimumSize="32,32" Name="TabOption" PackSize="a,f" Radio="true" ScrollExtent="180,32" Size="180,32" Style="/CommonElements.ToggleButton.data.style">:5cb72c79a1e01767:ToggleButton</Checkbox>
+            </Page>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="28,55" Name="TabsGrouper" PackSize="f,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="200,468" Size="200,468" />
+            <Scrollbar ArrowPressSound="sounds/button" Control="Page" HideIfUnnecessary="true" Location="818,64" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,448" Size="22,448" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+            <Page BackgroundColor="#FFFFFF" Location="237,65" Name="Page" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="606,448" ScrollSize="1,20" Size="606,448">
+                <Page Name="SpacingTemplate" PackSize="1.0,fixed" ScrollExtent="606,23" Size="606,23" />
+                <Page Name="TitleTemplate" PackSize="1.0,fixed" ScrollExtent="606,30" Size="606,30">
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="0,5" MinimumSize="22,22" Name="Collapse" PackSize="absolute,fixed" ScrollExtent="299,22" Size="299,22" Style="/CommonElements.CollapseCheckbox.data.large_style">:5cb72c797834e18d:Toggle or Text</Checkbox>
+                    <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Margin="1,1,1,1" Name="Label" PackSize="absolute,fixed" ScrollExtent="586,30" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="586,30" TextAlignment="Center" TextColor="#FBF1D9">:5cb72c7930998013:Label</Text>
+                </Page>
+                <Page Location="0,30" Name="ChatColorTemplate" PackSize="1.0,fixed" ScrollExtent="606,36" Size="606,36">
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="LabelColor" PackSize="absolute,absolute" ScrollExtent="170,36" Size="170,36" TextAlignmentVertical="Center">:5cb72c7930998013_1:Label</Text>
+                    <Button Location="196,2" MaximumSize="16384,32" MinimumSize="32,32" Name="ColorButton" PackLocation="right,center" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:5cb72c79ec3cc94d:Chat Color</Button>
+                    <Button Location="325,2" MaximumSize="16384,32" MinimumSize="32,32" Name="LinkColorButton" PackLocation="right,center" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:5cb72c7942fa7808:Link Color</Button>
+                    <Button Location="454,2" MaximumSize="16384,32" MinimumSize="32,32" Name="EchoColorButton" PackLocation="right,center" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:5cb72c7919e1f4c8:Echo Color</Button>
+                </Page>
+                <Page Location="0,66" Name="FloatRangeTemplate" PackSize="1.0,fixed" ScrollExtent="606,36" Size="606,36">
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="LabelSlider" PackSize="absolute,absolute" ScrollExtent="250,36" Size="250,36" TextAlignmentVertical="Center">:5cb72c7930998013_2:Label</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="226,0" Margin="1,0,1,1" Name="LabelSliderLeft" PackLocation="right,center" ScrollExtent="90,36" Size="90,36" TextAlignment="Right" TextAlignmentVertical="Center">:5cb72c7925aab7a9:Left</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="447,0" Name="LabelSliderRight" PackLocation="Right,center" ScrollExtent="90,36" Size="90,36" TextAlignmentVertical="Center">:5cb72c798af4a5ef:Right</Text>
+                    <Sliderbar Algorithm="Linear" ControlInput="Value" FloatLeftValue="3.000" FloatRightValue="1.000" FloatValue="2.000" Location="317,5" MaximumSize="16384,26" MinimumSize="100,26" Name="Slider" PackLocation="right,center" ScrollExtent="130,26" Size="130,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="50" />
+                    <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="519,3" MaximumSize="16384,30" MinimumSize="30,30" Name="Value" PackLocation="right,center" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="66,35" Size="66,30" Style="/CommonElements.Textfield.data.style">2.000</Textbox>
+                </Page>
+                <Page Location="0,102" Name="IntRangeTemplate" PackSize="1.0,fixed" ScrollExtent="606,36" Size="606,36">
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="LabelSlider" PackSize="absolute,absolute" ScrollExtent="250,36" Size="250,36" TextAlignmentVertical="Center">:5cb72c7930998013_3:Label</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="226,0" Margin="1,0,1,1" Name="LabelSliderLeft" PackLocation="right,center" ScrollExtent="90,36" Size="90,36" TextAlignment="Right" TextAlignmentVertical="Center">:5cb72c7925aab7a9_1:Left</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="447,0" Name="LabelSliderRight" PackLocation="Right,center" ScrollExtent="90,36" Size="90,36" TextAlignmentVertical="Center">:5cb72c798af4a5ef_1:Right</Text>
+                    <Sliderbar ControlInput="Value" Location="317,5" MaximumSize="16384,26" MinimumSize="100,26" Name="Slider" PackLocation="right,center" ScrollExtent="130,26" Size="130,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="50" />
+                    <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="519,3" MaximumSize="16384,30" MinimumSize="30,30" Name="Value" NumericInteger="true" PackLocation="right,center" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="66,35" Size="66,30" Style="/CommonElements.Textfield.data.style">50</Textbox>
+                </Page>
+                <Page Location="0,138" Name="BooleanTemplate" PackSize="1.0,fixed" ScrollExtent="606,36" Size="606,36">
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="LabelCheckbox" PackSize="a,a" ScrollExtent="250,36" Size="250,36" TextAlignmentVertical="Center">:5cb72c7930998013_4:Label</Text>
+                    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="293,7" MinimumSize="22,22" Name="Checkbox" PackLocation="right,center" ScrollExtent="22,22" Size="22,22" Style="/CommonElements.Checkbox.data.style" />
+                </Page>
+                <Page Location="0,174" Name="ListTemplate" PackSize="1.0,fixed" ScrollExtent="606,36" Size="606,36">
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="LabelDropdownbox" PackSize="absolute,absolute" ScrollExtent="250,36" Size="250,36" TextAlignmentVertical="Center">:5cb72c7930998013_5:Label</Text>
+                    <Dropdownbox DataSource="FloorplanSource" Location="291,2" Name="Dropdownbox" PackLocation="right,center" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="196,32" Size="196,32" Style="/CommonElements.Dropdown.data.style" />
+                    <Button Location="483,2" MaximumSize="16384,32" MinimumSize="32,32" Name="Button" PackLocation="right,top" ScrollExtent="103,32" Size="103,32" Style="/CommonElements.PushButton.data.style" />
+                </Page>
+                <Page Location="0,210" Name="KeymapTemplate" PackSize="1.0,fixed" ScrollExtent="606,36" Size="606,36">
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="LabelKeyMap" PackSize="a,a" ScrollExtent="173,36" Size="173,36" TextAlignmentVertical="Center">:5cb72c7930998013_6:Label</Text>
+                    <Button Location="197,5" MaximumSize="16384,26" MinimumSize="26,26" Name="DeleteButton" PackLocation="right,center" ScrollExtent="90,26" Size="90,26" Style="/CommonElements.SmallPushButton.data.style">:5cb72c79c241864e:Delete</Button>
+                    <Button Location="291,2" MaximumSize="16384,32" MinimumSize="32,32" Name="OneButton" PackLocation="right,center" ScrollExtent="138,32" Size="138,32" Style="/CommonElements.PushButton.data.style">:5cb72c79bdde3fee:One</Button>
+                    <Button Location="448,2" MaximumSize="16384,32" MinimumSize="32,32" Name="TwoButton" PackLocation="right,center" ScrollExtent="138,32" Size="138,32" Style="/CommonElements.PushButton.data.style">:5cb72c79d6783379:Two</Button>
+                    <Text Color="#D0B97B" Font="/TextStyles.Normal.NormalStyle" Location="422,0" Name="LabelKeyMapOr" PackLocation="right,center" ScrollExtent="35,36" Size="35,36" TextAlignment="Center" TextAlignmentVertical="Center">:5cb72c79e2488a78:or</Text>
+                </Page>
+                <Page Location="0,246" Name="ColorTemplate" PackSize="1.0,fixed" ScrollExtent="606,36" Size="606,36">
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="LabelColor" PackSize="absolute,absolute" ScrollExtent="250,36" Size="250,36" TextAlignmentVertical="Center">:5cb72c7930998013_7:Label</Text>
+                    <Button Location="291,2" MaximumSize="16384,32" MinimumSize="32,32" Name="ColorButton" PackLocation="right,center" ScrollExtent="200,32" Size="200,32" Style="/CommonElements.PushButton.data.style">:5cb72c79273c6eb7:Change color</Button>
+                </Page>
+                <Page Location="0,282" Name="CommandTemplate" PackSize="1.0,fixed" ScrollExtent="606,36" Size="606,36">
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="LabelCommand" PackSize="absolute,absolute" ScrollExtent="250,36" Size="250,36" TextAlignmentVertical="Center">:5cb72c7930998013_8:Label</Text>
+                    <Button Location="291,2" MaximumSize="16384,32" MinimumSize="32,32" Name="CommandButton" PackLocation="right,center" ScrollExtent="200,32" Size="200,32" Style="/CommonElements.PushButton.data.style">:5cb72c794b7317fd:Accept</Button>
+                </Page>
+                <Page Location="0,318" Name="StringTemplate" PackSize="1.0,fixed" ScrollExtent="606,36" Size="606,36">
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="Label" PackSize="absolute,absolute" ScrollExtent="250,36" Size="250,36" TextAlignmentVertical="Center">:5cb72c7930998013_10:Label</Text>
+                    <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="293,3" MaximumSize="16384,30" MinimumSize="30,30" Name="Value" PackLocation="right,center" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="290,35" Size="290,30" Style="/CommonElements.Textfield.data.style">:5cb72c797f25d8c6_1:2.000</Textbox>
+                </Page>
+                <Page Location="0,354" Name="VoiceSpecialTemplate" PackSize="1.0,fixed" ScrollExtent="606,96" Size="606,96">
+                    <ProgressbarStyle Bar.Background="/SpecialElements.AdventureXP.data.progressbar.fill" Name="style" />
+                    <Text Color="#C7CFC7" Font="/TextStyles.Normal.NormalStyle" Location="23,0" Margin="1,0,1,1" Name="Label" PackSize="absolute,absolute" ScrollExtent="250,96" Size="250,96" TextAlignmentVertical="Center">:8dd83dd830998013:Label</Text>
+                    <Button Location="291,2" MaximumSize="16384,32" MinimumSize="32,32" Name="StartButton" PackLocation="right,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:8dd83dd83f88b348:Record (5 sec)</Button>
+                    <Button Location="420,2" MaximumSize="16384,32" MinimumSize="32,32" Name="PlayButton" PackLocation="right,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:8dd83dd8f80db5ab:Playback</Button>
+                    <Button Location="291,33" MaximumSize="16384,32" MinimumSize="32,32" Name="MicTestButton" PackLocation="right,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:8dd83dd8ab2fd629:Test Mic</Button>
+                    <Page BackgroundOpacity="1.000" Location="423,42" Name="BarFrame" PackLocation="right,top" RStyleDefault="/CommonElements.BarFrame.data.rect.style" ScrollExtent="158,15" Size="158,15">
+                        <Progressbar BackgroundColor="#000000" Color="#22FF22" Location="2,3" Name="VoiceIntensity" PackSize="a,a" Progress="1.000" ScrollExtent="154,9" Size="154,9" Style="style" />
+                    </Page>
+                    <Text Color="#FF2222" Font="/TextStyles.Normal.NormalStyle" Location="64,66" Margin="1,0,1,1" Name="Status" PackSize="absolute" ScrollExtent="453,25" Size="453,25" TextAlignment="Right" TextAlignmentVertical="Center">:8dd83dd84d2ea43c:[DEVL] Status text appears here</Text>
+                    <Button Location="518,62" MaximumSize="16384,32" MinimumSize="32,32" Name="FixButton" PackLocation="right,top" ScrollExtent="66,32" Size="66,32" Style="/CommonElements.PushButton.data.style" Tooltip=":8dd83dd84ef9cb95:Press this to attempt to fix the displayed error in the Windows Volume control panel.">:8dd83dd89e48fe7f:Fix</Button>
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="226,54" Name="PageFrame" PackLocation="top,left" PackSize="absolute, absolute" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="626,468" Size="626,468" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="33,526" Margin="1,1,1,1" Name="LabelCurrentConfig" PackLocation="left,bottom" ScrollExtent="114,48" Size="114,32" TextAlignmentVertical="Center" TextColor="#F2EFE1">:5cb72c79faf67c99:Keyboard Layouts</Text>
+            <Dropdownbox DataSource="/LoginScene.LSModeSelector.ConfigDataSource" Location="146,526" Name="DropdownboxConfig" PackLocation="left,bottom" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="188,32" Size="188,32" Style="/CommonElements.Dropdown.data.style" />
+            <Button Enabled="false" Location="333,526" MaximumSize="16384,38" MinimumSize="32,32" Name="ButtonSC" PackLocation="left,bottom" ScrollExtent="90,32" Size="90,32" Style="/CommonElements.PushButton.data.style">:5cb72c79dce4056a:Save</Button>
+            <Button Enabled="false" Location="423,526" MaximumSize="16384,38" MinimumSize="32,32" Name="ButtonLC" PackLocation="left,bottom" ScrollExtent="90,32" Size="90,32" Style="/CommonElements.PushButton.data.style">:5cb72c79fb282af2:Load</Button>
+            <Button Location="549,522" MaximumSize="16384,38" MinimumSize="32,38" Name="ButtonAccept" PackLocation="right,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:5cb72c794b7317fd_1:Accept</Button>
+            <Button Location="648,522" MaximumSize="16384,38" MinimumSize="32,38" Name="ButtonDefaults" PackLocation="right,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:5cb72c790b08c3e7:Defaults</Button>
+            <Button Location="748,522" MaximumSize="16384,38" MinimumSize="32,38" Name="ButtonCancel" PackLocation="right,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:5cb72c79ae453fbb_1:Cancel</Button>
+            <Page BackgroundOpacity="1.000" Location="27,29" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="830,537" Size="830,537" />
+            <Page BackgroundOpacity="1.000" Location="-3,-1" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="890,597" Size="890,597" />
+        </Page>
+    </Page>

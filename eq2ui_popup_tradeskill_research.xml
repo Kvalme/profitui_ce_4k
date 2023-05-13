@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="196,133" MaximumSize="1024,1024" MinimumSize="287,108" Name="TradeskillResearch" PackLocation="center,center" ScrollExtent="640,525" Size="640,525" UserMovable="true">
+            <Page AbsorbsInput="false" Location="35,47" Name="ResearchPage" PackLocation="cfc,cfc" PackSize="f,a" ScrollExtent="570,448" Size="570,448">
+                <Text Font="/TextStyles.Large.LargeStyle" Name="NotResearching" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" Opacity="0.000" PackSize="a,f" ScrollExtent="570,49" Size="570,49" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">:1050eb50f6c3355e:Select a scroll from the list below and press Start Researching to begin</Text>
+                <Text Font="/TextStyles.Large.LargeStyle" Location="120,74" Name="Help" OnShow="parent.NotResearching.Visible=false" PackSize="a,f" ScrollExtent="333,212" Size="333,212" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">:1050eb505ddc53a9:No scrolls are available for research at this time.</Text>
+                <Composite Location="14,0" Name="TopFrame" Orientation="Horizontal" ScrollExtent="546,52" Size="546,52" SpacingType="Fill">
+                    <Page MaximumSize="546,48" Name="StatusPage" PackSize="f,a" ScrollExtent="546,48" Size="546,48">
+                        <Page Location="57,17" MaximumSize="16384,32" MinimumSize="150,32" Name="Progress" PackSize="a,a" ScrollExtent="352,32" Size="352,32">
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-1,1" Name="Frame" PackSize="a,a" RStyleDefault="/SpecialElements.SkillProgressBar.data.frame.rect" ScrollExtent="354,32" Size="354,32" />
+                            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,7" Margin="0,0,15,0" Name="ProgressText" PackSize="a,a" ScrollExtent="348,23" Size="348,18" TextAlignment="Center" UserMovable="true">:1050eb5074d326cb:[DEVL] 30 days 15 hours remaining</Text>
+                            <Progressbar BackgroundOpacity="1.000" Color="#EF8450" Name="Progressbar" PackSize="a,a" Progress="0.500" ScrollExtent="350,32" Size="350,32" Style="/SpecialElements.SkillProgressBar.data.style" />
+                            <Page BackgroundOpacity="1.000" Name="Bkg" PackSize="a,a" RStyleDefault="/SpecialElements.SkillProgressBar.data.bkg.rect" ScrollExtent="350,32" Size="350,32" />
+                        </Page>
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" ScrollExtent="42,42" Size="42,42" />
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="56,1" Name="Label" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackSize="a,f" ScrollExtent="361,23" Size="361,20">:1050eb50631e4874:[DEVL]Researching: Ice Bolt (Master I)</Text>
+                    </Page>
+                </Composite>
+                <Page BackgroundOpacity="1.000" Location="7,55" MaximumSize="16384,25" MinimumSize="0,25" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="557,25" Size="557,25">
+                    <Button BackgroundOpacity="0.000" Location="451,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort4" PackLocation="left,top" PackSize="a,f" ScrollExtent="78,25" Size="78,25" Style="/CommonElements.Table.data.sort.style_center_align">:1050eb50a4d41ce8:Level</Button>
+                    <Button BackgroundOpacity="0.000" Location="55,1" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort1" PackLocation="left,top" PackSize="a,f" ScrollExtent="106,25" Size="106,25" Style="/CommonElements.Table.data.sort.style_left_align">:1050eb5001ee2ec7:Name</Button>
+                    <Button BackgroundOpacity="0.000" Location="203,1" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort2" PackLocation="left,top" PackSize="a,f" ScrollExtent="198,25" Size="198,25" Style="/CommonElements.Table.data.sort.style_left_align">:1050eb5024886fef:Progress</Button>
+                </Page>
+                <Composite Location="16,86" Name="Items" Orientation="Horizontal" PackSize="a,a" ScrollExtent="539,307" Size="539,307" SpacingType="Fill">
+                    <Page AbsorbsInput="false" DropToParent="true" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="517,307" ScrollSize="1,44" Size="517,307">
+                        <Icon BackgroundTint="#000000" DropToParent="true" IconStyle="/IconStyles.item_list" Location="1,4" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="absolute,fixed" ScrollExtent="398,50" ShadowStyle="/ShadowStylesNew.Drop.style" Size="398,50" TextAlignmentVertical="Center">:1050eb50225610e3:table entry</Text>
+                        <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="449,0" Name="row Level" PackLocation="right,top" PackSize="f,f" ScrollExtent="68,50" ShadowStyle="/ShadowStylesNew.Drop.style" Size="68,50" TextAlignment="Center" TextAlignmentVertical="Center">:1050eb50651533ec:level</Text>
+                        <Image AbsorbsInput="false" BackgroundColor="/ColorStyles.window_background_selection" BackgroundOpacity="1.000" DropToParent="true" Name="row Selection" PackSize="absolute,fixed" ScrollExtent="516,50" Size="516,50" />
+                    </Page>
+                    <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="false" Location="517,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,307" Size="22,307" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Composite>
+                <Button Location="208,413" Name="ResearchButton" PackSize="fixed,fixed" ScrollExtent="160,30" Size="160,30" Style="/CommonElements.PushButton.data.style" Tooltip=":1050eb5005c6ee50:Begin researching the selected spell or ability.">:1050eb505162cd6b:Research</Button>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="7,77" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="557,324" Size="557,324" />
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="640,525" Size="640,525">
+                <Button Location="584,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":1050eb50ec278586:Window Settings" UserMovable="true" />
+                <Button Location="564,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":1050eb50574a0c6d:Help" UserMovable="true" />
+                <Button Location="604,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":1050eb502d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="275,70" Size="275,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="168,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="145,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:1050eb5024779f1b:Tradeskill Research</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="450,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="640,525" Size="640,525" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,450" Name="LowerTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="614,75" Size="614,75" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="640,525" Size="640,525" />
+            </Page>
+        </Page>

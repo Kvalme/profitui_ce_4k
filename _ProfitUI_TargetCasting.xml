@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page alwaysontop="true" eq2usescomwndcontrols="true" Location="419,315" MaximumSize="640,58" MinimumSize="270,58" Name="TargetCasting" PackLocation="center,bottom" PackLocationProp="-093/0001,-253/0001" ScrollExtent="340,58" Size="340,58" UserMovable="true" UserResizable="true" Visible="true">
+  <Page AbsorbsInput="false" BackgroundColor="#FF0000" DynamicData="/GameData.Target.Casting" DynamicDataFilter="0001" Location="0,-6" Name="CastingProgress" PackLocation="left,top" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="340,46" Size="340,46" Visible="false">
+    <Text Color="#FFFFFF" AbsorbsInput="false" DynamicData="/GameData.Target.Casting" DynamicDataFilter="FBFF" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText="Fighting Chance" Location="1,5" Margin="2,2,2,2" Name="SpellName" PackLocation="top,center" PackSize="absolute,absolute" ScrollExtent="340,23" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="340,23" TextAlignment="Center" TextAlignmentVertical="Center">Fighting Chance</Text>
+    <Progressbar AbsorbsInput="false" Color="#00FF00" DynamicData="/GameData.Target.Casting" DynamicDataFilter="FFFB" Location="4,13" Name="Progress" PackLocation="top,left" PackSize="absolute,fixed" Progress="1.000" ScrollExtent="332,13" Size="332,13" Style="/ProfitUI_Styles.Bars.prog_default_gradient"/>
+    <Page AbsorbsInput="false" Location="0,9" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault=" " ScrollExtent="340,20" Size="340,20">
+      <Button Enabled="false" GetsInput="false" Name="TitleBarBoxed" PackSize="a,f" ScrollExtent="340,20" Size="340,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed" />
+    </Page>
+  </Page>
+  <Page AbsorbsInput="false" BackgroundColor="#FF0000" DynamicData="/GameData.ImpliedTarget.Casting" DynamicDataFilter="0001" Location="0,26" Name="CastingProgress"PackLocation="left,top" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="340,46" Size="340,46" Visible="false">
+    <Text Color="#FFFFFF" AbsorbsInput="false" DynamicData="/GameData.ImpliedTarget.Casting" Font="/ProfitUI_Styles.Fonts.FontArial14T" DynamicDataFilter="FBFF" LocalText="Fighting Chance" Location="1,5" Margin="2,2,2,2" Name="SpellName" PackLocation="top,center" PackSize="absolute,absolute" ScrollExtent="340,23" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="340,23" TextAlignment="Center" TextAlignmentVertical="Center">Fighting Chance</Text>
+    <Progressbar AbsorbsInput="false" Color="#00FF00" DynamicData="/GameData.ImpliedTarget.Casting" DynamicDataFilter="FFFB" Location="4,13" Name="Progress" PackLocation="top,left" PackSize="absolute,fixed" Progress="1.000" ScrollExtent="332,13" Size="332,13" Style="/ProfitUI_Styles.Bars.prog_default_gradient"/>
+    <Page AbsorbsInput="false" Location="0,9" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault=" " ScrollExtent="340,20" Size="340,20">
+      <Button Enabled="false" GetsInput="false" Name="TitleBarBoxed" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="340,20" Size="340,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed" />
+    </Page>
+  </Page>
+</Page>

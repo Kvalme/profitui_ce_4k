@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="677,249" Name="Inventory" PackLocation="center,center" PackLocationProp="-340/0001,-240/0001" Size="225,274" UserMovable="true" Version="2.3.0">
+<Button Location="206,241" Name="CloseButton" OnPress="Parent.WC_CloseButton.Press=true" PackLocation="right,bottom" PackLocationProp="-019/0001,-033/0001" Size="15,15" Style="/ButtonStyles.close_button" Tooltip="Close"/>
+<Button Location="206,241" Name="WC_CloseButton" PackLocation="right,bottom" PackLocationProp="-019/0001,-033/0001" Size="15,15" Style="/ButtonStyles.close_button" Tooltip="Close" UserMovable="true" Visible="false"/>
+<Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="-2,254" Name="CoinPage" PackLocation="right,bottom" PackLocationProp="-227/0001,-020/0001" Size="230,20">
+<Icon ActionData="coin 3" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="1,1" MouseOverColor="#FFFF00" Name="CoinPlatinum" Size="18,18" TreatAsButton="true"/>
+<Icon ActionData="coin 2" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="57,1" MouseOverColor="#FFFF00" Name="CoinGold" Size="18,18" TreatAsButton="true"/>
+<Icon ActionData="coin 1" BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.coin" Location="113,1" MouseOverColor="#FFFF00" Name="CoinSilver" Size="18,18" TreatAsButton="true"/>
+<Icon ActionData="coin 0" BackgroundTint="#000000" Dragable="true" Location="168,1" MouseOverColor="#FFFF00" Name="CoinCopper" sIconStyle="/IconStyles.coin" Size="18,18" TreatAsButton="true"/>
+<Text actiontype="Coin" cointype="3" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_3" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="20,1" Margin="0,0,5,0" Name="Platinum" Size="43,18" TextAlignmentVertical="Center" Tooltip="Platinum">999999</Text>
+<Text actiontype="Coin" cointype="2" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_2" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="76,1" Margin="0,0,5,0" Name="Gold" Size="43,18" TextAlignmentVertical="Center" TextColor="#FFEE70" Tooltip="Gold">999999</Text>
+<Text actiontype="Coin" cointype="1" description="Silver" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_1" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="132,1" Margin="0,0,5,0" Name="Silver" Size="43,18" TextAlignmentVertical="Center" TextColor="#A0A0A0" Tooltip="Silver">999999</Text>
+<Text actiontype="Coin" cointype="0" description="Copper" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_0" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="187,1" Margin="0,0,5,0" Name="Copper" Size="43,18" TextAlignmentVertical="Center" TextColor="#EA9129" Tooltip="Copper">999999</Text>
+</Page>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" GetsInput="false" Location="64,240" Margin="0,0,5,0" Name="WeightLabel" PackLocation="right,bottom" PackLocationProp="-161/0001,-034/0001" Size="62,16" TextAlignment="Right" TextAlignmentVertical="Center">Weight:</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.Self.Weight" Font="/ProfitUI_Styles.Fonts.FontArial14T" GetsInput="false" Location="130,240" Margin="0,0,5,0" Name="WeightValue" PackLocation="right,bottom" PackLocationProp="-095/0001,-034/0001" Size="80,16" TextAlignmentVertical="Center">9999/9999</Text>
+<Page Name="AppearancePage" Color="#FFB0B0" Size="64,192" Visible="false">
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" MouseOverColor="#FFFF00" Name="head" Size="32,32" Tooltip=":77a22014f83ea65d_1:Head" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,0" MouseOverColor="#FFFF00" Name="cloak" Size="32,32" Tooltip=":77a22014b2730ceb_1:Cloak" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="0,32" MouseOverColor="#FFFF00" Name="chest" Size="32,32" Tooltip=":77a22014c57a634c_1:Chest" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,32" MouseOverColor="#FFFF00" Name="shoulders" Size="32,32" Tooltip=":77a2201405a945b3_1:Shoulders" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,64" MouseOverColor="#FFFF00" Name="forearms" Size="32,32" Tooltip=":77a220144e622748_1:Wrists" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,96" MouseOverColor="#FFFF00" Name="hands" Size="32,32" Tooltip=":77a220145810e303_1:Hands" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="0,64" MouseOverColor="#FFFF00" Name="legs" Size="32,32" Tooltip=":77a22014a2d5134b_1:Legs" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="0,96" MouseOverColor="#FFFF00" Name="feet" Size="32,32" Tooltip=":77a22014613a040e_1:Feet" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,128" MouseOverColor="#FFFF00" Name="ranged" Size="32,32" Tooltip=":80c1011d4986e952_1:Ranged Weapon" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="0,160" MouseOverColor="#FFFF00" Name="primary" Size="32,32" Tooltip=":80c1011db28fe160_1:Primary Hand" TreatAsButton="true" />
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,160" MouseOverColor="#FFFF00" Name="secondary" Size="32,32" Tooltip=":80c1011d18fd19d9_1:Secondary Hand" TreatAsButton="true" />
+</Page>
+<Page AbsorbsInput="false" BackgroundColor="#00FF00" Name="EquipmentPage" PackSize="a,a" PackSizeProp="0001/0001,0017/0001" Size="224,257">
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="0,160" MouseOverColor="#FFFF00" Name="drink" Size="32,32" Tooltip=":77a220148bf57936_1:Drink" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,160" MouseOverColor="#FFFF00" Name="food" Size="32,32" Tooltip=":77a220148bf57936:Food" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="160,160" MouseOverColor="#FFFF00" Name="primary" Size="32,32" Tooltip="77a22014b28fe160:Primary Hand" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="192,160" MouseOverColor="#FFFF00" Name="secondary" Size="32,32" Tooltip=":77a2201418fd19d9:Secondary Hand" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" MouseOverColor="#FFFF00" Name="head" Size="32,32" Tooltip=":77a22014f83ea65d:Head" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,0" MouseOverColor="#FFFF00" Name="cloak" Size="32,32" Tooltip=":80c1011db2730ceb:Cloak" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="0,32" MouseOverColor="#FFFF00" Name="chest" Size="32,32" Tooltip=":77a22014c57a634c:Chest" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,32" MouseOverColor="#FFFF00" Name="shoulders" Size="32,32" Tooltip=":77a2201405a945b3:Shoulders" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,64" MouseOverColor="#FFFF00" Name="forearms" Size="32,32" Tooltip=":77a220144e622748:Wrists" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,96" MouseOverColor="#FFFF00" Name="hands" Size="32,32" Tooltip=":77a220145810e303:Hands" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="0,64" MouseOverColor="#FFFF00" Name="legs" Size="32,32" Tooltip=":77a22014a2d5134b:Legs" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="0,96" MouseOverColor="#FFFF00" Name="feet" Size="32,32" Tooltip=":77a22014613a040e:Feet" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="160,64" MouseOverColor="#FFFF00" Name="left_ring" Size="32,32" Tooltip=":77a220140ee529c5:Left Ring" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="192,64" MouseOverColor="#FFFF00" Name="right_ring" Size="32,32" Tooltip=":77a220146cfbb8a4:Right Ring" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="160,32" MouseOverColor="#FFFF00" Name="ears" Size="32,32" Tooltip=":77a22014ef611209:Left Ear" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="192,32" MouseOverColor="#FFFF00" Name="ears2" Size="32,32" Tooltip=":77a22014ef611209_1:Right Ear" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="192,0" MouseOverColor="#FFFF00" Name="neck" Size="32,32" Tooltip=":77a220147fdc8692:Neck" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="160,96" MouseOverColor="#FFFF00" Name="left_wrist" Size="32,32" Tooltip=":77a22014d871f80d:Left Wrist" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="192,96" MouseOverColor="#FFFF00" Name="right_wrist" Size="32,32" Tooltip=":77a22014e2a6b752:Right Wrist" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="160,128" MouseOverColor="#FFFF00" Name="ranged" Size="32,32" Tooltip=":77a220144986e952:Ranged Weapon" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="192,128" MouseOverColor="#FFFF00" Name="ammo" Size="32,32" Tooltip=":77a22014b0422eeb:Ammo" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="160,0" MouseOverColor="#FFFF00" Name="waist" Size="32,32" Tooltip=":77a220142408e4e0:Waist" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="0,128" MouseOverColor="#FFFF00" Name="activate1" Size="32,32" Tooltip=":77a22014bf035211:Charm" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="32,128" MouseOverColor="#FFFF00" Name="activate2" Size="32,32" Tooltip=":77a22014bf035211_1:Charm" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Color="#F2E70D" Font="/Fonts.FontArialBold14" Location="93,224" Name="AttunementWarning" PackLocation=",bottom" PackLocationProp="xxxx/xxxx,-033/0001" ShadowStyle="/ShadowStyles.Outline1" Size="128,17" TextAlignment="Right" Visible="false">Un-attuned item(s)</Text>
+<PaperDoll Location="64,1" Name="Paperdoll" Size="95,191"/>
+</Page>
+<Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="0,192" Name="GeneralPage" PackLocation="right,bottom" PackLocationProp="-225/0001,-082/0001" PackSize="f,f" PackSizeProp="0002/0003,0002/0003" Size="225,65">
+<Button Name="Expand" OnPress="Parent.Parent.Left=(Parent.Parent.Left - 64) Parent.Parent.Width=289 Parent.Parent.EquipmentPage.Left=64" />
+<Button Name="Shrink" OnPress="Parent.Parent.Left=(Parent.Parent.Left + 64) Parent.Parent.Width=225 Parent.Parent.EquipmentPage.Left=0"/>
+<Button BackgroundOpacity="0.000" Name="ShowAppearance" OnHoverIn="Parent.TextShowAppearance.Opacity=1" OnHoverOut="Parent.TextShowAppearance.Opacity=0.6" OnPress="Parent.Expand.Press=true
+Parent.Parent.AppearancePage.Visible=true
+Parent.TextShowAppearance.Visible=false
+Parent.TextHideAppearance.Visible=true
+Visible=false" Size="32,32" Style="/ProfitUI_Styles.ButtonStyles.button_textonly" Tooltip="Click to show the appearance slots"/>
+<Button BackgroundOpacity="0.000" Name="HideAppearance" OnHoverIn="Parent.TextHideAppearance.Opacity=1" OnHoverOut="Parent.TextHideAppearance.Opacity=0.6" OnPress="Parent.Shrink.Press=true
+Parent.Parent.AppearancePage.Visible=false
+Parent.TextShowAppearance.Visible=true
+Parent.TextHideAppearance.Visible=false
+Parent.ShowAppearance.Visible=true" Size="32,32" Style="/ProfitUI_Styles.ButtonStyles.button_textonly" Tooltip="Click to hide the appearance slots"/>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" GetsInput="false" Location="1,0" Name="TextHideAppearance" Opacity="0.600" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">Hide Appearance</Text>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial12T" GetsInput="false" Location="1,0" Name="TextShowAppearance" Opacity="0.600" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center">Show Appearance</Text>
+<Page DragAccepts="icon" Location="32,32" Name="AutoInventory" Size="195,35"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Inventory" Font="/ProfitUI_Styles.Fonts.FontArial12T" IconStyle="/IconStyles.inventory" Location="32,0" MouseOverColor="#FFFF00" Name="InvSlot0" Size="32,32" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Inventory" Font="/ProfitUI_Styles.Fonts.FontArial12T" IconStyle="/IconStyles.inventory" Location="64,0" MouseOverColor="#FFFF00" Name="InvSlot1" Size="32,32" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Inventory" Font="/ProfitUI_Styles.Fonts.FontArial12T" IconStyle="/IconStyles.inventory" Location="96,0" MouseOverColor="#FFFF00" Name="InvSlot2" Size="32,32" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Inventory" Font="/ProfitUI_Styles.Fonts.FontArial14T" IconStyle="/IconStyles.inventory" Location="128,0" MouseOverColor="#FFFF00" Name="InvSlot3" Size="32,32" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Inventory" Font="/ProfitUI_Styles.Fonts.FontArial14T" IconStyle="/IconStyles.inventory" Location="160,0" MouseOverColor="#FFFF00" Name="InvSlot4" Size="32,32" TreatAsButton="true"/>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Inventory" Font="/ProfitUI_Styles.Fonts.FontArial14T" IconStyle="/IconStyles.inventory" Location="192,0" MouseOverColor="#FFFF00" Name="InvSlot5" Size="32,32" TreatAsButton="true"/>
+<Text AbsorbsInput="false" Color="#FF0F00" Font="/Fonts.FontArialBold14" Location="35,32" Name="Overflow Text" ShadowStyle="/ShadowStyles.Outline1" Size="88,16" UserMovable="true" UserResizable="true">Overflow</Text>
+<Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Inventory" IconStyle="/IconStyles.inventory" Location="0,32" MouseOverColor="#FFFF00" Name="InvSlot6" Size="32,32" TreatAsButton="true"/>
+</Page>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Frame" PackLocation="right,top" PackLocationProp="-225/0001,0000/0001" PackSize="f,a" PackSizeProp="0002/0003,0000/0001" RStyleDefault="/FrameStyles.single_pixel" Size="224,274"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Titlebar" OnHide="
+Parent.GeneralPage.HideAppearance.Press=true
+Parent.EquipmentPage.drink.Location=0,64
+Parent.EquipmentPage.food.Location=32,64
+Parent.EquipmentPage.primary.Location=128,64
+Parent.EquipmentPage.secondary.Location=160,64
+Parent.EquipmentPage.head.Location=0,32
+Parent.EquipmentPage.cloak.Location=32,32
+Parent.EquipmentPage.chest.Location=64,32
+Parent.EquipmentPage.shoulders.Location=96,32
+Parent.EquipmentPage.forearms.Location=128,32
+Parent.EquipmentPage.hands.Location=160,32
+Parent.EquipmentPage.legs.Location=192,32
+Parent.EquipmentPage.feet.Location=224,32
+Parent.EquipmentPage.left_ring.Location=96,0
+Parent.EquipmentPage.right_ring.Location=128,0
+Parent.EquipmentPage.ears.Location=0,0
+Parent.EquipmentPage.ears2.Location=32,0
+Parent.EquipmentPage.neck.Location=64,0
+Parent.EquipmentPage.left_wrist.Location=160,0
+Parent.EquipmentPage.right_wrist.Location=192,0
+Parent.EquipmentPage.ranged.Location=192,64
+Parent.EquipmentPage.ammo.Location=224,64
+Parent.EquipmentPage.waist.Location=224,0
+Parent.EquipmentPage.activate1.Location=64,64
+Parent.EquipmentPage.activate2.Location=96,64
+Parent.EquipmentPage.Paperdoll.Visible=false
+Parent.GeneralPage.Expand.OnPress=&apos;Parent.Parent.EquipmentPage.drink.Location=0,128 Parent.Parent.EquipmentPage.food.Location=32,128 Parent.Parent.EquipmentPage.primary.Location=128,128 Parent.Parent.EquipmentPage.secondary.Location=160,128 Parent.Parent.EquipmentPage.ranged.Location=192,128 Parent.Parent.EquipmentPage.ammo.Location=224,128 Parent.Parent.EquipmentPage.activate1.Location=64,128 Parent.Parent.EquipmentPage.activate2.Location=96,128 Parent.Parent.Size=257,243&apos;
+Parent.GeneralPage.Shrink.OnPress=&apos;Parent.Parent.EquipmentPage.drink.Location=0,64 Parent.Parent.EquipmentPage.food.Location=32,64 Parent.Parent.EquipmentPage.primary.Location=128,64 Parent.Parent.EquipmentPage.secondary.Location=160,64 Parent.Parent.EquipmentPage.ranged.Location=192,64 Parent.Parent.EquipmentPage.ammo.Location=224,64 Parent.Parent.EquipmentPage.activate1.Location=64,64 Parent.Parent.EquipmentPage.activate2.Location=96,64 Parent.Parent.Size=257,179&apos;
+Parent.GeneralPage.HideAppearance.Press=true
+Parent.GeneralPage.Location=0,96
+Parent.GeneralPage.InvSlot0.Location=32,0
+Parent.GeneralPage.InvSlot1.Location=64,0
+Parent.GeneralPage.InvSlot2.Location=96,0
+Parent.GeneralPage.InvSlot3.Location=128,0
+Parent.GeneralPage.InvSlot4.Location=160,0
+Parent.GeneralPage.InvSlot5.Location=192,0
+Parent.AppearancePage.Location=0,64
+Parent.AppearancePage.Size=256,64
+Parent.AppearancePage.chest.Location=64,0
+Parent.AppearancePage.shoulders.Location=96,0
+Parent.AppearancePage.forearms.Location=128,0
+Parent.AppearancePage.hands.Location=160,0
+Parent.AppearancePage.legs.Location=192,0
+Parent.AppearancePage.feet.Location=224,0
+Parent.AppearancePage.primary.Location=128,32
+Parent.AppearancePage.secondary.Location=160,32
+Parent.AppearancePage.ranged.Location=192,32
+Parent.WC_Backdrop.Size=295,236
+Parent.WC_Backdrop.Location=&apos;-14,-40&apos;
+Parent.WC_Frame.Size=257,179
+Parent.WC_Frame.Location=0,0" OnShow="
+Parent.GeneralPage.HideAppearance.Press=true
+Parent.EquipmentPage.drink.Location=0,160
+Parent.EquipmentPage.food.Location=32,160
+Parent.EquipmentPage.primary.Location=160,160
+Parent.EquipmentPage.secondary.Location=192,160
+Parent.EquipmentPage.head.Location=0,0
+Parent.EquipmentPage.cloak.Location=32,0
+Parent.EquipmentPage.chest.Location=0,32
+Parent.EquipmentPage.shoulders.Location=32,32
+Parent.EquipmentPage.forearms.Location=32,64
+Parent.EquipmentPage.hands.Location=32,96
+Parent.EquipmentPage.legs.Location=0,64
+Parent.EquipmentPage.feet.Location=0,96
+Parent.EquipmentPage.left_ring.Location=160,64
+Parent.EquipmentPage.right_ring.Location=192,64
+Parent.EquipmentPage.ears.Location=160,32
+Parent.EquipmentPage.ears2.Location=192,32
+Parent.EquipmentPage.neck.Location=192,0
+Parent.EquipmentPage.left_wrist.Location=160,96
+Parent.EquipmentPage.right_wrist.Location=192,96
+Parent.EquipmentPage.ranged.Location=160,128
+Parent.EquipmentPage.ammo.Location=192,128
+Parent.EquipmentPage.waist.Location=160,0
+Parent.EquipmentPage.activate1.Location=0,128
+Parent.EquipmentPage.activate2.Location=32,128
+Parent.EquipmentPage.Paperdoll.Visible=true
+Parent.GeneralPage.Expand.OnPress=&apos;Parent.Parent.Left=(Parent.Parent.Left - 64) Parent.Parent.Size=289,274 Parent.Parent.EquipmentPage.Left=64&apos;
+Parent.GeneralPage.Shrink.OnPress=&apos;Parent.Parent.Left=(Parent.Parent.Left + 64) Parent.Parent.Size=225,274 Parent.Parent.EquipmentPage.Left=0&apos;
+Parent.GeneralPage.HideAppearance.Press=true
+Parent.GeneralPage.Location=0,192
+Parent.GeneralPage.InvSlot0.Location=32,0
+Parent.GeneralPage.InvSlot1.Location=64,0
+Parent.GeneralPage.InvSlot2.Location=96,0
+Parent.GeneralPage.InvSlot3.Location=128,0
+Parent.GeneralPage.InvSlot4.Location=160,0
+Parent.GeneralPage.InvSlot5.Location=192,0
+Parent.AppearancePage.Location=0,0
+Parent.AppearancePage.Size=64,192
+Parent.AppearancePage.chest.Location=0,32
+Parent.AppearancePage.shoulders.Location=32,32
+Parent.AppearancePage.forearms.Location=32,64
+Parent.AppearancePage.hands.Location=32,96
+Parent.AppearancePage.legs.Location=0,64
+Parent.AppearancePage.feet.Location=0,96
+Parent.AppearancePage.ranged.Location=32,128
+Parent.AppearancePage.primary.Location=0,160
+Parent.AppearancePage.secondary.Location=32,160
+Parent.WC_Backdrop.Size=258,332
+Parent.WC_Backdrop.Location=&apos;-14,-40&apos;
+Parent.WC_Frame.Size=224,274
+Parent.WC_Frame.Location=0,0"/>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-14,-40" Name="WC_Backdrop" PackSize="f,a" PackLocation="right,top" PackLocationProp="-239/0001,-040/0001" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" Size="258,332"/>
+</Page>

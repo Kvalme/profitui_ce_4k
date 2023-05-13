@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Image Location="98,242" Name="BGControlPointTemplate" ScrollExtent="23,23" Size="23,23" Style="BattlegroundStyles.CPDefault" Visible="false" />
+<Image Location="98,242" Name="BGMurderBallTemplate" ScrollExtent="23,23" Size="23,23" Style="BattlegroundStyles.MurderBallStyle" Visible="false" />
+<Image Location="98,242" Name="BGFlagTemplate" ScrollExtent="23,23" Size="23,23" Style="BattlegroundStyles.FlagStyle" Visible="false" />
+<Image Location="98,242" Name="destination" OnShowEffector="Skinnable_Styles.LocationStyles.DestinationEffector" ScrollExtent="23,23" Size="23,23" Style="Skinnable_Styles.LocationStyles.yourdestination" Visible="false" />
+<Image Location="145,123" Name="locationDot" ScrollExtent="23,23" Size="23,23" Style="Skinnable_Styles.LocationStyles.youarehereDot" Visible="false" />
+<Image Location="117,123" Name="location" ScrollExtent="23,23" Size="23,23" Style="Skinnable_Styles.LocationStyles.youarehere" Visible="false" />
+<Image Location="176,210" Name="group1" ScrollExtent="23,23" Size="23,23" Style="Skinnable_Styles.LocationStyles.group1loc" Visible="false" />
+<Image Location="214,210" Name="group2" ScrollExtent="23,23" Size="23,23" Style="Skinnable_Styles.LocationStyles.group2loc" Visible="false" />
+<Image Location="176,244" Name="group3" ScrollExtent="23,23" Size="23,23" Style="Skinnable_Styles.LocationStyles.group3loc" Visible="false" />
+<Image Location="214,244" Name="group4" ScrollExtent="23,23" Size="23,23" Style="Skinnable_Styles.LocationStyles.group4loc" Visible="false" />
+<Image Location="196,226" Name="group5" ScrollExtent="23,23" Size="23,23" Style="Skinnable_Styles.LocationStyles.group5loc" Visible="false" />
+<Image Location="98,242" Name="raidMemberTemplate" ScrollExtent="23,23" Size="23,23" Style="Skinnable_Styles.LocationStyles.raidMememberDot" Visible="false" />

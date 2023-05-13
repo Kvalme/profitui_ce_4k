@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Location="212,179" Name="Contest" PackLocation="cfc,cfc" ScrollExtent="600,410" Size="600,410" UserMovable="true" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="0,39" Name="Title" PackSize="a" ScrollExtent="600,42" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="600,42" TextAlignment="Center" UserMovable="true" UserResizable="true">:919134c499f7314b:Porkupuncture!</Text>
+            <Splitter Enabled="false" Location="156,71" MaximumSize="16384,14" MinimumSize="100,14" Name="Rule" PackLocation="cfc" ScrollExtent="288,14" Size="288,14" Style="/CommonElements.Splitter.data.style" />
+            <Button IsCancelButton="true" Location="240,350" MaximumSize="16384,32" MinimumSize="32,32" Name="Close" PackLocation="cfc,fff" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:919134c42d3f513f:Close</Button>
+            <Page Name="Status" ScrollExtent="600,410" Size="600,410">
+                <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Interactive="false" Location="50,80" Margin="1,1,3,3" Name="RulesHeader" ScrollExtent="200,28" Size="200,28">:919134c4b7a449c7:Rules</Text>
+                <Scrollbar ArrowPressSound="sounds/button" Control="Rules" HideIfUnnecessary="true" Location="548,106" MaximumSize="22,16384" MinimumSize="22,80" Name="RulesScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,80" Size="22,80" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Text Font="/TextStyles.Large.LargeStyle" Interactive="false" Location="70,110" Name="Rules" ScrollExtent="478,72" Size="478,72" TextColor="#F0D080">:919134c4d18de392:Pigs can fly You can&apos;t Shoot pigs for points Every 10 points gives bacon rampage powerup!</Text>
+                <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Interactive="false" Location="50,190" Margin="1,1,3,3" Name="StatusHeader" ScrollExtent="200,28" Size="200,28">:919134c4e1f51a2d:Your Status</Text>
+                <Text Font="/TextStyles.Large.LargeStyle" Interactive="false" Location="70,210" Name="YourStatus" ScrollExtent="368,36" Size="368,36" TextAlignmentVertical="Center" TextColor="#F0D080">:919134c46df0e48c:You are not signed up for this game.</Text>
+                <Button Location="437,214" MaximumSize="16384,32" MinimumSize="32,32" Name="Signup" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:919134c4003a3899:Sign Up</Button>
+                <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Interactive="false" Location="50,240" Margin="1,1,3,3" Name="ContestStatusHeader" ScrollExtent="386,28" Size="386,28">:919134c462da1d08:Game Status</Text>
+                <Text Font="/TextStyles.Large.LargeStyle" Interactive="false" Location="70,260" Name="ContestStatus" ScrollExtent="368,46" Size="368,36" TextAlignmentVertical="Center" TextColor="#F0D080">:919134c43486cbdc:Waiting for signup period to end (8 minutes)</Text>
+                <Button Location="437,264" MaximumSize="16384,32" MinimumSize="32,32" Name="LastResults" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:919134c4a42c46fb:Last Results</Button>
+                <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Interactive="false" Location="50,290" Margin="1,1,3,3" Name="TopScoreHeader" ScrollExtent="200,28" Size="200,28">:919134c4e13d7369:Top Score</Text>
+                <Text Font="/TextStyles.Large.LargeStyle" Interactive="false" Location="70,310" Name="TopScore" ScrollExtent="368,36" Size="368,36" TextAlignmentVertical="Center" TextColor="#F0D080">:919134c49c1beae9:Silverfrost: 1,000</Text>
+                <Button Location="437,314" MaximumSize="16384,32" MinimumSize="32,32" Name="TopScores" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:919134c4fd83c409:Top Scores</Button>
+            </Page>
+            <Page Name="Score" ScrollExtent="600,610" Size="600,610" Visible="false">
+                <Page Location="49,93" Name="TablePage" ScrollExtent="507,250" Size="507,250">
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="5,4" Margin="1,1,1,1" Name="Place" ScrollExtent="45,48" Size="45,18" TextColor="#F0D080">:919134c44a238336:Place</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="50,4" Margin="1,1,1,1" Name="Name" ScrollExtent="250,25" Size="250,18" TextAlignment="Center" TextColor="#F0D080">:919134c401ee2ec7:Name</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="300,4" Margin="1,1,1,1" Name="Zone" ScrollExtent="125,25" Size="125,18" TextColor="#F0D080">:919134c4ff2690c6:Zone</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="452,4" Margin="1,1,1,1" Name="Score" ScrollExtent="80,25" Size="80,18" TextColor="#F0D080">:919134c40ca7e7aa:Score</Text>
+                    <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="-2,2" Name="HeaderFrame" PackSize="a" RStyleDefault="/rectlist.win_plain" ScrollExtent="508,22" Size="508,22" />
+                    <Page BackgroundOpacity="0.475" Location="2,26" Name="Table" PackSize="a,a" ScrollExtent="500,220" Size="500,220">
+                        <Page Name="Row" PackSize="a" ScrollExtent="500,22" Size="500,22">
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="3,4" Margin="1,1,1,1" Name="Place" ScrollExtent="25,25" Size="25,18" TextAlignment="Right">:919134c47c231048:1</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="47,4" Margin="1,1,1,1" Name="Name" ScrollExtent="251,25" Size="251,18" TextAlignment="Center">:919134c48b52e4fb:Longestnamepossible</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="298,4" Margin="1,1,1,1" Name="Zone" ScrollExtent="125,48" Size="125,18">:919134c4db543d0b:Qeynos Harbor 3</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="423,4" Margin="1,1,1,1" Name="Score" ScrollExtent="60,25" Size="60,18" TextAlignment="Right">:919134c4928c6a9d:1,000</Text>
+                        </Page>
+                    </Page>
+                    <Page BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="0,3" Name="HeaderBkg" PackSize="a" ScrollExtent="504,17" Size="504,17" />
+                    <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="-2,22" Name="TableFrame" PackSize="a,a" RStyleDefault="/rectlist.win_plain" ScrollExtent="508,228" Size="508,228" />
+                </Page>
+            </Page>
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="a,a" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="600,410" Size="600,410" />
+        </Page>

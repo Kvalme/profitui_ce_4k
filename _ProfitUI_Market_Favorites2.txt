@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSource Name="FavSource2EN">
+<Data Class="0" ItemName=" " ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="      Spells &amp; Recipes" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="SPELLS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="(Ancient)" ItemEffect=" " ItemType="33" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Ancient" Tier="7"/>
+<Data ItemName="(GrandMaster)" ItemEffect=" " ItemType="33" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Grandmaster" Tier="6"/>
+<Data ItemName="(Master)" ItemEffect=" " ItemType="33" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Master" Tier="6"/>
+<Data ItemName="(Expert)" ItemEffect=" " ItemType="33" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Expert" Tier="4"/>
+<Data ItemName="(Adept)" ItemEffect=" " ItemType="33" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Adept" Tier="3"/>
+<Data ItemName="(Journeyman)" ItemEffect=" " ItemType="33" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Journeyman" Tier="3"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="ADORNMENT BOOKS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+
+<Data Class="0" ItemName="Essential Adornments" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Essential Adornment" Tier="0"/>
+<Data Class="0" ItemName="Advanced Adornments" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Adornment" Tier="0"/>
+<Data Class="0" ItemName="Transmuting Distillations" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Transmuter Books" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="BLUEPRINT'S" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="10" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (1-10)" Tier="0"/>
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="20" MinLvl="11" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (10-20)" Tier="0"/>
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="30" MinLvl="21" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (20-30)" Tier="0"/>
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="40" MinLvl="31" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (30-40)" Tier="0"/>
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="50" MinLvl="41" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (40-50" Tier="0"/>
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="60" MinLvl="51" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (50-60)" Tier="0"/>
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="70" MinLvl="61" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (60-70)" Tier="0"/>
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="80" MinLvl="71" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (70-80)" Tier="0"/>
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="90" MinLvl="81" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (80-90)" Tier="0"/>
+<Data Class="0" ItemName="Blueprint" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="91" SellerName=" " Slot="0" Special="0" Text="-Blueprint's (100-90)" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="ADV. RECIPE BOOKS" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+
+<Data Class="39" ItemName="Advanced Alchemist Volume" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Alchemist" Tier="0"/>
+<Data Class="33" ItemName="Advanced Armorer Volume" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Armorer" Tier="0"/>
+<Data Class="31" ItemName="Advanced Carpenter Volume" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Carpenter" Tier="0"/>
+<Data Class="37" ItemName="Advanced Jeweler Volume" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Jeweler" Tier="0"/>
+<Data Class="29" ItemName="Advanced Provisioner Volume" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Provisioner" Tier="0"/>
+<Data Class="38" ItemName="Advanced Sage Volume" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Sage" Tier="0"/>
+<Data Class="35" ItemName="Advanced Tailor Volume" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Tailor" Tier="0"/>
+<Data Class="34" ItemName="Advanced Weaponsmith Volume" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Weaponsmith" Tier="0"/>
+<Data Class="30" ItemName="Advanced Woodworker Volume" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Advanced Woodworker" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+
+
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data ItemName="..." ItemEffect=" " ItemType="26" MaxLvl="100" MinLvl="0" SellerName=" " Text="OTHER RECIPE'S" Tier="0"/>
+<Data ItemName="" ItemEffect=" " ItemType="0" MaxLvl="100" MinLvl="0" SellerName=" " Text="====================" Tier="0"/>
+<Data Class="0" ItemName="Ancient Teaching" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Ancient Teaching's" Tier="0"/>
+<Data Class="0" ItemName="Burnt Recipe" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Burnt Recipe's" Tier="0"/>
+<Data Class="0" ItemName="Secret" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Secret Recipe's" Tier="0"/>
+<Data Class="0" ItemName="Common Plan" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Common Plan's" Tier="0"/>
+<Data Class="0" ItemName="Rare Plan" ItemEffect=" " ItemType="30" MaxLvl="100" MinLvl="0" SellerName=" " Slot="0" Special="0" Text="-Rare Plans" Tier="0"/>
+</DataSource>
+
+

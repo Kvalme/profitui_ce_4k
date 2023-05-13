@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" AllowCloseOnTop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="25,25" MaximumSize="300,560" MinimumSize="209,280" Name="ThreatList" ScrollExtent="209,280" Size="209,280" UserMovable="true" UserResizable="true">
+    <DataSource Name="ThreatListDS" />
+    <Page Location="0,20" Name="FullList" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="200,260" Size="200,260">
+        <Namespace Name="fulllistdata">
+            <ImageStyle Name="selected_bkg">
+                <ImageFrame Source="images/window_elements_specific.dds" SourceRect="40,293,162,305" />
+            </ImageStyle>
+            <ImageStyle Name="spacer">
+                <ImageFrame Source="images/windowelements.dds" SourceRect="19,532,339,534" />
+            </ImageStyle>
+            <Template Name="row_template" Size="175,36">eq2ui_listboxrow_threatlist_item.xml</Template>
+            <GridStyle Name="grid_style" Normal.Background="normal_bkg" Normal.HBackground=" " Normal.Junction=" " Normal.VEndCap="spacer" Selected.Background="selected_bkg" />
+            <ImageStyle Name="normal_bkg">
+                <ImageFrame Source="images/window_elements_specific.dds" SourceRect="40,275,162,287" />
+            </ImageStyle>
+            <ListboxStyle GridStyle="grid_style" Name="listbox_style" />
+        </Namespace>
+        <Composite Location="12,11" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="190,230" Size="190,230" SpacingType="Fill">
+            <Listbox BackgroundColor="#FFFFFF" DataSource="ThreatListDS" Margin="10,10,10,10" Name="ThreatListBox" PackSize="absolute,absolute" RowTemplate="fulllistdata.row_template" ScrollExtent="190,230" Size="190,230" Style="fulllistdata.listbox_style" />
+            <Scrollbar ArrowPressSound="sounds/button" Control="ThreatListBox" HideIfUnnecessary="true" Location="279,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackSize="f,a" ScrollExtent="22,230" Size="22,230" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+        </Composite>
+    </Page>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="209,272" Size="209,272">
+        <Button Location="167,5" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.MiniWindowFrame.data.settings.style" Tooltip=":cf6d745aec278586:Window Settings" UserMovable="true" />
+        <Button Location="185,5" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.MiniWindowFrame.data.close.style" Tooltip=":cf6d745a2d3f513f_1:Close" UserMovable="true" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="167,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.MiniWindowFrame.data.right_grouper.rect" ScrollExtent="40,21" Size="40,21" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,0" Name="LeftGrouper" PackSize="a,f" RStyleDefault="/WindowElements.MiniWindowFrame.data.left_grouper.rect" ScrollExtent="165,21" Size="165,21">
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="21,2" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="137,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="137,20" TextAlignmentVertical="Center" TextColor="#F0D080">:x:Enemies</Text>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,21" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.MiniWindowFrame.data.frame.rect" ScrollExtent="209,251" Size="209,251" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,22" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.MiniWindowFrame.data.bkg.rect" ScrollExtent="209,250" Size="209,250" />
+    </Page>
+</Page>

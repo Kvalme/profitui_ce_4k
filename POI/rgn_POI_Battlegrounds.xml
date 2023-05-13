@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="POI">
+<Page Name="battleground_iksar_ruins_0">
+<Icon Name="ID49978" PathFindLocation="-0.10,6.24,192.09" PoiDescription="ID:49978&#xA;-0.10,6.24,192.09" PoiKeyword="location" PoiResource="location" PoiType="LOCATION" Tooltip="Blue Flag &#xA;"/>
+<Icon Name="ID49979" PathFindLocation="0.09,6.24,-191.68" PoiDescription="ID:49979&#xA;0.09,6.24,-191.68" PoiKeyword="location" PoiResource="location" PoiType="LOCATION" Tooltip="Red Flag &#xA;"/>
+</Page>
+<Page Name="battleground_gears_of_klakanon_0">
+<Icon Name="ID49369" PathFindLocation="-55.46,21.00,-2.13" PoiDescription="ID:49369&#xA;-55.46,21.00,-2.13" PoiKeyword="location,respawn" PoiResource="respawn" PoiType="LOCATION" Tooltip="Blue Team Base &#xA;"/>
+<Icon Name="ID49368" PathFindLocation="54.73,21.00,-2.43" PoiDescription="ID:49368&#xA;54.73,21.00,-2.43" PoiKeyword="location,respawn" PoiResource="respawn" PoiType="LOCATION" Tooltip="Red Team Base &#xA;"/>
+</Page>
+<Page Name="battleground_realm_of_prexus_0">
+<Icon Name="ID49389" PathFindLocation="84.89,79.23,289.41" PoiDescription="ID:49389&#xA;84.89,79.23,289.41" PoiKeyword="location,site" PoiResource="site" PoiType="LOCATION" Tooltip="Red Team Base &#xA;"/>
+<Icon Name="ID49373" PathFindLocation="-155.72,89.45,-206.66" PoiDescription="ID:49373&#xA;-155.72,89.45,-206.66" PoiKeyword="location,site" PoiResource="site" PoiType="LOCATION" Tooltip="Crescent Tower &#xA;"/>
+<Icon Name="ID49354" PathFindLocation="232.62,76.87,-29.69" PoiDescription="ID:49354&#xA;232.62,76.87,-29.69" PoiKeyword="location" PoiResource="location" PoiType="LOCATION" Tooltip="Lava Mace Tower &#xA;"/>
+<Icon Name="ID49604" PathFindLocation="-271.95,75.14,38.89" PoiDescription="ID:49604&#xA;-271.95,75.14,38.89" PoiKeyword="location,respawn" PoiResource="respawn" PoiType="LOCATION" Tooltip="Skull Tower &#xA;"/>
+<Icon Name="ID49898" PathFindLocation="-81.26,79.23,-297.86" PoiDescription="ID:49898&#xA;-81.26,79.23,-297.86" PoiKeyword="location" PoiResource="location" PoiType="LOCATION" Tooltip="Blue Team Base &#xA;"/>
+<Icon Name="ID49899" PathFindLocation="144.10,90.81,204.60" PoiDescription="ID:49899&#xA;144.10,90.81,204.60" PoiKeyword="location" PoiResource="location" PoiType="LOCATION" Tooltip="Arrowhead Tower &#xA;"/>
+<Icon Name="ID49900" PathFindLocation="24.97,76.71,-291.32" PoiDescription="ID:49900&#xA;24.97,76.71,-291.32" PoiKeyword="transport" PoiResource="transport" PoiType="TRANSPORT" Tooltip="North Disc &#xA;"/>
+<Icon Name="ID49907" PathFindLocation="3.48,172.28,20.57" PoiDescription="ID:49907&#xA;3.48,172.28,20.57" PoiKeyword="location" PoiResource="location" PoiType="LOCATION" Tooltip="Central Tower &#xA;"/>
+<Icon Name="ID49908" PathFindLocation="-24.64,76.71,279.90" PoiDescription="ID:49908&#xA;-24.64,76.71,279.90" PoiKeyword="transport" PoiResource="transport" PoiType="TRANSPORT" Tooltip="South Disc &#xA;"/>
+</Page>
+<Page Name="battleground_lobby">
+<Icon Name="ID59909" PathFindLocation="-0.10,2.22,5.25" PoiDescription="ID:59909&#xA;-0.10,2.22,5.25&#xA;return to your home server" PoiKeyword="zone" PoiResource="zone" PoiType="ZONE" Tooltip="Travel Home &#xA;"/>
+<Icon Name="ID65296" PathFindLocation="34.10,1.80,-47.07" PoiDescription="ID:65296&#xA;34.10,1.80,-47.07" PoiKeyword="location" PoiResource="location" PoiType="LOCATION" Tooltip="Proving Grounds Leaderboard &#xA;"/>
+<Icon Name="ID65297" PathFindLocation="23.81,1.74,-69.10" PoiDescription="ID:65297&#xA;23.81,1.74,-69.10" PoiKeyword="zone" PoiResource="zone" PoiType="ZONE" Tooltip="Unranked Matches Zone-In &#xA;"/>
+<Icon Name="ID65298" PathFindLocation="-33.53,1.80,-57.28" PoiDescription="ID:65298&#xA;-33.53,1.80,-57.28&#xA;Sells 5 Resolve gear, potions" PoiKeyword="shop,potions" PoiResource="potions" PoiType="SHOP" Tooltip="Gra'Tuxan Dom, Essentials Merchant &#xA;"/>
+<Icon Name="ID65299" PathFindLocation="-42.45,1.80,-50.24" PoiDescription="ID:65299&#xA;-42.45,1.80,-50.24&#xA;Sells Familiars, Ethereal white adorns, Orange adorns, 20+ Resolve gear" PoiKeyword="shop,armor" PoiResource="armor" PoiType="SHOP" Tooltip="Far'Saethe Dom, Proven Merchant &#xA;"/>
+<Icon Name="ID65300" PathFindLocation="-58.71,1.77,13.68" PoiDescription="ID:65300&#xA;-58.71,1.77,13.68" PoiKeyword="shop" PoiResource="shop" PoiType="LOCATION" Tooltip="Mender &#xA;"/>
+<Icon Name="ID65301" PathFindLocation="-58.82,1.78,20.58" PoiDescription="ID:65301&#xA;-58.82,1.78,20.58" PoiKeyword="ammunition" PoiResource="ammunition" PoiType="SHOP" Tooltip="Ammo Merchant &#xA;"/>
+<Icon Name="ID65302" PathFindLocation="-38.33,1.80,-54.80" PoiDescription="ID:65302&#xA;-38.33,1.80,-54.80&#xA;Sells items for the 24 champions of the previous match" PoiKeyword="shop" PoiResource="shop" PoiType="LOCATION" Tooltip="Xau'Unda Dom, Champion Merchant &#xA;"/>
+</Page>
+</Page>

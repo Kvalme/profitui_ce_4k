@@ -1,0 +1,312 @@
+﻿<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="ItemSpacingSet" Descrip="Item Spacing" Size="1,3" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="ItemHoverSet" Descrip="Hover" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="ItemSortDirSet" Descrip="ItemSort Direction" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item01" Descrip="Platinum Coin" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item02" Descrip="Gold Coin" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item03" Descrip="Silver Coin" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item04" Descrip="Copper Coin" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider1" Descrip="Section Divider 1" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item05" Descrip="Stamina" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item06" Descrip="Strength" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item07" Descrip="Agility" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item08" Descrip="Wisdom" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item09" Descrip="Intelligence" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider2" Descrip="Section Divider 2" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item10" Descrip="Adventure Level" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item11" Descrip="Adventure XP" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item12" Descrip="Adventure Vitality" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item13" Descrip="Adventure XP Debt" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item14" Descrip="Tradeskill Level" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item15" Descrip="Tradeskill XP" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item16" Descrip="Tradeskill Vitality" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item17" Descrip="AA Points" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item18" Descrip="AA XP" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item19" Descrip="Guild Level" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item20" Descrip="Guild XP" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider3" Descrip="Section Divider 3" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item21" Descrip="Tradeskill Crit Success Mod" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item22" Descrip="Tradeskill Success Mod" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item23" Descrip="Tradeskill Progress Add" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item24" Descrip="Tradeskill Progress Mod" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item25" Descrip="Tradeskill Durability Add" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item26" Descrip="Tradeskill Durability Mod" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider4" Descrip="Section Divider 4" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item56" Descrip="Concentration" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item27" Descrip="Run Speed" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item28" Descrip="Status" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item29" Descrip="HP" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item30" Descrip="HP Regen" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item31" Descrip="Power" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item32" Descrip="Power Regen" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider5" Descrip="Section Divider 5" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item33" Descrip="Arcane" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item34" Descrip="Elemental" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item35" Descrip="Noxious" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider6" Descrip="Section Divider 6" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item38" Descrip="Hate Mod" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item40" Descrip="Resolve" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item41" Descrip="Mitigation" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item42" Descrip="Avoidance" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item43" Descrip="Shield Effectiveness" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider7" Descrip="Section Divider 7" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item45" Descrip="Spell DA" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item85" Descrip="Ability DA" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item46" Descrip="Fervor" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider8" Descrip="Section Divider 8" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item47" Descrip="DPS" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item48" Descrip="Haste" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item44" Descrip="Ability Cast Speed" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item49" Descrip="Ability Reuse" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item50" Descrip="Ability Recovery" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider11" Descrip="Section Divider 11" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item51" Descrip="Crit Chance" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item52" Descrip="Crit Bonus" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item53" Descrip="Abilty Mod" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item54" Descrip="Potentcy" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item55" Descrip="Double Attack" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider12" Descrip="Section Divider 12" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item57" Descrip="AE Autoattack" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item58" Descrip="Accuracy" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item59" Descrip="Flurry" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item86" Descrip="Flurry Mult" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item60" Descrip="Strikethrough" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider9" Descrip="Section Divider 9" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item61" Descrip="P. Weapon Damage" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item62" Descrip="P. Weapon Delay" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item63" Descrip="S. Weapon Damage" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item64" Descrip="S. Weapon Delay" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item65" Descrip="R. Weapon Damage" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item66" Descrip="R. Weapon Delay" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider10" Descrip="Section Divider 10" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item67" Descrip="Ping" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item68" Descrip="FPS" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item69" Descrip="BPS" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item70" Descrip="PKL" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Divider13" Descrip="Section Divider 13" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item37" Descrip="Toughness" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item71" Descrip="PVP Crit Bonus" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item72" Descrip="PVP Potentcy" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item73" Descrip="PVP Multi Attack" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item74" Descrip="PVP Spell MA" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item75" Descrip="Bountiful Harvest" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item76" Descrip="Rare Harvest" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item77" Descrip="PVP Spell Wep MA" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item83" Descrip="Weapon Dmg Bonus" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item84" Descrip="Spell Weapon Dmg Bonus" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+
+<Page AlwaysOnTop="true" eq2usescomwndcontrols="true" Location="100,100" MinimumSize="535,458" Name="ProfitUI_BottomBar_Settings" PackLocation="nfn,bottom" ScrollExtent="535,498" Size="535,498" UserMovable="true" UserResizable="false" OnShow="Parent.ProfitUI_BottomBar.InitializeBoxes.Press=true">
+<Page Name="SettingsHeader" Size="535,14" Location="0,20">
+<Text Name="Instructions" Size="535,14" Font="/ProfitUI_Styles.Fonts.FontArial14T" TextAlignment="Center">Check the checkbox beside an item to show it on the Bottom Bar.</Text>
+</Page>
+<Button Location="235,466" MaximumSize="16384,26" MinimumSize="32,26" Name="SetButton" OnPress="
+window_property unlock Custom ItemSpacingSet&#xD;&#xA;Parent.Parent.ItemSpacingSet.Height=Parent.SettingsPage.ItemSpacingSlider.Value&#xD;&#xA;window_property lock Custom ItemSpacingSet&#xD;&#xA;Parent.Parent.ItemSpacingSet.Visible=False
+window_property unlock Custom ItemHoverSet&#xD;&#xA;Parent.Parent.ItemHoverSet.Height=Parent.SettingsPage.Set_ItemHoverSet.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom ItemHoverSet&#xD;&#xA;Parent.Parent.ItemHoverSet.Visible=False
+window_property unlock Custom ItemSortDirSet&#xD;&#xA;Parent.Parent.ItemSortDirSet.Height=Parent.SettingsPage.Set_ItemSortDirSet.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom ItemSortDirSet&#xD;&#xA;Parent.Parent.ItemSortDirSet.Visible=False
+window_property unlock Custom Item01&#xD;&#xA;Parent.Parent.Item01.Height=Parent.SettingsPage.Set_Item01.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item01&#xD;&#xA;Parent.Parent.Item01.Visible=False
+window_property unlock Custom Item02&#xD;&#xA;Parent.Parent.Item02.Height=Parent.SettingsPage.Set_Item02.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item02&#xD;&#xA;Parent.Parent.Item02.Visible=False
+window_property unlock Custom Item03&#xD;&#xA;Parent.Parent.Item03.Height=Parent.SettingsPage.Set_Item03.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item03&#xD;&#xA;Parent.Parent.Item03.Visible=False
+window_property unlock Custom Item04&#xD;&#xA;Parent.Parent.Item04.Height=Parent.SettingsPage.Set_Item04.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item04&#xD;&#xA;Parent.Parent.Item04.Visible=False
+window_property unlock Custom Item05&#xD;&#xA;Parent.Parent.Item05.Height=Parent.SettingsPage.Set_Item05.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item05&#xD;&#xA;Parent.Parent.Item05.Visible=False
+window_property unlock Custom Item06&#xD;&#xA;Parent.Parent.Item06.Height=Parent.SettingsPage.Set_Item06.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item06&#xD;&#xA;Parent.Parent.Item06.Visible=False
+window_property unlock Custom Item07&#xD;&#xA;Parent.Parent.Item07.Height=Parent.SettingsPage.Set_Item07.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item07&#xD;&#xA;Parent.Parent.Item07.Visible=False
+window_property unlock Custom Item08&#xD;&#xA;Parent.Parent.Item08.Height=Parent.SettingsPage.Set_Item08.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item08&#xD;&#xA;Parent.Parent.Item08.Visible=False
+window_property unlock Custom Item09&#xD;&#xA;Parent.Parent.Item09.Height=Parent.SettingsPage.Set_Item09.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item09&#xD;&#xA;Parent.Parent.Item09.Visible=False
+window_property unlock Custom Item10&#xD;&#xA;Parent.Parent.Item10.Height=Parent.SettingsPage.Set_Item10.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item10&#xD;&#xA;Parent.Parent.Item10.Visible=False
+window_property unlock Custom Item11&#xD;&#xA;Parent.Parent.Item11.Height=Parent.SettingsPage.Set_Item11.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item11&#xD;&#xA;Parent.Parent.Item11.Visible=False
+window_property unlock Custom Item12&#xD;&#xA;Parent.Parent.Item12.Height=Parent.SettingsPage.Set_Item12.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item12&#xD;&#xA;Parent.Parent.Item12.Visible=False
+window_property unlock Custom Item13&#xD;&#xA;Parent.Parent.Item13.Height=Parent.SettingsPage.Set_Item13.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item13&#xD;&#xA;Parent.Parent.Item13.Visible=False
+window_property unlock Custom Item14&#xD;&#xA;Parent.Parent.Item14.Height=Parent.SettingsPage.Set_Item14.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item14&#xD;&#xA;Parent.Parent.Item14.Visible=False
+window_property unlock Custom Item15&#xD;&#xA;Parent.Parent.Item15.Height=Parent.SettingsPage.Set_Item15.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item15&#xD;&#xA;Parent.Parent.Item15.Visible=False
+window_property unlock Custom Item16&#xD;&#xA;Parent.Parent.Item16.Height=Parent.SettingsPage.Set_Item16.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item16&#xD;&#xA;Parent.Parent.Item16.Visible=False
+window_property unlock Custom Item17&#xD;&#xA;Parent.Parent.Item17.Height=Parent.SettingsPage.Set_Item17.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item17&#xD;&#xA;Parent.Parent.Item17.Visible=False
+window_property unlock Custom Item18&#xD;&#xA;Parent.Parent.Item18.Height=Parent.SettingsPage.Set_Item18.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item18&#xD;&#xA;Parent.Parent.Item18.Visible=False
+window_property unlock Custom Item19&#xD;&#xA;Parent.Parent.Item19.Height=Parent.SettingsPage.Set_Item19.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item19&#xD;&#xA;Parent.Parent.Item19.Visible=False
+window_property unlock Custom Item20&#xD;&#xA;Parent.Parent.Item20.Height=Parent.SettingsPage.Set_Item20.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item20&#xD;&#xA;Parent.Parent.Item20.Visible=False
+window_property unlock Custom Item21&#xD;&#xA;Parent.Parent.Item21.Height=Parent.SettingsPage.Set_Item21.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item21&#xD;&#xA;Parent.Parent.Item21.Visible=False
+window_property unlock Custom Item22&#xD;&#xA;Parent.Parent.Item22.Height=Parent.SettingsPage.Set_Item22.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item22&#xD;&#xA;Parent.Parent.Item22.Visible=False
+window_property unlock Custom Item23&#xD;&#xA;Parent.Parent.Item23.Height=Parent.SettingsPage.Set_Item23.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item23&#xD;&#xA;Parent.Parent.Item23.Visible=False
+window_property unlock Custom Item24&#xD;&#xA;Parent.Parent.Item24.Height=Parent.SettingsPage.Set_Item24.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item24&#xD;&#xA;Parent.Parent.Item24.Visible=False
+window_property unlock Custom Item25&#xD;&#xA;Parent.Parent.Item25.Height=Parent.SettingsPage.Set_Item25.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item25&#xD;&#xA;Parent.Parent.Item25.Visible=False
+window_property unlock Custom Item26&#xD;&#xA;Parent.Parent.Item26.Height=Parent.SettingsPage.Set_Item26.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item26&#xD;&#xA;Parent.Parent.Item26.Visible=False
+window_property unlock Custom Item27&#xD;&#xA;Parent.Parent.Item27.Height=Parent.SettingsPage.Set_Item27.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item27&#xD;&#xA;Parent.Parent.Item27.Visible=False
+window_property unlock Custom Item28&#xD;&#xA;Parent.Parent.Item28.Height=Parent.SettingsPage.Set_Item28.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item28&#xD;&#xA;Parent.Parent.Item28.Visible=False
+window_property unlock Custom Item29&#xD;&#xA;Parent.Parent.Item29.Height=Parent.SettingsPage.Set_Item29.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item29&#xD;&#xA;Parent.Parent.Item29.Visible=False
+window_property unlock Custom Item30&#xD;&#xA;Parent.Parent.Item30.Height=Parent.SettingsPage.Set_Item30.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item30&#xD;&#xA;Parent.Parent.Item30.Visible=False
+window_property unlock Custom Item31&#xD;&#xA;Parent.Parent.Item31.Height=Parent.SettingsPage.Set_Item31.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item31&#xD;&#xA;Parent.Parent.Item31.Visible=False
+window_property unlock Custom Item32&#xD;&#xA;Parent.Parent.Item32.Height=Parent.SettingsPage.Set_Item32.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item32&#xD;&#xA;Parent.Parent.Item32.Visible=False
+window_property unlock Custom Item33&#xD;&#xA;Parent.Parent.Item33.Height=Parent.SettingsPage.Set_Item33.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item33&#xD;&#xA;Parent.Parent.Item33.Visible=False
+window_property unlock Custom Item34&#xD;&#xA;Parent.Parent.Item34.Height=Parent.SettingsPage.Set_Item34.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item34&#xD;&#xA;Parent.Parent.Item34.Visible=False
+window_property unlock Custom Item35&#xD;&#xA;Parent.Parent.Item35.Height=Parent.SettingsPage.Set_Item35.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item35&#xD;&#xA;Parent.Parent.Item35.Visible=False
+window_property unlock Custom Item37&#xD;&#xA;Parent.Parent.Item37.Height=Parent.SettingsPage.Set_Item37.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item37&#xD;&#xA;Parent.Parent.Item37.Visible=False
+window_property unlock Custom Item38&#xD;&#xA;Parent.Parent.Item38.Height=Parent.SettingsPage.Set_Item38.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item38&#xD;&#xA;Parent.Parent.Item38.Visible=False
+window_property unlock Custom Item40&#xD;&#xA;Parent.Parent.Item40.Height=Parent.SettingsPage.Set_Item40.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item40&#xD;&#xA;Parent.Parent.Item40.Visible=False
+window_property unlock Custom Item41&#xD;&#xA;Parent.Parent.Item41.Height=Parent.SettingsPage.Set_Item41.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item41&#xD;&#xA;Parent.Parent.Item41.Visible=False
+window_property unlock Custom Item42&#xD;&#xA;Parent.Parent.Item42.Height=Parent.SettingsPage.Set_Item42.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item42&#xD;&#xA;Parent.Parent.Item42.Visible=False
+window_property unlock Custom Item43&#xD;&#xA;Parent.Parent.Item43.Height=Parent.SettingsPage.Set_Item43.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item43&#xD;&#xA;Parent.Parent.Item43.Visible=False
+window_property unlock Custom Item44&#xD;&#xA;Parent.Parent.Item44.Height=Parent.SettingsPage.Set_Item44.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item44&#xD;&#xA;Parent.Parent.Item44.Visible=False
+window_property unlock Custom Item45&#xD;&#xA;Parent.Parent.Item45.Height=Parent.SettingsPage.Set_Item45.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item45&#xD;&#xA;Parent.Parent.Item45.Visible=False
+window_property unlock Custom Item46&#xD;&#xA;Parent.Parent.Item46.Height=Parent.SettingsPage.Set_Item46.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item46&#xD;&#xA;Parent.Parent.Item46.Visible=False
+window_property unlock Custom Item47&#xD;&#xA;Parent.Parent.Item47.Height=Parent.SettingsPage.Set_Item47.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item47&#xD;&#xA;Parent.Parent.Item47.Visible=False
+window_property unlock Custom Item48&#xD;&#xA;Parent.Parent.Item48.Height=Parent.SettingsPage.Set_Item48.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item48&#xD;&#xA;Parent.Parent.Item48.Visible=False
+window_property unlock Custom Item49&#xD;&#xA;Parent.Parent.Item49.Height=Parent.SettingsPage.Set_Item49.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item49&#xD;&#xA;Parent.Parent.Item49.Visible=False
+window_property unlock Custom Item50&#xD;&#xA;Parent.Parent.Item50.Height=Parent.SettingsPage.Set_Item50.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item50&#xD;&#xA;Parent.Parent.Item50.Visible=False
+window_property unlock Custom Item51&#xD;&#xA;Parent.Parent.Item51.Height=Parent.SettingsPage.Set_Item51.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item51&#xD;&#xA;Parent.Parent.Item51.Visible=False
+window_property unlock Custom Item52&#xD;&#xA;Parent.Parent.Item52.Height=Parent.SettingsPage.Set_Item52.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item52&#xD;&#xA;Parent.Parent.Item52.Visible=False
+window_property unlock Custom Item53&#xD;&#xA;Parent.Parent.Item53.Height=Parent.SettingsPage.Set_Item53.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item53&#xD;&#xA;Parent.Parent.Item53.Visible=False
+window_property unlock Custom Item54&#xD;&#xA;Parent.Parent.Item54.Height=Parent.SettingsPage.Set_Item54.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item54&#xD;&#xA;Parent.Parent.Item54.Visible=False
+window_property unlock Custom Item55&#xD;&#xA;Parent.Parent.Item55.Height=Parent.SettingsPage.Set_Item55.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item55&#xD;&#xA;Parent.Parent.Item55.Visible=False
+window_property unlock Custom Item56&#xD;&#xA;Parent.Parent.Item56.Height=Parent.SettingsPage.Set_Item56.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item56&#xD;&#xA;Parent.Parent.Item56.Visible=False
+window_property unlock Custom Item57&#xD;&#xA;Parent.Parent.Item57.Height=Parent.SettingsPage.Set_Item57.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item57&#xD;&#xA;Parent.Parent.Item57.Visible=False
+window_property unlock Custom Item58&#xD;&#xA;Parent.Parent.Item58.Height=Parent.SettingsPage.Set_Item58.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item58&#xD;&#xA;Parent.Parent.Item58.Visible=False
+window_property unlock Custom Item59&#xD;&#xA;Parent.Parent.Item59.Height=Parent.SettingsPage.Set_Item59.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item59&#xD;&#xA;Parent.Parent.Item59.Visible=False
+window_property unlock Custom Item60&#xD;&#xA;Parent.Parent.Item60.Height=Parent.SettingsPage.Set_Item60.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item60&#xD;&#xA;Parent.Parent.Item60.Visible=False
+window_property unlock Custom Item61&#xD;&#xA;Parent.Parent.Item61.Height=Parent.SettingsPage.Set_Item61.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item61&#xD;&#xA;Parent.Parent.Item61.Visible=False
+window_property unlock Custom Item62&#xD;&#xA;Parent.Parent.Item62.Height=Parent.SettingsPage.Set_Item62.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item62&#xD;&#xA;Parent.Parent.Item62.Visible=False
+window_property unlock Custom Item63&#xD;&#xA;Parent.Parent.Item63.Height=Parent.SettingsPage.Set_Item63.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item63&#xD;&#xA;Parent.Parent.Item63.Visible=False
+window_property unlock Custom Item64&#xD;&#xA;Parent.Parent.Item64.Height=Parent.SettingsPage.Set_Item64.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item64&#xD;&#xA;Parent.Parent.Item64.Visible=False
+window_property unlock Custom Item65&#xD;&#xA;Parent.Parent.Item65.Height=Parent.SettingsPage.Set_Item65.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item65&#xD;&#xA;Parent.Parent.Item65.Visible=False
+window_property unlock Custom Item66&#xD;&#xA;Parent.Parent.Item66.Height=Parent.SettingsPage.Set_Item66.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item66&#xD;&#xA;Parent.Parent.Item66.Visible=False
+window_property unlock Custom Item67&#xD;&#xA;Parent.Parent.Item67.Height=Parent.SettingsPage.Set_Item67.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item67&#xD;&#xA;Parent.Parent.Item67.Visible=False
+window_property unlock Custom Item68&#xD;&#xA;Parent.Parent.Item68.Height=Parent.SettingsPage.Set_Item68.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item68&#xD;&#xA;Parent.Parent.Item68.Visible=False
+window_property unlock Custom Item69&#xD;&#xA;Parent.Parent.Item69.Height=Parent.SettingsPage.Set_Item69.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item69&#xD;&#xA;Parent.Parent.Item69.Visible=False
+window_property unlock Custom Item70&#xD;&#xA;Parent.Parent.Item70.Height=Parent.SettingsPage.Set_Item70.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item70&#xD;&#xA;Parent.Parent.Item70.Visible=False
+window_property unlock Custom Item71&#xD;&#xA;Parent.Parent.Item71.Height=Parent.SettingsPage.Set_Item71.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item71&#xD;&#xA;Parent.Parent.Item71.Visible=False
+window_property unlock Custom Item72&#xD;&#xA;Parent.Parent.Item72.Height=Parent.SettingsPage.Set_Item72.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item72&#xD;&#xA;Parent.Parent.Item72.Visible=False
+window_property unlock Custom Item73&#xD;&#xA;Parent.Parent.Item73.Height=Parent.SettingsPage.Set_Item73.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item73&#xD;&#xA;Parent.Parent.Item73.Visible=False
+window_property unlock Custom Item74&#xD;&#xA;Parent.Parent.Item74.Height=Parent.SettingsPage.Set_Item74.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item74&#xD;&#xA;Parent.Parent.Item74.Visible=False
+window_property unlock Custom Item75&#xD;&#xA;Parent.Parent.Item75.Height=Parent.SettingsPage.Set_Item75.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item75&#xD;&#xA;Parent.Parent.Item75.Visible=False
+window_property unlock Custom Item76&#xD;&#xA;Parent.Parent.Item76.Height=Parent.SettingsPage.Set_Item76.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item76&#xD;&#xA;Parent.Parent.Item76.Visible=False
+window_property unlock Custom Item77&#xD;&#xA;Parent.Parent.Item77.Height=Parent.SettingsPage.Set_Item77.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item77&#xD;&#xA;Parent.Parent.Item77.Visible=False
+window_property unlock Custom Item83&#xD;&#xA;Parent.Parent.Item83.Height=Parent.SettingsPage.Set_Item83.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item83&#xD;&#xA;Parent.Parent.Item83.Visible=False
+window_property unlock Custom Item84&#xD;&#xA;Parent.Parent.Item84.Height=Parent.SettingsPage.Set_Item84.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item84&#xD;&#xA;Parent.Parent.Item84.Visible=False
+window_property unlock Custom Item85&#xD;&#xA;Parent.Parent.Item85.Height=Parent.SettingsPage.Set_Item85.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item85&#xD;&#xA;Parent.Parent.Item85.Visible=False
+window_property unlock Custom Item86&#xD;&#xA;Parent.Parent.Item86.Height=Parent.SettingsPage.Set_Item86.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item86&#xD;&#xA;Parent.Parent.Item86.Visible=False
+window_property unlock Custom Divider1&#xD;&#xA;Parent.Parent.Divider1.Height=Parent.SettingsPage.Set_Divider1.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider1&#xD;&#xA;Parent.Parent.Divider1.Visible=False
+window_property unlock Custom Divider2&#xD;&#xA;Parent.Parent.Divider2.Height=Parent.SettingsPage.Set_Divider2.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider2&#xD;&#xA;Parent.Parent.Divider2.Visible=False
+window_property unlock Custom Divider3&#xD;&#xA;Parent.Parent.Divider3.Height=Parent.SettingsPage.Set_Divider3.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider3&#xD;&#xA;Parent.Parent.Divider3.Visible=False
+window_property unlock Custom Divider4&#xD;&#xA;Parent.Parent.Divider4.Height=Parent.SettingsPage.Set_Divider4.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider4&#xD;&#xA;Parent.Parent.Divider4.Visible=False
+window_property unlock Custom Divider5&#xD;&#xA;Parent.Parent.Divider5.Height=Parent.SettingsPage.Set_Divider5.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider5&#xD;&#xA;Parent.Parent.Divider5.Visible=False
+window_property unlock Custom Divider6&#xD;&#xA;Parent.Parent.Divider6.Height=Parent.SettingsPage.Set_Divider6.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider6&#xD;&#xA;Parent.Parent.Divider6.Visible=False
+window_property unlock Custom Divider7&#xD;&#xA;Parent.Parent.Divider7.Height=Parent.SettingsPage.Set_Divider7.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider7&#xD;&#xA;Parent.Parent.Divider7.Visible=False
+window_property unlock Custom Divider8&#xD;&#xA;Parent.Parent.Divider8.Height=Parent.SettingsPage.Set_Divider8.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider8&#xD;&#xA;Parent.Parent.Divider8.Visible=False
+window_property unlock Custom Divider9&#xD;&#xA;Parent.Parent.Divider9.Height=Parent.SettingsPage.Set_Divider9.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider9&#xD;&#xA;Parent.Parent.Divider9.Visible=False
+window_property unlock Custom Divider10&#xD;&#xA;Parent.Parent.Divider10.Height=Parent.SettingsPage.Set_Divider10.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider10&#xD;&#xA;Parent.Parent.Divider10.Visible=False
+window_property unlock Custom Divider11&#xD;&#xA;Parent.Parent.Divider11.Height=Parent.SettingsPage.Set_Divider11.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider11&#xD;&#xA;Parent.Parent.Divider11.Visible=False
+window_property unlock Custom Divider12&#xD;&#xA;Parent.Parent.Divider12.Height=Parent.SettingsPage.Set_Divider12.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider12&#xD;&#xA;Parent.Parent.Divider12.Visible=False
+window_property unlock Custom Divider13&#xD;&#xA;Parent.Parent.Divider13.Height=Parent.SettingsPage.Set_Divider13.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider13&#xD;&#xA;Parent.Parent.Divider13.Visible=False
+
+
+
+Parent.Parent.ProfitUI_BottomBar.SetDisplay.Press=true
+" PackLocation="cfc,bottom" Size="75,26" Style="/CommonElements.PushButton.data.style">Update</Button>
+
+<Page Name="SettingsPage" Size="531,458" Location="2,34">
+<Checkbox Location="5,0" Name="Set_Item01" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Platinum Coin</Checkbox>
+<Checkbox Location="135,0" Name="Set_Item02" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Gold Coin</Checkbox>
+<Checkbox Location="265,0" Name="Set_Item03" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Silver Coin</Checkbox>
+<Checkbox Location="395,0" Name="Set_Item04" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Copper Coin</Checkbox>
+<Checkbox Location="5,18" Name="Set_Divider1" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 1</Checkbox>
+<Checkbox Location="135,18" Name="Set_Item05" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Stamina</Checkbox>
+<Checkbox Location="265,18" Name="Set_Item06" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Strength</Checkbox>
+<Checkbox Location="395,18" Name="Set_Item07" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Agility</Checkbox>
+<Checkbox Location="5,36" Name="Set_Item08" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Wisdom</Checkbox>
+<Checkbox Location="135,36" Name="Set_Item09" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Intelligence</Checkbox>
+<Checkbox Location="265,36" Name="Set_Divider2" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 2</Checkbox>
+<Checkbox Location="395,36" Name="Set_Item10" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Adv. Level</Checkbox>
+<Checkbox Location="5,54" Name="Set_Item11" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Adv. Xp</Checkbox>
+<Checkbox Location="135,54" Name="Set_Item12" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Adv. Vitality</Checkbox>
+<Checkbox Location="265,54" Name="Set_Item13" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Adv. Xp Debt</Checkbox>
+<Checkbox Location="395,54" Name="Set_Item14" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Level</Checkbox>
+<Checkbox Location="5,72" Name="Set_Item15" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS XP</Checkbox>
+<Checkbox Location="135,72" Name="Set_Item16" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Vitality</Checkbox>
+<Checkbox Location="265,72" Name="Set_Item17" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">AA Points</Checkbox>
+<Checkbox Location="395,72" Name="Set_Item18" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">AA Xp</Checkbox>
+<Checkbox Location="5,90" Name="Set_Item19" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Guild Level</Checkbox>
+<Checkbox Location="135,90" Name="Set_Item20" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Guild Xp</Checkbox>
+<Checkbox Location="265,90" Name="Set_Divider3" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 3</Checkbox>
+<Checkbox Location="395,90" Name="Set_Item21" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Crit. Suc. Mod</Checkbox>
+<Checkbox Location="5,108" Name="Set_Item22" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Suc. Mod</Checkbox>
+<Checkbox Location="135,108" Name="Set_Item23" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Prog Add</Checkbox>
+<Checkbox Location="265,108" Name="Set_Item24" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Prog Mod</Checkbox>
+<Checkbox Location="395,108" Name="Set_Item25" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Dura. Add</Checkbox>
+<Checkbox Location="5,126" Name="Set_Item26" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Dura. Mod</Checkbox>
+<Checkbox Location="135,126" Name="Set_Item75" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Bount. Harv.</Checkbox>
+<Checkbox Location="265,126" Name="Set_Item76" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Rare Harv.</Checkbox>
+<Checkbox Location="395,126" Name="Set_Divider4" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 4</Checkbox>
+<Checkbox Location="5,144" Name="Set_Item56" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Concentration</Checkbox>
+<Checkbox Location="135,144" Name="Set_Item27" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Run Speed</Checkbox>
+<Checkbox Location="265,144" Name="Set_Item28" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Status</Checkbox>
+<Checkbox Location="395,144" Name="Set_Item29" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">HP</Checkbox>
+<Checkbox Location="5,162" Name="Set_Item30" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">HP Regen</Checkbox>
+<Checkbox Location="135,162" Name="Set_Item31" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Power</Checkbox>
+<Checkbox Location="265,162" Name="Set_Item32" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Power Regen</Checkbox>
+<Checkbox Location="395,162" Name="Set_Divider5" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 5</Checkbox>
+<Checkbox Location="5,180" Name="Set_Item33" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Arcane</Checkbox>
+<Checkbox Location="135,180" Name="Set_Item34" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Elemental</Checkbox>
+<Checkbox Location="265,180" Name="Set_Item35" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Noxious</Checkbox>
+<Checkbox Location="395,180" Name="Set_Divider6" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 6</Checkbox>
+<Checkbox Location="5,198" Name="Set_Item38" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Hate Mod</Checkbox>
+<Checkbox Location="265,198" Name="Set_Item40" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Resolve</Checkbox>
+<Checkbox Location="395,198" Name="Set_Item41" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Mitigation</Checkbox>
+<Checkbox Location="5,216" Name="Set_Item42" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Avoidance</Checkbox>
+<Checkbox Location="135,216" Name="Set_Item43" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Shield Effect</Checkbox>
+<Checkbox Location="265,216" Name="Set_Divider7" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 7</Checkbox>
+<Checkbox Location="395,216" Name="Set_Item45" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Spell DA</Checkbox>
+<Checkbox Location="395,234" Name="Set_Item85" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Ability DA</Checkbox>
+<Checkbox Location="5,234" Name="Set_Item46" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Fervor</Checkbox>
+<Checkbox Location="5,252" Name="Set_Item83" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Weapon Dmg Bonus</Checkbox>
+<Checkbox Location="135,252" Name="Set_Item84" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Spell Weapon Dmg Bonus</Checkbox>
+<Checkbox Location="265,252" Name="Set_Divider8" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 8</Checkbox>
+<Checkbox Location="395,252" Name="Set_Item47" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">DPS</Checkbox>
+<Checkbox Location="5,270" Name="Set_Item48" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Haste</Checkbox>
+<Checkbox Location="135,270" Name="Set_Item44" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Abil. Cast Spd</Checkbox>
+<Checkbox Location="265,270" Name="Set_Item49" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Abil. Reuse</Checkbox>
+<Checkbox Location="395,270" Name="Set_Item50" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Abil. Recov.</Checkbox>
+<Checkbox Location="5,288" Name="Set_Divider12" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 9</Checkbox>
+<Checkbox Location="135,288" Name="Set_Item51" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Crit. Chance</Checkbox>
+<Checkbox Location="265,288" Name="Set_Item52" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Crit. Bonus</Checkbox>
+<Checkbox Location="395,288" Name="Set_Item53" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Abil. Mod</Checkbox>
+<Checkbox Location="5,306" Name="Set_Item54" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Potency</Checkbox>
+<Checkbox Location="135,306" Name="Set_Item55" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Multi Attack</Checkbox>
+<Checkbox Location="265,306" Name="Set_Divider11" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 10</Checkbox>
+<Checkbox Location="395,306" Name="Set_Item57" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">AE Autoattack</Checkbox>
+<Checkbox Location="5,324" Name="Set_Item58" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Accuracy</Checkbox>
+<Checkbox Location="135,234" Name="Set_Item86" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Flurry Mult</Checkbox>
+<Checkbox Location="135,324" Name="Set_Item59" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Flurry</Checkbox>
+<Checkbox Location="265,324" Name="Set_Item60" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Strikethrough</Checkbox>
+<Checkbox Location="395,324" Name="Set_Divider9" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 11</Checkbox>
+<Checkbox Location="5,342" Name="Set_Item61" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">P. Wep Dmg</Checkbox>
+<Checkbox Location="135,342" Name="Set_Item62" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">P. Wep Delay</Checkbox>
+<Checkbox Location="265,342" Name="Set_Item63" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">S. Wep Dmg</Checkbox>
+<Checkbox Location="395,342" Name="Set_Item64" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">S. Wep Delay</Checkbox>
+<Checkbox Location="5,360" Name="Set_Item65" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">R. Wep Dmg</Checkbox>
+<Checkbox Location="135,360" Name="Set_Item66" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">R. Wep Delay</Checkbox>
+<Checkbox Location="265,360" Name="Set_Divider10" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 12</Checkbox>
+<Checkbox Location="395,360" Name="Set_Item67" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Ping</Checkbox>
+<Checkbox Location="5,378" Name="Set_Item68" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">FPS</Checkbox>
+<Checkbox Location="135,378" Name="Set_Item69" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">BPS</Checkbox>
+<Checkbox Location="265,378" Name="Set_Item70" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Packet Loss</Checkbox>
+<Checkbox Location="395,378" Name="Set_Divider13" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 13</Checkbox>
+<Checkbox Location="135,396" Name="Set_Item37" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Toughness</Checkbox>
+<Checkbox Location="265,396" Name="Set_Item71" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP Pot</Checkbox>
+<Checkbox Location="395,396" Name="Set_Item72" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP Crit Bon</Checkbox>
+<Checkbox Location="5,414" Name="Set_Item73" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP MA</Checkbox>
+<Checkbox Location="135,414" Name="Set_Item74" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP Sp. MA</Checkbox>
+<Checkbox Location="265,414" Name="Set_Item77" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP Sp. Wep MA</Checkbox>
+<Checkbox Location="5,432" Name="Set_ItemHoverSet" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" ToolTip="Will only function properly if bar is set to minimum height." Style="/CommonElements.Checkbox.data.style" Size="160,18">Enable Bar Mouseover</Checkbox>
+<Sliderbar ControlInput="ItemSpacingSliderValue" ControlMax="50" ControlMin="1" Location="356,432" MaximumSize="16384,26" MinimumSize="20,26" Name="ItemSpacingSlider" Size="77,26" Style="/CommonElements.Slider.data.style" UpperLimit="50" LowerLimit="1"/>
+<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="340,438" MaximumSize="137,16384" Name="ItemSpacingSliderValue" NumericInteger="true" Size="16,16" Style="/CommonElements.Textbox.data.style" Value="24" WrapWidth="Automatic" TextAlignment="Center">0</Textbox>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="431,435" MaxLines="1" Name="ItemSpacingSliderLabel" Size="200,20" TextAlignmentVertical="Center">Bar Item Spacing</Text>
+</Page>
+
+
+	<Page AbsorbsInput="false" Location="0,0" Name="WindowFrame" PackSize="a,a" Size="535,516">
+		<Button Location="513,2" Name="Close" PackLocation="right,top" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":42aee8422d3f513f:Close" UserMovable="true" />
+			<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" Size="535,20">
+				<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="3,0" MaxLines="1" Name="Title" PackSize="a,f" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="241,20" TextAlignment="Left" TextAlignmentVertical="Center" TextColor="#F0D080">   ProfitUI BottomBar Setup</Text>
+				<Button Enabled="false" GetsInput="false" Name="TitleBarBoxed" PackSize="a,f" ScrollExtent="532,20" Size="532,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed" Location="1,0" />
+			</Page>
+		<Page AbsorbsInput="false" Location="-10,-5" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" Size="555,516" />
+		<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-10,-5" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" Size="555,516" />
+	</Page>
+</Page>

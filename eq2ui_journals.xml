@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page ismodule="true" Name="Journals" PackSize="1,1" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+<include>eq2ui_journals_active.xml</include>
+<include>eq2ui_journals_quest.xml</include>
+        <Page eq2usescomwndcontrols="true" Location="178,114" Name="AchievementCompleted" OnHideEffector="/Effects.FadeOut" OnShowEffector="/Effects.FadeIn" PackLocation="center,top" ScrollExtent="685,114" Size="685,114" UserMovable="true">
+            <Text Font="/TextStyles.OnscreenMsg.OnscreenMsgStyle" Name="Title" ScrollExtent="685,28" Size="685,28" TextAlignment="Center" TextColor="#F0D080">:4d0a94c0c3f26850:Achievement Unlocked!</Text>
+            <Page Location="181,27" Name="IconPage" ScrollExtent="323,63" Size="323,63">
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="167,35" Name="Points" ScrollExtent="28,23" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="28,21" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:4d0a94c03ace1f1a:50</Text>
+                <Image AbsorbsInput="false" GetsInput="true" Location="165,33" Name="textback" ScrollExtent="28,26" Size="28,26" Style="JournalsQuest.TabPages.Achievements.pointstyle" />
+                <Icon IconRect="84,41,126,83" IconResource="images/icons/icon_ss11.dds" Location="141,4" Name="Icon" ScrollExtent="42,42" Size="42,42" />
+                <Image AbsorbsInput="false" GetsInput="true" Location="134,-1" Name="iconbkg" ScrollExtent="56,55" Size="56,55" Stretch="false" Style="JournalsQuest.TabPages.Achievements.iconstyle" />
+                <Image Location="25,11" Name="ScrollLeft" ScrollExtent="113,39" Size="113,39" SourceRect="10,604,122,640" SourceResource="images/def_widgets.dds" Stretch="false" />
+                <Image Location="185,11" Name="ScrollRight" ScrollExtent="113,39" Size="113,39" SourceRect="122,604,234,640" SourceResource="images/def_widgets.dds" Stretch="false" />
+            </Page>
+            <Text Font="/TextStyles.OnscreenMsg.OnscreenMsgStyle" Location="0,85" Name="Name" ScrollExtent="685,30" Size="685,30" TextAlignment="Center" TextColor="#FFFF00">:4d0a94c0fe43579e:It&apos;s Only a Flesh Wound</Text>
+        </Page>
+    </Page>

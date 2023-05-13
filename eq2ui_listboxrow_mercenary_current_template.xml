@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page Name="Template" PackSize="absolute, fixed" ScrollExtent="300,56" Size="300,56">
+    <Image Location="252,6" Name="TypeIcon" ScrollExtent="42,42" Size="42,42" Style="/SpecialElements.MercTypes.$Icon$" />
+    <Text Font="/TextStyles.Large.LargeStyle" Location="30,0" Name="MercName" PackSize="a,f" ScrollExtent="240,18" Size="240,18" TextAlignment="Center" TextColor="#EFDFAA">$mercname$</Text>
+    <Text Font="/TextStyles.Normal.NormalStyle" Location="0,18" Name="Purpose" PackSize="a,f" ScrollExtent="300,18" Size="300,18" TextAlignment="Center" TextColor="#EFEFEF">$purpose$</Text>
+    <Text Font="/TextStyles.Normal.NormalStyle" Location="0,36" Name="CostText" PackSize="a,f" ScrollExtent="300,18" Size="300,18" TextAlignment="Center" TextColor="#EFDFAA">:3c0f7210b6959c58:Hire: $hirecost$      Salary: $upkeepcost$</Text>
+</Page>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Last update 2016-06-8 by user Zidu -->
+<!-- Added Shrink Merc Button -->
+        <Page actiontype="Mercenary" DynamicDataFilter="0005" eq2usescomwndcontrols="true" Location="124,94" MaximumSize="650,142" MinimumSize="250,97" Name="Mercenary" PackLocation="right,bottom" ScrollExtent="250,142" Size="250,142" UserMovable="true" UserResizable="true">
+			<ImageStyle Name="MercShrink"><ImageFrame Source="/images/icons/icon_ss24.dds" SourceRect="42,210,84,252" /></ImageStyle>
+			<Image Location="20,7" Name="Shrink" ScrollExtent="18,18" Size="18,18" Style="MercShrink" />
+			<ImageStyle Name="Y"><ImageFrame Source="/images/icons/icon_ss9.dds" SourceRect="210,168,252,210" /></ImageStyle>
+			<Image Location="20,7" Name="ShrinkImgBkg" ScrollExtent="18,18" Size="18,18" Style="Y" />
+			<Button BackgroundOpacity="0.000" Location="20,7" Name="Shrink" OnHoverIn="BackgroundOpacity=1.000" OnHoverOut="BackgroundOpacity=0.000" OnPress="useability 3422980394" ScrollExtent="18,18" Size="18,18" Style="/ButtonStyles.single_pixel" Tooltip="Shrink Mercenary" />
+			<Button Location="228,6" Name="Minimize" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.maximize.style" Tooltip=":949e60501073d3ad:Minimize/Maximize" UserMovable="true" />
+            <Page Location="2,94" Name="Behaviors" PackSize="a,a" ScrollExtent="248,48" Size="248,48">
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="GroupMembersSource" Location="0,17" MaximumSize="65525,65525" MinimumSize="88,27" Name="FollowCombo" PackSize="a,f" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="88,27" Size="88,27" Style="/CommonElements.Dropdown.data.style" />
+                <Text Color="#F0D090" Font="/TextStyles.Normal.NormalStyle" Location="0,0" Margin="1,1,2,2" MaximumSize="78,16" MinimumSize="78,16" Name="FollowName" ScrollExtent="78,16" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="78,16" TextAlignment="Center" Tooltip=":949e605088e92746:The person your mercenary will follow.">Follow</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="GroupMembersSource" Location="80,17" MaximumSize="65525,65525" MinimumSize="88,27" Name="MainTankCombo" PackSize="a,f" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="88,27" Size="88,27" Style="/CommonElements.Dropdown.data.style" />
+                <Text Color="#F0D090" Font="/TextStyles.Normal.NormalStyle" Location="80,0" Margin="1,1,2,2" MaximumSize="78,16" MinimumSize="78,16" Name="MTName" ScrollExtent="78,16" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="78,16" TextAlignment="Center" Tooltip=":949e60500732cec9:Priority for your mercenary is to keep this group member alive by protecting it as much as possible.">Protect</Text>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="GroupMembersSource" Location="160,17" MaximumSize="65535,65535" MinimumSize="88,27" Name="MainAssistCombo" PackSize="a,f" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="88,27" Size="88,27" Style="/CommonElements.Dropdown.data.style" />
+                <Text Color="#F0D090" Font="/TextStyles.Normal.NormalStyle" Location="160,0" Margin="1,1,2,2" MaximumSize="78,16" MinimumSize="78,16" Name="MAName" ScrollExtent="78,16" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="78,16" TextAlignment="Center" Tooltip=":949e6050efcaf631:Your mercenary will fight alongside this group member, working to destroy the same target throughout the combat.">Assist</Text>
+            </Page>
+            <DataSource Name="GroupMembersSource">
+                <Data Name="TestMember1" text=":949e605005311487:Zoltaroth" />
+            </DataSource>
+            <Text AbsorbsInput="false" Color="#F0D090" DynamicData="/GameData.Mercenary.Name" Font="/TextStyles.Normal.NormalStyle" Location="10,9" Margin="1,1,2,2" Name="Name" PackLocation="top,left" PackSize="absolute, fixed" ScrollExtent="231,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="231,18" TextAlignment="Center">:f:Mercenary Name</Text>
+            <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="10,26" Name="Health" PackSize="absolute" ScrollExtent="231,8" Size="231,8">
+                <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.GreyscaleVitalBar.data.frame.rect" ScrollExtent="231,8" Size="231,8" />
+                <Image Location="49,0" Name="Tick0" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Image Location="93,0" Name="Tick1" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Image Location="136,0" Name="Tick2" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Image Location="178,0" Name="Tick3" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Mercenary.Health" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="0.500" ScrollExtent="217,8" Size="217,8" Style="/SpecialElements.GreyscaleVitalBar.data.bar.bar_style" />
+                <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#440000" Location="5,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="224,8" Size="224,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+            </Page>
+            <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="10,34" Name="Power" PackSize="absolute" ScrollExtent="231,8" Size="231,8">
+                <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.GreyscaleVitalBar.data.frame.rect" ScrollExtent="231,8" Size="231,8" />
+                <Image Location="49,0" Name="Tick0" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Image Location="93,0" Name="Tick1" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Image Location="136,0" Name="Tick2" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Image Location="178,0" Name="Tick3" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Mercenary.Power" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="217,8" Size="217,8" Style="/SpecialElements.GreyscaleVitalBar.data.bar.bar_style" />
+                <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#000044" Location="5,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="224,8" Size="224,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+            </Page>
+            <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="10,42" Name="Confidence" PackSize="absolute" ScrollExtent="231,8" Size="231,8">
+                <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.GreyscaleVitalBar.data.frame.rect" ScrollExtent="231,8" Size="231,8" />
+                <Image Location="49,0" Name="Tick0" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Image Location="93,0" Name="Tick1" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Image Location="136,0" Name="Tick2" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Image Location="178,0" Name="Tick3" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="3,8" Size="3,8" Style="/SpecialElements.GreyscaleVitalBar.data.tick.style" />
+                <Progressbar AbsorbsInput="false" Color="#E45AEC" DynamicData="/GameData.Mercenary.Confidence" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="217,8" Size="217,8" Style="/SpecialElements.GreyscaleVitalBar.data.bar.bar_style" />
+                <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#000044" Location="5,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="224,8" Size="224,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+            </Page>
+            <Page Location="10,26" Name="_Health" PackSize="absolute,fixed" ScrollExtent="231,6" Size="231,6" Visible="false">
+                <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="232,6" Size="232,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+                <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Mercenary.Health" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="212,4" Size="212,4" Style="/progressbarlist.progress_default" />
+                <Image AbsorbsInput="false" BackgroundColor="#440000" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="225,6" Size="225,6" />
+            </Page>
+            <Page Location="10,34" Name="_Power" PackSize="absolute,fixed" ScrollExtent="231,6" Size="231,6" Visible="false">
+                <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="232,6" Size="232,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+                <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Mercenary.Power" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="212,4" Size="212,4" Style="/progressbarlist.progress_default" Visible="false" />
+                <Image AbsorbsInput="false" BackgroundColor="#000044" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="225,6" Size="225,6" />
+            </Page>
+            <Page Location="10,42" Name="_Confidence" PackSize="absolute,fixed" ScrollExtent="231,6" Size="231,6">
+                <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="232,6" Size="232,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+                <Progressbar AbsorbsInput="false" Color="#E45AEC" DynamicData="/GameData.Mercenary.Confidence" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="212,4" Size="212,4" Style="/progressbarlist.progress_default" Visible="false" />
+                <Image AbsorbsInput="false" BackgroundColor="#000044" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="225,6" Size="225,6" />
+            </Page>
+            <VolumePage AbsorbsInput="false" BackgroundColor="#FF0000" CellCount="5,1" CellSelectable="false" CellSize="28,28" Location="51,56" MinimumScrollExtent="152,32" Name="Volume" PackLocation="cfc,top" ScrollExtent="153,34" Size="153,34">
+                <Icon ActionData="command mercenaryAttack" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="2,2" MouseOverColor="#FFFF00" Name="Attack" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+                <Icon ActionData="command mercenaryBackOff" BackgroundTint="#000000" Dragable="true" IconID="11" IconStyle="/IconStyles.button" Location="32,2" MouseOverColor="#FFFF00" Name="Backoff" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+                <Icon ActionData="command mercenaryProtectMe" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="62,2" MouseOverColor="#FFFF00" Name="ProtectMe" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+                <Icon ActionData="command mercenaryProtectSelf" BackgroundTint="#000000" Dragable="true" IconID="13" IconStyle="/IconStyles.button" Location="92,2" MouseOverColor="#FFFF00" Name="ProtectSelf" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+                <Icon ActionData="command mercenarySuspend" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="122,2" MouseOverColor="#FFFF00" Name="Suspend" ScrollExtent="28,28" Size="28,28" TreatAsButton="true" />
+            </VolumePage>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="250,142" Size="250,142">
+                <Page AbsorbsInput="false" Location="-10,-20" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="270,177" Size="270,177" />
+                <Page AbsorbsInput="false" Location="-10,-20" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="270,177" Size="270,177" />
+            </Page>
+        </Page>

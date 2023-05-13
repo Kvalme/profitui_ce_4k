@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="54,161" MinimumSize="400,400" Name="EditMacro" ScrollExtent="437,444" Size="437,444" UserMovable="true" UserResizable="true" version="2.2.0" Visible="false">
+            <Page Location="2,26" Name="Header" PackSize="a,f" ScrollExtent="435,122" Size="435,122">
+                <RectangleStyle Center="arrow_left" CenterShrinkH="true" CenterShrinkV="true" EastShrink="true" Name="rs_left" North="drop_down_top" NorthShrink="true" South="drop_down_bottom" SouthShrink="true" WestShrink="true" />
+                <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF00" Name="bs_left" RStyleDefault="rs_left" />
+                <ImageStyle Filter="true" Name="arrow_left">
+                    <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="822,1007,839,1024" />
+                </ImageStyle>
+                <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF00" Name="bs_right" RStyleDefault="rs_right" />
+                <RectangleStyle Center="arrow_right" CenterShrinkH="true" CenterShrinkV="true" EastShrink="true" Name="rs_right" North="drop_down_top" NorthShrink="true" South="drop_down_bottom" SouthShrink="true" WestShrink="true" />
+                <ImageStyle Filter="true" Name="arrow_right">
+                    <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="839,1007,856,1023" />
+                </ImageStyle>
+                <Template Name="SelectionTemplate" Size="400,20">eq2ui_dropdown_template2.xml</Template>
+                <DataSource Name="StepSelectorDS">
+                    <Data text=":fe0468c8be882cb7:Command" />
+                    <Data text=":fe0468c8b590a907:Spell / Ability" />
+                    <Data text=":fe0468c82d2e6dc0:Equip Item" />
+                    <Data text=":fe0468c85d0ef353:Use Item" />
+                </DataSource>
+                <Button Location="342,34" Name="LeftButton" PackLocation="right,top" ScrollExtent="15,15" Size="15,15" Style="bs_left" />
+                <Button Location="407,34" Name="RightButton" PackLocation="right,top" ScrollExtent="15,15" Size="15,15" Style="bs_right" />
+                <Button Location="339,81" Name="AddStep" PackLocation="right,top" ScrollExtent="86,30" Size="86,30" Style="/CommonElements.PushButton.data.style">:fe0468c890786645:Add Step</Button>
+                <Dropdownbox DataSource="StepSelectorDS" Location="111,80" Name="StepSelector" PackLocation="left,top" PackSize="a,f" RowTemplate="SelectionTemplate" ScrollExtent="224,31" Size="224,31" Style="/CommonElements.Dropdown.data.style" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="361,20" MouseOverColor="#FFFF00" Name="Icon" PackLocation="right,top" ScrollExtent="42,42" Size="42,42" />
+                <Text AbsorbsInput="false" Color="#D0B97B" Font="/Fonts.FontZapf15" Location="9,84" Name="CmdlineTitle" ScrollExtent="102,23" Size="102,23" TextAlignmentVertical="Center">:fe0468c87a894c5c:Macro Step:</Text>
+                <Text AbsorbsInput="false" Color="#D0B97B" Font="/Fonts.FontZapf15" Location="9,4" Name="NameTitle" ScrollExtent="252,23" Size="252,23" TextAlignmentVertical="Center">:fe0468c8fe8c748b:Macro Name</Text>
+                <Textbox BackgroundOpacity="0.275" Cursor="/Cursor.Text" Location="11,30" MaxLength="15" Name="NameTextbox" PackSize="absolute, fixed" ScrollExtent="317,24" Size="317,24" Style="InputStyle" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="7,26" Name="NameFrame" PackSize="absolute, fixed" RStyleDefault="/rectlist.win_plain" ScrollExtent="325,33" Size="325,33" />
+                <TextboxStyle CaratColor="#FFFFC0" CaratWidth="2" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontZapf18" Name="InputStyle" NormalTextStyle="/Fonts.FontZapf18" SelectedTextStyle="/Fonts.FontZapf18" SelectionColor="#222266" TextColor="#AAAAFF" TextPadding="3,2,3,0" />
+            </Page>
+            <Page BackgroundOpacity="0.800" Location="2,149" Name="StepsBox" PackSize="a,a" ScrollExtent="433,250" Size="433,250">
+                <Page Location="2,2" Name="StepRows" PackSize="a,a" ScrollExtent="410,246" ScrollSize="1,30" Size="410,246">
+                    <Page BackgroundColor="/ColorStyles.window_background_dark" BackgroundOpacity="1.000" Location="0,186" Name="UseItemStep" PackSize="a,f" ScrollExtent="412,60" Size="412,60">
+                        <Text Color="#D0B97B" DropToParent="true" Font="/Fonts.FontZapf15" Location="62,8" Name="ItemName" PackSize="a,f" ScrollExtent="320,42" Size="320,42" TextAlignmentVertical="Center">:fe0468c875028eee:&lt;Drag Item Here to Use&gt;</Text>
+                        <Icon AbsorbsInput="false" BackgroundTint="#000000" DropToParent="true" Enabled="false" IconStyle="/IconStyles.button" Location="9,9" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                        <Button Location="391,39" Name="arrowdown" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.arrow_down" />
+                        <Button Location="391,20" Name="arrowup" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.arrow_up" />
+                        <Button Location="391,2" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":fe0468c82d3f513f:Close" UserMovable="true" />
+                    </Page>
+                    <Page BackgroundColor="/ColorStyles.window_background_dark" BackgroundOpacity="1.000" Location="0,62" Name="SpellStep" PackSize="a,f" ScrollExtent="412,60" Size="412,60">
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="62,29" MinimumSize="22,22" Name="Primary" ScrollExtent="118,22" Size="118,22" Style="/CommonElements.Checkbox.data.style" TextColor="#D0B97B">:fe0468c827072ce5:Primary</Checkbox>
+                        <Textbox BackgroundOpacity="0.275" Cursor="/Cursor.Text" DropToParent="true" Location="264,31" MaxLength="30" Name="TargetTextbox" PackSize="absolute, fixed" ScrollExtent="114,18" Size="114,18" Style="/TextboxStyles.simple_textbox" Tooltip=":fe0468c81d317fc9:Leave blank to use current target." />
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" DropToParent="true" GetsInput="false" Location="260,27" Name="Frame" PackSize="absolute, fixed" RStyleDefault="/rectlist.win_plain" ScrollExtent="122,26" Size="122,26" />
+                        <Text Color="#D0B97B" DropToParent="true" Font="/Fonts.FontZapf15" Location="62,8" Name="SpellName" PackSize="a,f" ScrollExtent="320,42" Size="320,42">:fe0468c8df8d11e9:&lt;Drag Spell or Ability Here&gt;</Text>
+                        <Text Color="#D0B97B" DropToParent="true" Font="/Fonts.FontZapf15" Location="197,28" Name="TargetLabel" ScrollExtent="61,23" Size="61,23" TextAlignmentVertical="Center">:fe0468c8be3cd535:Target</Text>
+                        <Icon AbsorbsInput="false" BackgroundTint="#000000" DropToParent="true" Enabled="false" IconStyle="/IconStyles.button" Location="9,9" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                        <Button Location="391,20" Name="arrowup" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.arrow_up" />
+                        <Button Location="391,39" Name="arrowdown" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.arrow_down" />
+                        <Button Location="391,2" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":fe0468c82d3f513f_1:Close" UserMovable="true" />
+                    </Page>
+                    <Page BackgroundColor="/ColorStyles.window_background_dark" BackgroundOpacity="1.000" Name="EquipStep" PackSize="a,f" ScrollExtent="412,60" Size="412,60">
+                        <Composite Location="59,23" Name="Composite" Orientation="Horizontal" PackSize="a,f" ScrollExtent="327,31" Size="327,31" SpacingType="Constant">
+                            <Dropdownbox DataSource="SlotSelectorDS" DropToParent="true" Name="SlotSelector" PackLocation="left,bottom" RowTemplate="SelectionTemplate" ScrollExtent="191,31" Size="191,31" Style="/CommonElements.Dropdown.data.style" />
+                            <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="191,5" MinimumSize="22,22" Name="Appearance" ScrollExtent="118,22" Size="118,22" Style="/CommonElements.Checkbox.data.style" TextColor="#D0B97B">:fe0468c81a117ebf:Appearance</Checkbox>
+                        </Composite>
+                        <Template Name="SelectionTemplate" Size="400,20">eq2ui_dropdown_template2.xml</Template>
+                        <DataSource Name="SlotSelectorDS">
+                            <Data text=":fe0468c86fdcc052:Charm Slot 1" value="1" />
+                            <Data text=":fe0468c8f6d591e8:Charm Slot 2" value="2" />
+                        </DataSource>
+                        <Text Color="#D0B97B" DropToParent="true" Font="/Fonts.FontZapf15" Location="62,8" Name="ItemName" PackSize="a,f" ScrollExtent="320,42" Size="320,42">:fe0468c8645f5f4b:&lt;Drag Item Here to Equip&gt;</Text>
+                        <Icon AbsorbsInput="false" BackgroundTint="#000000" DropToParent="true" Enabled="false" IconStyle="/IconStyles.button" Location="9,9" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                        <Button Location="391,39" Name="arrowdown" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.arrow_down" />
+                        <Button Location="391,20" Name="arrowup" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.arrow_up" />
+                        <Button Location="391,2" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":fe0468c82d3f513f_2:Close" UserMovable="true" />
+                    </Page>
+                    <Page BackgroundColor="/ColorStyles.window_background_dark" BackgroundOpacity="1.000" Location="0,124" Name="CommandStep" PackSize="a,f" ScrollExtent="412,60" Size="412,60">
+                        <Textbox BackgroundOpacity="0.275" Cursor="/Cursor.Text" DropToParent="true" Location="11,31" MaxLength="255" Name="Textbox" PackSize="absolute, fixed" ScrollExtent="375,18" Size="375,18" Style="/TextboxStyles.simple_textbox" />
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" DropToParent="true" GetsInput="false" Location="7,27" Name="Frame" PackSize="absolute, fixed" RStyleDefault="/rectlist.win_plain" ScrollExtent="383,26" Size="383,26" />
+                        <Text Color="#D0B97B" DropToParent="true" Font="/Fonts.FontZapf15" Location="9,3" Name="Title" PackSize="a,f" ScrollExtent="320,23" Size="320,23" TextAlignmentVertical="Center">:fe0468c893b777b1:Command:</Text>
+                        <Button Location="391,20" Name="arrowup" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.arrow_up" />
+                        <Button Location="391,39" Name="arrowdown" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.arrow_down" />
+                        <Button Location="391,2" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":fe0468c82d3f513f_3:Close" UserMovable="true" />
+                    </Page>
+                </Page>
+                <Scrollbar ArrowPressSound="sounds/button" Control="StepRows" HideIfUnnecessary="false" Location="411,1" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,249" Size="22,249" Style="/CommonElements.ScrollbarVertical.data.style" />
+            </Page>
+            <Page Location="2,400" Name="ButtonPage" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="434,42" Size="434,42">
+                <Button Location="9,7" Name="TestButton" PackLocation="left, bottom" ScrollExtent="75,30" Size="75,30" Style="/CommonElements.PushButton.data.style">:fe0468c887b22ecd:Test</Button>
+                <Button Location="88,7" Name="ClearButton" PackLocation="left, bottom" ScrollExtent="75,30" Size="75,30" Style="/CommonElements.PushButton.data.style">:fe0468c8db8f21fd:Clear</Button>
+                <Button Location="270,7" Name="OkButton" PackLocation="right, bottom" ScrollExtent="75,30" Size="75,30" Style="/CommonElements.PushButton.data.style">:fe0468c828c926d2:OK</Button>
+                <Button Location="349,7" Name="CancelButton" PackLocation="right, bottom" ScrollExtent="75,30" Size="75,30" Style="/CommonElements.PushButton.data.style">:fe0468c8ae453fbb:Cancel</Button>
+            </Page>
+            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="a,a" ScrollExtent="461,461" Size="461,461">
+                <Button Location="405,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":fe0468c8ec278586:Window Settings" UserMovable="true" />
+                <Button Location="385,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":fe0468c8574a0c6d:Help" UserMovable="true" />
+                <Button Location="425,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":fe0468c82d3f513f_4:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="271,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:fe0468c81c2adf01:Edit Macro</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="461,461" Size="461,461" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="14,25" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="434,80" Size="434,80" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="2,395" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="459,66" Size="459,66" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="1,70" Name="MiddleTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="459,85" Size="459,85" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,118" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="461,305" Size="461,305" />
+            </Page>
+        </Page>

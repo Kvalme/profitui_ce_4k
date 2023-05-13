@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="192,168" Name="GuildCreation" PackLocation="right,top" ScrollExtent="640,510" Size="640,510" UserMovable="true" version="1" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="0,32" Name="Title" PackSize="a" ScrollExtent="640,42" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="640,42" TextAlignment="Center" TextColor="#F0D080" UserMovable="true" UserResizable="true">:b7b5c6e09dd4b1dd:Create Guild</Text>
+            <Page Location="176,76" Name="Rule" ScrollExtent="288,14" Size="288,14">
+                <Image Name="Left" ScrollExtent="48,14" Size="48,14" Style="/CommonElements.Splitter.data.startcap" />
+                <Image Location="48,0" Name="Center" PackSize="a" ScrollExtent="192,14" Size="192,14" Style="/CommonElements.Splitter.data.bkg" />
+                <Image Location="240,0" Name="Right" PackLocation="fff" ScrollExtent="48,14" Size="48,14" Style="/CommonElements.Splitter.data.endcap" />
+            </Page>
+            <Page Location="30,90" Name="Body" PackSize="a,a" ScrollExtent="580,338" Size="580,338">
+                <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="16,7" Margin="5,5,5,5" Name="Header" PackSize="a" ScrollExtent="550,33" Size="550,30" TextColor="#F0E0B0">:b7b5c6e0b63ac3e4:About Guilds</Text>
+                <Icon BackgroundTint="#000000" IconRect="126,84,168,126" IconResource="images/icons/icon_ms1.dds" IconStyle="/IconStyles.button" Location="23,43" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="76,40" Name="AboutText" ScrollExtent="490,320" Size="490,105">:b7b5c6e0385d9677:A guild is a group of characters who choose to band together. Guilds provide their members with several benefits such as a shared chat channel and a guild bank. At level 15 your guild will also gain heraldry to display on the members&apos; cloaks. Guilds can gain levels just like characters, allowing access to larger banks and reward items from city merchants.</Text>
+                <Page Location="0,147" Name="InfoPage" ScrollExtent="580,190" Size="580,190">
+                    <Icon BackgroundTint="#000000" IconRect="42,0,84,42" IconResource="images/icons/icon_ms1.dds" IconStyle="/IconStyles.button" Location="23,36" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="16,0" Margin="5,5,5,5" Name="Header" PackSize="a" ScrollExtent="550,33" Size="550,30" TextColor="#F0E0B0">:b7b5c6e026b2dac3:How Do I Create a New Guild?</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="76,33" Name="InfoText" ScrollExtent="490,256" Size="490,105">:b7b5c6e0c9dc13ce:To create a guild, you must be the leader of a group of 6 characters. None of the characters in the group can already be in a guild. When the new guild is created the group leader will become the guild leader and the five other group members will become recruits in the guild.</Text>
+                    <Text AbsorbsInput="false" BackgroundOpacity="0.275" Color="#FF0000" Font="/TextStyles.Chat.ChatStyle" Location="76,141" Name="Errors" PackLocation=",fff" ScrollExtent="490,48" Size="490,48">:b7b5c6e01e17f5ef:Error 1 Error 2 Error 3</Text>
+                </Page>
+                <Page Location="0,147" Name="CreatePage" ScrollExtent="580,181" Size="580,181" Visible="false">
+                    <TextboxStyle CaratColor="#FFFFC0" CaratWidth="2" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontZapf18" Name="InputStyle" NormalTextStyle="/Fonts.FontZapf18" SelectedTextStyle="/Fonts.FontZapf18" SelectionColor="#222266" TextColor="#AAAAFF" TextPadding="3,2,3,0" />
+                    <Page BackgroundOpacity="1.000" Location="20,33" Name="IconPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="48,48" Size="48,48">
+                        <Image BackgroundColor="#FFFFFF" GetsInput="true" Location="3,3" Name="Icon" ScrollExtent="42,42" Size="42,42" SourceRect="168,0,210,42" SourceResource="images/icons/icon_ms1.dds" Stretch="false" />
+                    </Page>
+                    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="16,0" Margin="5,5,5,5" Name="Header" PackSize="a" ScrollExtent="550,33" ShadowStyle="/NCS2.data.Selected.SelectedShadowStyle" Size="550,30">:b7b5c6e079e8b055:Create a New Guild?</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="76,33" Name="CreateText" ScrollExtent="490,224" Size="490,90">:b7b5c6e0a68789b8:You can create a guild now. All the members of your group will automatically join the new guild as recruits and you will join as guild leader. The price to create a guild is 60s, which you will pay. Enter your desired guild name:</Text>
+                    <Textbox BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="133,130" MaxLength="15" Name="NameTextbox" PackLocation=",fff" ScrollExtent="315,24" Size="315,24" Style="InputStyle" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="129,126" Name="NameFrame" PackLocation=",fff" RStyleDefault="/rectlist.win_plain" ScrollExtent="323,33" Size="323,33" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="133,154" Name="Limit" PackLocation=",fff" ScrollExtent="315,64" Size="315,30" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FF0000">:b7b5c6e054f1db7b:( Names must be 3 - 30 letters or spaces )</Text>
+                </Page>
+            </Page>
+            <Page Location="176,430" Name="Rule" PackLocation=",fff" ScrollExtent="288,14" Size="288,14">
+                <Image Name="Left" ScrollExtent="48,14" Size="48,14" Style="/CommonElements.Splitter.data.startcap" />
+                <Image Location="48,0" Name="Center" PackSize="a" ScrollExtent="192,14" Size="192,14" Style="/CommonElements.Splitter.data.bkg" />
+                <Image Location="240,0" Name="Right" PackLocation="fff" ScrollExtent="48,14" Size="48,14" Style="/CommonElements.Splitter.data.endcap" />
+            </Page>
+            <Page Location="0,430" Name="InfoFooter" PackLocation=",fff" PackSize="a" ScrollExtent="640,80" Size="640,80">
+                <Button IsCancelButton="true" Location="260,20" MaximumSize="16384,32" MinimumSize="32,32" Name="OK" PackLocation="cfc" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:b7b5c6e02d3f513f:Close</Button>
+            </Page>
+            <Page Location="0,430" Name="CreateFooter" PackLocation=",fff" PackSize="a" ScrollExtent="640,80" Size="640,80" Visible="false">
+                <Button Location="190,20" MaximumSize="16384,32" MinimumSize="32,32" Name="OK" PackLocation="cfc" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:b7b5c6e09dd4b1dd_1:Create Guild</Button>
+                <Button IsCancelButton="true" Location="330,20" MaximumSize="16384,32" MinimumSize="32,32" Name="Cancel" PackLocation="cfc" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:b7b5c6e0ae453fbb:Cancel</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="640,510" Size="640,510" />
+        </Page>

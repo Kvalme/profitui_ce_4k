@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" BackgroundOpacity="1.000" Location="319,281" Name="Zoning" OnHide="Parent.LetterboxFrame.BottomBlackPage.Visible='!'Parent.LetterboxFrame.BottomBlackPage.Visible
+Parent.LetterboxFrame.BottomBlackPage.Visible='!'Parent.LetterboxFrame.BottomBlackPage.Visible" OnShow="COND=Parent.Parent.Custom.ProfitUI_MiscSettings.Zoning.ShowTips.Text==true
+NewState=COND ? 1 : 0
+TipPage.Opacity=NewState
+TipFrame.Opacity=NewState
+Parent.Parent.HUD.Zoning.OnShow=''" PackLocation="cpc,cpc" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" Size="386,205" version="1.1">
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="5,67" Name="TipFrame" Opacity="0.000" RStyleDefault="/FrameStyles.single_pixel" Size="375,110" />
+<Composite BackgroundOpacity="0.800" Location="5,67" Name="TipPage" Opacity="0.000" Padding="External" Size="375,110">
+<Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="114,11" Margin="1,-3,1,0" MaxLines="1" Name="TipLabelText" OnShowEffector="FadeInEffector" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="159,21" TextAlignmentVertical="Bottom" TextColor="#F2EACE">:05265a2f807cf9d6:Did You Know...</Text>
+<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="3,32" Name="TipText" Size="368,66" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EACE">:05265a2f08a3a07e:Commission crafting can be used to make a tradeskilled item for someone else while they still hold all the resources.  This method can be used to craft no-trade items, or valuable items they may not wish to trade.  To initiate commission crafting, select the recipe in your book while standing near the appropriate crafting station, then target the customer instead of the crafting station before clicking Create. </Text>
+</Composite>
+<Button BackgroundOpacity="0.000" Location="2,171" Name="Disconnect" Opacity="0.600" PackLocation="left,bottom" Size="88,28" Style="/ButtonStyles.BoxButton" Tooltip="Click to exit the game.">:53483270cbc4d4cf:Disconnect</Button>
+<Button BackgroundOpacity="0.000" COND="false" Location="290,171" Name="ShowTips" NewState="0" OnPress="COND=Parent.TipPage.Opacity==0.000
+NewState=COND ? 1 : 0
+Parent.TipPage.Opacity=NewState
+Parent.TipFrame.Opacity=NewState
+Parent.Parent.Parent.HUD.Zoning.TipPage.Opacity=NewState
+Parent.Parent.Parent.HUD.Zoning.TipFrame.Opacity=NewState" Opacity="0.600" PackLocation="right,bottom" Size="88,28" Style="/ButtonStyles.BoxButton" Tooltip="Click to show tips about the game during zoning.
+(The setting is persistent during your game session only)">Toggle Tips</Button>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" Size="386,205" />
+<Page AbsorbsInput="false" Name="StatusPage" PackLocation="cfc,top" Size="386,205">
+<Text Font="/ProfitUI_Styles.Fonts.FontMorpheus70" Location="0,-6" MaxLines="3" Name="Zoning" Size="386,97" TextAlignment="Center" TextColor="#B8FF71">Zoning</Text>
+<Text Font="/Fonts.FontZapf24" Location="8,69" MaxLines="3" Name="ZoneNameText" ShadowStyle="/ShadowStyles.Outline1" Size="371,61" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#88CCFF">:53483270bfe3f223:ProfitUI</Text>
+<Text Font="/Fonts.FontZapf15" Location="46,150" MaxLines="1" Name="StatusText" ShadowStyle="/ShadowStyles.Outline1" Size="262,19" TextAlignmentVertical="Center">:5348327049bc481a:Loading zone resources</Text>
+<Text Font="/Fonts.FontZapf15" Location="302,150" MaxLines="1" Name="PercentText" ShadowStyle="/ShadowStyles.Outline1" Size="41,19" TextAlignment="Right" TextAlignmentVertical="Center">:534832702605b803:100%</Text>
+<Progressbar BackgroundColor="#000000" Location="48,140" Name="Progress" Progress="0.500" Size="293,6" Style="progress_style" />
+<ImageStyle Name="progress_fill">
+<ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="221,483,225,489" />
+</ImageStyle>
+<ProgressbarStyle Bar.Background="progress_fill" Name="progress_style" />
+<Image Location="47,139" Name="ProgressBackground" Size="295,8" SourceRect="219,491,222,497" SourceResource="/images/window_elements_generic.dds" />
+<Page BackgroundOpacity="1.000" Location="44,136" Name="CastingBackground" RStyleDefault="/rectlist.chat_bubble_frame" Size="301,14" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,3" Name="FrameInner" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" Size="380,199" Visible="false" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="FrameOuter" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" Size="386,205" Visible="false" />
+</Page>
+<Page AbsorbsInput="false" Name="FramePage" PackLocation="top,left" PackSize="absolute,absolute" Size="386,205">
+<Image Location="0,-42" Name="RandomScreen" Size="386,290" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" Size="386,205" />
+</Page>
+<Page AbsorbsInput="false" Name="SlideshowPage" PackLocation="top,left" PackSize="absolute,absolute" Size="386,205">
+<Button Location="209,172" Name="NextSlide" PackLocation="proportional,proportional" Size="84,29" Style="/ButtonStyles.wizard_next" />
+<Button Location="123,172" Name="PreviousSlide" PackLocation="proportional,proportional" Size="86,30" Style="/ButtonStyles.wizard_back" />
+<Button BackgroundOpacity="0.000" Location="320,173" Name="Skip" Opacity="0.600" PackLocation="proportional,proportional" Size="60,25" Style="/ButtonStyles.BoxButton">:53483270c74e8aae_1:Skip</Button>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="black_top" PackLocation="top,left" PackSize="proportional,proportional" RStyleDefault="/FrameStyles.background_black" Size="386,1" Visible="false" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,204" Name="black_bottom" PackLocation="fixed,proportional" PackSize="proportional,proportional" RStyleDefault="/FrameStyles.background_black" Size="386,1" Visible="false" />
+<Image Location="6,6" Name="TopImage" PackLocation="left,proportional" PackSize="proportional,proportional" Size="374,159" SourceRect="0,0,100,100" />
+<Image Location="6,6" Name="BottomImage" PackLocation="left,proportional" PackSize="proportional,proportional" Size="373,159" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,-1" Name="frame" PackLocation="left,proportional" PackSize="proportional,proportional" RStyleDefault="/FrameStyles.win_gold_simple" Size="383,178" Visible="false" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="FrameOuter" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" Size="386,205" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" Size="386,205" />
+</Page>
+</Page>

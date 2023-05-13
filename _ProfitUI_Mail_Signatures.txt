@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data Name="Default" Signature="
+-- 
+You can edit this default signature and even create 
+custom signatures for each of your characters by editing the file
+
+  _ProfitUI_Mail_Signature.txt
+
+in your ProfitUI folder."/>
+
+<Data Name="CHARACTERNAME" Signature="
+-- 
+To create a custom signature for only 1 of your characters, 
+replace CHARACTERNAME above with your character's name and 
+write your signature here.
+
+To add further characters, just copy this section and paste 
+it below for each of your characters.
+NOTE that if you have characters of the same name on different servers
+they will share a common signature."/>

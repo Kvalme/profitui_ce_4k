@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataSource Name="CharacterData">
+<Data username="USER" password="PASSWORD" Name="CHARACTER" server="SERVER" />
+</DataSource>

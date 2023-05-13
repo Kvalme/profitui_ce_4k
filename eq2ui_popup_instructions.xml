@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page alwaysontop="true" BackgroundColor="#401800" eq2usescomwndcontrols="true" Location="1,112" Name="PopupInstructions" savessettings="true" ScrollExtent="329,79" Size="329,79" UserMovable="true" Visible="false">
+            <Text AbsorbsInput="false" BackgroundColor="#FF0000" Color="#F1E8DA" Font="/TextStyles.Normal.NormalStyle" Location="16,22" Name="InstructionText" PackSize="absolute,fixed" ScrollExtent="294,23" Size="294,18" Visible="false">:be787c8a884c4cb3:Instruction Text</Text>
+            <Button Location="224,31" MaximumSize="16384,32" MinimumSize="32,32" Name="CloseButton" PackLocation="right,bottom" ScrollExtent="93,32" Size="93,32" Style="/CommonElements.PushButton.data.style">:be787c8a2d3f513f:Close</Button>
+            <Button Location="294,1" Name="WC_CloseButton" PackLocation="right,top" ScrollExtent="18,15" Size="18,15" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":be787c8a2d3f513f_1:Close" UserMovable="true" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="TopEdge" PackLocation="left, top" PackSize="absolute" RStyleDefault="/FrameStyles.FancyTopEdge.rect" ScrollExtent="328,20" Size="328,20" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-1,59" Name="BottomEdge" PackLocation="left, bottom" PackSize="absolute" Rotation="0.500" RStyleDefault="/FrameStyles.FancyTopEdge.rect" ScrollExtent="328,20" Size="328,20" />
+            <Page BackgroundOpacity="1.000" Location="8,14" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="310,52" Size="310,52" />
+        </Page>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page AbsorbsInput="false" AlwaysOnTop="true" eq2usescomwndcontrols="true" Location="750,590" MinimumSize="62,62" Name="Betamark" PackLocation="right,bottom" ScrollExtent="104,62" Size="104,62" UserScrollable="false" version="1.0.1" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.SuperLarge.SuperLargeStyle" Margin="1,1,3,3" Name="BetaText" ScrollExtent="104,49" Size="104,49">:18614e5446fb1628:BETA</Text>
+        </Page>

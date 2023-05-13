@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="577,257" MinimumSize="64,64" Name="ComboActive" OnHideEffector="FadeOut" OnShowEffector="FadeIn" ScrollExtent="192,192" Size="192,192" UserMovable="true" UserResizable="true" UserScrollable="false" Visible="false">
+            <Page AbsorbsInput="false" Name="WeaknessActive" PackSize="absolute,absolute" ScrollExtent="192,192" Size="192,192" Tooltip=":45928ddc1995aae5:This is the threat meter. The large number is the amount of threat you have to the target. When the large number reaches 100 the target will attack you. While the target is attacking you the smaller number will show the threat of the next highest threat character. When the small number reaches 100 the target will stop attacking you and attack someone else.">
+                <Image AbsorbsInput="false" Name="BeastlordWeaknessSecondary" Opacity="0.000" OpacityHigh=".4" OpacityLow=".2" OpacityMax=".6" PackSize="a,a" ScrollExtent="192,192" Size="192,192" StretchType="ProportionalBound" Style="/imagelist.beastlord_weakness_active" />
+                <Image AbsorbsInput="false" Name="BeastlordWeaknessPrimary" PackSize="a,a" ScrollExtent="192,192" Size="192,192" StretchType="ProportionalBound" Style="/imagelist.beastlord_weakness_active" />
+            </Page>
+            <OpacityEffector InitialOpacity="1.000" Name="FadeOut" SetOnEffect="true" Speed="10.000" />
+            <OpacityEffector Name="FadeIn" SetOnEffect="true" Speed="10.000" TargetOpacity="1.000" />
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="192,192" Size="192,192">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="192,192" Size="192,192" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="192,192" Size="192,192" />
+            </Page>
+        </Page>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Namespace Name="Skinnable_Styles">
+<CheckboxStyle DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" DisabledTextStyle="/TextStyles.Normal.NormalStyle" Name="FogCheckbox" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/TextStyles.Normal.NormalStyle" RStyleActivated="/CommonElements.Checkbox.data.unchecked.rect" RStyleDefault="/CommonElements.Checkbox.data.checked.rect" RStyleDisabled="/CommonElements.Checkbox.data.checked_disabled.rect" RStyleDisabledActivated="/CommonElements.Checkbox.data.unchecked_disabled.rect" RStyleMouseOver=" " TextOffset="24,3" />
+<Namespace Name="LocationStyles">
+<ImageStyle Name="destOnScreen">
+<ImageFrame Name="imageframe" Source="images/icons/icon_eq2map.dds" SourceRect="85,168,127,210" />
+</ImageStyle>
+<ImageStyle Name="destOffScreen">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map4.dds" SourceRect="42,210,84,252" />
+</ImageStyle>
+<EffectorCycleOpacity MaxSpeed="2.000" MinSpeed="2.000" Name="DestinationEffector" Speed="2.000" />
+<ImageStyle Name="youarehereDot">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map4.dds" SourceRect="168,210,210,252" />
+</ImageStyle>
+<ImageStyle Name="youarehere">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map4.dds" SourceRect="210,168,252,210" />
+</ImageStyle>
+<ImageStyle Name="group1loc">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_eq2map.dds" SourceRect="210,126,252,168" />
+</ImageStyle>
+<ImageStyle Name="group2loc">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_eq2map.dds" SourceRect="168,126,210,168" />
+</ImageStyle>
+<ImageStyle Name="group3loc">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_eq2map.dds" SourceRect="126,126,168,168" />
+</ImageStyle>
+<ImageStyle Name="group4loc">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_eq2map.dds" SourceRect="84,126,126,168" />
+</ImageStyle>
+<ImageStyle Name="group5loc">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_eq2map.dds" SourceRect="42,126,84,168" />
+</ImageStyle>
+<ImageStyle Name="raidMememberDot">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map5.dds" SourceRect="168,42,210,84" />
+</ImageStyle>
+<ImageStyle Name="questGiverDot">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map5.dds" SourceRect="42,42,84,84" />
+</ImageStyle>
+<ImageStyle Name="questUpdaterDot">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map5.dds" SourceRect="126,42,168,84" />
+</ImageStyle>
+<ImageStyle Name="questCompleteDot">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map5.dds" SourceRect="84,42,126,84" />
+</ImageStyle>
+</Namespace>
+<ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" DisabledTextStyle="/TextStyles.Small.SmallStyle" MouseOverSound="ui_mouseover" MouseOverTextColor="#FFFF00" MouseOverTextShadowStyle="/ShadowStylesNew.Drop.style" MouseOverTextStyle="/TextStyles.Small.SmallStyle" Name="PushButton" NormalTextColor="#F0D080" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/TextStyles.Small.SmallStyle" PressedTextShadowStyle="/ShadowStylesNew.Drop.style" PressedTextStyle="/TextStyles.Small.SmallStyle" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="/CommonElements.SmallPushButton.data.pressed.rect" RStyleDefault="/CommonElements.SmallPushButton.data.default.rect" RStyleDisabled="/CommonElements.SmallPushButton.data.disabled.rect" RStyleMouseOver="/CommonElements.SmallPushButton.data.mouseover.rect" RStyleMouseOverSelected="/CommonElements.SmallPushButton.data.pressed.rect" RStyleSelected="/CommonElements.SmallPushButton.data.pressed.rect" SelectedTextShadowStyle="/ShadowStylesNew.Drop.style" SelectedTextStyle="/TextStyles.Small.SmallStyle"/>
+<TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" DisabledTextStyle="/TextStyles.Large.LargeStyle" Name="Textbox" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/TextStyles.Large.LargeStyle" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" SelectedTextShadowStyle="/ShadowStylesNew.Drop.style" SelectedTextStyle="/TextStyles.Large.LargeStyle" SelectionColor="#495256" SelectionOpacity="1.000" TextColor="#F2EFE1" TextPadding="8,7,8,0"/>
+<ButtonStyle MouseOverSound="ui_mouseover" Name="SettingsButton" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="/WindowElements.WindowFrame.data.settings.pressed.rect" RStyleDefault="/WindowElements.WindowFrame.data.settings.default.rect" RStyleDisabled="/WindowElements.WindowFrame.data.settings.disabled.rect" RStyleMouseOver="/WindowElements.WindowFrame.data.settings.mouseover.rect" RStyleMouseOverSelected="/WindowElements.WindowFrame.data.settings.pressed.rect" RStyleSelected="/WindowElements.WindowFrame.data.settings.pressed.rect" />
+<ButtonStyle MouseOverSound="ui_mouseover" Name="ToggleIcons" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="/WindowElements.WindowFrame.data.settings.pressed.rect" RStyleDefault="/WindowElements.WindowFrame.data.settings.default.rect" RStyleDisabled="/WindowElements.WindowFrame.data.settings.disabled.rect" RStyleMouseOver="/WindowElements.WindowFrame.data.settings.mouseover.rect" RStyleMouseOverSelected="/WindowElements.WindowFrame.data.settings.pressed.rect" RStyleSelected="/WindowElements.WindowFrame.data.settings.pressed.rect" />
+</Namespace>
+<Namespace Name="BattlegroundStyles">
+<ImageStyle Name="CPDefault">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_lfg.dds" SourceRect="73,193,97,217" />
+</ImageStyle>
+<ImageStyle Name="CPLavaMace">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map5.dds" SourceRect="42,84,84,126" />
+</ImageStyle>
+<ImageStyle Name="CPArrowhead">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map5.dds" SourceRect="0,84,42,126" />
+</ImageStyle>
+<ImageStyle Name="MurderBallStyle">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_lfg.dds" SourceRect="1,193,25,217" />
+</ImageStyle>
+<ImageStyle Name="FlagStyle">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_lfg.dds" SourceRect="73,193,97,217" />
+</ImageStyle>
+<ImageStyle Name="CPCrescent">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map5.dds" SourceRect="83,84,125,126" />
+</ImageStyle>
+<ImageStyle Name="CPCentral">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map5.dds" SourceRect="168,84,210,126" />
+</ImageStyle>
+<ImageStyle Name="CPSkull">
+<ImageFrame Name="imageFrame" Source="images/icons/icon_map5.dds" SourceRect="126,84,168,126" />
+</ImageStyle>
+</Namespace>
+<Image AutoSize="true" BackgroundColor="#00FFFF" Location="240,2" Name="publicQuestRegionTemplate" ScrollExtent="128,128" Size="128,128" SourceRect="0,0,128,128" SourceResource="images/publicquest_marker.dds" Visible="false" />
+<Icon BackgroundTint="#000000" IconRect="42,42,84,84" IconResource="images/icons/icon_map5.dds" IconStyle="MapSubGroup.MapPage.Icons.style" IconType="map" Location="98,242" MouseOverColor="#FFFF00" Name="questGiverIconTemplate" OnShowEffector="QuestIconCycleOpacity" PressedColor="#FFFF00" ScrollExtent="23,23" Size="23,23"  TreatAsButton="true" Visible="false" />
+<EffectorCycleOpacity MaxSpeed="2.000" MinSpeed="2.000" Name="QuestIconCycleOpacity" Speed="2.000" />

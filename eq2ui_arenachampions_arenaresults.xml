@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="103,116" Name="ArenaResults" ScrollExtent="810,530" Size="810,530" UserMovable="true">
+            <Button Location="337,450" MaximumSize="16384,38" MinimumSize="38,38" Name="Ok" PackLocation="left,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:d11b298613a7061a:Ok</Button>
+            <Page Location="25,40" Name="Team" ScrollExtent="760,460" Size="760,460">
+                <Text Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="10,10" Margin="1,1,3,3" Name="Winner" ScrollExtent="740,60" Size="740,60" TextAlignment="Center" TextAlignmentVertical="Center">:d11b29863cfa7463:{TeamName} Wins!</Text>
+                <Page Location="10,80" Name="TeamResults" PackSize="absolute,absolute" ScrollExtent="740,136" Size="740,136">
+                    <Button BackgroundOpacity="0.000" Location="10,0" MaximumSize="16384,25" MinimumSize="0,25" Name="NameSort" PackSize="absolute,fixed" ScrollExtent="175,25" Size="175,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b29869b2df6de:Team</Button>
+                    <Button BackgroundOpacity="0.000" Location="250,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score0Sort" PackSize="absolute,fixed" ScrollExtent="115,25" Size="115,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b298670cec0d9:Score0Sort</Button>
+                    <Button BackgroundOpacity="0.000" Location="365,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score1Sort" PackSize="absolute,fixed" ScrollExtent="115,25" Size="115,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b29864daee969:Score1Sort</Button>
+                    <Button BackgroundOpacity="0.000" Location="480,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score2Sort" PackSize="absolute,fixed" ScrollExtent="120,25" Size="120,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b29860a0e93b9:Score2Sort</Button>
+                    <Button BackgroundOpacity="0.000" Location="600,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score3Sort" PackSize="absolute,fixed" ScrollExtent="120,25" Size="120,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b2986376eba09:Score3Sort</Button>
+                    <Page BackgroundOpacity="1.000" MaximumSize="16384,25" MinimumSize="0,25" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="740,25" Size="740,25" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="true" Location="708,30" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,96" Size="22,96" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                    <Page AbsorbsInput="false" Location="10,30" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="720,96" ScrollSize="1,44" Size="720,96" />
+                    <Page AbsorbsInput="false" Location="10,30" Name="EntryTemplate" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="720,24" Size="720,24">
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="0,3" Margin="5,0,5,0" Name="Name" ScrollExtent="175,20" Size="175,20" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b29862eaab0c8:{TeamName}</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="240,3" Name="Score0" ScrollExtent="115,23" Size="115,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b29865ea2da1e:10</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="355,3" Name="Score1" ScrollExtent="115,23" Size="115,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b29860b2420de:0</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="470,3" Name="Score2" ScrollExtent="120,23" Size="120,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b2986c55d21e8:35000</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="590,3" Name="Score3" ScrollExtent="120,23" Size="120,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b2986c55d21e8_1:35000</Text>
+                        <Page BackgroundColor="#8080FF" BackgroundOpacity="0.224" Name="Bkg" PackLocation="left,top" PackSize="1,1" ScrollExtent="720,24" Size="720,24" />
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,20" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="740,116" Size="740,116" />
+                </Page>
+                <Page Location="10,241" Name="IndividualResults" PackSize="absolute,absolute" ScrollExtent="740,159" Size="740,159">
+                    <Button BackgroundOpacity="0.000" Location="10,0" MaximumSize="16384,25" MinimumSize="0,25" Name="NameSort" PackSize="absolute,fixed" ScrollExtent="175,25" Size="175,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b2986604a80ac:Player</Button>
+                    <Button BackgroundOpacity="0.000" Location="250,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score0Sort" PackSize="absolute,fixed" ScrollExtent="115,25" Size="115,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b298670cec0d9_1:Score0Sort</Button>
+                    <Button BackgroundOpacity="0.000" Location="365,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score1Sort" PackSize="absolute,fixed" ScrollExtent="115,25" Size="115,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b29864daee969_1:Score1Sort</Button>
+                    <Button BackgroundOpacity="0.000" Location="480,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score2Sort" PackSize="absolute,fixed" ScrollExtent="120,25" Size="120,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b29860a0e93b9_1:Score2Sort</Button>
+                    <Button BackgroundOpacity="0.000" Location="600,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score3Sort" PackSize="absolute,fixed" ScrollExtent="120,25" Size="120,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b2986376eba09_1:Score3Sort</Button>
+                    <Page BackgroundOpacity="1.000" MaximumSize="16384,25" MinimumSize="0,25" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="740,25" Size="740,25" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="true" Location="708,30" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,119" Size="22,119" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                    <Page AbsorbsInput="false" Location="10,30" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="720,119" ScrollSize="1,44" Size="720,119" />
+                    <Page AbsorbsInput="false" Location="10,30" Name="EntryTemplate" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="720,24" Size="720,24">
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="0,3" Margin="5,0,5,0" Name="Name" ScrollExtent="175,20" Size="175,20" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b2986179c493a:{PlayerName}</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="240,3" Name="Score0" ScrollExtent="115,23" Size="115,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b29865ea2da1e_1:10</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="355,3" Name="Score1" ScrollExtent="115,23" Size="115,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b29860b2420de_1:0</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="470,3" Name="Score2" ScrollExtent="120,23" Size="120,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b2986c55d21e8_2:35000</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="590,3" Name="Score3" ScrollExtent="120,23" Size="120,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b2986c55d21e8_3:35000</Text>
+                        <Page BackgroundColor="#8080FF" BackgroundOpacity="0.224" Name="Bkg" PackLocation="left,top" PackSize="1,1" ScrollExtent="720,24" Size="720,24" />
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,20" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="740,139" Size="740,139" />
+                </Page>
+            </Page>
+            <Page Location="25,40" Name="FreeForAll" ScrollExtent="760,460" Size="760,460" Visible="false">
+                <Text Font="SuperLarge" Location="10,10" Margin="1,1,3,3" Name="Winner" ScrollExtent="740,60" Size="740,60" TextAlignment="Center" TextAlignmentVertical="Center">:d11b2986df7e873f:{PlayerName} Wins!</Text>
+                <Page Location="10,80" Name="Results" PackSize="absolute,absolute" ScrollExtent="740,312" Size="740,312">
+                    <Button BackgroundOpacity="0.000" Location="10,0" MaximumSize="16384,25" MinimumSize="0,25" Name="NameSort" PackSize="absolute,fixed" ScrollExtent="175,25" Size="175,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b2986604a80ac_1:Player</Button>
+                    <Button BackgroundOpacity="0.000" Location="185,0" MaximumSize="16384,25" MinimumSize="0,25" Name="ChampionSort" PackSize="absolute,fixed" ScrollExtent="175,25" Size="175,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b298643cae31d:Champion</Button>
+                    <Button BackgroundOpacity="0.000" Location="360,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score0Sort" PackSize="absolute,fixed" ScrollExtent="115,25" Size="115,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b29861159ef5a:Kills</Button>
+                    <Button BackgroundOpacity="0.000" Location="475,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score1Sort" PackSize="absolute,fixed" ScrollExtent="115,25" Size="115,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b29863f6c7fd8:Deaths</Button>
+                    <Button BackgroundOpacity="0.000" Location="590,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Score2Sort" PackSize="absolute,fixed" ScrollExtent="120,25" Size="120,25" Style="/CommonElements.Table.data.sort.style_center_align">:d11b29863ba6e037:Damage Dealt</Button>
+                    <Page BackgroundOpacity="1.000" MaximumSize="16384,25" MinimumSize="0,25" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="740,25" Size="740,25" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="true" Location="708,30" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,272" Size="22,272" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    <Page AbsorbsInput="false" Location="10,30" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="720,272" ScrollSize="1,44" Size="720,272" />
+                    <Page AbsorbsInput="false" Location="10,30" Name="EntryTemplate" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="720,24" Size="720,24">
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="0,3" Margin="5,0,5,0" Name="Name" ScrollExtent="175,20" Size="175,20" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b2986179c493a_1:{PlayerName}</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="175,3" Margin="5,0,5,0" Name="Champion" ScrollExtent="175,20" Size="175,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b29867226b906:{ChampionName}</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="350,3" Name="Score0" ScrollExtent="115,23" Size="115,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b29865ea2da1e_2:10</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="465,3" Name="Score1" ScrollExtent="115,23" Size="115,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b29867b4ed451:5</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="580,3" Name="Score2" ScrollExtent="120,23" Size="120,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:d11b2986c55d21e8_4:35000</Text>
+                        <Page BackgroundColor="#8080FF" BackgroundOpacity="0.224" Name="Bkg" PackLocation="left,top" PackSize="1,1" ScrollExtent="720,24" Size="720,24" />
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,20" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="740,292" Size="740,292" />
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="810,530" Size="810,530">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="809,530" Size="809,530" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" BackgroundTint="#6A6A6A" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="810,530" Size="810,530">
+                    <Namespace Name="backdrop">
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/arenachampions.dds" SourceRect="1,1,1023,577" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                    </Namespace>
+                    <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="25,40" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="ArenaMain.WindowFrame.Bkg.backdrop.rect" ScrollExtent="760,460" Size="760,460" />
+                </Page>
+            </Page>
+        </Page>

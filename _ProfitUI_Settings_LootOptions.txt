@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="LootOptions">
+	<Text Name="AutoDeclineLoot">false</Text>
+	<Text Name="NBGGreedIsDefaultButton">true</Text>
+</Page>

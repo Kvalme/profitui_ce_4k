@@ -1,0 +1,1742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="POI" >
+<Page Name="Luclin">
+<Text Name="ShadeweaverMap" PoiMapLink="exp17_rgn_shadeweaver_0" poiresource="linkdownlarge" Location="502,912" >Shadeweaver's Thicket</Text>
+<Text Name="SharVahlMap" PoiMapLink="exp17_dun_shar_vahl_city_0" poiresource="linkdownlarge" Location="309,577" >Shar Vahl</Text>
+<Text Name="SavageWealdMap" PoiMapLink="exp17_rgn_savage_weald" poiresource="linkdownlarge" Location="388,230" >Savage Weald</Text>
+<Text Name="EchoCavernsMap" PoiMapLink="exp17_rgn_echo_caverns" poiresource="linkdownlarge" Location="569,35" >Echo Caverns</Text>
+<Text Name="SanctusSeruMap" PoiMapLink="exp16_rgn_sanctus_seru" poiresource="linkdownlarge" Location="1071,784" >Sanctus Seru</Text>
+<Text Name="AurelianCoastMap" PoiMapLink="exp16_rgn_aurelian_coast" poiresource="linkdownlarge" Location="1037,1030" >Aurelian Coast</Text>
+<Text Name="BlindingMap" PoiMapLink="exp16_rgn_the_blinding" poiresource="linkdownlarge" Location="1138,439" >The Blinding</Text>
+<Text Name="WracklandsMap" PoiMapLink="exp16_rgn_wracklands" poiresource="linkdownlarge" Location="1125,213" >Wracklands</Text>
+<Icon Name="Luclin" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="Odus">
+<Text Name="OdusSouthMap" PoiMapLink="exp06_rgn_odus_south_0" poiresource="linkdownlarge" Location="561,926" >Sundered Frontier</Text>
+<Text Name="OdusNorthMap" PoiMapLink="exp06_rgn_odus_north" poiresource="linkdownlarge" Location="1122,366" >Stonebrunt Highlands</Text>
+<Icon Name="Odus" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="Mara">
+<Text Name="TheVillageOfShin" PoiMapLink="adv04_rgn_village" poiresource="linkdownlarge" Location="606,828" >The Village of Shin</Text>
+<Text Name="TheMysticLake" PoiMapLink="adv04_rgn_mystic_lake" poiresource="linkdownlarge" Location="1032,359" >The Mystic Lake</Text>
+<Icon Name="Mara" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="CelestialRealm">
+<Text Name="PlaneofFireMap" PoiMapLink="exp15_rgn_plane_of_fire_mission" poiresource="linkdownlarge" Location="1384,896" >Doomfire</Text>
+<Text Name="PlaneofEarthMap" PoiMapLink="exp15_rgn_plane_of_earth_mission" poiresource="linkdownlarge" Location="808,856" >Vegarlson</Text>
+<Text Name="PlaneofAirMap" PoiMapLink="exp15_rgn_plane_of_air_mission" poiresource="linkdownlarge" Location="1103,241" >Eryslai</Text>
+<Text Name="PlaneofDiseaseMap" PoiMapLink="exp15_rgn_plane_of_disease_mission" poiresource="linkdownlarge" Location="175,75" >Detroxxulous</Text>
+<Text Name="PlaneOfMagicMap" PoiMapLink="exp14_rgn_plane_of_magic" poiresource="linkdownlarge" Location="263,523" >Plane of Magic</Text>
+<Text Name="PlaneOfKnowledgeMap" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="linkdownlarge" Location="804,601" >Myrist, the Great Library</Text>
+<Icon Name="CelestialRealm" PoiMapLink="world" poiresource="linkup" Location="258,1076" Tooltip="Norrath"/>
+</Page>
+<Page Name="The Enchanted Lands">
+<Text Name="TheEnchantedLandsMap" PoiMapLink="enchanted" poiresource="linkdownlarge" Location="658,506" >The Enchanted Lands</Text>
+<Text Name="RivervaleMap" PoiMapLink="rivervale" poiresource="linkdownlarge" Location="1034,747" >Rivervale</Text>
+<Icon Name="The Enchanted Lands" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="exp05_rgn_innothule_0">
+<Text Name="Innothule1Map" PoiMapLink="exp05_rgn_innothule_1" poiresource="linkdownlarge" Location="561,348" >Moors of Ykesha (top)</Text>
+<Icon Name="exp05_rgn_innothule_0" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+<Icon Name="38541" PoiMapLink="exp05_dun_void_palace_0" poiresource="door" Location="1235,1110" Tooltip="Palace of Ferzhul (ID:38541) "/>
+</Page>
+<Page Name="exp05_rgn_innothule_1">
+<Text Name="Innothule0Map" PoiMapLink="exp05_rgn_innothule_0" poiresource="linkdownlarge" Location="1077,586" >Moors of Ykesha (bottom)</Text>
+<Icon Name="exp05_rgn_innothule_1" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+<Icon Name="38538" PoiMapLink="exp05_dun_void_anchor" poiresource="door" Location="825,453" Tooltip="The Anchor of Bazzul (ID:38538) "/>
+<Icon Name="38530" PoiMapLink="exp05_dun_void_pit_0" poiresource="door" Location="517,899" Tooltip="Obelisk of Ahkzul (ID:38530) "/>
+<Icon Name="38473" PoiMapLink="exp05_dun_guk_lower_1" poiresource="door" Location="500,190" Tooltip="Ruins of Guk: The Lower Corridor (ID:38473) "/>
+</Page>
+<Page Name="Overrealm">
+<Text Name="TenebrousTangleMap" PoiMapLink="exp02_rgn_realm_of_twilight" poiresource="linkdownlarge" Location="799,1043" >Tenebrous Tangle</Text>
+<Text Name="BonemireMap" PoiMapLink="exp02_rgn_realm_of_night" poiresource="linkdownlarge" Location="959,266" >The Bonemire</Text>
+<Text Name="BarrenSkyMap" PoiMapLink="exp02_rgn_realm_of_dawn" poiresource="linkdownlarge" Location="165,780" >The Barren Sky</Text>
+<Icon Name="Overrealm" PoiMapLink="world" poiresource="linkup" Location="258,1076" Tooltip="Norrath"/>
+</Page>
+<Page Name="Karan">
+<Text Name="qeynos" poiresource="title" Location="59,999" >Qeynos</Text>
+<Text Name="TheCavesMap" PoiMapLink="qey_adv03_caves_0" poiresource="linkdown" Location="515,644" >The Caves</Text>
+<Text Name="QeynosCapitolDistrictMap" PoiMapLink="qeynos_combined01" poiresource="linkdown" Location="565,744" >Qeynos Capitol District</Text>
+<Text Name="BaubbleshireMap" PoiMapLink="qey_village06_clone" poiresource="linkdown" Location="176,382" >The Baubbleshire</Text>
+<Text Name="WillowWoodMap" PoiMapLink="qey_village05_clone" poiresource="linkdown" Location="193,320" >The Willow Wood</Text>
+<Text Name="GraystoneYardMap" PoiMapLink="qey_village03_clone" poiresource="linkdown" Location="201,653" >Graystone Yard</Text>
+<Text Name="CastleviewHamletMap" PoiMapLink="qey_village04_clone" poiresource="linkdown" Location="280,621" >Castleview Hamlet</Text>
+<Text Name="StarcrestCommuneMap" PoiMapLink="qey_village02_clone" poiresource="linkdown" Location="272,922" >Starcrest Commune</Text>
+<Text Name="PeatBogMap" PoiMapLink="qey_adv04_bog" poiresource="linkdown" Location="309,1089" >The Peat Bog</Text>
+<Text Name="NettlevilleMap" PoiMapLink="qey_village01_clone" poiresource="linkdown" Location="364,953" >Nettleville</Text>
+<Text Name="QeynosProvinceDistrictMap" PoiMapLink="qeynos_combined02_0" poiresource="linkdown" Location="317,703" >Qeynos Province District</Text>
+<Text Name="AntonicaMap" PoiMapLink="antonica" poiresource="linkdownlarge" Location="1058,305" >Antonica</Text>
+<Text Name="ThunderingSteppesMap" PoiMapLink="steppes" poiresource="linkdownlarge" Location="1314,887" >The Thundering Steppes</Text>
+<Text Name="OakmystForestMap" PoiMapLink="qey_adv01_oakmyst" poiresource="linkdown" Location="165,515" >Oakmyst Forest</Text>
+<Text Name="ForestRuinsMap" PoiMapLink="qey_adv02_ruins" poiresource="linkdown" Location="104,285" >The Forest Ruins</Text>
+<Icon Name="Karan" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="DLere">
+<Text Name="DarklightWoodMap" PoiMapLink="darklight_wood" poiresource="linkdown" Location="696,565" >Darklight Wood</Text>
+<Text Name="freeport" poiresource="title" Location="1394,885" >Freeport</Text>
+<Text Name="NeriakMap" PoiMapLink="neriak" poiresource="linkdown" Location="795,520" >Neriak, City of Hate</Text>
+<Text Name="FreeportCombinedMap" PoiMapLink="freeport_combined" poiresource="linkdown" Location="1293,591" >The City of Freeport</Text>
+<Text Name="LongshadowAlleyMap" PoiMapLink="fprt_hood05" poiresource="linkdown" Location="1395,251" >Longshadow Alley</Text>
+<Text Name="BeggarsCourtMap" PoiMapLink="fprt_hood04" poiresource="linkdown" Location="1498,219" >Beggar's Court</Text>
+<Text Name="ScaleYardMap" PoiMapLink="fprt_hood06" poiresource="linkdown" Location="1338,729" >Scale Yard</Text>
+<Text Name="TempleStreetMap" PoiMapLink="fprt_hood03" poiresource="linkdown" Location="1422,757" >Temple Street</Text>
+<Text Name="StonestairBywayMap" PoiMapLink="fprt_hood02" poiresource="linkdown" Location="1243,336" >Stonestair Byway</Text>
+<Text Name="BigBendMap" PoiMapLink="fprt_hood01" poiresource="linkdown" Location="1275,700" >Big Bend</Text>
+<Text Name="RuinsMap" PoiMapLink="fprt_adv04_ruins" poiresource="linkdown" Location="1280,852" >The Ruins</Text>
+<Text Name="SprawlMap" PoiMapLink="fprt_adv03_sprawl" poiresource="linkdown" Location="1150,758" >The Sprawl</Text>
+<Text Name="GraveyardMap" PoiMapLink="fprt_adv02_graveyard" poiresource="linkdown" Location="1230,142" >The Graveyard</Text>
+<Text Name="SunkenCityMap" PoiMapLink="fprt_adv01_sunken" poiresource="linkdown" Location="1333,75" >Sunken City</Text>
+<Text Name="NektulosMap" PoiMapLink="nektulos" poiresource="linkdownlarge" Location="326,514" >Nektulos Forest</Text>
+<Text Name="CommonlandsMap" PoiMapLink="commonlands" poiresource="linkdownlarge" Location="723,918" >The Commonlands</Text>
+<Icon Name="DLere" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="Desert of Ro">
+<Text Name="SandstoneDeltaMap" PoiMapLink="exp19_rgn_sandstone_delta" poiresource="linkdown" Location="1096,898" >Sandstone Delta</Text>
+<Text Name="TakishBadlandsMap" PoiMapLink="exp19_rgn_takish_badlands" poiresource="linkdown" Location="702,983" >Takish Badlands</Text>
+<Text Name="RajDurPlateausMap" PoiMapLink="exp19_rgn_plateaus" poiresource="linkdown" Location="402,895" >Raj'Dur Plateaus</Text>
+<Text Name="SinkingSandsSouthMap" PoiMapLink="exp01_rgn_sinking_sands_1" poiresource="linkdown" Location="1322,637" >Onerock Isle</Text>
+<Text Name="SinkingSandsNorthMap" PoiMapLink="exp01_rgn_sinking_sands_0" poiresource="linkdownlarge" Location="1001,223" >The Sinking Sands</Text>
+<Text Name="PillarsOfFlameMap" PoiMapLink="exp01_rgn_pillars_of_flame" poiresource="linkdownlarge" Location="529,383" >The Pillars of Flame</Text>
+<Text Name="MajDulMap" PoiMapLink="exp01_cty_majdul" poiresource="linkdownlarge" Location="837,474" >Maj'Dul</Text>
+<Icon Name="Desert of Ro" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="Faydwer">
+<Text Name="KelethinMap" PoiMapLink="exp03_rgn_greater_faydark_1" poiresource="linkdown" Location="1074,515" >Kelethin</Text>
+<Text Name="SteamfontMap" PoiMapLink="exp03_rgn_steamfont" poiresource="linkdownlarge" Location="1321,915" >Steamfont Mountains</Text>
+<Text Name="LopingPlainsMap" PoiMapLink="exp03_rgn_loping_plains" poiresource="linkdownlarge" Location="920,731" >Loping Plains</Text>
+<Text Name="GreaterFaydarkMap" PoiMapLink="exp03_rgn_greater_faydark_0" poiresource="linkdownlarge" Location="1207,476" >Greater Faydark</Text>
+<Text Name="LesserFaydarkMap" PoiMapLink="exp03_rgn_lesser_faydark" poiresource="linkdownlarge" Location="737,453" >Lesser Faydark</Text>
+<Text Name="ButcherblockMap" PoiMapLink="exp03_rgn_butcherblock" poiresource="linkdownlarge" Location="309,399" >Butcherblock Mountains</Text>
+<Icon Name="Faydwer" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="Velious">
+<Text Name="ThurgadinMap" PoiMapLink="exp_07_thurgadin_velious" poiresource="linkdownlarge" Location="552,441" >Thurgadin</Text>
+<Text Name="WitheredLandsMap" PoiMapLink="exp08_rgn_withered_lands" poiresource="linkdownlarge" Location="482,967" >The Withered Lands</Text>
+<Text Name="ColbaltScarMap" PoiMapLink="exp08_rgn_velious_cobalt_scar" poiresource="linkdownlarge" Location="166,1033" >Cobalt Scar</Text>
+<Text Name="EasternWastesMap" PoiMapLink="exp07_rgn_eastern_wastes" poiresource="linkdownlarge" Location="771,801" >Eastern Wastes</Text>
+<Text Name="GreatDivideMap" PoiMapLink="exp07_rgn_great_divide_0" poiresource="linkdownlarge" Location="729,364" >Great Divide</Text>
+<Text Name="IcecladMap" PoiMapLink="exp07_rgn_great_divide_1" poiresource="linkdownlarge" Location="915,88" >Iceclad</Text>
+<Icon Name="Velious" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="Kunark">
+<Text Name="ObulusFrontierMap" PoiMapLink="exp13_rgn_obulus_frontier" poiresource="linkdownlarge" Location="523,540" >Obulus Frontier</Text>
+<Text Name="GorowynTopMap" PoiMapLink="exp04_rgn_timorous_deep_1" poiresource="linkdown" Location="1035,333" >Gorowyn</Text>
+<Text Name="TimorousDeepMap" PoiMapLink="exp04_rgn_timorous_deep_0" poiresource="linkdownlarge" Location="1179,233" >Timorous Deep</Text>
+<Text Name="KylongPlainsMap" PoiMapLink="exp04_rgn_kylong_plains" poiresource="linkdownlarge" Location="743,969" >Kylong Plains</Text>
+<Text Name="KunzarJungleMap" PoiMapLink="exp04_rgn_kunzar_jungle" poiresource="linkdownlarge" Location="1356,764" >Kunzar Jungle</Text>
+<Text Name="FensOfNathsarMap" PoiMapLink="exp04_rgn_fens_of_nathsar" poiresource="linkdownlarge" Location="1052,758" >Fens of Nathsar</Text>
+<Text Name="JarsathWastesMap" PoiMapLink="exp04_rgn_jarsath_wastes" poiresource="linkdownlarge" Location="243,764" >Jarsath Wastes</Text>
+<Icon Name="Kunark" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="Ethernere">
+<Text Name="EidolonJungleMap" PoiMapLink="exp09_rgn_eidolon_jungle" poiresource="linkdownlarge" Location="843,991" >Eidolon Jungle</Text>
+<Text Name="ObolPlainsMap" PoiMapLink="exp09_rgn_plains_of_obol" poiresource="linkdownlarge" Location="1223,316" >Obol Plains</Text>
+<Text Name="DragonsRealmMap" PoiMapLink="exp10_rgn_dragons_realm_0" poiresource="linkdownlarge" Location="406,348" >Vesspyr Isles</Text>
+<Icon Name="Ethernere" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="Shattered Seas">
+<Text Name="NorthSeasMap" PoiMapLink="exp11_rgn_north_seas" poiresource="linkdownlarge" Location="421,353" >Phantom Sea</Text>
+<Text Name="SouthSeasMap" PoiMapLink="exp11_rgn_southseas" poiresource="linkdownlarge" Location="1190,873" >Tranquil Sea</Text>
+<Icon Name="Shattered Seas" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="world">
+<Text Name="VetroviaMap" PoiMapLink="Vetrovia" poiresource="linkdownlarge" Location="225,840" >Vetrovia</Text>
+<Text Name="LuclinMap" PoiMapLink="Luclin" poiresource="linkdownlarge" Location="788,50" >Luclin</Text>
+<Text Name="CelestialRealmMap" PoiMapLink="CelestialRealm" poiresource="linkdownlarge" Location="1488,1136" >Celestial Realm</Text>
+<Text Name="ThalumbraMap" PoiMapLink="exp12_rgn_umbra02" poiresource="linkdownlarge" Location="115,1113" >Thalumbra</Text>
+<Text Name="ShatteredSeasMap" PoiMapLink="Shattered Seas" poiresource="linkdownlarge" Location="788,446" >Shattered Seas</Text>
+<Text Name="EthernereMap" PoiMapLink="Ethernere" poiresource="linkdownlarge" Location="119,95" >Ethernere</Text>
+<Text Name="VeliousMap" PoiMapLink="Velious" poiresource="linkdownlarge" Location="375,1051" >Velious</Text>
+<Text Name="OdusMap" PoiMapLink="Odus" poiresource="linkdownlarge" Location="128,509" >Odus</Text>
+<Text Name="HalasMap" PoiMapLink="halas_0" poiresource="linkdownlarge" Location="382,232" >Erollis</Text>
+<Text Name="MaraMap" PoiMapLink="Mara" poiresource="linkdownlarge" Location="546,792" >Isle of Mara</Text>
+<Text Name="InnothuleMap" PoiMapLink="exp05_rgn_innothule_0" poiresource="linkdownlarge" Location="655,923" >Moors of Ykesha</Text>
+<Text Name="LavastormMap" PoiMapLink="lavastorm" poiresource="linkdownlarge" Location="1115,190" >Lavastorm</Text>
+<Text Name="FeerrottMap" PoiMapLink="feerrott" poiresource="linkdownlarge" Location="580,685" >The Feerrott</Text>
+<Text Name="ZekMap" PoiMapLink="orcishwastes" poiresource="linkdownlarge" Location="484,288" >Zek</Text>
+<Text Name="EverfrostMap" PoiMapLink="everfrost" poiresource="linkdownlarge" Location="475,120" >Everfrost</Text>
+<Text Name="EnchantedMap" PoiMapLink="The Enchanted Lands" poiresource="linkdownlarge" Location="1025,361" >The Enchanted Lands</Text>
+<Text Name="OverrealmMap" PoiMapLink="Overrealm" poiresource="linkdownlarge" Location="1425,130" >Overrealm</Text>
+<Text Name="DesertofRoMap" PoiMapLink="Desert of Ro" poiresource="linkdownlarge" Location="859,811" >Desert of Ro</Text>
+<Text Name="FaydwerMap" PoiMapLink="Faydwer" poiresource="linkdownlarge" Location="1413,419" >Faydwer</Text>
+<Text Name="DLereMap" PoiMapLink="DLere" poiresource="linkdownlarge" Location="1084,611" >D'Lere</Text>
+<Text Name="KaranMap" PoiMapLink="Karan" poiresource="linkdownlarge" Location="559,486" >Karan</Text>
+<Text Name="KunarkMap" PoiMapLink="Kunark" poiresource="linkdownlarge" Location="1350,915" >Kunark</Text>
+</Page>
+<Page Name="Vetrovia">
+<Text Name="ForlornMap" PoiMapLink="exp18_rgn_forlorn" poiresource="linkdownlarge" Location="848,453" >Forlorn Gist</Text>
+<Text Name="KaruupaMap" PoiMapLink="exp18_rgn_karuupa" poiresource="linkdownlarge" Location="755,940" >Karuupa Jungle</Text>
+<Text Name="MahngaviMap" PoiMapLink="exp18_rgn_mahngavi_wastes" poiresource="linkdownlarge" Location="1171,288" >Mahngavi Wastes</Text>
+<Text Name="SvarniMap" PoiMapLink="exp18_rgn_svarni_expanse" poiresource="linkdownlarge" Location="542,305" >Svarni Expanse</Text>
+<Icon Name="Vetrovia" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+</Page>
+<Page Name="antonica">
+<Icon Name="antonica" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="16222" PoiMapLink="obelisk_of_lostsouls_0" poiresource="door" Location="1290,100" Tooltip="The Obelisk of Lost Souls (ID:16222) ''Diplomatic contact with these beings has been as far unsuccessful. Attempts continue. The Concordium.'' Dungeon. Not always available. Level 35-45."/>
+<Icon Name="31474" PoiMapLink="live_irontoes_0" poiresource="overland" Location="263,524" Tooltip="Bar of Brell (ID:31474) Leads to the &quot;Bar of Brell&quot;.&#xA;- This portal is only available during the Brewday Live Event mid March."/>
+<Icon Name="35934" PoiMapLink="steppes" poiresource="overland" Location="1335,959" Tooltip="To Thundering Steppes (ID:35934) "/>
+<Icon Name="35931" PoiMapLink="antonica_epic01_vale" poiresource="door" Location="1323,493" Tooltip="To The Shattered Vale (ID:35931) "/>
+<Icon Name="35930" PoiMapLink="befallen_0" poiresource="door" Location="1347,630" Tooltip="Stormhold (ID:35930) "/>
+<Icon Name="35928" PoiMapLink="blackburrow_0" poiresource="door" Location="951,909" Tooltip="To Blackburrow (ID:35928) "/>
+<Icon Name="35926" PoiMapLink="blackburrow_0" poiresource="door" Location="851,941" Tooltip="Blackburrow (ID:35926) "/>
+<Icon Name="35925" PoiMapLink="antonica_epic02_firemyst" poiresource="door" Location="830,837" Tooltip="Firemyst Gully (ID:35925) "/>
+<Icon Name="35910" PoiMapLink="qey_south" poiresource="overland" Location="103,657" Tooltip="To South Qeynos (ID:35910) "/>
+<Icon Name="35909" PoiMapLink="qey_adv04_bog" poiresource="zone" Location="48,733" Tooltip="Peat Bog (ID:35909) underwater zone in for Peat Bog"/>
+<Icon Name="35886" PoiMapLink="steppes" poiresource="overland" Location="1072,937" Tooltip="To Thundering Steppes (ID:35886) "/>
+<Icon Name="35885" PoiMapLink="blackburrow_0" poiresource="door" Location="792,994" Tooltip="Blackburrow (ID:35885) "/>
+<Icon Name="71973" PoiMapLink="antonica_catacomb01" poiresource="door" Location="805,57" Tooltip="The Condemned Catacomb (ID:71973) "/>
+<Icon Name="50398" PoiMapLink="Karan" poiresource="harbor" Location="94,887" Tooltip="Travel within Qeynos (ID:50398) "/>
+</Page>
+<Page Name="commonlands">
+<Icon Name="commonlands" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="31472" PoiMapLink="live_irontoes_0" poiresource="overland" Location="1388,627" Tooltip="Bar of Brell (ID:31472) Leads to the &quot;Bar of Brell&quot;.&#xA;- This portal is only available during the Brewday Live Event mid March."/>
+<Icon Name="19839" PoiMapLink="obelisk_of_lostsouls_0" poiresource="zone" Location="323,393" Tooltip="The Obelisk of Lost Souls (ID:19839) ''Shadowed Men have been sighted here. Freeport citizens are commanded to contact Pearl Honeywine within the Academy of Arcane Science with any information regarding these beings.'' Dungeon. Not always available. Caution, no exit. Explorers will have to gate out. Level 35-45."/>
+<Icon Name="35980" PoiMapLink="fprt_adv03_sprawl" poiresource="overland" Location="1491,796" Tooltip="To Sprawl (ID:35980) "/>
+<Icon Name="35977" PoiMapLink="commonlands_sewer01" poiresource="door" Location="1475,716" Tooltip="Gobblerock's Hideout (ID:35977) "/>
+<Icon Name="35972" PoiMapLink="fprt_east_greenmist" poiresource="harbor" Location="1308,290" Tooltip="Freeport Docks (ID:35972) "/>
+<Icon Name="35969" PoiMapLink="wailingcaves_0" poiresource="door" Location="925,182" Tooltip="Wailing Caves (ID:35969) "/>
+<Icon Name="35967" PoiMapLink="cmmn_epic01_orc_excavation" poiresource="door" Location="819,939" Tooltip="Bloodskull Valley (ID:35967) "/>
+<Icon Name="35956" PoiMapLink="fallengate" poiresource="door" Location="125,415" Tooltip="To Fallen Gate (ID:35956) "/>
+<Icon Name="35955" PoiMapLink="nektulos" poiresource="overland" Location="297,308" Tooltip="To Nektulos Forest (ID:35955) "/>
+<Icon Name="35939" PoiMapLink="exp05_dun_befallen_cavern_0" poiresource="door" Location="500,975" Tooltip="Befallen: Cavern of the Afflicted (ID:35939) "/>
+<Icon Name="35938" PoiMapLink="exp05_dun_befallen_forsaken" poiresource="door" Location="576,1005" Tooltip="Befallen: Halls of the Forsaken (ID:35938) "/>
+<Icon Name="52826" PoiMapLink="darklight_wood" poiresource="overland" Location="728,202" Tooltip="Darklight Wood (ID:52826) "/>
+<Icon Name="56241" PoiMapLink="freeport_combined" poiresource="overland" Location="1441,623" Tooltip="To The City of Freeport (ID:56241) "/>
+</Page>
+<Page Name="enchanted">
+<Icon Name="enchanted" PoiMapLink="The Enchanted Lands" poiresource="linkup" Location="100,1100" Tooltip="The Enchanted Lands"/>
+<Icon Name="1521" PoiMapLink="enchanted_mini01_0" poiresource="zone" Location="456,343" Tooltip="Caves of Wonder (ID:1521) "/>
+<Icon Name="22160" PoiMapLink="enchanted_mini01_1" poiresource="zone" Location="1146,502" Tooltip="Cavern of Tangled Weeds (ID:22160) instanced zone either heroic or single"/>
+<Icon Name="40267" PoiMapLink="enchanted_mini01_0" poiresource="zone" Location="389,365" Tooltip="Caves of Wonder (ID:40267) a spider mound entrance to Caves of Wonder can appear here."/>
+<Icon Name="23647" PoiMapLink="enchanted_mini01_0" poiresource="zone" Location="496,308" Tooltip="Caves of Wonder (ID:23647) Instance. Lockout x hours. Level x Solo or Heroic."/>
+<Icon Name="31552" PoiMapLink="enchanted_mini01_0" poiresource="zone" Location="409,326" Tooltip="Caves of Wonder (ID:31552) possible Location of caves including a heroid instance"/>
+<Icon Name="26413" PoiMapLink="runnyeye_epic02_goblin_gigglegibber" poiresource="door" Location="644,1112" Tooltip="To The Gigglegibber Hideout (ID:26413) This man hole cover takes you to:&#xA;- &quot;Gigglegibber Gifty Storehouse&quot; for the Frostfell quest 'Raiding the Gifty Storehouse'.&#xA;- &quot;Gigglegibber Hideout&quot; for the Bristlebane deity quest 'Coin Job'.&#xA;- &quot;The Gigglegibber Hideout&quot; for the Frostfell quest 'The Tale of the Gigglegibber Grump'"/>
+<Icon Name="28554" PoiMapLink="enchanted_mini01_1" poiresource="zone" Location="984,440" Tooltip="Cavern of Tangled Weeds (ID:28554) Solo and Heroic instances"/>
+<Icon Name="34308" PoiMapLink="enchanted_mini01_0" poiresource="zone" Location="484,404" Tooltip="Caves of Wonder (ID:34308) Another possible location"/>
+<Icon Name="50599" PoiMapLink="enchanted_mini01_1" poiresource="zone" Location="1102,529" Tooltip="Cavern of Tangled Weeds (ID:50599) Moss clickable gives you access to the instance (and the heroic version)"/>
+<Icon Name="50955" PoiMapLink="enchanted_mini01_1" poiresource="door" Location="956,560" Tooltip="Cavern of Tangled Weeds (ID:50955) Little clickable bump on the ground with two zone options: &#xA;Cavern of Tangled Weeds &#xA;Heroic: Cavern of Tangled Weeds"/>
+<Icon Name="36006" PoiMapLink="rivervale" poiresource="overland" Location="918,822" Tooltip="Rivervale (ID:36006) "/>
+<Icon Name="59681" PoiMapLink="runnyeye_advanced_mar13" poiresource="door" Location="544,373" Tooltip="Runnyeye Hoard Pits (ID:59681) Leads to the &quot;Runnyeye Hoard Pits&quot; during the Brewday quest 'Rummage for Answers'."/>
+</Page>
+<Page Name="everfrost">
+<Icon Name="everfrost" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+<Icon Name="50412" PoiMapLink="everfrost_epic02_icespire" poiresource="door" Location="683,690" Tooltip="To The Forbidden Sepulcher (ID:50412) "/>
+<Icon Name="50356" PoiMapLink="everfrost_epic02_icespire" poiresource="door" Location="682,690" Tooltip="To the Forbidden Sepulcher (ID:50356) "/>
+<Icon Name="36046" PoiMapLink="permafrost_0" poiresource="door" Location="700,442" Tooltip="Permafrost (ID:36046) "/>
+<Icon Name="36017" PoiMapLink="exp05_dun_miragul_upper_0" poiresource="door" Location="836,832" Tooltip="Miragul's Phylactery (ID:36017) "/>
+</Page>
+<Page Name="exp01_cty_majdul">
+<Icon Name="exp01_cty_majdul" PoiMapLink="Desert of Ro" poiresource="linkup" Location="100,1100" Tooltip="Desert of Ro"/>
+</Page>
+<Page Name="exp01_rgn_pillars_of_flame">
+<Icon Name="exp01_rgn_pillars_of_flame" PoiMapLink="Desert of Ro" poiresource="linkup" Location="100,1100" Tooltip="Desert of Ro"/>
+<Icon Name="36155" PoiMapLink="exp01_rgn_sinking_sands_5" poiresource="overland" Location="1186,835" Tooltip="To Sinking Sands (ID:36155) "/>
+<Icon Name="36153" PoiMapLink="exp01_rgn_sinking_sands_5" poiresource="overland" Location="1137,500" Tooltip="To Sinking Sands (ID:36153) "/>
+<Icon Name="36154" PoiMapLink="exp01_rgn_sinking_sands_5" poiresource="overland" Location="1208,602" Tooltip="To Sinking Sands (ID:36154) "/>
+<Icon Name="36152" PoiMapLink="exp01_rgn_sinking_sands_5" poiresource="overland" Location="1147,380" Tooltip="To Sinking Sands (ID:36152) "/>
+<Icon Name="36125" PoiMapLink="exp01_dun_shimmering_citadel_0" poiresource="door" Location="710,121" Tooltip="The Shimmering Citadel (ID:36125) "/>
+<Icon Name="36108" PoiMapLink="exp01_rgn_pillars_of_flame_epic01_cazel_cyclops" poiresource="door" Location="649,840" Tooltip="Cazel's Mesa (ID:36108) "/>
+</Page>
+<Page Name="feerrott">
+<Icon Name="feerrott" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+<Icon Name="37300" PoiMapLink="feerrott_epic01_temple" poiresource="door" Location="804,455" Tooltip="The Trembling Lagoon (ID:37300) "/>
+<Icon Name="37282" PoiMapLink="shard_of_fear" poiresource="door" Location="1341,541" Tooltip="The Shard of Fear (ID:37282) "/>
+<Icon Name="55369" PoiMapLink="obelisk_of_lostsouls_0" poiresource="door" Location="838,565" Tooltip="To the Obelisk of Lost Souls (ID:55369) "/>
+<Icon Name="58539" PoiMapLink="exp09_rgn_eidolon_jungle" poiresource="door" Location="332,375" Tooltip="To Eidolon Jungle (ID:58539) "/>
+</Page>
+<Page Name="fprt_adv01_sunken">
+<Icon Name="fprt_adv01_sunken" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="37318" PoiMapLink="fprt_adv02_graveyard" poiresource="overland" Location="502,775" Tooltip="To The Graveyard (ID:37318) "/>
+</Page>
+<Page Name="fprt_adv02_graveyard">
+<Icon Name="fprt_adv02_graveyard" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="37326" PoiMapLink="commonlands" poiresource="overland" Location="393,665" Tooltip="To The Commonlands (ID:37326) "/>
+<Icon Name="70203" PoiMapLink="fprt_hood05" poiresource="overland" Location="1180,864" Tooltip="To Longshadow Alley (ID:70203) In a short cave behind a lower level Herioc guard"/>
+</Page>
+<Page Name="fprt_adv03_sprawl">
+<Icon Name="fprt_adv03_sprawl" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="37340" PoiMapLink="fprt_sewer02" poiresource="door" Location="619,890" Tooltip="To Serpent Sewer (ID:37340) "/>
+<Icon Name="37339" PoiMapLink="fprt_adv04_ruins" poiresource="overland" Location="1293,862" Tooltip="To The Ruins (ID:37339) "/>
+<Icon Name="37334" PoiMapLink="commonlands" poiresource="overland" Location="619,579" Tooltip="To The Commonlands (ID:37334) "/>
+</Page>
+<Page Name="fprt_adv04_ruins">
+<Icon Name="fprt_adv04_ruins" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="37348" PoiMapLink="fprt_adv03_sprawl" poiresource="overland" Location="505,254" Tooltip="To The Sprawl (ID:37348) "/>
+</Page>
+<Page Name="fprt_hood01">
+<Icon Name="fprt_hood01" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="56443" PoiMapLink="freeport_combined" poiresource="overland" Location="856,246" Tooltip="To The City of Freeport (ID:56443) "/>
+</Page>
+<Page Name="fprt_hood02">
+<Icon Name="fprt_hood02" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+</Page>
+<Page Name="fprt_hood03">
+<Icon Name="fprt_hood03" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+</Page>
+<Page Name="fprt_hood04">
+<Icon Name="fprt_hood04" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="56446" PoiMapLink="freeport_combined" poiresource="overland" Location="620,1027" Tooltip="To The City of Freeport (ID:56446) "/>
+</Page>
+<Page Name="fprt_hood05">
+<Icon Name="fprt_hood05" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="56447" PoiMapLink="freeport_combined" poiresource="overland" Location="773,979" Tooltip="To The City of Freeport (ID:56447) "/>
+</Page>
+<Page Name="fprt_hood06">
+<Icon Name="fprt_hood06" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+</Page>
+<Page Name="fprt_sewer01">
+<Icon Name="fprt_sewer01" PoiMapLink="DLere" poiresource="linkup" Location="50,456" Tooltip="D'Lere"/>
+<Icon Name="355" PoiMapLink="fprt_sewer02" poiresource="door" Location="34,169" Tooltip="To Serpent Sewer (ID:355) "/>
+<Icon Name="357" PoiMapLink="freeport_combined" poiresource="zone" Location="289,154" Tooltip="To The City of Freeport (ID:357) "/>
+<Icon Name="358" PoiMapLink="freeport_combined" poiresource="zone" Location="256,170" Tooltip="To The City of Freeport (ID:358) "/>
+<Icon Name="359" PoiMapLink="freeport_combined" poiresource="zone" Location="297,194" Tooltip="To The City of Freeport (ID:359) "/>
+<Icon Name="365" PoiMapLink="freeport_combined" poiresource="zone" Location="273,248" Tooltip="To The City of Freeport (ID:365) "/>
+<Icon Name="55347" PoiMapLink="commonlands" poiresource="zone" Location="258,207" Tooltip="To Commonlands (ID:55347) "/>
+<Icon Name="356" PoiMapLink="fprt_sewer_epic04" poiresource="zone" Location="272,362" Tooltip="To The Darkblade Den of Assasins (ID:356) Level 10 Heroic zone"/>
+</Page>
+<Page Name="fprt_sewer02">
+<Icon Name="fprt_sewer02" PoiMapLink="fprt_sewer01" poiresource="linkup" Location="50,456" Tooltip="The Thieves' Way"/>
+<Icon Name="368" PoiMapLink="fprt_sewer03_0" poiresource="zone" Location="370,296" Tooltip="To Edgewater Drains (ID:368) Level 1 (top level)"/>
+<Icon Name="371" PoiMapLink="fprt_adv03_sprawl" poiresource="zone" Location="280,47" Tooltip="To The Sprawl (ID:371) "/>
+<Icon Name="32254" PoiMapLink="fprt_sewer03_0" poiresource="zone" Location="10,98" Tooltip="To Edgewater Drains (ID:32254) Level 2 (middle level)"/>
+<Icon Name="372" PoiMapLink="fprt_sewer01" poiresource="zone" Location="284,21" Tooltip="To The Thieves Way (ID:372) "/>
+<Icon Name="367" PoiMapLink="fprt_sewer_epic03" poiresource="zone" Location="150,153" Tooltip="To The Serpents Lair (ID:367) "/>
+</Page>
+<Page Name="fprt_sewer_epic03">
+<Icon Name="fprt_sewer_epic03" PoiMapLink="fprt_sewer02" poiresource="linkup" Location="50,456" Tooltip="The Serpent Sewer"/>
+<Icon Name="73129" PoiMapLink="fprt_sewer02" poiresource="zone" Location="218,89" Tooltip="To The Serpent Sewer (ID:73129) "/>
+</Page>
+<Page Name="fprt_sewer_epic04">
+<Icon Name="fprt_sewer_epic04" PoiMapLink="fprt_sewer01" poiresource="linkup" Location="50,456" Tooltip="The Thieves' Way"/>
+<Icon Name="41278" PoiMapLink="fprt_sewer01" poiresource="zone" Location="403,307" Tooltip="Zone to Thieves Way (ID:41278) Way back into the tunnels of Thieves Way"/>
+</Page>
+<Page Name="lavastorm">
+<Icon Name="lavastorm" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+<Icon Name="37746" PoiMapLink="solusekseye_0" poiresource="door" Location="845,516" Tooltip="To Solusek's Eye (ID:37746) "/>
+<Icon Name="57242" PoiMapLink="exp05_dun_void_anchor_raid" poiresource="door" Location="525,1012" Tooltip="Munzok's Material Bastion (ID:57242) "/>
+</Page>
+<Page Name="nektulos">
+<Icon Name="nektulos" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="1736" PoiMapLink="obelisk_of_lostsouls_0" poiresource="zone" Location="572,100" Tooltip="The Obelisk of Lost Souls (ID:1736) ''Shadowed Men surround a black obsidian monolith. Scouts report that normally aggressive undead are undisturbed by these apparitions. '' Dungeon. Kill shadowmen for portal to appear. Level 35-50."/>
+<Icon Name="37797" PoiMapLink="commonlands" poiresource="overland" Location="638,1095" Tooltip="The Commonlands (ID:37797) "/>
+<Icon Name="37796" PoiMapLink="darklight_wood" poiresource="overland" Location="1090,433" Tooltip="Darklight Wood (ID:37796) "/>
+<Icon Name="37785" PoiMapLink="nektulos_mini02" poiresource="door" Location="352,541" Tooltip="Dire Hollow (ID:37785) "/>
+<Icon Name="37765" PoiMapLink="shard_of_hate" poiresource="door" Location="1076,393" Tooltip="Shard of Hate (ID:37765) "/>
+<Icon Name="37764" PoiMapLink="exile_city" poiresource="door" Location="689,681" Tooltip="Haven (ID:37764) "/>
+<Icon Name="37784" PoiMapLink="mod01_dun_tombs_of_night_0" poiresource="door" Location="361,361" Tooltip="Tombs of Night (ID:37784) Leads to:&#xA;- &quot;The Tombs of Night&quot;.&#xA;- &quot;The Tombs of Night: A Search For Answers&quot;.&#xA;- &quot;The Tombs of Night: Retribution&quot;."/>
+<Icon Name="28870" PoiMapLink="nektropos_castle_0" poiresource="zone" Location="1215,172" Tooltip="Nektropos Castle: Tribulation (ID:28870) Lvl 70+ Heroic zone"/>
+</Page>
+<Page Name="orcishwastes">
+<Icon Name="orcishwastes" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+<Icon Name="34800" PoiMapLink="orcishwastes_mini01_1" poiresource="zone" Location="1072,901" Tooltip="The Sullon Mines (ID:34800) Another location for the frequently moving Sullon mines."/>
+<Icon Name="37963" PoiMapLink="deathfist_0" poiresource="door" Location="819,263" Tooltip="Deathfist Citadel (ID:37963) "/>
+<Icon Name="37934" PoiMapLink="tutorial_island02_epic01" poiresource="door" Location="621,680" Tooltip="Grozmag's Trial (ID:37934) "/>
+<Icon Name="37931" PoiMapLink="obelisk_of_lostsouls_0" poiresource="door" Location="850,648" Tooltip="To the Obelisk of Lost Souls (ID:37931) "/>
+<Icon Name="54625" PoiMapLink="orcishwastes_mini01_1" poiresource="zone" Location="1131,739" Tooltip="The Sullon Mines (ID:54625) Possible entrance for the Sullon Mines, guarded by 1 Sullon rationeer."/>
+</Page>
+<Page Name="qey_adv01_oakmyst">
+<Icon Name="qey_adv01_oakmyst" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="50469" PoiMapLink="Karan" poiresource="harbor" Location="232,216" Tooltip="Travel within Qeynos (ID:50469) "/>
+<Icon Name="72033" PoiMapLink="qey_village04_clone" poiresource="door" Location="1184,772" Tooltip="To Castleview Hamlet (ID:72033) "/>
+</Page>
+<Page Name="qey_adv02_ruins">
+<Icon Name="qey_adv02_ruins" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="70207" PoiMapLink="qey_village06" poiresource="overland" Location="1169,926" Tooltip="The Baubbleshire (ID:70207) Zone leading to The Baubbleshire"/>
+</Page>
+<Page Name="qey_adv03_caves_0">
+<Icon Name="qey_adv03_caves_0" PoiMapLink="Karan" poiresource="linkup" Location="38,459" Tooltip="Karan"/>
+<Icon Name="27566" PoiMapLink="qey_catacomb01" poiresource="door" Location="308,236" Tooltip="To The Down Below (ID:27566) "/>
+</Page>
+<Page Name="qey_adv03_caves_1">
+<Icon Name="qey_adv03_caves_1" PoiMapLink="Karan" poiresource="linkup" Location="38,459" Tooltip="Karan"/>
+</Page>
+<Page Name="qey_adv04_bog">
+<Icon Name="qey_adv04_bog" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="37990" PoiMapLink="antonica" poiresource="overland" Location="914,198" Tooltip="To Antonica (ID:37990) "/>
+<Icon Name="37988" PoiMapLink="qey_catacomb02" poiresource="door" Location="1201,576" Tooltip="To Vermin's Snye (ID:37988) "/>
+</Page>
+<Page Name="qey_catacomb01">
+<Icon Name="qey_catacomb01" PoiMapLink="Karan" poiresource="linkup" Location="50,456" Tooltip="Karan"/>
+<Icon Name="791" PoiMapLink="qeynos_combined01" poiresource="zone" Location="224,252" Tooltip="To North Qeynos (ID:791) "/>
+<Icon Name="792" PoiMapLink="qeynos_combined02_1" poiresource="zone" Location="224,239" Tooltip="To The Elddar Grove (ID:792) "/>
+<Icon Name="793" PoiMapLink="qeynos_combined01" poiresource="zone" Location="198,275" Tooltip="To South Qeynos (ID:793) "/>
+<Icon Name="794" PoiMapLink="qeynos_combined02_0" poiresource="zone" Location="185,275" Tooltip="To Qeynos Harbor (ID:794) "/>
+<Icon Name="27565" PoiMapLink="qey_adv03_caves_0" poiresource="zone" Location="191,282" Tooltip="To The Caves (ID:27565) "/>
+<Icon Name="790" PoiMapLink="qey_catacomb02" poiresource="zone" Location="179,233" Tooltip="To Vermins Snye (ID:790) "/>
+</Page>
+<Page Name="qey_catacomb02">
+<Icon Name="qey_catacomb02" PoiMapLink="qey_catacomb01" poiresource="linkup" Location="50,456" Tooltip="The Down Below"/>
+<Icon Name="895" PoiMapLink="qey_adv04_bog" poiresource="zone" Location="210,249" Tooltip="To Peat Bog (ID:895) "/>
+<Icon Name="896" PoiMapLink="qey_catacomb01" poiresource="zone" Location="228,249" Tooltip="To The Down Below (ID:896) "/>
+<Icon Name="898" PoiMapLink="qey_catacomb03" poiresource="zone" Location="378,387" Tooltip="Enter The Crypt of Betrayal (ID:898) "/>
+</Page>
+<Page Name="qey_catacomb03">
+<Icon Name="qey_catacomb03" PoiMapLink="qey_catacomb02" poiresource="linkup" Location="50,456" Tooltip="Vermin's Snye"/>
+<Icon Name="16206" PoiMapLink="qey_catacomb02" poiresource="zone" Location="362,425" Tooltip="To Vermins Snye (ID:16206) "/>
+<Icon Name="1432" PoiMapLink="qey_catacomb02" poiresource="zone" Location="59,51" Tooltip="To Vermins Snye (ID:1432) "/>
+<Icon Name="16548" PoiMapLink="qey_catacomb_epic03" poiresource="zone" Location="33,66" Tooltip="The Deadly Scarab Hive (ID:16548) for Forgotten Potion - Into the Hive"/>
+</Page>
+<Page Name="rivervale">
+<Icon Name="rivervale" PoiMapLink="The Enchanted Lands" poiresource="linkup" Location="100,1100" Tooltip="The Enchanted Lands"/>
+<Icon Name="38571" PoiMapLink="drafling_tower_0" poiresource="door" Location="855,608" Tooltip="Tower of the Drafling (ID:38571) "/>
+<Icon Name="38556" PoiMapLink="enchanted" poiresource="overland" Location="624,601" Tooltip="Enchanted Lands (ID:38556) "/>
+</Page>
+<Page Name="steppes">
+<Icon Name="steppes" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="38423" PoiMapLink="adv02_dun_sundered_foreshadow2" poiresource="door" Location="908,864" Tooltip="Sundered Splitpaw (ID:38423) To obtain entry:  claim a darkened shard from /claim then examine it and go to one of those teleporters (avoid the abductors).   Access quest is A darkened shard parts 1 and 2.  &#xA;To obtain a teleport crystal:  perform part 2 of the access quest to receive a glowing shard.  Then you can teleport from anywhere in Norrath to Splitpaw, and then go to the Lower Tunnels teleporter, select Thundering Steppes and zone right to this door. &#xA;Why would you want to?  Well, there are two epic zones in here, and another epic mob near coldwind point, until you get the glowing shard you can't access the epic mobs in splitpaw. "/>
+<Icon Name="38409" PoiMapLink="varsoon_0" poiresource="door" Location="1230,716" Tooltip="Ruins of Varsoon (ID:38409) "/>
+<Icon Name="38408" PoiMapLink="steppes_epic01_cove" poiresource="door" Location="1026,845" Tooltip="Cove of Decay (ID:38408) "/>
+<Icon Name="38406" PoiMapLink="antonica" poiresource="overland" Location="888,55" Tooltip="To Antonica (ID:38406) "/>
+<Icon Name="38407" PoiMapLink="antonica" poiresource="overland" Location="440,288" Tooltip="To Antonica (ID:38407) "/>
+<Icon Name="38387" PoiMapLink="exile_city" poiresource="door" Location="539,724" Tooltip="Haven (ID:38387) "/>
+<Icon Name="38385" PoiMapLink="obelisk_of_lostsouls_0" poiresource="door" Location="546,766" Tooltip="To the Obelisk of Lost Souls (ID:38385) "/>
+<Icon Name="38386" PoiMapLink="varsoon_0" poiresource="door" Location="1166,859" Tooltip="Ruins of Varsoon (ID:38386) "/>
+</Page>
+<Page Name="vrsn_epic01_boss">
+<Icon Name="vrsn_epic01_boss" PoiMapLink="varsoon_0" poiresource="linkup" Location="50,456" Tooltip="The Ruins of Varsoon"/>
+</Page>
+<Page Name="exp02_rgn_realm_of_twilight">
+<Icon Name="exp02_rgn_realm_of_twilight" PoiMapLink="Overrealm" poiresource="linkup" Location="100,1100" Tooltip="Overrealm"/>
+<Icon Name="27690" PoiMapLink="exp02_dun_lair_of_scale_epic02_hallowed_0" poiresource="zone" Location="689,1005" Tooltip="Lyceum of Abhorrence (ID:27690) Raid instance. Get quest from the droag just up the opposite hill"/>
+<Icon Name="36295" PoiMapLink="exp02_dun_lair_of_scale_epic01_seeing" poiresource="door" Location="801,506" Tooltip="Halls of the Seeing (ID:36295) "/>
+<Icon Name="36294" PoiMapLink="exp02_dun_lair_of_scale_0" poiresource="door" Location="642,498" Tooltip="The Sanctum of the Scaleborn (ID:36294) "/>
+<Icon Name="36293" PoiMapLink="exp02_dun_lair_of_scale_02_0" poiresource="door" Location="754,492" Tooltip="The Temple of Scale (ID:36293) "/>
+</Page>
+<Page Name="exp02_rgn_realm_of_dawn">
+<Icon Name="exp02_rgn_realm_of_dawn" PoiMapLink="Overrealm" poiresource="linkup" Location="100,1100" Tooltip="Overrealm"/>
+<Icon Name="36241" PoiMapLink="exp02_dun_shrines_of_sky_epic02_nest_0" poiresource="door" Location="1172,277" Tooltip="Nest of the Great Egg (ID:36241) "/>
+<Icon Name="36239" PoiMapLink="exp02_dun_shrines_of_sky_epic01_vaults_0" poiresource="door" Location="580,801" Tooltip="The Vaults of El'Arad (ID:36239) "/>
+<Icon Name="36207" PoiMapLink="exp02_dun_shrines_of_sky_0" poiresource="door" Location="683,647" Tooltip="Palace of the Awakened (ID:36207) "/>
+</Page>
+<Page Name="exp02_rgn_realm_of_night">
+<Icon Name="exp02_rgn_realm_of_night" PoiMapLink="Overrealm" poiresource="linkup" Location="100,1100" Tooltip="Overrealm"/>
+<Icon Name="31829" PoiMapLink="exp02_dun_halls_of_fate_x4" poiresource="zone" Location="799,527" Tooltip="Laboratory Of Lord Vyemm (ID:31829) Orb of Teleportation on the roof."/>
+<Icon Name="36272" PoiMapLink="exp02_dun_halls_of_fate_epic01_sepulcher" poiresource="door" Location="743,175" Tooltip="Blackscale Sepulcher (ID:36272) "/>
+<Icon Name="36260" PoiMapLink="exp02_dun_halls_of_fate_0" poiresource="door" Location="800,519" Tooltip="Halls of Fate (ID:36260) "/>
+</Page>
+<Page Name="adv04_rgn_village">
+<Icon Name="adv04_rgn_village" PoiMapLink="Mara" poiresource="linkup" Location="100,1100" Tooltip="Isle of Mara"/>
+<Icon Name="38600" PoiMapLink="adv04_rgn_mystic_lake" poiresource="overland" Location="1145,429" Tooltip="To the Mystic Lake (ID:38600) "/>
+</Page>
+<Page Name="adv04_rgn_mystic_lake">
+<Icon Name="adv04_rgn_mystic_lake" PoiMapLink="Mara" poiresource="linkup" Location="100,1100" Tooltip="Isle of Mara"/>
+<Icon Name="38595" PoiMapLink="adv04_rgn_village" poiresource="overland" Location="291,875" Tooltip="To Village of Shin (ID:38595) "/>
+<Icon Name="38580" PoiMapLink="adv04_dun_endless_0" poiresource="door" Location="1049,482" Tooltip="To the Forsaken City (ID:38580) "/>
+</Page>
+<Page Name="exp03_rgn_greater_faydark_0">
+<Icon Name="exp03_rgn_greater_faydark_0" PoiMapLink="Faydwer" poiresource="linkup" Location="100,1100" Tooltip="Faydwer"/>
+<Icon Name="29991" PoiMapLink="exp03_dun_crushbone_keep_epic02_boss" poiresource="door" Location="1421,597" Tooltip="The Acadechism (ID:29991) Leads to:&#xA;- &quot;The Acadechism&quot; for the quests 'Knights in the Round' and 'Path Of The Past - The Acadechism' and the SQs 'Making it Manifest' and 'Acquiring the Second Fragment'.&#xA;- &quot;The Fabled Acadechism [Advanced Solo]&quot;.&#xA;- &quot;The Fabled Acadechism [Heroic]&quot;.&#xA;- This entrance is on the roof of Crushbone Keep and can be reached via a climbable wall to the east."/>
+<Icon Name="36390" PoiMapLink="exp03_dun_crushbone_keep_0" poiresource="door" Location="1418,633" Tooltip="To Crushbone Keep (ID:36390) "/>
+<Icon Name="36388" PoiMapLink="exp03_rgn_loping_plains" poiresource="overland" Location="528,1090" Tooltip="To Loping Plains (ID:36388) "/>
+<Icon Name="36387" PoiMapLink="exp03_rgn_lesser_faydark" poiresource="overland" Location="93,840" Tooltip="To Lesser Faydark (ID:36387) "/>
+<Icon Name="36385" PoiMapLink="exp03_rgn_steamfont" poiresource="overland" Location="855,977" Tooltip="To Steamfont (ID:36385) "/>
+<Icon Name="49502" PoiMapLink="live_irontoes_0" poiresource="overland" Location="229,625" Tooltip="Bar of Brell (ID:49502) Leads to the &quot;Bar of Brell&quot;.&#xA;- This portal is only available during the Brewday Live Event mid March."/>
+<Icon Name="68849" PoiMapLink="exp03_dun_felwithe" poiresource="door" Location="1310,1017" Tooltip="To New Tunaria (ID:68849) Running east through this canyon will zone you to New Tunaria."/>
+</Page>
+<Page Name="exp03_rgn_greater_faydark_1">
+<Icon Name="exp03_rgn_greater_faydark_1" PoiMapLink="Faydwer" poiresource="linkup" Location="100,1100" Tooltip="Faydwer"/>
+</Page>
+<Page Name="exp03_rgn_loping_plains">
+<Icon Name="exp03_rgn_loping_plains" PoiMapLink="Faydwer" poiresource="linkup" Location="100,1100" Tooltip="Faydwer"/>
+<Icon Name="36778" PoiMapLink="exp03_rgn_greater_faydark_0" poiresource="overland" Location="1287,267" Tooltip="To Greater Faydark (ID:36778) "/>
+<Icon Name="36777" PoiMapLink="exp03_rgn_steamfont" poiresource="overland" Location="1490,852" Tooltip="To Steamfont Mountains (ID:36777) "/>
+<Icon Name="36775" PoiMapLink="exp03_dun_castle_mistmoore_0" poiresource="door" Location="362,763" Tooltip="Castle Mistmoore (ID:36775) "/>
+<Icon Name="36774" PoiMapLink="exp03_dun_mistmoore_catacombs_epic01_freethinker" poiresource="door" Location="1291,737" Tooltip="Freethinker Hideout (ID:36774) "/>
+<Icon Name="36773" PoiMapLink="exp03_dun_mistmoore_catacombs_epic02_oldcatacombs" poiresource="door" Location="669,779" Tooltip="The Crypt of Valdoon (ID:36773) "/>
+<Icon Name="36772" PoiMapLink="exp03_rgn_lesser_faydark" poiresource="overland" Location="140,508" Tooltip="To Lesser Faydark (ID:36772) "/>
+<Icon Name="68852" PoiMapLink="exp03_dun_mistmoore_catacombs_0" poiresource="door" Location="554,984" Tooltip="To Mistmoore Catacombs (ID:68852) Swimming deeper into this cave will zone you to Mistmoore Catacombs."/>
+</Page>
+<Page Name="exp03_rgn_steamfont">
+<Icon Name="exp03_rgn_steamfont" PoiMapLink="Faydwer" poiresource="linkup" Location="100,1100" Tooltip="Faydwer"/>
+<Icon Name="47364" PoiMapLink="exp03_dun_klakanon" poiresource="door" Location="518,840" Tooltip="To Klak'Anon (ID:47364) "/>
+<Icon Name="70286" PoiMapLink="exp03_dun_klakanon_epic02_court_redd_house" poiresource="door" Location="737,555" Tooltip="Redd's Abode (ID:70286) - During Tinkerfest you can knock twice on this door to offer its inhabitant of the smoke pouring out.&#xA;- Redd will have a conversation with you through the door and offer you the Tinkerfest quest 'The Reticent Tinkerer'."/>
+</Page>
+<Page Name="exp03_rgn_lesser_faydark">
+<Icon Name="exp03_rgn_lesser_faydark" PoiMapLink="Faydwer" poiresource="linkup" Location="100,1100" Tooltip="Faydwer"/>
+<Icon Name="29501" PoiMapLink="exp03_rgn_emerald_halls_0" poiresource="zone" Location="764,98" Tooltip="To the Emerald Halls (ID:29501) Level 70 x 4. Raid Instance. Difficulty: Hardest. Jump into the water and swim upstream to reach the zone-in."/>
+<Icon Name="36736" PoiMapLink="exp03_rgn_butcherblock" poiresource="overland" Location="432,260" Tooltip="To Butcherblock Mountains (ID:36736) "/>
+<Icon Name="36735" PoiMapLink="exp03_rgn_loping_plains" poiresource="overland" Location="777,914" Tooltip="To Loping Plains (ID:36735) "/>
+<Icon Name="36734" PoiMapLink="exp03_rgn_greater_faydark_0" poiresource="overland" Location="1427,659" Tooltip="To Greater Faydark (ID:36734) "/>
+</Page>
+<Page Name="exp03_rgn_butcherblock">
+<Icon Name="exp03_rgn_butcherblock" PoiMapLink="Faydwer" poiresource="linkup" Location="100,1100" Tooltip="Faydwer"/>
+<Icon Name="36338" PoiMapLink="exp03_dun_estate_of_unrest_0" poiresource="door" Location="1057,924" Tooltip="To The Estate of Unrest (ID:36338) "/>
+<Icon Name="36339" PoiMapLink="exp03_dun_kaladim" poiresource="door" Location="1039,107" Tooltip="To Kaladim (ID:36339) "/>
+</Page>
+<Page Name="exp01_rgn_sinking_sands_0">
+<Icon Name="exp01_rgn_sinking_sands_0" PoiMapLink="Desert of Ro" poiresource="linkup" Location="100,1100" Tooltip="Desert of Ro"/>
+<Icon Name="36188" PoiMapLink="exp01_rgn_pillars_of_flame" poiresource="overland" Location="426,817" Tooltip="To Pillars of Flame (ID:36188) "/>
+<Icon Name="36187" PoiMapLink="exp01_rgn_pillars_of_flame" poiresource="overland" Location="451,566" Tooltip="To Pillars of Flame (ID:36187) "/>
+<Icon Name="36186" PoiMapLink="exp01_rgn_pillars_of_flame" poiresource="overland" Location="382,459" Tooltip="To Pillars of Flame (ID:36186) "/>
+<Icon Name="36185" PoiMapLink="exp01_rgn_pillars_of_flame" poiresource="overland" Location="369,353" Tooltip="To Pillars of Flame (ID:36185) "/>
+<Icon Name="36177" PoiMapLink="exp01_dun_silent_city_0" poiresource="door" Location="888,375" Tooltip="The Silent City (ID:36177) "/>
+<Icon Name="36173" PoiMapLink="exp01_rgn_sinking_sands_epic01_lockjaw" poiresource="door" Location="969,559" Tooltip="Lockjaw's Lair (ID:36173) "/>
+<Icon Name="36172" PoiMapLink="exp01_rgn_sinking_sands_epic01_lockjaw_dorns_cache" poiresource="door" Location="980,824" Tooltip="The Hidden Cache (ID:36172) "/>
+<Icon Name="36161" PoiMapLink="exp01_rgn_pillars_of_flame" poiresource="overland" Location="413,186" Tooltip="To Pillars of Flame (ID:36161) "/>
+<Icon Name="50992" PoiMapLink="exp01_rgn_sinking_sands_epic01_lockjaw_undead" poiresource="door" Location="508,595" Tooltip="To The Sanctorium (ID:50992) "/>
+</Page>
+<Page Name="exp01_rgn_sinking_sands_1">
+<Icon Name="exp01_rgn_sinking_sands_1" PoiMapLink="Desert of Ro" poiresource="linkup" Location="100,1100" Tooltip="Desert of Ro"/>
+</Page>
+<Page Name="darklight_wood">
+<Icon Name="darklight_wood" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="38460" PoiMapLink="commonlands" poiresource="zone" Location="906,954" Tooltip="To Commonlands (ID:38460) "/>
+<Icon Name="38459" PoiMapLink="nektulos" poiresource="zone" Location="110,702" Tooltip="To Nektulos Forest (ID:38459) "/>
+<Icon Name="57943" PoiMapLink="neriak" poiresource="zone" Location="1510,536" Tooltip="To Neriak (ID:57943) "/>
+</Page>
+<Page Name="neriak">
+<Icon Name="neriak" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="37884" PoiMapLink="darklight_wood" poiresource="overland" Location="425,443" Tooltip="To Darklight Wood (ID:37884) "/>
+</Page>
+<Page Name="exp04_rgn_timorous_deep_0">
+<Icon Name="exp04_rgn_timorous_deep_0" PoiMapLink="Kunark" poiresource="linkup" Location="100,1100" Tooltip="Kunark"/>
+<Icon Name="41906" PoiMapLink="live_irontoes_0" poiresource="overland" Location="361,936" Tooltip="Bar of Brell (ID:41906) Leads to the &quot;Bar of Brell&quot;.&#xA;- This portal is only available during the Brewday Live Event mid March."/>
+</Page>
+<Page Name="exp04_rgn_timorous_deep_1">
+<Icon Name="exp04_rgn_timorous_deep_1" PoiMapLink="Kunark" poiresource="linkup" Location="100,1100" Tooltip="Kunark"/>
+</Page>
+<Page Name="exp04_rgn_timorous_deep_2">
+<Icon Name="exp04_rgn_timorous_deep_2" PoiMapLink="Kunark" poiresource="linkup" Location="100,1100" Tooltip="Kunark"/>
+</Page>
+<Page Name="exp04_rgn_kylong_plains">
+<Icon Name="exp04_rgn_kylong_plains" PoiMapLink="Kunark" poiresource="linkup" Location="100,1100" Tooltip="Kunark"/>
+<Icon Name="37104" PoiMapLink="exp04_rgn_fens_of_nathsar" poiresource="overland" Location="1013,668" Tooltip="To Fens of Nathsar (ID:37104) "/>
+<Icon Name="37114" PoiMapLink="exp04_dun_karnors_castle_0" poiresource="door" Location="634,850" Tooltip="To Karnor's Castle (ID:37114) "/>
+<Icon Name="64340" PoiMapLink="exp04_rgn_jarsath_wastes" poiresource="overland" Location="114,185" Tooltip="To Jarsath Wastes (ID:64340) "/>
+<Icon Name="64341" PoiMapLink="exp13_rgn_obulus_frontier" poiresource="overland" Location="154,163" Tooltip="To Obulus Frontier (ID:64341) "/>
+</Page>
+<Page Name="exp04_rgn_kunzar_jungle">
+<Icon Name="exp04_rgn_kunzar_jungle" PoiMapLink="Kunark" poiresource="linkup" Location="100,1100" Tooltip="Kunark"/>
+<Icon Name="36998" PoiMapLink="exp04_rgn_fens_of_nathsar" poiresource="overland" Location="519,535" Tooltip="To Fens of Nathsar (ID:36998) "/>
+<Icon Name="36999" PoiMapLink="exp04_rgn_fens_of_nathsar" poiresource="overland" Location="618,797" Tooltip="To Fens of Nathsar (ID:36999) "/>
+</Page>
+<Page Name="exp04_rgn_fens_of_nathsar">
+<Icon Name="exp04_rgn_fens_of_nathsar" PoiMapLink="Kunark" poiresource="linkup" Location="100,1100" Tooltip="Kunark"/>
+<Icon Name="36889" PoiMapLink="exp04_rgn_kylong_plains" poiresource="overland" Location="462,1089" Tooltip="To Kylong Plains (ID:36889) "/>
+<Icon Name="36887" PoiMapLink="exp04_rgn_kunzar_jungle" poiresource="overland" Location="902,679" Tooltip="To Kunzar Jungle (ID:36887) "/>
+<Icon Name="36834" PoiMapLink="exp05_dun_veksar_pre_launch" poiresource="door" Location="426,818" Tooltip="To Veksar (ID:36834) "/>
+<Icon Name="36833" PoiMapLink="exp04_dun_charasis_epic01_queens" poiresource="door" Location="553,980" Tooltip="To the Tomb of Thuuga (ID:36833) "/>
+<Icon Name="36832" PoiMapLink="exp05_dun_nuroga_0" poiresource="door" Location="601,343" Tooltip="Nu'roga (ID:36832) "/>
+<Icon Name="36831" PoiMapLink="exp05_dun_korsha" poiresource="door" Location="450,563" Tooltip="Atrebe's Laboratory: The Fabled City of Kor-sha (ID:36831) "/>
+<Icon Name="39440" PoiMapLink="exp04_dun_sebilis_quarters_greenmist_quest" poiresource="door" Location="577,535" Tooltip="The Lost Temple of Cabilis (ID:39440) Leads to &quot;Lost Temple of Cabilis&quot; for the HQs 'The Name of Fear', 'The Word of Fear', 'The Call of Fear', 'The Path of Fear' and 'The Triumph of Fear'."/>
+<Icon Name="52736" PoiMapLink="exp04_rgn_kunzar_jungle" poiresource="zone" Location="1106,1034" Tooltip="Kunzar Jungle (ID:52736) On the valley floor at the end of the river.  Take the lift from above and turn right.  LvL 76 Heroic Order of Rime Shardtroops on Kunzar side so beware."/>
+<Icon Name="64335" PoiMapLink="exp13_dun_kaesora_01" poiresource="door" Location="491,506" Tooltip="To Ruins of Cabilis (ID:64335) "/>
+</Page>
+<Page Name="exp04_rgn_jarsath_wastes">
+<Icon Name="exp04_rgn_jarsath_wastes" PoiMapLink="Kunark" poiresource="linkup" Location="100,1100" Tooltip="Kunark"/>
+<Icon Name="58497" PoiMapLink="exp09_dun_deepchelsith" poiresource="door" Location="815,759" Tooltip="The Ancient Vault (ID:58497) Leads to:&#xA;- &quot;Chelsith: The Ancient Vault&quot;.&#xA;- &quot;Chelsith: The Ancient Vault [Advanced Solo]&quot;."/>
+<Icon Name="33444" PoiMapLink="exp04_dun_chelsith_epic01_behemoth" poiresource="zone" Location="483,820" Tooltip="Chamber of Destiny (ID:33444) Chamber of Destiny"/>
+<Icon Name="36928" PoiMapLink="exp04_dun_veeshans_peak_0" poiresource="door" Location="801,685" Tooltip="To Veeshan's Peak (ID:36928) "/>
+<Icon Name="36906" PoiMapLink="exp04_dun_chelsith" poiresource="door" Location="485,792" Tooltip="Chelsith (ID:36906) "/>
+<Icon Name="36904" PoiMapLink="exp04_dun_charasis_north" poiresource="door" Location="476,526" Tooltip="Charasis: Vault of Eternal Sleep (ID:36904) "/>
+<Icon Name="58536" PoiMapLink="exp09_dun_wurmbones_end" poiresource="door" Location="910,952" Tooltip="To Wurmbone's End (ID:58536) "/>
+<Icon Name="64337" PoiMapLink="exp04_rgn_kylong_plains" poiresource="overland" Location="918,338" Tooltip="To Kylong Plains (ID:64337) "/>
+<Icon Name="64338" PoiMapLink="exp13_rgn_obulus_frontier" poiresource="overland" Location="931,312" Tooltip="To Obulus Frontier (ID:64338) "/>
+</Page>
+<Page Name="exp05_dun_befallen_forsaken">
+<Icon Name="exp05_dun_befallen_forsaken" PoiMapLink="commonlands" poiresource="linkup" Location="50,456" Tooltip="The Commonlands"/>
+</Page>
+<Page Name="exp06_rgn_odus_south_0">
+<Icon Name="exp06_rgn_odus_south_0" PoiMapLink="Odus" poiresource="linkup" Location="100,1100" Tooltip="Odus"/>
+<Icon Name="48253" PoiMapLink="exp06_dun_thehole_0" poiresource="door" Location="339,765" Tooltip="To The Hole (ID:48253) "/>
+<Icon Name="48261" PoiMapLink="exp06_rgn_odus_north" poiresource="overland" Location="712,548" Tooltip="To Stonebrunt Highlands (ID:48261) "/>
+<Icon Name="48976" PoiMapLink="exp06_dun_thehole_0" poiresource="zone" Location="347,817" Tooltip="The Hole (ID:48976) Entrance to The Hole (click on door/wall panel"/>
+<Icon Name="49559" PoiMapLink="live_epic_mystic_odus_tradeskill" poiresource="overland" Location="264,547" Tooltip="Spire (ID:49559) Wizard Spire"/>
+</Page>
+<Page Name="exp06_rgn_odus_north">
+<Icon Name="exp06_rgn_odus_north" PoiMapLink="Odus" poiresource="linkup" Location="100,1100" Tooltip="Odus"/>
+<Icon Name="49092" PoiMapLink="exp06_dun_vastydeep02" poiresource="zone" Location="754,187" Tooltip="The Vasty Deep (ID:49092) "/>
+<Icon Name="48247" PoiMapLink="exp06_rgn_odus_south_0" poiresource="overland" Location="889,895" Tooltip="To the Sundered Frontier (ID:48247) "/>
+<Icon Name="48240" PoiMapLink="exp06_dun_erudin_library_0" poiresource="door" Location="898,262" Tooltip="To Erudin (ID:48240) "/>
+</Page>
+<Page Name="halas_0">
+<Icon Name="halas_0" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+<Icon Name="50177" PoiMapLink="halas_epic01_necro" poiresource="zone" Location="546,675" Tooltip="Cave of Illboding Dark (ID:50177) "/>
+<Icon Name="69661" PoiMapLink="live_irontoes_0" poiresource="overland" Location="878,601" Tooltip="Bar of Brell (ID:69661) Leads to the &quot;Bar of Brell&quot;.&#xA;- This portal is only available during the Brewday Live Event mid March."/>
+</Page>
+<Page Name="varsoon_0">
+<Icon Name="varsoon_0" PoiMapLink="steppes" poiresource="linkup" Location="50,462" Tooltip="The Thundering Steppes"/>
+<Icon Name="920" PoiMapLink="vrsn_epic01_boss" poiresource="door" Location="134,423" Tooltip="Chamber of Immortality (ID:920) Varsoon"/>
+<Icon Name="960" PoiMapLink="steppes" poiresource="zone" Location="977,262" Tooltip="To The Thundering Steppes (ID:960) "/>
+<Icon Name="22129" PoiMapLink="steppes" poiresource="zone" Location="347,127" Tooltip="Doors to TS (must have completed the 'Where will this lead me quest') juntai (ID:22129) "/>
+</Page>
+<Page Name="exp07_rgn_great_divide_0">
+<Icon Name="exp07_rgn_great_divide_0" PoiMapLink="Velious" poiresource="linkup" Location="100,1100" Tooltip="Velious"/>
+<Icon Name="52961" PoiMapLink="exp07_dun_velks_forgotten_pools_0" poiresource="door" Location="875,845" Tooltip="To Forgotten Pools (ID:52961) "/>
+<Icon Name="52964" PoiMapLink="exp_07_thurgadin_velious" poiresource="overland" Location="732,478" Tooltip="To Thurgadin, City of the Coldain (ID:52964) "/>
+<Icon Name="52965" PoiMapLink="exp_07_thurgadin_velious" poiresource="overland" Location="621,614" Tooltip="To Thurgadin, City of the Coldain (ID:52965) "/>
+<Icon Name="52983" PoiMapLink="exp07_rgn_eastern_wastes" poiresource="overland" Location="1301,1004" Tooltip="To Eastern Wastes (ID:52983) "/>
+<Icon Name="71322" PoiMapLink="exp07_dun_velks_fortress_0" poiresource="door" Location="1025,604" Tooltip="Hold of Rime: The Fortress Spire (ID:71322) Enter here for Hold of Rime: The Fortress Spire"/>
+<Icon Name="74838" PoiMapLink="exp07_dun_kraytocs_fortress_easy" poiresource="zone" Location="1023,606" Tooltip="To Kraytoc's Fortress of Rime (ID:74838) "/>
+</Page>
+<Page Name="exp07_rgn_great_divide_1">
+<Icon Name="exp07_rgn_great_divide_1" PoiMapLink="Velious" poiresource="linkup" Location="100,1100" Tooltip="Velious"/>
+<Icon Name="52952" PoiMapLink="exp07_dun_tower_of_frozen_shadow_0" poiresource="door" Location="709,892" Tooltip="To Tower of Frozen Shadow (ID:52952) "/>
+</Page>
+<Page Name="exp07_rgn_eastern_wastes">
+<Icon Name="exp07_rgn_eastern_wastes" PoiMapLink="Velious" poiresource="linkup" Location="100,1100" Tooltip="Velious"/>
+<Icon Name="54419" PoiMapLink="exp07_dun_drunder_fortress" poiresource="door" Location="758,632" Tooltip="To The Fortress of Drunder (ID:54419) "/>
+<Icon Name="53003" PoiMapLink="exp07_dun_kael_drakkel_0" poiresource="door" Location="1096,891" Tooltip="To Kael Drakkel (ID:53003) "/>
+<Icon Name="52990" PoiMapLink="exp07_rgn_great_divide_0" poiresource="overland" Location="1315,28" Tooltip="To Great Divide (ID:52990) "/>
+<Icon Name="54989" PoiMapLink="exp07_dun_kael_drakkel_0" poiresource="door" Location="1096,891" Tooltip="To Kael Drakkel (ID:54989) "/>
+<Icon Name="60493" PoiMapLink="exp09_dun_sleepers_upper_raid_0" poiresource="door" Location="1000,402" Tooltip="Sleeper's Tomb (ID:60493) "/>
+</Page>
+<Page Name="exp_07_thurgadin_velious">
+<Icon Name="exp_07_thurgadin_velious" PoiMapLink="Velious" poiresource="linkup" Location="100,1100" Tooltip="Velious"/>
+</Page>
+<Page Name="freeport_combined">
+<Icon Name="freeport_combined" PoiMapLink="DLere" poiresource="linkup" Location="100,1100" Tooltip="D'Lere"/>
+<Icon Name="55506" PoiMapLink="fprt_sewer01" poiresource="zone" Location="1110,1034" Tooltip="Thieves' Way (ID:55506) Enter at your own descretion"/>
+<Icon Name="55450" PoiMapLink="fprt_sewer01" poiresource="zone" Location="254,604" Tooltip="The Thieves' Way (ID:55450) The Thieves Way.  Zone in from West Freeport."/>
+<Icon Name="55514" PoiMapLink="fprt_sewer01" poiresource="zone" Location="962,605" Tooltip="Thieves' Way (ID:55514) Enter if you dare!"/>
+<Icon Name="55489" PoiMapLink="exp15_home_stormy_isle_0" poiresource="harbor" Location="1135,927" Tooltip="Bell (ID:55489) to Travel within Freeport"/>
+<Icon Name="55488" PoiMapLink="exp15_home_stormy_isle_0" poiresource="harbor" Location="1136,914" Tooltip="Bell (ID:55488) to Voyage around Norrath"/>
+<Icon Name="55502" PoiMapLink="lon_showroom" poiresource="zone" Location="1231,821" Tooltip="Legends of Norrath Museum (ID:55502) zone into the museum, check it out!"/>
+<Icon Name="55500" PoiMapLink="exp15_home_stormy_isle_0" poiresource="harbor" Location="1103,711" Tooltip="Bell (ID:55500) to voyage through Norrath"/>
+<Icon Name="55475" PoiMapLink="fprt_hood05" poiresource="door" Location="906,39" Tooltip="Longshadow Alley (ID:55475) Entrance to Longshadow Alley Instance"/>
+<Icon Name="55457" PoiMapLink="deathfist_3" poiresource="zone" Location="373,587" Tooltip="The Arena (ID:55457) The Arena.  Pet PVP."/>
+<Icon Name="55660" PoiMapLink="fprt_hood03" poiresource="door" Location="1039,1175" Tooltip="Temple Street (ID:55660) Entrance to Temple Street Instance"/>
+<Icon Name="55972" PoiMapLink="commonlands" poiresource="door" Location="268,526" Tooltip="The Commonlands (ID:55972) Door to The Commonlands"/>
+<Icon Name="60628" PoiMapLink="arena_of_the_gods_0" poiresource="door" Location="981,455" Tooltip="To Arena of the Gods (ID:60628) "/>
+<Icon Name="56041" PoiMapLink="fprt_sewer01" poiresource="door" Location="726,301" Tooltip="To The Thieves' Way (ID:56041) "/>
+<Icon Name="55434" PoiMapLink="battleground_lobby" poiresource="zone" Location="834,211" Tooltip="Proving Grounds Portal (ID:55434) Portal to the Proving Grounds Lobby"/>
+<Icon Name="55454" PoiMapLink="world" poiresource="harbor" Location="1063,273" Tooltip="Freeport and World Travel (ID:55454) Freeport and World Travel Bell and Globe"/>
+</Page>
+<Page Name="exp08_rgn_withered_lands">
+<Icon Name="exp08_rgn_withered_lands" PoiMapLink="Velious" poiresource="linkup" Location="100,1100" Tooltip="Velious"/>
+<Icon Name="64971" PoiMapLink="exp03_dun_crushbone_keep_0" poiresource="door" Location="964,418" Tooltip="The Keep (ID:64971) Door on the ground leads to special instance for Fighter Epic 2.0 instance. Must be on the quest to access it."/>
+</Page>
+<Page Name="qeynos_combined01">
+<Icon Name="qeynos_combined01" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="57662" PoiMapLink="antonica" poiresource="overland" Location="1403,746" Tooltip="To Antonica (ID:57662) "/>
+<Icon Name="57665" PoiMapLink="qey_catacomb01" poiresource="door" Location="1097,892" Tooltip="To The Down Below (ID:57665) "/>
+<Icon Name="57688" PoiMapLink="qeynos_combined02_1" poiresource="overland" Location="1009,383" Tooltip="To Qeynos Province District (ID:57688) "/>
+<Icon Name="57722" PoiMapLink="qey_catacomb01" poiresource="door" Location="1203,1014" Tooltip="To The Down Below (ID:57722) "/>
+<Icon Name="57723" PoiMapLink="antonica" poiresource="overland" Location="1122,1184" Tooltip="To Antonica (ID:57723) "/>
+<Icon Name="57725" PoiMapLink="qey_village01_clone" poiresource="door" Location="774,1147" Tooltip="To Nettleville (ID:57725) "/>
+<Icon Name="57726" PoiMapLink="qey_village02_clone" poiresource="door" Location="757,1141" Tooltip="To Starcrest Commune (ID:57726) "/>
+<Icon Name="57728" PoiMapLink="qeynos_combined02_0" poiresource="overland" Location="631,1020" Tooltip="To Qeynos Province District (ID:57728) "/>
+<Icon Name="60630" PoiMapLink="arena_of_the_gods_0" poiresource="door" Location="790,910" Tooltip="To Arena of the Gods (ID:60630) "/>
+</Page>
+<Page Name="qeynos_combined02_0">
+<Icon Name="qeynos_combined02_0" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="57825" PoiMapLink="qeynos_combined01" poiresource="overland" Location="597,978" Tooltip="To Qeynos Capitol District (ID:57825) "/>
+<Icon Name="57830" PoiMapLink="qey_village03_clone" poiresource="door" Location="508,651" Tooltip="To Graystone Yard (ID:57830) "/>
+<Icon Name="57832" PoiMapLink="qey_catacomb01" poiresource="door" Location="772,673" Tooltip="To The Down Below (ID:57832) "/>
+<Icon Name="57833" PoiMapLink="qey_village04_clone" poiresource="door" Location="703,607" Tooltip="To Castleview Hamlet (ID:57833) "/>
+<Icon Name="57781" PoiMapLink="battleground_lobby" poiresource="overland" Location="667,683" Tooltip="Proving Grounds Portal (ID:57781) Entrance to the Proving Grounds Lobby"/>
+<Icon Name="57823" PoiMapLink="Karan" poiresource="harbor" Location="330,818" Tooltip="Travel within Qeynos (ID:57823) "/>
+<Icon Name="57824" PoiMapLink="world" poiresource="harbor" Location="333,812" Tooltip="Voyage Through Norrath (ID:57824) "/>
+<Icon Name="39952" PoiMapLink="everfrost_frostfell" poiresource="overland" Location="678,717" Tooltip="Magic Closet (ID:39952) Leads to the &quot;Frostfell Wonderland Village&quot;.&#xA;- This portal is only available during the Frostfell Live Event from December to January."/>
+<Icon Name="73748" PoiMapLink="qeynos_combined01" poiresource="zone" Location="766,865" Tooltip="Backdoor into Qeynos Capitol District (ID:73748) Climb over the roof of the Hall of Steel to get here"/>
+</Page>
+<Page Name="qeynos_combined02_1">
+<Icon Name="qeynos_combined02_1" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="57928" PoiMapLink="qey_catacomb01" poiresource="door" Location="991,238" Tooltip="To The Down Below (ID:57928) "/>
+<Icon Name="57929" PoiMapLink="qey_village05_clone" poiresource="door" Location="613,20" Tooltip="To The Willow Wood (ID:57929) "/>
+<Icon Name="57930" PoiMapLink="qey_village06" poiresource="door" Location="605,64" Tooltip="To The Baubbleshire (ID:57930) "/>
+<Icon Name="57931" PoiMapLink="qeynos_combined01" poiresource="overland" Location="1005,383" Tooltip="To Qeynos Capitol District (ID:57931) "/>
+<Icon Name="59227" PoiMapLink="qey_adv02_ruins" poiresource="zone" Location="865,456" Tooltip="To Forest Ruins (ID:59227) To Forest Ruins, click boat  to zone in, for A Rocky Beginning quest"/>
+</Page>
+<Page Name="qey_village01_revamp">
+<Icon Name="qey_village01_revamp" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="57935" PoiMapLink="qeynos_combined01" poiresource="overland" Location="709,401" Tooltip="To Qeynos Capitol District (ID:57935) "/>
+</Page>
+<Page Name="qey_village02_revamp">
+<Icon Name="qey_village02_revamp" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="57936" PoiMapLink="qeynos_combined01" poiresource="overland" Location="1018,459" Tooltip="To Qeynos Capitol District (ID:57936) "/>
+</Page>
+<Page Name="qey_village03_revamp">
+<Icon Name="qey_village03_revamp" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="57937" PoiMapLink="qeynos_combined02_0" poiresource="overland" Location="842,674" Tooltip="To Qeynos Province District (ID:57937) "/>
+</Page>
+<Page Name="qey_village04_revamp">
+<Icon Name="qey_village04_revamp" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="57938" PoiMapLink="qeynos_combined02_0" poiresource="overland" Location="989,642" Tooltip="To Qeynos Province District (ID:57938) "/>
+</Page>
+<Page Name="qey_village05_revamp">
+<Icon Name="qey_village05_revamp" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="57939" PoiMapLink="qeynos_combined02_0" poiresource="overland" Location="945,678" Tooltip="To Qeynos Province District (ID:57939) "/>
+</Page>
+<Page Name="qey_village06_revamp">
+<Icon Name="qey_village06_revamp" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="57940" PoiMapLink="qeynos_combined02_0" poiresource="overland" Location="934,473" Tooltip="To Qeynos Province District (ID:57940) "/>
+</Page>
+<Page Name="exp09_rgn_eidolon_jungle">
+<Icon Name="exp09_rgn_eidolon_jungle" PoiMapLink="Ethernere" poiresource="linkup" Location="100,1100" Tooltip="Ethernere"/>
+<Icon Name="58756" PoiMapLink="exp09_dun_temple_of_faceless_0" poiresource="door" Location="1361,709" Tooltip="To Temple of the Faceless (ID:58756) Included the entrance to:&#xA;&quot;Altar of Abhorrence [Raid]&quot;&#xA;&quot;Temple of the Faceless: Imprisonment [Advanced Solo]&quot;"/>
+<Icon Name="58759" PoiMapLink="exp09_dun_throne_of_fear" poiresource="door" Location="1427,576" Tooltip="To Throne of Fear (ID:58759) Can be found inside the Fear Cave and leads to:&#xA;- &quot;Throne of Fear (Heroic)&quot;.&#xA;- &quot;Throne of Fear: Ascension [Advanced Solo]&quot;.&#xA;- &quot;Throne of Fear: The Fear Gate&quot;."/>
+<Icon Name="58855" PoiMapLink="feerrott" poiresource="zone" Location="336,418" Tooltip="To Feerrott (ID:58855) "/>
+</Page>
+<Page Name="exp09_rgn_plains_of_obol">
+<Icon Name="exp09_rgn_plains_of_obol" PoiMapLink="Ethernere" poiresource="linkup" Location="100,1100" Tooltip="Ethernere"/>
+<Icon Name="58762" PoiMapLink="exp09_dun_drinals_ferry" poiresource="door" Location="756,999" Tooltip="To The Dreadcutter (ID:58762) "/>
+<Icon Name="58771" PoiMapLink="exp09_dun_drinals_castle_0" poiresource="door" Location="546,751" Tooltip="To Harrow's End (ID:58771) "/>
+</Page>
+<Page Name="exp08_rgn_velious_cobalt_scar">
+<Icon Name="exp08_rgn_velious_cobalt_scar" PoiMapLink="Velious" poiresource="linkup" Location="100,1100" Tooltip="Velious"/>
+<Icon Name="60147" PoiMapLink="exp08_dun_sirens_grotto_01" poiresource="door" Location="386,271" Tooltip="Siren's Grotto (ID:60147) Leads to:&#xA;- &quot;Siren's Grotto: Alluring Embrace [Advanced Solo]&quot;.&#xA;- &quot;Siren's Grotto: Alluring Embrace [Heroic]&quot;.&#xA;- &quot;Siren's Grotto: Dissension [Raid]&quot;.&#xA;- &quot;Siren's Grotto: Tavalan Abyss [Advanced Solo]&quot;.&#xA;- &quot;Siren's Grotto: Tavalan Abyss [Challenge Heroic]&quot;.&#xA;- &quot;Siren's Grotto: Tavalan Abyss [Heroic]&quot;."/>
+</Page>
+<Page Name="exp10_rgn_dragons_realm_0">
+<Icon Name="exp10_rgn_dragons_realm_0" PoiMapLink="Ethernere" poiresource="linkup" Location="100,1100" Tooltip="Ethernere"/>
+<Icon Name="60827" PoiMapLink="exp10_dun_nexus_0" poiresource="door" Location="649,514" Tooltip="To the Nexus Core (ID:60827) "/>
+<Icon Name="61657" PoiMapLink="exp10_dun_highkeep_0" poiresource="door" Location="987,303" Tooltip="To High Keep (ID:61657) "/>
+</Page>
+<Page Name="exp11_rgn_southseas">
+<Icon Name="exp11_rgn_southseas" PoiMapLink="Shattered Seas" poiresource="linkup" Location="100,1100" Tooltip="Shattered Seas"/>
+<Icon Name="62182" PoiMapLink="exp11_rgn_north_seas" poiresource="overland" Location="446,7" Tooltip="Phantom Sea (ID:62182) Entrance to Zone."/>
+</Page>
+<Page Name="exp11_rgn_north_seas">
+<Icon Name="exp11_rgn_north_seas" PoiMapLink="Shattered Seas" poiresource="linkup" Location="100,1100" Tooltip="Shattered Seas"/>
+<Icon Name="61717" PoiMapLink="exp11_dun_ssraeshza_0" poiresource="door" Location="1190,191" Tooltip="To Ssraeshza Temple (ID:61717) Leads to:&#xA;- &quot;Ssraeshza Temple [Advanced Solo]&quot;.&#xA;- &quot;Ssraeshza Temple [Heroic]&quot;.&#xA;- &quot;Ssraeshza Temple [Solo]&quot;.&#xA;- &quot;Ssraeshza Temple: Echoes of Time [Raid]&quot;.&#xA;- &quot;Ssraeshza Temple: Inner Sanctum [Heroic]&quot;.&#xA;- &quot;Ssraeshza Temple: Shadow of Luclin&quot;, during the AoM SQ 'Shattered Seas: Temple of Doom'.&#xA;- &quot;Ssraeshza Temple: Taskmaster's Echo [Event Heroic]&quot;."/>
+<Icon Name="61718" PoiMapLink="exp11_dun_highhold_0" poiresource="door" Location="675,530" Tooltip="To Castle Highhold (ID:61718) Leads to:&#xA;- &quot;Castle Highhold [Advanced Solo]&quot;.&#xA;- &quot;Castle Highhold [Heroic]&quot;.&#xA;- &quot;Castle Highhold [Solo]&quot;.&#xA;- &quot;Castle Highhold: Insider Treachery [Event Heroic]&quot;.&#xA;- &quot;Castle Highhold: No Quarter [Raid]&quot;.&#xA;- &quot;Castle Highhold: Thresinet's Den [Heroic]&quot;."/>
+<Icon Name="62183" PoiMapLink="exp11_rgn_southseas" poiresource="overland" Location="548,1188" Tooltip="Tranquil Sea (ID:62183) Zone entrance."/>
+</Page>
+<Page Name="exp12_rgn_umbra02">
+<Icon Name="exp12_rgn_umbra02" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+<Icon Name="63163" PoiMapLink="exp12_dun_maldura_city" poiresource="overland" Location="709,883" Tooltip="To Maldura (ID:63163) "/>
+<Icon Name="63327" PoiMapLink="exp12_dun_ancientruins" poiresource="door" Location="1289,700" Tooltip="Stygian Threshold (ID:63327) Takes you to:&#xA;- &quot;Stygian Threshold [Heroic]&quot;&#xA;- &quot;Stygian Threshold: Edge of Underfoot [Raid]&quot;&#xA;- &quot;Stygian Threshold: The Howling Gateway [Advanced Solo]&quot;&#xA;- &quot;Stygian Threshold: The Howling Gateway [Event Heroic]&quot;&#xA;- &quot;Stygian Threshold: The Toxic Pools [Event Heroic]&quot;"/>
+</Page>
+<Page Name="exp13_rgn_obulus_frontier">
+<Icon Name="exp13_rgn_obulus_frontier" PoiMapLink="Kunark" poiresource="linkup" Location="100,1100" Tooltip="Kunark"/>
+<Icon Name="64357" PoiMapLink="exp04_rgn_kylong_plains" poiresource="overland" Location="487,1097" Tooltip="To Kylong Plains (ID:64357) "/>
+<Icon Name="64358" PoiMapLink="exp04_rgn_jarsath_wastes" poiresource="overland" Location="456,1022" Tooltip="To Jarsath Wastes (ID:64358) "/>
+<Icon Name="68979" PoiMapLink="exp13_dun_dalnir_01" poiresource="door" Location="491,298" Tooltip="Crypt of Dalnir (ID:68979) Leads to:&#xA;- &quot;Crypt of Dalnir: Baron's Workshop [Heroic]&quot;.&#xA;- &quot;Crypt of Dalnir: Baron's Workshop [Solo]&quot;, needed for the KA SQ 'Kunark Ascending: A Chosen Weapon'.&#xA;- &quot;Crypt of Dalnir: Baron's Workshop [Tradeskill]&quot;.&#xA;- &quot;Crypt of Dalnir: Ritual Chamber [Heroic]&quot;.&#xA;- &quot;Crypt of Dalnir: Ritual Chamber [Solo]&quot;, Ghawg was dragged here for 'Dying to Have You'.&#xA;- &quot;Crypt of Dalnir: The Kly Stronghold [Raid]&quot;.&#xA;- &quot;Crypt of Dalnir: Wizard's Den [Advanced Solo]&quot;, needed for the quest 'Ghost and Gooblins'.&#xA;- &quot;Crypt of Dalnir: Wizard's Den [Event Heroic]&quot;."/>
+</Page>
+<Page Name="exp14_rgn_plane_of_magic">
+<Icon Name="exp14_rgn_plane_of_magic" PoiMapLink="world" poiresource="linkup" Location="100,1100" Tooltip="Norrath"/>
+<Icon Name="65587" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="overland" Location="1039,1058" Tooltip="To Coliseum of Valor (ID:65587) "/>
+<Icon Name="66711" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="overland" Location="819,925" Tooltip="To Myrist, the Great Library (ID:66711) "/>
+</Page>
+<Page Name="exp15_rgn_plane_of_fire_mission">
+<Icon Name="exp15_rgn_plane_of_fire_mission" PoiMapLink="CelestialRealm" poiresource="linkup" Location="100,1100" Tooltip="Celestial Realm"/>
+</Page>
+<Page Name="exp15_rgn_plane_of_air_mission">
+<Icon Name="exp15_rgn_plane_of_air_mission" PoiMapLink="CelestialRealm" poiresource="linkup" Location="100,1100" Tooltip="Celestial Realm"/>
+</Page>
+<Page Name="exp15_rgn_plane_of_earth_mission">
+<Icon Name="exp15_rgn_plane_of_earth_mission" PoiMapLink="CelestialRealm" poiresource="linkup" Location="100,1100" Tooltip="Celestial Realm"/>
+</Page>
+<Page Name="exp15_rgn_plane_of_knowledge">
+<Icon Name="exp15_rgn_plane_of_knowledge" PoiMapLink="CelestialRealm" poiresource="linkup" Location="100,1100" Tooltip="Celestial Realm"/>
+<Icon Name="66716" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="overland" Location="433,1084" Tooltip="To Coliseum of Valor (ID:66716) "/>
+<Icon Name="66718" PoiMapLink="exp15_rgn_plane_of_disease_mission" poiresource="door" Location="454,1017" Tooltip="To Detroxxulous, the Plaguelands (ID:66718) "/>
+<Icon Name="66720" PoiMapLink="exp15_rgn_plane_of_fire_mission" poiresource="door" Location="434,199" Tooltip="To Doomfire, the Burning Lands (ID:66720) "/>
+<Icon Name="66721" PoiMapLink="exp15_rgn_plane_of_earth_mission" poiresource="door" Location="363,199" Tooltip="To Vegarlson, the Earthen Badlands (ID:66721) "/>
+<Icon Name="67256" PoiMapLink="exp15_dun_najena_atheneum_0" poiresource="door" Location="1070,522" Tooltip="The Ward of Chaos Elements (ID:67256) Leads to &quot;Ward of Chaos Elements [Solo]&quot;."/>
+<Icon Name="68100" PoiMapLink="exp15_rgn_plane_of_air_mission" poiresource="door" Location="455,133" Tooltip="To Eryslai, the Kingdom of Wind (ID:68100) "/>
+<Icon Name="69910" PoiMapLink="runnyeye_advanced_fabled" poiresource="door" Location="364,1083" Tooltip="Fabled Runnyeye (ID:69910) Leads to:&#xA;- &quot;Fabled Runnyeye: The Gathering [Heroic]&quot;.&#xA;- &quot;Fabled Runnyeye: The Gathering [Solo]&quot;.&#xA;"/>
+</Page>
+<Page Name="exp15_rgn_plane_of_disease_mission">
+<Icon Name="exp15_rgn_plane_of_disease_mission" PoiMapLink="CelestialRealm" poiresource="linkup" Location="100,1100" Tooltip="Celestial Realm"/>
+</Page>
+<Page Name="exp15_dun_plane_of_air_01">
+<Icon Name="exp15_dun_plane_of_air_01" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="linkup" Location="100,1100" Tooltip="Myrist, the Great Library"/>
+<Icon Name="67999" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="740,214" Tooltip="To Myrist, the Great Library (ID:67999) "/>
+<Icon Name="76427" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1033,640" Tooltip="Transport to Myrist (ID:76427) Exit of zone"/>
+</Page>
+<Page Name="cmmn_epic01_orc_excavation">
+<Icon Name="cmmn_epic01_orc_excavation" PoiMapLink="commonlands" poiresource="linkup" Location="50,390" Tooltip="The Commonlands"/>
+<Icon Name="69873" PoiMapLink="commonlands" poiresource="zone" Location="387,113" Tooltip="Exit (ID:69873) Leads back out to &quot;The Commonlands&quot;."/>
+</Page>
+<Page Name="qey_village02_clone">
+<Icon Name="qey_village02_clone" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="72045" PoiMapLink="qeynos_combined02_0" poiresource="overland" Location="1018,459" Tooltip="To Qeynos Capitol District (ID:72045) "/>
+<Icon Name="72047" PoiMapLink="qey_adv04_bog" poiresource="overland" Location="780,801" Tooltip="To The Peat Bog (ID:72047) "/>
+<Icon Name="72048" PoiMapLink="qey_catacomb01" poiresource="door" Location="641,432" Tooltip="To The Down Below (ID:72048) "/>
+</Page>
+<Page Name="qey_village03_clone">
+<Icon Name="qey_village03_clone" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="72053" PoiMapLink="qey_adv01_oakmyst" poiresource="overland" Location="868,298" Tooltip="To Oakmyst Forest (ID:72053) "/>
+<Icon Name="72054" PoiMapLink="qey_catacomb01" poiresource="door" Location="1023,491" Tooltip="To The Down Below (ID:72054) "/>
+<Icon Name="72051" PoiMapLink="qeynos_combined02_0" poiresource="overland" Location="842,674" Tooltip="To Qeynos Province District (ID:72051) "/>
+<Icon Name="72052" PoiMapLink="Karan" poiresource="harbor" Location="535,471" Tooltip="Travel within Qeynos (ID:72052) "/>
+</Page>
+<Page Name="qey_village05_clone">
+<Icon Name="qey_village05_clone" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="70204" PoiMapLink="qeynos_combined02_0" poiresource="overland" Location="945,678" Tooltip="Qeynos Province District (ID:70204) Zone leading to Qeynos Province District"/>
+<Icon Name="70205" PoiMapLink="qey_adv02_ruins" poiresource="overland" Location="787,639" Tooltip="The Forest Ruins (ID:70205) Zone leading to The Forest Ruins"/>
+<Icon Name="72066" PoiMapLink="qey_catacomb01" poiresource="door" Location="957,529" Tooltip="To The Down Below (ID:72066) "/>
+<Icon Name="72065" PoiMapLink="qey_adv02_ruins" poiresource="overland" Location="787,639" Tooltip="To The Forest Ruins (ID:72065) "/>
+<Icon Name="72064" PoiMapLink="Karan" poiresource="harbor" Location="908,222" Tooltip="Travel within Qeynos (ID:72064) "/>
+</Page>
+<Page Name="qey_village06_clone">
+<Icon Name="qey_village06_clone" PoiMapLink="Karan" poiresource="linkup" Location="100,1100" Tooltip="Karan"/>
+<Icon Name="72071" PoiMapLink="qey_adv02_ruins" poiresource="overland" Location="764,430" Tooltip="To The Forest Ruins (ID:72071) "/>
+<Icon Name="72069" PoiMapLink="qeynos_combined02_1" poiresource="overland" Location="934,473" Tooltip="To Qeynos Province District (ID:72069) "/>
+<Icon Name="72072" PoiMapLink="qey_catacomb01" poiresource="door" Location="847,470" Tooltip="To The Down Below (ID:72072) "/>
+<Icon Name="72070" PoiMapLink="Karan" poiresource="harbor" Location="563,692" Tooltip="Travel within Qeynos (ID:72070) "/>
+</Page>
+<Page Name="exp16_rgn_aurelian_coast">
+<Icon Name="exp16_rgn_aurelian_coast" PoiMapLink="Luclin" poiresource="linkup" Location="100,1100" Tooltip="Luclin"/>
+<Icon Name="70687" PoiMapLink="exp16_rgn_sanctus_seru" poiresource="overland" Location="553,341" Tooltip="To Sanctus Seru (ID:70687) This door leads to:&#xA;- &quot;Sanctus Seru [City]&quot;.&#xA;- &quot;Sanctus Seru: The Fading Arches [Raid]&quot;."/>
+<Icon Name="70688" PoiMapLink="exp16_rgn_the_blinding" poiresource="overland" Location="533,264" Tooltip="To The Blinding (ID:70688) Running north through this canyon will zone you to &quot;The Blinding&quot;."/>
+<Icon Name="70810" PoiMapLink="exp16_dun_fordel_midst_tssigline" poiresource="door" Location="713,231" Tooltip="Fordel Midst (ID:70810) Leads to:&#xA;- &quot;Fordel Midst: Bizarre Bazaar [Heroic]&quot;.&#xA;- &quot;Fordel Midst: Bizarre Bazaar [Solo]&quot;.&#xA;- &quot;Fordel Midst: Investigating the Shadow Haven&quot; for the BoL TS SQ 'Piercing the Darkness: Marketplace of Horrors Part I'.&#xA;- &quot;Fordel Midst: Remembrance [Raid]&quot;.&#xA;- &quot;Fordel Midst: The Listless Spires [Event Heroic]&quot;.&#xA;- &quot;Fordel Midst: The Listless Spires [Solo]&quot;.&#xA;- &quot;Fordel Midst: Wayward Manor [Heroic]&quot;.&#xA;- &quot;Fordel Midst: Wayward Manor [Solo]&quot;."/>
+</Page>
+<Page Name="exp16_rgn_the_blinding">
+<Icon Name="exp16_rgn_the_blinding" PoiMapLink="Luclin" poiresource="linkup" Location="100,1100" Tooltip="Luclin"/>
+<Icon Name="70689" PoiMapLink="exp16_rgn_aurelian_coast" poiresource="overland" Location="398,888" Tooltip="To Aurelian Coast (ID:70689) Running west through this canyon will zone you to the &quot;Aurelian Coast&quot;."/>
+<Icon Name="70690" PoiMapLink="exp16_rgn_wracklands" poiresource="overland" Location="977,72" Tooltip="To Wracklands (ID:70690) Running west through this canyon will zone you to the &quot;Wracklands&quot;."/>
+<Icon Name="70728" PoiMapLink="exp16_rgn_sanctus_seru" poiresource="overland" Location="434,936" Tooltip="To Sanctus Seru (ID:70728) This door leads to:&#xA;- &quot;Sanctus Seru [City]&quot;.&#xA;- &quot;Sanctus Seru: The Fading Arches [Raid]&quot;."/>
+<Icon Name="71661" PoiMapLink="exp07_dun_plane_of_war_raid_fabled_0" poiresource="door" Location="1147,553" Tooltip="Fabled Plane of War (ID:71661) Enter the Fabled Plane of War (raid zone)"/>
+<Icon Name="70994" PoiMapLink="exp16_dun_blinding_tssig_hive" poiresource="door" Location="660,661" Tooltip="Enter the Shik'Nar Hive (ID:70994) - These rocks will lead to &quot;Shik'Nar Hive: The Sad Tale of Benosch Ironsprocket&quot; for the BoL TS SQ 'Piercing the Darkness: The Sad Tale of Benosch Ironsprocket Part II'.&#xA;- Make sure to use your [Insectoid Communication Jammer] before venturing near this location."/>
+</Page>
+<Page Name="exp16_rgn_wracklands">
+<Icon Name="exp16_rgn_wracklands" PoiMapLink="Luclin" poiresource="linkup" Location="100,1100" Tooltip="Luclin"/>
+<Icon Name="70686" PoiMapLink="exp16_rgn_the_blinding" poiresource="overland" Location="607,1137" Tooltip="To The Blinding (ID:70686) Running southeast through this canyon will zone you to &quot;The Blinding&quot;."/>
+<Icon Name="73216" PoiMapLink="exp16_rgn_the_blinding" poiresource="zone" Location="526,1047" Tooltip="Path to The Blinding (ID:73216) Zone point"/>
+</Page>
+<Page Name="exp15_dun_plane_of_air_01_expert">
+<Icon Name="exp15_dun_plane_of_air_01_expert" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="linkup" Location="100,1100" Tooltip="Myrist, the Great Library"/>
+</Page>
+<Page Name="exp16_rgn_sanctus_seru">
+<Icon Name="exp16_rgn_sanctus_seru" PoiMapLink="Luclin" poiresource="linkup" Location="100,1100" Tooltip="Luclin"/>
+<Icon Name="71025" PoiMapLink="exp16_dun_sanctus_seru_ts_sigline_x6" poiresource="door" Location="1023,730" Tooltip="To the Fabrication Hall (ID:71025) This door leads to the &quot;Sanctus Seru: Fabrication Hall&quot;."/>
+</Page>
+<Page Name="exp16_dun_sanctus_seru_ts_sigline_x6">
+<Icon Name="exp16_dun_sanctus_seru_ts_sigline_x6" PoiMapLink="exp16_rgn_sanctus_seru" poiresource="linkup" Location="50,550" Tooltip="Sanctus Seru [City]"/>
+<Icon Name="71076" PoiMapLink="exp16_rgn_sanctus_seru" poiresource="zone" Location="360,319" Tooltip="Sanctus Seru (ID:71076) This door leads back out into &quot;Sanctus Seru [City]&quot;."/>
+</Page>
+<Page Name="exp16_dun_blinding_tssig_hive">
+<Icon Name="exp16_dun_blinding_tssig_hive" PoiMapLink="exp16_rgn_the_blinding" poiresource="linkup" Location="50,550" Tooltip="The Blinding"/>
+</Page>
+<Page Name="exp07_dun_plane_of_war_raid_fabled_0">
+<Icon Name="exp07_dun_plane_of_war_raid_fabled_0" PoiMapLink="exp16_rgn_the_blinding" poiresource="linkup" Location="50,550" Tooltip="The Blinding"/>
+</Page>
+<Page Name="exp17_rgn_savage_weald">
+<Icon Name="exp17_rgn_savage_weald" PoiMapLink="Luclin" poiresource="linkup" Location="100,1100" Tooltip="Luclin"/>
+</Page>
+<Page Name="exp17_rgn_echo_caverns">
+<Icon Name="exp17_rgn_echo_caverns" PoiMapLink="Luclin" poiresource="linkup" Location="100,1100" Tooltip="Luclin"/>
+</Page>
+<Page Name="exp17_rgn_shadeweaver_0">
+<Icon Name="exp17_rgn_shadeweaver_0" PoiMapLink="Luclin" poiresource="linkup" Location="100,1100" Tooltip="Luclin"/>
+<Icon Name="72221" PoiMapLink="exp17_dun_shadeweavers_thicket_03_solo_0" poiresource="door" Location="553,841" Tooltip="To Loda Kai Isle (ID:72221) "/>
+<Icon Name="72216" PoiMapLink="exp17_dun_shar_vahl_city_0" poiresource="door" Location="1326,137" Tooltip="To City of Shar Vahl (ID:72216) "/>
+</Page>
+<Page Name="exp17_dun_shar_vahl_city_0">
+<Icon Name="exp17_dun_shar_vahl_city_0" PoiMapLink="Luclin" poiresource="linkup" Location="100,1100" Tooltip="Luclin"/>
+</Page>
+<Page Name="exp17_dun_shadeweavers_thicket_03_solo_0">
+<Icon Name="exp17_dun_shadeweavers_thicket_03_solo_0" PoiMapLink="exp17_rgn_shadeweaver_0" poiresource="linkup" Location="100,1100" Tooltip="Shadeweaver's Thicket"/>
+<Icon Name="72708" PoiMapLink="exp17_rgn_shadeweaver_0" poiresource="zone" Location="546,843" Tooltip="To Shadeweaver's Thicket (ID:72708) Click bridge to exit"/>
+</Page>
+<Page Name="varsoon_fabled">
+<Icon Name="varsoon_fabled" PoiMapLink="steppes" poiresource="linkup" Location="50,462" Tooltip="The Thundering Steppes"/>
+<Icon Name="73085" PoiMapLink="vrsn_epic01_boss_fabled" poiresource="zone" Location="134,423" Tooltip="Chamber of Immortality [Fabled] (ID:73085) "/>
+<Icon Name="73084" PoiMapLink="steppes" poiresource="zone" Location="351,123" Tooltip="Thundering Steppes (ID:73084) "/>
+<Icon Name="73083" PoiMapLink="steppes" poiresource="zone" Location="977,262" Tooltip="Thundering Steppes (ID:73083) "/>
+</Page>
+<Page Name="vrsn_epic01_boss_fabled">
+<Icon Name="vrsn_epic01_boss_fabled" PoiMapLink="varsoon_fabled" poiresource="linkup" Location="50,456" Tooltip="The Fabled Ruins of Varsoon"/>
+</Page>
+<Page Name="exp17_dun_vex_thal_raid_01_0">
+<Icon Name="exp17_dun_vex_thal_raid_01_0" PoiMapLink="exp17_rgn_shadeweaver_0" poiresource="linkup" Location="50,456" Tooltip="Shadeweaver's Thicket"/>
+<Icon Name="73504" PoiMapLink="exp17_rgn_shadeweaver_0" poiresource="overland" Location="238,496" Tooltip="Exit to Shadeweaver's Thicket (ID:73504) "/>
+</Page>
+<Page Name="exp06_dun_thehole_kabor_tradeskillsig">
+<Icon Name="exp06_dun_thehole_kabor_tradeskillsig" PoiMapLink="exp06_rgn_odus_south_0" poiresource="linkup" Location="100,800" Tooltip="The Sundered Frontier"/>
+<Icon Name="73737" PoiMapLink="exp06_rgn_odus_south_0" poiresource="zone" Location="326,633" Tooltip="Exit to Sundered Frontier (ID:73737) "/>
+</Page>
+<Page Name="exp03_dun_castle_mistmoore_tradeskill">
+<Icon Name="exp03_dun_castle_mistmoore_tradeskill" PoiMapLink="exp06_dun_thehole_kabor_tradeskill" poiresource="linkup" Location="50,456" Tooltip="The Duality's Vigilant Sanctum"/>
+</Page>
+<Page Name="exp18_rgn_forlorn">
+<Icon Name="exp18_rgn_forlorn" PoiMapLink="Vetrovia" poiresource="linkup" Location="100,1100" Tooltip="Vetrovia"/>
+<Icon Name="73972" PoiMapLink="exp18_rgn_mahngavi_wastes" poiresource="overland" Location="1375,359" Tooltip="To Mahngavi Wastes (ID:73972) "/>
+</Page>
+<Page Name="exp18_rgn_karuupa">
+<Icon Name="exp18_rgn_karuupa" PoiMapLink="Vetrovia" poiresource="linkup" Location="100,1100" Tooltip="Vetrovia"/>
+<Icon Name="73990" PoiMapLink="exp18_rgn_svarni_expanse" poiresource="overland" Location="365,138" Tooltip="To Svarni Expanse (ID:73990) "/>
+<Icon Name="73991" PoiMapLink="exp18_rgn_mahngavi_wastes" poiresource="overland" Location="1287,147" Tooltip="To Mahngavi Wastes (ID:73991) "/>
+<Icon Name="74075" PoiMapLink="exp18_rgn_mahngavi_wastes" poiresource="zone" Location="446,977" Tooltip="To Mahngavi Wastes (ID:74075) "/>
+</Page>
+<Page Name="exp18_rgn_mahngavi_wastes">
+<Icon Name="exp18_rgn_mahngavi_wastes" PoiMapLink="Vetrovia" poiresource="linkup" Location="100,1100" Tooltip="Vetrovia"/>
+<Icon Name="74016" PoiMapLink="exp18_rgn_forlorn" poiresource="overland" Location="427,953" Tooltip="To Forlorn Gist (ID:74016) "/>
+<Icon Name="74076" PoiMapLink="exp18_rgn_karuupa" poiresource="boat" Location="792,347" Tooltip="To Karuupa Jungle (ID:74076) "/>
+<Icon Name="74115" PoiMapLink="exp18_rgn_karuupa" poiresource="zone" Location="606,1015" Tooltip="To Karuupa Jungle (ID:74115) NPC: a dramodon keeper"/>
+<Icon Name="74578" PoiMapLink="exp18_rgn_svarni_expanse" poiresource="zone" Location="433,487" Tooltip="Svarni Tunnel (ID:74578) To Svarni Expanse"/>
+</Page>
+<Page Name="exp18_rgn_svarni_expanse">
+<Icon Name="exp18_rgn_svarni_expanse" PoiMapLink="Vetrovia" poiresource="linkup" Location="100,1100" Tooltip="Vetrovia"/>
+<Icon Name="74039" PoiMapLink="exp18_rgn_karuupa" poiresource="overland" Location="837,1020" Tooltip="To Karuupa Jungle (ID:74039) "/>
+<Icon Name="74580" PoiMapLink="exp18_rgn_mahngavi_wastes" poiresource="zone" Location="1325,401" Tooltip="Mahngavi Tunnel (ID:74580) Zone to Mahngavi Wastes"/>
+</Page>
+<Page Name="exp18_dun_vacrul_01_solo">
+<Icon Name="exp18_dun_vacrul_01_solo" PoiMapLink="exp18_rgn_forlorn" poiresource="linkup" Location="50,462" Tooltip="Forlorn Gist"/>
+</Page>
+<Page Name="exp18_dun_vacrul_01_easy">
+<Icon Name="exp18_dun_vacrul_01_easy" PoiMapLink="exp18_rgn_forlorn" poiresource="linkup" Location="50,462" Tooltip="Forlorn Gist"/>
+</Page>
+<Page Name="exp18_dun_vacrul_01">
+<Icon Name="exp18_dun_vacrul_01" PoiMapLink="exp18_rgn_forlorn" poiresource="linkup" Location="50,462" Tooltip="Forlorn Gist"/>
+</Page>
+<Page Name="exp18_dun_merchant_den_solo">
+<Icon Name="exp18_dun_merchant_den_solo" PoiMapLink="exp18_rgn_forlorn" poiresource="linkup" Location="100,510" Tooltip="Forlorn Gist"/>
+</Page>
+<Page Name="exp19_rgn_takish_badlands">
+<Icon Name="exp19_rgn_takish_badlands" PoiMapLink="Desert of Ro" poiresource="linkup" Location="100,1100" Tooltip="Desert of Ro"/>
+<Icon Name="75386" PoiMapLink="exp19_rgn_plateaus" poiresource="overland" Location="494,209" Tooltip="To Raj'Dul Plateaus (ID:75386) "/>
+<Icon Name="75387" PoiMapLink="exp19_rgn_sandstone_delta" poiresource="overland" Location="967,604" Tooltip="To Sandstone Delta (ID:75387) "/>
+<Icon Name="76488" PoiMapLink="exp19_dun_takish_contested_0" poiresource="door" Location="508,245" Tooltip="To Buried Takish'Hiz (ID:76488) Empire of Antiquity [Contested]"/>
+</Page>
+<Page Name="exp19_rgn_sandstone_delta">
+<Icon Name="exp19_rgn_sandstone_delta" PoiMapLink="Desert of Ro" poiresource="linkup" Location="100,1100" Tooltip="Desert of Ro"/>
+<Icon Name="75357" PoiMapLink="exp19_rgn_takish_badlands" poiresource="overland" Location="478,855" Tooltip="To Takish Badlands (ID:75357) "/>
+<Icon Name="75356" PoiMapLink="exp19_dun_sandstone_delta_raid_01" poiresource="door" Location="482,714" Tooltip="Enter The Sandstone Delta [Raid] (ID:75356) "/>
+</Page>
+<Page Name="exp19_rgn_plateaus">
+<Icon Name="exp19_rgn_plateaus" PoiMapLink="Desert of Ro" poiresource="linkup" Location="100,1100" Tooltip="Desert of Ro"/>
+<Icon Name="75318" PoiMapLink="exp19_rgn_takish_badlands" poiresource="overland" Location="1204,843" Tooltip="To Takish Badlands (ID:75318) "/>
+<Icon Name="75323" PoiMapLink="exp19_dun_plateaus_raid_01" poiresource="door" Location="792,482" Tooltip="To Raj'Dur Plateaus Raid (ID:75323) "/>
+</Page>
+<Page Name="exp19_dun_plateaus_01_easy">
+<Icon Name="exp19_dun_plateaus_01_easy" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="100,1100" Tooltip="Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_plateaus_01_solo">
+<Icon Name="exp19_dun_plateaus_01_solo" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="100,1100" Tooltip="Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_takish_badlands_01_solo">
+<Icon Name="exp19_dun_takish_badlands_01_solo" PoiMapLink="exp19_rgn_takish_badlands" poiresource="linkup" Location="100,1100" Tooltip="Takish Badlands"/>
+</Page>
+<Page Name="exp19_dun_plateaus_raid_01">
+<Icon Name="exp19_dun_plateaus_raid_01" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,550" Tooltip="Raj'Dur Plateaus"/>
+<Icon Name="76076" PoiMapLink="exp19_rgn_plateaus" poiresource="overland" Location="398,239" Tooltip="Exit to Raj'Dur Plateaus (ID:76076) "/>
+</Page>
+<Page Name="exp19_dun_takish_01_solo">
+<Icon Name="exp19_dun_takish_01_solo" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,50" Tooltip="Raj'Dur Plateaus"/>
+<Icon Name="76182" PoiMapLink="exp19_rgn_plateaus" poiresource="overland" Location="92,82" Tooltip="Leave Takish'Hiz (ID:76182) Return to Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_takish_01_easy">
+<Icon Name="exp19_dun_takish_01_easy" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,50" Tooltip="Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_takish_01">
+<Icon Name="exp19_dun_takish_01" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,50" Tooltip="Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_sandstone_delta_raid_01">
+<Icon Name="exp19_dun_sandstone_delta_raid_01" PoiMapLink="exp19_rgn_sandstone_delta" poiresource="linkup" Location="50,550" Tooltip="Sandstone Delta"/>
+<Icon Name="76102" PoiMapLink="exp19_rgn_sandstone_delta" poiresource="overland" Location="241,355" Tooltip="Exit to Sandstone Delta (ID:76102) "/>
+</Page>
+<Page Name="exp19_dun_takish_02_solo_0">
+<Icon Name="exp19_dun_takish_02_solo_0" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,386" Tooltip="Raj'Dur Plateaus"/>
+<Icon Name="76307" PoiMapLink="exp19_rgn_plateaus" poiresource="overland" Location="419,266" Tooltip="Leave Takish'Hiz (ID:76307) Return to Raj'Dur Plateaus"/>
+<Icon Name="76309" PoiMapLink="exp19_dun_takish_02_solo_1" poiresource="teleporter" Location="133,418" Tooltip="To The Pit of Pan Esk'Inien (ID:76309) "/>
+</Page>
+<Page Name="exp19_dun_takish_02_solo_1">
+<Icon Name="exp19_dun_takish_02_solo_1" PoiMapLink="exp19_dun_takish_02_solo_0" poiresource="linkup" Location="50,456" Tooltip="Buried Takish'Hiz: Terrene Threshold [Signature] (Cavern)"/>
+<Icon Name="76310" PoiMapLink="exp19_dun_takish_02_solo_0" poiresource="teleporter" Location="84,28" Tooltip="To the petrified cavern (ID:76310) "/>
+<Icon Name="76312" PoiMapLink="exp19_dun_takish_02_solo_2" poiresource="teleporter" Location="354,475" Tooltip="To Tel Nev'Dorra, the Royal Hall (ID:76312) "/>
+</Page>
+<Page Name="exp19_dun_takish_02_solo_2">
+<Icon Name="exp19_dun_takish_02_solo_2" PoiMapLink="exp19_dun_takish_02_solo_1" poiresource="linkup" Location="50,456" Tooltip="Buried Takish'Hiz: Terrene Threshold [Signature] (Pit)"/>
+<Icon Name="76313" PoiMapLink="exp19_dun_takish_02_solo_1" poiresource="teleporter" Location="223,494" Tooltip="To The Pit of Pan Esk'Inien (ID:76313) "/>
+</Page>
+<Page Name="exp19_dun_takish_02_easy_0">
+<Icon Name="exp19_dun_takish_02_easy_0" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,386" Tooltip="Raj'Dur Plateaus"/>
+<Icon Name="76320" PoiMapLink="exp19_dun_takish_02_easy_1" poiresource="teleporter" Location="133,418" Tooltip="To The Pit of Pan Esk'Inien (ID:76320) "/>
+<Icon Name="76318" PoiMapLink="exp19_rgn_plateaus" poiresource="overland" Location="419,266" Tooltip="Leave Takish'Hiz (ID:76318) Return to Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_takish_02_easy_1">
+<Icon Name="exp19_dun_takish_02_easy_1" PoiMapLink="exp19_dun_takish_02_easy_0" poiresource="linkup" Location="50,456" Tooltip="Buried Takish'Hiz: Terrene Threshold [Heroic I] (Cavern)"/>
+<Icon Name="76324" PoiMapLink="exp19_dun_takish_02_easy_0" poiresource="teleporter" Location="84,28" Tooltip="To the petrified cavern (ID:76324) "/>
+<Icon Name="76326" PoiMapLink="exp19_dun_takish_02_easy_2" poiresource="teleporter" Location="354,475" Tooltip="To Tel Nev'Dorra, the Royal Hall (ID:76326) "/>
+</Page>
+<Page Name="exp19_dun_takish_02_easy_2">
+<Icon Name="exp19_dun_takish_02_easy_2" PoiMapLink="exp19_dun_takish_02_easy_1" poiresource="linkup" Location="50,456" Tooltip="Buried Takish'Hiz: Terrene Threshold [Heroic I] (Pit)"/>
+<Icon Name="76330" PoiMapLink="exp19_dun_takish_02_easy_1" poiresource="teleporter" Location="223,494" Tooltip="To The Pit of Pan Esk'Inien (ID:76330) "/>
+</Page>
+<Page Name="exp19_dun_takish_02_0">
+<Icon Name="exp19_dun_takish_02_0" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,386" Tooltip="Raj'Dur Plateaus"/>
+<Icon Name="76323" PoiMapLink="exp19_dun_takish_02_1" poiresource="teleporter" Location="133,418" Tooltip="To The Pit of Pan Esk'Inien (ID:76323) "/>
+<Icon Name="76321" PoiMapLink="exp19_rgn_plateaus" poiresource="overland" Location="419,266" Tooltip="Leave Takish'Hiz (ID:76321) Return to Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_takish_02_1">
+<Icon Name="exp19_dun_takish_02_1" PoiMapLink="exp19_dun_takish_02_0" poiresource="linkup" Location="50,456" Tooltip="Buried Takish'Hiz: Terrene Threshold [Heroic II] (Cavern)"/>
+<Icon Name="76327" PoiMapLink="exp19_dun_takish_02_0" poiresource="teleporter" Location="84,28" Tooltip="To the petrified cavern (ID:76327) "/>
+<Icon Name="76329" PoiMapLink="exp19_dun_takish_02_2" poiresource="teleporter" Location="354,475" Tooltip="To Tel Nev'Dorra, the Royal Hall (ID:76329) "/>
+</Page>
+<Page Name="exp19_dun_takish_02_2">
+<Icon Name="exp19_dun_takish_02_2" PoiMapLink="exp19_dun_takish_02_1" poiresource="linkup" Location="50,456" Tooltip="Buried Takish'Hiz: Terrene Threshold [Heroic II] (Pit)"/>
+<Icon Name="76335" PoiMapLink="exp19_dun_takish_02_1" poiresource="teleporter" Location="223,494" Tooltip="To The Pit of Pan Esk'Inien (ID:76335) "/>
+</Page>
+<Page Name="exp19_dun_takish_03_solo">
+<Icon Name="exp19_dun_takish_03_solo" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,456" Tooltip="Raj'Dur Plateaus"/>
+<Icon Name="76371" PoiMapLink="exp19_rgn_plateaus" poiresource="overland" Location="369,406" Tooltip="Leave Takish'Hiz (ID:76371) Return to Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_takish_03">
+<Icon Name="exp19_dun_takish_03" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,456" Tooltip="Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_takish_03_hard">
+<Icon Name="exp19_dun_takish_03_hard" PoiMapLink="exp19_rgn_plateaus" poiresource="linkup" Location="50,456" Tooltip="Raj'Dur Plateaus"/>
+</Page>
+<Page Name="exp19_dun_takish_contested_0">
+<Icon Name="exp19_dun_takish_contested_0" PoiMapLink="exp19_rgn_takish_badlands" poiresource="linkup" Location="650,462" Tooltip="Takish Badlands"/>
+<Icon Name="76473" PoiMapLink="exp19_dun_takish_contested_2" poiresource="teleporter" Location="596,246" Tooltip="Elddar Exchange (ID:76473) To Solo area, then turn Left"/>
+<Icon Name="76474" PoiMapLink="exp19_dun_takish_contested_1" poiresource="teleporter" Location="544,265" Tooltip="To Artisan's Ancilla (ID:76474) Tradeskill area, no combat mobs"/>
+<Icon Name="76487" PoiMapLink="exp19_rgn_takish_badlands" poiresource="zone" Location="595,316" Tooltip="Leave Takish'Hiz (ID:76487) To Takish Badlands"/>
+<Icon Name="76499" PoiMapLink="exp19_dun_takish_contested_5" poiresource="teleporter" Location="667,316" Tooltip="To Den of Dawn (ID:76499) Heroic I / Heroic II"/>
+<Icon Name="76500" PoiMapLink="exp19_dun_takish_contested_4" poiresource="teleporter" Location="645,266" Tooltip="To Hallowed Hollow (ID:76500) Heroic I"/>
+<Icon Name="76505" PoiMapLink="exp19_dun_takish_contested_6" poiresource="teleporter" Location="645,366" Tooltip="Wellspring of Renewal (ID:76505) "/>
+<Icon Name="76503" PoiMapLink="exp19_dun_takish_contested_1" poiresource="teleporter" Location="594,387" Tooltip="Chamber of Chronicles (ID:76503) "/>
+<Icon Name="76501" PoiMapLink="exp19_dun_takish_contested_1" poiresource="teleporter" Location="547,364" Tooltip="Sanctum Arcanum (ID:76501) "/>
+</Page>
+<Page Name="exp19_dun_takish_contested_1">
+<Icon Name="exp19_dun_takish_contested_1" PoiMapLink="exp19_dun_takish_contested_0" poiresource="linkup" Location="50,50" Tooltip="Buried Takish'Hiz: Empire of Antiquity [Contested] (Gateway)"/>
+<Icon Name="76475" PoiMapLink="exp19_dun_takish_contested_0" poiresource="teleporter" Location="54,68" Tooltip="To Branching Gateway (ID:76475) "/>
+<Icon Name="76502" PoiMapLink="exp19_dun_takish_contested_0" poiresource="teleporter" Location="251,184" Tooltip="To Branching Gateway (ID:76502) and other qualified locations"/>
+<Icon Name="76504" PoiMapLink="exp19_dun_takish_contested_0" poiresource="teleporter" Location="482,383" Tooltip="Branching Gateway (ID:76504) "/>
+</Page>
+<Page Name="exp19_dun_takish_contested_2">
+<Icon Name="exp19_dun_takish_contested_2" PoiMapLink="exp19_dun_takish_contested_0" poiresource="linkup" Location="50,547" Tooltip="Buried Takish'Hiz: Empire of Antiquity [Contested] (Gateway)"/>
+<Icon Name="76472" PoiMapLink="exp19_dun_takish_contested_0" poiresource="teleporter" Location="449,90" Tooltip="The Branching Gateway (ID:76472) Back to the main Hub"/>
+<Icon Name="76479" PoiMapLink="exp19_dun_takish_contested_3" poiresource="overland" Location="507,24" Tooltip="To Blooming Biome (ID:76479) Heroic I / Heroic II&#xA;not a zone line"/>
+<Icon Name="76481" PoiMapLink="exp19_dun_takish_contested_4" poiresource="teleporter" Location="34,323" Tooltip="To Hallowed Hollow (ID:76481) Heroic I"/>
+</Page>
+<Page Name="exp19_dun_takish_contested_3">
+<Icon Name="exp19_dun_takish_contested_3" PoiMapLink="exp19_dun_takish_contested_0" poiresource="linkup" Location="50,386" Tooltip="Buried Takish'Hiz: Empire of Antiquity [Contested] (Gateway)"/>
+<Icon Name="76480" PoiMapLink="exp19_dun_takish_contested_2" poiresource="overland" Location="195,351" Tooltip="To Elddar Exchange (ID:76480) not a zone line"/>
+</Page>
+<Page Name="exp19_dun_takish_contested_4">
+<Icon Name="exp19_dun_takish_contested_4" PoiMapLink="exp19_dun_takish_contested_0" poiresource="linkup" Location="50,456" Tooltip="Buried Takish'Hiz: Empire of Antiquity [Contested] (Gateway)"/>
+<Icon Name="76482" PoiMapLink="exp19_dun_takish_contested_0" poiresource="teleporter" Location="84,29" Tooltip="To Branching Gateway (ID:76482) and other qualified locations"/>
+<Icon Name="76493" PoiMapLink="exp19_dun_takish_contested_5" poiresource="teleporter" Location="353,478" Tooltip="To Den of Dawn (ID:76493) Heroic I / Heroic II"/>
+</Page>
+<Page Name="exp19_dun_takish_contested_5">
+<Icon Name="exp19_dun_takish_contested_5" PoiMapLink="exp19_dun_takish_contested_0" poiresource="linkup" Location="50,456" Tooltip="Buried Takish'Hiz: Empire of Antiquity [Contested] (Gateway)"/>
+<Icon Name="76495" PoiMapLink="exp19_dun_takish_contested_0" poiresource="teleporter" Location="223,493" Tooltip="To Branching Gateway (ID:76495) and other qualified locations"/>
+<Icon Name="76524" PoiMapLink="exp19_dun_takish_contested_6" poiresource="teleporter" Location="256,22" Tooltip="To Wellspring of Renewal (ID:76524) "/>
+</Page>
+<Page Name="exp19_dun_takish_contested_6">
+<Icon Name="exp19_dun_takish_contested_6" PoiMapLink="exp19_dun_takish_contested_0" poiresource="linkup" Location="50,456" Tooltip="Buried Takish'Hiz: Empire of Antiquity [Contested] (Gateway)"/>
+<Icon Name="76506" PoiMapLink="exp19_dun_takish_contested_0" poiresource="teleporter" Location="398,434" Tooltip="The Branching Gateway (ID:76506) "/>
+<Icon Name="76530" PoiMapLink="exp19_dun_takish_contested_1" poiresource="teleporter" Location="195,55" Tooltip="To Chamber of Chronicles (ID:76530) "/>
+</Page>
+<Page Name="fprt_sewer03_1">
+<Icon Name="73" PoiMapLink="fprt_sewer02" poiresource="zone" Location="271,233" Tooltip="To The Serpent Sewer (ID:73) to the room with the crazed channel menders"/>
+</Page>
+<Page Name="befallen_0">
+<Icon Name="200" PoiMapLink="antonica" poiresource="zone" Location="232,388" Tooltip="To Antonica (ID:200) "/>
+</Page>
+<Page Name="befallen_1">
+<Icon Name="212" PoiMapLink="exp06_dun_erudin_library_0" poiresource="zone" Location="183,146" Tooltip="To Library (ID:212) "/>
+<Icon Name="213" PoiMapLink="befallen_epic01" poiresource="zone" Location="211,266" Tooltip="To Tomb of Valor (ID:213) "/>
+<Icon Name="626" PoiMapLink="antonica" poiresource="zone" Location="358,69" Tooltip="Door to Antonica (ID:626) This is the zone to Antonica from inside Stormhold, inside of the library room. Once you zone out through this door you can zone back in through the back entrance to Stormhold."/>
+</Page>
+<Page Name="blackburrow_0">
+<Icon Name="230" PoiMapLink="antonica" poiresource="zone" Location="32,387" Tooltip="To Antonica (ID:230) "/>
+</Page>
+<Page Name="blackburrow_2">
+<Icon Name="244" PoiMapLink="antonica" poiresource="zone" Location="137,303" Tooltip="To Antonica (ID:244) "/>
+</Page>
+<Page Name="fallengate">
+<Icon Name="247" PoiMapLink="commonlands" poiresource="zone" Location="251,503" Tooltip="to The Commonlands (ID:247) "/>
+<Icon Name="16392" PoiMapLink="fallengate_epic01_boss" poiresource="zone" Location="195,159" Tooltip="Vault of the Fallen (ID:16392) Door under the Gong&#xA;Access quest: Searching the Depths of Fallen Gate"/>
+</Page>
+<Page Name="qey_catacomb_epic01">
+<Icon Name="473" PoiMapLink="qey_catacomb01" poiresource="zone" Location="405,253" Tooltip="To the Down Below (ID:473) Leads back out to &quot;The Down Below&quot;."/>
+</Page>
+<Page Name="befallen_epic01">
+<Icon Name="483" PoiMapLink="befallen_0" poiresource="zone" Location="87,281" Tooltip="To Stormhold (ID:483) "/>
+</Page>
+<Page Name="wailingcaves_0">
+<Icon Name="874" PoiMapLink="commonlands" poiresource="zone" Location="191,475" Tooltip="To Commonlands (ID:874) The Zone To Commanlands"/>
+</Page>
+<Page Name="nektropos_castle_0">
+<Icon Name="965" PoiMapLink="nektulos" poiresource="zone" Location="219,397" Tooltip="Nektulos Forest (ID:965) "/>
+</Page>
+<Page Name="blackburrow_1">
+<Icon Name="1030" PoiMapLink="antonica" poiresource="zone" Location="189,296" Tooltip="to Antonica (ID:1030) "/>
+</Page>
+<Page Name="fprt_sewer03_0">
+<Icon Name="1823" PoiMapLink="fprt_sewer02" poiresource="zone" Location="382,300" Tooltip="To Serpent Sewer (ID:1823) "/>
+</Page>
+<Page Name="mod01_dun_tombs_of_night_2">
+<Icon Name="1944" PoiMapLink="mod01_dun_crypt_of_thaen_0" poiresource="door" Location="394,408" Tooltip="To the Crypt of T'haen (ID:1944) Dryxl T'Rath escapes into this portal at the end of the Betrayal of Brotherhood quest.  you are sent to explore the crypts by Nayli for the Exploring the Crypt quest of the next phase of the Tombs of Night series of quests."/>
+<Icon Name="22310" PoiMapLink="nektulos" poiresource="zone" Location="33,448" Tooltip="to Nektulos Forest (ID:22310) "/>
+<Icon Name="29166" PoiMapLink="mod01_dun_crypt_of_thaen_0" poiresource="zone" Location="393,409" Tooltip="Crypt of T'Haen (ID:29166) Entrance for first entering Crypt"/>
+</Page>
+<Page Name="orcishwastes_mini01_0">
+<Icon Name="16375" PoiMapLink="orcishwastes" poiresource="zone" Location="48,359" Tooltip="To Zek (ID:16375) zone entrance to/from Zek"/>
+</Page>
+<Page Name="orcishwastes_mini01_1">
+<Icon Name="16600" PoiMapLink="orcishwastes" poiresource="zone" Location="252,313" Tooltip="to Zek, The Orcish Wastes (ID:16600) Zone instance resets when you exit. No lockout timer. Entrance may have moved to another spot around Mythical Forest in Zek."/>
+<Icon Name="31321" PoiMapLink="orcishwastes" poiresource="zone" Location="145,382" Tooltip="Zek (ID:31321) Exit to Zek, the Orcish Wastes"/>
+</Page>
+<Page Name="nektulos_mini01">
+<Icon Name="16992" PoiMapLink="nektulos" poiresource="zone" Location="57,18" Tooltip="Nektulos Forest (ID:16992) "/>
+</Page>
+<Page Name="exp02_dun_halls_of_fate_epic02_devourer_queen">
+<Icon Name="32252" PoiMapLink="exp02_rgn_realm_of_night" poiresource="zone" Location="17,148" Tooltip="To the Bonemire (ID:32252) Zone out to the Bonemire"/>
+</Page>
+<Page Name="exp07_dun_drunder_fortress">
+<Icon Name="54446" PoiMapLink="exp07_dun_drunder_sullon_spire_0" poiresource="door" Location="554,454" Tooltip="Spire of Rage (ID:54446) Zone to Spire of Rage (Heroic Instance) and Sullon's Spire (x4 raid)"/>
+<Icon Name="54442" PoiMapLink="exp07_dun_drunder_tallon_stronghold_0" poiresource="door" Location="242,455" Tooltip="Strategist's Stronghold (ID:54442) Zone to Strategist's Stronghold (Heroic Instance), Citadel of V'uul (x2 raid) and Tallon's Stronghold (x4 raid)"/>
+<Icon Name="54440" PoiMapLink="exp07_dun_drunder_vallon_tower_0" poiresource="door" Location="400,77" Tooltip="Tower of Tactics (ID:54440) Zone to Tower of Tactics (Heroic Instance) and Vallon's Tower (x4 raid)"/>
+<Icon Name="73273" PoiMapLink="exp07_dun_plane_of_war_0" poiresource="zone" Location="394,304" Tooltip="Planar Portal (ID:73273) Zone to Elements of War, Elements of War (Challenge), and Plane of War"/>
+</Page>
+<Page Name="permafrost_0">
+<Icon Name="21744" PoiMapLink="permafrost_epic02_crypt" poiresource="zone" Location="225,94" Tooltip="Crypt of Vox (ID:21744) Needed for Fire and Ice to revive Lady Vox after obtaining the essences."/>
+</Page>
+<Page Name="adv04_dun_endless_1">
+<Icon Name="31871" PoiMapLink="adv04_dun_endless_nayad_city_0" poiresource="zone" Location="135,206" Tooltip="Nizara, City of the Nayad (ID:31871) Need to kill Zin'vra, the Portal Keeper to open portal to zone."/>
+</Page>
+<Page Name="adv02_dun_sundered_splitpaw_hub">
+<Icon Name="21771" PoiMapLink="blackburrow_1" poiresource="zone" Location="401,489" Tooltip="The Hideout (ID:21771) "/>
+<Icon Name="21791" PoiMapLink="adv02_dun_sundered_playground_0" poiresource="zone" Location="197,502" Tooltip="The Upper Tunnels (ID:21791) "/>
+</Page>
+<Page Name="adv02_dun_sundered_playground_0">
+<Icon Name="21805" PoiMapLink="steppes" poiresource="zone" Location="200,450" Tooltip="Thundering Steppes (ID:21805) "/>
+</Page>
+<Page Name="mod01_dun_tombs_of_night_0">
+<Icon Name="23506" PoiMapLink="nektulos" poiresource="zone" Location="39,446" Tooltip="Nektulos Forest (ID:23506) To Nektulos Forest"/>
+</Page>
+<Page Name="nektulos_mini02">
+<Icon Name="23540" PoiMapLink="nektulos" poiresource="zone" Location="395,15" Tooltip="Nektulos Forest (ID:23540) "/>
+</Page>
+<Page Name="nektulos_mini03">
+<Icon Name="23551" PoiMapLink="nektulos" poiresource="zone" Location="399,358" Tooltip="Nektulos Forest (ID:23551) "/>
+<Icon Name="23563" PoiMapLink="nektulos" poiresource="zone" Location="401,356" Tooltip="Nektulos Forest (ID:23563) Zone in and Out of Nektulos Forest"/>
+</Page>
+<Page Name="cazicthule_0">
+<Icon Name="23610" PoiMapLink="feerrott" poiresource="zone" Location="218,481" Tooltip="The Feerrott (ID:23610) "/>
+</Page>
+<Page Name="deathfist_2">
+<Icon Name="23695" PoiMapLink="orcishwastes" poiresource="zone" Location="122,43" Tooltip="To Zek (ID:23695) "/>
+<Icon Name="23696" PoiMapLink="orcishwastes" poiresource="zone" Location="46,120" Tooltip="To Zek (ID:23696) "/>
+</Page>
+<Page Name="deathfist_1">
+<Icon Name="23711" PoiMapLink="orcishwastes" poiresource="zone" Location="226,449" Tooltip="To Zek (ID:23711) "/>
+</Page>
+<Page Name="obelisk_of_lostsouls_0">
+<Icon Name="23937" PoiMapLink="feerrott" poiresource="zone" Location="145,274" Tooltip="To The Feerrott (ID:23937) Accessible after completing the access quest Entrance into the Obelisk"/>
+<Icon Name="27709" PoiMapLink="antonica" poiresource="zone" Location="268,29" Tooltip="A Mysterious Portal (ID:27709) Exit from Obelisk of Lost Souls Cave"/>
+</Page>
+<Page Name="obelisk_of_lostsouls_4">
+<Icon Name="23994" PoiMapLink="permafrost_epic02_crypt_deity_tribunal" poiresource="zone" Location="258,306" Tooltip="The Vestibule (ID:23994) Door in the NW wall of the corridor."/>
+</Page>
+<Page Name="exp01_dun_shimmering_citadel_2">
+<Icon Name="31323" PoiMapLink="exp01_dun_shimmering_citadel_fabled_prism" poiresource="zone" Location="405,260" Tooltip="The Djinn Master's Prism (ID:31323) Entered by clicking A Mysterious Prism on 3rd Floor. Every raid member needs to obtain a Scale of the Master by defeating the Heroic mob in The Pedestal of Sky zone on the same floor."/>
+<Icon Name="40312" PoiMapLink="exp01_dun_poets_palace_0" poiresource="zone" Location="127,252" Tooltip="Poets Palace (ID:40312) Entrance to Poets Palace (clicky mirror, zones entire group in)"/>
+</Page>
+<Page Name="solusekseye_5">
+<Icon Name="24044" PoiMapLink="solusekseye_epic03_thyr" poiresource="zone" Location="292,116" Tooltip="Oratorium of Thyr (ID:24044) "/>
+</Page>
+<Page Name="solusekseye_6">
+<Icon Name="24045" PoiMapLink="solusekseye_epic03_thyr" poiresource="zone" Location="292,116" Tooltip="Oratorium of Thyr (ID:24045) "/>
+</Page>
+<Page Name="exp01_dun_clefts_of_rujark_1">
+<Icon Name="24943" PoiMapLink="exp01_rgn_sinking_sands_epic01_lockjaw_vault" poiresource="zone" Location="220,46" Tooltip="The Vault of Dust (ID:24943) Instance. Level 51-53 ^^^ Heroic."/>
+</Page>
+<Page Name="exp01_dun_clefts_of_rujark_0">
+<Icon Name="24964" PoiMapLink="exp01_rgn_sinking_sands_5" poiresource="zone" Location="53,218" Tooltip="Sinking Sands (ID:24964) The Gate of Valor"/>
+</Page>
+<Page Name="exp01_dun_clefts_of_rujark_2">
+<Icon Name="26516" PoiMapLink="exp01_rgn_pillars_of_flame_epic01_cazel_roost" poiresource="zone" Location="247,173" Tooltip="Scornfeather Roost (ID:26516) Instance. Lockout, 18 hours. Level 55-57 ^^^ Heroic."/>
+</Page>
+<Page Name="exp01_dun_silent_city_0">
+<Icon Name="26691" PoiMapLink="exp01_dun_living_tombs_0" poiresource="zone" Location="419,351" Tooltip="Living Tombs (ID:26691) Dungeon. Level 50-57 Heroic."/>
+</Page>
+<Page Name="exp01_dun_living_tombs_0">
+<Icon Name="26710" PoiMapLink="exp01_rgn_sinking_sands_5" poiresource="zone" Location="218,482" Tooltip="Sinking Sands (ID:26710) "/>
+<Icon Name="40548" PoiMapLink="exp01_dun_living_tombs_1" poiresource="zone" Location="72,436" Tooltip="Residence Court (ID:40548) "/>
+</Page>
+<Page Name="steppes_mini01_pirate">
+<Icon Name="26987" PoiMapLink="steppes" poiresource="zone" Location="389,31" Tooltip="Thundering Steppes (ID:26987) "/>
+</Page>
+<Page Name="exp02_dun_lair_of_scale_0">
+<Icon Name="27781" PoiMapLink="exp02_rgn_realm_of_twilight" poiresource="zone" Location="218,14" Tooltip="Tenebrous Tangle (ID:27781) "/>
+</Page>
+<Page Name="exp01_dun_shimmering_citadel_0">
+<Icon Name="27629" PoiMapLink="exp01_rgn_pillars_of_flame" poiresource="zone" Location="115,166" Tooltip="To the Pillars of Flame (ID:27629) Click the mirror"/>
+</Page>
+<Page Name="exp01_dun_living_tombs_3">
+<Icon Name="28657" PoiMapLink="exp01_dun_silent_city_0" poiresource="zone" Location="26,405" Tooltip="The Silent City (ID:28657) "/>
+</Page>
+<Page Name="exp03_rgn_steamfont_0">
+<Icon Name="29973" PoiMapLink="exp03_rgn_steamfont_epic01_mines" poiresource="zone" Location="268,133" Tooltip="To the Mines of Meldrath (ID:29973) Level 50-55. Heroic Instance. Includes five named and a cool puzzle to spawn the boss."/>
+</Page>
+<Page Name="exp03_dun_castle_mistmoore_2">
+<Icon Name="30369" PoiMapLink="exp03_dun_castle_mistmoore_epic01_coffinchamber" poiresource="door" Location="107,268" Tooltip="To Mistmoore's Inner Sanctum (ID:30369) Level 70 Epic. Group x 4 Raid Instance. Difficulty: Harder."/>
+</Page>
+<Page Name="exp03_dun_crushbone_keep_2">
+<Icon Name="30465" PoiMapLink="exp03_dun_crushbone_keep_epic01_throne" poiresource="door" Location="396,166" Tooltip="To the D'Vinnian Throne (ID:30465) "/>
+</Page>
+<Page Name="exp03_dun_mistmoore_catacombs_0">
+<Icon Name="30597" PoiMapLink="exp03_dun_castle_mistmoore_0" poiresource="door" Location="329,230" Tooltip="Castle Mistmoore (ID:30597) "/>
+</Page>
+<Page Name="exp03_rgn_steamfont_epic01_mines">
+<Icon Name="30968" PoiMapLink="exp03_rgn_steamfont" poiresource="zone" Location="55,105" Tooltip="To Steamfont Mountains (ID:30968) "/>
+</Page>
+<Page Name="exile_city">
+<Icon Name="31058" PoiMapLink="nektulos" poiresource="zone" Location="246,213" Tooltip="To Nektulos (ID:31058) "/>
+<Icon Name="31067" PoiMapLink="steppes" poiresource="zone" Location="152,293" Tooltip="To Thundering Steppes (ID:31067) "/>
+</Page>
+<Page Name="exp03_dun_crushbone_keep_epic01_throne">
+<Icon Name="31096" PoiMapLink="exp03_dun_crushbone_keep_0" poiresource="zone" Location="222,425" Tooltip="to Crushbone Keep (ID:31096) "/>
+</Page>
+<Page Name="exp02_dun_halls_of_fate_epic01_sepulcher">
+<Icon Name="31106" PoiMapLink="exp02_rgn_realm_of_night" poiresource="zone" Location="387,83" Tooltip="to the Bonemire (ID:31106) "/>
+</Page>
+<Page Name="exp03_dun_felwithe">
+<Icon Name="32703" PoiMapLink="exp03_dun_felwithe_epic01_throne_0" poiresource="zone" Location="137,382" Tooltip="To Throne of New Tunaria (ID:32703) Enter Castle"/>
+<Icon Name="68848" PoiMapLink="exp03_rgn_greater_faydark_0" poiresource="zone" Location="63,240" Tooltip="To Greater Faydark (ID:68848) Running south through this canyon will zone you back to Greater Faydark."/>
+</Page>
+<Page Name="exp04_dun_chardok_0">
+<Icon Name="33935" PoiMapLink="exp04_dun_chardok_epic02_prison" poiresource="door" Location="293,339" Tooltip="Court of Korucust (ID:33935) "/>
+<Icon Name="34450" PoiMapLink="exp04_dun_chardok_epic01_throne" poiresource="door" Location="227,245" Tooltip="The Temple of Kor-Sha (ID:34450) T2 Raid Instance"/>
+<Icon Name="68826" PoiMapLink="exp04_rgn_kylong_plains" poiresource="zone" Location="40,83" Tooltip="To Kylong Plains (ID:68826) "/>
+</Page>
+<Page Name="commonlands_sewer01">
+<Icon Name="33979" PoiMapLink="commonlands" poiresource="zone" Location="206,361" Tooltip="Commonlands (ID:33979) Zone to CL, turn to the south and click on gate."/>
+</Page>
+<Page Name="tutorial_island02_evil">
+<Icon Name="34374" PoiMapLink="qey_tradeskill01_island" poiresource="zone" Location="865,789" Tooltip="Tradeskiller's Workshop (ID:34374) Tradeskill instance."/>
+</Page>
+<Page Name="exp03_dun_mistmoore_catacombs_1">
+<Icon Name="34986" PoiMapLink="exp03_rgn_loping_plains" poiresource="zone" Location="170,23" Tooltip="To Loping Plains (ID:34986) Swimming deeper into this cave will zone you back to Loping Plains."/>
+</Page>
+<Page Name="exp04_dun_veeshans_peak_0">
+<Icon Name="35240" PoiMapLink="exp04_rgn_jarsath_wastes" poiresource="zone" Location="22,428" Tooltip="Jarsath Wastes (ID:35240) Exit to Jarsath Wastes"/>
+<Icon Name="35760" PoiMapLink="exp11_dun_ssraeshza_raid_1" poiresource="zone" Location="375,306" Tooltip="Portal (ID:35760) Portal to the second half of the third wing."/>
+</Page>
+<Page Name="shard_of_fear">
+<Icon Name="35394" PoiMapLink="exp09_dun_throne_of_fear_quest" poiresource="zone" Location="206,466" Tooltip="The Fear Gate (ID:35394) Takes you back to the Feerrott, when you run into the portal."/>
+</Page>
+<Page Name="exp04_dun_chardok_epic01_throne">
+<Icon Name="35463" PoiMapLink="exp04_dun_chardok_0" poiresource="zone" Location="415,138" Tooltip="Chardok (ID:35463) "/>
+</Page>
+<Page Name="runnyeye_advanced">
+<Icon Name="58256" PoiMapLink="The Enchanted Lands" poiresource="zone" Location="74,500" Tooltip="To the Enchanted Lands (ID:58256) Leads back out to the &quot;Enchanted Lands&quot;."/>
+<Icon Name="68435" PoiMapLink="The Enchanted Lands" poiresource="zone" Location="388,338" Tooltip="To the Enchanted Lands (ID:68435) Leads back out to the &quot;Enchanted Lands&quot;."/>
+</Page>
+<Page Name="exp04_dun_veeshans_peak_5">
+<Icon Name="35783" PoiMapLink="exp11_dun_ssraeshza_raid_1" poiresource="zone" Location="408,297" Tooltip="Portal (ID:35783) Portal back to the beginning of Wing 3."/>
+</Page>
+<Page Name="exp01_rgn_sinking_sands_2">
+<Icon Name="35576" PoiMapLink="exp01_rgn_sinking_sands_epic01_lockjaw" poiresource="zone" Location="180,237" Tooltip="Lockjaw's Lair (ID:35576) Lockjaw's Lair"/>
+</Page>
+<Page Name="exp04_dun_charasis_south">
+<Icon Name="39416" PoiMapLink="exp04_rgn_jarsath_wastes" poiresource="zone" Location="253,7" Tooltip="Jarsath Wastes (ID:39416) Leads back out to &quot;Jarsath Wastes&quot;."/>
+</Page>
+<Page Name="mod01_dun_crypt_of_thaen_0">
+<Icon Name="39561" PoiMapLink="mod01_dun_tombs_of_night_0" poiresource="zone" Location="180,391" Tooltip="To Tombs of Night (ID:39561) "/>
+</Page>
+<Page Name="runnyeye">
+<Icon Name="39772" PoiMapLink="runnyeye_epic02_goblin" poiresource="door" Location="76,31" Tooltip="The Overlord's Throne Room (ID:39772) Zone in to The Overlord's Throne Room."/>
+<Icon Name="43574" PoiMapLink="enchanted" poiresource="door" Location="388,339" Tooltip="To Enchanted Lands (ID:43574) Door to the Enchanted Lands"/>
+</Page>
+<Page Name="mod01_dun_crypt_of_thaen_2">
+<Icon Name="40649" PoiMapLink="mod01_dun_tombs_of_night_0" poiresource="door" Location="55,96" Tooltip="to the Tombs of Night (ID:40649) Return to the Tombs of Night instance"/>
+</Page>
+<Page Name="mod01_dun_crypt_of_thaen_1">
+<Icon Name="41249" PoiMapLink="mod01_dun_tombs_of_night_0" poiresource="zone" Location="209,360" Tooltip="To Tombs of Night (ID:41249) "/>
+</Page>
+<Page Name="fprt_west">
+<Icon Name="42537" PoiMapLink="lon_showroom" poiresource="teleporter" Location="249,796" Tooltip="Legends of Norrath Museum (ID:42537) Porter to the Museum"/>
+<Icon Name="58713" PoiMapLink="fprt_sewer01" poiresource="door" Location="205,463" Tooltip="To Thieves' Way (ID:58713) "/>
+<Icon Name="58714" PoiMapLink="commonlands" poiresource="overland" Location="234,355" Tooltip="To Commonlands (ID:58714) "/>
+<Icon Name="58715" PoiMapLink="fprt_north" poiresource="overland" Location="1090,461" Tooltip="To North Freeport (ID:58715) "/>
+<Icon Name="58716" PoiMapLink="fprt_east" poiresource="overland" Location="1357,764" Tooltip="To East Freeport (ID:58716) "/>
+<Icon Name="58717" PoiMapLink="fprt_south" poiresource="overland" Location="1037,799" Tooltip="To South Freeport (ID:58717) "/>
+</Page>
+<Page Name="exp05_dun_guk_stronghold_raid_1">
+<Icon Name="42877" PoiMapLink="exp05_rgn_innothule_0" poiresource="zone" Location="440,740" Tooltip="Moors of Ykesha (ID:42877) Zone out to Moors"/>
+</Page>
+<Page Name="exp05_dun_void_palace_raid">
+<Icon Name="42893" PoiMapLink="exp05_rgn_innothule_0" poiresource="zone" Location="734,634" Tooltip="Moors of Ykesha (ID:42893) Not active until you kill Mynzak"/>
+</Page>
+<Page Name="exp05_dun_befallen_cavern_raid_0">
+<Icon Name="42910" PoiMapLink="snow_dwelling_0" poiresource="zone" Location="84,314" Tooltip="Well (ID:42910) Jump down to lower level"/>
+</Page>
+<Page Name="cazicthule_froglok_1">
+<Icon Name="69163" PoiMapLink="feerrott" poiresource="zone" Location="218,483" Tooltip="To the Feerrott (ID:69163) Leads back out into &quot;The Feerrott&quot;."/>
+</Page>
+<Page Name="exp01_rgn_sinking_sands_epic01_lockjaw_undead">
+<Icon Name="49308" PoiMapLink="exp01_rgn_sinking_sands_5" poiresource="zone" Location="416,342" Tooltip="To The Sinking Sands (ID:49308) Zone to The Sinking Sands"/>
+</Page>
+<Page Name="exp04_dun_karnors_castle_0">
+<Icon Name="50359" PoiMapLink="exp04_rgn_kylong_plains" poiresource="door" Location="30,256" Tooltip="Kylong Plains (ID:50359) Zone entrance / exit to Kylong Plains"/>
+</Page>
+<Page Name="exp03_dun_mistmoore_catacombs_epic01_freethinker">
+<Icon Name="52277" PoiMapLink="exp03_dun_kaladim_stormguard_hall_mar12" poiresource="zone" Location="246,257" Tooltip="Barrel (ID:52277) Right click to exit"/>
+</Page>
+<Page Name="exp06_dun_vastydeep04_0">
+<Icon Name="52434" PoiMapLink="exp06_rgn_odus_north" poiresource="zone" Location="184,429" Tooltip="To Stonebrunt highlands (ID:52434) "/>
+<Icon Name="52466" PoiMapLink="exp06_dun_vastydeep01" poiresource="door" Location="199,279" Tooltip="The Conservatory (ID:52466) "/>
+</Page>
+<Page Name="exp12_dun_maldura_city">
+<Icon Name="63195" PoiMapLink="exp12_rgn_umbra02" poiresource="overland" Location="1443,567" Tooltip="To Thalumbra (ID:63195) "/>
+<Icon Name="63192" PoiMapLink="exp12_dun_maldura_event_01" poiresource="door" Location="1078,827" Tooltip="To Maldura: Bar Brawl (ID:63192) "/>
+<Icon Name="63194" PoiMapLink="exp12_dun_maldura_01" poiresource="door" Location="1165,681" Tooltip="To Maldura: Algorithm For Destruction (ID:63194) "/>
+<Icon Name="63193" PoiMapLink="exp12_dun_maldura_02" poiresource="door" Location="1166,461" Tooltip="To Maldura: District of Ash (ID:63193) "/>
+<Icon Name="63314" PoiMapLink="exp12_dun_maldura_raid" poiresource="zone" Location="1021,673" Tooltip="To Maldura: Forge of Ashes [Raid] (ID:63314) x4 Raid"/>
+<Icon Name="63536" PoiMapLink="exp02_dun_halls_of_fate_x4" poiresource="zone" Location="846,893" Tooltip="Laboratory (ID:63536) Zone in for The Laboratory.  Must have completed the quest &quot;Umbrite Locked Tight&quot; to enter."/>
+</Page>
+<Page Name="exp07_dun_crystalcavern">
+<Icon Name="53748" PoiMapLink="exp07_rgn_eastern_wastes" poiresource="zone" Location="260,321" Tooltip="Eastern Wastes (ID:53748) Exit to Eastern Wastes"/>
+</Page>
+<Page Name="live_enchanted_grotto04">
+<Icon Name="53882" PoiMapLink="exp03_rgn_greater_faydark_0" poiresource="zone" Location="435,144" Tooltip="Greater Faydark (ID:53882) - Leads back out to &quot;Greater Faydark&quot;.&#xA;- The actual zoning location is: 377.19, 92.94, -804.01"/>
+</Page>
+<Page Name="exp07_dun_kael_drakkel_hub">
+<Icon Name="53911" PoiMapLink="exp07_rgn_eastern_wastes" poiresource="zone" Location="1096,83" Tooltip="To Eastern Wastes (ID:53911) "/>
+<Icon Name="53912" PoiMapLink="exp07_dun_kael_drakkel_0" poiresource="zone" Location="401,851" Tooltip="To Kael Drakkel (ID:53912) "/>
+<Icon Name="53913" PoiMapLink="exp07_dun_kael_iceshard_keep_0" poiresource="zone" Location="638,749" Tooltip="To Iceshard Keep (ID:53913) "/>
+<Icon Name="53915" PoiMapLink="exp07_dun_kael_throne_0" poiresource="zone" Location="475,599" Tooltip="To Throne of Storms (ID:53915) "/>
+<Icon Name="53916" PoiMapLink="exp07_dun_kael_temple_zek_0" poiresource="zone" Location="366,501" Tooltip="To Temple of Rallos Zek (ID:53916) "/>
+</Page>
+<Page Name="exp07_dun_kael_drakkel_5">
+<Icon Name="54107" PoiMapLink="exp11_dun_ssraeshza_raid_1" poiresource="teleporter" Location="656,398" Tooltip="Portal (ID:54107) Portal to Hypogeum/other districts"/>
+</Page>
+<Page Name="exp07_dun_kael_drakkel_0">
+<Icon Name="54137" PoiMapLink="exp11_dun_ssraeshza_raid_1" poiresource="teleporter" Location="1043,149" Tooltip="Portal (ID:54137) Portal to Hypogeum"/>
+</Page>
+<Page Name="exp07_dun_velks_fortress_0">
+<Icon Name="54219" PoiMapLink="exp07_rgn_great_divide_0" poiresource="door" Location="274,235" Tooltip="Great Divide (ID:54219) Exit zone to Great Divide"/>
+</Page>
+<Page Name="exp07_dun_kael_iceshard_keep_0">
+<Icon Name="54220" PoiMapLink="exp07_dun_kael_drakkel_hub" poiresource="door" Location="798,71" Tooltip="Outer Kael (ID:54220) Exit to Outer Kael"/>
+</Page>
+<Page Name="exp04_dun_charasis_west">
+<Icon Name="54225" PoiMapLink="exp04_rgn_jarsath_wastes" poiresource="zone" Location="1556,633" Tooltip="To Jarsath Wastes (ID:54225) "/>
+</Page>
+<Page Name="live_irontoes_2">
+<Icon Name="56177" PoiMapLink="qey_ph_1r01_brew" poiresource="door" Location="226,283" Tooltip="Private Lounge (ID:56177) Leads to the &quot;Bar of Brell: Private Lounge&quot; during the Brewday quest 'Brell's Everlasting Brew'."/>
+</Page>
+<Page Name="exp07_rgn_great_divide_2">
+<Icon Name="52988" PoiMapLink="exp07_rgn_great_divide_0" poiresource="overland" Location="910,537" Tooltip="To Great Divide (ID:52988) "/>
+<Icon Name="52989" PoiMapLink="exp07_rgn_great_divide_0" poiresource="overland" Location="557,309" Tooltip="To Great Divide (ID:52989) "/>
+</Page>
+<Page Name="fprt_hood02_clone">
+<Icon Name="56444" PoiMapLink="freeport_combined" poiresource="overland" Location="779,264" Tooltip="To The City of Freeport (ID:56444) "/>
+</Page>
+<Page Name="fprt_hood03_clone">
+<Icon Name="56445" PoiMapLink="freeport_combined" poiresource="overland" Location="877,414" Tooltip="To The City of Freeport (ID:56445) "/>
+</Page>
+<Page Name="fprt_hood06_clone">
+<Icon Name="56448" PoiMapLink="freeport_combined" poiresource="overland" Location="925,373" Tooltip="To The City of Freeport (ID:56448) "/>
+</Page>
+<Page Name="live_enchanted_grotto02_1">
+<Icon Name="56509" PoiMapLink="enchanted" poiresource="zone" Location="80,185" Tooltip="Enchanted Lands (ID:56509) Leads back out to the &quot;Enchanted Lands&quot;."/>
+</Page>
+<Page Name="exp08_dun_skyshrine_contested_0">
+<Icon Name="56858" PoiMapLink="exp08_dun_skyshrine_market" poiresource="door" Location="811,981" Tooltip="Covenant District (ID:56858) Leads to&#xA;- &quot;Covenant District&quot;&#xA;- &quot;Covenant District [Challenge]&quot;"/>
+<Icon Name="57054" PoiMapLink="exp08_dun_skyshrine_arcane" poiresource="door" Location="832,982" Tooltip="Lyceum of the Recondite (ID:57054) Leads to:&#xA;- &quot;Lyceum of the Recondite&quot;.&#xA;- &quot;Lyceum of the Recondite [Challenge]&quot;."/>
+<Icon Name="57055" PoiMapLink="exp08_dun_skyshrine_capitol" poiresource="door" Location="850,979" Tooltip="Dracur Prime (ID:57055) Leads to:&#xA;-&quot;Dracur Prime&quot;.&#xA;-&quot;Dracur Prime [Challenge]&quot;.&#xA;-&quot;Dracur Prime: Sevalak Awakened&quot;.&#xA;-&quot;Dracur Prime: Vyskudra the Ancient&quot;."/>
+<Icon Name="57056" PoiMapLink="exp08_dun_skyshrine_lower_0" poiresource="door" Location="830,949" Tooltip="The Underdepths (ID:57056) Leads to:&#xA;- &quot;Skyshrine: Betrayal in the Underdepths&quot;.&#xA;- &quot;Skyshrine: The Underdepths&quot;."/>
+<Icon Name="57060" PoiMapLink="exp08_dun_skyshrine_city_0" poiresource="door" Location="896,931" Tooltip="Skyshrine: The Forbidden City of Dracur (ID:57060) After finishing the entire access questline this portal will lead to the past &quot;Skyshrine: The Forbidden City of Dracur&quot;."/>
+</Page>
+<Page Name="exp08_dun_skyshrine_city_0">
+<Icon Name="57053" PoiMapLink="exp08_dun_skyshrine_contested_0" poiresource="zone" Location="846,1013" Tooltip="Skyshrine: The City of Dracur (ID:57053) Return the present time through this portal."/>
+</Page>
+<Page Name="fprt_east">
+<Icon Name="58551" PoiMapLink="fprt_north" poiresource="overland" Location="557,369" Tooltip="To North Freeport (ID:58551) "/>
+<Icon Name="58555" PoiMapLink="fprt_south" poiresource="overland" Location="602,1022" Tooltip="To South Freeport (ID:58555) "/>
+<Icon Name="58556" PoiMapLink="fprt_south" poiresource="overland" Location="317,1069" Tooltip="To South Freeport (ID:58556) "/>
+<Icon Name="58557" PoiMapLink="fprt_west" poiresource="overland" Location="385,1003" Tooltip="To West Freeport (ID:58557) "/>
+<Icon Name="58581" PoiMapLink="fprt_sewer01" poiresource="door" Location="415,605" Tooltip="To Thieves' Way (ID:58581) "/>
+</Page>
+<Page Name="fprt_north">
+<Icon Name="58627" PoiMapLink="fprt_sewer01" poiresource="door" Location="469,632" Tooltip="To Thieves' Way (ID:58627) "/>
+<Icon Name="58628" PoiMapLink="fprt_hood02" poiresource="overland" Location="528,330" Tooltip="To Stonestair Byway (ID:58628) "/>
+<Icon Name="58629" PoiMapLink="fprt_hood05" poiresource="overland" Location="756,145" Tooltip="To Longshadow Alley (ID:58629) "/>
+<Icon Name="58631" PoiMapLink="fprt_east" poiresource="overland" Location="1027,902" Tooltip="To East Freeport (ID:58631) "/>
+<Icon Name="58632" PoiMapLink="fprt_west" poiresource="overland" Location="404,1105" Tooltip="To West Freeport (ID:58632) "/>
+</Page>
+<Page Name="fprt_south">
+<Icon Name="58661" PoiMapLink="fprt_east" poiresource="overland" Location="1093,250" Tooltip="To East Freeport (ID:58661) "/>
+<Icon Name="58662" PoiMapLink="fprt_sewer01" poiresource="door" Location="1181,589" Tooltip="To Thieves' Way (ID:58662) "/>
+<Icon Name="58663" PoiMapLink="fprt_hood03" poiresource="overland" Location="1055,840" Tooltip="To Temple Street (ID:58663) "/>
+<Icon Name="58664" PoiMapLink="fprt_east" poiresource="overland" Location="821,299" Tooltip="To East Freeport (ID:58664) "/>
+<Icon Name="58665" PoiMapLink="fprt_hood06" poiresource="overland" Location="726,719" Tooltip="To Scale Yard (ID:58665) "/>
+<Icon Name="58666" PoiMapLink="fprt_hood01" poiresource="overland" Location="373,616" Tooltip="To Big Bend (ID:58666) "/>
+<Icon Name="58667" PoiMapLink="fprt_west" poiresource="overland" Location="331,248" Tooltip="To West Freeport (ID:58667) "/>
+</Page>
+<Page Name="exp09_dun_temple_of_faceless_solo_0">
+<Icon Name="58893" PoiMapLink="adv02_dun_sundered_playground_0" poiresource="teleporter" Location="759,533" Tooltip="Up (ID:58893) to go upstairs"/>
+<Icon Name="59194" PoiMapLink="adv02_dun_sundered_playground_0" poiresource="teleporter" Location="929,527" Tooltip="Up (ID:59194) go to upstairs"/>
+</Page>
+<Page Name="exp09_dun_temple_of_faceless_0">
+<Icon Name="58974" PoiMapLink="adv02_dun_sundered_playground_0" poiresource="teleporter" Location="929,535" Tooltip="Up (ID:58974) Teleport to upstairs, Kill Sarinich to activate"/>
+</Page>
+<Page Name="exp07_dun_kael_drakkel_2">
+<Icon Name="60406" PoiMapLink="exp07_dun_kael_drakkel_9" poiresource="teleporter" Location="521,617" Tooltip="New Kael (ID:60406) "/>
+</Page>
+<Page Name="exp07_dun_kael_drakkel_9">
+<Icon Name="60407" PoiMapLink="deathfist_3" poiresource="teleporter" Location="1219,405" Tooltip="Arena (ID:60407) "/>
+<Icon Name="60409" PoiMapLink="exp07_dun_kael_throne_raid_0" poiresource="teleporter" Location="1275,864" Tooltip="Hall of Legends (ID:60409) "/>
+</Page>
+<Page Name="exp10_dun_temple_of_veeshan_hub_0">
+<Icon Name="61044" PoiMapLink="exp10_dun_temple_of_veeshan_hub_2" poiresource="door" Location="707,713" Tooltip="Halls of the Betrayer (ID:61044) To the Halls of the Betrayer [Adv. Solo/Heroic] and Guardian's Edifice [Raid]"/>
+<Icon Name="61046" PoiMapLink="exp10_dun_temple_of_veeshan_hub_1" poiresource="zone" Location="935,713" Tooltip="Laboratory of Mutation (ID:61046) To the Laboratory of Mutation [Advanced Solo/Heroic]"/>
+</Page>
+<Page Name="exp08_dun_skyshrine_kerafyrm">
+<Icon Name="61617" PoiMapLink="exp11_dun_ssraeshza_raid_1" poiresource="zone" Location="1171,438" Tooltip="Portal (ID:61617) "/>
+</Page>
+<Page Name="exp08_dun_skyshrine_kerafyrm_final">
+<Icon Name="61634" PoiMapLink="exp11_dun_ssraeshza_raid_1" poiresource="zone" Location="1171,438" Tooltip="Portal (ID:61634) "/>
+</Page>
+<Page Name="exp11_dun_pirate_cove_02_0">
+<Icon Name="62340" PoiMapLink="exp01_rgn_pillars_of_flame_epic01_cazel_ancient" poiresource="zone" Location="445,183" Tooltip="Table (ID:62340) Zone out to Tranquil Seas"/>
+</Page>
+<Page Name="exp11_dun_pirate_cove_03_0">
+<Icon Name="62394" PoiMapLink="exp01_rgn_pillars_of_flame_epic01_cazel_ancient" poiresource="zone" Location="1063,642" Tooltip="Table (ID:62394) Zone exit to Tranquil Seas"/>
+</Page>
+<Page Name="exp11_dun_highhold_solo_0">
+<Icon Name="62669" PoiMapLink="fallengate" poiresource="zone" Location="609,639" Tooltip="Gate (ID:62669) Returns to Phantom Seas"/>
+</Page>
+<Page Name="exp11_dun_highhold_night_0">
+<Icon Name="62677" PoiMapLink="fallengate" poiresource="zone" Location="972,637" Tooltip="Gate (ID:62677) Returns to Phantom Seas"/>
+</Page>
+<Page Name="orcishwastes_siege">
+<Icon Name="63928" PoiMapLink="orcishwastes_siege_raid" poiresource="door" Location="768,650" Tooltip="To the Siege (ID:63928) "/>
+<Icon Name="63929" PoiMapLink="orcishwastes_siege_01" poiresource="door" Location="940,304" Tooltip="To Scourge Keep (ID:63929) "/>
+<Icon Name="69818" PoiMapLink="orcishwastes_siege_01" poiresource="door" Location="960,330" Tooltip="To Scourge Keep (ID:69818) Underwater Zone In"/>
+</Page>
+<Page Name="orcishwastes_siege_solo">
+<Icon Name="63954" PoiMapLink="orcishwastes_siege_01" poiresource="door" Location="940,304" Tooltip="To Scourge Keep (ID:63954) "/>
+<Icon Name="64129" PoiMapLink="orcishwastes_siege_01" poiresource="door" Location="961,329" Tooltip="To Scourge Keep (ID:64129) Underwater Zone In"/>
+</Page>
+<Page Name="exp09_dun_sleepers_lower">
+<Icon Name="64238" PoiMapLink="exp07_rgn_eastern_wastes" poiresource="overland" Location="81,604" Tooltip="Eastern Wastes (ID:64238) Return to Eastern Wastes"/>
+</Page>
+<Page Name="exp14_rgn_plane_of_valor">
+<Icon Name="65604" PoiMapLink="exp14_rgn_plane_of_magic" poiresource="overland" Location="584,986" Tooltip="To Plane of Magic (ID:65604) "/>
+<Icon Name="65605" PoiMapLink="exp14_dun_plane_of_innovation_01_0" poiresource="door" Location="1012,974" Tooltip="To Plane of Innovation (ID:65605) "/>
+<Icon Name="65606" PoiMapLink="exp14_dun_plane_of_disease_01" poiresource="door" Location="1230,610" Tooltip="To Plane of Disease (ID:65606) "/>
+<Icon Name="65607" PoiMapLink="exp14_dun_bastion_of_thunder_01" poiresource="door" Location="1020,232" Tooltip="To Torden, Bastion of Thunder (ID:65607) "/>
+<Icon Name="65608" PoiMapLink="exp14_dun_solusek_tower_01_0" poiresource="door" Location="592,227" Tooltip="To Solusek Ro's Tower (ID:65608) "/>
+<Icon Name="65609" PoiMapLink="exp14_dun_molten_throne_tradeskill" poiresource="door" Location="588,266" Tooltip="To The Molten Throne (ID:65609) "/>
+<Icon Name="65610" PoiMapLink="exp14_dun_vasty_dome_solo" poiresource="door" Location="385,610" Tooltip="To Brackish Vaults (ID:65610) "/>
+<Icon Name="65908" PoiMapLink="exp14_dun_solusek_tower_soulbound" poiresource="door" Location="563,678" Tooltip="Soulbound Chamber (ID:65908) Zone to imbue weapons with Planar Weapon Essence"/>
+<Icon Name="66710" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="overland" Location="1152,811" Tooltip="To Myrist, the Great Library (ID:66710) "/>
+</Page>
+<Page Name="exp14_dun_solusek_tower_01_solo_0">
+<Icon Name="66239" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="779,421" Tooltip="To Coliseum of Valor (ID:66239) Spawns after defeating Galremos."/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_crypt_tradeskill">
+<Icon Name="67094" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="291,583" Tooltip="To Coliseum of Valor (ID:67094) "/>
+</Page>
+<Page Name="exp14_dun_molten_throne_tradeskill">
+<Icon Name="67175" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="796,410" Tooltip="To Coliseum of Valor (ID:67175) "/>
+</Page>
+<Page Name="exp14_dun_molten_throne_tradeskill_02">
+<Icon Name="67204" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="796,409" Tooltip="To Coliseum of Valor (ID:67204) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_innovation_tradeskill_02_1">
+<Icon Name="67244" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="1001,704" Tooltip="To Coliseum of Valor (ID:67244) "/>
+<Icon Name="67245" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="790,470" Tooltip="To Coliseum of Valor (ID:67245) "/>
+<Icon Name="67246" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="574,558" Tooltip="To Coliseum of Valor (ID:67246) "/>
+<Icon Name="67247" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="574,704" Tooltip="To Coliseum of Valor (ID:67247) "/>
+<Icon Name="67248" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="1001,559" Tooltip="To Coliseum of Valor (ID:67248) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_innovation_02_solo_0">
+<Icon Name="67426" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="785,309" Tooltip="To Coliseum of Valor (ID:67426) Spawns after defeating The Manaetic Behemoth."/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_01_solo">
+<Icon Name="67431" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="452,550" Tooltip="To Coliseum of Valor (ID:67431) "/>
+<Icon Name="67461" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="1001,290" Tooltip="To Coliseum of Valor (ID:67461) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_02_solo_0">
+<Icon Name="67462" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="1224,682" Tooltip="To Coliseum of Valor (ID:67462) "/>
+</Page>
+<Page Name="exp14_dun_nektulos_tradeskill">
+<Icon Name="67469" PoiMapLink="nektulos" poiresource="zone" Location="558,235" Tooltip="To Nektulos Forest (ID:67469) Leads back out to &quot;Nektulos Forest&quot;."/>
+<Icon Name="67476" PoiMapLink="shard_of_hate" poiresource="door" Location="548,220" Tooltip="To Shard of Hate (ID:67476) Enter 'Shard of Hate: New Ownership [Tradeskill]' for 'A Stitch in Time, Part V: Sealed With Hate'."/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_02_solo_1">
+<Icon Name="67500" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="973,562" Tooltip="To Coliseum of Valor (ID:67500) Spawns after Bhaly Adan has been defeated."/>
+</Page>
+<Page Name="exp14_dun_bastion_of_thunder_01_solo">
+<Icon Name="67515" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="1046,498" Tooltip="To Coliseum of Valor (ID:67515) Spawns after defeating Gaukr Sandstorm. If you are working on 'Legacy of Power: Through Storms and Mists' then make sure to open both chests first."/>
+</Page>
+<Page Name="exp14_dun_starfire_cavern_ts">
+<Icon Name="67535" PoiMapLink="exp14_rgn_plane_of_magic" poiresource="zone" Location="231,128" Tooltip="To Plane of Magic (ID:67535) "/>
+</Page>
+<Page Name="exp14_dun_bastion_of_thunder_02_solo">
+<Icon Name="67549" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="445,731" Tooltip="To Coliseum of Valor (ID:67549) Spawns after defeating Hreidar Lynhillig and Torstien Stoneskin. If you are working on 'Legacy of Power: Through Storms and Mists' then make sure to open both chests first and talk to Klodsag."/>
+</Page>
+<Page Name="exp14_dun_solusek_tower_02_solo_2">
+<Icon Name="67682" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="793,543" Tooltip="To Coliseum of Valor (ID:67682) Spawns upon defeating the Avatar of the Sun."/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_public">
+<Icon Name="67683" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="452,550" Tooltip="To Coliseum of Valor (ID:67683) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_03_duo">
+<Icon Name="67789" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="784,426" Tooltip="To Coliseum of Valor (ID:67789) "/>
+<Icon Name="67981" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="1001,457" Tooltip="To Coliseum of Valor (ID:67981) Spawns after Grimror has been defeated."/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_03">
+<Icon Name="67790" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="784,426" Tooltip="To Coliseum of Valor (ID:67790) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_03_expert">
+<Icon Name="67791" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="784,426" Tooltip="To Coliseum of Valor (ID:67791) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_01_expert">
+<Icon Name="67792" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="452,550" Tooltip="To Coliseum of Valor (ID:67792) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_01">
+<Icon Name="67793" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="452,550" Tooltip="To Coliseum of Valor (ID:67793) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_02_expert_0">
+<Icon Name="67794" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="1224,682" Tooltip="To Coliseum of Valor (ID:67794) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_disease_02_0">
+<Icon Name="67795" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="1224,682" Tooltip="To Coliseum of Valor (ID:67795) "/>
+</Page>
+<Page Name="exp14_dun_solusek_tower_public_0">
+<Icon Name="67846" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="799,949" Tooltip="To Coliseum of Valor (ID:67846) "/>
+</Page>
+<Page Name="exp14_dun_plane_of_innovation_tradeskill_1">
+<Icon Name="67902" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="790,663" Tooltip="To Coliseum of Valor (ID:67902) Appears after either collecting the schematics for 'A Stitch in Time, Part I: Security Measures' or pressing the correct button for 'A Restitch in Time: Security Measures'."/>
+</Page>
+<Page Name="exp14_dun_bastion_of_thunder_03_duo">
+<Icon Name="67908" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="502,894" Tooltip="To Coliseum of Valor (ID:67908) Spawns after defeating Oveld Stormwaker."/>
+</Page>
+<Page Name="exp14_dun_vasty_dome_adv_solo">
+<Icon Name="67941" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="687,492" Tooltip="To Coliseum of Valor (ID:67941) Spawns after Riptide has been defeated."/>
+</Page>
+<Page Name="exp15_dun_plane_of_air_01_solo">
+<Icon Name="67995" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="740,214" Tooltip="To Myrist, the Great Library (ID:67995) "/>
+<Icon Name="68052" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1032,639" Tooltip="To Myrist, the Great Library (ID:68052) Spawns upon defeating Aurorax."/>
+</Page>
+<Page Name="exp15_dun_plane_of_earth_01_solo">
+<Icon Name="68003" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1444,305" Tooltip="To Myrist, the Great Library (ID:68003) "/>
+<Icon Name="68186" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1272,825" Tooltip="To Myrist, the Great Library (ID:68186) Spawns upon defeating Koni Ferus and Pete Bog."/>
+</Page>
+<Page Name="exp15_dun_plane_of_earth_01">
+<Icon Name="68006" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1444,305" Tooltip="To Myrist, the Great Library (ID:68006) "/>
+</Page>
+<Page Name="exp15_dun_plane_of_fire_01_solo">
+<Icon Name="68026" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1153,265" Tooltip="To Myrist, the Great Library (ID:68026) Spawns upon defeating Ra-Sekjet, the Molten."/>
+</Page>
+<Page Name="exp14_dun_plane_of_innovation_03_duo_1">
+<Icon Name="68139" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="1282,351" Tooltip="To Coliseum of Valor (ID:68139) Spawns upon defeating Fixit Omegatock."/>
+</Page>
+<Page Name="exp15_dun_plane_of_water_01_solo">
+<Icon Name="68160" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="347,620" Tooltip="To Myrist, the Great Library (ID:68160) Spawns upon defeating Aegaeon, the Violent."/>
+</Page>
+<Page Name="exp15_dun_plane_of_air_02">
+<Icon Name="68214" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="616,727" Tooltip="To Myrist, the Great Library (ID:68214) "/>
+</Page>
+<Page Name="exp15_dun_plane_of_air_02_solo">
+<Icon Name="68215" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="616,727" Tooltip="To Myrist, the Great Library (ID:68215) "/>
+<Icon Name="68387" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="493,623" Tooltip="To Myrist, the Great Library (ID:68387) Spawns upon defeating Sterek Swiftwind."/>
+</Page>
+<Page Name="exp15_dun_plane_of_air_03">
+<Icon Name="68216" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1041,1022" Tooltip="To Myrist, the Great Library (ID:68216) "/>
+</Page>
+<Page Name="exp15_dun_plane_of_air_03_solo">
+<Icon Name="68217" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1041,1022" Tooltip="To Myrist, the Great Library (ID:68217) "/>
+</Page>
+<Page Name="exp15_dun_plane_of_earth_02">
+<Icon Name="68222" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="834,583" Tooltip="To Myrist, the Great Library (ID:68222) "/>
+</Page>
+<Page Name="exp15_dun_plane_of_earth_02_solo">
+<Icon Name="68223" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="834,583" Tooltip="To Myrist, the Great Library (ID:68223) "/>
+</Page>
+<Page Name="exp15_dun_plane_of_earth_03">
+<Icon Name="68224" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1152,607" Tooltip="To Myrist, the Great Library (ID:68224) "/>
+</Page>
+<Page Name="exp15_dun_plane_of_earth_03_solo">
+<Icon Name="68225" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1152,607" Tooltip="To Myrist, the Great Library (ID:68225) "/>
+</Page>
+<Page Name="permafrost_epic02_crypt">
+<Icon Name="68486" PoiMapLink="permafrost_0" poiresource="zone" Location="322,746" Tooltip="To Permafrost (ID:68486) "/>
+</Page>
+<Page Name="exp04_dun_charasis_north">
+<Icon Name="68733" PoiMapLink="exp04_rgn_jarsath_wastes" poiresource="zone" Location="298,500" Tooltip="To Jarsath Wastes (ID:68733) "/>
+</Page>
+<Page Name="exp04_dun_sebilis_0">
+<Icon Name="68811" PoiMapLink="exp04_dun_sebilis_epic01_crypt_heroic" poiresource="door" Location="183,265" Tooltip="To the Crypt of Agony (ID:68811) Takes you to:&#xA;- The Crypt of Agony&#xA;- The Protector's Realm"/>
+</Page>
+<Page Name="exp03_dun_crushbone_keep_0">
+<Icon Name="68850" PoiMapLink="exp03_rgn_greater_faydark_0" poiresource="zone" Location="215,453" Tooltip="To Greater Faydark (ID:68850) "/>
+</Page>
+<Page Name="commonlands_cave_of_shrines">
+<Icon Name="68939" PoiMapLink="commonlands" poiresource="zone" Location="416,325" Tooltip="To Commonlands (ID:68939) &lt;No Description&gt;"/>
+</Page>
+<Page Name="antonica_hidden_chapel">
+<Icon Name="68950" PoiMapLink="antonica" poiresource="zone" Location="405,237" Tooltip="To Antonica (ID:68950) &lt;No Description&gt;"/>
+</Page>
+<Page Name="nektulos_sanctuary_of_divine_unity">
+<Icon Name="68951" PoiMapLink="nektulos" poiresource="zone" Location="398,358" Tooltip="To Nektulos Forest (ID:68951) &lt;No Description&gt;"/>
+</Page>
+<Page Name="live_enchanted_grotto05">
+<Icon Name="69097" PoiMapLink="antonica" poiresource="zone" Location="226,140" Tooltip="Antonica (ID:69097) Leads back out to &quot;Antonica&quot;."/>
+</Page>
+<Page Name="live_enchanted_grotto01">
+<Icon Name="69113" PoiMapLink="nektulos" poiresource="zone" Location="112,270" Tooltip="Nektulos Forest (ID:69113) Leads back out to &quot;Nektulos Forest&quot;."/>
+</Page>
+<Page Name="exp02_dun_lair_of_scale_02_0">
+<Icon Name="69128" PoiMapLink="exp02_rgn_realm_of_twilight" poiresource="zone" Location="219,13" Tooltip="Tenebrous Tangle (ID:69128) Leads back out to &quot;Tenebrous Tangle&quot;."/>
+</Page>
+<Page Name="exp02_dun_lair_of_scale_03_0">
+<Icon Name="69149" PoiMapLink="exp02_dun_lair_of_scale_02_0" poiresource="zone" Location="208,396" Tooltip="To The Temple of Scale (ID:69149) Leads back out to the magical barrier leading to the pedeastal on the upper map of &quot;The Temple of Scale&quot;."/>
+</Page>
+<Page Name="nektropos_castle_erollisi10_0">
+<Icon Name="69334" PoiMapLink="nektulos" poiresource="zone" Location="219,401" Tooltip="To Nektulos Forest (ID:69334) Leads back out to &quot;Nektulos Forest&quot;."/>
+</Page>
+<Page Name="exp13_qey_catacomb_epic01_crow">
+<Icon Name="69420" PoiMapLink="qey_catacomb01" poiresource="zone" Location="405,253" Tooltip="To the Down Below (ID:69420) Leads back out to &quot;The Down Below&quot;."/>
+</Page>
+<Page Name="qey_catacomb_epic01_crows">
+<Icon Name="69421" PoiMapLink="qey_catacomb01" poiresource="zone" Location="405,253" Tooltip="To the Down Below (ID:69421) Leads back out to &quot;The Down Below&quot;."/>
+</Page>
+<Page Name="exp08_dun_sirens_grotto_raid_0">
+<Icon Name="69744" PoiMapLink="exp08_rgn_velious_cobalt_scar" poiresource="zone" Location="252,751" Tooltip="To Cobalt Scar (ID:69744) Leads back out to &quot;Cobalt Scar&quot;."/>
+</Page>
+<Page Name="exp03_dun_kaladim_stormguard_hall_mar12">
+<Icon Name="69794" PoiMapLink="exp03_rgn_butcherblock" poiresource="zone" Location="96,357" Tooltip="To Butcherblock Mountains (ID:69794) Leads back out to &quot;Butcherblock Mountains&quot;."/>
+</Page>
+<Page Name="exp14_dun_molten_throne_0">
+<Icon Name="69825" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="398,207" Tooltip="To Coliseum of Valor (ID:69825) Leads back out to the &quot;Coliseum of Valor&quot;."/>
+</Page>
+<Page Name="exp14_dun_molten_throne_1">
+<Icon Name="69838" PoiMapLink="exp14_rgn_plane_of_valor" poiresource="zone" Location="398,222" Tooltip="To Coliseum of Valor (ID:69838) Leads back out to the &quot;Coliseum of Valor&quot;."/>
+</Page>
+<Page Name="exp04_dun_sebilis_epic01_crypt_heroic">
+<Icon Name="69845" PoiMapLink="exp04_dun_sebilis_0" poiresource="zone" Location="110,11" Tooltip="To Sebilis (ID:69845) Leads back out to &quot;Sebilis&quot;."/>
+</Page>
+<Page Name="exp15_dun_plane_of_mischief_anchorage">
+<Icon Name="69895" PoiMapLink="exp08_rgn_velious_cobalt_scar" poiresource="overland" Location="767,418" Tooltip="To Cobalt Scar (ID:69895) Leads back out to  Cobalt Scar."/>
+</Page>
+<Page Name="exp15_dun_plane_of_mischief_raid_0">
+<Icon Name="69897" PoiMapLink="exp08_rgn_velious_cobalt_scar" poiresource="overland" Location="384,209" Tooltip="To Cobalt Scar (ID:69897) Leads back out to &quot;Cobalt Scar&quot;."/>
+</Page>
+<Page Name="exp15_dun_plane_of_mischief_01">
+<Icon Name="69899" PoiMapLink="exp08_rgn_velious_cobalt_scar" poiresource="zone" Location="767,418" Tooltip="To Cobalt Scar (ID:69899) Leads back out to &quot;Cobalt Scar&quot;."/>
+</Page>
+<Page Name="runnyeye_advanced_fabled_solo">
+<Icon Name="69941" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="74,500" Tooltip="To Myrist, the Great Library (ID:69941) Leads back out to the &quot;Myrist, the Great Library&quot;."/>
+<Icon Name="69942" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="388,338" Tooltip="To Myrist, the Great Library (ID:69942) Leads back out to the &quot;Myrist, the Great Library&quot;."/>
+</Page>
+<Page Name="exp15_dun_plane_of_fire_02_solo">
+<Icon Name="69967" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="426,1106" Tooltip="To Myrist, the Great Library (ID:69967) - Leads back out to &quot;Myrist, the Great Library&quot;.&#xA;- Spawns upon defeating Firemonger Rosnarga."/>
+</Page>
+<Page Name="exp15_dun_plane_of_water_02_solo">
+<Icon Name="69985" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="817,613" Tooltip="To Myrist, the Great Library (ID:69985) Leads back out to &quot;Myrist, the Great Library&quot;.&#xA;- Spawns upon defeating the emissary of the deep."/>
+</Page>
+<Page Name="nektulos_epic01_cauldroncove_oct11">
+<Icon Name="70385" PoiMapLink="nektulos" poiresource="zone" Location="351,443" Tooltip="To Nektulos Forest (ID:70385) Leads back out into the &quot;Nektulos Forest&quot;."/>
+</Page>
+<Page Name="qey_catacomb_epic02_mi_undead_easy">
+<Icon Name="70416" PoiMapLink="commonlands" poiresource="zone" Location="380,382" Tooltip="To The Commonlands (ID:70416) Leads back out into &quot;The Commonlands&quot;."/>
+</Page>
+<Page Name="exp02_dun_halls_of_fate_event_0">
+<Icon Name="70454" PoiMapLink="world" poiresource="zone" Location="268,107" Tooltip="To Norrath (ID:70454) Takes you back out to:&#xA;- &quot;Qeynos Capitol District&quot; for good aligned characters.&#xA;- &quot;The City of Freeport&quot; for evil aligned characters."/>
+</Page>
+<Page Name="exp03_dun_estate_of_unrest_event">
+<Icon Name="70463" PoiMapLink="world" poiresource="zone" Location="212,27" Tooltip="To Norrath (ID:70463) Takes you back out to:&#xA;- &quot;Qeynos Capitol District&quot; for good aligned characters.&#xA;- &quot;The City of Freeport&quot; for evil aligned characters."/>
+</Page>
+<Page Name="exp04_dun_karnors_castle_event_0">
+<Icon Name="70494" PoiMapLink="world" poiresource="zone" Location="271,243" Tooltip="To Norrath (ID:70494) Takes you back out to:&#xA;- &quot;Qeynos Capitol District&quot; for good aligned characters.&#xA;- &quot;The City of Freeport&quot; for evil aligned characters."/>
+</Page>
+<Page Name="exp05_dun_void_palace_event">
+<Icon Name="70510" PoiMapLink="world" poiresource="zone" Location="736,634" Tooltip="To Norrath (ID:70510) Takes you back out to:&#xA;- &quot;Qeynos Capitol District&quot; for good aligned characters.&#xA;- &quot;The City of Freeport&quot; for evil aligned characters."/>
+</Page>
+<Page Name="exp06_dun_vastydeep03_event_0">
+<Icon Name="70523" PoiMapLink="world" poiresource="zone" Location="149,636" Tooltip="To Norrath (ID:70523) Takes you back out to:&#xA;- &quot;Qeynos Capitol District&quot; for good aligned characters.&#xA;- &quot;The City of Freeport&quot; for evil aligned characters."/>
+</Page>
+<Page Name="exp06_dun_vastydeep03_event_1">
+<Icon Name="70524" PoiMapLink="world" poiresource="zone" Location="568,219" Tooltip="To Norrath (ID:70524) Takes you back out to:&#xA;- &quot;Qeynos Capitol District&quot; for good aligned characters.&#xA;- &quot;The City of Freeport&quot; for evil aligned characters."/>
+<Icon Name="70525" PoiMapLink="world" poiresource="zone" Location="213,395" Tooltip="To Norrath (ID:70525) Takes you back out to:&#xA;- &quot;Qeynos Capitol District&quot; for good aligned characters.&#xA;- &quot;The City of Freeport&quot; for evil aligned characters."/>
+</Page>
+<Page Name="exp07_dun_kael_iceshard_keep_event">
+<Icon Name="70551" PoiMapLink="world" poiresource="zone" Location="400,38" Tooltip="To Norrath (ID:70551) Takes you back out to &quot;Frostfang Sea&quot;."/>
+</Page>
+<Page Name="exp08_dun_skyshrine_lower01_event">
+<Icon Name="70569" PoiMapLink="world" poiresource="zone" Location="519,295" Tooltip="To Norrath (ID:70569) Takes you back out to &quot;Timorous Deep&quot;."/>
+</Page>
+<Page Name="exp16_dun_thehole_kabor_sig">
+<Icon Name="70661" PoiMapLink="exp06_rgn_odus_south_0" poiresource="zone" Location="323,633" Tooltip="To Sundered Frontier (ID:70661) Leads back out to &quot;The Sundered Frontier&quot;."/>
+</Page>
+<Page Name="exp15_dun_tarewmarr_raid">
+<Icon Name="70683" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="1156,708" Tooltip="To Myrist, the Great Library (ID:70683) Takes you back out to &quot;Myrist, the Great Library&quot;."/>
+</Page>
+<Page Name="exp16_dun_sanctus_seru_ts_sigline_dinner">
+<Icon Name="71243" PoiMapLink="exp16_rgn_sanctus_seru" poiresource="zone" Location="474,305" Tooltip="Sanctus Seru (ID:71243) This door leads back out into &quot;Sanctus Seru [City]&quot;."/>
+</Page>
+<Page Name="exp16_dun_sanctus_seru_01_solo">
+<Icon Name="71250" PoiMapLink="exp16_rgn_sanctus_seru" poiresource="zone" Location="1322,604" Tooltip="To Sanctus Seru [City] (ID:71250) This portal leads back out into &quot;Sanctus Seru [City]&quot;."/>
+</Page>
+<Page Name="exp13_dun_cityofmist_01">
+<Icon Name="71920" PoiMapLink="fallengate" poiresource="teleporter" Location="674,307" Tooltip="Gate (ID:71920) Gate to exit the water and take you back up top."/>
+</Page>
+<Page Name="exp10_dun_shissartemple02_0">
+<Icon Name="71965" PoiMapLink="exp11_dun_ssraeshza_raid_1" poiresource="teleporter" Location="907,1007" Tooltip="Portal (ID:71965) Portal further down"/>
+</Page>
+<Page Name="exp17_dun_shar_vahl_01_solo_0">
+<Icon Name="72930" PoiMapLink="exp17_rgn_shadeweaver_0" poiresource="door" Location="1222,863" Tooltip="Exit to Shadeweaver's Thicket (ID:72930) "/>
+</Page>
+<Page Name="exp17_dun_savage_weald_02">
+<Icon Name="73624" PoiMapLink="exp17_dun_shar_vahl_city_0" poiresource="zone" Location="985,843" Tooltip="To Shar Vahl (ID:73624) "/>
+</Page>
+<Page Name="exp15_dun_plane_of_fire_01_raid">
+<Icon Name="73883" PoiMapLink="exp15_rgn_plane_of_knowledge" poiresource="zone" Location="768,755" Tooltip="Myrist, The Great Library (ID:73883) Zone entry point"/>
+</Page>
+<Page Name="exp03_dun_klakanon_epic01_menace">
+<Icon Name="73899" PoiMapLink="exp05_rgn_innothule_1" poiresource="zone" Location="676,355" Tooltip="To Moors of Ykesha (ID:73899) Portal back to Moors of Ykesha for A Gnomish Master Plan quest"/>
+</Page>
+<Page Name="exp17_dun_echo_caverns_ts_prelude">
+<Icon Name="74103" PoiMapLink="exp16_dun_fordel_midst_tssigline" poiresource="zone" Location="953,443" Tooltip="Return to the City of Fordel Midst (ID:74103) "/>
+</Page>
+<Page Name="exp09_dun_sleepers_upper_frostfell">
+<Icon Name="68496" PoiMapLink="live_frostfell_workshop_2" poiresource="zone" Location="569,402" Tooltip="Exit (ID:68496) Return to the Frostfell Workshop."/>
+</Page>
+<Page Name="live_frostfell_workshop_2">
+<Icon Name="68660" PoiMapLink="everfrost_frostfell" poiresource="zone" Location="690,667" Tooltip="Enter Frostfell Wonderland Village (ID:68660) "/>
+</Page>
+<Page Name="exp17_dun_fordel_midst_city_3">
+<Icon Name="73963" PoiMapLink="exp17_dun_fordel_midst_city_2" poiresource="door" Location="527,324" Tooltip="To House of Midst (ID:73963) "/>
+<Icon Name="72498" PoiMapLink="exp17_dun_fordel_midst_city_1" poiresource="door" Location="531,674" Tooltip="The Bazaar Corridor (ID:72498) Enter Bazaar here"/>
+</Page>
+<Page Name="exp17_dun_fordel_midst_city_2">
+<Icon Name="72527" PoiMapLink="exp17_dun_fordel_midst_city_3" poiresource="door" Location="1386,768" Tooltip="Shadow Haven (ID:72527)  Return to Shadow Haven"/>
+</Page>
+<Page Name="exp18_dun_karuupa_03_solo">
+<Icon Name="74723" PoiMapLink="exp18_rgn_karuupa" poiresource="door" Location="606,209" Tooltip="Leave Predator's Perch (ID:74723) Return to Karuupa Jungle"/>
+</Page>
+<Page Name="exp18_dun_karuupa_raid_01">
+<Icon Name="74748" PoiMapLink="exp18_rgn_karuupa" poiresource="zone" Location="155,316" Tooltip="To Karuupa Jungle (ID:74748) "/>
+</Page>
+<Page Name="exp18_dun_mahngavi_raid_01">
+<Icon Name="74763" PoiMapLink="exp18_rgn_mahngavi_wastes" poiresource="zone" Location="301,514" Tooltip="To Mahngavi Wastes (ID:74763) "/>
+</Page>
+<Page Name="exp16_dun_aurelian_coast_03">
+<Icon Name="74849" PoiMapLink="exp16_rgn_aurelian_coast" poiresource="zone" Location="511,847" Tooltip="Exit to Aurelian Coast (ID:74849) "/>
+</Page>
+<Page Name="exp17_dun_savage_weald_01">
+<Icon Name="74884" PoiMapLink="exp17_rgn_savage_weald" poiresource="zone" Location="1180,592" Tooltip="Zone-out (ID:74884) Exit to Savage Weald"/>
+</Page>
+<Page Name="exp18_dun_vacrul_02_solo">
+<Icon Name="74961" PoiMapLink="exp18_rgn_forlorn" poiresource="zone" Location="165,538" Tooltip="Exit to Forlorn Gist (ID:74961) Leave Vacrul and exit back to Forlorn Gist"/>
+</Page>
+<Page Name="exp13_dun_sorceress_tower_raid_0">
+<Icon Name="75022" PoiMapLink="exp12_rgn_umbra02" poiresource="zone" Location="828,938" Tooltip="To Thalumbra (ID:75022) Zone out"/>
+</Page>
+<Page Name="live_exp15_rgn_plane_of_fire_event_solo">
+<Icon Name="75102" PoiMapLink="exp05_rgn_innothule_1" poiresource="zone" Location="201,563" Tooltip="Exit to Moors of Ykesha (ID:75102) "/>
+<Icon Name="75115" PoiMapLink="exp05_rgn_innothule_1" poiresource="zone" Location="623,138" Tooltip="Exit to Moors of Ykesha (ID:75115) "/>
+</Page>
+<Page Name="live_exp15_rgn_plane_of_fire_event">
+<Icon Name="75162" PoiMapLink="exp05_rgn_innothule_1" poiresource="zone" Location="623,138" Tooltip="Exit to Moors of Ykesha (ID:75162) "/>
+<Icon Name="75172" PoiMapLink="exp05_rgn_innothule_1" poiresource="zone" Location="201,563" Tooltip="Exit to Moors of Ykesha (ID:75172) "/>
+</Page>
+<Page Name="exp18_dun_mahngavi_01_solo">
+<Icon Name="75175" PoiMapLink="exp18_rgn_mahngavi_wastes" poiresource="zone" Location="203,184" Tooltip="Exit To Mahngavi Wastes (ID:75175) "/>
+</Page>
+<Page Name="live_exp15_rgn_plane_of_water_event_solo">
+<Icon Name="75205" PoiMapLink="exp05_rgn_innothule_1" poiresource="zone" Location="600,446" Tooltip="Zone back to Moors of Ykesha (ID:75205) "/>
+</Page>
+<Page Name="exp01_dun_poets_palace_0">
+<Icon Name="75298" PoiMapLink="exp01_dun_shimmering_citadel_2" poiresource="zone" Location="27,223" Tooltip="Exit to Shimmering Citadel (ID:75298) "/>
+</Page>
+<Page Name="exp01_dun_poets_palace_1">
+<Icon Name="75299" PoiMapLink="exp01_dun_shimmering_citadel_2" poiresource="zone" Location="109,80" Tooltip="Exit to Shimmering Citadel (ID:75299) "/>
+</Page>
+<Page Name="exp01_dun_poets_palace_2">
+<Icon Name="75300" PoiMapLink="exp01_dun_shimmering_citadel_2" poiresource="zone" Location="415,249" Tooltip="Exit to Shimmering Citadel (ID:75300) "/>
+</Page>
+</Page>

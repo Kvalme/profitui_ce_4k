@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Last update 2016-09-04 by user Zidu -->
+<!-- Removed gm9 author broken link and replaced with updated ProfitCE FAQ link -->
+<!-- Removed Auto Calc button and in it's place is now Drums Spell Timer -->
+<Page eq2usescomwndcontrols="true" Location="380,104" Name="ProfitUI_ControlCenter" OnShow="Startup.Press=true" PackLocation="center,center" Size="336,576" UserMovable="true">
+<include>_ProfitUI_ShowWelcomeSetting.txt</include>
+<Button Name="ShowFirst" Location="0,0" Size="0,0" ShowWelcomeFirst="true"/>
+<Button Data="true" Name="Startup" OnPress="Parent.OnShow=&apos; &apos;
+Parent.WelcomeSkin.Press=true
+hide_window Custom.ProfitUI_ControlCenter
+show_window Custom.ProfitUI_SubclassDetector
+Parent.Parent.ProfitUI_BottomBar.ShowWindows.Press=true
+
+Parent.Parent.ProfitUI_SubclassDetector.Detect.Press=true
+show_window MainHUD.StartButton
+MainHUD.StartButton.Visible=false
+hide_window MainHUD.StartButton
+show_window Custom.ProfitUI_InventoryColorSettings
+show_window Custom.ProfitUI_BottomBar
+
+Data=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.EffectsIconSizes.TargetEffectsIconSize.Text
+Parent.EffectsSlidersFrame.TargetEffectsSizeSlider.Value=Data
+Parent.Parent.Target.Icons.IconSize=Data
+
+Data=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.EffectsIconSizes.ImpliedTargetEffectsIconSize.Text
+Parent.EffectsSlidersFrame.ImpliedTargetEffectsSizeSlider.Value=Data
+Parent.Parent.ImpliedTarget.Icons.IconSize=Data
+
+Data=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.EffectsIconSizes.BeneficialEffectsIconSize.Text
+Parent.EffectsSlidersFrame.BeneficialEffectsSizeSlider.Value=Data
+Parent.Parent.Effects.Volume.CellSize=Data ## &quot;,&quot; ## Data
+
+Data=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.EffectsIconSizes.DetrimentalEffectsIconSize.Text
+Parent.EffectsSlidersFrame.DetrimentalEffectsSizeSlider.Value=Data
+Parent.Parent.DetrimentalEffects.Volume.CellSize=Data ## &quot;,&quot; ## Data
+
+Data=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.GroupWindow.BackgroundOpacity.Text
+Parent.GroupBackgroundSliderFrame.GroupBackgroundSlider.Value=Data
+Parent.Parent.GroupMembers.Backdrop.BackgroundOpacity=Data / 100
+
+Data=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LootOptions.AutoDeclineLoot.Text
+Parent.AutoDeclineLoot.Checked=Data
+
+Parent.Parent.Parent.Inventory.Loot.OnShow=&apos;Parent.ProfitUI_ControlCenter.LootAutoDecline.Activated=Parent.ProfitUI_ControlCenter.AutoDeclineLoot.Checked&apos;
+Data=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.LootOptions.NBGGreedIsDefaultButton.Text
+&apos;Parent.Parent.Parent.Inventory.Loot.button NBGGreed.IsDefaultButton&apos;=Data
+&apos;Parent.Parent.Parent.Inventory.Loot.button LootAll.IsDefaultButton&apos;=true
+&apos;Parent.Parent.Parent.Inventory.Loot.button LottoDecline.IsDefaultButton&apos;=true
+
+Parent.Parent.Parent.PlayerHousing.PlayerHouse.EnterButton.IsDefaultButton=true
+Parent.Parent.Parent.Popup.Select.UserMovable=true
+
+Parent.ShowAutoAttackCalc.Activated=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.AutoAttackCalc.ShowOnLogin.Text
+Parent.DoShowAutoAttackBar.Activated=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.AutoAttackBar.ShowOnLogin.Text
+Parent.ShowAutoAttackBar.checked=Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.AutoAttackBar.ShowOnLogin.Text
+
+Parent.Parent.Custom.ProfitUI_CuresCode.GetCancelSpellcastFromFile.Press=true" />
+<Button Name="WelcomeSkin" OnPress="
+Parent.Parent.Parent.MainHUD.Welcome.ShowFirst=Parent.ShowFirst.ShowWelcomeFirst
+Parent.Parent.Parent.MainHUD.Welcome.OnShow='ShowFirst=true visible=ShowFirst'
+Parent.Parent.Parent.MainHUD.Welcome.WindowFrame.Bkg.RStyleDefault='/ProfitUI_Styles.bkg.rect'
+"/>
+<Button Name="WelcomeOnShow" ShowFirst="false" OnPress="
+Parent.Parent.Parent.MainHUD.Welcome.Visible=false
+ShowFirst=true
+"/>
+<Button Name="ShowAutoAttackCalc" OnActivate="show_window Custom.ProfitUI_AutoAttackCalc" />
+<Button Name="LootAutoDecline" OnActivate="&apos;Parent.Parent.Loot.button LottoDecline.Press&apos;=true
+Activated=false" Visible="false" />
+<Page BackgroundOpacity="1.000" Location="9,435" Name="Script" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" Size="316,102">
+<Scrollbar ArrowPressSound="sounds/button" Control="Textbox" HideIfUnnecessary="true" Location="284,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="f,a" Size="22,82" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,10" MaxLines="Unlimited" Name="Textbox" PackSize="a,a" Size="274,82" Style="/CommonElements.Textbox.data.system_style" WrapWidth="Automatic" />
+</Page>
+<Text Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="9,425" Name="HelpText" PackLocation="cfc,bottom" PackSize="a,f" Size="303,17" TextAlignment="Center" Tooltip="Note: 2 Levels below MainHUD">Execute UI script (only use if instructed to do so)</Text>
+<Button Location="9,535" MaximumSize="16384,32" MinimumSize="32,32" Name="ClearTextButton" OnPress="Parent.Script.Textbox.Text=&apos;&apos;" PackLocation="cfc,bottom" Size="150,32" Style="/CommonElements.PushButton.data.style">:e98f9a11db8f21fd:Clear</Button>
+<Button Location="174,535" MaximumSize="16384,32" MinimumSize="32,32" Name="ExecuteButton" OnHoverIn="OnPress=Parent.Script.Textbox.LocalText" PackLocation="cfc,bottom" Size="150,32" Style="/CommonElements.PushButton.data.style">:e98f9a1132183385:Execute Script</Button>
+<Button Name="CodeTester1" Visible="false" />
+<Button Name="CodeTester2" Visible="false" />
+<Button BackgroundOpacity="0.400" Location="12,112" Name="MaximizeBottomBarWidth" OnPress="Parent.Parent.ProfitUI_BottomBar.Width=Parent.Parent.Width
+Parent.Parent.ProfitUI_BottomBar.Left=0" Size="152,28" Style="/ButtonStyles.BoxButton" Tooltip="Maximize the width of the bottom bar.
+You need to manually resize the bar in some way to get the size to save.">BottomBar Max Width</Button>
+<Button BackgroundOpacity="0.400" Location="175,174" Name="ShowDressingRoom" OnPress="showdressingroom" Size="146,28" Style="/ButtonStyles.BoxButton">Show Dressing Room</Button>
+<Button BackgroundOpacity="0.400" Location="175,112" Name="ShowBottomBarSetup" OnPress="show_window Custom.ProfitUI_BottomBar_Settings" Size="146,28" Style="/ButtonStyles.BoxButton">BottomBar Config</Button>
+<Button BackgroundOpacity="0.400" Location="12,143" Name="ForceClassDetect" OnPress="Parent.Parent.Parent.Custom.ProfitUI_SubclassDetector.ForceDetect.Press=true" Size="152,28" Style="/ButtonStyles.BoxButton" Tooltip="Click to force subclass detection">Detect Class</Button>
+<Button BackgroundOpacity="0.400" Location="175,143" Name="load_uisettings" OnPress="load_uisettings" Size="146,28" Style="/ButtonStyles.BoxButton">Load UIsettings</Button>
+<Button Name="DoCommand" OnPress=" " OnShow="Parent.DoCommand.press=true&#xD;&#xA;Visible=false" Visible="false" />
+<Button Name="Show_ST" OnShow="show_window Custom.DrumsUI_ST&#xD;&#xA;show_window Custom.DrumsUI_ST&#xD;&#xA;Visible=false" Visible="false" />
+<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="22,177" Name="AutoShow" OnPress="window_property unlock Custom DrumsUI_ST_Auto&#xD;&#xA;Parent.Parent.DrumsUI_ST_Auto.Width=(COND ? 2 : 1) COND=(checked == true)&#xD;&#xA;window_property lock Custom DrumsUI_ST_Auto&#xD;&#xA;&#xD;&#xA;Parent.Show_ST.visible=COND&#xD;&#xA;&#xD;&#xA;Parent.DoCommand.OnPress=(&apos;flash_window Custom.DrumsUI_ST 2&apos;)&#xD;&#xA;Parent.DoCommand.visible=COND&#xD;&#xA;Parent.DoCommand.OnPress=(&apos;hide_window Custom.DrumsUI_ST&apos;)&#xD;&#xA;Parent.DoCommand.visible=&apos;!&apos;COND" ScrollExtent="152,22" Size="152,22" Style="/CommonElements.Checkbox.data.style" Tooltip="Display Duration, Target and Amount Remaining of Spells
+Edit _ProfitUI_DrumsUI_ST_Settings.txt to track spells">Show Spell Timer</Checkbox>
+<Button BackgroundOpacity="0.400" Location="12,174" Name="Spell Timer" XOnPress="show_window Custom.DrumsUI_Menu&#xD;&#xA;show_window Custom.DrumsUI_Menu.PageSelect.SpellTimer" Size="152,28" Style="/ButtonStyles.BoxButton" Tooltip="Display Duration, Target and Amount Remaining of Spells
+Edit _ProfitUI_DrumsUI_ST_Settings.txt to track spells"></Button>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="13,30" MaxLines="1" Name="NoSaveWarning" Size="295,20" TextAlignmentVertical="Center">The settings below will not be permanent:</Text>
+<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="173,56" Name="ShowMail" OnSet="show_window MainHUD.OpenedMail
+Parent.Parent.OpenedMail.Visible=true" OnUnset="hide_window MainHUD.OpenedMail" Size="179,22" Style="/CommonElements.Checkbox.data.style" Tooltip="Show/Hide the mail that was last opened from the mailbox during the same play session. 
+No mail functionality.">Show Last Open Mail</Checkbox>
+<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="12,56" Name="ShowBroker" OnSet="show_window Inventory.Market" OnUnset="hide_window Inventory.Market" Size="163,22" Style="/CommonElements.Checkbox.data.style" Tooltip="Show/Hide the broker window. No functionality while not at a broker, must have been at the broker during the play session to have it populated with data.">Show Broker Window</Checkbox>
+<Button Name="DoShowAutoAttackBar" OnActivate="parent.parent.parent.Custom.ProfitUI_AutoAttackBar.Data.IsHated.OnShow=&quot;show_window Custom.ProfitUI_AutoAttackBar&quot;
+parent.parent.ProfitUI_AutoAttackBar.Data.IsHated.OnShow=&quot;show_window Custom.ProfitUI_AutoAttackBar&quot;
+show_window Custom.ProfitUI_AutoAttackBar
+hide_window Custom.ProfitUI_AutoAttackBar.CombatCheck
+Activated=false" />
+<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="12,81" Name="ShowAutoAttackBar" OnSet="Parent.DoShowAutoAttackBar.Activated=true" OnUnset="parent.parent.ProfitUI_AutoAttackBar.Data.IsHated.OnShow=&apos; &apos;
+parent.parent.parent.Custom.ProfitUI_AutoAttackBar.Data.IsHated.OnShow=&apos; &apos;
+hide_window Custom.ProfitUI_AutoAttackBar" Size="161,22" Style="/CommonElements.Checkbox.data.style" Tooltip="Show/Hide the auto attack bar">Show Auto Attack Bar</Checkbox>
+<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="173,81" Name="ShowBankSlots" OnSet="show_window Inventory.Bank
+show_window &apos;Inventory.Bag_clone_0_-3&apos;
+show_window &apos;Inventory.Bag_clone_1_-3&apos;
+show_window &apos;Inventory.Bag_clone_2_-3&apos;
+show_window &apos;Inventory.Bag_clone_3_-3&apos;
+show_window &apos;Inventory.Bag_clone_4_-3&apos;
+show_window &apos;Inventory.Bag_clone_5_-3&apos;
+show_window &apos;Inventory.Bag_clone_6_-3&apos;
+show_window &apos;Inventory.Bag_clone_7_-3&apos;
+show_window &apos;Inventory.Bag_clone_8_-3&apos;
+show_window &apos;Inventory.Bag_clone_9_-3&apos;
+show_window &apos;Inventory.Bag_clone_10_-3&apos;
+show_window &apos;Inventory.Bag_clone_11_-3&apos;
+show_window &apos;Inventory.Bag_clone_0_-4&apos;
+show_window &apos;Inventory.Bag_clone_1_-4&apos;
+show_window &apos;Inventory.Bag_clone_2_-4&apos;
+show_window &apos;Inventory.Bag_clone_3_-4&apos;
+show_window &apos;Inventory.Bag_clone_4_-4&apos;
+show_window &apos;Inventory.Bag_clone_5_-4&apos;
+show_window &apos;Inventory.Bag_clone_6_-4&apos;
+show_window &apos;Inventory.Bag_clone_7_-4&apos;" OnUnset="hide_window Inventory.Bank
+hide_window &apos;Inventory.Bag_clone_0_-3&apos;
+hide_window &apos;Inventory.Bag_clone_1_-3&apos;
+hide_window &apos;Inventory.Bag_clone_2_-3&apos;
+hide_window &apos;Inventory.Bag_clone_3_-3&apos;
+hide_window &apos;Inventory.Bag_clone_4_-3&apos;
+hide_window &apos;Inventory.Bag_clone_5_-3&apos;
+hide_window &apos;Inventory.Bag_clone_6_-3&apos;
+hide_window &apos;Inventory.Bag_clone_7_-3&apos;
+hide_window &apos;Inventory.Bag_clone_8_-3&apos;
+hide_window &apos;Inventory.Bag_clone_9_-3&apos;
+hide_window &apos;Inventory.Bag_clone_10_-3&apos;
+hide_window &apos;Inventory.Bag_clone_11_-3&apos;
+hide_window &apos;Inventory.Bag_clone_0_-4&apos;
+hide_window &apos;Inventory.Bag_clone_1_-4&apos;
+hide_window &apos;Inventory.Bag_clone_2_-4&apos;
+hide_window &apos;Inventory.Bag_clone_3_-4&apos;
+hide_window &apos;Inventory.Bag_clone_4_-4&apos;
+hide_window &apos;Inventory.Bag_clone_5_-4&apos;
+hide_window &apos;Inventory.Bag_clone_6_-4&apos;
+hide_window &apos;Inventory.Bag_clone_7_-4&apos;" Size="179,22" Style="/CommonElements.Checkbox.data.style" Tooltip="Show/Hide all bank containers (not the bank slots themselves) even while not at a bank. 
+Only shows contents of the containers that have previously been opened from the bank window during the same play session. Also shows placeholders for containers that do not exist.
+No functionality while not at a bank.">Show Bank Slots</Checkbox>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,208" Name="GroupBackgroundSliderFrame" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/FrameStyles.single_pixel" Size="331,33">
+<Sliderbar ControlInput="GroupBackgroundSliderValue" ControlMax="48" ControlMin="15" Location="221,4" MaximumSize="16384,26" MinimumSize="20,26" Name="GroupBackgroundSlider" OnChange="Parent.Parent.Parent.GroupMembers.Backdrop.BackgroundOpacity=Value / 100" Size="68,26" Style="/CommonElements.Slider.data.style" Tooltip="Changes will not save. You can edit the defaults in _ProfitUI_Settings_GroupWindow.txt" UpperLimit="100" />
+<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="293,8" MaximumSize="290,16384" Name="GroupBackgroundSliderValue" NumericInteger="true" Size="31,16" Style="/CommonElements.Textbox.data.style" Value="24" WrapWidth="Automatic">0</Textbox>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="10,6" MaxLines="1" Name="GroupBackgroundSliderLabel" Size="214,20" TextAlignmentVertical="Center">Group Window Backdrop Opacity</Text>
+</Page>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,240" Name="EffectsSlidersFrame" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/FrameStyles.single_pixel" Size="331,100">
+<Sliderbar ControlInput="DetrimentalEffectsSizeSliderValue" ControlMax="48" ControlMin="15" Location="221,26" LowerLimit="15" MaximumSize="16384,26" MinimumSize="20,26" Name="DetrimentalEffectsSizeSlider" OnChange="Parent.Parent.Parent.DetrimentalEffects.Volume.CellSize=Value ## &quot;,&quot; ## Value" Size="68,26" Style="/CommonElements.Slider.data.style" Tooltip="Changes will not save. You can edit the defaults in _ProfitUI_EffectsIconSizes.txt" UpperLimit="48" Value="24" />
+<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="293,30" MaximumSize="290,16384" Name="DetrimentalEffectsSizeSliderValue" NumericInteger="true" Size="31,16" Style="/CommonElements.Textbox.data.style" Value="24" WrapWidth="Automatic">24</Textbox>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="10,28" MaxLines="1" Name="DetrimentalEffectsSizeSliderLabel" Size="214,20" TextAlignmentVertical="Center">Detrimental Player Effects Icon Size</Text>
+<Sliderbar ControlInput="BeneficialEffectsSizeSliderValue" ControlMax="48" ControlMin="15" Location="221,4" LowerLimit="15" MaximumSize="16384,26" MinimumSize="20,26" Name="BeneficialEffectsSizeSlider" OnChange="Parent.Parent.Parent.Effects.Volume.CellSize=Value ## &quot;,&quot; ## Value" Size="68,26" Style="/CommonElements.Slider.data.style" Tooltip="Changes will not save. You can edit the defaults in _ProfitUI_EffectsIconSizes.txt" UpperLimit="48" Value="24" />
+<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="293,8" MaximumSize="290,16384" Name="BeneficialEffectsSizeSliderValue" NumericInteger="true" Size="31,16" Style="/CommonElements.Textbox.data.style" Value="24" WrapWidth="Automatic">24</Textbox>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="10,6" MaxLines="1" Name="BeneficialEffectsSizeSliderLabel" Size="214,20" TextAlignmentVertical="Center">Beneficial Player Effects Icon Size</Text>
+<Sliderbar ControlInput="ImpliedTargetEffectsSizeSliderValue" ControlMax="48" ControlMin="15" Location="221,71" LowerLimit="15" MaximumSize="16384,26" MinimumSize="20,26" Name="ImpliedTargetEffectsSizeSlider" OnChange="Parent.TargetEffectsSizeSlider.Value=Value&#xD;&#xA;Parent.Parent.Parent.ImpliedTarget.SetIconSize.MySize=Value&#xD;&#xA;Parent.Parent.Parent.ImpliedTarget.SetIconSize.Press=true" Size="68,26" Style="/CommonElements.Slider.data.style" Tooltip="Changes will not save. You can edit the defaults in _ProfitUI_Settings_EffectsIconSizes.txt" UpperLimit="48" Value="15" />
+<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="293,75" MaximumSize="290,16384" Name="ImpliedTargetEffectsSizeSliderValue" NumericInteger="true" Size="31,16" Style="/CommonElements.Textbox.data.style" Value="15" WrapWidth="Automatic">15</Textbox>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="10,74" MaxLines="1" Name="ImpliedTargetEffectsdSizeSliderLabel" Size="214,20" TextAlignmentVertical="Center">ImpliedTarget Effects Icon Size</Text>
+<Sliderbar ControlInput="TargetEffectsSizeSliderValue" ControlMax="48" ControlMin="15" Location="221,48" LowerLimit="15" MaximumSize="16384,26" MinimumSize="20,26" Name="TargetEffectsSizeSlider" OnChange="Parent.ImpliedTargetEffectsSizeSlider.Value=Value&#xD;&#xA;Parent.Parent.Parent.Target.SetIconSize.MySize=Value&#xD;&#xA;Parent.Parent.Parent.Target.SetIconSize.Press=true" Size="68,26" Style="/CommonElements.Slider.data.style" Tooltip="Changes will not save. You can edit the defaults in _ProfitUI_Settings_EffectsIconSizes.txt" UpperLimit="48" Value="15" />
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="10,51" MaxLines="1" Name="TargetEffectsdSizeSliderLabel" Size="214,20" TextAlignmentVertical="Center">Target Effects Icon Size</Text>
+<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="293,52" MaximumSize="290,16384" Name="TargetEffectsSizeSliderValue" NumericInteger="true" Size="31,16" Style="/CommonElements.Textbox.data.style" Value="15" WrapWidth="Automatic">15</Textbox>
+</Page>
+<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="10,342" Name="DisableGroupQRB" OnSet="Parent.Parent.GroupMembers.GroupMember0Buttons.GetsInput=false
+Parent.Parent.GroupMembers.GroupMember1Buttons.GetsInput=false
+Parent.Parent.GroupMembers.GroupMember2Buttons.GetsInput=false
+Parent.Parent.GroupMembers.GroupMember3Buttons.GetsInput=false
+Parent.Parent.GroupMembers.GroupMember4Buttons.GetsInput=false
+Parent.Parent.GroupMembers.GroupMember5Buttons.GetsInput=false" OnUnset="Parent.Parent.GroupMembers.GroupMember0Buttons.GetsInput=true
+Parent.Parent.GroupMembers.GroupMember1Buttons.GetsInput=true
+Parent.Parent.GroupMembers.GroupMember2Buttons.GetsInput=true
+Parent.Parent.GroupMembers.GroupMember3Buttons.GetsInput=true
+Parent.Parent.GroupMembers.GroupMember4Buttons.GetsInput=true
+Parent.Parent.GroupMembers.GroupMember5Buttons.GetsInput=true" PackLocation="left,bottom" Size="320,22" Style="/CommonElements.Checkbox.data.style" Tooltip="Disable/Re-enable the quick raid buttons on the group window.
+This setting will not be saved between sessions.">Disable macro buttons on group window</Checkbox>
+<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="10,365" Name="AutoDeclineLoot" OnSet="Parent.Parent.ProfitUI_MiscSettings.LootOptions.AutoDeclineLoot.Value=true" OnUnset="Parent.Parent.ProfitUI_MiscSettings.LootOptions.AutoDeclineLoot.Value=false" PackLocation="left,bottom" Size="320,22" Style="/CommonElements.Checkbox.data.style" Tooltip="Automatically decline all loot (eg when mentoring).
+This setting will not be saved between sessions, but can be predefined in _ProfitUI_Settings_LootOptions.txt">Automatically decline all loot</Checkbox>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font22" Location="0,388" MaxLines="1" Name="ProfitUILabel" PackLocation="left,bottom" Size="334,31" TextAlignment="Center" TextAlignmentVertical="Center">Browse ProfitUI CE FAQ</Text>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,389" Name="LineFrame2" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/FrameStyles.single_pixel" Size="331,33" />
+<Button BackgroundOpacity="0.400" Location="2,389" Name="ShowPortal" OnPress="browser &quot;http://www.eq2interface.com/forums/showthread.php?t=18266&quot;" PackLocation="left,bottom" Size="331,31" Style="/ButtonStyles.BoxButton" Tooltip="Browse to the ProfitUI CE FAQ" />
+<Button Location="244,8" Name="Help" PackLocation="right,top" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip="Help" UserMovable="true" Visible="false" />
+<Button Location="263,8" Name="Settings" PackLocation="right,top" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip="Window Settings" UserMovable="true" Visible="false" />
+<Button IsCancelButton="true" Location="314,27" Name="Close" OnPress="Parent.Visible=false" PackLocation="right,top" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":e98f9a112d3f513f:Close" UserMovable="true" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="177,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" Size="170,70" Visible="false" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-11,0" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" Size="300,70">
+<Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="a,f" ShadowStyle="/ShadowStylesNew.Outline.style" Size="188,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">ProfitUI Control Center</Text>
+</Page>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-11,0" Name="Frame" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" Size="357,589" />
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-11,0" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" Size="357,589" />
+</Page>

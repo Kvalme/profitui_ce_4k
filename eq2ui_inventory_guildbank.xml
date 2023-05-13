@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Last update 2016-04-25 by user Zidu -->
+<!-- Fixed coin display to allow large number of platinum -->
+<Page eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="52,72" MinimumSize="478,485" Name="GuildBank" PackLocation="left,cfc" ScrollExtent="478,485" Size="478,485" UserMovable="true" UserResizable="true" UserScrollable="false" version="2.1">
+    <Text DynamicData="/GameData.Guild.BankName" Font="/Fonts.FontZapf20" Location="-12,34" Name="Name" PackSize="a" ScrollExtent="502,25" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="502,25" TextAlignment="Center" TextAlignmentVertical="Center">:d74790f50ccd5726:BANK OF VERY LONG GUILD NAME</Text>
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="7,34" Name="header" PackSize="a" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="463,32" Size="463,32" />
+    <TabbedPane ActiveTab="0" DataSource="WindowFrame.TabSource" Location="18,64" Name="TabPane" PackSize="a" ScrollExtent="442,36" Size="442,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="MainTabPage" />
+    <Page Location="3,93" Name="MainTabPage" PackSize="a,a" RStyleMouseOver=" " RStyleMouseOverActivated=" " RStyleMouseOverSelected=" " RStyleSelected=" " ScrollExtent="475,388" Size="475,388">
+        <Page Name="BankPage" PackSize="a,a" ScrollExtent="472,389" Size="472,389">
+            <Page BackgroundOpacity="1.000" Location="0,118" Name="NoPermission" PackLocation="left,top" PackSize="a,a" ScrollExtent="472,271" Size="472,271" Visible="false">
+                <Text Font="/Fonts.FontZapf15" Location="130,95" Margin="0,0,5,0" Name="ItemStatus" PackLocation="cfc,cfc" ScrollExtent="212,80" ShadowStyle="/ShadowStylesNew.Outline.style" Size="212,80" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FF8080">:d74790f554ebabc2:You do not have permission to view the contents of this guild bank</Text>
+            </Page>
+            <Composite BackgroundOpacity="1.000" Location="6,5" Name="CommentComposite" Orientation="Horizontal" PackSize="a,f" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="460,85" Size="460,85" SpacingType="Fill">
+                <Text Font="/Fonts.FontZapf15" Location="0,5" Margin="5,0,5,0" Name="Comment" PackSize=",a" ScrollExtent="434,90" ShadowStyle="/ShadowStylesNew.Outline.style" Size="434,76" TextAlignment="Center" TextAlignmentVertical="Center">:d74790f5c47ae187:[DEVL]Comments about the purpose of this guild bank go here
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6</Text>
+                <Scrollbar ArrowPressSound="sounds/button" Control="Comment" HideIfUnnecessary="true" Location="434,4" MaximumSize="26,16384" MinimumSize="26,40" Name="Scroll" PackSize=",a" ScrollExtent="26,78" Size="26,78" Style="/CommonElements.ScrollbarVertical.data.style" />
+            </Composite>
+            <Page BackgroundOpacity="1.000" Location="6,83" Name="StatusPage" PackLocation="left,top" PackSize="a,f" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="460,35" Size="460,35">
+                <Text Font="/Fonts.FontZapf15" Location="16,8" Margin="0,0,5,0" Name="DepositStatus" PackLocation="cfc" ScrollExtent="175,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="175,20" TextAlignment="Center" TextAlignmentVertical="Center">:d74790f54dcf820f:Deposits Allowed</Text>
+                <Text Font="/Fonts.FontZapf15" Location="191,8" Margin="0,0,5,0" Name="WithdrawalStatus" PackLocation="cfc" ScrollExtent="175,20" ShadowStyle="/ShadowStylesNew.Drop.style" Size="175,20" TextAlignment="Center" TextAlignmentVertical="Center">:d74790f5f1205f18:Withdrawls Forbidden</Text>
+                <Button Location="380,5" MaximumSize="16384,26" MinimumSize="26,26" Name="Settings" PackLocation="fff" ScrollExtent="75,26" Size="75,26" Style="/CommonElements.SmallPushButton.data.style">:d74790f55cf59b8b:Settings...</Button>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="6,113" Name="Items" PackLocation="left,top" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="460,182" Size="460,182">
+                <Page Location="9,9" MinimumScrollExtent="0,330" Name="ScrollPage" PackSize="a,a" ScrollExtent="420,330" Size="420,165">
+                    <Page Name="Row0" PackLocation="cfc" ScrollExtent="420,42" Size="420,42">
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="42,0" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="84,0" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="126,0" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="168,0" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="210,0" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="252,0" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="294,0" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="336,0" MouseOverColor="#FFFF00" Name="Slot 8" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="378,0" MouseOverColor="#FFFF00" Name="Slot 9" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    </Page>
+                    <Page Location="0,41" Name="Row1" PackLocation="cfc" ScrollExtent="420,42" Size="420,42">
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="42,0" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="84,0" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="126,0" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="168,0" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="210,0" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="252,0" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="294,0" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="336,0" MouseOverColor="#FFFF00" Name="Slot 8" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="378,0" MouseOverColor="#FFFF00" Name="Slot 9" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    </Page>
+                    <Page Location="0,82" Name="Row2" Opacity="0.100" PackLocation="cfc" ScrollExtent="420,42" Size="420,42">
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="42,0" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="84,0" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="126,0" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="168,0" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="210,0" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="252,0" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="294,0" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="336,0" MouseOverColor="#FFFF00" Name="Slot 8" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="378,0" MouseOverColor="#FFFF00" Name="Slot 9" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    </Page>
+                    <Text Font="/Fonts.FontZapf15" GetsInput="false" Location="0,91" Name="Row2Help" Opacity="0.400" PackLocation="cfc" ScrollExtent="420,25" ShadowStyle="/ShadowStylesNew.Drop.style" Size="420,25" TextAlignment="Center" TextAlignmentVertical="Center">:d74790f50a6ea466:Requires Guild Level 10</Text>
+                    <Page Location="0,123" Name="Row3" Opacity="0.100" PackLocation="cfc" ScrollExtent="420,42" Size="420,42">
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="42,0" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="84,0" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="126,0" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="168,0" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="210,0" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="252,0" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="294,0" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="336,0" MouseOverColor="#FFFF00" Name="Slot 8" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="378,0" MouseOverColor="#FFFF00" Name="Slot 9" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    </Page>
+                    <Text Font="/Fonts.FontZapf15" GetsInput="false" Location="0,132" Name="Row3Help" Opacity="0.400" PackLocation="cfc" ScrollExtent="420,25" ShadowStyle="/ShadowStylesNew.Drop.style" Size="420,25" TextAlignment="Center" TextAlignmentVertical="Center">:d74790f52143f7a5:Requires Guild Level 20</Text>
+                    <Page Location="0,164" Name="Row4" Opacity="0.100" PackLocation="cfc" ScrollExtent="420,42" Size="420,42">
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="42,0" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="84,0" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="126,0" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="168,0" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="210,0" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="252,0" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="294,0" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="336,0" MouseOverColor="#FFFF00" Name="Slot 8" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="378,0" MouseOverColor="#FFFF00" Name="Slot 9" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    </Page>
+                    <Text Font="/Fonts.FontZapf15" GetsInput="false" Location="0,173" Name="Row4Help" Opacity="0.400" PackLocation="cfc" ScrollExtent="420,25" ShadowStyle="/ShadowStylesNew.Drop.style" Size="420,25" TextAlignment="Center" TextAlignmentVertical="Center">:d74790f53858c6e4:Requires Guild Level 30</Text>
+                    <Page Location="0,205" Name="Row5" Opacity="0.100" PackLocation="cfc" ScrollExtent="420,42" Size="420,42">
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="42,0" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="84,0" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="126,0" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="168,0" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="210,0" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="252,0" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="294,0" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="336,0" MouseOverColor="#FFFF00" Name="Slot 8" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="378,0" MouseOverColor="#FFFF00" Name="Slot 9" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    </Page>
+                    <Text Font="/Fonts.FontZapf15" GetsInput="false" Location="0,214" Name="Row5Help" Opacity="0.400" PackLocation="cfc" ScrollExtent="420,25" ShadowStyle="/ShadowStylesNew.Drop.style" Size="420,25" TextAlignment="Center" TextAlignmentVertical="Center">:d74790f577195023:Requires Guild Level 40</Text>
+                    <Page Location="0,246" Name="Row6" Opacity="0.100" PackLocation="cfc" ScrollExtent="420,42" Size="420,42">
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="42,0" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="84,0" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="126,0" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="168,0" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="210,0" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="252,0" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="294,0" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="336,0" MouseOverColor="#FFFF00" Name="Slot 8" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="378,0" MouseOverColor="#FFFF00" Name="Slot 9" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    </Page>
+                    <Text Font="/Fonts.FontZapf15" GetsInput="false" Location="0,256" Name="Row6Help" Opacity="0.400" PackLocation="cfc" ScrollExtent="420,25" ShadowStyle="/ShadowStylesNew.Drop.style" Size="420,25" TextAlignment="Center" TextAlignmentVertical="Center">:d74790f5452f32a1:Requires Guild Level 60</Text>
+                    <Page Location="0,287" Name="Row7" Opacity="0.100" PackLocation="cfc" ScrollExtent="420,42" Size="420,42">
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" MouseOverColor="#FFFF00" Name="Slot 0" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="42,0" MouseOverColor="#FFFF00" Name="Slot 1" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="84,0" MouseOverColor="#FFFF00" Name="Slot 2" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="126,0" MouseOverColor="#FFFF00" Name="Slot 3" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="168,0" MouseOverColor="#FFFF00" Name="Slot 4" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="210,0" MouseOverColor="#FFFF00" Name="Slot 5" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="252,0" MouseOverColor="#FFFF00" Name="Slot 6" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="294,0" MouseOverColor="#FFFF00" Name="Slot 7" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="336,0" MouseOverColor="#FFFF00" Name="Slot 8" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.examine" Location="378,0" MouseOverColor="#FFFF00" Name="Slot 9" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                    </Page>
+                    <Text Font="/Fonts.FontZapf15" GetsInput="false" Location="0,297" Name="Row7Help" Opacity="0.400" PackLocation="cfc" ScrollExtent="420,25" ShadowStyle="/ShadowStylesNew.Drop.style" Size="420,25" TextAlignment="Center" TextAlignmentVertical="Center">:78fc790edbac1f2f:Requires Guild Level 80</Text>
+                </Page>
+                <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="false" Location="430,7" MaximumSize="22,16384" MinimumSize="22,80" Name="Scrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,169" Size="22,169" Style="/CommonElements.ScrollbarVertical.data.style" />
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="5,296" Name="Coin" PackLocation=",fff" PackSize="a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="462,85" Size="462,85">
+                <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="101,10" Name="Coin" PackLocation="cfc" ScrollExtent="260,32" Size="260,32">
+                    <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="5,7" Name="PlatinumCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.PlatinumCoin" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="89,7" Name="GoldCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.GoldCoin" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="152,7" Name="SilverCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.SilverCoin" />
+                    <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="215,7" Name="CopperCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.CopperCoin" />
+                    <Text AbsorbsInput="false" actiontype="Coin" cointype="0" description="Copper" Dragable="true" DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="235,6" Margin="0,0,5,0" Name="Copper" ScrollExtent="43,20" Size="43,20" TextAlignmentVertical="Center" TextColor="#EA9129" Tooltip=":d74790f545dc813c:Copper">:d74790f53661be48:999999</Text>
+                    <Text AbsorbsInput="false" actiontype="Coin" cointype="1" description="Silver" Dragable="true" DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="172,6" Margin="0,0,5,0" Name="Silver" ScrollExtent="42,20" Size="42,20" TextAlignmentVertical="Center" TextColor="#A0A0A0" Tooltip=":d74790f5d708e292:Silver">:d74790f53661be48_1:999999</Text>
+                    <Text AbsorbsInput="false" actiontype="Coin" cointype="2" Dragable="true" DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="109,6" Margin="0,0,5,0" Name="Gold" ScrollExtent="44,20" Size="44,20" TextAlignmentVertical="Center" TextColor="#FFEE70" Tooltip=":d74790f518644d90:Gold">:d74790f53661be48_2:999999</Text>
+                    <Text AbsorbsInput="false" actiontype="Coin" cointype="3" Dragable="true" DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="25,7" Margin="0,0,5,0" Name="Platinum" ScrollExtent="90,18" Size="90,18" TextAlignmentVertical="Center" Tooltip=":d74790f5293ba1c4:Platinum">:d74790f53661be48_3:999999</Text>
+                </Page>
+                <Button Location="41,40" MaximumSize="16384,32" MinimumSize="32,32" Name="Deposit" PackLocation="cfc" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:d74790f55ac35c61:Deposit Coin</Button>
+                <Button Location="241,40" MaximumSize="16384,32" MinimumSize="32,32" Name="Withdraw" PackLocation="cfc" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:d74790f57c804f2e:Withdraw Coin</Button>
+            </Page>
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="a,a" ScrollExtent="502,501" Size="502,501">
+        <DataSource Name="TabSource">
+            <Data Name="Bank 1" target="BankPage" text=":d74790f5f3de2baf:Bank 1" />
+            <Data Name="Bank 2" target="BankPage" text=":d74790f56ad77a15:Bank 2" />
+            <Data Name="Bank 3" target="BankPage" text=":d74790f51dd04a83:Bank 3" />
+            <Data Name="Bank 4" target="BankPage" text=":d74790f583b4df20:Bank 4" />
+        </DataSource>
+        <Button Location="448,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":d74790f5ec278586:Window Settings" UserMovable="true" />
+        <Button Location="466,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":d74790f52d3f513f:Close" UserMovable="true" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:d74790f552273ddb:Guild Bank</Text>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="332,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="502,501" Size="502,501" />
+        <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="13,24" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="476,76" Size="476,76" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,35" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="502,466" Size="502,466" />
+    </Page>
+</Page>

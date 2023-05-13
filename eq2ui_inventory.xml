@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Page ismodule="true" Name="Inventory" PackSize="1,1" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+<include>eq2ui_inventory_equipmentreset.xml</include>
+<include>eq2ui_inventory_merchant.xml</include>
+<include>eq2ui_inventory_bag.xml</include>
+<include>eq2ui_inventory_bank.xml</include>
+<include>eq2ui_inventory_commissioned_work.xml</include>
+<include>eq2ui_inventory_container.xml</include>
+<include>eq2ui_inventory_dressingroom.xml</include>
+<include>eq2ui_inventory_marketdressingroom.xml</include>
+<include>eq2ui_inventory_examine.xml</include>
+<include>eq2ui_inventory_exchange.xml</include>
+<include>eq2ui_inventory_guildbank.xml</include>
+<include>eq2ui_inventory_guildbanksettings.xml</include>
+<include>eq2ui_inventory_highlight.xml</include>
+<include>eq2ui_inventory_loot.xml</include>
+<include>eq2ui_inventory_market.xml</include>
+<include>eq2ui_inventory_reforge.xml</include>
+<include>eq2ui_inventory_trade.xml</include>
+    </Page>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Namespace Name="TooltipStyles">
+        <TooltipStyle GridStyle="/gridlist.grid_tooltip" MaxWidth="400" Name="tooltip_default" TextPadding="4,2,2,2" TextStyle="/Fonts.FontZapf15" />
+        <TooltipStyle GridStyle="/gridlist.grid_tooltip" MaxWidth="225" Name="tooltip_miniontrait" TextPadding="8,4,8,4" TextStyle="/Fonts.FontZapf15" />
+    </Namespace>

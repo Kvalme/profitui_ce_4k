@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="750,4" Name="BGScore" PackLocation="right,top" ScrollExtent="270,94" Size="270,94" UserMovable="true">
+            <Button BackgroundColor="#FFFFFF" Location="5,4" Name="ShowLeaderboard" OnPress="battleground leaderboard" Opacity="0.001" ScrollExtent="232,84" Size="232,84" Tooltip=":368f25318fa8b7cb:Show Leaderboard" />
+            <Namespace Name="buttonstyle">
+                <ButtonStyle Name="style" RStyleActivated="activated_rect" RStyleDefault="normal_rect" RStyleMouseOver="mouseover_rect" />
+                <ImageStyle Filter="true" Name="normal">
+                    <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="919,391,961,433" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="mouseover">
+                    <ImageFrame Name="image" Source="images/icons/icon_map4.dds" SourceRect="210,83,252,125" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/icons/icon_map4.dds" SourceRect="210,83,252,125" />
+                </ImageStyle>
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="mouseover_rect" />
+                <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal_rect" />
+            </Namespace>
+            <Button BackgroundColor="#FFFFFF" Location="239,4" Name="ExitButton" OnPress="battleground run_home_to_momma" ScrollExtent="28,28" Size="28,28" Style="buttonstyle.style" Tooltip=":368f25311064ad9a:Exit Battleground">:368f2531cbc4d4cf:Exit</Button>
+            <Page AbsorbsInput="false" Location="5,6" Name="Playing" PackSize="a,f" ScrollExtent="240,42" Size="240,42">
+                <Text AbsorbsInput="false" DynamicData="/GameData.Self.ZoneName" Font="/TextStyles.Large.LargeStyle" Name="ZoneName" PackSize="a,f" ScrollExtent="240,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="240,20" TextAlignment="Center" TextColor="#F0D080">:368f2531d8fa6b7f:[DEVL]Realm of Prexus</Text>
+                <Composite Location="0,16" Name="ScoreComposite" Orientation="Horizontal" PackSize="a,f" ScrollExtent="240,28" Size="240,28" SpacingType="Fill">
+                    <Page AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.TeamInfo.Team1.Window" Name="Team1" PackSize="a,a" ScrollExtent="80,28" Size="80,28">
+                        <Text AbsorbsInput="false" Color="#FF6060" DynamicData="/GameData.Battlegrounds.TeamInfo.Team1.Score" Font="/TextStyles.VeryLarge.VeryLargeStyle" Name="Score" PackSize="absolute,absolute" ScrollExtent="80,28" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="80,28" TextAlignment="Center" TextAlignmentVertical="Center">:368f253198a0d824:98</Text>
+                    </Page>
+                    <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.General.TimeRemaining" Font="/TextStyles.Large.LargeStyle" Location="80,0" MaxLines="1" Name="TimeRemaining" ScrollExtent="85,28" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="80,28" TextAlignment="Center" TextAlignmentVertical="Center">:368f2531ad073022:[DEVL]30</Text>
+                    <Page AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.TeamInfo.Team2.Window" Location="160,0" Name="Team2" PackSize="a,a" ScrollExtent="80,28" Size="80,28">
+                        <Text AbsorbsInput="false" Color="#6080FF" DynamicData="/GameData.Battlegrounds.TeamInfo.Team2.Score" Font="/TextStyles.VeryLarge.VeryLargeStyle" Name="Score" PackSize="absolute,absolute" ScrollExtent="80,28" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="80,28" TextAlignment="Center" TextAlignmentVertical="Center">:368f253100b0acbb:122</Text>
+                    </Page>
+                </Composite>
+            </Page>
+            <Page AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.ControlPoint.Window" Location="5,49" Name="ControlPoint" PackSize="a,f" ScrollExtent="240,38" Size="240,38">
+                <Text AbsorbsInput="false" Color="#F0D080" DynamicData="/GameData.Battlegrounds.ControlPoint.Name" Font="/TextStyles.Large.LargeStyle" Name="Name" PackSize="a,f" ScrollExtent="240,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="240,20" TextAlignment="Center">:368f2531c6535b41:[DEVL]Control Point</Text>
+                <Page Location="4,21" Name="Progress" PackSize="absolute,fixed" ScrollExtent="232,14" Size="232,14">
+                    <Progressbar AbsorbsInput="false" Color="#3366CC" DynamicData="/GameData.Battlegrounds.ControlPoint.Progress" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="226,8" Size="226,8" Style="progress_style" />
+                    <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="226,8" Size="226,8" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="232,14" Size="232,14" />
+                    <ProgressbarStyle Bar.Background="progress_fill" Name="progress_style" />
+                    <ImageStyle Name="progress_fill">
+                        <ImageFrame Name="progress_fill" Source="images/tp_default_0.dds" SourceRect="1012,961,1024,971" />
+                    </ImageStyle>
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.Relic.Window" Location="5,49" Name="Relic" PackSize="a,f" ScrollExtent="240,38" Size="240,38" Visible="false">
+                <Text AbsorbsInput="false" Color="#F0D080" Font="/TextStyles.Large.LargeStyle" Name="Label" PackSize="a,f" ScrollExtent="240,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="240,20" TextAlignment="Center">:368f2531bfed4694:Relic Holder</Text>
+                <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.Relic.Carrier" Font="/TextStyles.Large.LargeStyle" Location="0,18" Name="Name" PackSize="a,f" ScrollExtent="240,23" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="240,20" TextAlignment="Center">:368f253149fbb048:[DEVL]PlayerName</Text>
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="270,94" Size="270,94">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="270,94" Size="270,94" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="270,94" Size="270,94" />
+            </Page>
+        </Page>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="dropdown_template" PackSize="a,a" ScrollExtent="234,221" Size="229,221" Visible="false">
+<Text Font="/Fonts.FontArial14" Location="5,0" Margin="1,1,1,1" Name="TextLine" PackSize="a,a" ScrollExtent="229,221" Size="229,221" TextColor="#FBF1D9">$Name$ on $server$</Text>
+<Text Font="/Fonts.FontArial14" Location="5,0" Margin="1,1,1,1" Name="Account" PackSize="a,a" TextAlignment="right" ScrollExtent="215,221" Size="215,221" TextColor="#FBF1D9">($username$)</Text>
+</Page>

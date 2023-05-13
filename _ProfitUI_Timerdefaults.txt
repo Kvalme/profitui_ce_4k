@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="Default" ScrollExtent="320,240" Size="320,240">
+<Data AlertTone="7" CorrectionFactor="60.500" Name="Global"/>
+<Data Alert="0" AlertFlash="true" AlertSound="false" Name="1" Time="30.000"/>
+<Data Alert="5" AlertFlash="true" AlertSound="true" Name="2" Time="45.000"/>
+<Data Alert="4" AlertFlash="false" AlertSound="true" Name="3" Time="60.000"/>
+<Data Alert="1" AlertFlash="false" AlertSound="false" Name="4" Time="120.000"/>
+</Page>

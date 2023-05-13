@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page AbsorbsInput="false" BackgroundColor="#00F000" eq2usescomwndcontrols="false" Location="126,258" MaximumSize="1024,1024" MinimumSize="1,1" Name="Highlight" PackLocation="right,top" ScrollExtent="99,88" Size="99,88" UserMovable="true" UserResizable="true" Visible="false">
+            <Image AbsorbsInput="false" Location="59,29" Name="Arrow1" PackLocation="right,center" PackSize="fixed,fixed" ScrollExtent="40,31" Size="40,31" SourceRect="0,0,40,30" SourceResource="images/arrow05.dds" Stretch="false" Style=" " />
+            <Image AbsorbsInput="false" Location="0,28" Name="Arrow2" PackLocation="left,center" PackSize="fixed,fixed" Rotation="0.500" ScrollExtent="40,33" Size="40,33" SourceRect="0,0,40,30" SourceResource="images/arrow05.dds" Style=" " />
+            <Image AbsorbsInput="false" Location="30,0" Name="Arrow3" PackLocation="center,top" PackSize="fixed,fixed" Rotation="0.750" ScrollExtent="40,33" Size="40,33" SourceRect="0,0,40,30" SourceResource="images/arrow05.dds" Style=" " />
+            <Image AbsorbsInput="false" Location="31,57" Name="Arrow4" PackLocation="center,bottom" PackSize="fixed,fixed" Rotation="0.250" ScrollExtent="40,31" Size="40,31" SourceRect="0,0,40,30" SourceResource="images/arrow05.dds" Style=" " />
+        </Page>

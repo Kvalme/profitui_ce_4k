@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+            <Page Name="MarketWindow">
+                <Text Description="This text comes before the item name in the tell" Name="TellText1">Hi, I see that you are selling </Text>
+                <Text Description="This text comes after the item name in the tell" Name="TellText2">, interested in trading it to me directly?</Text>
+            </Page>

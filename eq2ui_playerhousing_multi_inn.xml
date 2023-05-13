@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2usescomwndcontrols="true" Location="248,248" MaximumSize="1024,768" MinimumSize="416,198" Name="MultiInn" ScrollExtent="462,260" Size="462,260" UserMovable="true" UserResizable="true" version="1.1">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="26,32" Name="Title" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="407,23" Size="407,17" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:4c2c92fc70d42f52:Select an Inn</Text>
+            <Button AbsorbsInput="false" Location="241,190" Name="ButtonCancel" PackLocation="right,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style" Tooltip=":4c2c92fcae453fbb:Cancel">:4c2c92fcae453fbb_1:Cancel</Button>
+            <Button AbsorbsInput="false" Location="81,190" Name="ButtonOK" PackLocation="left,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:4c2c92fc28dc3aa4:[DEVL]Visit</Button>
+            <Scrollbar ArrowPressSound="sounds/button" Control="SelectionLB" Location="398,65" Name="SelectionScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="19,113" Size="19,113" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Listbox Activated="true" DataSource="SelectionDataSource" Location="46,65" Name="SelectionLB" PackLocation="left,top" PackSize="absolute,absolute" RowTemplate="SelectionTemplate" ScrollExtent="1024,113" Size="356,113" Style="SelectionLBStyle" />
+            <Page BackgroundOpacity="1.000" Location="35,56" Name="RoundedGrouper" PackSize="absolute,absolute" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="393,130" Size="393,130" />
+            <ListboxStyle GridStyle="/gridlist.gold_style" Name="SelectionLBStyle" RStyleDefault=" " />
+            <DataSource Name="SelectionDataSource">
+                <Data Name="test item 1" text=":4c2c92fc05d55b55:[DEVL]Jade Tiger Inn" />
+            </DataSource>
+            <Template Name="SelectionTemplate" Size="1024,16">eq2ui_generictexttemplate.xml</Template>
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="462,260" Size="462,260" />
+        </Page>

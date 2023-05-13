@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" AllowCloseOnTop="true" BackgroundOpacity="0.400" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" IgnoreTab="false" Location="1,1" Name="BGLeaderboard" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768" UserScrollable="false" version="1.0">
+            <Page Location="151,48" Name="Main" PackLocation="center,center" ScrollExtent="723,626" Size="723,626">
+                <Page Location="10,188" Name="Scoreboard" ScrollExtent="703,442" Size="703,442">
+                    <Text Font="/TextStyles.Normal.NormalStyle" keytype="string" Location="33,4" Name="Sort1" ScrollExtent="110,23" Size="110,18" sortkey="name" TextAlignmentVertical="Center" TextColor="#F0D080">:bf04745401ee2ec7:Name</Text>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="155,4" Name="Sort2" ScrollExtent="50,23" Size="50,18" sortkey="level" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:bf047454a4d41ce8:Level</Text>
+                    <Image GetsInput="true" Location="226,0" Name="Sort3" ScrollExtent="24,24" Size="24,24" sortkey="kills" SourceRect="145,72,169,96" SourceResource="images/icons/icon_lfg.dds" Stretch="false" Tooltip=":bf0474541159ef5a_3:Kills" />
+                    <Image GetsInput="true" Location="291,0" Name="Sort4" ScrollExtent="24,24" Size="24,24" sortkey="killingblows" SourceRect="170,49,194,72" SourceResource="images/icons/icon_lfg.dds" Stretch="false" Tooltip=":bf0474544b07d3fe:Killing Blows" />
+                    <Image GetsInput="true" Location="355,0" Name="Sort5" ScrollExtent="24,24" Size="24,24" sortkey="deaths" SourceRect="97,97,121,121" SourceResource="images/icons/icon_lfg.dds" Stretch="false" Tooltip=":bf0474543f6c7fd8:Deaths" />
+                    <Image GetsInput="true" Location="420,0" Name="Sort6" ScrollExtent="24,24" Size="24,24" sortkey="damageinflicted" SourceRect="121,48,145,72" SourceResource="images/icons/icon_lfg.dds" Stretch="false" Tooltip=":bf0474545484d68d:Damage Inflicted" />
+                    <Image GetsInput="true" Location="485,0" Name="Sort7" ScrollExtent="24,24" Size="24,24" sortkey="damagereceived" SourceRect="217,48,241,72" SourceResource="images/icons/icon_lfg.dds" Stretch="false" Tooltip=":bf0474541ab95cca:Damage Received" />
+                    <Image GetsInput="true" Location="550,0" Name="Sort8" ScrollExtent="24,24" Size="24,24" sortkey="healinggiven" SourceRect="2,122,26,146" SourceResource="images/icons/icon_lfg.dds" Stretch="false" Tooltip=":bf047454cf684401:Healing Given" />
+                    <Image GetsInput="true" Location="616,0" Name="Sort9" ScrollExtent="24,24" Size="24,24" sortkey="healingreceived" SourceRect="170,169,194,193" SourceResource="images/icons/icon_lfg.dds" Stretch="false" Tooltip=":bf047454e9a0d978:Healing Received" />
+                    <DataSource Name="ScoreboardDS">
+                        <Data color="#FF0000" damageinflicted="18,569" damagereceived="1,341" deaths="0" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="27" level="80" Name="Player" type="guardian" />
+                        <Data color="#FF0000" damageinflicted="12,569" damagereceived="1,341" deaths="4" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="14" level="82" Name="APlayer" type="wizard" />
+                        <Data color="#0000FF" damageinflicted="1,569" damagereceived="1,341" deaths="7" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="3" level="81" Name="GPlayer" type="berserker" />
+                        <Data color="#FF0000" damageinflicted="7,569" damagereceived="1,341" deaths="2" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="12" level="85" Name="WPlayer" type="dirge" />
+                        <Data color="#0000FF" damageinflicted="28,569" damagereceived="1,341" deaths="5" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="26" level="88" Name="GPlayer" type="coercer" />
+                        <Data color="#0000FF" damageinflicted="13,569" damagereceived="1,341" deaths="9" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="18" level="84" Name="UPlayer" type="illusionist" />
+                        <Data color="#FF0000" damageinflicted="17,569" damagereceived="1,341" deaths="0" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="19" level="80" Name="KPlayer" type="troubador" />
+                        <Data color="#0000FF" damageinflicted="13,569" damagereceived="1,341" deaths="6" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="4" level="83" Name="FPlayer" type="warlock" />
+                        <Data color="#FF0000" damageinflicted="12,569" damagereceived="1,341" deaths="2" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="25" level="88" Name="MPlayer" type="monk" />
+                        <Data color="#FF0000" damageinflicted="17,569" damagereceived="1,341" deaths="2" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="3" level="84" Name="EPlayer" type="warden" />
+                        <Data color="#0000FF" damageinflicted="19,569" damagereceived="1,341" deaths="0" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="7" level="86" Name="Player" type="defiler" />
+                        <Data color="#0000FF" damageinflicted="28,569" damagereceived="1,341" deaths="7" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="29" level="88" Name="IPlayer" type="conjuror" />
+                        <Data color="#FF0000" damageinflicted="1,569" damagereceived="1,341" deaths="4" healinggiven="1,285" healingreceived="12,940" killingblows="7" kills="24" level="83" Name="MPlayer" type="necromancer" />
+                    </DataSource>
+                    <Template Name="score_template" Size="521,20">eq2ui_bgscore_template.xml</Template>
+                    <Listbox AutoScrollSpeed="0.000" DataSource="ScoreboardDS" Location="10,31" Name="List" PackSize="absolute,absolute" RowTemplate="score_template" ScrollExtent="661,398" Size="661,398" Style="/listboxlist.clear_listbox_no_selection" UserScrollable="false" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="List" HideIfUnnecessary="false" Location="671,31" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,398" Size="22,398" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    <Page Name="TableFrame" PackSize="a,a" ScrollExtent="703,437" Size="703,437">
+                        <Page BackgroundOpacity="1.000" Name="Header" PackSize="absolute,fixed" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="703,25" Size="703,25" Visible="false" />
+                        <Page BackgroundOpacity="1.000" Location="0,25" Name="Data" PackSize="absolute,absolute" RStyleDefault="/CommonElements.DataGrouper.data.data_frame.rect" ScrollExtent="703,412" Size="703,412" />
+                    </Page>
+                </Page>
+                <Page Location="1,37" Name="Header" ScrollExtent="721,161" Size="721,161">
+                    <Page Location="504,0" Name="BlueTeamScorePage" ScrollExtent="216,161" Size="216,161">
+                        <Text AbsorbsInput="false" Color="#6080FF" DynamicData="/GameData.Battlegrounds.TeamInfo.Team2.Score" Font="TeamUberLargeTextStyle" Location="19,84" Name="Team2Score" ScrollExtent="178,65" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="178,65" TextAlignment="Center" TextAlignmentVertical="Center">:bf04745498a0d824_3:1500</Text>
+                        <Image Location="7,2" Name="BlueTeamIcon" ScrollExtent="202,131" Size="202,131" SourceRect="0,0,202,131" SourceResource="images/arenachampions/bg_scoreboard.dds" />
+                    </Page>
+                    <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="TeamUberLargeTextStyle" PointSize="64" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStylesNew.Drop.style" UseCachedFont="true" />
+                    <Page Name="RedTeamScorePage" ScrollExtent="216,161" Size="216,161">
+                        <Text AbsorbsInput="false" Color="#FF6060" DynamicData="/GameData.Battlegrounds.TeamInfo.Team1.Score" Font="TeamUberLargeTextStyle" Location="19,84" Name="Team1Score" ScrollExtent="178,65" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="178,65" TextAlignment="Center" TextAlignmentVertical="Center">:bf04745498a0d824:98</Text>
+                        <Image Location="7,2" Name="RedTeamIcon" ScrollExtent="202,131" Size="202,131" SourceRect="0,125,202,256" SourceResource="images/arenachampions/bg_scoreboard.dds" />
+                    </Page>
+                    <Composite Alignment="Center" Location="189,0" Name="ResultsComositePage" ScrollExtent="351,165" Size="351,161" SpacingType="Constant">
+                        <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.MyRewards.CurrentResult" Font="/TextStyles.CombatBubbleCrit.CombatBubbleCritStyle" Location="27,0" Name="ResultText" PackSize="a" ScrollExtent="297,80" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="297,80" TextAlignment="Center" UserMovable="true" UserResizable="true">:bf047454d6e4732a:[DEVL]Iksar Ruins</Text>
+                        <Page Location="7,80" Name="SpoilsPage" ScrollExtent="333,85" Size="333,85">
+                            <Page DynamicData="/GameData.Battlegrounds.MyRewards.TotalMarks" Location="34,8" Name="TokensPage" ScrollExtent="89,74" Size="89,74">
+                                <Image DynamicData="/GameData.Battlegrounds.MyRewards.TotalMarks" GetsInput="true" Location="21,3" Name="TokensIcon" ScrollExtent="42,42" Size="42,42" sortkey="kills" SourceRect="42,84,84,126" SourceResource="images/icons/icon_is84.dds" Stretch="false" Tooltip=":bf0474541159ef5a:Kills" />
+                                <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.MyRewards.TotalMarks" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="2,44" Name="TotalTokens" ScrollExtent="80,28" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="80,28" TextAlignment="Center" TextAlignmentVertical="Center">:bf04745498a0d824_1:98</Text>
+                            </Page>
+                            <Page DynamicData="/GameData.Battlegrounds.MyRewards.TotalExperience" Location="123,8" Name="XPPage" ScrollExtent="89,74" Size="89,74">
+                                <Image DynamicData="/GameData.Battlegrounds.MyRewards.TotalExperience" GetsInput="true" Location="21,3" Name="ExperienceIcon" ScrollExtent="42,42" Size="42,42" sortkey="kills" SourceRect="1,126,43,168" SourceResource="images/icons/icon_is84.dds" Stretch="false" Tooltip=":bf0474541159ef5a_1:Kills" />
+                                <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.MyRewards.TotalExperience" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="2,44" Name="TotalExperience" ScrollExtent="80,28" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="80,28" TextAlignment="Center" TextAlignmentVertical="Center">:bf04745498a0d824_2:98</Text>
+                            </Page>
+                            <Page DynamicData="/GameData.Battlegrounds.MyRewards.TotalAwards" Location="212,8" Name="Rewards" ScrollExtent="89,74" Size="89,74">
+                                <Image DynamicData="/GameData.Battlegrounds.MyRewards.TotalAwards" GetsInput="true" Location="21,3" Name="AwardsIcon" ScrollExtent="42,42" Size="42,42" sortkey="kills" SourceRect="1,84,43,126" SourceResource="images/icons/icon_is84.dds" Stretch="false" Tooltip=":bf0474541159ef5a_2:Kills" />
+                                <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.MyRewards.TotalAwards" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="2,44" Name="TotalAwards" ScrollExtent="80,28" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="80,28" TextAlignment="Center" TextAlignmentVertical="Center">:bf04745498a0d824_4:98</Text>
+                            </Page>
+                        </Page>
+                    </Composite>
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" Location="139,42" Name="WindowFrame" PackLocation="center,center" ScrollExtent="746,687" Size="746,687">
+                <Button Location="286,631" MaximumSize="16384,32" MinimumSize="32,32" Name="Close" ScrollExtent="175,32" Size="175,32" Style="/CommonElements.PushButton.data.style">:bf0474542d3f513f:Close</Button>
+                <Text AbsorbsInput="false" DynamicData="/GameData.Battlegrounds.General.ZoneName" Font="/TextStyles.Large.LargeStyle" Location="24,15" Name="Title" PackSize="a" ScrollExtent="697,26" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="697,26" TextAlignment="Center" TextColor="#FFEEBB" UserMovable="true" UserResizable="true">:bf047454d6e4732a_1:[DEVL]Iksar Ruins</Text>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="114,12" Name="TitleDecoration" PackSize="a,f" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="517,30" Size="517,30" />
+                <Page AbsorbsInput="false" Location="556,0" Name="RightGrouper" PackLocation="right,top" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="725,675" Size="725,675" />
+                <Namespace Name="bkg">
+                    <ImageStyle Filter="true" Name="center">
+                        <ImageFrame Name="image" Source="images/arenachampions/bg_scoreboard_bg.dds" SourceRect="0,0,512,476" />
+                    </ImageStyle>
+                    <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                </Namespace>
+                <Page AbsorbsInput="false" BackgroundOpacity="0.875" Location="14,4" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/MainHUD.Welcome.WindowFrame.bkg.rect" ScrollExtent="718,668" Size="718,668" />
+            </Page>
+        </Page>

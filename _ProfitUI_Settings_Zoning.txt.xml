@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+            <Page Name="Zoning">
+                <Text Description="This controls whether you want the Did you know... tips overlay to be shown by default" Name="ShowTips">false</Text>
+            </Page>

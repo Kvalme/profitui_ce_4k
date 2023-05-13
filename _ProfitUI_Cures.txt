@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page Name="ProfitUI_Cures">
+
+<Data Name="CancelSpellcast" Value="false"/>
+
+<Data Name="TraumaMacro" Code="" />
+<Data Name="ArcaneMacro" Code="" />
+<Data Name="NoxiousMacro" Code="" />
+<Data Name="ElementalMacro" Code="" />
+<Data Name="CurseMacro" Code="" />
+
+<Data Name="TraumaPotion" potionvdl_3="855760996" potionvdl_2="-1627882203" potionvdl_1="618113851"/>
+<Data Name="ArcanePotion" potionvdl_3="1372020673" potionvdl_2="1350941424" potionvdl_1="-357929746"/>
+<Data Name="NoxiousPotion" potionvdl_3="-250251480" potionvdl_2="-1536835434" potionvdl_1="1590743587"/>
+<Data Name="ElementalPotion" potionvdl_3="2105175164" potionvdl_2="-583482304" potionvdl_1="-1221388992"/>
+
+<Data Name="Assassin" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Beastlord" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Berserker" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Brigand" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Bruiser" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Channeler" TraumaCure="2945678992" ArcaneCure="2945678992" NoxiousCure="2945678992" ElementalCure="2945678992" CurseCure="969542071"/>
+<Data Name="Coercer" TraumaCure="3530975588" ArcaneCure="3530975588" NoxiousCure="3530975588" ElementalCure="3530975588" CurseCure="NONE"/>
+<Data Name="Conjuror" TraumaCure="3530975588" ArcaneCure="3530975588" NoxiousCure="3530975588" ElementalCure="3530975588" CurseCure="NONE"/>
+<Data Name="Defiler" TraumaCure="2945678992" ArcaneCure="2945678992" NoxiousCure="2945678992" ElementalCure="2945678992" CurseCure="969542071"/>
+<Data Name="Dirge" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Fury" TraumaCure="2945678992" ArcaneCure="2945678992" NoxiousCure="2945678992" ElementalCure="2945678992" CurseCure="969542071"/>
+<Data Name="Guardian" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Illusionist" TraumaCure="3530975588" ArcaneCure="3530975588" NoxiousCure="3530975588" ElementalCure="3530975588" CurseCure="NONE"/>
+<Data Name="Inquisitor" TraumaCure="2945678992" ArcaneCure="2945678992" NoxiousCure="2945678992" ElementalCure="2945678992" CurseCure="969542071"/>
+<Data Name="Monk" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Mystic" TraumaCure="2945678992" ArcaneCure="2945678992" NoxiousCure="2945678992" ElementalCure="2945678992" CurseCure="969542071"/>
+<Data Name="Necromancer" TraumaCure="3530975588" ArcaneCure="3530975588" NoxiousCure="3530975588" ElementalCure="3530975588" CurseCure="NONE"/>
+<Data Name="Paladin" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Ranger" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Shadowknight" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Swashbuckler" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Templar" TraumaCure="2945678992" ArcaneCure="2945678992" NoxiousCure="2945678992" ElementalCure="2945678992" CurseCure="969542071"/>
+<Data Name="Troubador" TraumaCure="NONE" ArcaneCure="NONE" NoxiousCure="NONE" ElementalCure="NONE" CurseCure="NONE"/>
+<Data Name="Warden" TraumaCure="2945678992" ArcaneCure="2945678992" NoxiousCure="2945678992" ElementalCure="2945678992" CurseCure="969542071"/>
+<Data Name="Warlock" TraumaCure="3530975588" ArcaneCure="3530975588" NoxiousCure="3530975588" ElementalCure="3530975588" CurseCure="NONE"/>
+<Data Name="Wizard" TraumaCure="3530975588" ArcaneCure="3530975588" NoxiousCure="3530975588" ElementalCure="3530975588" CurseCure="NONE"/>
+
+</Page>
+ 

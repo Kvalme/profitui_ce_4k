@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page IgnoreTab="false" Name="LoginScene" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+    <Page BackgroundOpacity="0.275" IgnoreTab="false" Name="LSUsernamePassword" OnShowEffector="/CommonElements.Effectors.FastFadeIn" Opacity="0.000" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" UserResizable="true" Visible="false">
+        <Button Location="1003,749" Name="ShowDevmode" OnPress="Parent.WindowPage.Height=458" PackLocation="right,bottom" ScrollExtent="21,19" Size="21,19" />
+        <OpacityEffector Name="ShowEffector" Speed="6.000" TargetOpacity="1.000" />
+        <Page AbsorbsInput="false" Location="245,90" Name="ProfitUI_placer" PackLocation="center,center" ScrollExtent="215,210" Size="215,210">
+            <Image Name="ProfitUI_enabled_outline" ScrollExtent="215,210" Size="215,210" SourceRect="17,20,232,230" SourceResource="images/ProfitUI_enabled_outline.dds" Stretch="false" />
+            <Image Name="ProfitUI_enabled" ScrollExtent="215,210" Size="215,210" SourceRect="17,20,232,230" SourceResource="images/ProfitUI_enabled.dds" Stretch="false" />
+        </Page>
+        <Page IgnoreTab="false" Location="310,210" Name="WindowPage" PackLocation="center,center" ScrollExtent="526,362" Size="526,362">
+<include>_Catalyst_CurrentVersion.xml</include>
+            <Button Location="143,446" MaximumSize="16384,32" MinimumSize="32,32" Name="ExecuteButton" OnHoverIn="OnPress=Parent.Script.Textbox.LocalText" ScrollExtent="354,32" Size="354,32" Style="/CommonElements.PushButton.data.style">:e98f9a1132183385:Execute Script</Button>
+            <Button Location="36,446" MaximumSize="16384,32" MinimumSize="32,32" Name="ClearTextButton" OnPress="Parent.Script.Textbox.Text=&apos;&apos;" ScrollExtent="104,32" Size="104,32" Style="/CommonElements.PushButton.data.style">:e98f9a11db8f21fd:Clear</Button>
+            <Page BackgroundOpacity="1.000" Location="36,376" Name="Script" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="462,102" Size="462,102">
+                <Scrollbar ArrowPressSound="sounds/button" Control="Textbox" HideIfUnnecessary="true" Location="430,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,82" Size="22,82" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="10,10" MaxLines="Unlimited" Name="Textbox" PackSize="absolute,absolute" ScrollExtent="420,82" Size="420,82" Style="/CommonElements.Textbox.data.system_style" WrapWidth="Automatic" />
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="17,17" Name="InteriorGrouper" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="492,336" Size="492,336" Visible="false">
+                <Page BackgroundOpacity="1.000" Name="Frame" RStyleDefault="/WindowElements.InteriorGrouper.data.frame.rect" ScrollExtent="492,303" Size="492,303" />
+            </Page>
+            <Button Name="AutoLogin" OnPress="Parent.CharacterSelect.SelectedItemIndex=SelectedItemIndex&#xD;&#xA;Parent.ConnectButton.Press=true" Visible="false" />
+            <Scrollbar ArrowPressSound="sounds/button" Control="CharacterSelect" HideIfUnnecessary="true" Location="475,75" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" ScrollExtent="22,244" Size="22,244" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Listbox BackgroundColor="#FFFFFF" DataSource="CharacterData" Location="260,77" Margin="10,10,10,10" Name="CharacterSelect" OnDoubleClick="Parent.AutoplayChar.Text=SelectedItem.Name&#xD;&#xA;Parent.AutoplayWorld.Text=SelectedItem.Server&#xD;&#xA;Parent.Username.Text=SelectedItem.Username&#xD;&#xA;Parent.Password.Text=SelectedItem.Password&#xD;&#xA;Parent.ConnectButton.Press=true" OnSelect="Parent.AutoplayChar.Text=SelectedItem.Name&#xD;&#xA;Parent.AutoplayWorld.Text=SelectedItem.Server&#xD;&#xA;Parent.Username.Text=SelectedItem.Username&#xD;&#xA;Parent.Password.Text=SelectedItem.Password" RowTemplate="CharacterSelect_template" ScrollExtent="320,240" Size="228,240" Style="/CommonElements.Listbox.data.listbox_style" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="260,38" Name="SelectChar" ScrollExtent="222,33" Size="222,33" TextAlignmentVertical="Center" TextColor="#F2EFE1">Select Character below or enter login data manually on the left:</Text>
+            <Button Location="41,267" MaximumSize="16384,26" MinimumSize="26,26" Name="ClearAllBtn" OnPress="Parent.Username.Text=&apos;&apos; Parent.Password.Text=&apos;&apos; Parent.AutoplayChar.Text=&apos;&apos; Parent.AutoplayWorld.Text=&apos;&apos;" ScrollExtent="69,26" Size="69,26" Style="/CommonElements.SmallPushButton.data.style">Clear All</Button>
+            <Button Location="110,267" MaximumSize="16384,26" MinimumSize="26,26" Name="ClearCSBtn" OnPress="Parent.AutoplayChar.Text=&apos;&apos; Parent.AutoplayWorld.Text=&apos;&apos;" ScrollExtent="126,26" Size="126,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip="Clears character and server choice so you can login to character select/create screen">Clear Character/Server</Button>
+<include>_ProfitUI_LoginData.txt</include>
+            <Template Name="CharacterSelect_template" Size="320,20">_ProfitUI_Loginscene_RowTemplate.xml</Template>
+            <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="41,53" Name="Login" ScrollExtent="192,30" Size="192,30" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EFE1">:3129920a94361beb:Login</Text>
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="19,128" Name="UsernameLabel" ScrollExtent="80,19" Size="80,19" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#F0D080">:3129920afed79bde:Username</Text>
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="108,124" MaximumSize="16384,30" MinimumSize="30,30" Name="Username" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="129,30" Size="129,30" Style="/CommonElements.Textfield.data.style" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="19,161" Name="PasswordLabel" ScrollExtent="80,19" Size="80,19" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#F0D080">:3129920a334bdb7c:Password</Text>
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="108,156" MaximumSize="16384,30" MinimumSize="30,30" Name="Password" Password="true" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="129,30" Size="129,30" Style="/CommonElements.Textfield.data.style" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="19,192" Name="AutoplayCharLabel" OnHide="Visible=True" ScrollExtent="80,19" Size="80,19" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#F0D080">:3129920aee74cd68:Character</Text>
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="108,188" MaximumSize="16384,30" MinimumSize="30,30" Name="AutoplayChar" OnHide="Visible=True" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="129,30" Size="129,30" Style="/CommonElements.Textfield.data.style" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="19,227" Name="AutoplayWorldLabel" OnHide="Visible=True" ScrollExtent="80,19" Size="80,19" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#F0D080">:3129920a0449c1b8:Server</Text>
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="108,222" MaximumSize="16384,30" MinimumSize="30,30" Name="AutoplayWorld" OnHide="Visible=True" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="129,30" Size="129,30" Style="/CommonElements.Textfield.data.style" />
+            <Button IsDefaultButton="true" Location="36,300" MaximumSize="16384,38" MinimumSize="38,38" Name="ConnectButton" OnPress="Parent.Parent.Parent.Parent.LoginScene.LSUsernamePassword.OnShow=&apos; &apos;" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:3129920a94361beb_1:Login</Button>
+            <Button Location="138,300" MaximumSize="16384,38" MinimumSize="38,38" Name="QuitButton" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:3129920acbc4d4cf:Exit</Button>
+            <Page BackgroundOpacity="1.000" Location="26,36" Name="RoundedGrouper" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="224,226" Size="224,226" />
+            <Page BackgroundOpacity="1.000" Location="250,69" Name="RoundedGrouper2" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="252,254" Size="252,254" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="a,a" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="524,371" Size="524,371" />
+        </Page>
+    </Page>
+    <Page Location="322,294" Name="LSModeSelector" PackLocation="cfc,cfc" ScrollExtent="387,270" Size="387,270" Visible="false">
+        <Dropdownbox DataSource="ConfigDataSource" Location="106,155" Name="DropdownboxConfig" PackLocation="cfc,bottom" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="188,32" Size="188,32" Style="/CommonElements.Dropdown.data.style" />
+        <DataSource Name="ConfigDataSource">
+            <Data file="EQ2_Default.cfg" Name="EverQuest II" text=":3129920a24a94d0b:EverQuest II Defaults" />
+            <Data file="EQ2-EQMode.cfg" Name="EverQuest" text=":3129920a3c5cda88:EverQuest" />
+            <Data file="EQ2-OtherMode.cfg" Name="Other" text=":3129920ae766e5db:Other" />
+        </DataSource>
+        <Text Font="/TextStyles.Large.LargeStyle" Location="45,35" Name="TitleText" PackSize="a,f" ScrollExtent="300,25" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="300,25" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:3129920aaced4ae8:EverQuest II Keyboard Layout</Text>
+        <Text Font="/TextStyles.Normal.NormalStyle" Location="50,68" Name="SubText" PackSize="a,a" ScrollExtent="288,85" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="288,85" TextAlignment="Center" TextColor="#FBF1D9">:3129920a90b857ad:Choose which keyboard settings you would like to start out with in EverQuest II. You can change this at any time from the Options menu.</Text>
+        <Page BackgroundOpacity="1.000" Location="40,60" Name="CorneredGrouper" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="310,136" Size="310,136" />
+        <Button IsDefaultButton="true" Location="147,198" MaximumSize="16384,38" MinimumSize="32,38" Name="OKButton" PackLocation="cfc,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style">:3129920a28c926d2:OK</Button>
+        <Button IsCancelButton="true" Location="235,198" MaximumSize="16384,38" MinimumSize="32,32" Name="CancelButton" PackLocation="right,bottom" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style" Tooltip=":3129920a8f513b75:Use the default configuration." Visible="false">:3129920aae453fbb:Cancel</Button>
+        <Page BackgroundOpacity="1.000" Name="FloaterFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.FloaterFrame.data.frame.rect" ScrollExtent="387,270" Size="387,270">
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="327,210" Size="327,210">
+                <Page BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,absolute" RStyleDefault="rect" ScrollExtent="327,210" Size="327,210" />
+            </Page>
+        </Page>
+    </Page>
+    <ImageStyle Name="background">
+        <ImageFrame Name="title" Source="images/splashbkg.dds" SourceRect="0,40,1024,808" />
+    </ImageStyle>
+    <Page Name="LSInfo" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <OpacityEffector Name="ShowEffector" Speed="6.000" TargetOpacity="1.000" />
+        <Page Location="327,294" Name="WindowPage" PackLocation="center,center" PackSize="fixed,fixed" ScrollExtent="370,270" Size="370,270">
+            <Text Font="/TextStyles.Large.LargeStyle" Location="43,44" Name="InfoText" PackSize="absolute,absolute" ScrollExtent="287,138" Size="287,138" TextAlignment="Center" TextAlignmentVertical="Center">:3129920a2c513e1b:[DEVL]Message</Text>
+            <Page BackgroundOpacity="1.000" Location="35,35" Name="Warning" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="303,155" Size="303,155" />
+            <Button IsDefaultButton="true" Location="129,193" MaximumSize="16384,38" MinimumSize="38,38" Name="OkButton" PackLocation="left,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:3129920a13a7061a:Ok</Button>
+            <Button IsDefaultButton="true" Location="286,193" MaximumSize="16384,38" MinimumSize="38,38" Name="HelpButton" PackLocation="left,bottom" ScrollExtent="49,38" Size="49,38" Style="/CommonElements.LargePushButton.data.style" Visible="false">:3129920a9b9b3d4f:?</Button>
+            <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="310,210" Size="310,210" />
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="370,270" Size="370,270" />
+        </Page>
+    </Page>
+    <Page BackgroundColor="#FFFFFF" Name="SOELogo" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <OpacityEffector Name="ShowEffector" SetOnEffect="true" Speed="1.000" TargetOpacity="1.000" />
+        <Image Location="374,297" Name="logo" PackLocation="cfc,cfc" PackSize="p,p" ScrollExtent="296,216" Size="296,216" StretchType="ProportionalBound" Style="image" />
+        <ImageStyle Name="image">
+            <ImageFrame atlas="none" Name="title" Source="images/frontend/splash_logos.dds" SourceRect="526,657,976,991" />
+        </ImageStyle>
+        <Image Name="Backdrop" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" StretchType="ProportionalBound" Style="background" />
+    </Page>
+    <Page BackgroundColor="#FFFFFF" Name="EQ2Title" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768">
+        <OpacityEffector Name="ShowEffector" SetOnEffect="true" Speed="1.000" TargetOpacity="1.000" />
+        <Image Name="Backdrop" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" StretchType="ProportionalBound" Style="background" />
+    </Page>
+    <Page Name="EpilepsyWarning" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <OpacityEffector Name="ShowEffector" SetOnEffect="true" Speed="1.000" TargetOpacity="1.000" />
+        <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="120,193" Name="LabelEpilepsyWhite" PackLocation="center,fpn" ScrollExtent="808,32" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="808,32" TextAlignment="Center" TextAlignmentVertical="Center">:3129920a469f53c3:EPILEPSY WARNING</Text>
+        <Scrollbar ArrowPressSound="sounds/button" Control="LabelEpilepsyBodyWhite" HideIfUnnecessary="true" Location="895,243" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,325" Size="22,325" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+        <Text Font="/TextStyles.Large.LargeStyle" Location="130,243" Name="LabelEpilepsyBodyWhite" PackLocation="center,proportional" ScrollExtent="765,325" Size="765,325">:3129920a2c047da7:Please read before playing this game or allowing your children to play this game. Some people are susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns in everyday life. Such people may have a seizure while watching certain monitor images or playing certain video games. This may happen even if the person has no medical history of epilepsy or has never had any epileptic seizures. If you or anyone in your family has ever had symptoms relating to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, consult your doctor prior to playing. We advise that parents should monitor the use of video games by their children. If you or your child experience any of the following symptoms: dizziness, blurred vision, eye or muscle twitches, loss of consciousness, disorientation, any involuntary movement or convulsion, while playing a video game, IMMEDIATELY discontinue use and consult your doctor. Do not stand too close to the screen. Avoid playing if you are tired or have not had much sleep. Make sure the room you are in is well lit. Rest for at least 10 to 15 minutes per hour while playing a video game.</Text>
+        <Page BackgroundOpacity="1.000" Location="100,169" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="840,430" Size="840,430" />
+        <Image Name="Backdrop" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" StretchType="ProportionalBound" Style="background" />
+    </Page>
+    <Page Name="EUMerge" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <OpacityEffector Name="ShowEffector" SetOnEffect="true" Speed="1.000" TargetOpacity="1.000" />
+        <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="120,194" Name="LabelEUMergeWhite" PackLocation="center,fpn" ScrollExtent="808,32" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="808,32" TextAlignment="Center" TextAlignmentVertical="Center">:3129920a090110c3:EU PVP Server Merger Notice</Text>
+        <Scrollbar ArrowPressSound="sounds/button" Control="LabelEUMergeBodyWhite" HideIfUnnecessary="true" Location="895,244" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,325" Size="22,325" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+        <Text Font="/TextStyles.Large.LargeStyle" Location="130,244" Name="LabelEUMergeBodyWhite" PackLocation="center,proportional" ScrollExtent="765,325" Size="765,325">:3129920ae229d353:If you had characters on any EU PVP Server (Gorenaire, Talendor, or Darathar): Your EU PvP characters have been moved to Venekor (US PVP). Please exit EverQuest II and re-run the launcher. On the Launcher&apos;s first screen, select (English US) in the Region Select pull-down in the upper right of the window. Once you have logged in and completed patching, click PLAY and you will see your characters.</Text>
+        <Page BackgroundOpacity="1.000" Location="100,170" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="840,430" Size="840,430" />
+        <Image Name="Backdrop" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" StretchType="ProportionalBound" Style="background" />
+    </Page>
+    <Page BackgroundColor="#FFFFFF" Name="ESRBRating" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <OpacityEffector Name="ShowEffector" SetOnEffect="true" Speed="1.000" TargetOpacity="1.000" />
+        <ImageStyle Name="image">
+            <ImageFrame atlas="none" Name="title" Source="images/frontend/splash_logos.dds" SourceRect="6,758,490,1001" />
+        </ImageStyle>
+        <Image Location="335,310" Name="ESRB" PackLocation="cfc,cfc" PackSize="p,p" ScrollExtent="360,207" Size="360,207" StretchType="ProportionalBound" Style="image" />
+        <Image Name="Backdrop" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" StretchType="ProportionalBound" Style="background" />
+    </Page>
+    <Page Name="Advertisement" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+        <OpacityEffector Name="ShowEffector" SetOnEffect="true" Speed="1.000" TargetOpacity="1.000" />
+        <ImageStyle Name="sentinel">
+            <ImageFrame atlas="none" Name="title" Source="images/frontend/sentinels_collectors.dds" SourceRect="0,0,1024,768" />
+        </ImageStyle>
+        <ImageStyle Name="nvidia">
+            <ImageFrame atlas="none" Name="title" Source="images/frontend/splash_logos.dds" SourceRect="0,494,526,757" />
+        </ImageStyle>
+        <Image BackgroundOpacity="1.000" Name="FullscreenAd" PackLocation="left,top" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768" StretchType="ProportionalBound" Style="sentinel" Visible="false" />
+        <Image Location="353,328" Name="Advertisement" PackLocation="cfc,cfc" PackSize="p,p" ScrollExtent="322,158" Size="322,158" StretchType="ProportionalBound" Style="nvidia" />
+        <Image Name="Backdrop" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" StretchType="ProportionalBound" Style="background" />
+    </Page>
+</Page>

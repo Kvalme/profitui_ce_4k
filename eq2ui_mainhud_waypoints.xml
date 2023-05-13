@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="4,103" MinimumSize="214,220" Name="Waypoint" ScrollExtent="224,403" Size="224,403" UserMovable="true" UserResizable="true" Visible="false">
+            <DataSourceContainer Name="TreeDSContainer" />
+            <Text AbsorbsInput="false" Color="#C7C7C7" Font="/Fonts.FontZapf18" Location="15,362" Name="StatusText" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="194,20" Size="194,20" TextAlignment="Center">:fa6ca395b602881b:No waypoints</Text>
+            <Button Location="56,361" Name="StopFollowingButton" PackLocation="center,bottom" ScrollExtent="113,32" Size="113,32" Style="/CommonElements.PushButton.data.style">:fa6ca395ae453fbb:Cancel</Button>
+            <Text AbsorbsInput="false" BackgroundOpacity="0.275" Color="#FFDDAA" Font="/Fonts.FontZapf18" Location="9,30" Name="ZoneText" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="205,20" Size="205,20" TextAlignment="Center">:fa6ca395e379584c:The Isle of Refuge</Text>
+            <Scrollbar ArrowPressSound="sounds/button" Control="TreeView" HideIfUnnecessary="true" Location="189,55" Name="TreeViewScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,296" Size="22,296" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+            <TreeView BackgroundColor="#555555" BackgroundOpacity="0.000" DataSourceContainer="TreeDSContainer" Location="12,55" MinimumScrollExtent="176,0" Name="TreeView" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="176,296" SelectionAllowedMultiRow="false" ShowChecks="false" Size="176,296" Style="TreeViewStyle" UserResizable="true" />
+            <TreeViewStyle CellHeight="18" DefaultTextStyle="/Fonts.FontZapf15" GridColor="#FFDDAA" ImageStyleChecked="/imagelist.widget_check_on" ImageStyleCollapsed="/imagelist.widget_tree_expand" ImageStyleExpanded="/imagelist.widget_tree_contract" ImageStyleUnchecked="/imagelist.widget_check_off" Indentation="15" Name="TreeViewStyle" RStyleActivated="RectStyle" RStyleDefault="RectStyle" RStyleSelected="RectStyle" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
+            <RectangleStyle Color="#FFDDAA" Name="RectStyle" />
+            <Template Name="template" Size="1024,18">eq2ui_waypointtemplate.xml</Template>
+            <Page BackgroundOpacity="1.000" Location="2,45" Name="RoundedGrouper" PackSize="absolute,absolute" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="219,315" Size="219,315" />
+            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="248,419" Size="248,419">
+                <Button Location="192,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":fa6ca395ec278586:Window Settings" UserMovable="true" />
+                <Button Location="172,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":fa6ca395574a0c6d:Help" UserMovable="true" />
+                <Button Location="212,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":fa6ca3952d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="58,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="210,70" Size="210,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="23,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="90,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="86,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:fa6ca395fc0cddb9:Waypoints</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="248,419" Size="248,419" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="248,419" Size="248,419" />
+            </Page>
+        </Page>

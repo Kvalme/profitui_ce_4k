@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2usescomwndcontrols="true" Location="345,284" Name="Lotto" PackLocation="center,center" ScrollExtent="335,300" Size="335,300" UserMovable="true" Visible="false">
+            <Page BackgroundOpacity="1.000" Location="30,50" Name="1" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="276,59" Size="276,59">
+                <Page BackgroundOpacity="1.000" Location="8,8" MaximumSize="44,44" MinimumSize="44,44" Name="1" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="51,8" MaximumSize="44,44" MinimumSize="44,44" Name="2" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_1:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="94,8" MaximumSize="44,44" MinimumSize="44,44" Name="3" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_2:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="137,8" MaximumSize="44,44" MinimumSize="44,44" Name="4" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_3:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="180,8" MaximumSize="44,44" MinimumSize="44,44" Name="5" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_4:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="223,8" MaximumSize="44,44" MinimumSize="44,44" Name="6" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_5:1</Text>
+                    </Page>
+                </Page>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="30,106" Name="2" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="276,59" Size="276,59">
+                <Page BackgroundOpacity="1.000" Location="8,8" MaximumSize="44,44" MinimumSize="44,44" Name="1" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_6:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="51,8" MaximumSize="44,44" MinimumSize="44,44" Name="2" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_7:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="94,8" MaximumSize="44,44" MinimumSize="44,44" Name="3" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_8:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="137,8" MaximumSize="44,44" MinimumSize="44,44" Name="4" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_9:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="180,8" MaximumSize="44,44" MinimumSize="44,44" Name="5" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_10:1</Text>
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="223,8" MaximumSize="44,44" MinimumSize="44,44" Name="6" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
+                    <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">
+                        <Text AbsorbsInput="false" BackgroundOpacity="0.475" Font="/TextStyles.SuperLarge.SuperLargeStyle" GetsInput="false" Location="0,-2" Name="Text" ScrollExtent="38,41" ShadowStyle="/ShadowStyles.SmallText" Size="38,40" TextAlignment="Center" TextAlignmentVertical="Center">:f0c3876a7c231048_11:1</Text>
+                    </Page>
+                </Page>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="20,167" Name="Ticket" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="295,80" Size="295,80">
+                <Button Location="200,24" MaximumSize="16384,32" MinimumSize="32,32" Name="Buy" ScrollExtent="80,32" Size="80,32" Style="/CommonElements.PushButton.data.style">:f0c3876a08313b68:Buy</Button>
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="13,19" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="61,13" Name="TicketText" ScrollExtent="140,55" Size="140,55" TextAlignmentVertical="Center">:f0c3876a17f1773d:Ticket (1s)</Text>
+            </Page>
+            <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="40,245" Name="CoinPage" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="260,32" Size="260,32">
+                <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="5,7" Name="PlatinumCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.PlatinumCoin" />
+                <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="69,7" Name="GoldCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.GoldCoin" />
+                <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="132,7" Name="SilverCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.SilverCoin" />
+                <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="195,7" Name="CopperCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.CopperCoin" />
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="0" description="Copper" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_0" Font="/TextStyles.Normal.NormalStyle" Location="215,6" Margin="0,0,5,0" Name="Copper" ScrollExtent="43,46" Size="43,20" TextAlignmentVertical="Center" TextColor="#EA9129" Tooltip=":f0c3876a45dc813c:Copper">:f0c3876a3661be48:999999</Text>
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="1" description="Silver" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_1" Font="/TextStyles.Normal.NormalStyle" Location="152,6" Margin="0,0,5,0" Name="Silver" ScrollExtent="42,46" Size="42,20" TextAlignmentVertical="Center" TextColor="#A0A0A0" Tooltip=":f0c3876ad708e292:Silver">:f0c3876a3661be48_1:999999</Text>
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="2" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_2" Font="/TextStyles.Normal.NormalStyle" Location="89,6" Margin="0,0,5,0" Name="Gold" ScrollExtent="44,46" Size="44,20" TextAlignmentVertical="Center" TextColor="#FFEE70" Tooltip=":f0c3876a18644d90:Gold">:f0c3876a3661be48_2:999999</Text>
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="3" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_3" Font="/TextStyles.Normal.NormalStyle" Location="25,7" Margin="0,0,5,0" Name="Platinum" ScrollExtent="45,46" Size="45,18" TextAlignmentVertical="Center" Tooltip=":f0c3876a293ba1c4:Platinum">:f0c3876a3661be48_3:999999</Text>
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="335,300" Size="335,300">
+                <Button Location="279,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":f0c3876aec278586:Window Settings" UserMovable="true" />
+                <Button Location="259,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":f0c3876a574a0c6d:Help" UserMovable="true" />
+                <Button Location="299,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":f0c3876a2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="22,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="200,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="182,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:f0c3876a3e1ad0e6:Goblin Gamblin&apos; Game</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="145,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="335,300" Size="335,300" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="335,300" Size="335,300" />
+            </Page>
+        </Page>

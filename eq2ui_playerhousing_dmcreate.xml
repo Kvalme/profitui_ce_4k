@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="170,122" Name="DMCreate" ScrollExtent="707,468" Size="707,468" UserMovable="true" version="1.0">
+            <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="35,29" Name="Title" PackSize="a,f" ScrollExtent="637,28" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="637,28" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:9af3a8fc9594b510:Create Dungeon</Text>
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="110,404" MaximumSize="16384,30" MinimumSize="30,30" Name="NameTextbox" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="256,30" Size="256,30" Style="/CommonElements.Textfield.data.style" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="38,410" Margin="1,1,1,1" Name="NameLabel" ScrollExtent="103,25" Size="103,20">:9af3a8fcc30d608f:Name:</Text>
+            <Button Location="394,400" MaximumSize="16384,38" MinimumSize="32,38" Name="CreateButton" PackLocation="cfc,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:9af3a8fc77851a32:Create</Button>
+            <Button IsCancelButton="true" Location="539,400" MaximumSize="16384,38" MinimumSize="32,38" Name="CancelButton" PackLocation="cfc,bottom" ScrollExtent="140,38" Size="140,38" Style="/CommonElements.LargePushButton.data.style">:9af3a8fcae453fbb:Cancel</Button>
+            <Page Location="17,18" Name="TemplatePage" PackSize="a,a" ScrollExtent="673,434" Size="673,434">
+                <Composite Location="25,53" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="233,313" Size="233,313" SpacingType="Fill">
+                    <Template Name="row_template" Size="233,38">eq2ui_listboxtworow_template.xml</Template>
+                    <DataSource Name="ListDataSource">
+                        <Data Name="New Data" text=":9af3a8fc4c81c29e:Crushbone Keep 01&#xD;&#xA;\#B0B0B0Small" />
+                    </DataSource>
+                    <Listbox BackgroundColor="#FFFFFF" DataSource="ListDataSource" Margin="10,10,10,10" Name="Listbox" PackSize="absolute,absolute" RowTemplate="row_template" ScrollExtent="233,313" SelectedItemIndex="0" Size="233,313" Style="/CommonElements.Listbox.twodata.listbox_style" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Listbox" HideIfUnnecessary="true" Location="279,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" ScrollExtent="22,313" Size="22,313" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                </Composite>
+                <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="15,43" Name="Bkg" PackLocation="left,top" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="253,333" Size="253,333" />
+            </Page>
+            <Page Location="17,18" Name="DetailPage" PackSize="a,a" ScrollExtent="673,434" Size="673,434">
+                <Page BackgroundOpacity="1.000" Location="274,42" Name="MapPreviewFrame" PackLocation="center, fixed" PackSize="f,f" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="388,335" Size="388,335" />
+                <Image Location="283,51" Name="MapPreviewCurrent" OnHideEffector="/CommonElements.Effectors.SlowFadeOut" OnShowEffector="/CommonElements.Effectors.SlowFadeIn" PackLocation="center, fixed" PackSize="f,f" ScrollExtent="371,318" Size="371,318" Style="/MainHUD.ZoneReuse.MainPage.TabPages.BattlegroundsPage.DefaultImage" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="283,50" Name="Bkg" PackLocation="left,top" PackSize="a,a" ScrollExtent="371,320" Size="371,320" />
+            </Page>
+            <Page BackgroundOpacity="1.000" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="707,470" Size="707,470" />
+        </Page>

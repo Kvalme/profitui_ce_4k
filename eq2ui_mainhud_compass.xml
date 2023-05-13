@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page allowcloseontop="false" alwaysonbottom="true" eq2usescomwndcontrols="true" Location="404,0" MaximumSize="461,96" MinimumSize="117,20" Name="Compass" PackLocation="nfn,nfn" PackLocationProp="0404/0001,0000/0001" PackSize="f,f" PackSizeProp="0002/0003,0002/0003" ScrollExtent="461,96" Size="461,96" UserMovable="true" UserResizable="true">
+<Image Location="225,0" Name="CompassPointer" PackLocation="center,top" PackLocationProp="-005/0001,0000/0001" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="11,10" Size="11,10" SourceRect="261,225,272,233" SourceResource="images/profit.dds" Stretch="false" Style=" "/>
+<Page AbsorbsInput="false" Location="176,1" Name="CropPage" PackLocation="center,top" PackLocationProp="-051/0001,0001/0001" ScrollExtent="109,20" Size="109,20">
+<Page Location="-215,-1" Name="ScrollPage" PackLocation="left,top" PackLocationProp="-215/0001,-001/0001" PackSize="a,a" PackSizeProp="-375/0001,0000/0001" ScrollExtent="484,20" Size="484,20">
+<Image AbsorbsInput="false" Location="160,0" Name="CompassDirections_Mid" PackSize="absolute,absolute" PackSizeProp="0318/0001,-004/0001" ScrollExtent="160,24" Size="160,24" SourceRect="176,244,336,265" SourceResource="images/profit.dds" Stretch="false" Style=" "/>
+<Image Location="320,0" Name="CompassDirections_Right" PackSize="absolute,absolute" PackSizeProp="0318/0001,-004/0001" ScrollExtent="160,24" Size="160,24" SourceRect="176,244,336,265" SourceResource="images/profit.dds" Stretch="false" Style=" "/>
+<Image Name="CompassDirections_Left" PackSize="absolute,absolute" PackSizeProp="0318/0001,-004/0001" ScrollExtent="160,24" Size="160,24" SourceRect="176,244,336,265" SourceResource="images/profit.dds" Stretch="false" Style=" "/>
+</Page>
+</Page>
+<Page AbsorbsInput="false" Location="172,0" Name="Frame" PackLocation="center,top" PackLocationProp="-058/0001,0000/0001" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" RStyleDefault=" " ScrollExtent="117,20" Size="117,20">
+<Button Enabled="false" GetsInput="false" Name="TitleBarBoxed" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="117,20" Size="117,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed"/>
+</Page>
+<Page Location="143,19" Name="WC_Frame" PackLocation="center,top" PackLocationProp="-087/0001,0019/0001" ScrollExtent="177,20" Size="177,20">
+<Text AbsorbsInput="false" DynamicData="/GameData.Self.Location" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial13T" LocalText="1000,1000,1000" Name="Info" Opacity="0.800" PackLocation="top,left" PackLocationProp="0000/0001,0000/0001" ScrollExtent="177,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="177,17" TextAlignment="Center" TextAlignmentVertical="Center">1000,1000,1000</Text>
+</Page>
+<Page Name="Titlebar" PackLocation="center,top" PackLocationProp="-230/0001,0000/0001" ScrollExtent="461,20" Size="461,20">
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText="Target" Location="4,-1" Name="Target Bkg" Opacity="0.600" PackLocation="top,left" PackLocationProp="0004/0001,-001/0001" ScrollExtent="164,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="164,20" TextAlignment="Center" TextAlignmentVertical="Center">Target</Text>
+<Button Enabled="false" GetsInput="false" Name="TitleBarLeft" PackSize="a,f" PackSizeProp="0289/0001,0002/0003" ScrollExtent="172,20" Size="172,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarLeft"/>
+<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" LocalText="Implied Target" Location="293,-1" Name="Implied Target Bkg" Opacity="0.600" PackLocation="top,left" PackLocationProp="0293/0001,-001/0001" ScrollExtent="164,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="164,20" TextAlignment="Center" TextAlignmentVertical="Center">Implied Target</Text>
+<Button Enabled="false" GetsInput="false" Location="289,0" Name="TitleBarRight" PackSize="a,f" PackSizeProp="0289/0001,0002/0003" ScrollExtent="172,20" Size="172,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarRight"/>
+</Page>
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Backdrop" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="461,96" Size="461,96"/>
+</Page>

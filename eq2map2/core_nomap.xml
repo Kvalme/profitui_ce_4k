@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Location="392,194" Name="EQ2MAPInfo" PackLocation="cpc,cpc" Size="256,380">
+<Text Font="SuperLargeStyle" Location="62,100" Margin="1,1,3,3" Name="Sorry!" Size="132,46" TextAlignment="Center" TextAlignmentVertical="Center">Sorry!</Text>
+<Text AbsorbsInput="false" BackgroundColor="#FFFFFF" Font="/Fonts.Font_Euro_ArialBold15" Location="10,149" Name="MapUnavailable" ShadowStyle="/ShadowStyles.Outline1" Size="237,47" TextAlignment="Center" TextAlignmentVertical="Center">There is no map for this zone yet,
+but you can help create one:</Text>
+<Button Location="66,198" MaximumSize="16384,26" MinimumSize="105,26" Name="Map Creation Tutorial" OnPress="browser URL" Size="125,26" Style="Skinnable_Styles.PushButton" Tooltip="Click here to learn how to help creating new maps for your EQ2MAP" URL="http://maps.eq2interface.com/index.php?action=maptutorial">Map Creation Tutorial</Button>
+<Text AbsorbsInput="false" Font="/Fonts.Font_Euro_ArialBold15" Location="33,232" Name="Thanks" ShadowStyle="/ShadowStyles.Outline1" Size="190,22" TextAlignment="Center" TextAlignmentVertical="Center">Thank you for your help!</Text>
+<Image Name="EQ2MAP Logo 1" Size="256,92" Style="EQ2MAPlogo" />
+<Image Location="0,288" Name="EQ2MAP Logo 2" Size="256,92" Style="EQ2MAPlogo" />
+<TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="SuperLargeStyle" PointSize="40" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" UseCachedFont="true" />
+<ImageStyle Name="EQ2MAPlogo">
+<ImageFrame Name="imageFrame" Source="images/eq2map.dds" SourceRect="0,2,256,91" />
+</ImageStyle>
+</Page>

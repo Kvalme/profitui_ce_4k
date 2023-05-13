@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+            <Page Description="These options control the optional vertical letterbox" Name="LetterboxOptions">
+                <Text Name="VerticalLetterboxEnabled">false</Text>
+                <Text Name="ShowVerticalEdge">true</Text>
+                <Text Name="LeftWidth">200</Text>
+                <Text Name="RightWidth">200</Text>
+            </Page>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page eq2usescomwndcontrols="true" MinimumSize="100,100" Name="TravelMap" PackSize="f,f" ScrollExtent="1027,771" Size="1027,771" UserMovable="true" UserResizable="true" >
+    <Namespace Name="MapStyles">
+        <ImageStyle displayname=":0c3b7f258c0ebc1d:Norrath" Name="world">
+            <ImageFrame Source="images/maps2/world_map.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f2514fd5b5b:Karan" Name="Karan">
+            <ImageFrame Source="images/maps2/antonica_all.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f25161a85df:D&apos;Lere" Name="DLere">
+            <ImageFrame Source="images/maps2/dlere_all.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f25564e9816:The Enchanted Lands" Name="The Enchanted Lands">
+            <ImageFrame Source="images/maps2/enchantedlands_all.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f253159aff0:Faydwer" Name="Faydwer">
+            <ImageFrame Source="images/maps2/feydwer_all.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f25d1325cdf:Overrealm" Name="Overrealm">
+            <ImageFrame Source="images/maps2/overrealm_all.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f254f1549cf:Kunark" Name="Kunark">
+            <ImageFrame Source="images/maps2/kunark_all.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f25045a5f4a:Desert of Ro" Name="Desert of Ro">
+            <ImageFrame Source="images/maps2/ro_all.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f250f3c5642:Isle of Mara" Name="Mara">
+            <ImageFrame Source="images/maps2/mara_isle.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f25c956a641:Odus" menugroup="World" Name="Odus">
+	        <ImageFrame Source="images/maps2/odus_all.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+        <ImageStyle displayname=":0c3b7f2573af1aef:Ethernere" menugroup="World" Name="Ethernere">
+                <ImageFrame Source="images/maps2/map_atlas_ethernere.dds" SourceRect="0,0,1600,1200" />
+        </ImageStyle>
+    </Namespace>
+    <Button LocalText="Ok" Location="384,720" MaximumSize="16384,38" MinimumSize="38,38" Name="ZoneButton" PackLocation="cfc,bottom" PackLocationProp="-070/0001,-078/0001" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:0c3b7f2513a7061a:Ok</Button>
+    <Button LocalText="Cancel" Location="524,720" MaximumSize="16384,38" MinimumSize="38,38" Name="WC_CloseButton" PackLocation="cfc,bottom" PackLocationProp="0070/0001,-078/0001" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:0c3b7f25ae453fbb:Cancel</Button>
+    <Page Activated="true" Location="2,2" Name="MapSubGroup" PackLocation="left,top" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768">
+        <Page AbsorbsInput="false" Name="MapPage" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768">
+            <ButtonStyle DisabledTextColor="#FBF1D9" DisabledTextStyle="/Fonts.FontZapf16" MouseOverSound="ui_mouseover" MouseOverTextShadowStyle="/ShadowStyles.Outline1" MouseOverTextStyle="/Fonts.FontZapf16" Name="destination_button_style" NormalTextColor="#FFDCB8" NormalTextShadowStyle="/ShadowStyles.Outline1" NormalTextStyle="/Fonts.FontZapf16" PressedTextStyle="/Fonts.FontZapf16" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="active.rect" RStyleDefault="inactive.rect" RStyleDisabled="active.rect" RStyleDisabledActivated="active.rect" RStyleMouseOver="inactive.rect" RStyleMouseOverActivated="active.rect" RStyleMouseOverSelected="active.rect" RStyleSelected="active.rect" SelectedTextStyle="/Fonts.FontZapf16" />
+            <ButtonStyle DisabledTextColor="#FBF1D9" DisabledTextStyle="/Fonts.FontZapf18" MouseOverSound="ui_mouseover" MouseOverTextShadowStyle="/ShadowStyles.Outline1" MouseOverTextStyle="/Fonts.FontZapf18" Name="destination_button_style_large" NormalTextColor="#FFDCB8" NormalTextShadowStyle="/ShadowStyles.Outline1" NormalTextStyle="/Fonts.FontZapf18" PressedTextStyle="/Fonts.FontZapf18" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="active.rect" RStyleDefault="inactive.rect" RStyleDisabled="active.rect" RStyleDisabledActivated="active.rect" RStyleMouseOver="inactive.rect" RStyleMouseOverActivated="active.rect" RStyleMouseOverSelected="active.rect" RStyleSelected="active.rect" SelectedTextStyle="/Fonts.FontZapf18" />
+            <Button AutoResize="true" BackgroundOpacity="0.000" Location="100,100" Name="ButtonTemplate" PackLocation="cpc,cpc" ScrollExtent="70,26" Size="70,26" Style="destination_button_style" Tooltip=":0c3b7f2547a54e82:Destination" Visible="false"></Button>
+            <Text AbsorbsInput="false" Font="/Fonts.FontZapf20" Location="100,100" Name="StaticTemplate" PackLocation="cpc,cpc" ScrollExtent="160,22" ShadowStyle="/ShadowStyles.Outline1" Size="160,22" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false">:0c3b7f25a72a23e1:Qeynos</Text>
+            <Page AbsorbsInput="false" Name="Buttons" PackSize="a,a" ScrollExtent="1600,1200" Size="1600,1200">
+            </Page>
+            <Image Name="MapImage" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768" Style="MapStyles.world" />
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="a,a" ScrollExtent="1027,795" Size="1027,795" Visible="true">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,-3" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="1031,777" Size="1031,777" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.00" BackgroundColor="#ffffff" Color="#916135" Location="-10,-22" Name="Bkg" PackSize="a,a"  ScrollExtent="1051,807" Size="1051,807" />
+    </Page>
+</Page>

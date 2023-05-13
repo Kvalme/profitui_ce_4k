@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Name="MercTypes" ScrollExtent="320,240" Size="320,240">
+            <ImageStyle Filter="true" Name="1">
+                <ImageFrame Source="images/tp_default_5.dds" SourceRect="875,316,917,358" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="2">
+                <ImageFrame Source="images/tp_default_5.dds" SourceRect="917,316,959,358" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="3">
+                <ImageFrame Source="images/tp_default_5.dds" SourceRect="959,316,1001,358" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="4">
+                <ImageFrame Source="images/tp_default_5.dds" SourceRect="415,391,457,433" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="5">
+                <ImageFrame Source="images/tp_default_5.dds" SourceRect="457,391,499,433" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="6">
+                <ImageFrame Source="images/tp_default_5.dds" SourceRect="499,391,541,433" />
+            </ImageStyle>
+        </Page>

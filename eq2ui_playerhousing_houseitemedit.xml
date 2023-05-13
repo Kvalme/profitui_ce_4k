@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page AbsorbsInput="false" BackgroundColor="#008FCF" eq2usescomwndcontrols="true" Location="585,375" Name="HouseItemEdit" ScrollExtent="280,280" Size="280,280">
+            <Namespace Name="loop">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="649,0,941,289" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Page AbsorbsInput="false" DragAccepts="icon" DragType="icon" Location="4,5" Name="Icons" ScrollExtent="271,269" Size="271,269">
+                <Icon IconRect="92,0,157,65" IconResource="images/dyod_ui.dds" Location="204,113" MouseOverColor="#FFFF00" Name="scale" OnPress="house_item scale" ScrollExtent="65,65" Size="65,65" Tooltip=":91eae283d278f57f:Scale" TreatAsButton="true" />
+                <Icon IconRect="169,0,234,65" IconResource="images/dyod_ui.dds" Location="4,112" MouseOverColor="#FFFF00" Name="up_down" OnPress="house_item updown" ScrollExtent="65,65" Size="65,65" Tooltip=":91eae28359c82d0f:Move Up/Down" TreatAsButton="true" />
+                <Icon IconRect="2,2,67,67" IconResource="images/dyod_ui.dds" Location="172,184" MouseOverColor="#FFFF00" Name="pickup" OnPress="house_item pickup" ScrollExtent="65,65" Size="65,65" Tooltip=":91eae283b9cdc334:Pick Up" TreatAsButton="true" />
+                <Icon IconRect="258,0,323,65" IconResource="images/dyod_ui.dds" Location="42,184" MouseOverColor="#FFFF00" Name="move" OnPress="house_item move" ScrollExtent="65,65" Size="65,65" Tooltip=":91eae283b0f367b9:Move" TreatAsButton="true" />
+                <Icon IconRect="26,431,75,491" IconResource="images/dyod_ui.dds" Location="111,4" MouseOverColor="#FFFF00" Name="rotate_y" OnPress="house_item rotate_y" ScrollExtent="49,60" Size="49,60" Tooltip=":91eae28332f6f9a2:Heading" TreatAsButton="true" />
+                <Icon IconRect="208,429,271,485" IconResource="images/dyod_ui.dds" Location="24,38" MouseOverColor="#FFFF00" Name="rotate_x" OnPress="house_item rotate" ScrollExtent="63,56" Size="63,56" Tooltip=":91eae28319a16e22:Pitch" TreatAsButton="true" />
+                <Icon IconRect="114,427,181,494" IconResource="images/dyod_ui.dds" Location="182,38" MouseOverColor="#FFFF00" Name="rotate_z" OnPress="house_item rotate_z" ScrollExtent="65,65" Size="65,65" Tooltip=":91eae2837178620f:Roll" TreatAsButton="true" />
+            </Page>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="31,30" Name="Bkg" RStyleDefault="loop.rect" ScrollExtent="218,220" Size="218,220" />
+        </Page>

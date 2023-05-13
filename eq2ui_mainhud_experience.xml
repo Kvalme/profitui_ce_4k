@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Last update 2016-06-8 by user Zidu -->
+<!-- Changed Run to Speed -->
+<!-- Changed Font of Speed, Tithe and Status to be easier to see -->
+<!-- Last update 2016-04-30 by user Zidu -->
+<!-- Added XP Vials to XP Window. -->
+
+<Page EnableSnapping="False" eq2usescomwndcontrols="true" MinimumSize="159,21" Name="Experience" OnShow="show_window Custom.ProfitUI_ControlCenter&#xD;&#xA;hide_window Custom.ProfitUI_ControlCenter" ScrollExtent="476,79" Size="476,79" UserMovable="true" UserResizable="true" version="1.1">
+    
+	        <Page AbsorbsInput="false" Location="435,30" Name="ExpContainerNormal" ScrollExtent="63,47" Size="63,47" Visible="false">
+        <Page AbsorbsInput="false" Location="14,6" Name="ExpContainerCounter" ScrollExtent="38,33" Size="38,33">
+            <Text Font="/TextStyles.Large.LargeStyle" Location="1,12" MaxLines="1" Name="FilledCount" PackLocation="right,top" ScrollExtent="30,20" Size="30,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#EBDEAA" TruncateElipsis="false">20</Text>
+            <Image Location="4,5" Name="CounterPendingImage" PackLocation="left,top" ScrollExtent="29,27" Size="29,27" Style="gem.count_pend" Visible="false" />
+            <Image Location="4,5" Name="CounterEmptyImage" PackLocation="left,top" ScrollExtent="29,27" Size="29,27" Style="gem.count_empty" />
+        </Page>
+        <Page Name="ExpContainerPage" ScrollExtent="42,47" Size="42,47">
+            <Image Location="0,8" Name="ConGemFour" PackLocation="left,top" ScrollExtent="28,28" Size="28,28" Style="gem.con_four" Visible="false" />
+            <Image Location="0,8" Name="ConGemThree" PackLocation="left,top" ScrollExtent="28,28" Size="28,28" Style="gem.con_three" Visible="false" />
+            <Image Location="0,8" Name="ConGemTwo" PackLocation="left,top" ScrollExtent="28,28" Size="28,28" Style="gem.con_two" Visible="false" />
+            <Image Location="0,8" Name="ConGemOne" PackLocation="left,top" ScrollExtent="28,28" Size="28,28" Style="gem.con_one" />
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" Location="435,30" Name="ExpContainerMini" ScrollExtent="60,47" Size="60,47" Visible="false">
+        <Page AbsorbsInput="false" Location="14,6" Name="ExpContainerCounter" ScrollExtent="38,33" Size="38,33">
+            <Text Font="/TextStyles.Large.LargeStyle" Location="1,12" MaxLines="1" Name="FilledCount" PackLocation="right,top" ScrollExtent="30,20" Size="30,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#EBDEAA" TruncateElipsis="false">20</Text>
+            <Image Location="4,5" Name="CounterPendingImage" PackLocation="left,top" ScrollExtent="29,27" Size="29,27" Style="gem.count_pend" Visible="false" />
+            <Image Location="4,5" Name="CounterEmptyImage" PackLocation="left,top" ScrollExtent="29,27" Size="29,27" Style="gem.count_empty" />
+        </Page>
+        <Page Name="ExpContainerPage" ScrollExtent="42,47" Size="42,47">
+            <Image Location="0,8" Name="ConGemFour" PackLocation="left,top" ScrollExtent="28,28" Size="28,28" Style="gem.con_four" Visible="false" />
+            <Image Location="0,8" Name="ConGemThree" PackLocation="left,top" ScrollExtent="28,28" Size="28,28" Style="gem.con_three" Visible="false" />
+            <Image Location="0,8" Name="ConGemTwo" PackLocation="left,top" ScrollExtent="28,28" Size="28,28" Style="gem.con_two" Visible="false" />
+            <Image Location="0,8" Name="ConGemOne" PackLocation="left,top" ScrollExtent="28,28" Size="28,28" Style="gem.con_one" />
+        </Page>
+    </Page>
+	
+      <Namespace Name="gem">
+        <ImageStyle Filter="true" Name="gem">
+            <ImageFrame Name="image" Source="images/specialelements.dds" SourceRect="234,42,268,76" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="con_four">
+            <ImageFrame Name="image" Source="images/window_elements_heroicpanel.dds" SourceRect="2,489,36,523" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="con_three">
+            <ImageFrame Name="image" Source="images/window_elements_heroicpanel.dds" SourceRect="2,529,36,563" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="con_two">
+            <ImageFrame Name="image" Source="images/window_elements_heroicpanel.dds" SourceRect="2,569,36,603" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="con_one">
+            <ImageFrame Name="image" Source="images/window_elements_heroicpanel.dds" SourceRect="2,609,36,643" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="count_pend">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="343,334,372,361" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="count_empty">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="343,369,372,396" />
+        </ImageStyle>
+    </Namespace>
+
+	
+	<Page Name="WC_Titlebar" OnHoverIn="Parent.WC_Frame.Visible=true" OnHoverOut="Parent.WC_Frame.Visible=false" OnShow="Parent.WC_Frame.Visible=false" PackSize="a,f" ScrollExtent="476,20" Size="476,20" Visible="false" />
+    <Page Name="Mini" OnShow="hide_window MainHUD.StartButton" PackSize="a,f" ScrollExtent="476,79" Size="476,79" Visible="false">
+        <Button BackgroundOpacity="0.000" Location="57,22" Name="Targetself" OnPress="target_self target_self" ScrollExtent="134,23" Size="134,23" />
+        <Button BackgroundOpacity="0.000" Location="57,55" Name="Targetself2" OnPress="target_self target_self" ScrollExtent="134,23" Size="134,23" />
+        <Page Location="182,20" Name="MiniAdventureXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.MiniAscensionXP.Visible=false Parent.MiniTitheXp.Visible=false Parent.MiniGuildXp.Visible=false Parent.MiniAchievementXP.Visible=false Parent.MiniTradeskillXp.Visible=false hide_window MainHUD.StartButton" ScrollExtent="105,56" Size="105,56">
+            <Button BackgroundOpacity="0.000" Location="1,0" Name="SwitchXP" OnPress="Parent.Parent.MiniAscensionXp.Visible=false Parent.Parent.MiniTitheXp.Visible=false Parent.Parent.MiniAdventureXp.Visible=false Parent.Parent.MiniGuildXp.Visible=false Parent.Parent.MiniTradeskillXp.Visible=false Parent.Parent.MiniAchievementXP.Visible=true" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Adventure XP&#xD;&#xA;Click here to show Achievement XP" />
+            <Image Activated="true" Color="#F0D080" DynamicData="/GameData.Self.CombatExperienceDisabled" DynamicDataFilter="0001" Location="-8,0" Name="CombatExperienceDisabled" Opacity="0.850" ScrollExtent="102,58" Size="102,58" SourceRect="382,23,480,78" SourceResource="images/profit.dds" Stretch="false" Visible="false" />
+            <Text Color="#FFFF80" DynamicData="/GameData.Self.Vitality" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,27" Margin="1,0,0,0" MaxLines="1" Name="Vitality" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">100.0%</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Self.ExperienceDebtCurrent" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,37" Margin="1,0,0,0" MaxLines="1" Name="Debt" ScrollExtent="33,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="33,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">10%</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" DynamicData="/GameData.Self.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">88.8%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Adventure Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text DynamicData="/GameData.Self.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">12.3%</Text>
+                </Page>
+            </Page>
+        </Page>
+        <Page Location="182,20" Name="MiniAchievementXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.MiniAscensionXP.Visible=false Parent.MiniTitheXp.Visible=false Parent.MiniAdventureXp.Visible=false Parent.MiniGuildXp.Visible=false Parent.MiniTradeskillXp.Visible=false hide_window MainHUD.StartButton" ScrollExtent="105,56" Size="105,56" Visible="false">
+            <Button BackgroundOpacity="0.000" Location="3,0" Name="SwitchXP" OnPress="Parent.Parent.MiniAscensionXp.Visible=false Parent.Parent.MiniTitheXp.Visible=false Parent.Parent.MiniAdventureXp.Visible=false Parent.Parent.MiniGuildXp.Visible=false Parent.Parent.MiniTradeskillXp.Visible=true Parent.Parent.MiniAchievementXP.Visible=false" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Achievement XP&#xD;&#xA;Click here to show Tradeskill XP" />
+            <Text Color="#FFA8A8" DynamicData="/GameData.Achievement.AvailablePoints" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="56,31" Margin="1,0,0,0" MaxLines="1" Name="Available" ScrollExtent="23,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="23,17" TextAlignment="Right" TextAlignmentVertical="Center" Tooltip="Unassigned Achievement Points" TooltipStyle="/TooltipStyles.tooltip_default">0</Text>
+            <Text AbsorbsInput="false" Color="#FFFF80" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="78,31" Margin="1,0,0,0" MaxLines="1" Name="Of" ScrollExtent="13,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="13,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">/</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Achievement.Points" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="82,35" Margin="1,0,0,0" MaxLines="1" Name="Total" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" Tooltip="Assigned Achievement Points" TooltipStyle="/TooltipStyles.tooltip_default">0</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" Color="#FFFF80" DynamicData="/GameData.Achievement.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">0.0%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Color="#FFFF80" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center" Visible="false">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Achievement Experience" TooltipStyle="/TooltipStyles.tooltip_default" Visible="false">
+                    <Text Color="#FFFF80" DynamicData="/GameData.Achievement.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">0.0%</Text>
+                </Page>
+            </Page>
+        </Page>
+        <Page Location="182,20" Name="MiniTradeskillXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.MiniAscensionXP.Visible=false Parent.MiniTitheXp.Visible=false Parent.MiniGuildXp.Visible=false Parent.MiniAdventureXp.Visible=false Parent.MiniAchievementXP.Visible=false hide_window MainHUD.StartButton" ScrollExtent="105,56" Size="105,56" Visible="false">
+            <Button BackgroundOpacity="0.000" Location="3,0" Name="SwitchXP" OnPress="Parent.Parent.MiniAscensionXp.Visible=false Parent.Parent.MiniTitheXp.Visible=false Parent.Parent.MiniAdventureXp.Visible=false Parent.Parent.MiniGuildXp.Visible=true Parent.Parent.MiniTradeskillXp.Visible=false Parent.Parent.MiniAchievementXP.Visible=false " ScrollExtent="62,57" Size="62,57" Tooltip="Showing Tradeskill XP&#xD;&#xA;Click here to show Guild XP" />
+            <Text Color="#FFFF80" DynamicData="/GameData.Self.TSVitality" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,27" Margin="1,0,0,0" MaxLines="1" Name="Vitality" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">100.0%</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Self.TSExperienceDebtCurrent" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="66,37" Margin="1,0,0,0" MaxLines="1" Name="Debt" ScrollExtent="33,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="33,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" Visible="false">0%</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" Color="#98ACC2" DynamicData="/GameData.Self.TradeskillExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">27.0%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Color="#98ACC2" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Tradeskill Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text Color="#98ACC2" DynamicData="/GameData.Self.TradeskillExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">0.0%</Text>
+                </Page>
+            </Page>
+        </Page>
+        <Page Location="182,20" Name="MiniGuildXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.MiniAscensionXP.Visible=false Parent.MiniTitheXp.Visible=false Parent.MiniTradeskillXp.Visible=false Parent.MiniAdventureXp.Visible=false Parent.MiniAchievementXP.Visible=false hide_window MainHUD.StartButton" ScrollExtent="105,56" Size="105,56" Visible="false">
+            <Button BackgroundOpacity="0.000" Location="3,0" Name="SwitchXP" OnPress="Parent.Parent.MiniAscensionXp.Visible=true Parent.Parent.MiniTitheXp.Visible=false Parent.Parent.MiniAdventureXp.Visible=false Parent.Parent.MiniGuildXp.Visible=false Parent.Parent.MiniTradeskillXp.Visible=false Parent.Parent.MiniAchievementXP.Visible=false" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Guild XP&#xD;&#xA;Click here to show Ascension XP" />
+            <Text Color="#FFA8A8" DynamicData="/GameData.Guild.Online" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="56,31" Margin="1,0,0,0" MaxLines="1" Name="Online" ScrollExtent="23,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="23,17" TextAlignment="Right" TextAlignmentVertical="Center" Tooltip="Guild Members currently online" TooltipStyle="/TooltipStyles.tooltip_default">0</Text>
+            <Text AbsorbsInput="false" Color="#FFFF80" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="78,31" Margin="1,0,0,0" MaxLines="1" Name="Of" ScrollExtent="13,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="13,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">/</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Guild.Members" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="82,35" Margin="1,0,0,0" MaxLines="1" Name="Total" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" Tooltip="Total Guild Members" TooltipStyle="/TooltipStyles.tooltip_default">0</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" Color="#CB9CFE" DynamicData="/GameData.Guild.ExperienceFull" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">33.0%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Color="#CB9CFE" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Guild Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text Color="#CB9CFE" DynamicData="/GameData.Guild.ExperienceFull" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">0.0%</Text>
+                </Page>
+            </Page>
+        </Page>
+     
+
+
+
+        <Page Location="182,20" Name="MiniAscensionXP" OnShow="Parent.Levels.LevelTrade.Visible=false Parent.Levels.LevelAscension.Visible=true Parent.MiniAdventureXp.Visible=false Parent.MiniTitheXp.Visible=false Parent.MiniGuildXp.Visible=false Parent.MiniAchievementXP.Visible=false Parent.MiniTradeskillXp.Visible=false hide_window MainHUD.StartButton" ScrollExtent="105,56" Size="105,56">
+            <Button BackgroundOpacity="0.000" Location="1,0" Name="SwitchXP" OnPress="Parent.Parent.MiniAscensionXp.Visible=false Parent.Parent.MiniTitheXp.Visible=true Parent.Parent.MiniAdventureXp.Visible=false Parent.Parent.MiniGuildXp.Visible=false Parent.Parent.MiniTradeskillXp.Visible=false Parent.Parent.MiniAchievementXP.Visible=false" ScrollExtent="42,57" Size="42,57" Tooltip="Showing Ascension XP&#xD;&#xA;Click here to show Tithe XP" />
+            <Image Activated="true" Color="#F0D080" DynamicData="/GameData.Self.CombatExperienceDisabled" DynamicDataFilter="0001" Location="-8,0" Name="CombatExperienceDisabled" Opacity="0.850" ScrollExtent="102,58" Size="102,58" SourceRect="382,23,480,78" SourceResource="images/profit.dds" Stretch="false" Visible="false" />
+            <Text Color="#FFFF80" DynamicData="/GameData.Self.AscensionExperienceBubble" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="64,27" Margin="1,0,0,0" MaxLines="1" Name="Points" ScrollExtent="52,21" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,21" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">100.0%</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" DynamicData="/GameData.Self.AscensionExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">88.8%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Adventure Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text DynamicData="/GameData.Self.AscensionExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">12.3%</Text>
+                </Page>
+            </Page>
+        </Page>
+
+
+        <Page Location="182,20" Name="MiniTitheXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.MiniAscensionXp.Visible=false Parent.MiniAdventureXP.Visible=false Parent.MiniGuildXp.Visible=false Parent.MiniAchievementXP.Visible=false Parent.MiniTradeskillXp.Visible=false hide_window MainHUD.StartButton" ScrollExtent="105,56" Size="105,56">
+            <Button BackgroundOpacity="0.000" Location="1,0" Name="SwitchXP" OnPress="Parent.Parent.MiniAscensionXp.Visible=false Parent.Parent.MiniTitheXp.Visible=false Parent.Parent.MiniAdventureXp.Visible=true Parent.Parent.MiniGuildXp.Visible=false Parent.Parent.MiniTradeskillXp.Visible=false Parent.Parent.MiniAchievementXP.Visible=false" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Tithe XP&#xD;&#xA;Click here to show Adventure XP" />
+            <Image Activated="true" Color="#F0D080" DynamicData="/GameData.Self.CombatExperienceDisabled" DynamicDataFilter="0001" Location="-8,0" Name="CombatExperienceDisabled" Opacity="0.850" ScrollExtent="102,58" Size="102,58" SourceRect="382,23,480,78" SourceResource="images/profit.dds" Stretch="false" Visible="false" />
+            <Text Color="#FFFF80" DynamicData="/GameData.Achievement.AvailableDeityPoints" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,27" Margin="1,0,0,0" MaxLines="1" Name="Level" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">100.0%</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Self.TitheExperienceDebtCurrent" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,37" Margin="1,0,0,0" MaxLines="1" Name="Debt" ScrollExtent="33,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="33,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">10%</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" DynamicData="/GameData.Self.TitheExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">88.8%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Adventure Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text DynamicData="/GameData.Self.TitheExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">12.3%</Text>
+                </Page>
+            </Page>
+        </Page>
+
+
+
+
+
+		
+		
+		
+		
+		
+		<Page AbsorbsInput="false" Enabled="false" GetsInput="false" Location="277,22" Name="Coins" ScrollExtent="150,33" Size="150,33">
+            <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="7,0" Name="Coins" PackLocation="center,top" ScrollExtent="150,30" Size="150,30">
+                <Image actiondata="coin 3" BackgroundTint="#000000" DynamicData="/GameData.Coins.Coin_3" iconstyle="/IconStyles.coin" Location="47,14" mouseovercolor="#FFFF00" Name="CoinPlatinum" ScrollExtent="14,14" Size="14,14" Style="/imagelist.coins.PlatinumCoin" treatasbutton="false" />
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="3" description="platinum" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_3" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="-7,0" Margin="0,0,5,0" Name="Platinum" ScrollExtent="69,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="69,20" TextAlignment="Right" Tooltip="Platinum">999999999</Text>
+                <Image actiondata="coin 2" BackgroundTint="#000000" DynamicData="/GameData.Coins.Coin_2" iconstyle="/IconStyles.coin" Location="70,14" mouseovercolor="#FFFF00" Name="CoinGold" ScrollExtent="14,14" Size="14,14" Style="/imagelist.coins.GoldCoin" treatasbutton="false" />
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="2" description="gold" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_2" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="56,-5" Margin="5,5,5,5" Name="Gold" ScrollExtent="43,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="43,20" TextAlignment="Center" TextColor="#FFEE70" Tooltip="Gold">99</Text>
+                <Image actiondata="coin 1" BackgroundTint="#000000" DynamicData="/GameData.Coins.Coin_1" iconstyle="/IconStyles.coin" Location="93,14" mouseovercolor="#FFFF00" Name="CoinSilver" ScrollExtent="14,14" Size="14,14" Style="/imagelist.coins.SilverCoin" treatasbutton="false" />
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="1" description="Silver" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_1" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="79,-5" Margin="5,5,5,5" Name="Silver" ScrollExtent="43,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="43,20" TextAlignment="Center" TextColor="#A0A0A0" Tooltip="Silver">99</Text>
+                <Image actiondata="coin 0" BackgroundTint="#000000" DynamicData="/GameData.Coins.Coin_0" iconstyle="/IconStyles.coin" Location="116,14" mouseovercolor="#FFFF00" Name="CoinCopper" ScrollExtent="14,14" Size="14,14" Style="/imagelist.coins.CopperCoin" treatasbutton="false" />
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="0" description="Copper" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_0" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="102,-5" Margin="5,5,5,5" Name="Copper" ScrollExtent="43,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="43,20" TextAlignment="Center" TextColor="#EA9129" Tooltip="Copper">99</Text>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Enabled="false" GetsInput="false" Location="277,48" Name="Levels" ScrollExtent="175,33" Size="175,33">
+            <Text AbsorbsInput="false" DynamicData="/GameData.Self.LevelClass" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="13,0" MaxLines="1" Name="LevelClass" ScrollExtent="165,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="165,20" TextAlignment="Center" TextAlignmentVertical="Center"></Text>
+            <Text AbsorbsInput="false" Color="#98ACC2" DynamicData="/GameData.Self.TradeskillLevelClass" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="13,13" MaxLines="1" Name="LevelTrade" ScrollExtent="165,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="165,20" TextAlignment="Center" TextAlignmentVertical="Center"></Text>
+            <Text AbsorbsInput="false" Color="#98ACC2" DynamicData="/GameData.Self.AscensionLevelClass" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="13,13" MaxLines="1" Name="LevelAscension" ScrollExtent="165,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="165,20" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false"></Text>
+        </Page>
+        <Page eq2usescomwndcontrols="true" Location="0,21" MinimumSize="19,19" Name="StartButton" OnHoverIn="Volume.Enabled=true" OnHoverOut="Volume.Enabled=false" PackLocation="Left,Top" ScrollExtent="57,57" Size="57,57">
+            <VolumePage CellAlignmentH="left" CellCount="3,3" CellPadding="0,0" CellSelectable="false" CellSize="19,19" Enabled="false" MinimumScrollExtent="57,57" Name="Volume" PackLocation="fff,fff" PackSize="a,a" ScrollExtent="57,57" Size="57,57" VolumeFill="down_left2right">
+                <Page Name="SoundControls" ScrollExtent="19,19" Size="19,19">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="SndToggle" OnSet="show_window Custom.ProfitUI_SoundControls&#xD;&#xA;Tooltip=&quot;Hide Sound Sliders&quot;" OnUnset="hide_window Custom.ProfitUI_SoundControls&#xD;&#xA;Tooltip=&quot;Show Sound Sliders&quot;" PackSize="a,a" ScrollExtent="17,17" Size="17,17" Style="/ProfitUI_Styles.ButtonStyles.box_checkbox" Tooltip="Show Sound Sliders" UserScrollable="false">S</Checkbox>
+                </Page>
+                <Page Location="0,19" Name="VideoControls" ScrollExtent="19,19" Size="19,19">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="VidToggle" OnSet="show_window Custom.ProfitUI_VideoControls&#xD;&#xA;Tooltip=&quot;Hide Video Controls&quot;" OnUnset="hide_window Custom.ProfitUI_VideoControls&#xD;&#xA;Tooltip=&quot;Show Video Controls&quot;" PackSize="a,a" ScrollExtent="17,17" Size="17,17" Style="/ProfitUI_Styles.ButtonStyles.box_checkbox" Tooltip="Show Video Controls" UserScrollable="false">V</Checkbox>
+                </Page>
+                <Page Location="0,38" Name="NightVision" ScrollExtent="19,19" Size="19,19">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="NightVisionButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" OnSet="r_flat_ambient=true r_flat_ambient=true&#xD;&#xA;r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientMax.Text r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientMax.Text&#xD;&#xA;Tooltip=&apos;Turn Off Nightvision&apos;" OnUnset="r_flat_ambient=false r_flat_ambient=false&#xD;&#xA;r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientDefault.Text r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientDefault.Text&#xD;&#xA;Tooltip=&apos;Turn On NightVision&apos;" Opacity="0.750" PackSize="a,a" ScrollExtent="17,17" Size="17,17" Style="/ProfitUI_Styles.ButtonStyles.NightVisionButton" TextColor="#EBDEAA" Tooltip="Turn On NightVision" />
+                </Page>
+                <Page Location="19,0" Name="PetHide" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" Opacity="0.750" ScrollExtent="19,19" Size="19,19">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" Visible="false" />
+                    <Button Name="PetHide" OnPress="pet hide" PackSize="a,a" ScrollExtent="19,19" Size="19,19" Style="/ProfitUI_Styles.ButtonStyles.PetHideButton" Tooltip="/pet hide" />
+                </Page>
+                <Page Location="19,19" Name="ZoneReuse" ScrollExtent="19,19" Size="19,19">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Icon ActionData="command zonereuse" BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="1,1" MouseOverColor="#FFFF00" Name="IconCommandZoneReuse" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" Opacity="0.750" PackSize="a,a" ScrollExtent="17,17" Size="17,17" TreatAsButton="true" />
+                </Page>
+                <Page Location="19,38" Name="Browser" ScrollExtent="19,19" Size="19,19">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" Visible="false" />
+                    <Button Name="OpenBrowser" OnPress="show_window MainHUD.Browser" PackSize="a,a" ScrollExtent="19,19" Size="19,19" Style="/ProfitUI_Styles.ButtonStyles.Browser.BrowserIconButton" Tooltip="Open Browser Window" />
+                </Page>
+                <Page Location="38,0" Name="PCC" ScrollExtent="19,19" Size="19,19">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="PCCButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" OnSet="show_window Custom.ProfitUI_ControlCenter&#xD;&#xA;Tooltip=&apos;Hide ProfitUI Control Center&apos;" OnUnset="hide_window Custom.ProfitUI_ControlCenter&#xD;&#xA;Tooltip=&apos;Show ProfitUI Control Center&apos;" Opacity="0.750" PackSize="a,a" ScrollExtent="17,17" Size="17,17" Style="/ProfitUI_Styles.ButtonStyles.PCCbutton" TextColor="#F0D080" Tooltip="Show ProfitUI Control Center" />
+                </Page>
+                <Page Location="38,19" Name="Infocenter" ScrollExtent="19,19" Size="19,19">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="InfocenterButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" OnSet="show_window Custom.ProfitUI_InfoCenter&#xD;&#xA;Tooltip=&apos;Hide Infocenter&apos;" OnUnset="hide_window Custom.ProfitUI_InfoCenter&#xD;&#xA;Tooltip=&apos;Show Infocenter&apos;" Opacity="0.750" PackSize="a,a" ScrollExtent="17,17" Size="17,17" Style="/ProfitUI_Styles.ButtonStyles.InfocenterButton" TextColor="#F0D080" Tooltip="Show Infocenter" />
+                </Page>
+                <Page Location="38,38" Name="Start" ScrollExtent="19,19" Size="19,19">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Button Name="Start" OnPress="togglestartmenu" PackSize="a,a" ScrollExtent="19,19" Size="19,19" Style="/ProfitUI_Styles.ButtonStyles.StartButton" Tooltip="Toggle Startmenu" />
+                </Page>
+            </VolumePage>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackSize="a,a" ScrollExtent="57,57" Size="57,57" />
+        </Page>
+        <Page AbsorbsInput="false" Location="65,22" Name="MainStats" ScrollExtent="162,55" Size="162,55">
+            <Page AbsorbsInput="false" Location="0,-8" Name="Health" PackSize="fixed,fixed" ScrollExtent="165,39" Size="165,39">
+                <Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.CurrentHealth" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="-55,-2" Margin="1,1,1,1" Name="Remaining" Opacity="0.750" ScrollExtent="168,39" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="168,39" TextAlignment="Right" TextAlignmentVertical="Center">99,999,999</Text>
+                <Text AbsorbsInput="false" DynamicData="/GameData.Self.Health" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.Font27" Name="HitPointsValue" ScrollExtent="93,39" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="93,39" TextAlignmentVertical="Center">100%</Text>
+                <Progressbar AbsorbsInput="false" Color="#00FF00" DynamicData="/GameData.Self.Health" DynamicDataFilter="FFFB" Location="0,14" Name="HealthBar" PackLocation="top,left" Progress="1.000" ScrollExtent="113,11" Size="113,11" Style="/ProfitUI_Styles.Bars.prog_health" />
+                <Image AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,14" Name="Background" Opacity="0.400" PackLocation="absolute,absolute" ScrollExtent="113,11" Size="113,11" SourceRect="16,187,166,199" SourceResource="images/profit.dds" />
+            </Page>
+            <Page AbsorbsInput="false" Location="0,17" Name="Cons" ScrollExtent="147,20" Size="147,20">
+                <ImageStyle Filter="true" Name="ConcBubbleFilled">
+                    <ImageFrame Name="image" Source="images/profit.dds" SourceRect="20,182,21,184" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="ConcBubbleMouseover">
+                    <ImageFrame Name="image" Source="/images/window_elements_generic.dds" SourceRect="292,160,309,164" />
+                </ImageStyle>
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_1" GetsInput="true" Location="0,9" Name="ConcBubble0" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="22,3" Size="22,3" Style="ConcBubbleFilled" />
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_2" GetsInput="true" Location="23,9" Name="ConcBubble1" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="22,3" Size="22,3" Style="ConcBubbleFilled" />
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_3" GetsInput="true" Location="46,9" Name="ConcBubble2" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="21,3" Size="21,3" Style="ConcBubbleFilled" />
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_4" GetsInput="true" Location="68,9" Name="ConcBubble3" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="22,3" Size="22,3" Style="ConcBubbleFilled" />
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_5" GetsInput="true" Location="91,9" Name="ConcBubble4" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="22,3" Size="22,3" Style="ConcBubbleFilled" />
+                <Image AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,9" Name="Background" Opacity="0.400" PackLocation="absolute,absolute" ScrollExtent="113,3" Size="113,3" SourceRect="16,187,166,199" SourceResource="images/profit.dds" />
+                <Text AbsorbsInput="false" DynamicData="/GameData.Stats.ConcentrationRange" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="115,-3" Margin="1,0,0,0" Name="Concentration" Opacity="0.750" ScrollExtent="43,28" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="43,28" TextAlignmentVertical="Center" Visible="false">4 / 5</Text>
+            </Page>
+            <Page AbsorbsInput="false" Location="0,25" Name="Mana" ScrollExtent="165,39" Size="165,39">
+                <Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.CurrentPower" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="-55,0" Margin="1,1,1,1" Name="Remaining" Opacity="0.750" ScrollExtent="168,37" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="168,37" TextAlignment="Right" TextAlignmentVertical="Center">199,999</Text>
+                <Text AbsorbsInput="false" DynamicData="/GameData.Self.Power" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.Font27" Name="PowerValue" ScrollExtent="93,39" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="93,39" TextAlignmentVertical="Center">100%</Text>
+                <Progressbar AbsorbsInput="false" Color="#65B3E0" DynamicData="/GameData.Self.Power" DynamicDataFilter="FFFB" Location="0,14" Name="ManaBar" PackLocation="top,left" Progress="0.750" ScrollExtent="113,11" Size="113,11" Style="/ProfitUI_Styles.Bars.prog_power" />
+                <Image AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,14" Name="Background" Opacity="0.400" ScrollExtent="113,11" Size="113,11" SourceRect="16,187,166,199" SourceResource="images/profit.dds" />
+            </Page>
+        </Page>
+    </Page>
+    <Page Name="Normal" OnShow="show_window MainHUD.StartButton" PackSize="a,f" ScrollExtent="476,79" Size="476,79" Visible="false">
+        <Button BackgroundOpacity="0.000" Location="0,22" Name="Targetself" OnPress="target_self target_self" ScrollExtent="191,23" Size="191,23" />
+        <Button BackgroundOpacity="0.000" Location="0,55" Name="Targetself2" OnPress="target_self target_self" ScrollExtent="191,23" Size="191,23" />
+        <Page Location="170,20" Name="AdventureXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.AscensionXP.Visible=false Parent.AchievementXP.Visible=false Parent.TradeskillXP.Visible=false Parent.GuildXP.Visible=false Parent.TitheXP.Visible=false" ScrollExtent="105,56" Size="105,56">
+            <Button BackgroundOpacity="0.000" Location="1,0" Name="SwitchXP" OnPress="Parent.Parent.AdventureXp.Visible=false Parent.Parent.GuildXp.Visible=false Parent.Parent.TradeskillXp.Visible=false Parent.Parent.AchievementXP.Visible=true Parent.Parent.AscensionXP.Visible=false Parent.Parent.TitheXP.Visible=false" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Adventure XP&#xD;&#xA;Click here to show Achievement XP" />
+            <Image Activated="true" Color="#F0D080" DynamicData="/GameData.Self.CombatExperienceDisabled" DynamicDataFilter="0001" Location="-8,0" Name="CombatExperienceDisabled" Opacity="0.850" ScrollExtent="102,58" Size="102,58" SourceRect="382,23,480,78" SourceResource="images/profit.dds" Stretch="false" Visible="false" />
+            <Text Color="#FFFF80" DynamicData="/GameData.Self.Vitality" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,27" Margin="1,0,0,0" MaxLines="1" Name="Vitality" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">100.0%</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Self.ExperienceDebtCurrent" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,37" Margin="1,0,0,0" MaxLines="1" Name="Debt" ScrollExtent="33,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="33,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">10%</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" DynamicData="/GameData.Self.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">88.8%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Adventure Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text DynamicData="/GameData.Self.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">12.3%</Text>
+                </Page>
+            </Page>
+        </Page>
+        <Page Location="170,20" Name="AchievementXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.AscensionXP.Visible=false Parent.GuildXP.Visible=false Parent.TradeskillXP.Visible=false Parent.AdventureXP.Visible=false Parent.TitheXP.Visible=false" ScrollExtent="105,56" Size="105,56" Visible="false">
+            <Button BackgroundOpacity="0.000" Location="3,0" Name="SwitchXP" OnPress="Parent.Parent.AdventureXp.Visible=false Parent.Parent.GuildXp.Visible=false Parent.Parent.TradeskillXp.Visible=true Parent.Parent.AchievementXP.Visible=false Parent.Parent.AscensionXP.Visible=false Parent.Parent.TitheXP.Visible=false" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Achievement XP&#xD;&#xA;Click here to show Tradeskill XP" />
+            <Text Color="#FFA8A8" DynamicData="/GameData.Achievement.AvailablePoints" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="56,31" Margin="1,0,0,0" MaxLines="1" Name="Available" ScrollExtent="23,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="23,17" TextAlignment="Right" TextAlignmentVertical="Center" Tooltip="Unassigned Achievement Points" TooltipStyle="/TooltipStyles.tooltip_default">0</Text>
+            <Text AbsorbsInput="false" Color="#FFFF80" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="78,31" Margin="1,0,0,0" MaxLines="1" Name="Of" ScrollExtent="13,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="13,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">/</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Achievement.Points" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="82,35" Margin="1,0,0,0" MaxLines="1" Name="Total" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" Tooltip="Assigned Achievement Points" TooltipStyle="/TooltipStyles.tooltip_default">0</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" Color="#FFFF80" DynamicData="/GameData.Achievement.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">0.0%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Color="#FFFF80" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center" Visible="false">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Achievement Experience" TooltipStyle="/TooltipStyles.tooltip_default" Visible="false">
+                    <Text Color="#FFFF80" DynamicData="/GameData.Achievement.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">0.0%</Text>
+                </Page>
+            </Page>
+        </Page>
+        <Page Location="170,20" Name="TradeskillXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.AscensionXP.Visible=false Parent.AchievementXP.Visible=false Parent.GuildXP.Visible=false Parent.AdventureXP.Visible=false Parent.TitheXP.Visible=false" ScrollExtent="105,56" Size="105,56" Visible="false">
+            <Button BackgroundOpacity="0.000" Location="3,0" Name="SwitchXP" OnPress="Parent.Parent.AdventureXp.Visible=false Parent.Parent.GuildXp.Visible=true Parent.Parent.TradeskillXp.Visible=false Parent.Parent.AchievementXP.Visible=false Parent.Parent.AscensionXP.Visible=false Parent.Parent.TitheXP.Visible=false" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Tradeskill XP&#xD;&#xA;Click here to show Guild XP" />
+            <Text Color="#FFFF80" DynamicData="/GameData.Self.TSVitality" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,27" Margin="1,0,0,0" MaxLines="1" Name="Vitality" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">100.0%</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Self.TSExperienceDebtCurrent" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="66,37" Margin="1,0,0,0" MaxLines="1" Name="Debt" ScrollExtent="33,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="33,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default" Visible="false">0%</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" Color="#98ACC2" DynamicData="/GameData.Self.TradeskillExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">27.0%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Color="#98ACC2" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Tradeskill Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text Color="#98ACC2" DynamicData="/GameData.Self.TradeskillExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">0.0%</Text>
+                </Page>
+            </Page>
+        </Page>
+        <Page Location="170,20" Name="GuildXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.AscensionXP.Visible=false Parent.AchievementXP.Visible=false Parent.TradeskillXP.Visible=false Parent.AdventureXP.Visible=false Parent.TitheXP.Visible=false" ScrollExtent="105,56" Size="105,56" Visible="false">
+            <Button BackgroundOpacity="0.000" Location="3,0" Name="SwitchXP" OnPress="Parent.Parent.AdventureXp.Visible=false Parent.Parent.GuildXp.Visible=false Parent.Parent.TradeskillXp.Visible=false Parent.Parent.AchievementXP.Visible=false Parent.Parent.AscensionXP.Visible=true Parent.Parent.TitheXP.Visible=false" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Guild XP&#xD;&#xA;Click here to show Ascension XP" />
+            <Text Color="#FFA8A8" DynamicData="/GameData.Guild.Online" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="56,31" Margin="1,0,0,0" MaxLines="1" Name="Online" ScrollExtent="23,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="23,17" TextAlignment="Right" TextAlignmentVertical="Center" Tooltip="Guild Members currently online" TooltipStyle="/TooltipStyles.tooltip_default">0</Text>
+            <Text AbsorbsInput="false" Color="#FFFF80" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="78,31" Margin="1,0,0,0" MaxLines="1" Name="Of" ScrollExtent="13,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="13,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">/</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Guild.Members" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="82,35" Margin="1,0,0,0" MaxLines="1" Name="Total" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" Tooltip="Total Guild Members" TooltipStyle="/TooltipStyles.tooltip_default">0</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" Color="#CB9CFE" DynamicData="/GameData.Guild.ExperienceFull" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">33.0%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Color="#CB9CFE" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Guild Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text Color="#CB9CFE" DynamicData="/GameData.Guild.ExperienceFull" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">0.0%</Text>
+                </Page>
+            </Page>
+        </Page>
+        
+		<Page Location="170,20" Name="AscensionXP" OnShow="Parent.Levels.LevelTrade.Visible=false Parent.Levels.LevelAscension.Visible=true Parent.GuildXP.Visible=false Parent.AchievementXP.Visible=false Parent.TradeskillXP.Visible=false Parent.AdventureXP.Visible=false Parent.TitheXP.Visible=false" ScrollExtent="105,56" Size="105,56">
+            <Button BackgroundOpacity="0.000" Location="1,0" Name="SwitchXP" OnPress="Parent.Parent.AdventureXp.Visible=false Parent.Parent.GuildXp.Visible=false Parent.Parent.TradeskillXp.Visible=false Parent.Parent.AchievementXP.Visible=false Parent.Parent.AscensionXP.Visible=false Parent.Parent.TitheXP.Visible=true" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Ascension XP&#xD;&#xA;Click here to show Tithe XP" />
+            <Image Activated="true" Color="#F0D080" DynamicData="/GameData.Self.CombatExperienceDisabled" DynamicDataFilter="0001" Location="-8,0" Name="CombatExperienceDisabled" Opacity="0.850" ScrollExtent="102,58" Size="102,58" SourceRect="382,23,480,78" SourceResource="images/profit.dds" Stretch="false" Visible="false" />
+            <Text Color="#FFFF80" DynamicData="/GameData.Self.AscensionExperienceBubble" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="64,27" Margin="1,0,0,0" MaxLines="1" Name="Points" ScrollExtent="52,21" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,21" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">100.0%</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" DynamicData="/GameData.Self.AscensionExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">88.8%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Adventure Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text DynamicData="/GameData.Self.AscensionExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">12.3%</Text>
+                </Page>
+            </Page>
+        </Page>
+
+		<Page Location="170,20" Name="TitheXP" OnShow="Parent.Levels.LevelTrade.Visible=true Parent.Levels.LevelAscension.Visible=false Parent.GuildXP.Visible=false Parent.AchievementXP.Visible=false Parent.TradeskillXP.Visible=false Parent.AdventureXP.Visible=false Parent.AscensionXP.Visible=false" ScrollExtent="105,56" Size="105,56">
+            <Button BackgroundOpacity="0.000" Location="1,0" Name="SwitchXP" OnPress="Parent.Parent.AdventureXp.Visible=true Parent.Parent.GuildXp.Visible=false Parent.Parent.TradeskillXp.Visible=false Parent.Parent.AchievementXP.Visible=false Parent.Parent.AscensionXP.Visible=false Parent.Parent.TitheXP.Visible=false" ScrollExtent="62,57" Size="62,57" Tooltip="Showing Tithe XP&#xD;&#xA;Click here to show Adventure XP" />
+            <Image Activated="true" Color="#F0D080" DynamicData="/GameData.Self.CombatExperienceDisabled" DynamicDataFilter="0001" Location="-8,0" Name="CombatExperienceDisabled" Opacity="0.850" ScrollExtent="102,58" Size="102,58" SourceRect="382,23,480,78" SourceResource="images/profit.dds" Stretch="false" Visible="false" />
+            <Text Color="#FFFF80" DynamicData="/GameData.Achievement.AvailableDeityPoints" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,27" Margin="1,0,0,0" MaxLines="1" Name="Level" ScrollExtent="52,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="52,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">100.0%</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Self.TitheExperienceDebtCurrent" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="64,37" Margin="1,0,0,0" MaxLines="1" Name="Debt" ScrollExtent="33,17" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="33,17" TextAlignmentVertical="Bottom" TooltipStyle="/TooltipStyles.tooltip_default">10%</Text>
+            <Page AbsorbsInput="false" Location="-6,1" Name="XP Value" ScrollExtent="105,55" Size="105,55">
+                <Page AbsorbsInput="false" Location="-14,2" Name="Integer" ScrollExtent="83,67" Size="83,67">
+                    <Text AbsorbsInput="false" DynamicData="/GameData.Self.TitheExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font56" Location="21,-7" MaxLines="1" Name="Axp" ScrollExtent="139,71" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="139,71" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">88.8%</Text>
+                </Page>
+                <Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.Font28" Location="68,0" MaxLines="1" Name="ExpDecimal" ScrollExtent="15,38" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="15,38" TextAlignment="Center">.</Text>
+                <Page AbsorbsInput="false" Location="81,2" Name="Decimal" ScrollExtent="16,29" Size="16,29" Tooltip="Adventure Experience" TooltipStyle="/TooltipStyles.tooltip_default">
+                    <Text DynamicData="/GameData.Self.TitheExperienceCurrent" Font="/ProfitUI_Styles.Fonts.Font28" Location="-40,-2" MaxLines="1" Name="Axpb" ScrollExtent="72,33" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="72,33" TextAlignment="Right" TooltipStyle="/TooltipStyles.tooltip_default">12.3%</Text>
+                </Page>
+            </Page>
+        </Page>
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		<Page AbsorbsInput="false" Enabled="false" GetsInput="false" Location="277,22" Name="Coins" ScrollExtent="150,33" Size="150,33">
+            <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="7,0" Name="Coins" PackLocation="center,top" ScrollExtent="150,30" Size="150,30">
+                <Image actiondata="coin 3" BackgroundTint="#000000" DynamicData="/GameData.Coins.Coin_3" iconstyle="/IconStyles.coin" Location="47,14" mouseovercolor="#FFFF00" Name="CoinPlatinum" ScrollExtent="14,14" Size="14,14" Style="/imagelist.coins.PlatinumCoin" treatasbutton="false" />
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="3" description="platinum" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_3" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="-7,0" Margin="0,0,5,0" Name="Platinum" ScrollExtent="69,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="69,20" TextAlignment="Right" Tooltip="Platinum">999999999</Text>
+                <Image actiondata="coin 2" BackgroundTint="#000000" DynamicData="/GameData.Coins.Coin_2" iconstyle="/IconStyles.coin" Location="70,14" mouseovercolor="#FFFF00" Name="CoinGold" ScrollExtent="14,14" Size="14,14" Style="/imagelist.coins.GoldCoin" treatasbutton="false" />
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="2" description="gold" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_2" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="56,-5" Margin="5,5,5,5" Name="Gold" ScrollExtent="43,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="43,20" TextAlignment="Center" TextColor="#FFEE70" Tooltip="Gold">99</Text>
+                <Image actiondata="coin 1" BackgroundTint="#000000" DynamicData="/GameData.Coins.Coin_1" iconstyle="/IconStyles.coin" Location="93,14" mouseovercolor="#FFFF00" Name="CoinSilver" ScrollExtent="14,14" Size="14,14" Style="/imagelist.coins.SilverCoin" treatasbutton="false" />
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="1" description="Silver" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_1" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="79,-5" Margin="5,5,5,5" Name="Silver" ScrollExtent="43,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="43,20" TextAlignment="Center" TextColor="#A0A0A0" Tooltip="Silver">99</Text>
+                <Image actiondata="coin 0" BackgroundTint="#000000" DynamicData="/GameData.Coins.Coin_0" iconstyle="/IconStyles.coin" Location="116,14" mouseovercolor="#FFFF00" Name="CoinCopper" ScrollExtent="14,14" Size="14,14" Style="/imagelist.coins.CopperCoin" treatasbutton="false" />
+                <Text AbsorbsInput="false" actiontype="Coin" cointype="0" description="Copper" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_0" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="102,-5" Margin="5,5,5,5" Name="Copper" ScrollExtent="43,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="43,20" TextAlignment="Center" TextColor="#EA9129" Tooltip="Copper">99</Text>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Enabled="false" GetsInput="false" Location="292,48" Name="Levels" ScrollExtent="175,33" Size="175,33">
+            <Text AbsorbsInput="false" DynamicData="/GameData.Self.LevelClass" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="-8,1" MaxLines="1" Name="LevelClass" ScrollExtent="175,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="175,20" TextAlignment="Center" TextAlignmentVertical="Center"></Text>
+            <Text AbsorbsInput="false" Color="#98ACC2" DynamicData="/GameData.Self.TradeskillLevelClass" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="-8,12" MaxLines="1" Name="LevelTrade" ScrollExtent="175,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="175,20" TextAlignment="Center" TextAlignmentVertical="Center"></Text>
+            <Text AbsorbsInput="false" Color="#98ACC2" DynamicData="/GameData.Self.AscensionLevelClass" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="-8,12" MaxLines="1" Name="LevelAscension" ScrollExtent="175,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="175,20" TextAlignment="Center" TextAlignmentVertical="Center" Visible="false"></Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="8,22" Name="MainStats" ScrollExtent="199,55" Size="199,55">
+            <Page AbsorbsInput="false" Location="0,-8" Name="Health" PackSize="fixed,fixed" ScrollExtent="192,39" Size="192,39">
+                <Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.CurrentHealth" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="2,-2" Margin="1,1,1,1" Name="Remaining" Opacity="0.750" ScrollExtent="148,39" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="148,39" TextAlignment="Right" TextAlignmentVertical="Center">9,999,999</Text>
+                <Text AbsorbsInput="false" DynamicData="/GameData.Self.Health" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.Font27" Name="HitPointsValue" ScrollExtent="150,39" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="150,39" TextAlignment="Center" TextAlignmentVertical="Center">100%</Text>
+                <Progressbar AbsorbsInput="false" Color="#00FF00" DynamicData="/GameData.Self.Health" DynamicDataFilter="FFFB" Location="0,14" Name="HealthBar" PackLocation="top,left" Progress="1.000" ScrollExtent="150,11" Size="150,11" Style="/ProfitUI_Styles.Bars.prog_health" />
+                <Image AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,14" Name="Background" Opacity="0.400" PackLocation="absolute,absolute" ScrollExtent="150,11" Size="150,11" SourceRect="16,187,166,199" SourceResource="images/profit.dds" />
+            </Page>
+            <Page AbsorbsInput="false" Location="0,17" Name="Cons" ScrollExtent="184,20" Size="184,20">
+                <ImageStyle Filter="true" Name="ConcBubbleFilled">
+                    <ImageFrame Name="image" Source="images/profit.dds" SourceRect="20,182,21,184" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="ConcBubbleMouseover">
+                    <ImageFrame Name="image" Source="/images/window_elements_generic.dds" SourceRect="292,160,309,164" />
+                </ImageStyle>
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_1" GetsInput="true" Location="0,9" Name="ConcBubble0" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="29,3" Size="29,3" Style="ConcBubbleFilled" />
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_2" GetsInput="true" Location="30,9" Name="ConcBubble1" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="29,3" Size="29,3" Style="ConcBubbleFilled" />
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_3" GetsInput="true" Location="60,9" Name="ConcBubble2" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="30,3" Size="30,3" Style="ConcBubbleFilled" />
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_4" GetsInput="true" Location="91,9" Name="ConcBubble3" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="29,3" Size="29,3" Style="ConcBubbleFilled" />
+                <Image actiontype="Concentration" DynamicData="/GameData.Self.Concentration_5" GetsInput="true" Location="121,9" Name="ConcBubble4" OnHoverInEffector="ConcBubbleMouseover" ScrollExtent="29,3" Size="29,3" Style="ConcBubbleFilled" />
+                <Image AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,9" Name="Background" Opacity="0.400" PackLocation="absolute,absolute" ScrollExtent="150,3" Size="150,3" SourceRect="16,187,166,199" SourceResource="images/profit.dds" />
+                <Text AbsorbsInput="false" DynamicData="/GameData.Stats.ConcentrationRange" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="152,-3" Margin="1,0,0,0" Name="Concentration" Opacity="0.750" ScrollExtent="43,28" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="43,28" TextAlignmentVertical="Center" Visible="false">4 / 5</Text>
+            </Page>
+            <Page AbsorbsInput="false" Location="0,25" Name="Mana" ScrollExtent="192,39" Size="192,39">
+                <Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.CurrentPower" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="2,0" Margin="1,1,1,1" Name="Remaining" Opacity="0.750" ScrollExtent="148,37" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="148,37" TextAlignment="Right" TextAlignmentVertical="Center">199,999</Text>
+                <Text AbsorbsInput="false" DynamicData="/GameData.Self.Power" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.Font27" Name="PowerValue" ScrollExtent="150,39" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="150,39" TextAlignment="Center" TextAlignmentVertical="Center">100%</Text>
+                <Progressbar AbsorbsInput="false" Color="#65B3E0" DynamicData="/GameData.Self.Power" DynamicDataFilter="FFFB" Location="0,14" Name="ManaBar" PackLocation="top,left" Progress="0.750" ScrollExtent="150,11" Size="150,11" Style="/ProfitUI_Styles.Bars.prog_power" />
+                <Image AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,14" Name="Background" Opacity="0.400" ScrollExtent="150,11" Size="150,11" SourceRect="16,187,166,199" SourceResource="images/profit.dds" />
+            </Page>
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" Name="WC_Frame" PackSize="a,f" ScrollExtent="490,20" Size="490,20" Visible="false">
+        <Page AbsorbsInput="false" eq2usescomwndcontrols="true" Name="Main" ScrollExtent="490,20" Size="490,20">
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="16,0" Name="RunSpeedLabel" ScrollExtent="43,20" Size="43,20" TextAlignmentVertical="Center" TextColor="#2BDD48">Speed:</Text>
+            <Text DynamicData="/GameData.Stats.Run_Speed" Font="/TextStyles.Normal.NormalStyle" Location="58,0" MaxLines="1" Name="RunSpeedValue" ScrollExtent="32,20" Size="32,20" TextAlignment="Right" TextAlignmentVertical="Center">100%</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="197,0" Name="DeityLabel" ScrollExtent="51,20" Size="51,20" TextAlignmentVertical="Center" TextColor="#FFCB33">Tithe:</Text>
+            <Text DynamicData="/GameData.Achievement.AvailableDeityPoints" Font="/TextStyles.Normal.NormalStyle" Location="235,0" MaxLines="1" Name="Tithe" ScrollExtent="72,20" Size="72,20" TextAlignmentVertical="Center" TextColor="#FFCB33">10</Text>
+            <Text AbsorbsInput="false" DynamicData="/GameData.Self.TitheExperienceCurrent" Font="/TextStyles.Normal.NormalStyle" Location="245,0" Name="XP" OnTextChanged="COND1=(Text==Zero)&#xD;&#xA;COND2=(Text==Zero2)&#xD;&#xA;COND=(COND1 || COND2)&#xD;&#xA;Visible=COND ? false : true" ScrollExtent="40,20" Size="40,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCB33" Visible="false" Zero="0.0%" Zero2="0,0%">99.9%</Text>
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="310,0" Name="StatusLabel" ScrollExtent="51,20" Size="51,20" TextAlignmentVertical="Center" TextColor="#00D2FF">Status:</Text>
+            <Text DynamicData="/GameData.Stats.CurrentStatus" Font="/TextStyles.Normal.NormalStyle" Location="310,0" MaxLines="1" Name="StatusValue" ScrollExtent="100,20" Size="100,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#00D2FF">999999999</Text>
+        </Page>
+        <Button Enabled="false" GetsInput="false" Name="TitleBarLeft" PackSize="a,f" ScrollExtent="476,20" Size="476,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarLeft" />
+    </Page>
+    <Page AbsorbsInput="false" Name="Bar" PackLocation="left,top" PackSize="a,f" ScrollExtent="476,20" Size="476,20">
+        <Page Name="AllXP" ScrollExtent="406,20" Size="406,20">
+            <Text AbsorbsInput="false" DynamicData="/GameData.Self.CombatExperienceDisabled" DynamicDataFilter="0001" Font="/ProfitUI_Styles.Fonts.FontTahoma13" Location="27,4" MaxLines="1" Name="CombatExperienceDisabled" OnHide="Parent.TitleBarBackdrop.Visible=false" OnShow="Parent.TitleBarBackdrop.Visible=true" PackLocation="left,cfc" ScrollExtent="112,16" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="112,16" TextAlignment="Center" TextColor="#F0D080" Visible="false">CombatXP disabled</Text>
+            <Image Location="26,0" Name="TitleBarBackdrop" ScrollExtent="114,19" Size="114,19" SourceRect="233,0,240,20" SourceResource="images/profit.dds" Visible="false" />
+            <Text DynamicData="/GameData.Self.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="21,2" MaxLines="1" Name="AdventureXP" ScrollExtent="38,17" Size="38,17" TextAlignment="Right">0%</Text>
+            <Text Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="17,2" Name="Adv:" ScrollExtent="27,17" Size="27,17">C:</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Self.ExperienceDebtCurrent" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="64,2" Name="AdventureXPDebt" Opacity="0.750" ScrollExtent="36,17" Size="36,17" TextAlignment="Right">0.0%</Text>
+            <Text DynamicData="/GameData.Self.Vitality" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="100,2" Name="AdventureXPVitality" Opacity="0.600" ScrollExtent="39,17" Size="39,17" TextAlignment="Right">100.0%</Text>
+            <Page AbsorbsInput="false" Location="155,2" Name="AchievementXP" ScrollExtent="18,17" Size="18,17">
+                <Text Color="#FFFF80" DynamicData="/GameData.Achievement.ExperienceCurrent" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="5,0" MaxLines="1" Name="Exp" ScrollExtent="31,17" Size="31,17" TextAlignment="Right">0.0%</Text>
+            </Page>
+            <Text Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="142,2" Name="AP:" ScrollExtent="27,17" Size="27,17">AP:</Text>
+            <Text AbsorbsInput="false" Color="#FFFF80" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="173,2" MaxLines="1" Name="AchievementXP_%" ScrollExtent="10,17" Size="10,17" TextAlignment="Right">%</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Achievement.AvailablePoints" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="184,2" Name="APavailable" ScrollExtent="13,17" Size="13,17" TextAlignment="Right" Tooltip="Unassigned Achievement Points">0</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Achievement.Points" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="202,2" Name="APtotal" ScrollExtent="21,17" Size="21,17" Tooltip="Assigned Achievement Points">0</Text>
+            <Text AbsorbsInput="false" Color="#FFA8A8" Font="/ProfitUI_Styles.Fonts.FontTahoma12" Location="193,4" Name="APdivider" ScrollExtent="8,17" Size="8,17" TextAlignment="Right">/</Text>
+            <Text Color="#98ACC2" DynamicData="/GameData.Self.TradeskillExperienceCurrent" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="235,2" MaxLines="1" Name="TradeskillXP" ScrollExtent="37,17" Size="37,17" TextAlignment="Right">0.0%</Text>
+            <Text Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="222,2" Name="TS:" ScrollExtent="27,17" Size="27,17">TS:</Text>
+            <Text DynamicData="/GameData.Self.TSVitality" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="268,2" Name="TradeskillXPVitality" Opacity="0.600" ScrollExtent="44,17" Size="44,17" TextAlignment="Right">100.0%</Text>
+            <Text Color="#CB9CFE" DynamicData="/GameData.Guild.Level" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="335,2" Name="GuildLevel" ScrollExtent="22,17" Size="22,17" Tooltip="Guild Level">0</Text>
+            <Text Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="317,2" Name="GL:" ScrollExtent="42,17" Size="42,17">GL:</Text>
+            <Text DynamicData="/GameData.Guild.ExperienceFull" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="355,2" MaxLines="1" Name="GuildXP" ScrollExtent="35,17" Size="35,17" TextAlignment="Right">0.0%</Text>
+            <Text Color="#FFA8A8" DynamicData="/GameData.Guild.Online" Font="/ProfitUI_Styles.Fonts.FontFranklinGothicMedium16" Location="380,2" Name="GuildOnline" ScrollExtent="26,17" Size="26,17" TextAlignment="Right" Tooltip="Guild Members currently online">0</Text>
+        </Page>
+        <Button Enabled="false" GetsInput="false" Name="TitleBarLeft" PackSize="a,f" ScrollExtent="476,20" Size="476,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarLeft" />
+    </Page>
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackLocation="nfn,nfn" PackSize="a,a" ScrollExtent="476,79" Size="476,79" />
+</Page>

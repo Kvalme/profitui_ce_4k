@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page eq2usescomwndcontrols="true" Location="395,541" MaximumSize="512,512" MinimumSize="315,44" Name="Player" PackLocation="center,fff" Size="387,60" UserMovable="true" OnHoverIn="Parent.ProfitUI_SubclassDetector.Detect.Press=true" >
+<Image BackgroundColor="#FFFFFF" DynamicData="/GameData.Self.InPVP" GetsInput="true" Location="122,36" Name="PvPIcon" PackLocation="right, top" Size="16,16" Style="GoodInPvP" Tooltip=":09e86496f3194ea2:You can be engaged in PvP combat" />
+<ImageStyle Filter="true" Name="GoodInPvP">
+<ImageFrame Source="images/window_elements_specific.dds" SourceRect="271,171,290,194" />
+</ImageStyle>
+<ImageStyle Filter="true" Name="NeutralInPvP">
+<ImageFrame Source="images/window_elements_specific.dds" SourceRect="270,196,292,222" />
+</ImageStyle>
+<ImageStyle Filter="true" Name="EvilInPvP">
+<ImageFrame Source="images/window_elements_specific.dds" SourceRect="271,146,292,169" />
+</ImageStyle>
+<Checkbox BackgroundColor="#FF0000" DynamicData="/GameData.Self.AFK" Location="4,4" Name="AFK" OnHoverIn="BackgroundOpacity=0.3" OnHoverOut="BackgroundOpacity=0" OnPress="afk" OnSet="Parent.Self.AFK.Visible=true" OnUnset="Parent.Self.AFK.Visible=false" Size="40,27" Style="/ProfitUI_Styles.ButtonStyles.checkbox_textonly" Tooltip="Toggle AFK (Away from Keyboard)" />
+<Button BackgroundColor="#FF0000" BackgroundOpacity="0.000" Location="46,4" Name="LFG_LFM" OnHoverIn="BackgroundOpacity=0.3" OnHoverOut="BackgroundOpacity=0" OnPress="lfg" Size="40,27" Style="/ButtonStyles.BoxButton" Tooltip=":4bb9327f580b52f4:Open the Looking For Group window" />
+<Checkbox BackgroundColor="#FFFFFF" DynamicData="/GameData.Self.LFG" GetsInput="false" Location="46,4" Name="LFG" OnSet="Parent.Self.LFG.Visible=true" OnUnset="Parent.Self.LFG.Visible=false" />
+<Checkbox BackgroundColor="#FFFFFF" DynamicData="/GameData.Self.LFM" GetsInput="false" Location="46,4" Name="LFM" OnSet="Parent.Self.LFM.Visible=true" OnUnset="Parent.Self.LFM.Visible=false" />
+<Checkbox BackgroundColor="#FF0000" DynamicData="/GameData.Self.LFW" Location="88,4" Name="LFW" OnHoverIn="BackgroundOpacity=0.3" OnHoverOut="BackgroundOpacity=0" OnPress="lfw" OnSet="Parent.Self.LFW.Visible=true" OnUnset="Parent.Self.LFW.Visible=false" Size="40,27" Style="/ProfitUI_Styles.ButtonStyles.checkbox_textonly" Tooltip="Toggle LFW (Looking for Work)" />
+<Button BackgroundOpacity="0.000" Location="262,4" Name="AssistButton" OnHoverIn="TRG=Parent.Target.Name.LocalText" OnPress="assist TRG" Size="123,53" Tooltip="Click to assist target" />
+<Image DynamicData="/GameData.Self.IsHated" Location="6,35" Name="IsHated" Size="19,19" SourceRect="272,125,291,144" SourceResource="images/window_elements_specific.dds" Stretch="false" Tooltip=":09e864967307661b:You are being attacked" Visible="false" />
+<Page AbsorbsInput="false" Location="27,34" Name="Effects" Size="96,18">
+<Button MouseOverTextColor="#FF0000" Name="CureEffect1" NormalTextColor="#FFFFFF" OnHoverIn="target_allow_pet_self_toggle 0" OnHoverOut="target_allow_pet_self_toggle 1" OnPress="target_previous Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.CureTrauma.Press=true Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.Target=Parent.Name.LocalText Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.SlotName=&apos;g0&apos;" Opacity="0.000" Size="18,18" Style="/ProfitUI_Styles.invisible" Tooltip="Cure Trauma" />
+<Button Location="19,0" MouseOverTextColor="#FF0000" Name="CureEffect2" NormalTextColor="#FFFFFF" OnHoverIn="target_allow_pet_self_toggle 0" OnHoverOut="target_allow_pet_self_toggle 1" OnPress="target_previous Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.CureArcane.Press=true Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.Target=Parent.Name.LocalText Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.SlotName=&apos;g0&apos;" Opacity="0.000" Size="18,18" Style="/ProfitUI_Styles.invisible" Tooltip="Cure Arcane" />
+<Button Location="38,0" MouseOverTextColor="#FF0000" Name="CureEffect3" NormalTextColor="#FFFFFF" OnHoverIn="target_allow_pet_self_toggle 0" OnHoverOut="target_allow_pet_self_toggle 1" OnPress="target_previous Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.CureNoxious.Press=true Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.Target=Parent.Name.LocalText Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.SlotName=&apos;g0&apos;" Opacity="0.000" Size="18,18" Style="/ProfitUI_Styles.invisible" Tooltip="Cure Noxious" />
+<Button Location="57,0" MouseOverTextColor="#FF0000" Name="CureEffect4" NormalTextColor="#FFFFFF" OnHoverIn="target_allow_pet_self_toggle 0" OnHoverOut="target_allow_pet_self_toggle 1" OnPress="target_previous Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.CureElemental.Press=true Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.Target=Parent.Name.LocalText Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.SlotName=&apos;g0&apos;" Opacity="0.000" Size="18,18" Style="/ProfitUI_Styles.invisible" Tooltip="Cure Elemental" />
+<Button Location="76,0" MouseOverTextColor="#FF0000" Name="CureEffect5" NormalTextColor="#FFFFFF" OnHoverIn="target_allow_pet_self_toggle 0" OnHoverOut="target_allow_pet_self_toggle 1" OnPress="target_previous Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.CureCurse.Press=true Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.Target=Parent.Name.LocalText Parent.Parent.Parent.Parent.Custom.ProfitUI_CuresCode.SlotName=&apos;g0&apos;" Opacity="0.000" Size="18,18" Style="/ProfitUI_Styles.invisible" Tooltip="Cure Curse" />
+<Text DynamicData="/GameData.Self.Name" Name="Name" Visible="false" />
+<Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.Effect1" Font="/Fonts.FontZapf15" Location="-3,0" Name="Effect1Label" ShadowStyle="/ShadowStyles.SmallText" Size="18,18" TextAlignment="Right" TextAlignmentVertical="Center">1</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.Effect2" Font="/Fonts.FontZapf15" Location="16,0" Name="Effect2Label" ShadowStyle="/ShadowStyles.SmallText" Size="18,18" TextAlignment="Right" TextAlignmentVertical="Center">1</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.Effect3" Font="/Fonts.FontZapf15" Location="35,0" Name="Effect3Label" ShadowStyle="/ShadowStyles.SmallText" Size="18,18" TextAlignment="Right" TextAlignmentVertical="Center">1</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.Effect4" Font="/Fonts.FontZapf15" Location="54,0" Name="Effect4Label" ShadowStyle="/ShadowStyles.SmallText" Size="18,18" TextAlignment="Right" TextAlignmentVertical="Center">1</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.Effect5" Font="/Fonts.FontZapf15" Location="73,0" Name="Effect5Label" ShadowStyle="/ShadowStyles.SmallText" Size="18,18" TextAlignment="Right" TextAlignmentVertical="Center">1</Text>
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect1" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.Effect1Style" Name="Effect1" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect2" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.Effect2Style" Location="19,0" Name="Effect2" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect3" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.Effect3Style" Location="38,0" Name="Effect3" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect4" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.Effect4Style" Location="57,0" Name="Effect4" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect5" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.Effect5Style" Location="76,0" Name="Effect5" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect1" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.EffectRed" Name="EffectRed" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect2" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.EffectPurple" Location="19,0" Name="EffectPurple" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect3" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.EffectGreen" Location="38,0" Name="EffectGreen" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect4" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.EffectYellow" Location="57,0" Name="EffectYellow" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect5" DynamicDataFilter="0001" IconStyle="/ProfitUI_Styles.Effects.EffectRed" Location="76,0" Name="EffectRed5" Size="18,18" />
+<Page AbsorbsInput="false" eq2usescomwndcontrols="true" Name="EffectBackgrounds" Opacity="0.200" RStyleDefault="/rectlist.chat_bubble_frame" Size="96,21">
+<Icon AbsorbsInput="false" BackgroundTint="#000000" IconStyle="/ProfitUI_Styles.Effects.Effect1Style" Name="Effect1" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" IconStyle="/ProfitUI_Styles.Effects.Effect2Style" Location="19,0" Name="Effect2" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" IconStyle="/ProfitUI_Styles.Effects.Effect3Style" Location="38,0" Name="Effect3" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" IconStyle="/ProfitUI_Styles.Effects.Effect4Style" Location="57,0" Name="Effect4" Size="18,18" />
+<Icon AbsorbsInput="false" BackgroundTint="#000000" IconStyle="/ProfitUI_Styles.Effects.Effect5Style" Location="76,0" Name="Effect5" Size="18,18" />
+</Page>
+</Page>
+<Page AbsorbsInput="false" actiontype="Player" description="Current player action menu" DynamicData="/GameData.Actions.Player" eq2usescomwndcontrols="true" Location="7,-2" Name="Self" Size="122,53">
+<Text AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#FF5555" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="0,17" Margin="1,0,0,0" MaxLines="1" Name="AFK" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="35,15" TextAlignment="Right" TruncateElipsis="false" Visible="false">AFK</Text>
+<Text AbsorbsInput="false" BackgroundColor="#FFFFFF" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="13,7" Margin="1,0,0,0" MaxLines="1" Name="LFG" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="42,15" TextAlignment="Right" TruncateElipsis="false" Visible="false">LFG</Text>
+<Text AbsorbsInput="false" BackgroundColor="#FFFFFF" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="13,7" Margin="1,0,0,0" MaxLines="1" Name="LFM" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="66,15" TextAlignment="Right" TruncateElipsis="false" Visible="false">LFM</Text>
+<Text AbsorbsInput="false" BackgroundColor="#FFFFFF" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="13,7" Margin="1,0,0,0" MaxLines="1" Name="LFW" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="92,15" TextAlignment="Right" TruncateElipsis="false" Visible="false">LFW</Text>
+<Text AbsorbsInput="false" BackgroundColor="#FFFFFF" DynamicData="/GameData.Self.Name" Font="/ProfitUI_Styles.Fonts.FontArial12T" Framecontrol="true" Location="4,7" Margin="1,0,0,0" MaxLines="1" Name="Title" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="118,15" TruncateElipsis="false">Self</Text>
+<Page AbsorbsInput="false" Location="3,3" Name="Health" Size="112,39">
+<Text AbsorbsInput="false" DynamicData="/GameData.Self.Health" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="46,0" Name="Percent" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="100,31" TextAlignment="Center" TextAlignmentVertical="Center">100%</Text>
+<Progressbar AbsorbsInput="false" Color="#00FF00" DynamicData="/GameData.Self.Health" DynamicDataFilter="FFFB" Location="0,14" Name="HealthBar" Progress="1.000" Size="110,6" Style="/ProfitUI_Styles.Bars.prog_health" />
+</Page>
+<Page AbsorbsInput="false" Location="3,14" Name="Mana" Size="112,22">
+<Text AbsorbsInput="false" DynamicData="/GameData.Self.Power" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="46,0" Name="Percent" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="100,28" TextAlignment="Center" TextAlignmentVertical="Center">100%</Text>
+<Progressbar AbsorbsInput="false" Color="#65B3E0" DynamicData="/GameData.Self.Power" DynamicDataFilter="FFFB" Location="0,10" Name="PowerBar" Progress="1.000" Size="110,6" Style="/ProfitUI_Styles.Bars.prog_power" />
+</Page>
+<Page AbsorbsInput="false" Backdropcontrol="true" Location="-1,13" MaximumSize="1024,1024" Name="BkgBar" Size="118,20">
+<Button Enabled="false" GetsInput="false" Name="TitleBarBoxed" Size="118,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed" />
+</Page>
+</Page>
+<Page AbsorbsInput="false" Location="111,-25" Name="Target" Size="172,96">
+<Button AbsorbsInput="false" DynamicData="/GameData.Self.RangedAutoAttack" Location="65,21" Name="RangedCombat" OnHide="Parent.Combat.Size=36,36" OnRangedAutoAttackEffector="RangedAutoAttackEffector" OnShow="Parent.Combat.Size=0,0" Opacity="0.000" Rotation="0.500" Size="36,36" Style="/ProfitUI_Styles.CombatRanged" Visible="false" />
+<Button AbsorbsInput="false" DynamicData="/GameData.Self.AutoAttack" Location="65,21" Name="Combat" OnAutoAttackEffector="AutoAttackEffector" Opacity="0.000" Rotation="0.500" Size="36,36" Style="/ProfitUI_Styles.Combat" Visible="false" />
+<EffectorCycleOpacity InitialOpacity="1.000" MaxSpeed="4.000" MinSpeed="4.000" Name="RangedAutoAttackEffector" OpacityEnd="0.000" Speed="4.000" />
+<EffectorCycleOpacity InitialOpacity="1.000" MaxSpeed="4.000" MinSpeed="4.000" Name="AutoAttackEffector" OpacityEnd="0.000" Speed="4.000" />
+<Text AbsorbsInput="false" BackgroundColor="#FFFFFF" DynamicData="/GameData.Target.Power" DynamicDataFilter="0001" Font="/ProfitUI_Styles.Fonts.FontArial12T" Framecontrol="true" Location="29,30" Margin="1,0,0,0" MaxLines="1" Name="Title" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="118,15" TruncateElipsis="false">Target</Text>
+<Image DynamicData="/GameData.Target.Power" DynamicDataFilter="0001" Location="15,42" Name="Pointer" Rotation="0.750" Size="11,10" SourceRect="261,225,272,233" SourceResource="images/profit.dds" Stretch="false" Style=" " />
+<Text AbsorbsInput="false" actiontype="Target" BackgroundColor="#FFFFFF" DynamicData="/GameData.Target.Name" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="25,56" Margin="1,0,1,1" MaxLines="2" Name="Name" OnHide="Parent.Pointer.Visible=false" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="116,22" TextAlignment="Center" TruncateElipsis="false" />
+<Page AbsorbsInput="false" Location="28,36" Name="Percentages" Size="112,20">
+<Text AbsorbsInput="false" DynamicData="/GameData.Target.SecondaryThreat" DynamicDataFilter="FBFF" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="-19,0" Name="Threat" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="37,22" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">100</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.Target.SecondaryThreat" DynamicDataFilter="0401" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="18,0" Name="ThreatPercent" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="19,22" TextAlignmentVertical="Center" Visible="false">%</Text>
+<Text AbsorbsInput="false" actiontype="Target" DynamicData="/GameData.Target.Health" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="49,0" MaximumSize="150,39" MaxLines="1" Name="HealthPercent" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="61,20" TextAlignment="Right" TruncateElipsis="false">100%</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.Target.Power" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="47,0" MaxLines="1" Name="PowerPercent" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="63,20" TextAlignment="Right" TextAlignmentVertical="Bottom">100%</Text>
+</Page>
+<Page DynamicData="/GameData.Target.Threat" DynamicDataFilter="0001" Location="28,46" Name="ThreatPage" Size="110,3" Visible="false">
+<Image BackgroundColor="#FFFFFF" BackgroundOpacity="0.722" Color="#444400" Name="ThreatBkg" Size="110,3" Visible="false" />
+<Progressbar Color="#FF0000" DynamicData="/GameData.Target.Threat" ExtendedTooltip="Displays your threat towards this character." GetsInput="false" Name="Threat" Progress="0.500" Size="110,3" Style="/ProfitUI_Styles.Bars.prog_default" Tooltip=":2e2e036ed4c4a62e:Threat" />
+</Page>
+<Page AbsorbsInput="false" DynamicData="/GameData.Target.Health" DynamicDataFilter="0001" Location="28,27" Name="HealthPage" OnHide="Parent.Pointer.Visible=false" Size="112,20">
+<Progressbar AbsorbsInput="false" Color="#00FF00" DynamicData="/GameData.Target.Health" DynamicDataFilter="FFFB" Location="0,13" Name="HealthBar" Progress="1.000" Size="110,6" Style="/ProfitUI_Styles.Bars.prog_health" />
+</Page>
+<Page AbsorbsInput="false" DynamicData="/GameData.Target.Power" DynamicDataFilter="0001" Location="28,37" Name="ManaPage" Size="112,20">
+<Progressbar AbsorbsInput="false" Color="#65B3E0" DynamicData="/GameData.Target.Power" DynamicDataFilter="FFFB" Location="0,11" Name="PowerBar" Progress="1.000" Size="110,6" Style="/ProfitUI_Styles.Bars.prog_power" />
+</Page>
+<Page AbsorbsInput="false" Backdropcontrol="true" DynamicDataFilter="0001" Location="24,36" MaximumSize="1024,1024" Name="BkgBar" OnHide="Visible=true" Size="118,20">
+<Button Enabled="false" GetsInput="false" Name="TitleBarBoxed" Size="118,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed" />
+</Page>
+</Page>
+<Page AbsorbsInput="false" Location="221,-25" Name="ImpliedTarget" Size="172,96">
+<Text AbsorbsInput="false" BackgroundColor="#FFFFFF" DynamicData="/GameData.ImpliedTarget.Power" DynamicDataFilter="0001" Font="/ProfitUI_Styles.Fonts.FontArial12T" Framecontrol="true" Location="48,29" Margin="1,0,0,0" MaxLines="1" Name="Title" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="118,15" TruncateElipsis="false">Implied</Text>
+<Image DynamicData="/GameData.ImpliedTarget.Power" DynamicDataFilter="0001" Location="34,41" Name="Pointer" Rotation="0.750" Size="11,10" SourceRect="261,225,272,233" SourceResource="images/profit.dds" Stretch="false" Style=" " />
+<Text AbsorbsInput="false" actiontype="Target" BackgroundColor="#FFFFFF" DynamicData="/GameData.ImpliedTarget.Name" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="44,56" Margin="1,0,1,1" MaxLines="2" Name="Name" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="117,22" TextAlignment="Center" TruncateElipsis="false" />
+<Page AbsorbsInput="false" Location="46,36" Name="Percentages" Size="112,20">
+<Text AbsorbsInput="false" DynamicData="/GameData.ImpliedTarget.SecondaryThreat" DynamicDataFilter="FBFF" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="-19,0" Name="Threat" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="37,22" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">100</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.ImpliedTarget.SecondaryThreat" DynamicDataFilter="0401" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="18,0" Name="ThreatPercent" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="19,22" TextAlignmentVertical="Center" Visible="false">%</Text>
+<Text AbsorbsInput="false" actiontype="Target" DynamicData="/GameData.ImpliedTarget.Health" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="49,0" MaximumSize="150,39" MaxLines="1" Name="HealthPercent" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="61,20" TextAlignment="Right" TruncateElipsis="false">100%</Text>
+<Text AbsorbsInput="false" DynamicData="/GameData.ImpliedTarget.Power" DynamicDataFilter="FBFB" Font="/ProfitUI_Styles.Fonts.FontArial12T" Location="47,0" MaxLines="1" Name="PowerPercent" Opacity="0.750" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="63,20" TextAlignment="Right" TextAlignmentVertical="Bottom">100%</Text>
+</Page>
+<Page DynamicData="/GameData.ImpliedTarget.Threat" DynamicDataFilter="0001" Location="47,46" Name="ThreatPage" Size="110,3" Visible="false">
+<Image BackgroundColor="#FFFFFF" BackgroundOpacity="0.722" Color="#444400" Name="ThreatBkg" Size="110,3" Visible="false" />
+<Progressbar Color="#FF0000" DynamicData="/GameData.ImpliedTarget.Threat" ExtendedTooltip="Displays your threat towards this character." GetsInput="false" Name="Threat" Progress="0.500" Size="110,3" Style="/ProfitUI_Styles.Bars.prog_default" Tooltip=":2e2e036ed4c4a62e:Threat" />
+</Page>
+<Page AbsorbsInput="false" DynamicData="/GameData.ImpliedTarget.Health" DynamicDataFilter="0001" Location="47,27" Name="HealthPage" OnHide="Parent.Pointer.Visible=false" Size="112,20">
+<Progressbar AbsorbsInput="false" Color="#00FF00" DynamicData="/GameData.ImpliedTarget.Health" DynamicDataFilter="FFFB" Location="0,13" Name="HealthBar" Progress="1.000" Size="110,6" Style="/ProfitUI_Styles.Bars.prog_health" />
+</Page>
+<Page AbsorbsInput="false" DynamicData="/GameData.ImpliedTarget.Power" DynamicDataFilter="0001" Location="47,37" Name="ManaPage" Size="112,20">
+<Progressbar AbsorbsInput="false" Color="#65B3E0" DynamicData="/GameData.ImpliedTarget.Power" DynamicDataFilter="FFFB" Location="0,11" Name="PowerBar" Progress="1.000" Size="110,6" Style="/ProfitUI_Styles.Bars.prog_power" />
+</Page>
+<Page AbsorbsInput="false" Backdropcontrol="true" DynamicDataFilter="0001" Location="43,36" MaximumSize="1024,1024" Name="BkgBar" OnHide="Visible=true" Size="118,20">
+<Button Enabled="false" GetsInput="false" Name="TitleBarBoxed" Size="118,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed" />
+</Page>
+</Page>
+<Page AbsorbsInput="false" Name="WC_Frame" OnHide="Parent.Target.BkgBar.OnHide=&apos; &apos;&#xD;&#xA;Parent.Target.BkgBar.Visible=false&#xD;&#xA;Parent.Target.BkgBar.DynamicData=&apos;/GameData.Target.Power&apos;&#xD;&#xA;Parent.ImpliedTarget.BkgBar.OnHide=&apos; &apos;&#xD;&#xA;Parent.ImpliedTarget.BkgBar.Visible=false&#xD;&#xA;Parent.ImpliedTarget.BkgBar.DynamicData=&apos;/GameData.ImpliedTarget.Power&apos;" OnShow="Parent.Target.BkgBar.DynamicData=&apos; &apos;&#xD;&#xA;Parent.Target.BkgBar.OnHide=&apos;Visible=true&apos;&#xD;&#xA;Parent.Target.BkgBar.Visible=true&#xD;&#xA;Parent.ImpliedTarget.BkgBar.DynamicData=&apos; &apos;&#xD;&#xA;Parent.ImpliedTarget.BkgBar.OnHide=&apos;Visible=true&apos;&#xD;&#xA;Parent.ImpliedTarget.BkgBar.Visible=true" />
+</Page>

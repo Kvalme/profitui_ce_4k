@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page BackgroundColor="#0000FF" eq2usescomwndcontrols="true" Location="262,0" Name="HousingBar" ScrollExtent="269,56" Size="269,56" UserMovable="true" UserResizeable="true" UserScrollable="false">
+            <Icon IconRect="54,216,70,235" IconResource="images/buttons_master.dds" Location="5,5" Name="Up" ScrollExtent="21,21" Size="21,21" TreatAsButton="true" />
+            <Icon IconRect="54,190,70,209" IconResource="images/buttons_master.dds" Location="5,5" Name="DownUNUSED" ScrollExtent="21,21" Size="21,21" TreatAsButton="true" Visible="false" />
+            <Icon IconRect="223,134,244,153" IconResource="images/buttons_master.dds" Location="5,5" Name="Left" ScrollExtent="21,21" Size="21,21" TreatAsButton="true" />
+            <Icon IconRect="225,108,244,126" IconResource="images/buttons_master.dds" Location="5,5" Name="Right" ScrollExtent="21,21" Size="21,21" TreatAsButton="true" />
+            <Page Location="8,2" Name="AnvilPage" ScrollExtent="45,45" Size="45,45">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,-3" Name="Border" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="49,50" Size="49,50" />
+                <Icon IconRect="0,168,42,210" IconResource="images/icons/icon_is117.dds" Location="2,1" Name="AnvilIcon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="154,2" Name="HousePage" ScrollExtent="45,45" Size="45,45">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,-3" Name="Border" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="49,50" Size="49,50" />
+                <Icon IconRect="42,168,85,210" IconResource="images/icons/icon_is117.dds" Location="2,1" Name="HouseIcon" OnPress="house" ScrollExtent="42,42" Size="42,42" Tooltip=":4a6d7b7730f35d7c:Open the House window" TreatAsButton="true" />
+            </Page>
+            <Page Location="154,2" Name="LeavePage" ScrollExtent="45,45" Size="45,45">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,-3" Name="Border" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="49,50" Size="49,50" />
+                <Icon IconRect="209,126,252,168" IconResource="images/icons/icon_is117.dds" Location="2,1" Name="LeaveIcon" ScrollExtent="42,42" Size="42,42" Tooltip=":4a6d7b77e0d7800f:Leave House" TreatAsButton="true" />
+            </Page>
+            <Page Location="56,2" Name="DecoratePage" ScrollExtent="45,45" Size="45,45">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,-3" Name="Border" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="49,50" Size="49,50" />
+                <Icon IconRect="168,126,210,168" IconResource="images/icons/icon_is117.dds" Location="2,1" Name="DecorateIcon" OnPress="house_edit" ScrollExtent="42,42" Size="42,42" Tooltip=":4a6d7b77da940985:Enter/Exit Decorator mode" TreatAsButton="true" />
+            </Page>
+            <Page Location="202,2" Name="RatePage" ScrollExtent="45,45" Size="45,45">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,-3" Name="Border" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="49,50" Size="49,50" />
+                <Icon IconRect="213,46,254,88" IconResource="images/widgets03.dds" Location="2,1" Name="RateIcon" OnPress="rate_house" ScrollExtent="42,42" Size="42,42" Tooltip=":4a6d7b776f4fd018:Rate this house!" TreatAsButton="true" />
+            </Page>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="269,56" Size="269,56" />
+            <Page AbsorbsInput="false" BackgroundColor="#00FFFF" BackgroundOpacity="1.000" Location="2,5" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="263,46" Size="263,46" />
+        </Page>

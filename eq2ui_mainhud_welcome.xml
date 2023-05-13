@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="false" IgnoreTab="false" Location="112,72" MaximumSize="1024,1024" Name="Welcome" PackLocation="center,center" ScrollExtent="702,496" Size="702,496" UserMovable="true" UserScrollable="false" version="2.0" HideOnce="False" OnShow="visible=HideOnce&#xD;&#xA;HideOnce=true">
+    <Image Location="19,116" Name="Seperator" ScrollExtent="668,2" Size="668,2" Style="seperator_style" />
+    <ImageStyle Filter="true" Name="seperator_style">
+        <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="297,302,371,304" />
+    </ImageStyle>
+    <Button Location="665,39" Name="Close" OnPress="togglewelcomewindow" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":ea411a692d3f513f_1:Close" UserMovable="true" />
+    <Page Location="33,133" Name="RightPage" ScrollExtent="420,331" Size="420,331">
+        <Page Location="7,7" Name="Marketplace" PackSize="a,f" ScrollExtent="404,165" Size="404,165">
+            <Image Location="86,67" Name="PSLogo" PackLocation="right,bottom" ScrollExtent="30,30" Size="30,30" Style="/imagelist.PSOverlay" Visible="false" />
+            <Page AbsorbsInput="false" Location="66,46" Name="SalePage" ScrollExtent="42,42" Size="42,42">
+                <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="SaleText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a692c21d24e:SALE</Text>
+                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+            </Page>
+            <Page AbsorbsInput="false" Location="66,46" Name="NewPage" ScrollExtent="42,42" Size="42,42">
+                <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="NewText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a6902bbf930:NEW</Text>
+                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+            </Page>
+            <Page AbsorbsInput="false" Location="66,46" Name="HotPage" ScrollExtent="42,42" Size="42,42">
+                <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="HotText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a6965d03cb2:HOT</Text>
+                <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+            </Page>
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="66,46" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="1,116" Name="Title" PackSize="a,f" ScrollExtent="170,20" Size="170,20" TextAlignment="Center" TextColor="#FFEEBB">:ea411a6955a3076f:Wallet Balance</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,11" Name="Title" PackSize="a,f" ScrollExtent="155,20" Size="155,20" TextAlignment="Center" TextColor="#FFEEBB">:ea411a697b42d250:Item of the Week</Text>
+            <Text DropToParent="true" DynamicData="/GameData.Marketplace.WalletBalance" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="6,135" Name="Balance" ScrollExtent="128,24" Size="128,24" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCC00">:ea411a69485c8886:1200</Text>
+            <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="139,135" Name="Coin" ScrollExtent="24,24" Size="24,24" Style="/imagelist.coins.StationCash" />
+            <Button Location="198,121" MaximumSize="16384,38" MinimumSize="38,38" Name="ShopNow" ScrollExtent="173,38" Size="173,38" Style="/CommonElements.LargePushButton.data.style">:ea411a690f6f1772:Shop Now</Button>
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="181,11" Name="ItemName" PackSize="a,f" ScrollExtent="213,20" Size="213,20" TextAlignment="Center" TextColor="#F0F0F0">:ea411a69ea53e96a:[DEVL]Item Name</Text>
+            <Text DropToParent="true" Font="/TextStyles.Large.LargeStyle" Location="225,30" Name="ItemCost" ScrollExtent="62,22" Size="62,22" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCC00">:ea411a69db8107c9:500</Text>
+            <Text DropToParent="true" Font="/TextStyles.Large.LargeStyle" Location="181,30" Name="ItemCostLong" ScrollExtent="204,22" Size="204,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFCC00" Visible="false" />
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="170,50" Margin="2,2,2,2" Name="ItemDesc" ScrollExtent="228,64" Size="228,50" TextAlignment="Center">:ea411a697e7caedb:[DEVL]Welcome to Norrath!  Servers are coming down for maintenance on Tuesday, April 14th at 5am PST.  Estimated down time is 4 hours.</Text>
+            <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="292,32" Name="IOTWCoin" ScrollExtent="18,18" Size="18,18" Style="/imagelist.coins.StationCash" />
+            <Page Location="16,35" Name="Bkg2" PackSize="a,a" RStyleDefault="/Inventory.Marketplace.item_bkg.rect" ScrollExtent="142,65" Size="142,65" />
+            <Page AbsorbsInput="false" BackgroundOpacity="0.373" Location="5,4" Name="Bkg" ScrollExtent="395,107" Size="395,107" />
+        </Page>
+        <Page Location="12,173" Name="Featured" PackSize="a,f" ScrollExtent="395,145" Size="395,145">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="0,5" Name="Title" PackSize="a,f" ScrollExtent="395,20" Size="395,20" TextAlignment="Center" TextColor="#FFEEBB">:ea411a69b17905e0:Featured Items</Text>
+            <Button Location="-1,67" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" />
+            <Page Location="23,27" Name="Item0" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" OnHoverIn="Bkg.BackgroundTint = #DDDDDD" OnHoverOut="Bkg.BackgroundTint = #AAAAAA" ScrollExtent="115,112" Size="115,112">
+                <Image Location="56,30" Name="PSLogo" PackLocation="right,bottom" ScrollExtent="30,30" Size="30,30" Style="/imagelist.PSOverlay" Visible="false" />
+                <Page AbsorbsInput="false" Location="36,9" Name="SalePage" ScrollExtent="42,42" Size="42,42">
+                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="SaleText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a692c21d24e_1:SALE</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                </Page>
+                <Page AbsorbsInput="false" Location="36,9" Name="NewPage" ScrollExtent="42,42" Size="42,42">
+                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="NewText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a6902bbf930_1:NEW</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                </Page>
+                <Page AbsorbsInput="false" Location="36,9" Name="HotPage" ScrollExtent="42,42" Size="42,42">
+                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="HotText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a6965d03cb2_1:HOT</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                </Page>
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="36,9" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="10,55" Name="Name" PackSize="a,f" ScrollExtent="96,32" Size="96,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0F0F0">:ea411a694d71250f:[DEVL] Item Name</Text>
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="12,87" Name="Price" PackLocation="right,top" ScrollExtent="50,19" Size="50,19" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCC00">:ea411a69dc88af15:100</Text>
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="-6,87" Name="PriceLong" PackLocation="right,top" ScrollExtent="122,20" Size="122,20" TextAlignment="Center" TextColor="#FFCC00" Visible="false" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="66,89" Name="Coin" PackLocation="right,top" RStyleDefault="sc_coin" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                <Page Location="4,3" Name="Bkg" PackSize="a,a" RStyleDefault="/Inventory.Marketplace.item_bkg.rect" ScrollExtent="106,106" Size="106,106" />
+                <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="4,3" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="106,106" Size="106,106" Visible="false" />
+            </Page>
+            <Page Location="140,27" Name="Item1" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" OnHoverIn="Bkg.BackgroundTint = #DDDDDD" OnHoverOut="Bkg.BackgroundTint = #AAAAAA" ScrollExtent="115,108" Size="115,108">
+                <Image Location="56,30" Name="PSLogo" PackLocation="right,bottom" ScrollExtent="30,30" Size="30,30" Style="/imagelist.PSOverlay" Visible="false" />
+                <Page AbsorbsInput="false" Location="36,9" Name="SalePage" ScrollExtent="42,42" Size="42,42">
+                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="SaleText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a692c21d24e_2:SALE</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                </Page>
+                <Page AbsorbsInput="false" Location="36,9" Name="NewPage" ScrollExtent="42,42" Size="42,42">
+                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="NewText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a6902bbf930_2:NEW</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                </Page>
+                <Page AbsorbsInput="false" Location="36,9" Name="HotPage" ScrollExtent="42,42" Size="42,42">
+                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="HotText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a6965d03cb2_2:HOT</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                </Page>
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="36,9" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="10,55" Name="Name" PackSize="a,f" ScrollExtent="96,32" Size="96,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0F0F0">:ea411a694d71250f_1:[DEVL] Item Name</Text>
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="12,87" Name="Price" PackLocation="right,top" ScrollExtent="50,19" Size="50,19" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCC00">:ea411a69dc88af15_1:100</Text>
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="-6,87" Name="PriceLong" PackLocation="right,top" ScrollExtent="122,20" Size="122,20" TextAlignment="Center" TextColor="#FFCC00" Visible="false" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="66,89" Name="Coin" PackLocation="right,top" RStyleDefault="sc_coin" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                <Page Location="4,3" Name="Bkg" PackSize="a,a" RStyleDefault="/Inventory.Marketplace.item_bkg.rect" ScrollExtent="106,106" Size="106,106" />
+                <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="4,3" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="106,102" Size="106,102" Visible="false" />
+            </Page>
+            <Page Location="257,27" Name="Item2" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" OnHoverIn="Bkg.BackgroundTint = #DDDDDD" OnHoverOut="Bkg.BackgroundTint = #AAAAAA" ScrollExtent="115,108" Size="115,108">
+                <Image Location="56,30" Name="PSLogo" PackLocation="right,bottom" ScrollExtent="30,30" Size="30,30" Style="/imagelist.PSOverlay" Visible="false" />
+                <Page AbsorbsInput="false" Location="36,9" Name="SalePage" ScrollExtent="42,42" Size="42,42">
+                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="SaleText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a692c21d24e_3:SALE</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                </Page>
+                <Page AbsorbsInput="false" Location="36,9" Name="NewPage" ScrollExtent="42,42" Size="42,42">
+                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="NewText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a6902bbf930_3:NEW</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                </Page>
+                <Page AbsorbsInput="false" Location="36,9" Name="HotPage" ScrollExtent="42,42" Size="42,42">
+                    <Text AbsorbsInput="false" Color="#FFFF00" Font="/TextStyles.Small.SmallStyle" Location="0,2" Name="HotText" ScrollExtent="42,14" ShadowStyle="/ShadowStyles.Outline.Aggro.Outline1" Size="42,14" TextAlignment="Center">:ea411a6965d03cb2_3:HOT</Text>
+                    <Page AbsorbsInput="false" BackgroundOpacity="0.275" Location="0,2" Name="Bkg" ScrollExtent="42,14" Size="42,14" />
+                </Page>
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="36,9" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="10,55" Name="Name" PackSize="a,f" ScrollExtent="96,32" Size="96,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0F0F0">:ea411a694d71250f_2:[DEVL] Item Name</Text>
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="12,87" Name="Price" PackLocation="right,top" ScrollExtent="50,19" Size="50,19" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#FFCC00">:ea411a69dc88af15_2:100</Text>
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="-6,87" Name="PriceLong" PackLocation="right,top" ScrollExtent="122,20" Size="122,20" TextAlignment="Center" TextColor="#FFCC00" Visible="false" />
+                <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="66,89" Name="Coin" PackLocation="right,top" RStyleDefault="sc_coin" ScrollExtent="16,16" Size="16,16" Style="/imagelist.coins.StationCash" />
+                <Page BackgroundTint="#AAAAAA" Location="4,3" Name="Bkg" PackSize="a,a" RStyleDefault="/Inventory.Marketplace.item_bkg.rect" ScrollExtent="106,106" Size="106,106" />
+                <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="4,3" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="106,102" Size="106,102" Visible="false" />
+            </Page>
+            <Button Location="370,67" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" />
+            <Page AbsorbsInput="false" BackgroundOpacity="0.373" Name="Bkg" PackLocation="left,top" PackSize="a,a" ScrollExtent="395,145" Size="395,145" />
+        </Page>
+        <Page BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/FrameStyles.ThickCornered.rect" ScrollExtent="420,331" Size="420,331" />
+        <Page AbsorbsInput="false" BackgroundColor="#341A1A" BackgroundOpacity="0.475" Name="Bkg" PackLocation="left,top" PackSize="a,a" ScrollExtent="417,329" Size="417,329" />
+    </Page>
+    <Page Location="467,133" Name="Friends" ScrollExtent="204,163" Size="204,163">
+        <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="0,4" Name="Title" PackSize="a,f" ScrollExtent="204,20" Size="204,20" TextAlignment="Center" TextColor="#FFEEBB">:6c465006a1789aca:Friends List</Text>
+        <Page Location="2,24" Name="FriendsList" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="200,137" Size="200,137">
+            <Template Name="row_template" Size="184,32">eq2ui_listboxrow_friends_template.xml</Template>
+            <Scrollbar ArrowPressSound="sounds/button" Control="Listbox" HideIfUnnecessary="true" Location="171,5" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,126" Size="22,126" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+            <Listbox BackgroundColor="#FFFFFF" DataSource="ListDataSource" Location="7,5" Margin="10,10,10,10" Name="Listbox" OnDoubleClick="togglecommunity" PackSize="absolute,absolute" RowTemplate="row_template" ScrollExtent="184,126" Size="166,126" Style="listbox_style" />
+            <DataSource Name="ListDataSource">
+                <Data Name="New Data" text=":6c465006f860a327:[DEVL]Rothgar" type="guardian" zone="[DEVL]Commonlands" />
+                <Data Name="New Data" text=":6c465006c37650b0:[DEVL]Autenil" type="shadowknight" zone="[DEVL]Moors of Ykesha" />
+                <Data Name="New Data" text=":6c465006904a637c:[DEVL]Froech" type="wizard" zone="[DEVL]Kylong Plains" />
+            </DataSource>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="0.373" Name="Bkg" PackLocation="left,top" PackSize="a,a" ScrollExtent="204,163" Size="204,163" />
+        <Page AbsorbsInput="false" BackgroundColor="#341A1A" BackgroundOpacity="0.475" Name="Bkg" PackLocation="left,top" PackSize="a,a" ScrollExtent="204,163" Size="204,163" />
+    </Page>
+    <Page Location="460,306" Name="AllAccess" ScrollExtent="218,169" Size="218,169">
+        <Image DynamicData="/GameData.UIState.NameSpace.SOE" Location="154,47" Name="Coin" ScrollExtent="24,24" Size="24,24" Style="/imagelist.coins.StationCash" />
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="12,88" Name="AllAccessMessage" ScrollExtent="197,77" Size="197,77" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#B59A62">:ea411a6996d9cab7:Days Until Grant Expires: [XX]</Text>
+        <Button Location="39,79" MaximumSize="16384,38" MinimumSize="30,30" Name="AllAccessAction" OnPress="allaccess claimsc" ScrollExtent="140,32" Size="140,32" Style="/CommonElements.PushButton.data.style" TextAlignmentVertical="Center">:ea411a69aea87110:Click Here...</Button>
+        <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="-26,47" Name="Title" PackSize="a,f" ScrollExtent="177,25" Size="177,25" TextAlignment="Right" TextColor="#D3A90A">:ea411a6978d96b1b:Redeem 500</Text>
+        <Image AbsorbsInput="false" Location="22,10" Name="AllAccessImage" ScrollExtent="175,29" Size="175,29" SourceRect="313,296,512,326" SourceResource="images/window_elements_specific.dds" />
+        <Page BackgroundOpacity="0.729" Location="0,-6" Name="AllAccessBlackFrame" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="217,168" Size="217,168" />
+    </Page>
+    <ListboxStyle Name="listbox_style" />
+    <DataSource Name="WelcomeDS">
+        <DynamicData Name="DailyMission" />
+        <DynamicData Name="DailyMissionZone" />
+        <DynamicData Name="HotZone" />
+        <DynamicData Name="HotZonePVP" />
+        <DynamicData Name="News" />
+        <DynamicData Name="CommunityMOTD" />
+        <DynamicData Name="MarketplaceMOTD" />
+        <DynamicData Name="LONMOTD" />
+        <DynamicData Name="RAFMOTD" />
+    </DataSource>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="702,496" Size="702,496">
+        <Image Location="596,17" Name="NE_Corner" PackLocation="right,top" ScrollExtent="108,96" Size="108,96" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+        <Image Location="-2,17" Name="NW_Corner" PackLocation="left,top" ScrollExtent="106,107" Size="106,107" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+        <Page Location="18,36" Name="Server" PackSize="a,f" ScrollExtent="668,80" Size="668,80">
+            <Image Name="BannerImage" ScrollExtent="668,80" Size="668,80" Style="/imagelist.welcome_banner_default" />
+        </Page>
+        <Image Location="597,388" Name="SE_Corner" PackLocation="right,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.nw_corner.center" />
+        <Image Location="-2,388" Name="SW_Corner" PackLocation="left,bottom" Rotation="0.500" ScrollExtent="108,110" Size="108,110" Stretch="false" Style="/WindowElements.CenterFrame.data.ne_corner.center" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="15,31" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.CenterFrame.data.frame.rect" ScrollExtent="676,452" Size="676,452" />
+        <Page AbsorbsInput="false" BackgroundOpacity="0.875" Location="16,35" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="bkg.rect" ScrollExtent="671,444" Size="671,444" />
+        <Namespace Name="bkg">
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/welcome_screen_bg.dds" SourceRect="0,0,512,383" />
+            </ImageStyle>
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+        </Namespace>
+    </Page>
+</Page>

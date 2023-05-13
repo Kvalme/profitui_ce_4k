@@ -1,0 +1,66 @@
+<style data-DarqUI="3.000">
+.dummycss {
+	background-color: #000000;
+}
+.bodycss {
+	background-color: #001416;
+	font-family: Segoe UI;
+	font-size:12pt;
+	color: #E7EFE7;
+}
+a:link {
+	text-decoration: none;
+	color: #DBC165;
+}
+a:visited {
+	text-decoration: none;
+	color: #DBC165;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+a:active {
+	text-decoration: none;
+	color: #CCCCFF;
+}
+ul {
+	color: #FF8800;
+}
+.helpheader {
+	font-size: 120%;
+	font-weight: bold;
+	padding: 8px 8px 6px 8px;
+	color: #EBDEAA;
+	border-bottom-style: solid;
+	border-width: 2px;
+	border-color: #4488AA;
+}
+.helptopic {
+	font-size: 110%;
+	font-weight: bold;
+	padding: 24px 8px 0px 8px;
+	color: #EBDEAA;
+}
+.helpbody {
+	padding: 2px 8px 2px 8px;
+}
+.helpbodyli {
+	padding: 2px 8px 2px 0px;
+	color: #E7EFE7;
+}
+.helpimportant {
+	font-weight: bold;
+	padding-right: 8px;
+	color: #994444;
+}
+.paraheader {
+	font-weight: bold;
+	padding-right: 8px;
+	color: #6699BB;
+}
+.paraheadersmall {
+	padding-right: 8px;
+	color: #6699BB;
+}
+</style>

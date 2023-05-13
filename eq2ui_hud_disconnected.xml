@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page BackgroundOpacity="0.722" Name="Disconnected" PackSize="1,1" ScrollExtent="1024,768" Size="1024,768">
+            <Text AbsorbsInput="false" Color="#FF3322" Font="/Fonts.FontCopperplateGothicBold20" Location="396,289" Name="DisconnectedText" PackLocation="center,center" ScrollExtent="339,26" Size="339,26" TextAlignment="Center" TextAlignmentVertical="Center">:3764b625ecdde55b:You have been disconnected</Text>
+            <Text AbsorbsInput="false" Color="#DDDDAA" Font="/Fonts.FontArial14" Location="390,322" Name="UdpLibraryReason" PackLocation="center,center" ScrollExtent="345,21" Size="345,21" TextAlignment="Center" TextAlignmentVertical="Center">:3764b6250162893a:[DEVL](UdpLibrary error code goes here in dev builds)</Text>
+            <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="406,344" Name="FriendlyReason" PackLocation="center,center" ScrollExtent="310,79" Size="310,79" TextAlignment="Center" TextAlignmentVertical="Center">:3764b625e8ce9105:[DEVL]This is where the user-friendly reason is put</Text>
+            <Button Location="522,431" Name="ContinueButton" PackLocation="center,center" PackSize="fixed,fixed" ScrollExtent="100,38" Size="100,38" Style="/CommonElements.LargePushButton.data.style" textcolor="#FFCCAA">:3764b62528c926d2:OK</Button>
+            <Page BackgroundOpacity="1.000" Location="393,310" Name="RoundedGrouper" PackSize="absolute,absolute" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="347,122" Size="347,122" />
+            <Page BackgroundOpacity="1.000" Location="393,285" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="347,188" Size="347,188" />
+            <Page BackgroundOpacity="1.000" Location="363,255" Name="DialogFrame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="407,248" Size="407,248" />
+        </Page>

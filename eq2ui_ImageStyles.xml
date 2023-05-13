@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Namespace Name="imagelist">
+        <ImageStyle Name="lock_icon">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="994,789,1011,810" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="welcome_banner_default">
+            <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="0,0,668,80" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="beastlord_weakness_active">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="896,343,1024,471" />
+        </ImageStyle>
+        <ImageStyle Name="check_icon">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="729,840,750,864" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="GFOverlay">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="877,391,919,433" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="quest_icon">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="438,294,460,316" />
+        </ImageStyle>
+        <ImageStyle Name="green_bullet">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="768,221,787,240" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="PSOverlay">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="633,716,663,746" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="thumbs_up">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="641,242,659,260" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="welcome_banner_xp">
+            <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="0,80,668,160" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="star_full">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="659,242,677,260" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="star_half">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="677,242,695,260" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="star_empty">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="695,242,713,260" />
+        </ImageStyle>
+        <ImageStyle Name="deleted_icon">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="789,840,806,861" />
+        </ImageStyle>
+        <ImageStyle Name="single_pixel">
+            <ImageFrame Name="single_pixel" Source="images/tp_default_0.dds" SourceRect="1020,0,1021,1" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="black_back">
+            <ImageFrame Name="black_back" Source="images/tp_default_0.dds" SourceRect="1021,0,1022,1" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="sc_logo_large">
+            <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="539,543,795,607" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="sc_logo_small">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="579,684,703,748" />
+        </ImageStyle>
+        <ImageStyle Name="widget_check_on_disabled">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="920,1007,936,1023" />
+        </ImageStyle>
+        <ImageStyle Name="widget_check_off_disabled">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="936,1007,952,1023" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="vscrollbar_endcap_disabled">
+            <ImageFrame Name="vscrollbar_endcap_normal" Source="images/tp_default_5.dds" SourceRect="234,895,251,920" />
+        </ImageStyle>
+        <ImageStyle Name="vscrollbar_startcap_normal">
+            <ImageFrame Name="vscrollbar_startcap" Source="images/tp_default_5.dds" SourceRect="251,895,268,920" />
+        </ImageStyle>
+        <Namespace Name="coins">
+            <ImageStyle Name="StationCash">
+                <ImageFrame Name="f_0" Source="images/tp_default_5.dds" SourceRect="876,589,918,628" />
+            </ImageStyle>
+            <ImageStyle Name="StatusPoints">
+                <ImageFrame Name="f_0" Source="images/tp_default_5.dds" SourceRect="713,242,731,260" />
+            </ImageStyle>
+            <ImageStyle Name="SilverCoin">
+                <ImageFrame Name="f_0" Source="images/tp_default_5.dds" SourceRect="731,242,749,260" />
+            </ImageStyle>
+            <ImageStyle Name="PlatinumCoin">
+                <ImageFrame Name="f_0" Source="images/tp_default_5.dds" SourceRect="749,242,767,260" />
+            </ImageStyle>
+            <ImageStyle Name="GoldCoin">
+                <ImageFrame Name="f_0" Source="images/tp_default_5.dds" SourceRect="767,242,785,260" />
+            </ImageStyle>
+            <ImageStyle Name="CopperCoin">
+                <ImageFrame Name="f_0" Source="images/tp_default_5.dds" SourceRect="785,242,803,260" />
+            </ImageStyle>
+        </Namespace>
+        <ImageStyle Name="progress_grayscale_fill">
+            <ImageFrame Name="progress_grayscale_fill" Source="images/tp_default_1.dds" SourceRect="904,42,1021,53" />
+        </ImageStyle>
+        <ImageStyle Name="progress_fill">
+            <ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="16,352,27,353" />
+        </ImageStyle>
+        <ImageStyle Name="vscrollbar_startcap_disabled">
+            <ImageFrame Name="vscrollbar_startcap" Source="images/tp_default_5.dds" SourceRect="268,895,285,920" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="vscrollbar_endcap_normal">
+            <ImageFrame Name="vscrollbar_endcap_normal" Source="images/tp_default_5.dds" SourceRect="285,895,302,920" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="title_charscene">
+            <ImageFrame atlas="none" Name="image" Source="images/charscene_logo.dds" SourceRect="11,13,591,223" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="chat_bubble_leftbottom">
+            <ImageFrame Name="chat_bubble_leftbottom" Source="images/tp_default_0.dds" SourceRect="1021,889,1024,894" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="chat_bubble_lefttop">
+            <ImageFrame Name="chat_bubble_lefttop" Source="images/chat1.dds" SourceRect="13,49,16,54" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="chat_bubble_left">
+            <ImageFrame Name="chat_bubble_left" Source="images/tp_default_0.dds" SourceRect="1021,1017,1024,1022" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="chat_bubble_bottomleft">
+            <ImageFrame Name="chat_bubble_bottomleft" Source="images/tp_default_0.dds" SourceRect="1020,281,1024,284" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="chat_bubble_bottomright">
+            <ImageFrame Name="chat_bubbel_bottomright" Source="images/tp_default_0.dds" SourceRect="962,307,966,310" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="chat_bubble_bottom">
+            <ImageFrame Name="chat_bubble_bottom" Source="images/tp_default_0.dds" SourceRect="977,307,978,310" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="chat_bubble_topleft">
+            <ImageFrame Name="chat_bubble_topleft" Source="images/tp_default_0.dds" SourceRect="966,307,970,310" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="chat_bubble_topright">
+            <ImageFrame Name="chat_bubble_topright" Source="images/tp_default_0.dds" SourceRect="970,307,974,310" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="chat_bubble_top">
+            <ImageFrame Name="chat_bubble_top" Source="images/chat1.dds" SourceRect="33,57,34,60" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="dropdown_backdrop_hilite">
+            <ImageFrame Name="dropdown_backdrop_hilite" Source="images/tp_default_0.dds" SourceRect="1022,0,1023,1" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="dropdown_backdrop_selected">
+            <ImageFrame Name="dropdown_backdrop_selected" Source="images/tp_default_0.dds" SourceRect="1023,0,1024,1" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="dropdown_backdrop">
+            <ImageFrame Name="dropdown_backdrop" Source="images/tp_default_0.dds" SourceRect="1020,150,1021,151" />
+        </ImageStyle>
+        <ImageStyle Name="downarrow_normal">
+            <ImageFrame Name="downarrow_normal" Source="images/tp_default_4.dds" SourceRect="1010,793,1024,809" />
+        </ImageStyle>
+        <ImageStyle Name="dropdown_back_normal">
+            <ImageFrame Name="dropdown_back_normal" Source="images/tp_default_1.dds" SourceRect="147,1003,271,1019" />
+        </ImageStyle>
+        <ImageStyle Name="win_plain_leftbottom">
+            <ImageFrame Name="win_plain_leftbottom" Source="images/tp_default_1.dds" SourceRect="769,990,774,995" />
+        </ImageStyle>
+        <ImageStyle Name="win_plain_lefttop">
+            <ImageFrame Name="win_plain_lefttop" Source="images/chat1.dds" SourceRect="12,49,17,54" />
+        </ImageStyle>
+        <ImageStyle Name="win_plain_left">
+            <ImageFrame Name="win_plain_left" Source="images/tp_default_1.dds" SourceRect="774,990,779,995" />
+        </ImageStyle>
+        <ImageStyle Name="win_plain_bottomleft">
+            <ImageFrame Name="win_plain_bottomleft" Source="images/tp_default_1.dds" SourceRect="779,990,784,995" />
+        </ImageStyle>
+        <ImageStyle Name="win_plain_bottomright">
+            <ImageFrame Name="win_plain_bottomright" Source="images/tp_default_1.dds" SourceRect="784,990,789,995" />
+        </ImageStyle>
+        <ImageStyle Name="win_plain_bottom">
+            <ImageFrame Name="win_plain_bottom" Source="images/tp_default_0.dds" SourceRect="1023,365,1024,370" />
+        </ImageStyle>
+        <ImageStyle Name="win_plain_topleft">
+            <ImageFrame Name="win_plaintopleft" Source="images/tp_default_1.dds" SourceRect="789,990,794,995" />
+        </ImageStyle>
+        <ImageStyle Name="win_plain_topright">
+            <ImageFrame Name="win_plain_topright" Source="images/tp_default_1.dds" SourceRect="794,990,799,995" />
+        </ImageStyle>
+        <ImageStyle Name="win_plain_top">
+            <ImageFrame Name="win_plain_top" Source="images/chat1.dds" SourceRect="33,56,34,61" />
+        </ImageStyle>
+        <ImageStyle Name="progress_grayscale_bkg">
+            <ImageFrame Name="progress_grayscale_bkg" Source="images/tp_default_0.dds" SourceRect="883,951,1012,972" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="vscrollbar_background">
+            <ImageFrame Name="scrollbar_background" Source="images/tp_default_5.dds" SourceRect="1002,960,1019,1023" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="vscrollbar_endcap_rollover">
+            <ImageFrame Name="vscrollbar_endcap_rollover" Source="images/tp_default_5.dds" SourceRect="302,895,319,920" />
+        </ImageStyle>
+        <ImageStyle Name="vscrollbar_startcap_rollover">
+            <ImageFrame Name="vscrollbar_startcap" Source="images/tp_default_5.dds" SourceRect="319,895,336,920" />
+        </ImageStyle>
+        <ImageStyle Name="vscrollbar_thumb_start">
+            <ImageFrame Name="vscrollbar_thumb_start" Source="images/tp_default_2.dds" SourceRect="539,607,554,614" />
+        </ImageStyle>
+        <ImageStyle Name="vscrollbar_thumb_center">
+            <ImageFrame Name="vscrollbar_thumb_center" Source="images/tp_default_2.dds" SourceRect="1009,454,1024,474" />
+        </ImageStyle>
+        <ImageStyle Name="vscrollbar_thumb_end">
+            <ImageFrame Name="vscrollbar_thumb_end" Source="images/tp_default_3.dds" SourceRect="589,763,604,774" />
+        </ImageStyle>
+        <ImageStyle Name="win_blank_space">
+            <ImageFrame Name="win_blank_space" Source="images/tp_default_3.dds" SourceRect="580,780,598,796" />
+        </ImageStyle>
+        <ImageStyle Name="win_background">
+            <ImageFrame Name="win_background" Source="images/tp_default_0.dds" SourceRect="974,307,977,310" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_nw">
+            <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="991,383,1024,430" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_ne">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="74,789,114,836" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_sw">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="568,716,602,748" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_se">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="581,631,621,662" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_top">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="612,95,672,142" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_left">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="76,895,109,934" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_right">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="330,750,370,788" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="win_gold_bottom">
+            <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="807,289,965,321" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="scroll_gold_start">
+            <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="1013,259,1024,264" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="scroll_gold_middle">
+            <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="1020,276,1024,281" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="scroll_gold_end">
+            <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="1010,251,1021,256" />
+        </ImageStyle>
+        <ImageStyle Name="scroll_gold_thumb">
+            <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="1012,951,1024,961" />
+        </ImageStyle>
+        <ImageStyle Name="lock_gold_open">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="911,242,927,260" />
+        </ImageStyle>
+        <ImageStyle Name="lock_gold_closed">
+            <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="927,242,943,260" />
+        </ImageStyle>
+        <ImageStyle Name="widget_check_off">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="952,1007,968,1023" />
+        </ImageStyle>
+        <ImageStyle Name="widget_check_on">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="968,1007,984,1023" />
+        </ImageStyle>
+        <ImageStyle Name="widget_check_group">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="984,1007,1000,1023" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="WDOverlay">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="637,763,648,774" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="WDShow">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="359,1010,376,1024" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="WDHide">
+            <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="376,1010,393,1024" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_trad">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="0,0,200,407" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_tl">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="200,0,400,407" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_event">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="400,0,600,407" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_ft">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="600,0,800,407" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_sm">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="800,0,1000,407" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_top">
+            <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="276,617,517,711" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_nw">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="131,814,234,979" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_ne">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="234,814,337,979" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_sw">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="337,814,439,978" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_se">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="439,814,541,978" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_background">
+            <ImageFrame Name="image" Source="images/window_elements_serverpanel_4panel.dds" SourceRect="4,4,1020,487" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="server_select">
+            <ImageFrame Name="image" Source="images/tp_default_4.dds" SourceRect="0,407,200,814" />
+        </ImageStyle>
+    </Namespace>

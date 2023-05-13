@@ -1,0 +1,1966 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- This is Mother's Countdown Timer Window taken from http://www.eq2interface.com/downloads/fileinfo.php?id=4247 minus the /testcopy bug and with default settings that are now being applied -->
+<Page CorrectionFactor="60.500" DefaultText.Press="true" eq2usescomwndcontrols="true" Loaded="false" Location="-1,-1" MaximumSize="365,270" MinimumSize="210,33" Name="ProfitUI_Timer" OnShow="OnLoad.Activated= ! Loaded" Press="true" ScrollExtent="365,270" Size="365,270" Timer1Default="55" Timer2Default="600" Timer3Default="95" Timer4Default="150" ToneEnable="true" UserMovable="true" UserResizable="true" Visible="false">
+<DataSource Name="AlertToneSource">
+<Data Name="0" Sound="inventory_attune" Text="Attune Item"/>
+<Data Name="1" Sound="inventory_destroy_item" Text="Destroy Item"/>
+<Data Name="2" Sound="ding" Text="Level Up"/>
+<Data Name="3" Sound="coin_cha_ching" Text="Purchased Item"/>
+<Data Name="4" Sound="quest_item" Text="Quest Update"/>
+<Data Name="5" Sound="skill_up" Text="Skill Up"/>
+<Data Name="6" Sound="war_drum" Text="Slayer Update"/>
+<Data Name="7" Sound="ui_spirit_lvl_up" Text="Tradeskill Pristine"/>
+<Data Name="8" Sound="encounter_broken" Text="Yell for Help"/>
+</DataSource>
+<DataSource Name="TimerRingSource">
+<Data Name="0" Next10s="1" Nextm="1" Nexts="1" Plus20m="20" Prev10s="5" Prevm="39" Prevs="9" Text="0" Value="0.000"/>
+<Data Name="1" Next10s="2" Nextm="2" Nexts="2" Plus20m="21" Prev10s="0" Prevm="0" Prevs="0" Text="1" Value="1.000"/>
+<Data Name="2" Next10s="3" Nextm="3" Nexts="3" Plus20m="22" Prev10s="1" Prevm="1" Prevs="1" Text="2" Value="2.000"/>
+<Data Name="3" Next10s="4" Nextm="4" Nexts="4" Plus20m="23" Prev10s="2" Prevm="2" Prevs="2" Text="3" Value="3.000"/>
+<Data Name="4" Next10s="5" Nextm="5" Nexts="5" Plus20m="24" Prev10s="3" Prevm="3" Prevs="3" Text="4" Value="4.000"/>
+<Data Name="5" Next10s="0" Nextm="6" Nexts="6" Plus20m="25" Prev10s="4" Prevm="4" Prevs="4" Text="5" Value="5.000"/>
+<Data Name="6" Next10s="0" Nextm="7" Nexts="7" Plus20m="26" Prev10s="5" Prevm="5" Prevs="5" Text="6" Value="6.000"/>
+<Data Name="7" Next10s="0" Nextm="8" Nexts="8" Plus20m="27" Prev10s="5" Prevm="6" Prevs="6" Text="7" Value="7.000"/>
+<Data Name="8" Next10s="0" Nextm="9" Nexts="9" Plus20m="28" Prev10s="5" Prevm="7" Prevs="7" Text="8" Value="8.000"/>
+<Data Name="9" Next10s="0" Nextm="10" Nexts="0" Plus20m="29" Prev10s="5" Prevm="8" Prevs="8" Text="9" Value="9.000"/>
+<Data Name="10" Next10s="0" Nextm="11" Nexts="0" Plus20m="30" Prev10s="5" Prevm="9" Prevs="9" Text="10" Value="10.000"/>
+<Data Name="11" Next10s="0" Nextm="12" Nexts="0" Plus20m="31" Prev10s="5" Prevm="10" Prevs="9" Text="11" Value="11.000"/>
+<Data Name="12" Next10s="0" Nextm="13" Nexts="0" Plus20m="32" Prev10s="5" Prevm="11" Prevs="9" Text="12" Value="12.000"/>
+<Data Name="13" Next10s="0" Nextm="14" Nexts="0" Plus20m="33" Prev10s="5" Prevm="12" Prevs="9" Text="13" Value="13.000"/>
+<Data Name="14" Next10s="0" Nextm="15" Nexts="0" Plus20m="34" Prev10s="5" Prevm="13" Prevs="9" Text="14" Value="14.000"/>
+<Data Name="15" Next10s="0" Nextm="16" Nexts="0" Plus20m="35" Prev10s="5" Prevm="14" Prevs="9" Text="15" Value="15.000"/>
+<Data Name="16" Next10s="0" Nextm="17" Nexts="0" Plus20m="36" Prev10s="5" Prevm="15" Prevs="9" Text="16" Value="16.000"/>
+<Data Name="17" Next10s="0" Nextm="18" Nexts="0" Plus20m="37" Prev10s="5" Prevm="16" Prevs="9" Text="17" Value="17.000"/>
+<Data Name="18" Next10s="0" Nextm="19" Nexts="0" Plus20m="38" Prev10s="5" Prevm="17" Prevs="9" Text="18" Value="18.000"/>
+<Data Name="19" Next10s="0" Nextm="20" Nexts="0" Plus20m="39" Prev10s="5" Prevm="18" Prevs="9" Text="19" Value="19.000"/>
+<Data Name="20" Next10s="0" Nextm="21" Nexts="0" Plus20m="20" Prev10s="5" Prevm="19" Prevs="9" Text="20" Value="20.000"/>
+<Data Name="21" Next10s="0" Nextm="22" Nexts="0" Plus20m="21" Prev10s="5" Prevm="20" Prevs="9" Text="21" Value="21.000"/>
+<Data Name="22" Next10s="0" Nextm="23" Nexts="0" Plus20m="22" Prev10s="5" Prevm="21" Prevs="9" Text="22" Value="22.000"/>
+<Data Name="23" Next10s="0" Nextm="24" Nexts="0" Plus20m="23" Prev10s="5" Prevm="22" Prevs="9" Text="23" Value="23.000"/>
+<Data Name="24" Next10s="0" Nextm="25" Nexts="0" Plus20m="24" Prev10s="5" Prevm="23" Prevs="9" Text="24" Value="24.000"/>
+<Data Name="25" Next10s="0" Nextm="26" Nexts="0" Plus20m="25" Prev10s="5" Prevm="24" Prevs="9" Text="25" Value="25.000"/>
+<Data Name="26" Next10s="0" Nextm="27" Nexts="0" Plus20m="26" Prev10s="5" Prevm="25" Prevs="9" Text="26" Value="26.000"/>
+<Data Name="27" Next10s="0" Nextm="28" Nexts="0" Plus20m="27" Prev10s="5" Prevm="26" Prevs="9" Text="27" Value="27.000"/>
+<Data Name="28" Next10s="0" Nextm="29" Nexts="0" Plus20m="28" Prev10s="5" Prevm="27" Prevs="9" Text="28" Value="28.000"/>
+<Data Name="29" Next10s="0" Nextm="30" Nexts="0" Plus20m="29" Prev10s="5" Prevm="28" Prevs="9" Text="29" Value="29.000"/>
+<Data Name="30" Next10s="0" Nextm="31" Nexts="0" Plus20m="30" Prev10s="5" Prevm="29" Prevs="9" Text="30" Value="30.000"/>
+<Data Name="31" Next10s="0" Nextm="32" Nexts="0" Plus20m="31" Prev10s="5" Prevm="30" Prevs="9" Text="31" Value="31.000"/>
+<Data Name="32" Next10s="0" Nextm="33" Nexts="0" Plus20m="32" Prev10s="5" Prevm="31" Prevs="9" Text="32" Value="32.000"/>
+<Data Name="33" Next10s="0" Nextm="34" Nexts="0" Plus20m="33" Prev10s="5" Prevm="32" Prevs="9" Text="33" Value="33.000"/>
+<Data Name="34" Next10s="0" Nextm="35" Nexts="0" Plus20m="34" Prev10s="5" Prevm="33" Prevs="9" Text="34" Value="34.000"/>
+<Data Name="35" Next10s="0" Nextm="36" Nexts="0" Plus20m="35" Prev10s="5" Prevm="34" Prevs="9" Text="35" Value="35.000"/>
+<Data Name="36" Next10s="0" Nextm="37" Nexts="0" Plus20m="36" Prev10s="5" Prevm="35" Prevs="9" Text="36" Value="36.000"/>
+<Data Name="37" Next10s="0" Nextm="38" Nexts="0" Plus20m="37" Prev10s="5" Prevm="36" Prevs="9" Text="37" Value="37.000"/>
+<Data Name="38" Next10s="0" Nextm="39" Nexts="0" Plus20m="38" Prev10s="5" Prevm="37" Prevs="9" Text="38" Value="38.000"/>
+<Data Name="39" Next10s="0" Nextm="0" Nexts="0" Plus20m="39" Prev10s="5" Prevm="38" Prevs="9" Text="39" Value="39.000"/>
+</DataSource>
+<DataSource Name="AlertRingSource">
+<Data Name="0" Next="1" Prev="8" Text="0" Value="0.000"/>
+<Data Name="5" Next="2" Prev="0" Text="5" Value="5.000"/>
+<Data Name="10" Next="3" Prev="1" Text="10" Value="10.000"/>
+<Data Name="15" Next="4" Prev="2" Text="15" Value="15.000"/>
+<Data Name="20" Next="5" Prev="3" Text="20" Value="20.000"/>
+<Data Name="30" Next="6" Prev="4" Text="30" Value="30.000"/>
+<Data Name="45" Next="7" Prev="5" Text="45" Value="45.000"/>
+<Data Name="60" Next="8" Prev="6" Text="60" Value="60.000"/>
+<Data Name="120" Next="0" Prev="7" Text="120" Value="120.000"/>
+</DataSource>
+<EffectorCycleOpacity Background="true" Duration="0.500" InitialOpacity="1.000" MaxSpeed="10.000" MinSpeed="4.000" Name="Flashing" OpacityEnd="0.000" Speed="5.000"/>
+<LocationEffector Name="MoveRight5s" Speed="30,0"/>
+<LocationEffector Name="MoveRight30s" Speed="6,0"/>
+<LocationEffector Name="MoveRight3m" Speed="1,0"/>
+<Page FlashEnable="true" l10s="4" la="0" lm="0" Loc10m="0,0" Loc10s="-242.250,0" Loc11m="0,0" Loc12m="0,0" Loc13m="0,0" Loc14m="0,0" Loc15m="0,0" Loc16m="0,0" Loc17m="0,0" Loc18m="0,0" Loc1m="-15.375,0" Loc1s="-1361.250,0" Loc4m="0,0" Loc5m="0,0" Loc6m="0,0" Loc7m="0,0" Loc8m="0,0" Loc9m="0,0" Loca="-1361.250,0" ls="5" Name="1" ScrollExtent="360,35" Size="360,35" t10s="4.000" ta="0.000" Timer="45.000" tm="0.000" ToneEnable="false" ts="5.000" v10s="false" v15m="false" vm="true" vs="false">
+<Page Location="213,0" Name="Option" ScrollExtent="210,35" Size="210,35" t10s="4.000" tm="0.000" ts="5.000" v10s="false" v15m="false" vm="true" vs="false">
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="22,2" Name="ButtonMinUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.lm
+Temp=Parent.Parent.TimerRing.SelectedItem.Nextm
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+TestName=Parent.Parent.SelectedItem.Name
+Parent.Parent.Parent.lm=Parent.Parent.TimerRing.SelectedItem.Text
+TestText=Parent.Parent.TimerRing.SelectedItem.Text
+Testlm=Parent.Parent.Parent.lm
+Parent.Parent.Parent.tm=Parent.Parent.TimerRing.SelectedItem.Value
+TestValue=Parent.Parent.TimerRing.SelectedItem.Value
+Testtm=Parent.Parent.Parent.tm
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="39" Testlm="39" TestName="Parent.Parent.SelectedItem.Name" TestText="39" Testtm="39.000" TestValue="39.000"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="22,24" Name="ButtonMinDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.lm
+Temp=Parent.Parent.TimerRing.SelectedItem.Prevm
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.lm=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.tm=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="17"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="35,2" Name="Button10sUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.l10s
+Temp=Parent.Parent.TimerRing.SelectedItem.Next10s
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.l10s=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.t10s=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="4"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="35,24" Name="Button10sDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.l10s
+Temp=Parent.Parent.TimerRing.SelectedItem.Prev10s
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.l10s=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.t10s=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="45,2" Name="ButtonSecUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.ls
+Temp=Parent.Parent.TimerRing.SelectedItem.Nexts
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.ls=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.ts=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="6"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="45,24" Name="ButtonSecDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.ls
+Temp=Parent.Parent.TimerRing.SelectedItem.Prevs
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.ls=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.ts=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="5"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0:45" Location="17,7" Margin="1,1,1,1" Name="Timer" PackLocation="npn,nfn" PackLocationProp="0017/0210,0007/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0:45</Text>
+<Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="10,2" MaximumSize="16384,30" MinimumSize="30,30" Name="TimerBack" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="50,30" Size="50,30" Style="/CommonElements.Textfield.data.style"></Textbox>
+<Button Location="65,2" Name="ToggleFlash" OnPress="Parent.Flash.Visible=Temp Temp= ! Parent.Flash.Visible
+Parent.Parent.FlashEnable=Parent.Flash.Visible
+Parent.Parent.Parent.Options.DefaultText.Press=true" Opacity="0.000" ScrollExtent="44,13" Size="44,13" Temp="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.Racial.Font_Iksar" LocalText="0" Location="65,2" Margin="1,1,1,1" Name="Flash" PackLocation="npn,nfn" PackLocationProp="0065/0210,0002/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="Flash" Location="78,0" Margin="1,1,1,1" Name="LabelFlash" PackLocation="npn,nfn" PackLocationProp="0078/0210,0000/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">Flash</Text>
+<Button Location="65,16" Name="ToggleTone" OnPress="Parent.Tone.Visible=Temp Temp= ! Parent.Tone.Visible
+Parent.Parent.ToneEnable=Parent.Tone.Visible
+Parent.Parent.Parent.Options.DefaultText.Press=true" Opacity="0.000" ScrollExtent="44,13" Size="44,13" Temp="false"/>
+<Text AbsorbsInput="false" Font="/Fonts.Racial.Font_Iksar" LocalText="0" Location="65,16" Margin="1,1,1,1" Name="Tone" PackLocation="npn,nfn" PackLocationProp="0065/0210,0016/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true" Visible="false">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="Tone" Location="78,16" Margin="1,1,1,1" Name="LabelTone" PackLocation="npn,nfn" PackLocationProp="0078/0210,0016/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">Tone</Text>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="127,2" Name="ButtonAlertUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.AlertRing.SelectedItemIndex=Parent.Parent.Parent.la
+Temp=Parent.Parent.AlertRing.SelectedItem.Next
+Parent.Parent.AlertRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.la=Parent.Parent.AlertRing.SelectedItemIndex
+Parent.Parent.Parent.ta=Parent.Parent.AlertRing.SelectedItem.Value
+Parent.Parent.Alert.Text=Parent.Parent.AlertRing.SelectedItem.Text
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="127,24" Name="ButtonAlertDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.AlertRing.SelectedItemIndex=Parent.Parent.Parent.la
+Temp=Parent.Parent.AlertRing.SelectedItem.Prev
+Parent.Parent.AlertRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.la=Parent.Parent.AlertRing.SelectedItemIndex
+Parent.Parent.Parent.ta=Parent.Parent.AlertRing.SelectedItem.Value
+Parent.Parent.Alert.Text=Parent.Parent.AlertRing.SelectedItem.Text
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="115,2" MaximumSize="16384,30" MinimumSize="30,30" Name="Alert" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="33,30" Size="33,30" Style="/CommonElements.Textfield.data.style">0</Textbox>
+<Dropdownbox DataSource="TimerRingSource" Enabled="false" Location="-10,0" Name="TimerRing" ScrollExtent="1,1" SelectedItemIndex="29" Size="1,1"/>
+<Dropdownbox DataSource="AlertRingSource" Enabled="false" Location="-10,0" Name="AlertRing" ScrollExtent="1,1" Size="1,1"/>
+</Page>
+<Button LocalText="0:45" MaximumSize="16384,32" MinimumSize="32,32" Name="Start" OnPress="Parent.Progress.Bar5s.Visible=false
+Parent.Progress.BarAlert.Visible=false
+Parent.Progress.Bar30s.Visible=false
+Parent.Progress.Bar3m.Visible=false
+Parent.Progress.Bar5s.Location=Parent.Loc1s
+Parent.Progress.BarAlert.Location=Parent.Loca
+Parent.Progress.Bar30s.Location=Parent.Loc10s
+Parent.Progress.Bar3m.Location=Parent.Loc1m
+Parent.Progress.Bar5s.Visible=true
+Parent.Progress.BarAlert.Visible=true
+Parent.Progress.Bar30s.Visible=true
+Parent.Progress.Bar3m.Visible=true
+Parent.Progress.Block4m.m.Visible=false
+Parent.Progress.Block5m.m.Visible=false
+Parent.Progress.Block6m.m.Visible=false
+Parent.Progress.Block7m.m.Visible=false
+Parent.Progress.Block8m.m.Visible=false
+Parent.Progress.Block9m.m.Visible=false
+Parent.Progress.Block10m.m.Visible=false
+Parent.Progress.Block11m.m.Visible=false
+Parent.Progress.Block12m.m.Visible=false
+Parent.Progress.Block13m.m.Visible=false
+Parent.Progress.Block14m.m.Visible=false
+Parent.Progress.Block15m.m.Visible=false
+Parent.Progress.Block16m.m.Visible=false
+Parent.Progress.Block17m.m.Visible=false
+Parent.Progress.Block18m.m.Visible=false
+Parent.Progress.Block4m.m.Location=Parent.Loc4m
+Parent.Progress.Block5m.m.Location=Parent.Loc5m
+Parent.Progress.Block6m.m.Location=Parent.Loc6m
+Parent.Progress.Block7m.m.Location=Parent.Loc7m
+Parent.Progress.Block8m.m.Location=Parent.Loc8m
+Parent.Progress.Block9m.m.Location=Parent.Loc9m
+Parent.Progress.Block10m.m.Location=Parent.Loc10m
+Parent.Progress.Block11m.m.Location=Parent.Loc11m
+Parent.Progress.Block12m.m.Location=Parent.Loc12m
+Parent.Progress.Block13m.m.Location=Parent.Loc13m
+Parent.Progress.Block14m.m.Location=Parent.Loc14m
+Parent.Progress.Block15m.m.Location=Parent.Loc15m
+Parent.Progress.Block16m.m.Location=Parent.Loc16m
+Parent.Progress.Block17m.m.Location=Parent.Loc17m
+Parent.Progress.Block18m.m.Location=Parent.Loc18m
+Parent.Progress.Block4m.m.Visible=true
+Parent.Progress.Block5m.m.Visible=true
+Parent.Progress.Block6m.m.Visible=true
+Parent.Progress.Block7m.m.Visible=true
+Parent.Progress.Block8m.m.Visible=true
+Parent.Progress.Block9m.m.Visible=true
+Parent.Progress.Block10m.m.Visible=true
+Parent.Progress.Block11m.m.Visible=true
+Parent.Progress.Block12m.m.Visible=true
+Parent.Progress.Block13m.m.Visible=true
+Parent.Progress.Block14m.m.Visible=true
+Parent.Progress.Block15m.m.Visible=true
+Parent.Progress.Block16m.m.Visible=true
+Parent.Progress.Block17m.m.Visible=true
+Parent.Progress.Block18m.m.Visible=true
+Parent.Progress.Scale4.Visible=Parent.v15m
+Parent.Progress.Scale3.Visible=Parent.vm
+Parent.Progress.Scale2.Visible=Parent.v10s
+Parent.Progress.Scale1.Visible=Parent.vs
+" ScrollExtent="55,32" Size="55,32" Style="/CommonElements.PushButton.data.style">0:45</Button>
+<Page Location="57,5" Name="Progress" o10m="0.460" o11m="0.040" o12m="0.160" o13m="0.280" o14m="0.100" o15m="0.040" o16m="0.100" o17m="0.040" o18m="0.040" o4m="0.100" o5m="0.160" o6m="0.220" o7m="0.280" o8m="0.340" o9m="0.400" ScrollExtent="150,25" Size="150,25">
+<Page Color="#FF0000" Location="0,10" Name="Scale1" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,a" PackSizeProp="0029/0150,-001/0001" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="3" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">3</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="4" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">4</Text>
+</Page>
+<Page Color="#C0C000" Location="0,10" Name="Scale2" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":05" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:05</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":10" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:10</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":15" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:15</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":20" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:20</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":25" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:25</Text>
+</Page>
+<Page Color="#00C000" Location="0,10" Name="Scale3" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0:30" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0:30</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1:00" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1:00</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1:30" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1:30</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2:00" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2:00</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2:30" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2:30</Text>
+</Page>
+<Page Color="#2060F0" Location="0,10" Name="Scale4" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="3" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">3</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="6" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">6</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="9" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">9</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="12" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">12</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="15" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">15</Text>
+</Page>
+<Page BackgroundOpacity="0.475" Location="120,0" Name="Marker80" PackLocation="npn,nfn" PackLocationProp="0120/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="90,0" Name="Marker60" PackLocation="npn,nfn" PackLocationProp="0090/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="60,0" Name="Marker40" PackLocation="npn,nfn" PackLocationProp="0060/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="30,0" Name="Marker20" PackLocation="npn,nfn" PackLocationProp="0030/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundColor="#FF0000" BackgroundOpacity="1.000" Name="Bar5s" OnHide="Location=-345,0" OnShowEffector="MoveRight5s" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+<Page BackgroundColor="#C0C000" BackgroundOpacity="1.000" Name="Bar30s" OnEffectFinished="Parent.Scale1.Visible=true Parent.Scale2.Visible=false" OnHide="Location=-345,0" OnShowEffector="MoveRight30s" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+<Page BackgroundColor="#008000" BackgroundOpacity="1.000" Name="Bar3m" OnEffectFinished="Parent.Scale3.Visible=false 
+Temp = (Parent.Parent.v15m ? true : Parent.Parent.vm )
+Parent.Scale2.Visible=(Temp ? true : Parent.Parent.v10s )" OnHide="Location=-345,0" OnShowEffector="MoveRight3m" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10" Temp="true"/>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="1,0" Name="Block18m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" PackSize="a,f" PackSizeProp="-001/0001,0002/0003" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="11,0" Name="Block17m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="21,0" Name="Block16m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="31,0" Name="Block15m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="41,0" Name="Block14m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="51,0" Name="Block13m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="61,0" Name="Block12m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="71,0" Name="Block11m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="81,0" Name="Block10m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="91,0" Name="Block9m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="101,0" Name="Block8m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="111,0" Name="Block7m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="121,0" Name="Block6m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="131,0" Name="Block5m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="141,0" Name="Block4m" Scale3.Visible="Parent.Parent.vm" Scale4.Visible="false" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnEffectFinished="Parent.Parent.Scale4.Visible=false
+Temp=(Parent.Parent.Parent.v15m ? true : Parent.Parent.Parent.vm )
+Parent.Parent.Scale3.Visible=(Parent.Parent.Scale2.Visible ? false : Temp )" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10" Temp="true"/>
+</Page>
+<Page BackgroundColor="#FF0000" BackgroundOpacity="1.000" Name="BarAlert" OnEffectFinished="Parent.Parent.Flash.visible=Parent.Parent.FlashEnable Parent.Parent.Flash.visible=false
+Parent.Parent.Tone.visible=Parent.Parent.ToneEnable Parent.Parent.Tone.visible=false" OnShowEffector="MoveRight5s" Opacity="0.000" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+</Page>
+<Page BackgroundColor="#FFFF00" Name="Flash" OnShowEffector="Flashing" ScrollExtent="210,35" Size="210,35"/>
+<Page BackgroundColor="#FFFF00" Name="Tone" ScrollExtent="210,35" ShowSound="ui_spirit_lvl_up" Size="210,35"/>
+<Button Calc="Press" Colon=":" ho10m="14838.750" ho10s="-242.250" ho11m="16638.750" ho12m="18438.750" ho13m="20238.750" ho14m="22038.750" ho15m="23838.750" ho16m="25638.750" ho17m="27438.750" ho18m="29238.750" ho4m="4038.750" ho5m="5838.750" ho6m="7638.750" ho7m="9438.750" ho8m="11238.750" ho9m="13038.750" hoa="-1361.250" hom="-15.375" hos="-1361.250" LocalText="Calc" Location="135,36" MaximumSize="16384,32" MinimumSize="32,32" Name="Calc" OnPress="Temp=Parent.ts+(Parent.t10s*10)
+Time=Temp+(Parent.tm*60)
+Parent.Timer=Time
+Temp=Time*Parent.Parent.CorrectionFactor
+Time=Temp/60.000
+hos=0-Time*30
+ho10s=30-Time*6
+hom=30-Time
+ho18m=30600-Time*30
+ho17m=28800-Time*30
+ho16m=27000-Time*30
+ho15m=25200-Time*30
+ho14m=23400-Time*30
+ho13m=21600-Time*30
+ho12m=19800-Time*30
+ho11m=18000-Time*30
+ho10m=16200-Time*30
+ho9m=14400-Time*30
+ho8m=12600-Time*30
+ho7m=10800-Time*30
+ho6m=9000-Time*30
+ho5m=7200-Time*30
+ho4m=5400-Time*30
+Parent.Loc1s=hos ## &quot;,0&quot;
+timer_test=ho10s &gt;= 0
+Parent.vs=timer_test
+Parent.v10s= ! timer_test
+Parent.Loc10s=(timer_test ? &quot;0,0&quot; : ho10s ) ## &quot;,0&quot;
+timer_test=hom &gt;= 0
+temp=Parent.vs
+Parent.vs=(timer_test ? temp : false )
+temp=Parent.v10s
+Parent.v10s=(timer_test ? temp : false )
+Parent.vm= ! timer_test
+Parent.Loc1m=(timer_test ? &quot;0,0&quot; : hom ) ## &quot;,0&quot;
+timer_test=ho18m &gt;= 0
+Parent.Loc18m=(timer_test ? &quot;0,0&quot; : ho18m ) ## &quot;,0&quot;
+timer_test=ho17m &gt;= 0
+Parent.Loc17m=(timer_test ? &quot;0,0&quot; : ho17m ) ## &quot;,0&quot;
+timer_test=ho16m &gt;= 0
+Parent.Loc16m=(timer_test ? &quot;0,0&quot; : ho16m ) ## &quot;,0&quot;
+timer_test=ho15m &gt;= 0
+Parent.Loc15m=(timer_test ? &quot;0,0&quot; : ho15m ) ## &quot;,0&quot;
+timer_test=ho14m &gt;= 0
+Parent.Loc14m=(timer_test ? &quot;0,0&quot; : ho14m ) ## &quot;,0&quot;
+timer_test=ho13m &gt;= 0
+Parent.Loc13m=(timer_test ? &quot;0,0&quot; : ho13m ) ## &quot;,0&quot;
+timer_test=ho12m &gt;= 0
+Parent.Loc12m=(timer_test ? &quot;0,0&quot; : ho12m ) ## &quot;,0&quot;
+timer_test=ho11m &gt;= 0
+Parent.Loc11m=(timer_test ? &quot;0,0&quot; : ho11m ) ## &quot;,0&quot;
+timer_test=ho10m &gt;= 0
+Parent.Loc10m=(timer_test ? &quot;0,0&quot; : ho10m ) ## &quot;,0&quot;
+timer_test=ho9m &gt;= 0
+Parent.Loc9m=(timer_test ? &quot;0,0&quot; : ho9m ) ## &quot;,0&quot;
+timer_test=ho8m &gt;= 0
+Parent.Loc8m=(timer_test ? &quot;0,0&quot; : ho8m ) ## &quot;,0&quot;
+timer_test=ho7m &gt;= 0
+Parent.Loc7m=(timer_test ? &quot;0,0&quot; : ho7m ) ## &quot;,0&quot;
+timer_test=ho6m &gt;= 0
+Parent.Loc6m=(timer_test ? &quot;0,0&quot; : ho6m ) ## &quot;,0&quot;
+timer_test=ho5m &gt;= 0
+Parent.Loc5m=(timer_test ? &quot;0,0&quot; : ho5m ) ## &quot;,0&quot;
+timer_test=ho4m &gt;= 0
+Parent.Loc4m=(timer_test ? &quot;0,0&quot; : ho4m ) ## &quot;,0&quot;
+temp=Parent.vm
+Parent.vm=(timer_test ? temp : false )
+Parent.v15m= ! timer_test
+Parent.Start.Text=Parent.lm ## Colon ## Parent.l10s ## Parent.ls
+Parent.Option.Timer.Text=Parent.Start.Text
+hoa=hos+Parent.ta*30
+timer_test=hoa &gt;= 0
+Parent.Loca=(timer_test ? &quot;0,0&quot; : hoa ) ## &quot;,0&quot;
+Parent.Parent.Options.DefaultText.Press=true" ScrollExtent="40,32" Size="40,32" Temp="true" timer_test="false" Time="45.375">Calc</Button>
+<Page Name="Go" OnShow="Parent.Start.Press=true Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="p20m" OnShow="Visible=false
+Parent.Option.TimerRing.SelectedItemIndex=Parent.lm
+Parent.lm=Parent.Option.TimerRing.SelectedItem.Plus20m
+Parent.Option.TimerRing.SelectedItemIndex=Parent.lm
+Parent.tm=Parent.Option.TimerRing.SelectedItem.Value
+Parent.Calc.Press=true " ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="19m" OnShow="Parent.Calc.Press=true Parent.tm=19.000 Parent.lm=&quot;19&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="18m" OnShow="Parent.Calc.Press=true Parent.tm=18.000 Parent.lm=&quot;18&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="17m" OnShow="Parent.Calc.Press=true Parent.tm=17.000 Parent.lm=&quot;17&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="16m" OnShow="Parent.Calc.Press=true Parent.tm=16.000 Parent.lm=&quot;16&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="15m" OnShow="Parent.Calc.Press=true Parent.tm=15.000 Parent.lm=&quot;15&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="14m" OnShow="Parent.Calc.Press=true Parent.tm=14.000 Parent.lm=&quot;14&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="13m" OnShow="Parent.Calc.Press=true Parent.tm=13.000 Parent.lm=&quot;13&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="12m" OnShow="Parent.Calc.Press=true Parent.tm=12.000 Parent.lm=&quot;12&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="11m" OnShow="Parent.Calc.Press=true Parent.tm=11.000 Parent.lm=&quot;11&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="10m" OnShow="Parent.Calc.Press=true Parent.tm=10.000 Parent.lm=&quot;10&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="9m" OnShow="Parent.Calc.Press=true Parent.tm=9.000 Parent.lm=&quot;9&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="8m" OnShow="Parent.Calc.Press=true Parent.tm=8.000 Parent.lm=&quot;8&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="7m" OnShow="Parent.Calc.Press=true Parent.tm=7.000 Parent.lm=&quot;7&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="6m" OnShow="Parent.Calc.Press=true Parent.tm=6.000 Parent.lm=&quot;6&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="5m" OnShow="Parent.Calc.Press=true Parent.tm=5.000 Parent.lm=&quot;5&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="4m" OnShow="Parent.Calc.Press=true Parent.tm=4.000 Parent.lm=&quot;4&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="3m" OnShow="Parent.Calc.Press=true Parent.tm=3.000 Parent.lm=&quot;3&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="2m" OnShow="Parent.Calc.Press=true Parent.tm=2.000 Parent.lm=&quot;2&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="1m" OnShow="Parent.Calc.Press=true Parent.tm=1.000 Parent.lm=&quot;1&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="0m" OnShow="Parent.Calc.Press=true Parent.tm=0.000 Parent.lm=&quot;0&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="50" OnShow="Parent.Calc.Press=true Parent.t10s=5.000 Parent.l10s=5 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="40" OnShow="Parent.Calc.Press=true Parent.t10s=4.000 Parent.l10s=4 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="30" OnShow="Parent.Calc.Press=true Parent.t10s=3.000 Parent.l10s=3 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="20" OnShow="Parent.Calc.Press=true Parent.t10s=2.000 Parent.l10s=2 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="10" OnShow="Parent.Calc.Press=true Parent.t10s=1.000 Parent.l10s=1 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="00" OnShow="Parent.Calc.Press=true Parent.t10s=0.000 Parent.l10s=0 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="9" OnShow="Parent.Calc.Press=true Parent.ts=9.000 Parent.ls=9 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="8" OnShow="Parent.Calc.Press=true Parent.ts=8.000 Parent.ls=8 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="7" OnShow="Parent.Calc.Press=true Parent.ts=7.000 Parent.ls=7 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="6" OnShow="Parent.Calc.Press=true Parent.ts=6.000 Parent.ls=6 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="5" OnShow="Parent.Calc.Press=true Parent.ts=5.000 Parent.ls=5 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="4" OnShow="Parent.Calc.Press=true Parent.ts=4.000 Parent.ls=4 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="3" OnShow="Parent.Calc.Press=true Parent.ts=3.000 Parent.ls=3 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="2" OnShow="Parent.Calc.Press=true Parent.ts=2.000 Parent.ls=2 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="1" OnShow="Parent.Calc.Press=true Parent.ts=1.000 Parent.ls=1 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="0" OnShow="Parent.Calc.Press=true Parent.ts=0.000 Parent.ls=0 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+</Page>
+<Page FlashEnable="true" l10s="0" la="5" lm="8" Loc10m="0,0" Loc10s="-2910.300,0" Loc11m="0,0" Loc12m="0,0" Loc13m="0,0" Loc14m="0,0" Loc15m="0,0" Loc16m="0,0" Loc17m="0,0" Loc18m="0,0" Loc1m="-460.050,0" Loc1s="-14701.500,0" Loc4m="-9301.500,0" Loc5m="-7501.500,0" Loc6m="-5701.500,0" Loc7m="-3901.500,0" Loc8m="-2101.500,0" Loc9m="-301.500,0" Loca="-13801.500,0" Location="0,34" ls="6" Name="2" ScrollExtent="360,35" Size="360,35" t10s="0.000" ta="30.000" Timer="486.000" tm="8.000" ToneEnable="true" ts="6.000" v10s="false" v15m="true" vm="false" vs="false">
+<Page Location="213,0" Name="Option" ScrollExtent="210,35" Size="210,35" t10s="4.000" tm="0.000" ts="5.000" v10s="false" v15m="false" vm="true" vs="false">
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="22,2" Name="ButtonMinUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.lm
+Temp=Parent.Parent.TimerRing.SelectedItem.Nextm
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.lm=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.tm=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="22,24" Name="ButtonMinDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.lm
+Temp=Parent.Parent.TimerRing.SelectedItem.Prevm
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.lm=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.tm=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="25"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="35,2" Name="Button10sUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.l10s
+Temp=Parent.Parent.TimerRing.SelectedItem.Next10s
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.l10s=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.t10s=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="35,24" Name="Button10sDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.l10s
+Temp=Parent.Parent.TimerRing.SelectedItem.Prev10s
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.l10s=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.t10s=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="45,2" Name="ButtonSecUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.ls
+Temp=Parent.Parent.TimerRing.SelectedItem.Nexts
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.ls=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.ts=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="6"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="45,24" Name="ButtonSecDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.ls
+Temp=Parent.Parent.TimerRing.SelectedItem.Prevs
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.ls=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.ts=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="5"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="8:06" Location="17,7" Margin="1,1,1,1" Name="Timer" PackLocation="npn,nfn" PackLocationProp="0017/0210,0007/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">8:06</Text>
+<Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="10,2" MaximumSize="16384,30" MinimumSize="30,30" Name="TimerBack" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="50,30" Size="50,30" Style="/CommonElements.Textfield.data.style"></Textbox>
+<Button Location="65,2" Name="ToggleFlash" OnPress="Parent.Flash.Visible=Temp Temp= ! Parent.Flash.Visible
+Parent.Parent.FlashEnable=Parent.Flash.Visible
+Parent.Parent.Parent.Options.DefaultText.Press=true" Opacity="0.000" ScrollExtent="44,13" Size="44,13" Temp="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.Racial.Font_Iksar" LocalText="0" Location="65,2" Margin="1,1,1,1" Name="Flash" PackLocation="npn,nfn" PackLocationProp="0065/0210,0002/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="Flash" Location="78,0" Margin="1,1,1,1" Name="LabelFlash" PackLocation="npn,nfn" PackLocationProp="0078/0210,0000/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">Flash</Text>
+<Button Location="65,16" Name="ToggleTone" OnPress="Parent.Tone.Visible=Temp Temp= ! Parent.Tone.Visible
+Parent.Parent.ToneEnable=Parent.Tone.Visible
+Parent.Parent.Parent.Options.DefaultText.Press=true" Opacity="0.000" ScrollExtent="44,13" Size="44,13" Temp="false"/>
+<Text AbsorbsInput="false" Font="/Fonts.Racial.Font_Iksar" LocalText="0" Location="65,16" Margin="1,1,1,1" Name="Tone" PackLocation="npn,nfn" PackLocationProp="0065/0210,0016/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="Tone" Location="78,16" Margin="1,1,1,1" Name="LabelTone" PackLocation="npn,nfn" PackLocationProp="0078/0210,0016/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">Tone</Text>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="127,2" Name="ButtonAlertUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.AlertRing.SelectedItemIndex=Parent.Parent.Parent.la
+Temp=Parent.Parent.AlertRing.SelectedItem.Next
+Parent.Parent.AlertRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.la=Parent.Parent.AlertRing.SelectedItemIndex
+Parent.Parent.Parent.ta=Parent.Parent.AlertRing.SelectedItem.Value
+Parent.Parent.Alert.Text=Parent.Parent.AlertRing.SelectedItem.Text
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="5"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="127,24" Name="ButtonAlertDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.AlertRing.SelectedItemIndex=Parent.Parent.Parent.la
+Temp=Parent.Parent.AlertRing.SelectedItem.Prev
+Parent.Parent.AlertRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.la=Parent.Parent.AlertRing.SelectedItemIndex
+Parent.Parent.Parent.ta=Parent.Parent.AlertRing.SelectedItem.Value
+Parent.Parent.Alert.Text=Parent.Parent.AlertRing.SelectedItem.Text
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="115,2" MaximumSize="16384,30" MinimumSize="30,30" Name="Alert" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="33,30" Size="33,30" Style="/CommonElements.Textfield.data.style">30</Textbox>
+<Dropdownbox DataSource="TimerRingSource" Enabled="false" Location="-10,0" Name="TimerRing" ScrollExtent="1,1" SelectedItemIndex="36" Size="1,1"/>
+<Dropdownbox DataSource="AlertRingSource" Enabled="false" Location="-10,0" Name="AlertRing" ScrollExtent="1,1" SelectedItemIndex="5" Size="1,1"/>
+</Page>
+<Button LocalText="8:06" MaximumSize="16384,32" MinimumSize="32,32" Name="Start" OnPress="Parent.Progress.Bar5s.Visible=false
+Parent.Progress.BarAlert.Visible=false
+Parent.Progress.Bar30s.Visible=false
+Parent.Progress.Bar3m.Visible=false
+Parent.Progress.Bar5s.Location=Parent.Loc1s
+Parent.Progress.BarAlert.Location=Parent.Loca
+Parent.Progress.Bar30s.Location=Parent.Loc10s
+Parent.Progress.Bar3m.Location=Parent.Loc1m
+Parent.Progress.Bar5s.Visible=true
+Parent.Progress.BarAlert.Visible=true
+Parent.Progress.Bar30s.Visible=true
+Parent.Progress.Bar3m.Visible=true
+Parent.Progress.Block4m.m.Visible=false
+Parent.Progress.Block5m.m.Visible=false
+Parent.Progress.Block6m.m.Visible=false
+Parent.Progress.Block7m.m.Visible=false
+Parent.Progress.Block8m.m.Visible=false
+Parent.Progress.Block9m.m.Visible=false
+Parent.Progress.Block10m.m.Visible=false
+Parent.Progress.Block11m.m.Visible=false
+Parent.Progress.Block12m.m.Visible=false
+Parent.Progress.Block13m.m.Visible=false
+Parent.Progress.Block14m.m.Visible=false
+Parent.Progress.Block15m.m.Visible=false
+Parent.Progress.Block16m.m.Visible=false
+Parent.Progress.Block17m.m.Visible=false
+Parent.Progress.Block18m.m.Visible=false
+Parent.Progress.Block4m.m.Location=Parent.Loc4m
+Parent.Progress.Block5m.m.Location=Parent.Loc5m
+Parent.Progress.Block6m.m.Location=Parent.Loc6m
+Parent.Progress.Block7m.m.Location=Parent.Loc7m
+Parent.Progress.Block8m.m.Location=Parent.Loc8m
+Parent.Progress.Block9m.m.Location=Parent.Loc9m
+Parent.Progress.Block10m.m.Location=Parent.Loc10m
+Parent.Progress.Block11m.m.Location=Parent.Loc11m
+Parent.Progress.Block12m.m.Location=Parent.Loc12m
+Parent.Progress.Block13m.m.Location=Parent.Loc13m
+Parent.Progress.Block14m.m.Location=Parent.Loc14m
+Parent.Progress.Block15m.m.Location=Parent.Loc15m
+Parent.Progress.Block16m.m.Location=Parent.Loc16m
+Parent.Progress.Block17m.m.Location=Parent.Loc17m
+Parent.Progress.Block18m.m.Location=Parent.Loc18m
+Parent.Progress.Block4m.m.Visible=true
+Parent.Progress.Block5m.m.Visible=true
+Parent.Progress.Block6m.m.Visible=true
+Parent.Progress.Block7m.m.Visible=true
+Parent.Progress.Block8m.m.Visible=true
+Parent.Progress.Block9m.m.Visible=true
+Parent.Progress.Block10m.m.Visible=true
+Parent.Progress.Block11m.m.Visible=true
+Parent.Progress.Block12m.m.Visible=true
+Parent.Progress.Block13m.m.Visible=true
+Parent.Progress.Block14m.m.Visible=true
+Parent.Progress.Block15m.m.Visible=true
+Parent.Progress.Block16m.m.Visible=true
+Parent.Progress.Block17m.m.Visible=true
+Parent.Progress.Block18m.m.Visible=true
+Parent.Progress.Scale4.Visible=Parent.v15m
+Parent.Progress.Scale3.Visible=Parent.vm
+Parent.Progress.Scale2.Visible=Parent.v10s
+Parent.Progress.Scale1.Visible=Parent.vs
+" ScrollExtent="55,32" Size="55,32" Style="/CommonElements.PushButton.data.style">8:06</Button>
+<Page Location="57,5" Name="Progress" o10m="0.460" o11m="0.040" o12m="0.160" o13m="0.280" o14m="0.100" o15m="0.040" o16m="0.100" o17m="0.040" o18m="0.040" o4m="0.100" o5m="0.160" o6m="0.220" o7m="0.280" o8m="0.340" o9m="0.400" ScrollExtent="150,25" Size="150,25">
+<Page Color="#FF0000" Location="0,10" Name="Scale1" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,a" PackSizeProp="0029/0150,-001/0001" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="3" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">3</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="4" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">4</Text>
+</Page>
+<Page Color="#C0C000" Location="0,10" Name="Scale2" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":05" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:05</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":10" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:10</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":15" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:15</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":20" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:20</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":25" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:25</Text>
+</Page>
+<Page Color="#00C000" Location="0,10" Name="Scale3" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0:30" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0:30</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1:00" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1:00</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1:30" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1:30</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2:00" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2:00</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2:30" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2:30</Text>
+</Page>
+<Page Color="#2060F0" Location="0,10" Name="Scale4" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="3" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">3</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="6" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">6</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="9" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">9</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="12" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">12</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="15" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">15</Text>
+</Page>
+<Page BackgroundOpacity="0.475" Location="120,0" Name="Marker80" PackLocation="npn,nfn" PackLocationProp="0120/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="90,0" Name="Marker60" PackLocation="npn,nfn" PackLocationProp="0090/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="60,0" Name="Marker40" PackLocation="npn,nfn" PackLocationProp="0060/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="30,0" Name="Marker20" PackLocation="npn,nfn" PackLocationProp="0030/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundColor="#FF0000" BackgroundOpacity="1.000" Name="Bar5s" OnHide="Location=-345,0" OnShowEffector="MoveRight5s" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+<Page BackgroundColor="#C0C000" BackgroundOpacity="1.000" Name="Bar30s" OnEffectFinished="Parent.Scale1.Visible=true Parent.Scale2.Visible=false" OnHide="Location=-345,0" OnShowEffector="MoveRight30s" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+<Page BackgroundColor="#008000" BackgroundOpacity="1.000" Name="Bar3m" OnEffectFinished="Parent.Scale3.Visible=false 
+Temp = (Parent.Parent.v15m ? true : Parent.Parent.vm )
+Parent.Scale2.Visible=(Temp ? true : Parent.Parent.v10s )" OnHide="Location=-345,0" OnShowEffector="MoveRight3m" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10" Temp="true"/>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="1,0" Name="Block18m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" PackSize="a,f" PackSizeProp="-001/0001,0002/0003" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="11,0" Name="Block17m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="21,0" Name="Block16m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="31,0" Name="Block15m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="41,0" Name="Block14m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="51,0" Name="Block13m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="61,0" Name="Block12m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="71,0" Name="Block11m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="81,0" Name="Block10m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="91,0" Name="Block9m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="101,0" Name="Block8m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="111,0" Name="Block7m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="121,0" Name="Block6m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="131,0" Name="Block5m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="141,0" Name="Block4m" Scale3.Visible="Parent.Parent.vm" Scale4.Visible="false" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnEffectFinished="Parent.Parent.Scale4.Visible=false
+Temp=(Parent.Parent.Parent.v15m ? true : Parent.Parent.Parent.vm )
+Parent.Parent.Scale3.Visible=(Parent.Parent.Scale2.Visible ? false : Temp )" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10" Temp="true"/>
+</Page>
+<Page BackgroundColor="#FF0000" BackgroundOpacity="1.000" Name="BarAlert" OnEffectFinished="Parent.Parent.Flash.visible=Parent.Parent.FlashEnable Parent.Parent.Flash.visible=false
+Parent.Parent.Tone.visible=Parent.Parent.ToneEnable Parent.Parent.Tone.visible=false" OnShowEffector="MoveRight5s" Opacity="0.000" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+</Page>
+<Page BackgroundColor="#FFFF00" Name="Flash" OnShowEffector="Flashing" ScrollExtent="210,35" Size="210,35"/>
+<Page BackgroundColor="#FFFF00" Name="Tone" ScrollExtent="210,35" ShowSound="ui_spirit_lvl_up" Size="210,35"/>
+<Button Calc="Press" Colon=":" ho10m="1498.500" ho10s="-2910.300" ho11m="3298.500" ho12m="5098.500" ho13m="6898.500" ho14m="8698.500" ho15m="10498.500" ho16m="12298.500" ho17m="14098.500" ho18m="15898.500" ho4m="-9301.500" ho5m="-7501.500" ho6m="-5701.500" ho7m="-3901.500" ho8m="-2101.500" ho9m="-301.500" hoa="-13801.500" hom="-460.050" hos="-14701.500" LocalText="Calc" Location="135,36" MaximumSize="16384,32" MinimumSize="32,32" Name="Calc" OnPress="Temp=Parent.ts+(Parent.t10s*10)
+Time=Temp+(Parent.tm*60)
+Parent.Timer=Time
+Temp=Time*Parent.Parent.CorrectionFactor
+Time=Temp/60.000
+hos=0-Time*30
+ho10s=30-Time*6
+hom=30-Time
+ho18m=30600-Time*30
+ho17m=28800-Time*30
+ho16m=27000-Time*30
+ho15m=25200-Time*30
+ho14m=23400-Time*30
+ho13m=21600-Time*30
+ho12m=19800-Time*30
+ho11m=18000-Time*30
+ho10m=16200-Time*30
+ho9m=14400-Time*30
+ho8m=12600-Time*30
+ho7m=10800-Time*30
+ho6m=9000-Time*30
+ho5m=7200-Time*30
+ho4m=5400-Time*30
+Parent.Loc1s=hos ## &quot;,0&quot;
+timer_test=ho10s &gt;= 0
+Parent.vs=timer_test
+Parent.v10s= ! timer_test
+Parent.Loc10s=(timer_test ? &quot;0,0&quot; : ho10s ) ## &quot;,0&quot;
+timer_test=hom &gt;= 0
+temp=Parent.vs
+Parent.vs=(timer_test ? temp : false )
+temp=Parent.v10s
+Parent.v10s=(timer_test ? temp : false )
+Parent.vm= ! timer_test
+Parent.Loc1m=(timer_test ? &quot;0,0&quot; : hom ) ## &quot;,0&quot;
+timer_test=ho18m &gt;= 0
+Parent.Loc18m=(timer_test ? &quot;0,0&quot; : ho18m ) ## &quot;,0&quot;
+timer_test=ho17m &gt;= 0
+Parent.Loc17m=(timer_test ? &quot;0,0&quot; : ho17m ) ## &quot;,0&quot;
+timer_test=ho16m &gt;= 0
+Parent.Loc16m=(timer_test ? &quot;0,0&quot; : ho16m ) ## &quot;,0&quot;
+timer_test=ho15m &gt;= 0
+Parent.Loc15m=(timer_test ? &quot;0,0&quot; : ho15m ) ## &quot;,0&quot;
+timer_test=ho14m &gt;= 0
+Parent.Loc14m=(timer_test ? &quot;0,0&quot; : ho14m ) ## &quot;,0&quot;
+timer_test=ho13m &gt;= 0
+Parent.Loc13m=(timer_test ? &quot;0,0&quot; : ho13m ) ## &quot;,0&quot;
+timer_test=ho12m &gt;= 0
+Parent.Loc12m=(timer_test ? &quot;0,0&quot; : ho12m ) ## &quot;,0&quot;
+timer_test=ho11m &gt;= 0
+Parent.Loc11m=(timer_test ? &quot;0,0&quot; : ho11m ) ## &quot;,0&quot;
+timer_test=ho10m &gt;= 0
+Parent.Loc10m=(timer_test ? &quot;0,0&quot; : ho10m ) ## &quot;,0&quot;
+timer_test=ho9m &gt;= 0
+Parent.Loc9m=(timer_test ? &quot;0,0&quot; : ho9m ) ## &quot;,0&quot;
+timer_test=ho8m &gt;= 0
+Parent.Loc8m=(timer_test ? &quot;0,0&quot; : ho8m ) ## &quot;,0&quot;
+timer_test=ho7m &gt;= 0
+Parent.Loc7m=(timer_test ? &quot;0,0&quot; : ho7m ) ## &quot;,0&quot;
+timer_test=ho6m &gt;= 0
+Parent.Loc6m=(timer_test ? &quot;0,0&quot; : ho6m ) ## &quot;,0&quot;
+timer_test=ho5m &gt;= 0
+Parent.Loc5m=(timer_test ? &quot;0,0&quot; : ho5m ) ## &quot;,0&quot;
+timer_test=ho4m &gt;= 0
+Parent.Loc4m=(timer_test ? &quot;0,0&quot; : ho4m ) ## &quot;,0&quot;
+temp=Parent.vm
+Parent.vm=(timer_test ? temp : false )
+Parent.v15m= ! timer_test
+Parent.Start.Text=Parent.lm ## Colon ## Parent.l10s ## Parent.ls
+Parent.Option.Timer.Text=Parent.Start.Text
+hoa=hos+Parent.ta*30
+timer_test=hoa &gt;= 0
+Parent.Loca=(timer_test ? &quot;0,0&quot; : hoa ) ## &quot;,0&quot;
+Parent.Parent.Options.DefaultText.Press=true" ScrollExtent="40,32" Size="40,32" Temp="true" timer_test="false" Time="490.050">Calc</Button>
+<Page Name="Go" OnShow="Parent.Start.Press=true Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="p20m" OnShow="Visible=false
+Parent.Option.TimerRing.SelectedItemIndex=Parent.lm
+Parent.lm=Parent.Option.TimerRing.SelectedItem.Plus20m
+Parent.Option.TimerRing.SelectedItemIndex=Parent.lm
+Parent.tm=Parent.Option.TimerRing.SelectedItem.Value
+Parent.Calc.Press=true " ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="19m" OnShow="Parent.Calc.Press=true Parent.tm=19.000 Parent.lm=&quot;19&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="18m" OnShow="Parent.Calc.Press=true Parent.tm=18.000 Parent.lm=&quot;18&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="17m" OnShow="Parent.Calc.Press=true Parent.tm=17.000 Parent.lm=&quot;17&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="16m" OnShow="Parent.Calc.Press=true Parent.tm=16.000 Parent.lm=&quot;16&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="15m" OnShow="Parent.Calc.Press=true Parent.tm=15.000 Parent.lm=&quot;15&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="14m" OnShow="Parent.Calc.Press=true Parent.tm=14.000 Parent.lm=&quot;14&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="13m" OnShow="Parent.Calc.Press=true Parent.tm=13.000 Parent.lm=&quot;13&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="12m" OnShow="Parent.Calc.Press=true Parent.tm=12.000 Parent.lm=&quot;12&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="11m" OnShow="Parent.Calc.Press=true Parent.tm=11.000 Parent.lm=&quot;11&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="10m" OnShow="Parent.Calc.Press=true Parent.tm=10.000 Parent.lm=&quot;10&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="9m" OnShow="Parent.Calc.Press=true Parent.tm=9.000 Parent.lm=&quot;9&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="8m" OnShow="Parent.Calc.Press=true Parent.tm=8.000 Parent.lm=&quot;8&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="7m" OnShow="Parent.Calc.Press=true Parent.tm=7.000 Parent.lm=&quot;7&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="6m" OnShow="Parent.Calc.Press=true Parent.tm=6.000 Parent.lm=&quot;6&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="5m" OnShow="Parent.Calc.Press=true Parent.tm=5.000 Parent.lm=&quot;5&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="4m" OnShow="Parent.Calc.Press=true Parent.tm=4.000 Parent.lm=&quot;4&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="3m" OnShow="Parent.Calc.Press=true Parent.tm=3.000 Parent.lm=&quot;3&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="2m" OnShow="Parent.Calc.Press=true Parent.tm=2.000 Parent.lm=&quot;2&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="1m" OnShow="Parent.Calc.Press=true Parent.tm=1.000 Parent.lm=&quot;1&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="0m" OnShow="Parent.Calc.Press=true Parent.tm=0.000 Parent.lm=&quot;0&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="50" OnShow="Parent.Calc.Press=true Parent.t10s=5.000 Parent.l10s=5 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="40" OnShow="Parent.Calc.Press=true Parent.t10s=4.000 Parent.l10s=4 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="30" OnShow="Parent.Calc.Press=true Parent.t10s=3.000 Parent.l10s=3 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="20" OnShow="Parent.Calc.Press=true Parent.t10s=2.000 Parent.l10s=2 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="10" OnShow="Parent.Calc.Press=true Parent.t10s=1.000 Parent.l10s=1 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="00" OnShow="Parent.Calc.Press=true Parent.t10s=0.000 Parent.l10s=0 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="9" OnShow="Parent.Calc.Press=true Parent.ts=9.000 Parent.ls=9 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="8" OnShow="Parent.Calc.Press=true Parent.ts=8.000 Parent.ls=8 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="7" OnShow="Parent.Calc.Press=true Parent.ts=7.000 Parent.ls=7 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="6" OnShow="Parent.Calc.Press=true Parent.ts=6.000 Parent.ls=6 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="5" OnShow="Parent.Calc.Press=true Parent.ts=5.000 Parent.ls=5 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="4" OnShow="Parent.Calc.Press=true Parent.ts=4.000 Parent.ls=4 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="3" OnShow="Parent.Calc.Press=true Parent.ts=3.000 Parent.ls=3 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="2" OnShow="Parent.Calc.Press=true Parent.ts=2.000 Parent.ls=2 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="1" OnShow="Parent.Calc.Press=true Parent.ts=1.000 Parent.ls=1 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="0" OnShow="Parent.Calc.Press=true Parent.ts=0.000 Parent.ls=0 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+</Page>
+<Page FlashEnable="false" l10s="3" la="4" lm="2:" Loc10m="0,0" Loc10s="-877.500,0" Loc11m="0,0" Loc12m="0,0" Loc13m="0,0" Loc14m="0,0" Loc15m="0,0" Loc16m="0,0" Loc17m="0,0" Loc18m="0,0" Loc1m="-121.250,0" Loc1s="-4537.500,0" Loc4m="0,0" Loc5m="0,0" Loc6m="0,0" Loc7m="0,0" Loc8m="0,0" Loc9m="0,0" Loca="-3937.500,0" Location="0,68" ls="0" Name="3" Options.DefaultText.Press="true" ScrollExtent="360,35" Size="360,35" t10s="3.000" ta="20.000" Timer="150.000" tm="2.000" ToneEnable="true" ts="0.000" v10s="false" v15m="false" vm="true" vs="false">
+<Page Location="213,0" Name="Option" ScrollExtent="210,35" Size="210,35" t10s="4.000" tm="0.000" ts="5.000" v10s="false" v15m="false" vm="true" vs="false">
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="22,2" Name="ButtonMinUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.lm
+Temp=Parent.Parent.TimerRing.SelectedItem.Nextm
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.lm=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.tm=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="33"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="22,24" Name="ButtonMinDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.lm
+Temp=Parent.Parent.TimerRing.SelectedItem.Prevm
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.lm=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.tm=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="33"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="35,2" Name="Button10sUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.l10s
+Temp=Parent.Parent.TimerRing.SelectedItem.Next10s
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.l10s=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.t10s=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="35,24" Name="Button10sDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.l10s
+Temp=Parent.Parent.TimerRing.SelectedItem.Prev10s
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.l10s=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.t10s=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="45,2" Name="ButtonSecUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.ls
+Temp=Parent.Parent.TimerRing.SelectedItem.Nexts
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.ls=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.ts=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="6"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="45,24" Name="ButtonSecDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.ls
+Temp=Parent.Parent.TimerRing.SelectedItem.Prevs
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.ls=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.ts=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="5"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2:30" Location="17,7" Margin="1,1,1,1" Name="Timer" PackLocation="npn,nfn" PackLocationProp="0017/0210,0007/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2:30</Text>
+<Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="10,2" MaximumSize="16384,30" MinimumSize="30,30" Name="TimerBack" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="50,30" Size="50,30" Style="/CommonElements.Textfield.data.style"></Textbox>
+<Button Location="65,2" Name="ToggleFlash" OnPress="Parent.Flash.Visible=Temp Temp= ! Parent.Flash.Visible
+Parent.Parent.FlashEnable=Parent.Flash.Visible
+Parent.Parent.Parent.Options.DefaultText.Press=true" Opacity="0.000" ScrollExtent="44,13" Size="44,13" Temp="true"/>
+<Text AbsorbsInput="false" Font="/Fonts.Racial.Font_Iksar" LocalText="0" Location="65,2" Margin="1,1,1,1" Name="Flash" PackLocation="npn,nfn" PackLocationProp="0065/0210,0002/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true" Visible="false">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="Flash" Location="78,0" Margin="1,1,1,1" Name="LabelFlash" PackLocation="npn,nfn" PackLocationProp="0078/0210,0000/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">Flash</Text>
+<Button Location="65,16" Name="ToggleTone" OnPress="Parent.Tone.Visible=Temp Temp= ! Parent.Tone.Visible
+Parent.Parent.ToneEnable=Parent.Tone.Visible
+Parent.Parent.Parent.Options.DefaultText.Press=true" Opacity="0.000" ScrollExtent="44,13" Size="44,13" Temp="false"/>
+<Text AbsorbsInput="false" Font="/Fonts.Racial.Font_Iksar" LocalText="0" Location="65,16" Margin="1,1,1,1" Name="Tone" PackLocation="npn,nfn" PackLocationProp="0065/0210,0016/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="Tone" Location="78,16" Margin="1,1,1,1" Name="LabelTone" PackLocation="npn,nfn" PackLocationProp="0078/0210,0016/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">Tone</Text>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="127,2" Name="ButtonAlertUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.AlertRing.SelectedItemIndex=Parent.Parent.Parent.la
+Temp=Parent.Parent.AlertRing.SelectedItem.Next
+Parent.Parent.AlertRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.la=Parent.Parent.AlertRing.SelectedItemIndex
+Parent.Parent.Parent.ta=Parent.Parent.AlertRing.SelectedItem.Value
+Parent.Parent.Alert.Text=Parent.Parent.AlertRing.SelectedItem.Text
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="5"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="127,24" Name="ButtonAlertDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.AlertRing.SelectedItemIndex=Parent.Parent.Parent.la
+Temp=Parent.Parent.AlertRing.SelectedItem.Prev
+Parent.Parent.AlertRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.la=Parent.Parent.AlertRing.SelectedItemIndex
+Parent.Parent.Parent.ta=Parent.Parent.AlertRing.SelectedItem.Value
+Parent.Parent.Alert.Text=Parent.Parent.AlertRing.SelectedItem.Text
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="4"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="115,2" MaximumSize="16384,30" MinimumSize="30,30" Name="Alert" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="33,30" Size="33,30" Style="/CommonElements.Textfield.data.style">20</Textbox>
+<Dropdownbox DataSource="TimerRingSource" Enabled="false" Location="-10,0" Name="TimerRing" ScrollExtent="1,1" SelectedItemIndex="33" Size="1,1"/>
+<Dropdownbox DataSource="AlertRingSource" Enabled="false" Location="-10,0" Name="AlertRing" ScrollExtent="1,1" SelectedItemIndex="4" Size="1,1"/>
+</Page>
+<Button LocalText="2:30" MaximumSize="16384,32" MinimumSize="32,32" Name="Start" OnPress="Parent.Progress.Bar5s.Visible=false
+Parent.Progress.BarAlert.Visible=false
+Parent.Progress.Bar30s.Visible=false
+Parent.Progress.Bar3m.Visible=false
+Parent.Progress.Bar5s.Location=Parent.Loc1s
+Parent.Progress.BarAlert.Location=Parent.Loca
+Parent.Progress.Bar30s.Location=Parent.Loc10s
+Parent.Progress.Bar3m.Location=Parent.Loc1m
+Parent.Progress.Bar5s.Visible=true
+Parent.Progress.BarAlert.Visible=true
+Parent.Progress.Bar30s.Visible=true
+Parent.Progress.Bar3m.Visible=true
+Parent.Progress.Block4m.m.Visible=false
+Parent.Progress.Block5m.m.Visible=false
+Parent.Progress.Block6m.m.Visible=false
+Parent.Progress.Block7m.m.Visible=false
+Parent.Progress.Block8m.m.Visible=false
+Parent.Progress.Block9m.m.Visible=false
+Parent.Progress.Block10m.m.Visible=false
+Parent.Progress.Block11m.m.Visible=false
+Parent.Progress.Block12m.m.Visible=false
+Parent.Progress.Block13m.m.Visible=false
+Parent.Progress.Block14m.m.Visible=false
+Parent.Progress.Block15m.m.Visible=false
+Parent.Progress.Block16m.m.Visible=false
+Parent.Progress.Block17m.m.Visible=false
+Parent.Progress.Block18m.m.Visible=false
+Parent.Progress.Block4m.m.Location=Parent.Loc4m
+Parent.Progress.Block5m.m.Location=Parent.Loc5m
+Parent.Progress.Block6m.m.Location=Parent.Loc6m
+Parent.Progress.Block7m.m.Location=Parent.Loc7m
+Parent.Progress.Block8m.m.Location=Parent.Loc8m
+Parent.Progress.Block9m.m.Location=Parent.Loc9m
+Parent.Progress.Block10m.m.Location=Parent.Loc10m
+Parent.Progress.Block11m.m.Location=Parent.Loc11m
+Parent.Progress.Block12m.m.Location=Parent.Loc12m
+Parent.Progress.Block13m.m.Location=Parent.Loc13m
+Parent.Progress.Block14m.m.Location=Parent.Loc14m
+Parent.Progress.Block15m.m.Location=Parent.Loc15m
+Parent.Progress.Block16m.m.Location=Parent.Loc16m
+Parent.Progress.Block17m.m.Location=Parent.Loc17m
+Parent.Progress.Block18m.m.Location=Parent.Loc18m
+Parent.Progress.Block4m.m.Visible=true
+Parent.Progress.Block5m.m.Visible=true
+Parent.Progress.Block6m.m.Visible=true
+Parent.Progress.Block7m.m.Visible=true
+Parent.Progress.Block8m.m.Visible=true
+Parent.Progress.Block9m.m.Visible=true
+Parent.Progress.Block10m.m.Visible=true
+Parent.Progress.Block11m.m.Visible=true
+Parent.Progress.Block12m.m.Visible=true
+Parent.Progress.Block13m.m.Visible=true
+Parent.Progress.Block14m.m.Visible=true
+Parent.Progress.Block15m.m.Visible=true
+Parent.Progress.Block16m.m.Visible=true
+Parent.Progress.Block17m.m.Visible=true
+Parent.Progress.Block18m.m.Visible=true
+Parent.Progress.Scale4.Visible=Parent.v15m
+Parent.Progress.Scale3.Visible=Parent.vm
+Parent.Progress.Scale2.Visible=Parent.v10s
+Parent.Progress.Scale1.Visible=Parent.vs
+" ScrollExtent="55,32" Size="55,32" Style="/CommonElements.PushButton.data.style">2:30</Button>
+<Page Location="57,5" Name="Progress" o10m="0.460" o11m="0.040" o12m="0.160" o13m="0.280" o14m="0.100" o15m="0.040" o16m="0.100" o17m="0.040" o18m="0.040" o4m="0.100" o5m="0.160" o6m="0.220" o7m="0.280" o8m="0.340" o9m="0.400" ScrollExtent="150,25" Size="150,25">
+<Page Color="#FF0000" Location="0,10" Name="Scale1" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,a" PackSizeProp="0029/0150,-001/0001" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="3" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">3</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="4" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">4</Text>
+</Page>
+<Page Color="#C0C000" Location="0,10" Name="Scale2" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":05" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:05</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":10" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:10</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":15" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:15</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":20" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:20</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":25" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:25</Text>
+</Page>
+<Page Color="#00C000" Location="0,10" Name="Scale3" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0:30" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0:30</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1:00" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1:00</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1:30" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1:30</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2:00" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2:00</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2:30" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2:30</Text>
+</Page>
+<Page Color="#2060F0" Location="0,10" Name="Scale4" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="3" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">3</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="6" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">6</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="9" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">9</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="12" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">12</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="15" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">15</Text>
+</Page>
+<Page BackgroundOpacity="0.475" Location="120,0" Name="Marker80" PackLocation="npn,nfn" PackLocationProp="0120/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="90,0" Name="Marker60" PackLocation="npn,nfn" PackLocationProp="0090/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="60,0" Name="Marker40" PackLocation="npn,nfn" PackLocationProp="0060/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="30,0" Name="Marker20" PackLocation="npn,nfn" PackLocationProp="0030/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundColor="#FF0000" BackgroundOpacity="1.000" Name="Bar5s" OnHide="Location=-345,0" OnShowEffector="MoveRight5s" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+<Page BackgroundColor="#C0C000" BackgroundOpacity="1.000" Name="Bar30s" OnEffectFinished="Parent.Scale1.Visible=true Parent.Scale2.Visible=false" OnHide="Location=-345,0" OnShowEffector="MoveRight30s" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+<Page BackgroundColor="#008000" BackgroundOpacity="1.000" Name="Bar3m" OnEffectFinished="Parent.Scale3.Visible=false 
+Temp = (Parent.Parent.v15m ? true : Parent.Parent.vm )
+Parent.Scale2.Visible=(Temp ? true : Parent.Parent.v10s )" OnHide="Location=-345,0" OnShowEffector="MoveRight3m" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10" Temp="true"/>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="1,0" Name="Block18m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" PackSize="a,f" PackSizeProp="-001/0001,0002/0003" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="11,0" Name="Block17m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="21,0" Name="Block16m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="31,0" Name="Block15m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="41,0" Name="Block14m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="51,0" Name="Block13m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="61,0" Name="Block12m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="71,0" Name="Block11m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="81,0" Name="Block10m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="91,0" Name="Block9m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="101,0" Name="Block8m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="111,0" Name="Block7m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="121,0" Name="Block6m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="131,0" Name="Block5m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="141,0" Name="Block4m" Scale3.Visible="Parent.Parent.vm" Scale4.Visible="false" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnEffectFinished="Parent.Parent.Scale4.Visible=false
+Temp=(Parent.Parent.Parent.v15m ? true : Parent.Parent.Parent.vm )
+Parent.Parent.Scale3.Visible=(Parent.Parent.Scale2.Visible ? false : Temp )" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10" Temp="true"/>
+</Page>
+<Page BackgroundColor="#FF0000" BackgroundOpacity="1.000" Name="BarAlert" OnEffectFinished="Parent.Parent.Flash.visible=Parent.Parent.FlashEnable Parent.Parent.Flash.visible=false
+Parent.Parent.Tone.visible=Parent.Parent.ToneEnable Parent.Parent.Tone.visible=false" OnShowEffector="MoveRight5s" Opacity="0.000" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+</Page>
+<Page BackgroundColor="#FFFF00" Name="Flash" OnShowEffector="Flashing" ScrollExtent="210,35" Size="210,35" Visible="false"/>
+<Page BackgroundColor="#FFFF00" Name="Tone" ScrollExtent="210,35" ShowSound="ui_spirit_lvl_up" Size="210,35"/>
+<Button Calc="Press" Colon=":" ho10m="11662.500" ho10s="-877.500" ho11m="13462.500" ho12m="15262.500" ho13m="17062.500" ho14m="18862.500" ho15m="20662.500" ho16m="22462.500" ho17m="24262.500" ho18m="26062.500" ho4m="862.500" ho5m="2662.500" ho6m="4462.500" ho7m="6262.500" ho8m="8062.500" ho9m="9862.500" hoa="-3937.500" hom="-121.250" hos="-4537.500" LocalText="Calc" Location="135,36" MaximumSize="16384,32" MinimumSize="32,32" Name="Calc" OnPress="Temp=Parent.ts+(Parent.t10s*10)
+Time=Temp+(Parent.tm*60)
+Parent.Timer=Time
+Temp=Time*Parent.Parent.CorrectionFactor
+Time=Temp/60.000
+hos=0-Time*30
+ho10s=30-Time*6
+hom=30-Time
+ho18m=30600-Time*30
+ho17m=28800-Time*30
+ho16m=27000-Time*30
+ho15m=25200-Time*30
+ho14m=23400-Time*30
+ho13m=21600-Time*30
+ho12m=19800-Time*30
+ho11m=18000-Time*30
+ho10m=16200-Time*30
+ho9m=14400-Time*30
+ho8m=12600-Time*30
+ho7m=10800-Time*30
+ho6m=9000-Time*30
+ho5m=7200-Time*30
+ho4m=5400-Time*30
+Parent.Loc1s=hos ## &quot;,0&quot;
+timer_test=ho10s &gt;= 0
+Parent.vs=timer_test
+Parent.v10s= ! timer_test
+Parent.Loc10s=(timer_test ? &quot;0,0&quot; : ho10s ) ## &quot;,0&quot;
+timer_test=hom &gt;= 0
+temp=Parent.vs
+Parent.vs=(timer_test ? temp : false )
+temp=Parent.v10s
+Parent.v10s=(timer_test ? temp : false )
+Parent.vm= ! timer_test
+Parent.Loc1m=(timer_test ? &quot;0,0&quot; : hom ) ## &quot;,0&quot;
+timer_test=ho18m &gt;= 0
+Parent.Loc18m=(timer_test ? &quot;0,0&quot; : ho18m ) ## &quot;,0&quot;
+timer_test=ho17m &gt;= 0
+Parent.Loc17m=(timer_test ? &quot;0,0&quot; : ho17m ) ## &quot;,0&quot;
+timer_test=ho16m &gt;= 0
+Parent.Loc16m=(timer_test ? &quot;0,0&quot; : ho16m ) ## &quot;,0&quot;
+timer_test=ho15m &gt;= 0
+Parent.Loc15m=(timer_test ? &quot;0,0&quot; : ho15m ) ## &quot;,0&quot;
+timer_test=ho14m &gt;= 0
+Parent.Loc14m=(timer_test ? &quot;0,0&quot; : ho14m ) ## &quot;,0&quot;
+timer_test=ho13m &gt;= 0
+Parent.Loc13m=(timer_test ? &quot;0,0&quot; : ho13m ) ## &quot;,0&quot;
+timer_test=ho12m &gt;= 0
+Parent.Loc12m=(timer_test ? &quot;0,0&quot; : ho12m ) ## &quot;,0&quot;
+timer_test=ho11m &gt;= 0
+Parent.Loc11m=(timer_test ? &quot;0,0&quot; : ho11m ) ## &quot;,0&quot;
+timer_test=ho10m &gt;= 0
+Parent.Loc10m=(timer_test ? &quot;0,0&quot; : ho10m ) ## &quot;,0&quot;
+timer_test=ho9m &gt;= 0
+Parent.Loc9m=(timer_test ? &quot;0,0&quot; : ho9m ) ## &quot;,0&quot;
+timer_test=ho8m &gt;= 0
+Parent.Loc8m=(timer_test ? &quot;0,0&quot; : ho8m ) ## &quot;,0&quot;
+timer_test=ho7m &gt;= 0
+Parent.Loc7m=(timer_test ? &quot;0,0&quot; : ho7m ) ## &quot;,0&quot;
+timer_test=ho6m &gt;= 0
+Parent.Loc6m=(timer_test ? &quot;0,0&quot; : ho6m ) ## &quot;,0&quot;
+timer_test=ho5m &gt;= 0
+Parent.Loc5m=(timer_test ? &quot;0,0&quot; : ho5m ) ## &quot;,0&quot;
+timer_test=ho4m &gt;= 0
+Parent.Loc4m=(timer_test ? &quot;0,0&quot; : ho4m ) ## &quot;,0&quot;
+temp=Parent.vm
+Parent.vm=(timer_test ? temp : false )
+Parent.v15m= ! timer_test
+Parent.Start.Text=Parent.lm ## Colon ## Parent.l10s ## Parent.ls
+Parent.Option.Timer.Text=Parent.Start.Text
+hoa=hos+Parent.ta*30
+timer_test=hoa &gt;= 0
+Parent.Loca=(timer_test ? &quot;0,0&quot; : hoa ) ## &quot;,0&quot;
+Parent.Parent.Options.DefaultText.Press=true" ScrollExtent="40,32" Size="40,32" Temp="true" timer_test="false" Time="151.250">Calc</Button>
+<Page Name="Go" OnShow="Parent.Start.Press=true Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="p20m" OnShow="Visible=false
+Parent.Option.TimerRing.SelectedItemIndex=Parent.lm
+Parent.lm=Parent.Option.TimerRing.SelectedItem.Plus20m
+Parent.Option.TimerRing.SelectedItemIndex=Parent.lm
+Parent.tm=Parent.Option.TimerRing.SelectedItem.Value
+Parent.Calc.Press=true " ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="19m" OnShow="Parent.Calc.Press=true Parent.tm=19.000 Parent.lm=&quot;19&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="18m" OnShow="Parent.Calc.Press=true Parent.tm=18.000 Parent.lm=&quot;18&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="17m" OnShow="Parent.Calc.Press=true Parent.tm=17.000 Parent.lm=&quot;17&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="16m" OnShow="Parent.Calc.Press=true Parent.tm=16.000 Parent.lm=&quot;16&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="15m" OnShow="Parent.Calc.Press=true Parent.tm=15.000 Parent.lm=&quot;15&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="14m" OnShow="Parent.Calc.Press=true Parent.tm=14.000 Parent.lm=&quot;14&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="13m" OnShow="Parent.Calc.Press=true Parent.tm=13.000 Parent.lm=&quot;13&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="12m" OnShow="Parent.Calc.Press=true Parent.tm=12.000 Parent.lm=&quot;12&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="11m" OnShow="Parent.Calc.Press=true Parent.tm=11.000 Parent.lm=&quot;11&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="10m" OnShow="Parent.Calc.Press=true Parent.tm=10.000 Parent.lm=&quot;10&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="9m" OnShow="Parent.Calc.Press=true Parent.tm=9.000 Parent.lm=&quot;9&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="8m" OnShow="Parent.Calc.Press=true Parent.tm=8.000 Parent.lm=&quot;8&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="7m" OnShow="Parent.Calc.Press=true Parent.tm=7.000 Parent.lm=&quot;7&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="6m" OnShow="Parent.Calc.Press=true Parent.tm=6.000 Parent.lm=&quot;6&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="5m" OnShow="Parent.Calc.Press=true Parent.tm=5.000 Parent.lm=&quot;5&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="4m" OnShow="Parent.Calc.Press=true Parent.tm=4.000 Parent.lm=&quot;4&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="3m" OnShow="Parent.Calc.Press=true Parent.tm=3.000 Parent.lm=&quot;3&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="2m" OnShow="Parent.Calc.Press=true Parent.tm=2.000 Parent.lm=&quot;2&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="1m" OnShow="Parent.Calc.Press=true Parent.tm=1.000 Parent.lm=&quot;1&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="0m" OnShow="Parent.Calc.Press=true Parent.tm=0.000 Parent.lm=&quot;0&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="50" OnShow="Parent.Calc.Press=true Parent.t10s=5.000 Parent.l10s=5 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="40" OnShow="Parent.Calc.Press=true Parent.t10s=4.000 Parent.l10s=4 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="30" OnShow="Parent.Calc.Press=true Parent.t10s=3.000 Parent.l10s=3 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="20" OnShow="Parent.Calc.Press=true Parent.t10s=2.000 Parent.l10s=2 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="10" OnShow="Parent.Calc.Press=true Parent.t10s=1.000 Parent.l10s=1 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="00" OnShow="Parent.Calc.Press=true Parent.t10s=0.000 Parent.l10s=0 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="9" OnShow="Parent.Calc.Press=true Parent.ts=9.000 Parent.ls=9 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="8" OnShow="Parent.Calc.Press=true Parent.ts=8.000 Parent.ls=8 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="7" OnShow="Parent.Calc.Press=true Parent.ts=7.000 Parent.ls=7 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="6" OnShow="Parent.Calc.Press=true Parent.ts=6.000 Parent.ls=6 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="5" OnShow="Parent.Calc.Press=true Parent.ts=5.000 Parent.ls=5 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="4" OnShow="Parent.Calc.Press=true Parent.ts=4.000 Parent.ls=4 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="3" OnShow="Parent.Calc.Press=true Parent.ts=3.000 Parent.ls=3 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="2" OnShow="Parent.Calc.Press=true Parent.ts=2.000 Parent.ls=2 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="1" OnShow="Parent.Calc.Press=true Parent.ts=1.000 Parent.ls=1 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="0" OnShow="Parent.Calc.Press=true Parent.ts=0.000 Parent.ls=0 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+</Page>
+<Page FlashEnable="false" l10s="5" la="1" lm="0:" Loc10m="0,0" Loc10s="-302.748,0" Loc11m="0,0" Loc12m="0,0" Loc13m="0,0" Loc14m="0,0" Loc15m="0,0" Loc16m="0,0" Loc17m="0,0" Loc18m="0,0" Loc1m="-25.458,0" Loc1s="-1663.740,0" Loc4m="0,0" Loc5m="0,0" Loc6m="0,0" Loc7m="0,0" Loc8m="0,0" Loc9m="0,0" Loca="-1513.740,0" Location="0,102" ls="5" Name="4" ScrollExtent="360,35" Size="360,35" t10s="5.000" ta="5.000" Timer="55.000" tm="0.000" ToneEnable="false" ts="5.000" v10s="false" v15m="false" vm="true" vs="false">
+<Page Location="213,0" Name="Option" ScrollExtent="210,35" Size="210,35" t10s="4.000" tm="0.000" ts="5.000" v10s="false" v15m="false" vm="true" vs="false">
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="22,2" Name="ButtonMinUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.lm
+Temp=Parent.Parent.TimerRing.SelectedItem.Nextm
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.lm=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.tm=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="1"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="22,24" Name="ButtonMinDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.lm
+Temp=Parent.Parent.TimerRing.SelectedItem.Prevm
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.lm=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.tm=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="35,2" Name="Button10sUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.l10s
+Temp=Parent.Parent.TimerRing.SelectedItem.Next10s
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.l10s=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.t10s=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="35,24" Name="Button10sDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.l10s
+Temp=Parent.Parent.TimerRing.SelectedItem.Prev10s
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.l10s=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.t10s=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="45,2" Name="ButtonSecUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.ls
+Temp=Parent.Parent.TimerRing.SelectedItem.Nexts
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.ls=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.ts=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="6"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="45,24" Name="ButtonSecDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.TimerRing.SelectedItemIndex=Parent.Parent.Parent.ls
+Temp=Parent.Parent.TimerRing.SelectedItem.Prevs
+Parent.Parent.TimerRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.ls=Parent.Parent.TimerRing.SelectedItem.Text
+Parent.Parent.Parent.ts=Parent.Parent.TimerRing.SelectedItem.Value
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="5"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0:55" Location="17,7" Margin="1,1,1,1" Name="Timer" PackLocation="npn,nfn" PackLocationProp="0017/0210,0007/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0:55</Text>
+<Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="10,2" MaximumSize="16384,30" MinimumSize="30,30" Name="TimerBack" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="50,30" Size="50,30" Style="/CommonElements.Textfield.data.style"></Textbox>
+<Button Location="65,2" Name="ToggleFlash" OnPress="Parent.Flash.Visible=Temp Temp= ! Parent.Flash.Visible
+Parent.Parent.FlashEnable=Parent.Flash.Visible
+Parent.Parent.Parent.Options.DefaultText.Press=true" Opacity="0.000" ScrollExtent="44,13" Size="44,13" Temp="false"/>
+<Text AbsorbsInput="false" Font="/Fonts.Racial.Font_Iksar" LocalText="0" Location="65,2" Margin="1,1,1,1" Name="Flash" PackLocation="npn,nfn" PackLocationProp="0065/0210,0002/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true" Visible="false">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="Flash" Location="78,0" Margin="1,1,1,1" Name="LabelFlash" PackLocation="npn,nfn" PackLocationProp="0078/0210,0000/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">Flash</Text>
+<Button Location="65,16" Name="ToggleTone" OnPress="Parent.Tone.Visible=Temp Temp= ! Parent.Tone.Visible
+Parent.Parent.ToneEnable=Parent.Tone.Visible
+Parent.Parent.Parent.Options.DefaultText.Press=true" Opacity="0.000" ScrollExtent="44,13" Size="44,13" Temp="false"/>
+<Text AbsorbsInput="false" Font="/Fonts.Racial.Font_Iksar" LocalText="0" Location="65,16" Margin="1,1,1,1" Name="Tone" PackLocation="npn,nfn" PackLocationProp="0065/0210,0016/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true" Visible="false">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="Tone" Location="78,16" Margin="1,1,1,1" Name="LabelTone" PackLocation="npn,nfn" PackLocationProp="0078/0210,0016/0001" PackSize="p,f" PackSizeProp="0035/0210,0002/0003" ScrollExtent="35,17" ShadowStyle="/ShadowStylesNew.None.style" Size="35,16" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">Tone</Text>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="127,2" Name="ButtonAlertUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.AlertRing.SelectedItemIndex=Parent.Parent.Parent.la
+Temp=Parent.Parent.AlertRing.SelectedItem.Next
+Parent.Parent.AlertRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.la=Parent.Parent.AlertRing.SelectedItemIndex
+Parent.Parent.Parent.ta=Parent.Parent.AlertRing.SelectedItem.Value
+Parent.Parent.Alert.Text=Parent.Parent.AlertRing.SelectedItem.Text
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="1"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="127,24" Name="ButtonAlertDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.AlertRing.SelectedItemIndex=Parent.Parent.Parent.la
+Temp=Parent.Parent.AlertRing.SelectedItem.Prev
+Parent.Parent.AlertRing.SelectedItemIndex=Temp
+Parent.Parent.Parent.la=Parent.Parent.AlertRing.SelectedItemIndex
+Parent.Parent.Parent.ta=Parent.Parent.AlertRing.SelectedItem.Value
+Parent.Parent.Alert.Text=Parent.Parent.AlertRing.SelectedItem.Text
+Parent.Parent.Parent.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="115,2" MaximumSize="16384,30" MinimumSize="30,30" Name="Alert" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="33,30" Size="33,30" Style="/CommonElements.Textfield.data.style">5</Textbox>
+<Dropdownbox DataSource="TimerRingSource" Enabled="false" Location="-10,0" Name="TimerRing" ScrollExtent="1,1" SelectedItemIndex="20" Size="1,1"/>
+<Dropdownbox DataSource="AlertRingSource" Enabled="false" Location="-10,0" Name="AlertRing" ScrollExtent="1,1" SelectedItemIndex="1" Size="1,1"/>
+</Page>
+<Button LocalText="0:55" MaximumSize="16384,32" MinimumSize="32,32" Name="Start" OnPress="Parent.Progress.Bar5s.Visible=false
+Parent.Progress.BarAlert.Visible=false
+Parent.Progress.Bar30s.Visible=false
+Parent.Progress.Bar3m.Visible=false
+Parent.Progress.Bar5s.Location=Parent.Loc1s
+Parent.Progress.BarAlert.Location=Parent.Loca
+Parent.Progress.Bar30s.Location=Parent.Loc10s
+Parent.Progress.Bar3m.Location=Parent.Loc1m
+Parent.Progress.Bar5s.Visible=true
+Parent.Progress.BarAlert.Visible=true
+Parent.Progress.Bar30s.Visible=true
+Parent.Progress.Bar3m.Visible=true
+Parent.Progress.Block4m.m.Visible=false
+Parent.Progress.Block5m.m.Visible=false
+Parent.Progress.Block6m.m.Visible=false
+Parent.Progress.Block7m.m.Visible=false
+Parent.Progress.Block8m.m.Visible=false
+Parent.Progress.Block9m.m.Visible=false
+Parent.Progress.Block10m.m.Visible=false
+Parent.Progress.Block11m.m.Visible=false
+Parent.Progress.Block12m.m.Visible=false
+Parent.Progress.Block13m.m.Visible=false
+Parent.Progress.Block14m.m.Visible=false
+Parent.Progress.Block15m.m.Visible=false
+Parent.Progress.Block16m.m.Visible=false
+Parent.Progress.Block17m.m.Visible=false
+Parent.Progress.Block18m.m.Visible=false
+Parent.Progress.Block4m.m.Location=Parent.Loc4m
+Parent.Progress.Block5m.m.Location=Parent.Loc5m
+Parent.Progress.Block6m.m.Location=Parent.Loc6m
+Parent.Progress.Block7m.m.Location=Parent.Loc7m
+Parent.Progress.Block8m.m.Location=Parent.Loc8m
+Parent.Progress.Block9m.m.Location=Parent.Loc9m
+Parent.Progress.Block10m.m.Location=Parent.Loc10m
+Parent.Progress.Block11m.m.Location=Parent.Loc11m
+Parent.Progress.Block12m.m.Location=Parent.Loc12m
+Parent.Progress.Block13m.m.Location=Parent.Loc13m
+Parent.Progress.Block14m.m.Location=Parent.Loc14m
+Parent.Progress.Block15m.m.Location=Parent.Loc15m
+Parent.Progress.Block16m.m.Location=Parent.Loc16m
+Parent.Progress.Block17m.m.Location=Parent.Loc17m
+Parent.Progress.Block18m.m.Location=Parent.Loc18m
+Parent.Progress.Block4m.m.Visible=true
+Parent.Progress.Block5m.m.Visible=true
+Parent.Progress.Block6m.m.Visible=true
+Parent.Progress.Block7m.m.Visible=true
+Parent.Progress.Block8m.m.Visible=true
+Parent.Progress.Block9m.m.Visible=true
+Parent.Progress.Block10m.m.Visible=true
+Parent.Progress.Block11m.m.Visible=true
+Parent.Progress.Block12m.m.Visible=true
+Parent.Progress.Block13m.m.Visible=true
+Parent.Progress.Block14m.m.Visible=true
+Parent.Progress.Block15m.m.Visible=true
+Parent.Progress.Block16m.m.Visible=true
+Parent.Progress.Block17m.m.Visible=true
+Parent.Progress.Block18m.m.Visible=true
+Parent.Progress.Scale4.Visible=Parent.v15m
+Parent.Progress.Scale3.Visible=Parent.vm
+Parent.Progress.Scale2.Visible=Parent.v10s
+Parent.Progress.Scale1.Visible=Parent.vs
+" ScrollExtent="55,32" Size="55,32" Style="/CommonElements.PushButton.data.style">0:55</Button>
+<Page Location="57,5" Name="Progress" o10m="0.460" o11m="0.040" o12m="0.160" o13m="0.280" o14m="0.100" o15m="0.040" o16m="0.100" o17m="0.040" o18m="0.040" o4m="0.100" o5m="0.160" o6m="0.220" o7m="0.280" o8m="0.340" o9m="0.400" ScrollExtent="150,25" Size="150,25">
+<Page Color="#FF0000" Location="0,10" Name="Scale1" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,a" PackSizeProp="0029/0150,-001/0001" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="3" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">3</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="4" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">4</Text>
+</Page>
+<Page Color="#C0C000" Location="0,10" Name="Scale2" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":05" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:05</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":10" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:10</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":15" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:15</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":20" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:20</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText=":25" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">:25</Text>
+</Page>
+<Page Color="#00C000" Location="0,10" Name="Scale3" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="0:30" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">0:30</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1:00" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1:00</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="1:30" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">1:30</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2:00" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2:00</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="2:30" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">2:30</Text>
+</Page>
+<Page Color="#2060F0" Location="0,10" Name="Scale4" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,15" Size="150,15" Visible="false">
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="3" Location="120,-2" Margin="1,1,1,1" Name="Scale100" PackLocation="npn,nfn" PackLocationProp="0120/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">3</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="6" Location="90,-2" Margin="1,1,1,1" Name="Scale80" PackLocation="npn,nfn" PackLocationProp="0090/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">6</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="9" Location="60,-2" Margin="1,1,1,1" Name="Scale60" PackLocation="npn,nfn" PackLocationProp="0060/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">9</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="12" Location="30,-2" Margin="1,1,1,1" Name="Scale40" PackLocation="npn,nfn" PackLocationProp="0030/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">12</Text>
+<Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" LocalText="15" Location="0,-2" Margin="1,1,1,1" Name="Scale20" PackLocation="npn,nfn" PackLocationProp="0000/0150,-002/0001" PackSize="p,f" PackSizeProp="0029/0150,0002/0003" ScrollExtent="29,17" ShadowStyle="/ShadowStylesNew.None.style" Size="29,16" TextAlignment="Right" TextColor="#FBF1DD" UserMovable="true" UserResizable="true">15</Text>
+</Page>
+<Page BackgroundOpacity="0.475" Location="120,0" Name="Marker80" PackLocation="npn,nfn" PackLocationProp="0120/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="90,0" Name="Marker60" PackLocation="npn,nfn" PackLocationProp="0090/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="60,0" Name="Marker40" PackLocation="npn,nfn" PackLocationProp="0060/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundOpacity="0.475" Location="30,0" Name="Marker20" PackLocation="npn,nfn" PackLocationProp="0030/0150,0000/0001" ScrollExtent="1,20" Size="1,20"/>
+<Page BackgroundColor="#FF0000" BackgroundOpacity="1.000" Name="Bar5s" OnShowEffector="MoveRight5s" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+<Page BackgroundColor="#C0C000" BackgroundOpacity="1.000" Name="Bar30s" OnEffectFinished="Parent.Scale1.Visible=true Parent.Scale2.Visible=false" OnShowEffector="MoveRight30s" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+<Page BackgroundColor="#008000" BackgroundOpacity="1.000" Name="Bar3m" OnEffectFinished="Parent.Scale3.Visible=false 
+Temp = (Parent.Parent.v15m ? true : Parent.Parent.vm )
+Parent.Scale2.Visible=(Temp ? true : Parent.Parent.v10s )" OnShowEffector="MoveRight3m" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10" Temp="true"/>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="1,0" Name="Block18m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" PackSize="a,f" PackSizeProp="-001/0001,0002/0003" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="11,0" Name="Block17m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="21,0" Name="Block16m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="31,0" Name="Block15m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="41,0" Name="Block14m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="51,0" Name="Block13m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="61,0" Name="Block12m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="71,0" Name="Block11m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="81,0" Name="Block10m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="91,0" Name="Block9m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="101,0" Name="Block8m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="111,0" Name="Block7m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="121,0" Name="Block6m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="131,0" Name="Block5m" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10"/>
+</Page>
+<Page BackgroundColor="#303030" BackgroundOpacity="1.000" Location="141,0" Name="Block4m" Scale3.Visible="Parent.Parent.vm" Scale4.Visible="false" ScrollExtent="9,10" Size="9,10">
+<Page BackgroundColor="#2040A0" BackgroundOpacity="1.000" Name="m" OnEffectFinished="Parent.Parent.Scale4.Visible=false
+Temp=(Parent.Parent.Parent.v15m ? true : Parent.Parent.Parent.vm )
+Parent.Parent.Scale3.Visible=(Parent.Parent.Scale2.Visible ? false : Temp )" OnShowEffector="MoveRight5s" ScrollExtent="10,10" Size="10,10" Temp="true"/>
+</Page>
+<Page BackgroundColor="#FF0000" BackgroundOpacity="1.000" Name="BarAlert" OnEffectFinished="Parent.Parent.Flash.visible=Parent.Parent.FlashEnable Parent.Parent.Flash.visible=false
+Parent.Parent.Tone.visible=Parent.Parent.ToneEnable Parent.Parent.Tone.visible=false" OnShowEffector="MoveRight5s" Opacity="0.000" PackSize="a,f" PackSizeProp="0000/0001,0002/0003" ScrollExtent="150,10" Size="150,10"/>
+</Page>
+<Page BackgroundColor="#FFFF00" Name="Flash" OnShowEffector="Flashing" ScrollExtent="210,35" Size="210,35"/>
+<Page BackgroundColor="#FFFF00" Name="Tone" ScrollExtent="210,35" ShowSound="ui_spirit_lvl_up" Size="210,35"/>
+<Button Calc="Press" Colon=":" ho10m="14536.260" ho10s="-302.748" ho11m="16336.260" ho12m="18136.260" ho13m="19936.260" ho14m="21736.260" ho15m="23536.260" ho16m="25336.260" ho17m="27136.260" ho18m="28936.260" ho4m="3736.260" ho5m="5536.260" ho6m="7336.260" ho7m="9136.260" ho8m="10936.260" ho9m="12736.260" hoa="-1513.740" hom="-25.458" hos="-1663.740" LocalText="Calc" Location="135,36" MaximumSize="16384,32" MinimumSize="32,32" Name="Calc" OnPress="Temp=Parent.ts+(Parent.t10s*10)
+Time=Temp+(Parent.tm*60)
+Parent.Timer=Time
+Temp=Time*Parent.Parent.CorrectionFactor
+Time=Temp/60.000
+hos=0-Time*30
+ho10s=30-Time*6
+hom=30-Time
+ho18m=30600-Time*30
+ho17m=28800-Time*30
+ho16m=27000-Time*30
+ho15m=25200-Time*30
+ho14m=23400-Time*30
+ho13m=21600-Time*30
+ho12m=19800-Time*30
+ho11m=18000-Time*30
+ho10m=16200-Time*30
+ho9m=14400-Time*30
+ho8m=12600-Time*30
+ho7m=10800-Time*30
+ho6m=9000-Time*30
+ho5m=7200-Time*30
+ho4m=5400-Time*30
+Parent.Loc1s=hos ## &quot;,0&quot;
+timer_test=ho10s &gt;= 0
+Parent.vs=timer_test
+Parent.v10s= ! timer_test
+Parent.Loc10s=(timer_test ? &quot;0,0&quot; : ho10s ) ## &quot;,0&quot;
+timer_test=hom &gt;= 0
+temp=Parent.vs
+Parent.vs=(timer_test ? temp : false )
+temp=Parent.v10s
+Parent.v10s=(timer_test ? temp : false )
+Parent.vm= ! timer_test
+Parent.Loc1m=(timer_test ? &quot;0,0&quot; : hom ) ## &quot;,0&quot;
+timer_test=ho18m &gt;= 0
+Parent.Loc18m=(timer_test ? &quot;0,0&quot; : ho18m ) ## &quot;,0&quot;
+timer_test=ho17m &gt;= 0
+Parent.Loc17m=(timer_test ? &quot;0,0&quot; : ho17m ) ## &quot;,0&quot;
+timer_test=ho16m &gt;= 0
+Parent.Loc16m=(timer_test ? &quot;0,0&quot; : ho16m ) ## &quot;,0&quot;
+timer_test=ho15m &gt;= 0
+Parent.Loc15m=(timer_test ? &quot;0,0&quot; : ho15m ) ## &quot;,0&quot;
+timer_test=ho14m &gt;= 0
+Parent.Loc14m=(timer_test ? &quot;0,0&quot; : ho14m ) ## &quot;,0&quot;
+timer_test=ho13m &gt;= 0
+Parent.Loc13m=(timer_test ? &quot;0,0&quot; : ho13m ) ## &quot;,0&quot;
+timer_test=ho12m &gt;= 0
+Parent.Loc12m=(timer_test ? &quot;0,0&quot; : ho12m ) ## &quot;,0&quot;
+timer_test=ho11m &gt;= 0
+Parent.Loc11m=(timer_test ? &quot;0,0&quot; : ho11m ) ## &quot;,0&quot;
+timer_test=ho10m &gt;= 0
+Parent.Loc10m=(timer_test ? &quot;0,0&quot; : ho10m ) ## &quot;,0&quot;
+timer_test=ho9m &gt;= 0
+Parent.Loc9m=(timer_test ? &quot;0,0&quot; : ho9m ) ## &quot;,0&quot;
+timer_test=ho8m &gt;= 0
+Parent.Loc8m=(timer_test ? &quot;0,0&quot; : ho8m ) ## &quot;,0&quot;
+timer_test=ho7m &gt;= 0
+Parent.Loc7m=(timer_test ? &quot;0,0&quot; : ho7m ) ## &quot;,0&quot;
+timer_test=ho6m &gt;= 0
+Parent.Loc6m=(timer_test ? &quot;0,0&quot; : ho6m ) ## &quot;,0&quot;
+timer_test=ho5m &gt;= 0
+Parent.Loc5m=(timer_test ? &quot;0,0&quot; : ho5m ) ## &quot;,0&quot;
+timer_test=ho4m &gt;= 0
+Parent.Loc4m=(timer_test ? &quot;0,0&quot; : ho4m ) ## &quot;,0&quot;
+temp=Parent.vm
+Parent.vm=(timer_test ? temp : false )
+Parent.v15m= ! timer_test
+Parent.Start.Text=Parent.lm ## Colon ## Parent.l10s ## Parent.ls
+Parent.Option.Timer.Text=Parent.Start.Text
+hoa=hos+Parent.ta*30
+timer_test=hoa &gt;= 0
+Parent.Loca=(timer_test ? &quot;0,0&quot; : hoa ) ## &quot;,0&quot;
+Parent.Parent.Options.DefaultText.Press=true" ScrollExtent="40,32" Size="40,32" Temp="true" timer_test="false" Time="55.458">Calc</Button>
+<Page Name="Go" OnShow="Parent.Start.Press=true Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="p20m" OnShow="Visible=false
+Parent.Option.TimerRing.SelectedItemIndex=Parent.lm
+Parent.lm=Parent.Option.TimerRing.SelectedItem.Plus20m
+Parent.Option.TimerRing.SelectedItemIndex=Parent.lm
+Parent.tm=Parent.Option.TimerRing.SelectedItem.Value
+Parent.Calc.Press=true " ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="19m" OnShow="Parent.Calc.Press=true Parent.tm=19.000 Parent.lm=&quot;19&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="18m" OnShow="Parent.Calc.Press=true Parent.tm=18.000 Parent.lm=&quot;18&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="17m" OnShow="Parent.Calc.Press=true Parent.tm=17.000 Parent.lm=&quot;17&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="16m" OnShow="Parent.Calc.Press=true Parent.tm=16.000 Parent.lm=&quot;16&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="15m" OnShow="Parent.Calc.Press=true Parent.tm=15.000 Parent.lm=&quot;15&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="14m" OnShow="Parent.Calc.Press=true Parent.tm=14.000 Parent.lm=&quot;14&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="13m" OnShow="Parent.Calc.Press=true Parent.tm=13.000 Parent.lm=&quot;13&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="12m" OnShow="Parent.Calc.Press=true Parent.tm=12.000 Parent.lm=&quot;12&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="11m" OnShow="Parent.Calc.Press=true Parent.tm=11.000 Parent.lm=&quot;11&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="10m" OnShow="Parent.Calc.Press=true Parent.tm=10.000 Parent.lm=&quot;10&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="9m" OnShow="Parent.Calc.Press=true Parent.tm=9.000 Parent.lm=&quot;9&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="8m" OnShow="Parent.Calc.Press=true Parent.tm=8.000 Parent.lm=&quot;8&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="7m" OnShow="Parent.Calc.Press=true Parent.tm=7.000 Parent.lm=&quot;7&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="6m" OnShow="Parent.Calc.Press=true Parent.tm=6.000 Parent.lm=&quot;6&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="5m" OnShow="Parent.Calc.Press=true Parent.tm=5.000 Parent.lm=&quot;5&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="4m" OnShow="Parent.Calc.Press=true Parent.tm=4.000 Parent.lm=&quot;4&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="3m" OnShow="Parent.Calc.Press=true Parent.tm=3.000 Parent.lm=&quot;3&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="2m" OnShow="Parent.Calc.Press=true Parent.tm=2.000 Parent.lm=&quot;2&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="1m" OnShow="Parent.Calc.Press=true Parent.tm=1.000 Parent.lm=&quot;1&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="0m" OnShow="Parent.Calc.Press=true Parent.tm=0.000 Parent.lm=&quot;0&quot; Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="50" OnShow="Parent.Calc.Press=true Parent.t10s=5.000 Parent.l10s=5 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="40" OnShow="Parent.Calc.Press=true Parent.t10s=4.000 Parent.l10s=4 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="30" OnShow="Parent.Calc.Press=true Parent.t10s=3.000 Parent.l10s=3 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="20" OnShow="Parent.Calc.Press=true Parent.t10s=2.000 Parent.l10s=2 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="10" OnShow="Parent.Calc.Press=true Parent.t10s=1.000 Parent.l10s=1 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="00" OnShow="Parent.Calc.Press=true Parent.t10s=0.000 Parent.l10s=0 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="9" OnShow="Parent.Calc.Press=true Parent.ts=9.000 Parent.ls=9 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="8" OnShow="Parent.Calc.Press=true Parent.ts=8.000 Parent.ls=8 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="7" OnShow="Parent.Calc.Press=true Parent.ts=7.000 Parent.ls=7 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="6" OnShow="Parent.Calc.Press=true Parent.ts=6.000 Parent.ls=6 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="5" OnShow="Parent.Calc.Press=true Parent.ts=5.000 Parent.ls=5 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="4" OnShow="Parent.Calc.Press=true Parent.ts=4.000 Parent.ls=4 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="3" OnShow="Parent.Calc.Press=true Parent.ts=3.000 Parent.ls=3 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="2" OnShow="Parent.Calc.Press=true Parent.ts=2.000 Parent.ls=2 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="1" OnShow="Parent.Calc.Press=true Parent.ts=1.000 Parent.ls=1 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+<Page Name="0" OnShow="Parent.Calc.Press=true Parent.ts=0.000 Parent.ls=0 Visible=false" ScrollExtent="1,1" Size="1,1" Visible="false"/>
+</Page>
+<Page 1.Calc.Press="true" 2.Calc.Press="true" 3.Calc.Press="true" 4.Calc.Press="true" Location="0,136" Name="Options" ScrollExtent="365,135" Size="365,135">
+<Page Name="SoundDropCover" OnHoverIn="Parent.SoundDrop.Enabled=true location=&quot;0,-100&quot;" ScrollExtent="200,32" Size="200,32"/>
+<Dropdownbox BackgroundOpacity="1.000" DataSource="AlertToneSource" Enabled="false" MaximumSize="16384,32" MinimumSize="50,32" Name="SoundDrop" OnHoverOut="enabled=false Parent.SoundDropCover.Location=0,0" OnSelect="Parent.PlaySound.ShowSound=SelectedItem.Sound
+Parent.Parent.1.Tone.ShowSound=SelectedItem.Sound
+Parent.Parent.2.Tone.ShowSound=SelectedItem.Sound
+Parent.Parent.3.Tone.ShowSound=SelectedItem.Sound
+Parent.Parent.4.Tone.ShowSound=SelectedItem.Sound
+Parent.DefaultText.Press=true" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="200,32" SelectedItemIndex="7" Size="200,32" Style="/CommonElements.Dropdown.data.style"/>
+<Button LocalText="Test" Location="200,0" MaximumSize="16384,32" MinimumSize="32,32" Name="TestSound" OnPress="Parent.PlaySound.Visible=true Parent.PlaySound.Visible=false" ScrollExtent="55,32" Size="55,32" Style="/CommonElements.PushButton.data.style">Test</Button>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="315,0" Name="ButtonCFUp" ScrollExtent="7,7" Size="7,7">
+<Button Name="Up" OnPress="Parent.Parent.Correction.Text=Parent.Parent.Parent.CorrectionFactor + 0.100
+Parent.Parent.Parent.CorrectionFactor=Parent.Parent.Correction.Text
+Parent.Parent.Parent.1.Calc.Press=true
+Parent.Parent.Parent.2.Calc.Press=true
+Parent.Parent.Parent.3.Calc.Press=true
+Parent.Parent.Parent.4.Calc.Press=true
+" Opacity="0.000" ScrollExtent="7,7" Size="7,7" Temp="1"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,2" Name="VertBar" ScrollExtent="1,3" Size="1,3"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Page BackgroundColor="#EFBF00" BackgroundOpacity="1.000" Location="315,22" Name="ButtonCFDown" ScrollExtent="7,7" Size="7,7">
+<Button Name="Down" OnPress="Parent.Parent.Correction.Text=Parent.Parent.Parent.CorrectionFactor+Reduce
+Parent.Parent.Parent.CorrectionFactor=Parent.Parent.Correction.Text
+Parent.Parent.Parent.1.Calc.Press=true
+Parent.Parent.Parent.2.Calc.Press=true
+Parent.Parent.Parent.3.Calc.Press=true
+Parent.Parent.Parent.4.Calc.Press=true
+" Opacity="0.000" Reduce="-0.100" ScrollExtent="7,7" Size="7,7" Temp="0"/>
+<Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,3" Name="CrossBar" ScrollExtent="3,1" Size="3,1"/>
+<Page BackgroundOpacity="1.000" Location="1,1" Name="ButtonBackground" ScrollExtent="5,5" Size="5,5"/>
+</Page>
+<Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Enabled="false" Location="295,0" MaximumSize="16384,30" MinimumSize="30,30" Name="Correction" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="50,30" Size="50,30" Style="/CommonElements.Textfield.data.style">60.500</Textbox>
+<Page Location="-10,0" Name="PlaySound" ScrollExtent="1,1" ShowSound="ui_spirit_lvl_up" Size="1,1"/>
+<Button CRLF="
+" Label1="&lt;Data Alert=&quot;" Label2="&quot; AlertFlash=&quot;" Label3="&quot; AlertSound=&quot;" Label4="&quot; Name=&quot;" Label5="&quot; Time=&quot;" Label6="&quot;/&gt;" Label7="&lt;Data AlertTone=&quot;" Label8="&quot; CorrectionFactor=&quot;" Label9="&quot; Name=&quot;Global&quot;/&gt;" Location="-10,0" Name="DefaultText" OnPress="Temp2=Label7 ## Parent.SoundDrop.SelectedItemIndex ## Label8 ## Parent.Parent.CorrectionFactor ## Label9 ## CRLF
+Temp=Temp2 ## Label1 ## Parent.Parent.1.la ## Label2 ## Parent.Parent.1.FlashEnable ## Label3 ## Parent.Parent.1.ToneEnable ## Label4 ## &quot;1&quot; ## Label5 ## Parent.Parent.1.Timer ## Label6
+Temp2=Temp ## CRLF ## Label1 ## Parent.Parent.2.la ## Label2 ## Parent.Parent.2.FlashEnable ## Label3 ## Parent.Parent.2.ToneEnable ## Label4 ## &quot;2&quot; ## Label5 ## Parent.Parent.2.Timer ## Label6
+Temp=Temp2 ## CRLF ## Label1 ## Parent.Parent.3.la ## Label2 ## Parent.Parent.3.FlashEnable ## Label3 ## Parent.Parent.3.ToneEnable ## Label4 ## &quot;3&quot; ## Label5 ## Parent.Parent.3.Timer ## Label6
+Temp2=Temp ## CRLF ## Label1 ## Parent.Parent.4.la ## Label2 ## Parent.Parent.4.FlashEnable ## Label3 ## Parent.Parent.4.ToneEnable ## Label4 ## &quot;4&quot; ## Label5 ## Parent.Parent.4.Timer ## Label6
+Parent.Defaults.Textbox.Text=Temp2" ScrollExtent="1,1" Size="1,1" Temp="&lt;Data AlertTone=&quot;7&quot; CorrectionFactor=&quot;60.500&quot; Name=&quot;Global&quot;/&gt;
+&lt;Data Alert=&quot;0&quot; AlertFlash=&quot;true&quot; AlertSound=&quot;false&quot; Name=&quot;1&quot; Time=&quot;45.000&quot;/&gt;
+&lt;Data Alert=&quot;5&quot; AlertFlash=&quot;true&quot; AlertSound=&quot;true&quot; Name=&quot;2&quot; Time=&quot;486.000&quot;/&gt;
+&lt;Data Alert=&quot;4&quot; AlertFlash=&quot;false&quot; AlertSound=&quot;true&quot; Name=&quot;3&quot; Time=&quot;150.000&quot;/&gt;" Temp2="&lt;Data AlertTone=&quot;7&quot; CorrectionFactor=&quot;60.500&quot; Name=&quot;Global&quot;/&gt;
+&lt;Data Alert=&quot;0&quot; AlertFlash=&quot;true&quot; AlertSound=&quot;false&quot; Name=&quot;1&quot; Time=&quot;45.000&quot;/&gt;
+&lt;Data Alert=&quot;5&quot; AlertFlash=&quot;true&quot; AlertSound=&quot;true&quot; Name=&quot;2&quot; Time=&quot;486.000&quot;/&gt;
+&lt;Data Alert=&quot;4&quot; AlertFlash=&quot;false&quot; AlertSound=&quot;true&quot; Name=&quot;3&quot; Time=&quot;150.000&quot;/&gt;
+&lt;Data Alert=&quot;1&quot; AlertFlash=&quot;false&quot; AlertSound=&quot;false&quot; Name=&quot;4&quot; Time=&quot;55.000&quot;/&gt;"/>
+<Page BackgroundOpacity="1.000" Location="0,25" Name="Defaults" OnHoverIn="Textbox.GetsInput=true" OnHoverOut="Textbox.GetsInput=false" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="365,110" Size="365,110">
+<Scrollbar ArrowPressSound="sounds/button" Control="Textbox" HideIfUnnecessary="true" Location="333,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackLocationProp="-032/0001,0010/0001" PackSize="fixed,absolute" PackSizeProp="0002/0003,0020/0001" ScrollExtent="22,90" Size="22,90" Style="/CommonElements.ScrollbarVertical.data.style"/>
+<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" GetsInput="false" Location="10,10" MaximumSize="290,16384" MaxLines="Unlimited" MinimumScrollExtent="0,150" Name="Textbox" PackSize="absolute,absolute" PackSizeProp="0075/0001,0020/0001" ScrollExtent="290,150" Size="290,90" Style="/CommonElements.Textbox.data.style" WrapWidth="Automatic">&lt;Data AlertTone=&quot;7&quot; CorrectionFactor=&quot;60.500&quot; Name=&quot;Global&quot;/&gt;
+&lt;Data Alert=&quot;0&quot; AlertFlash=&quot;true&quot; AlertSound=&quot;false&quot; Name=&quot;1&quot; Time=&quot;45.000&quot;/&gt;
+&lt;Data Alert=&quot;5&quot; AlertFlash=&quot;true&quot; AlertSound=&quot;true&quot; Name=&quot;2&quot; Time=&quot;486.000&quot;/&gt;
+&lt;Data Alert=&quot;4&quot; AlertFlash=&quot;false&quot; AlertSound=&quot;true&quot; Name=&quot;3&quot; Time=&quot;150.000&quot;/&gt;
+&lt;Data Alert=&quot;1&quot; AlertFlash=&quot;false&quot; AlertSound=&quot;false&quot; Name=&quot;4&quot; Time=&quot;55.000&quot;/&gt;</Textbox>
+</Page>
+</Page>
+<include>_ProfitUI_Timerdefaults.txt</include>
+<Page AbsorbsInput="false" Location="-1,-3" Name="WindowFrame" PackSize="absolute,absolute" PackSizeProp="-008/0001,-015/0001" ScrollExtent="373,285" Size="373,285">
+<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" OnHide="Parent.Parent.Volume.Group1.Frame.Visible=false Parent.Parent.Volume.Group2.Frame.Visible=false Parent.Parent.Volume.Group3.Frame.Visible=false Parent.Parent.Volume.Group4.Frame.Visible=false" OnShow="Parent.Parent.Volume.Group1.Frame.Visible=true Parent.Parent.Volume.Group2.Frame.Visible=true Parent.Parent.Volume.Group3.Frame.Visible=true Parent.Parent.Volume.Group4.Frame.Visible=true" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0005/0001,0010/0001" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="368,275" Size="368,275">
+<Page Location="213,2" Name="Right" ScrollExtent="207,139" Size="207,139">
+<Page Location="2,2" MaximumSize="210,32" MinimumSize="210,32" Name="Group1" PackSize="a,f" PackSizeProp="-003/0001,0002/0003" ScrollExtent="210,32" Size="210,32">
+<Page BackgroundOpacity="1.000" Location="-3,-4" Name="Frame" PackSize="A,A" PackSizeProp="-005/0001,-007/0001" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="215,39" Size="215,39"/>
+</Page>
+<Page Location="2,36" MaximumSize="210,32" MinimumSize="210,32" Name="Group2" PackSize="a,f" PackSizeProp="-003/0001,0002/0003" ScrollExtent="210,32" Size="210,32">
+<Page BackgroundOpacity="1.000" Location="-3,-4" Name="Frame" PackSize="A,A" PackSizeProp="-005/0001,-007/0001" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="215,39" Size="215,39"/>
+</Page>
+<Page Location="2,70" MaximumSize="210,32" MinimumSize="210,32" Name="Group3" PackSize="a,f" PackSizeProp="-003/0001,0002/0003" ScrollExtent="210,32" Size="210,32">
+<Page BackgroundOpacity="1.000" Location="-3,-4" Name="Frame" PackSize="A,A" PackSizeProp="-005/0001,-007/0001" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="215,39" Size="215,39"/>
+</Page>
+<Page Location="2,104" MaximumSize="210,32" MinimumSize="210,32" Name="Group4" PackSize="a,f" PackSizeProp="-003/0001,0002/0003" ScrollExtent="210,32" Size="210,32">
+<Page BackgroundOpacity="1.000" Location="-3,-4" Name="Frame" PackSize="A,A" PackSizeProp="-005/0001,-007/0001" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="215,39" Size="215,39"/>
+</Page>
+</Page>
+<Page Location="1,2" Name="Left" ScrollExtent="427,139" Size="427,139">
+<Page Location="2,2" MaximumSize="210,32" MinimumSize="210,32" Name="Group1" PackSize="a,f" PackSizeProp="0217/0001,0002/0003" ScrollExtent="210,32" Size="210,32">
+<Page BackgroundOpacity="1.000" Location="-3,-4" Name="Frame" PackSize="A,A" PackSizeProp="-005/0001,-007/0001" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="215,39" Size="215,39"/>
+</Page>
+<Page Location="2,36" MaximumSize="210,32" MinimumSize="210,32" Name="Group2" PackSize="a,f" PackSizeProp="0217/0001,0002/0003" ScrollExtent="210,32" Size="210,32">
+<Page BackgroundOpacity="1.000" Location="-3,-4" Name="Frame" PackSize="A,A" PackSizeProp="-005/0001,-007/0001" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="215,39" Size="215,39"/>
+</Page>
+<Page Location="2,70" MaximumSize="210,32" MinimumSize="210,32" Name="Group3" PackSize="a,f" PackSizeProp="0217/0001,0002/0003" ScrollExtent="210,32" Size="210,32">
+<Page BackgroundOpacity="1.000" Location="-3,-4" Name="Frame" PackSize="A,A" PackSizeProp="-005/0001,-007/0001" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="215,39" Size="215,39"/>
+</Page>
+<Page Location="2,104" MaximumSize="210,32" MinimumSize="210,32" Name="Group4" PackSize="a,f" PackSizeProp="0217/0001,0002/0003" ScrollExtent="210,32" Size="210,32">
+<Page BackgroundOpacity="1.000" Location="-3,-4" Name="Frame" PackSize="A,A" PackSizeProp="-005/0001,-007/0001" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="215,39" Size="215,39"/>
+</Page>
+</Page>
+</Page>
+<Page AbsorbsInput="false" Name="Bkg" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0004/0001,0010/0001" ScrollExtent="369,275" Size="369,275">
+<Page BackgroundColor="#000060" BackgroundOpacity="1.000" Location="0,136" Name="Bottom" ScrollExtent="365,135" Size="365,135"/>
+<Page Location="213,2" Name="Right" ScrollExtent="207,139" Size="207,139">
+<Page BackgroundColor="#3C3B02" BackgroundOpacity="1.000" Location="2,2" MaximumSize="210,32" MinimumSize="210,32" Name="Group1" PackSize="A,F" PackSizeProp="-003/0001,0002/0003" ScrollExtent="210,32" Size="210,32"/>
+<Page BackgroundColor="#3D2A00" BackgroundOpacity="1.000" Location="2,36" MaximumSize="210,32" MinimumSize="210,32" Name="Group2" PackSize="A,F" PackSizeProp="-003/0001,0002/0003" ScrollExtent="210,32" Size="210,32"/>
+<Page BackgroundColor="#39123E" BackgroundOpacity="1.000" Location="2,70" MaximumSize="210,32" MinimumSize="210,32" Name="Group3" PackSize="A,F" PackSizeProp="-003/0001,0002/0003" ScrollExtent="210,32" Size="210,32"/>
+<Page BackgroundColor="#03252E" BackgroundOpacity="1.000" Location="2,104" MaximumSize="210,32" MinimumSize="210,32" Name="Group4" PackSize="A,F" PackSizeProp="-003/0001,0002/0003" ScrollExtent="210,32" Size="210,32"/>
+</Page>
+<Page Name="Left" ScrollExtent="427,139" Size="427,139">
+<Page BackgroundColor="#3C3B02" BackgroundOpacity="1.000" Location="2,2" MaximumSize="210,32" MinimumSize="210,32" Name="Group1" PackSize="A,F" PackSizeProp="0217/0001,0002/0003" ScrollExtent="210,32" Size="210,32"/>
+<Page BackgroundColor="#3D2A00" BackgroundOpacity="1.000" Location="2,36" MaximumSize="210,32" MinimumSize="210,32" Name="Group2" PackSize="A,F" PackSizeProp="0217/0001,0002/0003" ScrollExtent="210,32" Size="210,32"/>
+<Page BackgroundColor="#39123E" BackgroundOpacity="1.000" Location="2,70" MaximumSize="210,32" MinimumSize="210,32" Name="Group3" PackSize="A,F" PackSizeProp="0217/0001,0002/0003" ScrollExtent="210,32" Size="210,32"/>
+<Page BackgroundColor="#03252E" BackgroundOpacity="1.000" Location="2,104" MaximumSize="210,32" MinimumSize="210,32" Name="Group4" PackSize="A,F" PackSizeProp="0217/0001,0002/0003" ScrollExtent="210,32" Size="210,32"/>
+</Page>
+</Page>
+</Page>
+<Button Name="OnLoad" OnActivate="Parent.CorrectionFactor=Parent.Default.Global.CorrectionFactor
+Parent.Options.SoundDrop.SelectedItemIndex=Parent.Default.Global.AlertTone
+Parent.Options.PlaySound.ShowSound=Parent.Options.SoundDrop.SelectedItem.Sound
+Parent.1.Tone.ShowSound=Parent.Options.SoundDrop.SelectedItem.Sound
+Parent.2.Tone.ShowSound=Parent.Options.SoundDrop.SelectedItem.Sound
+Parent.3.Tone.ShowSound=Parent.Options.SoundDrop.SelectedItem.Sound
+Parent.4.Tone.ShowSound=Parent.Options.SoundDrop.SelectedItem.Sound
+Parent.DefaultText.Press=true
+Parent.1.ToneEnable=Parent.Default.1.AlertSound
+Parent.1.FlashEnable=Parent.Default.1.AlertFlash
+Parent.1.Option.Tone.Visible=Parent.Default.1.AlertSound
+Parent.1.Option.Flash.Visible=Parent.Default.1.AlertFlash
+Parent.1.Option.AlertRing.SelectedItemIndex=Parent.Default.1.Alert
+Parent.1.la=Parent.1.Option.AlertRing.SelectedItemIndex
+Parent.1.ta=Parent.1.Option.AlertRing.SelectedItem.Value
+Parent.1.Option.Alert.Text=Parent.1.Option.AlertRing.SelectedItem.Text
+Temp1=Parent.Default.1.Time
+Temp1b=Temp1 + -29.500
+Temp2=Temp1b/60000
+Temp3=Temp2*1000
+Temp3a=(Temp3 &quot;&gt;=&quot; 20)
+Temp4=(Temp3a ? 20.000 : 0.000 )
+Temp2=(Temp3 - Temp4)
+Temp3=Temp2
+Parent.1.0m.Visible=(Temp3==0.000)
+Parent.1.1m.Visible=(Temp3==1.000)
+Parent.1.2m.Visible=(Temp3==2.000)
+Parent.1.3m.Visible=(Temp3==3.000)
+Parent.1.4m.Visible=(Temp3==4.000)
+Parent.1.5m.Visible=(Temp3==5.000)
+Parent.1.6m.Visible=(Temp3==6.000)
+Parent.1.7m.Visible=(Temp3==7.000)
+Parent.1.8m.Visible=(Temp3==8.000)
+Parent.1.9m.Visible=(Temp3==9.000)
+Parent.1.10m.Visible=(Temp3==10.000)
+Parent.1.11m.Visible=(Temp3==11.000)
+Parent.1.12m.Visible=(Temp3==12.000)
+Parent.1.13m.Visible=(Temp3==13.000)
+Parent.1.14m.Visible=(Temp3==14.000)
+Parent.1.15m.Visible=(Temp3==15.000)
+Parent.1.16m.Visible=(Temp3==16.000)
+Parent.1.17m.Visible=(Temp3==17.000)
+Parent.1.18m.Visible=(Temp3==18.000)
+Parent.1.19m.Visible=(Temp3==19.000)
+Parent.1.p20m.Visible=(Temp4==20.000)
+Temp2=Temp1-(Temp3*60)-(Temp4*60)
+Temp1=Temp2
+Temp1b=Temp2 + -4.500
+Temp2=Temp1b/10000
+Temp3=Temp2*1000
+Parent.1.00.Visible=(Temp3==0.000)
+Parent.1.10.Visible=(Temp3==1.000)
+Parent.1.20.Visible=(Temp3==2.000)
+Parent.1.30.Visible=(Temp3==3.000)
+Parent.1.40.Visible=(Temp3==4.000)
+Parent.1.50.Visible=(Temp3==5.000)
+Temp2=Temp1-(Temp3*10)
+Temp1=Temp2/1000
+Temp3=Temp1*1000
+Parent.1.0.Visible=(Temp3==0.000)
+Parent.1.1.Visible=(Temp3==1.000)
+Parent.1.2.Visible=(Temp3==2.000)
+Parent.1.3.Visible=(Temp3==3.000)
+Parent.1.4.Visible=(Temp3==4.000)
+Parent.1.5.Visible=(Temp3==5.000)
+Parent.1.6.Visible=(Temp3==6.000)
+Parent.1.7.Visible=(Temp3==7.000)
+Parent.1.8.Visible=(Temp3==8.000)
+Parent.1.9.Visible=(Temp3==9.000)
+Parent.1.Calc.Press=true
+Parent.2.ToneEnable=Parent.Default.2.AlertSound
+Parent.2.FlashEnable=Parent.Default.2.AlertFlash
+Parent.2.Option.Tone.Visible=Parent.Default.2.AlertSound
+Parent.2.Option.Flash.Visible=Parent.Default.2.AlertFlash
+Parent.2.Option.AlertRing.SelectedItemIndex=Parent.Default.2.Alert
+Parent.2.la=Parent.2.Option.AlertRing.SelectedItemIndex
+Parent.2.ta=Parent.2.Option.AlertRing.SelectedItem.Value
+Parent.2.Option.Alert.Text=Parent.2.Option.AlertRing.SelectedItem.Text
+Temp1=Parent.Default.2.Time
+Temp1b=Temp1 + -29.500
+Temp2=Temp1b/60000
+Temp3=Temp2*1000
+Temp3a=(Temp3 &quot;&gt;=&quot; 20)
+Temp4=(Temp3a ? 20.000 : 0.000 )
+Temp2=(Temp3 - Temp4)
+Temp3=Temp2
+Parent.2.0m.Visible=(Temp3==0.000)
+Parent.2.1m.Visible=(Temp3==1.000)
+Parent.2.2m.Visible=(Temp3==2.000)
+Parent.2.3m.Visible=(Temp3==3.000)
+Parent.2.4m.Visible=(Temp3==4.000)
+Parent.2.5m.Visible=(Temp3==5.000)
+Parent.2.6m.Visible=(Temp3==6.000)
+Parent.2.7m.Visible=(Temp3==7.000)
+Parent.2.8m.Visible=(Temp3==8.000)
+Parent.2.9m.Visible=(Temp3==9.000)
+Parent.2.10m.Visible=(Temp3==10.000)
+Parent.2.11m.Visible=(Temp3==11.000)
+Parent.2.12m.Visible=(Temp3==12.000)
+Parent.2.13m.Visible=(Temp3==13.000)
+Parent.2.14m.Visible=(Temp3==14.000)
+Parent.2.15m.Visible=(Temp3==15.000)
+Parent.2.16m.Visible=(Temp3==16.000)
+Parent.2.17m.Visible=(Temp3==17.000)
+Parent.2.18m.Visible=(Temp3==18.000)
+Parent.2.19m.Visible=(Temp3==19.000)
+Parent.2.p20m.Visible=(Temp4==20.000)
+Temp2=Temp1-(Temp3*60)
+Temp1=Temp2
+Temp1b=Temp2 + -4.500
+Temp2=Temp1b/10000
+Temp3=Temp2*1000
+Parent.2.00.Visible=(Temp3==0.000)
+Parent.2.10.Visible=(Temp3==1.000)
+Parent.2.20.Visible=(Temp3==2.000)
+Parent.2.30.Visible=(Temp3==3.000)
+Parent.2.40.Visible=(Temp3==4.000)
+Parent.2.50.Visible=(Temp3==5.000)
+Temp2=Temp1-(Temp3*10)
+Temp1=Temp2/1000
+Temp3=Temp1*1000
+Parent.2.0.Visible=(Temp3==0.000)
+Parent.2.1.Visible=(Temp3==1.000)
+Parent.2.2.Visible=(Temp3==2.000)
+Parent.2.3.Visible=(Temp3==3.000)
+Parent.2.4.Visible=(Temp3==4.000)
+Parent.2.5.Visible=(Temp3==5.000)
+Parent.2.6.Visible=(Temp3==6.000)
+Parent.2.7.Visible=(Temp3==7.000)
+Parent.2.8.Visible=(Temp3==8.000)
+Parent.2.9.Visible=(Temp3==9.000)
+Parent.3.ToneEnable=Parent.Default.3.AlertSound
+Parent.3.FlashEnable=Parent.Default.3.AlertFlash
+Parent.3.Option.Tone.Visible=Parent.Default.3.AlertSound
+Parent.3.Option.Flash.Visible=Parent.Default.3.AlertFlash
+Parent.3.Option.AlertRing.SelectedItemIndex=Parent.Default.3.Alert
+Parent.3.la=Parent.3.Option.AlertRing.SelectedItemIndex
+Parent.3.ta=Parent.3.Option.AlertRing.SelectedItem.Value
+Parent.3.Option.Alert.Text=Parent.3.Option.AlertRing.SelectedItem.Text
+Temp1=Parent.Default.3.Time
+Temp1b=Temp1 + -29.500
+Temp2=Temp1b/60000
+Temp3=Temp2*1000
+Temp3a=(Temp3 &quot;&gt;=&quot; 20)
+Temp4=(Temp3a ? 20.000 : 0.000 )
+Temp2=(Temp3 - Temp4)
+Temp3=Temp2
+Parent.3.0m.Visible=(Temp3==0.000)
+Parent.3.1m.Visible=(Temp3==1.000)
+Parent.3.2m.Visible=(Temp3==2.000)
+Parent.3.3m.Visible=(Temp3==3.000)
+Parent.3.4m.Visible=(Temp3==4.000)
+Parent.3.5m.Visible=(Temp3==5.000)
+Parent.3.6m.Visible=(Temp3==6.000)
+Parent.3.7m.Visible=(Temp3==7.000)
+Parent.3.8m.Visible=(Temp3==8.000)
+Parent.3.9m.Visible=(Temp3==9.000)
+Parent.3.10m.Visible=(Temp3==10.000)
+Parent.3.11m.Visible=(Temp3==11.000)
+Parent.3.12m.Visible=(Temp3==12.000)
+Parent.3.13m.Visible=(Temp3==13.000)
+Parent.3.14m.Visible=(Temp3==14.000)
+Parent.3.15m.Visible=(Temp3==15.000)
+Parent.3.16m.Visible=(Temp3==16.000)
+Parent.3.17m.Visible=(Temp3==17.000)
+Parent.3.18m.Visible=(Temp3==18.000)
+Parent.3.19m.Visible=(Temp3==19.000)
+Parent.3.p20m.Visible=(Temp4==20.000)
+Temp2=Temp1-(Temp3*60)
+Temp1=Temp2
+Temp1b=Temp2 + -4.500
+Temp2=Temp1b/10000
+Temp3=Temp2*1000
+Parent.3.00.Visible=(Temp3==0.000)
+Parent.3.10.Visible=(Temp3==1.000)
+Parent.3.20.Visible=(Temp3==2.000)
+Parent.3.30.Visible=(Temp3==3.000)
+Parent.3.40.Visible=(Temp3==4.000)
+Parent.3.50.Visible=(Temp3==5.000)
+Temp2=Temp1-(Temp3*10)
+Temp1=Temp2/1000
+Temp3=Temp1*1000
+Parent.3.0.Visible=(Temp3==0.000)
+Parent.3.1.Visible=(Temp3==1.000)
+Parent.3.2.Visible=(Temp3==2.000)
+Parent.3.3.Visible=(Temp3==3.000)
+Parent.3.4.Visible=(Temp3==4.000)
+Parent.3.5.Visible=(Temp3==5.000)
+Parent.3.6.Visible=(Temp3==6.000)
+Parent.3.7.Visible=(Temp3==7.000)
+Parent.3.8.Visible=(Temp3==8.000)
+Parent.3.9.Visible=(Temp3==9.000)
+Parent.4.ToneEnable=Parent.Default.4.AlertSound
+Parent.4.FlashEnable=Parent.Default.4.AlertFlash
+Parent.4.Option.Tone.Visible=Parent.Default.4.AlertSound
+Parent.4.Option.Flash.Visible=Parent.Default.4.AlertFlash
+Parent.4.Option.AlertRing.SelectedItemIndex=Parent.Default.4.Alert
+Parent.4.la=Parent.4.Option.AlertRing.SelectedItemIndex
+Parent.4.ta=Parent.4.Option.AlertRing.SelectedItem.Value
+Parent.4.Option.Alert.Text=Parent.4.Option.AlertRing.SelectedItem.Text
+Temp1=Parent.Default.4.Time
+Temp1b=Temp1 + -29.500
+Temp2=Temp1b/60000
+Temp3=Temp2*1000
+Temp3a=(Temp3 &quot;&gt;=&quot; 20)
+Temp4=(Temp3a ? 20.000 : 0.000 )
+Temp2=(Temp3 - Temp4)
+Temp3=Temp2
+Parent.4.0m.Visible=(Temp3==0.000)
+Parent.4.1m.Visible=(Temp3==1.000)
+Parent.4.2m.Visible=(Temp3==2.000)
+Parent.4.3m.Visible=(Temp3==3.000)
+Parent.4.4m.Visible=(Temp3==4.000)
+Parent.4.5m.Visible=(Temp3==5.000)
+Parent.4.6m.Visible=(Temp3==6.000)
+Parent.4.7m.Visible=(Temp3==7.000)
+Parent.4.8m.Visible=(Temp3==8.000)
+Parent.4.9m.Visible=(Temp3==9.000)
+Parent.4.10m.Visible=(Temp3==10.000)
+Parent.4.11m.Visible=(Temp3==11.000)
+Parent.4.12m.Visible=(Temp3==12.000)
+Parent.4.13m.Visible=(Temp3==13.000)
+Parent.4.14m.Visible=(Temp3==14.000)
+Parent.4.15m.Visible=(Temp3==15.000)
+Parent.4.16m.Visible=(Temp3==16.000)
+Parent.4.17m.Visible=(Temp3==17.000)
+Parent.4.18m.Visible=(Temp3==18.000)
+Parent.4.19m.Visible=(Temp3==19.000)
+Parent.4.p20m.Visible=(Temp4==20.000)
+Temp2=Temp1-(Temp3*60)
+Temp1=Temp2
+Temp1b=Temp2 + -4.500
+Temp2=Temp1b/10000
+Temp3=Temp2*1000
+Parent.4.00.Visible=(Temp3==0.000)
+Parent.4.10.Visible=(Temp3==1.000)
+Parent.4.20.Visible=(Temp3==2.000)
+Parent.4.30.Visible=(Temp3==3.000)
+Parent.4.40.Visible=(Temp3==4.000)
+Parent.4.50.Visible=(Temp3==5.000)
+Temp2=Temp1-(Temp3*10)
+Temp1=Temp2/1000
+Temp3=Temp1*1000
+Parent.4.0.Visible=(Temp3==0.000)
+Parent.4.1.Visible=(Temp3==1.000)
+Parent.4.2.Visible=(Temp3==2.000)
+Parent.4.3.Visible=(Temp3==3.000)
+Parent.4.4.Visible=(Temp3==4.000)
+Parent.4.5.Visible=(Temp3==5.000)
+Parent.4.6.Visible=(Temp3==6.000)
+Parent.4.7.Visible=(Temp3==7.000)
+Parent.4.8.Visible=(Temp3==8.000)
+Parent.4.9.Visible=(Temp3==9.000)
+Parent.Loaded=true
+Activated=false
+" ScrollExtent="1,1" Size="1,1" Temp1="0.005" Temp1b="51.000" Temp2="5.000" Temp3="5.000" Temp3a="false" Temp4="0.000"/>
+</Page>

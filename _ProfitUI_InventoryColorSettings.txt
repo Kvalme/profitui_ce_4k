@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="ProfitUI_InventoryColorSettings" OnShow="
+
+empty_inv_r=100 empty_inv_r=100
+empty_inv_g=100 empty_inv_g=100
+empty_inv_b=100 empty_inv_b=100
+
+filled_inv_r=255 filled_inv_r=255
+filled_inv_g=255 filled_inv_g=255
+filled_inv_b=255 filled_inv_b=255
+
+unattuned_inv_r=150 unattuned_inv_r=150
+unattuned_inv_g=225 unattuned_inv_g=225
+unattuned_inv_b=150 unattuned_inv_b=150
+
+attuned_inv_r=180 attuned_inv_r=180
+attuned_inv_g=225 attuned_inv_g=225
+attuned_inv_b=255 attuned_inv_b=255
+
+unusable_inv_r=255 unusable_inv_r=255
+unusable_inv_g=100 unusable_inv_g=100
+unusable_inv_b=100 unusable_inv_b=100
+
+hide_window Custom.ProfitUI_InventoryColorSettings" />

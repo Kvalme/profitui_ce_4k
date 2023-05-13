@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2usescomwndcontrols="true" Location="166,199" MinimumSize="620,250" Name="ProfitUI_InfoCenter" OnShow="TabPages.Miscellaneous.visible=true&#xD;&#xA;OnShow=&apos; &apos;" ScrollExtent="700,410" Size="700,410" UserMovable="true" UserResizable="true" version="1.0">
+<Button Location="860,32" Tooltip="ProfitUI Frequently Asked Questions" Name="ProfitUI" OnPress="browser &apos;http://www.eq2interface.com/portal.php?id=15&amp;a=faq&apos;" ScrollExtent="75,26" Size="75,26" Style="/CommonElements.SmallPushButton.data.style">ProfitUI FAQ</Button>
+    <Button Location="200,70" Name="SETPAGE" ScrollExtent="4,2" Size="4,2" Visible="false" />
+<include>InfoCenter/includes.xml</include>
+    <DataSource Name="TabSource">
+        <Data Name="Miscellaneous" target="Miscellaneous" text="Misc" tooltip="Miscellaneous Info" />
+        <Data Name="Spells" target="Spells" text="Spells" tooltip="Spells and Combat Arts" />
+        <Data Name="Writs" target="Writs" text="Writs" tooltip="City Writs" />
+        <Data Name="Quests" target="Quests" text="Quests" tooltip="HQs, Lore and Legen, Collections and more" />
+        <Data Name="Epics" target="Epics" text="Epics" tooltip="RoK Epic Quests" />
+        <Data Name="Tradeskills" target="Tradeskills" text="Tradeskills" tooltip="Info for Tradeskills, Harvesting, Alchemy and more" />
+        <Data Name="Housing" target="Housing" text="Housing" tooltip="Housing Info, Prices, Furniture, Etc" />
+        <Data Name="Notes" target="Notes" text="Notes" tooltip="Personal Notes" />
+    </DataSource>
+    <TabbedPane ActiveTab="0" DataSource="TabSource" Location="19,37" Name="TabPane" ScrollExtent="592,32" Size="592,32" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="TabPages" />
+    <Page Location="17,70" Name="TabPages" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="665,321" Size="665,321">
+<include>InfoCenter/Miscellaneous/miscellaneous.xml</include>
+<include>InfoCenter/Spells/spells.xml</include>
+<include>InfoCenter/Writs/writs.xml</include>
+<include>InfoCenter/Quests/quests.xml</include>
+<include>InfoCenter/Epics/epics.xml</include>
+<include>InfoCenter/Tradeskills/tradeskills.xml</include>
+<include>InfoCenter/Housing/housing.xml</include>
+<include>InfoCenter/Notes/notes.xml</include>
+        <Page Name="_tabLayout" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="665,321" Size="665,321" Visible="false">
+            <Button Location="180,0" Name="notUsed_SetPage" OnActivate="FILLMEIN" PageToShow="1_FILLMEIN" ScrollExtent="4,2" Size="4,2" Visible="false" />
+            <Page Location="8,7" Name="Select" PackLocation="left,top" PackSize="fixed,absolute" ScrollExtent="146,307" ScrollSize="20,20" Size="146,307">
+                <Page Name="List" PackLocation="left,top" PackSize="a,a" ScrollExtent="146,307" Size="146,307" />
+            </Page>
+            <Scrollbar Control="Select" Location="153,2" Name="Scrollbar" PackLocation="left,top" PackSize="fixed,absolute" ScrollExtent="19,316" Size="19,316" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Page Location="179,4" Name="Text" PackLocation="left,top" PackSize="a,a" ScrollExtent="489,313" show.visible="false" Size="489,313">
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="10,2" Name="Body" ScrollExtent="374,298" Size="374,298" TextColor="#E5E5E5">nothing</Text>
+                <Scrollbar Control="Body" Location="465,-2" Name="Scrollbar" PackLocation="right" PackSize="fixed,absolute" ScrollExtent="19,316" Size="19,316" Style="/CommonElements.ScrollbarVertical.data.style" />
+            </Page>
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="700,410" Size="700,410">
+        <Button Location="647,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip="Window Settings" UserMovable="true" />
+        <Button Location="664,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip="Close" UserMovable="true" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="260,70" Size="260,70">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="3,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="178,20" Size="178,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">Info Center</Text>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="531,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="22,73" Name="InsideLeftFrame" PackLocation="left,top" PackSize="fixed,absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="152,314" Size="152,314" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="195,73" Name="InsideRightFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="470,314" Size="470,314" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="700,410" Size="700,410" />
+        <Page AbsorbsInput="false" Location="12,25" backdropcontrol="true" BackgroundOpacity="1.000" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="675,45" Size="675,45" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="700,410" Size="700,410" />
+    </Page>
+</Page>

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="88,80" MaximumSize="1024,1024" MinimumSize="838,640" Name="Minions" PackLocation="center,center" ScrollExtent="838,640" Size="838,640" UserMovable="true" Visible="false">
+            <Page Location="5,580" Name="OverseerLevel" ScrollExtent="838,60" Size="838,60">
+                <Namespace Name="data">
+                    <ImageStyle Name="overseer_level_frame">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="381,316,433,368" />
+                    </ImageStyle>
+                    <ImageStyle Name="overseer_arrow_right">
+                        <ImageFrame Name="image" Source="images/tp_default_3.dds" SourceRect="1002,647,1023,662" />
+                    </ImageStyle>
+                    <ImageStyle Name="overseer_arrow_up">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="907,840,921,860" />
+                    </ImageStyle>
+                    <ImageStyle Name="overseer_gold_separator">
+                        <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="517,702,583,710" />
+                    </ImageStyle>
+                    <ImageStyle Name="overseer_level_frame_background">
+                        <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="978,202,1024,248" />
+                    </ImageStyle>
+                    <GridStyle Name="gold_separator_grid" Normal.Background="overseer_gold_separator" />
+                </Namespace>
+                <Text Color="#5AF01B" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="0,9" Name="Label" PackLocation="center,center" ScrollExtent="52,52" Size="52,52" TextAlignment="Center" TextAlignmentVertical="Center">:f:99</Text>
+                <Image Location="0,9" Name="level_frame" ScrollExtent="52,52" Size="52,52" Style="data.overseer_level_frame" />
+                <Image Color="#000000" Location="3,11" Name="level_frame_background" ScrollExtent="46,46" Size="46,46" Style="data.overseer_level_frame_background" />
+                <Page Location="45,21" Name="OverseerExperienceBar" ScrollExtent="790,28" Size="790,28">
+                    <Page MinimumSize="790,28" Name="XPBar" PackSize="absolute,fixed" ScrollExtent="790,28" Size="790,28">
+                        <Progressbar BackgroundOpacity="1.000" Color="#5AF01B" Location="0,3" Name="Progress" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="786,20" Size="786,20" Style="data.style" />
+                        <Grid CellCount="13,1" CellSize="79,22" Location="0,2" Name="ProgressBkG" ScrollExtent="1027,22" Size="786,22" Style="data.progress_bar_bkg" />
+                        <Progressbar BackgroundOpacity="1.000" Location="-3,0" Name="ProgressFrame" PackSize="absolute,fixed" Progress="1.000" ScrollExtent="794,27" Size="794,27" Style="data.style_frame" />
+                    </Page>
+                    <Namespace Name="data">
+                        <Namespace Name="progress">
+                            <ImageStyle Name="progress">
+                                <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="769,294,786,313" />
+                            </ImageStyle>
+                        </Namespace>
+                        <Namespace Name="bkg">
+                            <ImageStyle Name="overseer_progress_bkg">
+                                <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="941,190,1021,212" />
+                            </ImageStyle>
+                        </Namespace>
+                        <Namespace Name="gold_frame">
+                            <ImageStyle Filter="true" Name="center">
+                                <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="978,920,1023,947" />
+                            </ImageStyle>
+                            <ImageStyle Filter="true" Name="east">
+                                <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="1004,948,1024,975" />
+                            </ImageStyle>
+                            <ImageStyle Filter="true" Name="west">
+                                <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="342,980,359,1007" />
+                            </ImageStyle>
+                        </Namespace>
+                        <ProgressbarStyle Bar.Background="progress.progress" Name="style" />
+                        <ProgressbarStyle Bar.Background="gold_frame.center" Bar.EndCap="gold_frame.east" Bar.StartCap="gold_frame.west" Name="style_frame" />
+                        <GridStyle Name="progress_bar_bkg" Normal.Background="bkg.overseer_progress_bkg" />
+                    </Namespace>
+                </Page>
+                <Image Location="43,39" Name="arrow_right" ScrollExtent="21,14" Size="21,14" Style="data.overseer_arrow_right" />
+                <Image Location="0,5" Name="arrow_up" ScrollExtent="14,21" Size="14,21" Style="data.overseer_arrow_up" />
+                <Page AbsorbsInput="false" Location="5,15" Name="OverseerExperienceBarSeparator" PackSize="absolute,fixed" ScrollExtent="824,8" Size="824,8">
+                    <Grid CellCount="13,1" CellSize="66,8" Name="gold_separator" ScrollExtent="858,8" Size="824,8" Style="data.gold_separator_grid" />
+                </Page>
+            </Page>
+            <Page Location="296,30" Name="AdventureCountReminder" ScrollExtent="37,36" Size="37,36">
+                <Namespace Name="data">
+                    <ImageStyle Name="count_frame">
+                        <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="426,789,463,825" />
+                    </ImageStyle>
+                </Namespace>
+                <Text Color="#5AF01B" Font="/TextStyles.VeryLarge.VeryLargeStyle" Margin="1,1,3,3" Name="Label" PackLocation="center,bottom" ScrollExtent="37,36" Size="37,36" TextAlignment="Center" TextAlignmentVertical="Center">:f:99</Text>
+                <Image Name="background" ScrollExtent="37,36" Size="37,36" Style="data.count_frame" />
+            </Page>
+            <DataSource Name="AdvFilterDataSource">
+                <Data Name="Filter1" text=":f:No Filter" />
+                <Data Name="Filter2" text=":f:Celestial" />
+                <Data Name="Filter3" text=":f:Fabled" />
+                <Data Name="Filter4" text=":f:Legendary" />
+                <Data Name="Filter5" text=":f:Treasured" />
+                <Data Name="Filter6" text=":f:Completed" />
+                <Data Name="Filter6" text=":f:Charged" />
+            </DataSource>
+            <Dropdownbox BackgroundOpacity="1.000" DataSource="AdvFilterDataSource" Location="335,38" MaximumSize="16384,32" MinimumSize="50,32" Name="AdvFilterDropdown" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="112,32" Size="112,32" Style="/CommonElements.Dropdown.data.style" />
+            <DataSource Name="TabSource">
+                <Data Name="AdventuresTab" target="AdventuresTabPage" text=":f:  Quests  " />
+                <Data Name="MinionCollectionTab" TabRightJustify="true" target="MinionCollectionTabPage" text=":f:Agent Collection" />
+            </DataSource>
+            <TabbedPane ActiveTab="0" DataSource="TabSource" Location="219,39" Name="TabPane" PackSize="absolute,fixed" ScrollExtent="619,36" Size="619,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="TabPages" />
+            <Page Location="219,71" Name="TabPages" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="616,521" Size="616,521">
+                <Namespace Name="data">
+                    <Namespace Name="minioncollection_tab_page_bkg">
+                        <ImageStyle Filter="true" Name="w">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="529,84,587,354" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="sw">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="529,354,587,410" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="s">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="587,354,919,410" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="se">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="919,354,976,410" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="e">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="919,84,976,354" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="ne">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="919,29,976,84" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="n">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="587,29,919,84" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="nw">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="529,29,587,84" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="587,84,919,354" />
+                        </ImageStyle>
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="e" EastShrink="true" Name="rect" North="n" NorthEast="ne" NorthShrink="true" NorthWest="nw" South="s" SouthEast="se" SouthShrink="true" SouthWest="sw" West="w" WestShrink="true" />
+                    </Namespace>
+                    <Namespace Name="adventures_tab_page_bkg">
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="0,0,512,304" />
+                        </ImageStyle>
+                    </Namespace>
+                </Namespace>
+                <Page BackgroundOpacity="1.000" Name="AdventuresTabPage" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="616,521" Size="616,521">
+                    <Text Color="#E9D176" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="3,35" Margin="1,1,3,3" Name="MissingFeatureLabel" PackLocation="center,top" ScrollExtent="613,80" Size="613,80" TextAlignment="Center" Visible="false">:f:Missing Feature!</Text>
+                    <Page Location="0,150" Name="AdventureDetailPage" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="616,371" Size="616,371">
+                        <Page BackgroundOpacity="1.000" Location="189,99" Name="MercFamiliarSelectorWidget" PackLocation="top,left" PackSize="absolute,absolute" RStyleDefault="/CommonElements.DropdownListbox.data.grouper.rect" ScrollExtent="165,228" Size="165,228" Visible="false">
+                            <Namespace Name="data">
+                                <ListboxStyle Name="dropdownlistbox_style" RStyleDefault="/CommonElements.DropdownListbox.data.grouper.rect" SelectedBackgroundAlpha="1.000" SelectedBackgroundColor="#4A404A" />
+                                <Template Name="dropdowntemplate" Size="176,52">eq2ui_mainhud_minions_mercfamiliardropdowntemplate.xml</Template>
+                            </Namespace>
+                            <DataSource Name="ListDataSource">
+                                <Data Name="Hattori Hanzo" text=":8da6706787b22ecd_1:\#c99600Hattori Hanzo" />
+                                <Data Name="Ken Masters" text=":8da6706787b22ecd_1:\#ba32d9Ken Masters" />
+                                <Data Name="Mai Shiranui" text=":8da6706787b22ecd_1:\#d0cf37Mai Shiranui" />
+                                <Data Name="Johnny Cage" text=":8da6706787b22ecd_1:\#5968ffJohnny Cage" />
+                            </DataSource>
+                            <Listbox BackgroundColor="#FFFFFF" DataSource="ListDataSource" Location="5,4" Name="Listbox" PackSize="absolute,absolute" RowTemplate="data.dropdowntemplate" ScrollExtent="176,219" SelectedItemIndex="3" Size="156,219" Style="data.dropdownlistbox_style" />
+                        </Page>
+                        <Namespace Name="data">
+                            <ImageStyle Filter="true" Name="neg_trait_matched_img">
+                                <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="853,142,874,161" />
+                            </ImageStyle>
+                            <ImageStyle Filter="true" Name="pos_trait_matched_img">
+                                <ImageFrame Name="image" Source="images/tp_default_5.dds" SourceRect="874,142,895,161" />
+                            </ImageStyle>
+                            <Namespace Name="minions_bar">
+                                <ImageStyle Filter="true" Name="center">
+                                    <ImageFrame Name="image" Source="images/tp_default_1.dds" SourceRect="584,948,832,990" />
+                                </ImageStyle>
+                                <ImageStyle Filter="true" Name="east">
+                                    <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="941,128,1022,170" />
+                                </ImageStyle>
+                                <ImageStyle Filter="true" Name="west">
+                                    <ImageFrame Name="image" Source="images/tp_default_2.dds" SourceRect="926,763,1013,805" />
+                                </ImageStyle>
+                                <RectangleStyle Center="center" CenterShrinkH="true" CenterStretchV="false" East="east" EastStretch="false" Name="rect" West="west" WestStretch="false" />
+                                <ImageStyle Filter="true" Name="all">
+                                    <ImageFrame Name="image" Source="images/tp_default_0.dds" SourceRect="580,160,996,202" />
+                                </ImageStyle>
+                            </Namespace>
+                            <Namespace Name="familiaradded_button">
+                                <RectangleStyle Center="default" Name="rect" />
+                                <ImageStyle Filter="true" Name="default">
+                                    <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="127,4,156,42" />
+                                </ImageStyle>
+                            </Namespace>
+                            <ImageStyle Filter="true" Name="mercfamiliar_underglow">
+                                <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="4,2,52,60" />
+                            </ImageStyle>
+                            <Namespace Name="mercadded_button">
+                                <RectangleStyle Center="default" Name="rect" />
+                                <ImageStyle Filter="true" Name="default">
+                                    <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="93,4,122,42" />
+                                </ImageStyle>
+                            </Namespace>
+                            <Namespace Name="add_button">
+                                <RectangleStyle Center="default" Name="rect" />
+                                <ImageStyle Filter="true" Name="default">
+                                    <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="59,4,88,42" />
+                                </ImageStyle>
+                            </Namespace>
+                            <ImageStyle Filter="true" Name="chance_backdrop">
+                                <ImageFrame atlas="none" Name="image" Source="images/window_elements_heroicpanel.dds" SourceRect="686,957,1019,1020" />
+                            </ImageStyle>
+                        </Namespace>
+                        <Page Location="40,6" MinimumSize="320,42" Name="AdventureNamePage" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="535,42" Size="535,42">
+                            <Text Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="60,-4" Margin="1,1,3,3" MaxLines="1" Name="AdventureName" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="419,46" Size="419,46" TextAlignment="Center" TextAlignmentVertical="Bottom">:f:Placeholder Name!</Text>
+                            <Page BackgroundOpacity="1.000" Location="0,13" MinimumSize="320,24" Name="Underline" PackLocation="left,bottopm" PackSize="absolute,fixed" RStyleDefault="/SpecialElements.FancyUnderline.data.rect" ScrollExtent="535,26" Size="535,26" />
+                        </Page>
+                        <Text Color="#EDDFA7" Font="/TextStyles.Normal.NormalStyle" Location="32,44" Margin="1,1,1,1" Name="AdventureDescription" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="552,49" Size="552,49">:f:Placeholder Description!</Text>
+                        <Text Color="#EDDFA7" Font="/TextStyles.Large.LargeStyle" Location="32,95" Margin="1,1,1,1" Name="AdvMinMinionsText" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="552,30" Size="552,30" TextAlignment="Center">:f:Agents Required: 1</Text>
+                        <Composite Alignment="Center" Location="0,121" Name="AdventureTraits" Orientation="Horizontal" PackSize="absolute,fixed" ScrollExtent="616,30" Size="616,30" Spacing="5" SpacingType="Constant">
+                            <Page Location="286,0" Name="PositiveTraitTemplate" ScrollExtent="22,30" Size="22,30" Visible="false">
+                                <Image Location="1,14" Name="MatchedImg" ScrollExtent="20,22" Size="20,22" Stretch="false" StretchType="ProportionalBound" Style="data.pos_trait_matched_img" />
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.minionadv_pos_trait" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="22,22" Size="22,22" TooltipStyle="/TooltipStyles.tooltip_miniontrait" />
+                            </Page>
+                            <Page Location="299,0" Name="NegativeTraitTemplate" ScrollExtent="22,30" Size="22,30" Visible="false">
+                                <Image Location="1,14" Name="MatchedImg" ScrollExtent="20,22" Size="20,22" Stretch="false" StretchType="ProportionalBound" Style="data.neg_trait_matched_img" />
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.minionadv_neg_trait" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="22,22" Size="22,22" TooltipStyle="/TooltipStyles.tooltip_miniontrait" />
+                            </Page>
+                            <Page Location="300,0" Name="PosNegSeparator" ScrollExtent="15,30" Size="15,30" />
+                        </Composite>
+                        <Page Location="100,146" Name="MinionAssignment" PackLocation="center,bottom" ScrollExtent="416,75" Size="416,75">
+                            <Text Color="#E9D176" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="129,0" Margin="1,1,3,3" Name="FormYourPartyLabel" PackLocation="center,top" ScrollExtent="159,30" Size="159,30" TextAlignment="Center">:f:Form your party!</Text>
+                            <Page Location="0,33" Name="MinionTray" PackLocation="left,bottom" ScrollExtent="416,42" Size="416,42">
+                                <Composite Alignment="Center" Name="MinionSlotIconContainer" Orientation="Horizontal" PackLocation="left,top" PackSize="absolute,absolute" Padding="Both" ScrollExtent="416,42" Size="416,42" Spacing="24" SpacingType="Constant">
+                                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="55,0" MouseOverColor="#FFFF00" Name="MinionSlotIcon_0" PackLocation="left,center" ScrollExtent="42,42" Size="42,42" />
+                                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="121,0" MouseOverColor="#FFFF00" Name="MinionSlotIcon_1" PackLocation="left,center" ScrollExtent="42,42" Size="42,42" />
+                                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="187,0" MouseOverColor="#FFFF00" Name="MinionSlotIcon_2" PackLocation="left,center" ScrollExtent="42,42" Size="42,42" />
+                                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="253,0" MouseOverColor="#FFFF00" Name="MinionSlotIcon_3" PackLocation="left,center" ScrollExtent="42,42" Size="42,42" />
+                                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="319,0" MouseOverColor="#FFFF00" Name="MinionSlotIcon_4" PackLocation="left,center" ScrollExtent="42,42" Size="42,42" />
+                                </Composite>
+                                <Page BackgroundOpacity="1.000" MinimumSize="168,42" Name="MinionBarBkg" PackLocation="left,center" PackSize="absolute,fixed" RStyleDefault="data.minions_bar.rect" ScrollExtent="416,42" Size="416,42" />
+                            </Page>
+                        </Page>
+                        <Text Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="212,272" Margin="1,1,3,3" Name="BonusChancePercent" PackLocation="center,bottom" ScrollExtent="70,46" Size="70,46" TextAlignment="Right" TextAlignmentVertical="Center">:f:99%</Text>
+                        <Text Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="333,272" Margin="1,1,3,3" Name="MishapChancePercent" PackLocation="center,bottom" ScrollExtent="70,46" Size="70,46" TextAlignment="Right" TextAlignmentVertical="Center">:f:99%</Text>
+                        <Text Color="#D22723" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="425,263" Margin="1,1,3,3" Name="MishapChanceLabel" PackLocation="center,bottom" ScrollExtent="190,62" Size="190,62" TextAlignmentVertical="Center">:f:Mishap Chance</Text>
+                        <Text Color="#50DB07" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="2,263" Margin="1,1,3,3" Name="BonusChanceLabel" PackLocation="center,bottom" ScrollExtent="192,62" Size="192,62" TextAlignment="Right" TextAlignmentVertical="Center">:f:Bonus Chance</Text>
+                        <Page Location="224,228" Name="MercAddWidget" PackLocation="center,bottom" ScrollExtent="48,58" Size="48,58">
+                            <Page Location="24,38" Name="SelectorLocator" PackLocation="center,bottom" />
+                            <Button Location="10,10" Name="Button" RStyleDefault="data.add_button.rect" ScrollExtent="29,38" Size="29,38" />
+                            <Image Name="Underglow" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="48,58" Size="48,58" Stretch="false" Style="data.mercfamiliar_underglow" />
+                        </Page>
+                        <Page Location="345,228" Name="FamiliarAddWidget" PackLocation="center,bottom" ScrollExtent="48,58" Size="48,58">
+                            <Page Location="24,38" Name="SelectorLocator" PackLocation="center,bottom" />
+                            <Button Location="10,10" Name="Button" RStyleDefault="data.add_button.rect" ScrollExtent="29,38" Size="29,38" />
+                            <Image Name="Underglow" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="48,58" Size="48,58" Stretch="false" Style="data.mercfamiliar_underglow" />
+                        </Page>
+                        <Image Location="142,262" Name="ChanceBackdrop" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="333,63" Size="333,63" Stretch="false" StretchType="ProportionalBound" Style="data.chance_backdrop" />
+                        <Button Location="145,322" MaximumSize="16384,38" MinimumSize="38,32" Name="AdventureActionButton" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="326,34" Size="326,34" Style="/SpecialElements.BlueGradientButton.data.style">:f:Adventure Time!</Button>
+                        <Button Location="475,322" MaximumSize="16384,38" MinimumSize="38,32" Name="AdventureCancelButton" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="38,34" Size="38,34" Style="/SpecialElements.RedGradientButton.data.style">:f:X</Button>
+                        <Page AbsorbsInput="false" Location="10,145" Name="RescuePage" PackLocation="center,bottom" ScrollExtent="90,76" Size="90,76">
+                            <Text Color="#E9D176" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="3,1" Margin="1,1,3,3" Name="RescueLabel" PackLocation="center,top" ScrollExtent="83,30" Size="83,30" TextAlignment="Center">:f:Mishap!</Text>
+                            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="24,34" MouseOverColor="#FFFF00" Name="RescueIcon" PackLocation="left,center" ScrollExtent="42,42" Size="42,42" />
+                        </Page>
+                    </Page>
+                    <Page BackgroundOpacity="1.000" Name="AdventuresListScrollView" PackLocation="left,top" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="616,150" Size="616,150">
+                        <Composite Location="9,9" Name="ScrollPage" PackLocation="left,top" PackSize="absolute,absolute" Padding="Both" ScrollExtent="574,133" ScrollSize="1,25" Size="574,133" Spacing="4" SpacingType="Constant">
+                            <Page Location="0,2" Name="AdventureListItemTemplate" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="573,30" Size="573,30" Visible="false">
+                                <Composite Name="HLayout" Orientation="Horizontal" PackSize="absolute,absolute" ScrollExtent="573,30" Size="573,30" SpacingType="Fill">
+                                    <Text Font="/TextStyles.BigLarge.BigLargeStyle" Margin="9,0,0,0" MaxLines="1" Name="AdventureName" ScrollExtent="335,30" Size="335,30" TextAlignmentVertical="Center">Placeholder Name!</Text>
+                                    <Text Color="#EDDFA7" Font="/TextStyles.BigLarge.BigLargeStyle" Location="335,0" Margin="4,0,4,0" MaximumSize="54,30" MaxLines="1" MinimumSize="54,30" Name="AdventureCharges" ScrollExtent="54,30" Size="54,30" TextAlignment="Right" TextAlignmentVertical="Center">:f:9999</Text>
+                                    <Text Font="/TextStyles.Large.LargeStyle" Location="389,0" Margin="9,0,0,0" MaximumSize="92,30" MaxLines="1" MinimumScrollExtent="92,30" Name="AdventureTime" ScrollExtent="96,69" Size="92,30" TextAlignment="Right" TextAlignmentVertical="Center">:f:-999:99:99:99</Text>
+                                    <Page Location="481,0" MaximumSize="92,30" MinimumSize="92,30" Name="RewardIconContainer" PackLocation="center,top" PackSize="fixed,fixed" ScrollExtent="92,30" Size="92,30">
+                                        <Button Location="38,6" Name="ClearCooldownButton" PackLocation="center,top" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.sc_pon_smallarrow" Tooltip="Clear this quest&apos;s cooldown">:f:Clear quest cooldown</Button>
+                                        <Icon IconID="809" IconStyle="/IconStyles.item_list" IconType="0" Location="31,0" Name="RewardIcon" PackLocation="center,top" PackSize="fixed,fixed" ScrollExtent="30,30" Size="30,30" />
+                                    </Page>
+                                </Composite>
+                                <Image AbsorbsInput="false" BackgroundColor="/ColorStyles.window_background_selection" BackgroundOpacity="1.000" DropToParent="true" Name="SelectionBG" PackSize="absolute,absolute" ScrollExtent="573,30" Size="573,30" />
+                            </Page>
+                        </Composite>
+                        <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="false" Location="584,9" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,133" Size="22,133" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,145" Name="AdventuresBkgPage" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="data.adventures_tab_page_bkg.rect" ScrollExtent="616,376" Size="616,376" />
+                </Page>
+                <Page Enabled="false" Name="MinionCollectionTabPage" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="616,521" Size="616,521" Visible="false">
+                    <Page Name="MinionDetailPage" PackSize="absolute,absolute" ScrollExtent="616,521" Size="616,521">
+                        <Text Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="0,18" Margin="1,1,3,3" MaxLines="1" Name="MinionName" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="616,46" Size="616,46" TextAlignment="Center" TextAlignmentVertical="Bottom">:f:Name Placeholder!</Text>
+                        <Page Location="172,60" Name="MinionPortrait" PackLocation="center,top" ScrollExtent="271,271" Size="271,271">
+                            <Page BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/CommonElements.ImageFrame.data.rect" ScrollExtent="271,271" Size="271,271" />
+                            <Image BackgroundOpacity="1.000" Location="8,9" Name="Image" PackSize="absolute,absolute" ScrollExtent="256,254" Size="256,254" SourceRect="0,0,512,512" SourceResource="images/minions/minionportrait_00000.dds" StretchType="ProportionalBound" />
+                        </Page>
+                        <Text Color="#EDDFA7" Font="/TextStyles.Normal.NormalStyle" Location="39,343" Margin="1,1,1,1" Name="MinionDescription" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="538,81" Size="538,81" TextAlignment="Center">:f:Description Placeholder!</Text>
+                        <Splitter Enabled="false" Location="56,427" MaximumSize="16384,14" MinimumSize="100,14" Name="HorizontalSplitter" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="518,14" Size="518,14" Style="/CommonElements.Splitter.data.style" />
+                        <Composite Alignment="Center" Location="23,450" Name="TraitsContainer" Orientation="Horizontal" Padding="Both" ScrollExtent="570,48" Size="570,48" SpacingType="Fill">
+                            <Page Name="MinionTraitTemplate" PackLocation="center,top" ScrollExtent="132,42" Size="132,42" Visible="false">
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="55,0" MouseOverColor="#FFFF00" Name="Icon" PackLocation="center,top" PackSize="fixed,fixed" ScrollExtent="22,22" Size="22,22" TooltipStyle="/TooltipStyles.tooltip_miniontrait" />
+                                <Text Color="#EDDFA7" Font="/TextStyles.Normal.NormalStyle" Margin="1,1,1,1" Name="TraitName" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="132,48" Size="132,42" TextAlignment="Center" TextAlignmentVertical="Bottom">:f:Trait Placeholder!</Text>
+                            </Page>
+                        </Composite>
+                    </Page>
+                    <Page BackgroundOpacity="1.000" Location="-3,-3" Name="Bkg" PackSize="a,a" RStyleDefault="data.minioncollection_tab_page_bkg.rect" ScrollExtent="622,527" Size="622,527" />
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" Location="9,23" Name="MinionList" PackLocation="left,top" PackSize="f,a" ScrollExtent="211,574" Size="211,574">
+                <DataSource Name="FilterDataSource">
+                    <Data Name="Filter1" text=":f:No Filter" />
+                </DataSource>
+                <Dropdownbox BackgroundOpacity="1.000" DataSource="FilterDataSource" Location="5,10" MaximumSize="16384,32" MinimumSize="50,32" Name="FilterDropdown" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="203,32" Size="203,32" Style="/CommonElements.Dropdown.data.style" />
+                <Splitter AbsorbsInput="false" Location="202,-4" MaximumSize="13,16384" MinimumSize="13,100" Name="VerticalSplitter" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="13,584" Size="13,584" Style="/CommonElements.SplitterVertical.data.style" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="4,41" Name="MinionsScrollView" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="207,494" Size="207,494">
+                    <Composite Location="6,6" Name="ScrollPage" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="172,484" ScrollSize="1,25" Size="172,484" SpacingType="Constant">
+                        <Page Name="MinionListItemTemplate" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="172,50" Size="172,50" Visible="false">
+                            <Icon BackgroundTint="#000000" Dragable="true" DropToParent="true" IconStyle="/IconStyles.inventory" Location="1,4" MouseOverColor="#FFFF00" Name="MinionIcon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                            <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="47,0" MaxLines="1" Name="MinionName" PackLocation="absolute,fixed" PackSize="absolute,fixed" ScrollExtent="162,25" ShadowStyle="/ShadowStylesNew.Drop.style" Size="126,25" TextAlignmentVertical="Center">:f:Name Placeholder!</Text>
+                            <Page AbsorbsInput="false" BackgroundOpacity="0.800" Location="45,25" Name="MinionCooldownPage" PackLocation="center,bottom" ScrollExtent="127,25" Size="127,25">
+                                <Button Location="6,3" Name="ClearCooldownButton" PackSize="fixed,fixed" ScrollExtent="17,19" Size="17,19" Style="/ButtonStyles.sc_pon_smallarrow" Tooltip=":f:Clear this agent&apos;s cooldown">:f:Clear agent cooldown</Button>
+                                <Text Font="/TextStyles.Large.LargeStyle" Location="27,0" Margin="9,0,0,0" MaximumSize="92,25" MaxLines="1" MinimumScrollExtent="92,25" Name="MinionTime" ScrollExtent="92,25" Size="92,25" TextAlignment="Right" TextAlignmentVertical="Center">:f:00:00</Text>
+                            </Page>
+                            <Composite Location="45,25" Name="TraitIcons" Orientation="Horizontal" ScrollExtent="126,25" Size="126,25" Spacing="4" SpacingType="Constant">
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" MouseOverColor="#FFFF00" Name="TraitIcon0" ScrollExtent="22,22" Size="22,22" TooltipStyle="/TooltipStyles.tooltip_miniontrait" />
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="26,0" MouseOverColor="#FFFF00" Name="TraitIcon1" ScrollExtent="22,22" Size="22,22" TooltipStyle="/TooltipStyles.tooltip_miniontrait" />
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="52,0" MouseOverColor="#FFFF00" Name="TraitIcon2" ScrollExtent="22,22" Size="22,22" TooltipStyle="/TooltipStyles.tooltip_miniontrait" />
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="78,0" MouseOverColor="#FFFF00" Name="TraitIcon3" ScrollExtent="22,22" Size="22,22" TooltipStyle="/TooltipStyles.tooltip_miniontrait" />
+                                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.inventory" Location="104,0" MouseOverColor="#FFFF00" Name="TraitIcon4" ScrollExtent="22,22" Size="22,22" TooltipStyle="/TooltipStyles.tooltip_miniontrait" />
+                            </Composite>
+                            <Image AbsorbsInput="false" BackgroundColor="/ColorStyles.window_background_selection" BackgroundOpacity="1.000" DropToParent="true" Name="SelectionBG" PackSize="absolute,fixed" ScrollExtent="173,50" Size="173,50" Visible="false" />
+                        </Page>
+                    </Composite>
+                    <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="false" Location="178,8" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,481" Size="22,481" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Page>
+                <Text Font="/TextStyles.Large.LargeStyle" Location="11,541" Name="SearchLabel" PackLocation="left,bottom" ScrollExtent="55,46" Size="55,23">:f:Search</Text>
+                <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="60,536" MaximumSize="16384,30" MinimumSize="30,30" Name="SearchInput" PackLocation="left,bottom" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="120,30" Size="120,30" Style="/CommonElements.Textfield.data.style" />
+                <Button Location="175,535" MaximumSize="16384,30" MinimumSize="35,30" Name="SearchClearButton" PackLocation="left,bottom" ScrollExtent="35,30" Size="35,30" Style="/CommonElements.PushButton.data.style">:f:X</Button>
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="838,610" Size="838,610">
+                <Button Location="794,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":a26a52e7ec278586:Window Settings" UserMovable="true" />
+                <Button Location="774,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":a26a52e7574a0c6d:Help" UserMovable="true" />
+                <Button Location="814,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":a26a52e72d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="307,70" Size="307,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="14,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="205,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="205,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:f:Overseer</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="660,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="850,610" Size="850,610" />
+                <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="218,24" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="619,51" Size="619,51" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="850,610" Size="850,610" />
+            </Page>
+        </Page>

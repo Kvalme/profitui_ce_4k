@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="4,110" MaximumSize="1024,1024" MinimumSize="400,198" Name="Examine" ScrollExtent="400,198" Size="400,198" UserMovable="true" UserResizable="true">
+            <Page AbsorbsInput="false" Location="29,35" Name="HTML" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="317,140" Size="317,140" />
+            <Scrollbar ArrowPressSound="sounds/button" Control="HTML" Location="351,37" Name="HTMLScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,138" Size="22,138" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="25,32" Name="InfoFrame" PackLocation="top,left" PackSize="absolute,absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="325,147" Size="325,147" />
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="400,198" Size="400,198">
+                <Button Location="347,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":e031d62aec278586:Window Settings" UserMovable="true" />
+                <Button Location="347,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":e031d62a574a0c6d:Help" UserMovable="true" Visible="false" />
+                <Button Location="364,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":e031d62a2d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="230,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="170,70" Size="170,70" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="300,70" Size="300,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="170,23" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:e031d62a7f6fa781:Examine</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="400,198" Size="400,198" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="400,198" Size="400,198" />
+            </Page>
+        </Page>
