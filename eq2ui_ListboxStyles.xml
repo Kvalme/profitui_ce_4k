@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-    <Namespace Name="listboxlist">
-        <ListboxStyle GridStyle="/gridlist.clear_style" Name="clear_listbox_no_selection" />
-        <ListboxStyle GridStyle="/gridlist.clear_style" Name="clear_listbox" SelectedBackgroundAlpha="1.000" SelectedBackgroundColor="#4A404A" />
-        <ListboxStyle GridStyle="/gridlist.weaponconfig_grid" Name="weaponconfig_listbox" />
-        <ListStyle CellHeight="24" CellPadding="0,1" DefaultTextColor="#8080FF" DefaultTextStyle="/Fonts.FontArial14" Name="menu_popuplist" SelectionColorBackground="#000000" SelectionColorRect="#000000" />
-        <ListStyle CellPadding="0,1" DefaultTextStyle="/Fonts.FontZapf15" GridColor="#505050" Name="default_list" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
-    </Namespace>

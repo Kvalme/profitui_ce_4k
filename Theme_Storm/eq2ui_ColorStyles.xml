@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Namespace Name="ColorStyles" Description="A minimalist gray theme."  DarqUI="3.000" ThemeName="Storm">
-    <ColorStyle Color="#121212" Name="paperdoll_background" />
-    <ColorStyle Color="#100908" Name="window_background_dark" />
-    <ColorStyle Color="#303030" Name="window_background_light" />
-    <ColorStyle Color="#505050" Name="window_background_selection" />
-</Namespace>

@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-    <Namespace Name="SliderbarStyles">
-        <SliderbarStyle Background="/imagelist.scroll_gold_middle" EndCap="/imagelist.scroll_gold_end" Name="horz_sliderbar_gold" Slider="/imagelist.scroll_gold_thumb" StartCap="/imagelist.scroll_gold_start" />
-    </Namespace>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Namespace Name="ColorStyles" DarqUI="3.000" DarqUIversion="DarqUI 2.4.3" Description="A gray and brown cut-stone theme with reduced shiny gold elements."  ThemeName="Fossil">
-    <ColorStyle Color="#2D2C2B" Name="paperdoll_background" />
-    <ColorStyle Color="#1C1C1A" Name="window_background_dark" />
-    <ColorStyle Color="#33312D" Name="window_background_light" />
-    <ColorStyle Color="#41413C" Name="window_background_selection" />
-</Namespace>

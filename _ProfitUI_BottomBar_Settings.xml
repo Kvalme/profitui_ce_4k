@@ -1,6 +1,6 @@
 ﻿<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="ItemSpacingSet" Descrip="Item Spacing" Size="1,3" Location="1,1" OnShow="Location='99999,99999' "/>
 <Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="ItemHoverSet" Descrip="Hover" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
-<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="ItemSortDirSet" Descrip="ItemSort Direction" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
+<Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="ItemSortDirSet" Descrip="ItemSort Direction" Size="1,2" Location="1,1" OnShow="Location='99999,99999' "/>
 <Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item01" Descrip="Platinum Coin" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
 <Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item02" Descrip="Gold Coin" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
 <Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item03" Descrip="Silver Coin" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
@@ -93,15 +93,15 @@
 <Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item77" Descrip="PVP Spell Wep MA" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
 <Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item83" Descrip="Weapon Dmg Bonus" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
 <Page eq2usescomwndcontrols="true" UserResizable="true" Activated="true" Name="Item84" Descrip="Spell Weapon Dmg Bonus" Size="1,1" Location="1,1" OnShow="Location='99999,99999' "/>
-
-<Page AlwaysOnTop="true" eq2usescomwndcontrols="true" Location="100,100" MinimumSize="535,458" Name="ProfitUI_BottomBar_Settings" PackLocation="nfn,bottom" ScrollExtent="535,498" Size="535,498" UserMovable="true" UserResizable="false" OnShow="Parent.ProfitUI_BottomBar.InitializeBoxes.Press=true">
-<Page Name="SettingsHeader" Size="535,14" Location="0,20">
-<Text Name="Instructions" Size="535,14" Font="/ProfitUI_Styles.Fonts.FontArial14T" TextAlignment="Center">Check the checkbox beside an item to show it on the Bottom Bar.</Text>
-</Page>
-<Button Location="235,466" MaximumSize="16384,26" MinimumSize="32,26" Name="SetButton" OnPress="
+<Page AltFileName="_ProfitUI_BottomBar_Settings_ALT.xml" alwaysontop="true" eq2usescomwndcontrols="true" LegacySize="535,498" Location="100,100" MinimumSize="535,300" Name="ProfitUI_BottomBar_Settings" NewSize="600,600" OnShow="CheckLegacySize.Visible=true&#xD;&#xA;Parent.ProfitUI_BottomBar.InitializeBoxes.Press=true&#xD;&#xA;SetVdir.Visible=true" PackLocation="nfn,bottom" ScrollExtent="600,600" Size="600,600" UserMovable="true" UserResizable="true">
+	<Page Name="CheckLegacySize" OnShow="COND=(Parent.Size==Parent.LegacySize)&#xD;&#xA;Parent.Size=COND ? Parent.NewSize : Parent.Size&#xD;&#xA;Visible=false" Visible="false" />
+	<Page Location="0,24" Name="SettingsHeader" PackSize="a,f" ScrollExtent="600,14" Size="600,14">
+		<Text Font="/ProfitUI_Styles.Fonts.FontArial14T" Name="Instructions" PackSize="a,f" ScrollExtent="600,14" Size="600,14" TextAlignment="Center" TextColor="#C7C7C7">Check the checkbox beside an item to show it on the Bottom Bar.</Text>
+	</Page>
+	<Button Location="263,565" Name="SetButton" OnPress="
 window_property unlock Custom ItemSpacingSet&#xD;&#xA;Parent.Parent.ItemSpacingSet.Height=Parent.SettingsPage.ItemSpacingSlider.Value&#xD;&#xA;window_property lock Custom ItemSpacingSet&#xD;&#xA;Parent.Parent.ItemSpacingSet.Visible=False
 window_property unlock Custom ItemHoverSet&#xD;&#xA;Parent.Parent.ItemHoverSet.Height=Parent.SettingsPage.Set_ItemHoverSet.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom ItemHoverSet&#xD;&#xA;Parent.Parent.ItemHoverSet.Visible=False
-window_property unlock Custom ItemSortDirSet&#xD;&#xA;Parent.Parent.ItemSortDirSet.Height=Parent.SettingsPage.Set_ItemSortDirSet.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom ItemSortDirSet&#xD;&#xA;Parent.Parent.ItemSortDirSet.Visible=False
+window_property unlock Custom ItemSortDirSet&#xD;&#xA;Parent.Parent.ItemSortDirSet.Height=Parent.Set_ItemSortDirSet.T2B ? 2 : 1 &#xD;&#xA;window_property lock Custom ItemSortDirSet&#xD;&#xA;Parent.Parent.ItemSortDirSet.Visible=False
 window_property unlock Custom Item01&#xD;&#xA;Parent.Parent.Item01.Height=Parent.SettingsPage.Set_Item01.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item01&#xD;&#xA;Parent.Parent.Item01.Visible=False
 window_property unlock Custom Item02&#xD;&#xA;Parent.Parent.Item02.Height=Parent.SettingsPage.Set_Item02.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item02&#xD;&#xA;Parent.Parent.Item02.Visible=False
 window_property unlock Custom Item03&#xD;&#xA;Parent.Parent.Item03.Height=Parent.SettingsPage.Set_Item03.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Item03&#xD;&#xA;Parent.Parent.Item03.Visible=False
@@ -194,119 +194,118 @@ window_property unlock Custom Divider10&#xD;&#xA;Parent.Parent.Divider10.Height=
 window_property unlock Custom Divider11&#xD;&#xA;Parent.Parent.Divider11.Height=Parent.SettingsPage.Set_Divider11.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider11&#xD;&#xA;Parent.Parent.Divider11.Visible=False
 window_property unlock Custom Divider12&#xD;&#xA;Parent.Parent.Divider12.Height=Parent.SettingsPage.Set_Divider12.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider12&#xD;&#xA;Parent.Parent.Divider12.Visible=False
 window_property unlock Custom Divider13&#xD;&#xA;Parent.Parent.Divider13.Height=Parent.SettingsPage.Set_Divider13.Checked ? 2 : 1 &#xD;&#xA;window_property lock Custom Divider13&#xD;&#xA;Parent.Parent.Divider13.Visible=False
-
-
-
-Parent.Parent.ProfitUI_BottomBar.SetDisplay.Press=true
-" PackLocation="cfc,bottom" Size="75,26" Style="/CommonElements.PushButton.data.style">Update</Button>
-
-<Page Name="SettingsPage" Size="531,458" Location="2,34">
-<Checkbox Location="5,0" Name="Set_Item01" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Platinum Coin</Checkbox>
-<Checkbox Location="135,0" Name="Set_Item02" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Gold Coin</Checkbox>
-<Checkbox Location="265,0" Name="Set_Item03" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Silver Coin</Checkbox>
-<Checkbox Location="395,0" Name="Set_Item04" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Copper Coin</Checkbox>
-<Checkbox Location="5,18" Name="Set_Divider1" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 1</Checkbox>
-<Checkbox Location="135,18" Name="Set_Item05" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Stamina</Checkbox>
-<Checkbox Location="265,18" Name="Set_Item06" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Strength</Checkbox>
-<Checkbox Location="395,18" Name="Set_Item07" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Agility</Checkbox>
-<Checkbox Location="5,36" Name="Set_Item08" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Wisdom</Checkbox>
-<Checkbox Location="135,36" Name="Set_Item09" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Intelligence</Checkbox>
-<Checkbox Location="265,36" Name="Set_Divider2" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 2</Checkbox>
-<Checkbox Location="395,36" Name="Set_Item10" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Adv. Level</Checkbox>
-<Checkbox Location="5,54" Name="Set_Item11" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Adv. Xp</Checkbox>
-<Checkbox Location="135,54" Name="Set_Item12" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Adv. Vitality</Checkbox>
-<Checkbox Location="265,54" Name="Set_Item13" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Adv. Xp Debt</Checkbox>
-<Checkbox Location="395,54" Name="Set_Item14" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Level</Checkbox>
-<Checkbox Location="5,72" Name="Set_Item15" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS XP</Checkbox>
-<Checkbox Location="135,72" Name="Set_Item16" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Vitality</Checkbox>
-<Checkbox Location="265,72" Name="Set_Item17" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">AA Points</Checkbox>
-<Checkbox Location="395,72" Name="Set_Item18" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">AA Xp</Checkbox>
-<Checkbox Location="5,90" Name="Set_Item19" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Guild Level</Checkbox>
-<Checkbox Location="135,90" Name="Set_Item20" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Guild Xp</Checkbox>
-<Checkbox Location="265,90" Name="Set_Divider3" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 3</Checkbox>
-<Checkbox Location="395,90" Name="Set_Item21" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Crit. Suc. Mod</Checkbox>
-<Checkbox Location="5,108" Name="Set_Item22" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Suc. Mod</Checkbox>
-<Checkbox Location="135,108" Name="Set_Item23" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Prog Add</Checkbox>
-<Checkbox Location="265,108" Name="Set_Item24" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Prog Mod</Checkbox>
-<Checkbox Location="395,108" Name="Set_Item25" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Dura. Add</Checkbox>
-<Checkbox Location="5,126" Name="Set_Item26" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">TS Dura. Mod</Checkbox>
-<Checkbox Location="135,126" Name="Set_Item75" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Bount. Harv.</Checkbox>
-<Checkbox Location="265,126" Name="Set_Item76" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Rare Harv.</Checkbox>
-<Checkbox Location="395,126" Name="Set_Divider4" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 4</Checkbox>
-<Checkbox Location="5,144" Name="Set_Item56" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Concentration</Checkbox>
-<Checkbox Location="135,144" Name="Set_Item27" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Run Speed</Checkbox>
-<Checkbox Location="265,144" Name="Set_Item28" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Status</Checkbox>
-<Checkbox Location="395,144" Name="Set_Item29" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">HP</Checkbox>
-<Checkbox Location="5,162" Name="Set_Item30" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">HP Regen</Checkbox>
-<Checkbox Location="135,162" Name="Set_Item31" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Power</Checkbox>
-<Checkbox Location="265,162" Name="Set_Item32" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Power Regen</Checkbox>
-<Checkbox Location="395,162" Name="Set_Divider5" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 5</Checkbox>
-<Checkbox Location="5,180" Name="Set_Item33" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Arcane</Checkbox>
-<Checkbox Location="135,180" Name="Set_Item34" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Elemental</Checkbox>
-<Checkbox Location="265,180" Name="Set_Item35" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Noxious</Checkbox>
-<Checkbox Location="395,180" Name="Set_Divider6" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 6</Checkbox>
-<Checkbox Location="5,198" Name="Set_Item38" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Hate Mod</Checkbox>
-<Checkbox Location="265,198" Name="Set_Item40" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Resolve</Checkbox>
-<Checkbox Location="395,198" Name="Set_Item41" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Mitigation</Checkbox>
-<Checkbox Location="5,216" Name="Set_Item42" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Avoidance</Checkbox>
-<Checkbox Location="135,216" Name="Set_Item43" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Shield Effect</Checkbox>
-<Checkbox Location="265,216" Name="Set_Divider7" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 7</Checkbox>
-<Checkbox Location="395,216" Name="Set_Item45" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Spell DA</Checkbox>
-<Checkbox Location="395,234" Name="Set_Item85" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Ability DA</Checkbox>
-<Checkbox Location="5,234" Name="Set_Item46" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Fervor</Checkbox>
-<Checkbox Location="5,252" Name="Set_Item83" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Weapon Dmg Bonus</Checkbox>
-<Checkbox Location="135,252" Name="Set_Item84" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Spell Weapon Dmg Bonus</Checkbox>
-<Checkbox Location="265,252" Name="Set_Divider8" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 8</Checkbox>
-<Checkbox Location="395,252" Name="Set_Item47" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">DPS</Checkbox>
-<Checkbox Location="5,270" Name="Set_Item48" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Haste</Checkbox>
-<Checkbox Location="135,270" Name="Set_Item44" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Abil. Cast Spd</Checkbox>
-<Checkbox Location="265,270" Name="Set_Item49" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Abil. Reuse</Checkbox>
-<Checkbox Location="395,270" Name="Set_Item50" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Abil. Recov.</Checkbox>
-<Checkbox Location="5,288" Name="Set_Divider12" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 9</Checkbox>
-<Checkbox Location="135,288" Name="Set_Item51" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Crit. Chance</Checkbox>
-<Checkbox Location="265,288" Name="Set_Item52" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Crit. Bonus</Checkbox>
-<Checkbox Location="395,288" Name="Set_Item53" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Abil. Mod</Checkbox>
-<Checkbox Location="5,306" Name="Set_Item54" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Potency</Checkbox>
-<Checkbox Location="135,306" Name="Set_Item55" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Multi Attack</Checkbox>
-<Checkbox Location="265,306" Name="Set_Divider11" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 10</Checkbox>
-<Checkbox Location="395,306" Name="Set_Item57" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">AE Autoattack</Checkbox>
-<Checkbox Location="5,324" Name="Set_Item58" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Accuracy</Checkbox>
-<Checkbox Location="135,234" Name="Set_Item86" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Flurry Mult</Checkbox>
-<Checkbox Location="135,324" Name="Set_Item59" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Flurry</Checkbox>
-<Checkbox Location="265,324" Name="Set_Item60" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Strikethrough</Checkbox>
-<Checkbox Location="395,324" Name="Set_Divider9" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 11</Checkbox>
-<Checkbox Location="5,342" Name="Set_Item61" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">P. Wep Dmg</Checkbox>
-<Checkbox Location="135,342" Name="Set_Item62" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">P. Wep Delay</Checkbox>
-<Checkbox Location="265,342" Name="Set_Item63" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">S. Wep Dmg</Checkbox>
-<Checkbox Location="395,342" Name="Set_Item64" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">S. Wep Delay</Checkbox>
-<Checkbox Location="5,360" Name="Set_Item65" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">R. Wep Dmg</Checkbox>
-<Checkbox Location="135,360" Name="Set_Item66" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">R. Wep Delay</Checkbox>
-<Checkbox Location="265,360" Name="Set_Divider10" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 12</Checkbox>
-<Checkbox Location="395,360" Name="Set_Item67" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Ping</Checkbox>
-<Checkbox Location="5,378" Name="Set_Item68" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">FPS</Checkbox>
-<Checkbox Location="135,378" Name="Set_Item69" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">BPS</Checkbox>
-<Checkbox Location="265,378" Name="Set_Item70" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Packet Loss</Checkbox>
-<Checkbox Location="395,378" Name="Set_Divider13" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Divider 13</Checkbox>
-<Checkbox Location="135,396" Name="Set_Item37" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">Toughness</Checkbox>
-<Checkbox Location="265,396" Name="Set_Item71" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP Pot</Checkbox>
-<Checkbox Location="395,396" Name="Set_Item72" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP Crit Bon</Checkbox>
-<Checkbox Location="5,414" Name="Set_Item73" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP MA</Checkbox>
-<Checkbox Location="135,414" Name="Set_Item74" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP Sp. MA</Checkbox>
-<Checkbox Location="265,414" Name="Set_Item77" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Style="/CommonElements.Checkbox.data.style" Size="130,18">PvP Sp. Wep MA</Checkbox>
-<Checkbox Location="5,432" Name="Set_ItemHoverSet" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" ToolTip="Will only function properly if bar is set to minimum height." Style="/CommonElements.Checkbox.data.style" Size="160,18">Enable Bar Mouseover</Checkbox>
-<Sliderbar ControlInput="ItemSpacingSliderValue" ControlMax="50" ControlMin="1" Location="356,432" MaximumSize="16384,26" MinimumSize="20,26" Name="ItemSpacingSlider" Size="77,26" Style="/CommonElements.Slider.data.style" UpperLimit="50" LowerLimit="1"/>
-<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="340,438" MaximumSize="137,16384" Name="ItemSpacingSliderValue" NumericInteger="true" Size="16,16" Style="/CommonElements.Textbox.data.style" Value="24" WrapWidth="Automatic" TextAlignment="Center">0</Textbox>
-<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="431,435" MaxLines="1" Name="ItemSpacingSliderLabel" Size="200,20" TextAlignmentVertical="Center">Bar Item Spacing</Text>
-</Page>
-
-
-	<Page AbsorbsInput="false" Location="0,0" Name="WindowFrame" PackSize="a,a" Size="535,516">
-		<Button Location="513,2" Name="Close" PackLocation="right,top" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":42aee8422d3f513f:Close" UserMovable="true" />
-			<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" Size="535,20">
-				<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="3,0" MaxLines="1" Name="Title" PackSize="a,f" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="241,20" TextAlignment="Left" TextAlignmentVertical="Center" TextColor="#F0D080">   ProfitUI BottomBar Setup</Text>
-				<Button Enabled="false" GetsInput="false" Name="TitleBarBoxed" PackSize="a,f" ScrollExtent="532,20" Size="532,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed" Location="1,0" />
-			</Page>
-		<Page AbsorbsInput="false" Location="-10,-5" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" Size="555,516" />
-		<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-10,-5" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" Size="555,516" />
+Parent.Parent.ProfitUI_BottomBar.SetDisplay.Press=true" PackLocation="cfc,bottom" ScrollExtent="75,30" Size="75,30" Style="/CommonElements.PushButton.data.style">Update</Button>
+	<Scrollbar ArrowPressSound="sounds/button" Control="SettingsPage" HideIfUnnecessary="true" Location="572,40" Name="SettingsScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="19,520" Size="19,520" Style="/CommonElements.ScrollbarVertical.data.style" />
+	<VolumePage BackgroundOpacity="0.400" CellCount="4,23" CellSelectable="false" CellSize="140,20" Location="10,40" MinimumScrollExtent="570,508" Name="SettingsPage" PackSize="a,a" ScrollExtent="580,520" Size="580,520" VolumeFill="down_left2right">
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item01" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Platinum Coin</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item02" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Gold Coin</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item03" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Silver Coin</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item04" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Copper Coin</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider1" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 1</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item05" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Stamina</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item06" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Strength</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item07" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Agility</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item08" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Wisdom</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item09" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Intelligence</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider2" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 2</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item10" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Adv. Level</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item11" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Adv. Xp</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item12" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Adv. Vitality</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item13" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Adv. Xp Debt</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item14" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">TS Level</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item15" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">TS XP</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item16" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">TS Vitality</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item17" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">AA Points</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item18" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">AA Xp</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item19" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Guild Level</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item20" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Guild Xp</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider3" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 3</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item21" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">TS Crit. Suc. Mod</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item22" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">TS Suc. Mod</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item23" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">TS Prog Add</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item24" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">TS Prog Mod</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item25" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">TS Dura. Add</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item26" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">TS Dura. Mod</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item75" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Bount. Harv.</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item76" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Rare Harv.</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider4" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 4</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item56" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Concentration</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item27" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Run Speed</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item28" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Status</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item29" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">HP</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item30" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">HP Regen</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item31" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Power</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item32" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Power Regen</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider5" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 5</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item33" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Arcane</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item34" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Elemental</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item35" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Noxious</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider6" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 6</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item38" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Hate Mod</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item40" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Resolve</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item41" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Mitigation</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item42" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Avoidance</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item43" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Shield Effect</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider7" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 7</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item45" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Spell DA</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item85" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Ability DA</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item46" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Fervor</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item83" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style" Tooltip="Weapon Damage Bonus">Weapon Dmg Bonus</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item84" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style" Tooltip="Spell Weapon Damage Bonus">Spell Wpn Dmg Bonus</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider8" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 8</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item47" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">DPS</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item48" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Haste</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item44" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Abil. Cast Spd</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item49" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Abil. Reuse</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item50" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Abil. Recov.</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider12" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 9</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item51" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Crit. Chance</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item52" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Crit. Bonus</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item53" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Abil. Mod</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item54" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Potency</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item55" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Multi Attack</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider11" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 10</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item57" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">AE Autoattack</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item58" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Accuracy</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item59" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Flurry</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item86" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Flurry Mult</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item60" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Strikethrough</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider9" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 11</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item61" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">P. Wep Dmg</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item62" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">P. Wep Delay</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item63" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">S. Wep Dmg</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item64" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">S. Wep Delay</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item65" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">R. Wep Dmg</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item66" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">R. Wep Delay</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider10" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 12</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item67" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Ping</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item68" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">FPS</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item69" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">BPS</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item70" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Packet Loss</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Color="#F0D080" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Divider13" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Divider 13</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item37" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">Toughness</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item71" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">PvP Pot</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item72" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">PvP Crit Bon</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item73" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">PvP MA</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item74" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">PvP Sp. MA</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_Item77" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style">PvP Sp. Wep MA</Checkbox>
+		<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" MaximumSize="140,20" MinimumSize="140,20" Name="Set_ItemHoverSet" OnActivate="Parent.Parent.Set_ItemHoverSet.Checked=true" OnDeactivate="Parent.Parent.Set_ItemHoverSet.Checked=false" PackLocation="cfc,bottom" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Checkbox.data.style" Tooltip="Will only function properly if bar is set to minimum height." Visible="false">Enable Bar Mouseover</Checkbox>
+		<Sliderbar ControlInput="ItemSpacingSliderValue" ControlMax="50" ControlMin="1" LowerLimit="1" MaximumSize="140,20" MinimumSize="140,20" Name="ItemSpacingSlider" OnChange="Parent.Parent.ItemSpacingSlider.Value=Value" PackLocation="cfc,bottom" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Slider.data.style" UpperLimit="50" Value="1" Visible="false" />
+		<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" MaximumSize="140,20" MinimumSize="140,20" Name="ItemSpacingSliderValue" NumericInteger="true" OnChange="Parent.Parent.ItemSpacingSliderValue.Value=Value" PackLocation="cfc,bottom" ScrollExtent="140,20" Size="140,20" Style="/CommonElements.Textbox.data.style" textalignment="Center" value="24" WrapWidth="Automatic" Visible="false">1</Textbox>
+	</VolumePage>
+	<Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="80,568" Name="Set_ItemHoverSet" OnPress="Parent.SettingsPage.Set_ItemHoverSet.Checked=Checked" PackLocation="cfc,bottom" ScrollExtent="170,18" Size="170,18" Style="/CommonElements.Checkbox.data.style" Tooltip="Will only function properly if bar is set to minimum height.">Enable Bar Mouseover</Checkbox>
+	<Sliderbar ControlInput="ItemSpacingSliderValue" ControlMax="50" ControlMin="1" Location="387,565" LowerLimit="1" MaximumSize="16384,26" MinimumSize="20,26" Name="ItemSpacingSlider" OnChange="Parent.SettingsPage.ItemSpacingSlider.Value=Value" PackLocation="cfc,bottom" ScrollExtent="77,26" Size="77,26" Style="/CommonElements.Slider.data.style" UpperLimit="50" Value="1" />
+	<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="370,570" MaximumSize="137,16384" Name="ItemSpacingSliderValue" NumericInteger="true" OnChange="Parent.SettingsPage.ItemSpacingSliderValue.Value=Value" PackLocation="cfc,bottom" ScrollExtent="16,16" Size="16,16" Style="/CommonElements.Textbox.data.style" textalignment="Center" value="24" WrapWidth="Automatic">1</Textbox>
+	<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="464,565" MaxLines="1" Name="ItemSpacingSliderLabel" PackLocation="cfc,bottom" ScrollExtent="127,24" Size="127,24" TextAlignmentVertical="Center">Bar Item Spacing</Text>
+	<Page L2RFill="left2right_down" L2RR="0.000" MyCellSize="140,20" Name="SetVdir" OnShow="Parent.Set_ItemSortDirSet.Rotation=Parent.Set_ItemSortDirSet.T2B ? T2BR : L2RR&#xD;&#xA;Parent.SettingsPage.CellSize=MyCellSize&#xD;&#xA;Parent.SettingsPage.VolumeFill=Parent.Set_ItemSortDirSet.T2B ? T2BFill : L2RFill&#xD;&#xA;Visible=false" T2BFill="down_left2right" T2BR="0.250" Visible="false" />
+	<Icon Color="#FADA8A" IconRect="32,122,51,141" IconResource="images/widgets03.dds" LightC="#FFFFFF" Location="13,566" Name="Set_ItemSortDirSet" NormC="#FADA8A" OnHoverIn="Color=LightC" OnHoverOut="Color=NormC" OnPress="T2B='!'T2B&#xD;&#xA;Parent.SetVdir.Visible=true" PackLocation="left,bottom" Rotation="0.250" ScrollExtent="24,24" Size="24,24" Tooltip="List items across or down" TreatAsButton="true" T2B="true" />
+	<Page AbsorbsInput="false" Name="WindowFrame" PackSize="a,a" ScrollExtent="600,602" Size="600,602">
+		<Button Location="578,2" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":42aee8422d3f513f:Close" UserMovable="true" />
+		<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="600,20" Size="600,20">
+			<Text AbsorbsInput="false" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="3,0" Margin="8,0,0,0" MaxLines="1" Name="Title" PackSize="a,f" ScrollExtent="306,20" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="306,20" TextAlignmentVertical="Center" TextColor="#F0D080">ProfitUI BottomBar Setup</Text>
+			<Button Enabled="false" GetsInput="false" Location="1,0" Name="TitleBarBoxed" PackSize="a,f" ScrollExtent="597,20" Size="597,20" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarBoxed" />
+		</Page>
+		<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-10,-5" Name="Frame" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="620,620" Size="620,620" />
+		<Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-10,-5" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="620,620" Size="620,620" />
 	</Page>
 </Page>

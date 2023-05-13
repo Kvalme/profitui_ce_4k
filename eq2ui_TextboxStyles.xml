@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-    <Namespace Name="TextboxStyles">
-        <TextboxStyle CaratColor="#F1E823" CaratWidth="2" Name="chat_textbox" NormalTextStyle="/Fonts.FontArialBold15" RStyleDefault="/rectlist.win_background" SelectionColor="#A0A0A0" SelectionOpacity="1.000" TextColor="#FFFFFF" TextPadding="4,1,4,1" />
-        <TextboxStyle CaratColor="#F1E823" CaratWidth="2" Name="default_textbox" NormalTextStyle="/Fonts.FontArial14" RStyleDefault="/rectlist.win_background" SelectionColor="#A0A0A0" SelectionOpacity="1.000" TextColor="#FFFFFF" TextPadding="4,1,4,1" />
-        <TextboxStyle CaratColor="#FFFFFF" Cursor="Text" DisabledTextStyle="/Fonts.Font_Input" Name="simple_textbox" NormalTextStyle="/Fonts.Font_ChatInput" RStyleDefault="normal" SelectionColor="#808080" TextColor="#FFFFFF" />
-    </Namespace>

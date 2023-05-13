@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-    <Namespace Name="SplitterStyles">
-        <SplitterStyle Background="/imagelist.scroll_gold_middle" EndCap="/imagelist.scroll_gold_end" Name="horz_splitter_gold" StartCap="/imagelist.scroll_gold_start" />
-    </Namespace>

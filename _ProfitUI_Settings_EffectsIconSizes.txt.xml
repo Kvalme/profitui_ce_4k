@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-            <Page Name="EffectsIconSizes">
-                <Text Name="BeneficialEffectsIconSize">24</Text>
-                <Text Name="DetrimentalEffectsIconSize">24</Text>
-                <Text Name="TargetEffectsIconSize">15</Text>
-                <Text Name="ImpliedTargetEffectsIconSize">15</Text>
-            </Page>

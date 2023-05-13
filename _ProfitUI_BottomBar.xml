@@ -1,17 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Last update 2016-04-28 by user Zidu -->
 <!-- Added Resolve and removed item score. Adjusted display of Crit Bonus, Potency and Ability Mod -->
-
-<Page AlwaysOnBottom="true" eq2usescomwndcontrols="true" Location="0,748" MinimumSize="800,20" Name="ProfitUI_BottomBar" PackLocation="nfn,bottom" ScrollExtent="800,20" Size="800,20" UserMovable="true" UserResizable="true" OnShow="ShowWindows.Press=true" OnHide="Visible=true">
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="BarCoverBack" PackLocation="NFN,FFF" PackSize="absolute,absolute" ScrollExtent="800,20" Size="800,20" MaximumSize="3000,80">
-<Text Name="Countdown" Location="10,0" Size="250,20" TextAlignment="Center" TextAlignmentVertical="Center" Font="/ProfitUI_Styles.Fonts.FontArial14T">Bottom Bar visible in 20 seconds...</Text>
-<Button Enabled="false" GetsInput="false" Name="TitleBarCover" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull"></Button>
-<Button Enabled="false" Location="0,20" GetsInput="false" Name="TitleBar2Cover" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull"></Button>
-<Button Enabled="false" Location="0,40" GetsInput="false" Name="TitleBar3Cover" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull"></Button>
-<Button Enabled="false" Location="0,60" GetsInput="false" Name="TitleBar4Cover" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull"></Button>
+<Page AltFileName="_ProfitUI_BottomBar_ALT.xml" AlwaysOnBottom="true" eq2usescomwndcontrols="true" Location="0,20" MinimumSize="1040,26" Name="ProfitUI_BottomBar" PackLocation="nfn,bottom" ScrollExtent="1040,26" Size="1040,26" UserMovable="true" UserResizable="true" OnShow="ShowWindows.Press=true" OnHide="Visible=true">
+<Page AbsorbsInput="false" BackgroundOpacity="0.700" Name="BarCoverBack" PackLocation="NFN,FFF" PackSize="absolute,absolute" ScrollExtent="1040,26" Size="1040,26" MaximumSize="3900,104">
+	<Text Name="Countdown" Location="13,0" Size="325,26" TextAlignment="Center" TextAlignmentVertical="Center" Font="/TextStyles.Large.LargeStyle">Bottom Bar visible in 20 seconds...</Text>
+	<Button Enabled="false" GetsInput="false" Name="TitleBarCover" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull" Visible="false"></Button>
+	<Button Enabled="false" Location="0,20" GetsInput="false" Name="TitleBar2Cover" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull" Visible="false"></Button>
+	<Button Enabled="false" Location="0,40" GetsInput="false" Name="TitleBar3Cover" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull" Visible="false"></Button>
+	<Button Enabled="false" Location="0,60" GetsInput="false" Name="TitleBar4Cover" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull" Visible="false"></Button>
 </Page>
-
-<Text Opacity="0.000" AbsorbsInput="false" DynamicData="/GameData.General.Time" Font="/ProfitUI_Styles.Fonts.FontArial13T" Location="0,0" MaxLines="1" Name="Timer" Size="100,0" TruncateElipsis="false" OnTextChanged="Parent.SetDisplay.Press=true">20:24 PM</Text>
+<Text Opacity="0.000" AbsorbsInput="false" DynamicData="/GameData.General.Time" Font="/TextStyles.Chat.ChatStyle" Location="0,0" MaxLines="1" Name="Timer" Size="130,0" TruncateElipsis="false" OnTextChanged="Parent.SetDisplay.Press=true">20:24 PM</Text>
 <Button Name="ShowWindows" Size="0,0" OnPress="
 show_window Custom.ItemSpacingSet
 show_window Custom.ItemHoverSet
@@ -116,8 +114,9 @@ Parent.Parent.ProfitUI_BottomBar_Settings.SettingsPage.ItemSpacingSliderValue.Te
 Cond = Parent.Parent.ItemHoverSet.Height == 2
 Parent.Parent.ProfitUI_BottomBar_Settings.SettingsPage.Set_ItemHoverSet.Checked=COND
 Parent.Parent.ProfitUI_BottomBar_Settings.Set_ItemHoverSet.Checked=COND
-Cond = Parent.Parent.ItemSortDirSet.Height == 2
-Parent.Parent.ProfitUI_BottomBar_Settings.SettingsPage.Set_ItemSortDirSet.Checked=COND
+COND = Parent.Parent.ItemSortDirSet.Height == 2
+Parent.Parent.ProfitUI_BottomBar_Settings.Set_ItemSortDirSet.T2B=COND
+Parent.Parent.ProfitUI_BottomBar_Settings.SetVdir.Visible=true
 Cond = Parent.Parent.Item01.Height == 2
 Parent.Parent.ProfitUI_BottomBar_Settings.SettingsPage.Set_Item01.Checked=COND
 Cond = Parent.Parent.Item02.Height == 2
@@ -308,1203 +307,1023 @@ Parent.ShowWindows.Press=true
 Parent.SetDisplay1.Press=true
 Parent.SetDisplay1.Press=true
 "/>
-<Button Name="SetDisplay1" Size="0,0" OnPress="
+<Button ItemHeight="26" Name="SetDisplay1" Size="0,0" OnPress="
 ItemSpacing = Parent.Parent.ItemSpacingSet.Height
 CurrentLocation = 0
 CurrTopVal =  0
 ButtonTextAreaWidth = Parent.Width - 24
-
 Cond = Parent.Parent.Item01.Height == 2
 Parent.BarItems.Item01.Size=COND ? Parent.BarItems.Item01.VisSize : Parent.BarItems.Item01.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item01.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item01.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item01.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item02.Height == 2
 Parent.BarItems.Item02.Size=COND ? Parent.BarItems.Item02.VisSize : Parent.BarItems.Item02.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item02.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item02.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item02.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item03.Height == 2
 Parent.BarItems.Item03.Size=COND ? Parent.BarItems.Item03.VisSize : Parent.BarItems.Item03.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item03.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item03.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item03.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item04.Height == 2
 Parent.BarItems.Item04.Size=COND ? Parent.BarItems.Item04.VisSize : Parent.BarItems.Item04.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item04.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item04.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item04.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider1.Height == 2
 Parent.BarItems.Divider1.Size=COND ? Parent.BarItems.Divider1.VisSize : Parent.BarItems.Divider1.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider1.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider1.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider1.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item05.Height == 2
 Parent.BarItems.Item05.Size=COND ? Parent.BarItems.Item05.VisSize : Parent.BarItems.Item05.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item05.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item05.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item05.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item06.Height == 2
 Parent.BarItems.Item06.Size=COND ? Parent.BarItems.Item06.VisSize : Parent.BarItems.Item06.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item06.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item06.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item06.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item07.Height == 2
 Parent.BarItems.Item07.Size=COND ? Parent.BarItems.Item07.VisSize : Parent.BarItems.Item07.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item07.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item07.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item07.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item08.Height == 2
 Parent.BarItems.Item08.Size=COND ? Parent.BarItems.Item08.VisSize : Parent.BarItems.Item08.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item08.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item08.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item08.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item09.Height == 2
 Parent.BarItems.Item09.Size=COND ? Parent.BarItems.Item09.VisSize : Parent.BarItems.Item09.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item09.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item09.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item09.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider2.Height == 2
 Parent.BarItems.Divider2.Size=COND ? Parent.BarItems.Divider2.VisSize : Parent.BarItems.Divider2.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider2.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider2.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider2.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item10.Height == 2
 Parent.BarItems.Item10.Size=COND ? Parent.BarItems.Item10.VisSize : Parent.BarItems.Item10.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item10.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item10.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item10.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item11.Height == 2
 Parent.BarItems.Item11.Size=COND ? Parent.BarItems.Item11.VisSize : Parent.BarItems.Item11.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item11.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item11.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item11.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item12.Height == 2
 Parent.BarItems.Item12.Size=COND ? Parent.BarItems.Item12.VisSize : Parent.BarItems.Item12.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item12.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item12.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item12.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item13.Height == 2
 Parent.BarItems.Item13.Size=COND ? Parent.BarItems.Item13.VisSize : Parent.BarItems.Item13.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item13.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item13.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item13.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item14.Height == 2
 Parent.BarItems.Item14.Size=COND ? Parent.BarItems.Item14.VisSize : Parent.BarItems.Item14.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item14.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item14.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item14.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item15.Height == 2
 Parent.BarItems.Item15.Size=COND ? Parent.BarItems.Item15.VisSize : Parent.BarItems.Item15.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item15.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item15.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item15.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item16.Height == 2
 Parent.BarItems.Item16.Size=COND ? Parent.BarItems.Item16.VisSize : Parent.BarItems.Item16.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item16.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item16.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item16.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item17.Height == 2
 Parent.BarItems.Item17.Size=COND ? Parent.BarItems.Item17.VisSize : Parent.BarItems.Item17.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item17.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item17.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item17.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item18.Height == 2
 Parent.BarItems.Item18.Size=COND ? Parent.BarItems.Item18.VisSize : Parent.BarItems.Item18.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item18.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item18.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item18.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item19.Height == 2
 Parent.BarItems.Item19.Size=COND ? Parent.BarItems.Item19.VisSize : Parent.BarItems.Item19.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item19.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item19.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item19.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item20.Height == 2
 Parent.BarItems.Item20.Size=COND ? Parent.BarItems.Item20.VisSize : Parent.BarItems.Item20.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item20.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item20.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item20.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider3.Height == 2
 Parent.BarItems.Divider3.Size=COND ? Parent.BarItems.Divider3.VisSize : Parent.BarItems.Divider3.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider3.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider3.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider3.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item21.Height == 2
 Parent.BarItems.Item21.Size=COND ? Parent.BarItems.Item21.VisSize : Parent.BarItems.Item21.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item21.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item21.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item21.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item22.Height == 2
 Parent.BarItems.Item22.Size=COND ? Parent.BarItems.Item22.VisSize : Parent.BarItems.Item22.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item22.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item22.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item22.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item23.Height == 2
 Parent.BarItems.Item23.Size=COND ? Parent.BarItems.Item23.VisSize : Parent.BarItems.Item23.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item23.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item23.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item23.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item24.Height == 2
 Parent.BarItems.Item24.Size=COND ? Parent.BarItems.Item24.VisSize : Parent.BarItems.Item24.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item24.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item24.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item24.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item25.Height == 2
 Parent.BarItems.Item25.Size=COND ? Parent.BarItems.Item25.VisSize : Parent.BarItems.Item25.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item25.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item25.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item25.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item26.Height == 2
 Parent.BarItems.Item26.Size=COND ? Parent.BarItems.Item26.VisSize : Parent.BarItems.Item26.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item26.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item26.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item26.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item75.Height == 2
 Parent.BarItems.Item75.Size=COND ? Parent.BarItems.Item75.VisSize : Parent.BarItems.Item75.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item75.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item75.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item75.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item76.Height == 2
 Parent.BarItems.Item76.Size=COND ? Parent.BarItems.Item76.VisSize : Parent.BarItems.Item76.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item76.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item76.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item76.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider4.Height == 2
 Parent.BarItems.Divider4.Size=COND ? Parent.BarItems.Divider4.VisSize : Parent.BarItems.Divider4.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider4.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider4.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider4.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item56.Height == 2
 Parent.BarItems.Item56.Size=COND ? Parent.BarItems.Item56.VisSize : Parent.BarItems.Item56.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item56.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item56.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item56.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item27.Height == 2
 Parent.BarItems.Item27.Size=COND ? Parent.BarItems.Item27.VisSize : Parent.BarItems.Item27.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item27.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item27.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item27.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item28.Height == 2
 Parent.BarItems.Item28.Size=COND ? Parent.BarItems.Item28.VisSize : Parent.BarItems.Item28.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item28.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item28.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item28.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item29.Height == 2
 Parent.BarItems.Item29.Size=COND ? Parent.BarItems.Item29.VisSize : Parent.BarItems.Item29.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item29.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item29.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item29.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item30.Height == 2
 Parent.BarItems.Item30.Size=COND ? Parent.BarItems.Item30.VisSize : Parent.BarItems.Item30.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item30.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item30.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item30.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item31.Height == 2
 Parent.BarItems.Item31.Size=COND ? Parent.BarItems.Item31.VisSize : Parent.BarItems.Item31.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item31.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item31.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item31.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item32.Height == 2
 Parent.BarItems.Item32.Size=COND ? Parent.BarItems.Item32.VisSize : Parent.BarItems.Item32.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item32.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item32.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item32.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider5.Height == 2
 Parent.BarItems.Divider5.Size=COND ? Parent.BarItems.Divider5.VisSize : Parent.BarItems.Divider5.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider5.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider5.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider5.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item33.Height == 2
 Parent.BarItems.Item33.Size=COND ? Parent.BarItems.Item33.VisSize : Parent.BarItems.Item33.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item33.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item33.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item33.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item34.Height == 2
 Parent.BarItems.Item34.Size=COND ? Parent.BarItems.Item34.VisSize : Parent.BarItems.Item34.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item34.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item34.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item34.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item35.Height == 2
 Parent.BarItems.Item35.Size=COND ? Parent.BarItems.Item35.VisSize : Parent.BarItems.Item35.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item35.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item35.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item35.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider6.Height == 2
 Parent.BarItems.Divider6.Size=COND ? Parent.BarItems.Divider6.VisSize : Parent.BarItems.Divider6.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider6.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider6.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider6.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item38.Height == 2
 Parent.BarItems.Item38.Size=COND ? Parent.BarItems.Item38.VisSize : Parent.BarItems.Item38.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item38.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item38.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item38.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item40.Height == 2
 Parent.BarItems.Item40.Size=COND ? Parent.BarItems.Item40.VisSize : Parent.BarItems.Item40.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item40.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item40.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item40.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item41.Height == 2
 Parent.BarItems.Item41.Size=COND ? Parent.BarItems.Item41.VisSize : Parent.BarItems.Item41.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item41.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item41.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item41.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item42.Height == 2
 Parent.BarItems.Item42.Size=COND ? Parent.BarItems.Item42.VisSize : Parent.BarItems.Item42.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item42.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item42.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item42.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item43.Height == 2
 Parent.BarItems.Item43.Size=COND ? Parent.BarItems.Item43.VisSize : Parent.BarItems.Item43.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item43.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item43.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item43.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider7.Height == 2
 Parent.BarItems.Divider7.Size=COND ? Parent.BarItems.Divider7.VisSize : Parent.BarItems.Divider7.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider7.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider7.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider7.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item45.Height == 2
 Parent.BarItems.Item45.Size=COND ? Parent.BarItems.Item45.VisSize : Parent.BarItems.Item45.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item45.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item45.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item45.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item85.Height == 2
 Parent.BarItems.Item85.Size=COND ? Parent.BarItems.Item85.VisSize : Parent.BarItems.Item85.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item85.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item85.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item85.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item46.Height == 2
 Parent.BarItems.Item46.Size=COND ? Parent.BarItems.Item46.VisSize : Parent.BarItems.Item46.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item46.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item46.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item46.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item83.Height == 2
 Parent.BarItems.Item83.Size=COND ? Parent.BarItems.Item83.VisSize : Parent.BarItems.Item83.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item83.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item83.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item83.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item84.Height == 2
 Parent.BarItems.Item84.Size=COND ? Parent.BarItems.Item84.VisSize : Parent.BarItems.Item84.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item84.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item84.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item84.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider8.Height == 2
 Parent.BarItems.Divider8.Size=COND ? Parent.BarItems.Divider8.VisSize : Parent.BarItems.Divider8.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider8.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider8.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider8.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item47.Height == 2
 Parent.BarItems.Item47.Size=COND ? Parent.BarItems.Item47.VisSize : Parent.BarItems.Item47.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item47.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item47.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item47.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item48.Height == 2
 Parent.BarItems.Item48.Size=COND ? Parent.BarItems.Item48.VisSize : Parent.BarItems.Item48.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item48.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item48.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item48.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item44.Height == 2
 Parent.BarItems.Item44.Size=COND ? Parent.BarItems.Item44.VisSize : Parent.BarItems.Item44.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item44.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item44.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item44.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item49.Height == 2
 Parent.BarItems.Item49.Size=COND ? Parent.BarItems.Item49.VisSize : Parent.BarItems.Item49.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item49.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item49.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item49.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item50.Height == 2
 Parent.BarItems.Item50.Size=COND ? Parent.BarItems.Item50.VisSize : Parent.BarItems.Item50.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item50.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item50.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item50.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider12.Height == 2
 Parent.BarItems.Divider12.Size=COND ? Parent.BarItems.Divider12.VisSize : Parent.BarItems.Divider12.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider12.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider12.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider12.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item51.Height == 2
 Parent.BarItems.Item51.Size=COND ? Parent.BarItems.Item51.VisSize : Parent.BarItems.Item51.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item51.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item51.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item51.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item52.Height == 2
 Parent.BarItems.Item52.Size=COND ? Parent.BarItems.Item52.VisSize : Parent.BarItems.Item52.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item52.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item52.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item52.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item53.Height == 2
 Parent.BarItems.Item53.Size=COND ? Parent.BarItems.Item53.VisSize : Parent.BarItems.Item53.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item53.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item53.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item53.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item54.Height == 2
 Parent.BarItems.Item54.Size=COND ? Parent.BarItems.Item54.VisSize : Parent.BarItems.Item54.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item54.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item54.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item54.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item55.Height == 2
 Parent.BarItems.Item55.Size=COND ? Parent.BarItems.Item55.VisSize : Parent.BarItems.Item55.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item55.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item55.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item55.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider11.Height == 2
 Parent.BarItems.Divider11.Size=COND ? Parent.BarItems.Divider11.VisSize : Parent.BarItems.Divider10.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider11.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider11.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider11.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item57.Height == 2
 Parent.BarItems.Item57.Size=COND ? Parent.BarItems.Item57.VisSize : Parent.BarItems.Item57.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item57.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item57.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item57.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item58.Height == 2
 Parent.BarItems.Item58.Size=COND ? Parent.BarItems.Item58.VisSize : Parent.BarItems.Item58.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item58.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item58.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item58.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item59.Height == 2
 Parent.BarItems.Item59.Size=COND ? Parent.BarItems.Item59.VisSize : Parent.BarItems.Item59.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item59.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item59.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item59.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
 Cond = Parent.Parent.Item86.Height == 2
 Parent.BarItems.Item86.Size=COND ? Parent.BarItems.Item86.VisSize : Parent.BarItems.Item86.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item86.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item86.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item86.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item60.Height == 2
 Parent.BarItems.Item60.Size=COND ? Parent.BarItems.Item60.VisSize : Parent.BarItems.Item60.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item60.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item60.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item60.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider9.Height == 2
 Parent.BarItems.Divider9.Size=COND ? Parent.BarItems.Divider9.VisSize : Parent.BarItems.Divider9.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider9.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider9.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider9.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item61.Height == 2
 Parent.BarItems.Item61.Size=COND ? Parent.BarItems.Item61.VisSize : Parent.BarItems.Item61.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item61.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item61.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item61.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item62.Height == 2
 Parent.BarItems.Item62.Size=COND ? Parent.BarItems.Item62.VisSize : Parent.BarItems.Item62.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item62.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item62.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item62.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item63.Height == 2
 Parent.BarItems.Item63.Size=COND ? Parent.BarItems.Item63.VisSize : Parent.BarItems.Item63.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item63.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item63.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item63.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item64.Height == 2
 Parent.BarItems.Item64.Size=COND ? Parent.BarItems.Item64.VisSize : Parent.BarItems.Item64.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item64.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item64.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item64.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item65.Height == 2
 Parent.BarItems.Item65.Size=COND ? Parent.BarItems.Item65.VisSize : Parent.BarItems.Item65.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item65.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item65.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item65.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item66.Height == 2
 Parent.BarItems.Item66.Size=COND ? Parent.BarItems.Item66.VisSize : Parent.BarItems.Item66.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item66.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item66.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item66.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
 Cond = Parent.Parent.Divider10.Height == 2
 Parent.BarItems.Divider10.Size=COND ? Parent.BarItems.Divider10.VisSize : Parent.BarItems.Divider10.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider10.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider10.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider10.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item67.Height == 2
 Parent.BarItems.Item67.Size=COND ? Parent.BarItems.Item67.VisSize : Parent.BarItems.Item67.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item67.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item67.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item67.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item68.Height == 2
 Parent.BarItems.Item68.Size=COND ? Parent.BarItems.Item68.VisSize : Parent.BarItems.Item68.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item68.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item68.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item68.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item69.Height == 2
 Parent.BarItems.Item69.Size=COND ? Parent.BarItems.Item69.VisSize : Parent.BarItems.Item63.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item69.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item69.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item69.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item70.Height == 2
 Parent.BarItems.Item70.Size=COND ? Parent.BarItems.Item64.VisSize : Parent.BarItems.Item70.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item70.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item70.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item70.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Divider13.Height == 2
 Parent.BarItems.Divider13.Size=COND ? Parent.BarItems.Divider13.VisSize : Parent.BarItems.Divider13.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Divider13.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Divider13.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Divider13.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
 Cond = Parent.Parent.Item37.Height == 2
 Parent.BarItems.Item37.Size=COND ? Parent.BarItems.Item37.VisSize : Parent.BarItems.Item37.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item37.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item37.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item37.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item71.Height == 2
 Parent.BarItems.Item71.Size=COND ? Parent.BarItems.Item71.VisSize : Parent.BarItems.Item71.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item71.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item71.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item71.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item72.Height == 2
 Parent.BarItems.Item72.Size=COND ? Parent.BarItems.Item72.VisSize : Parent.BarItems.Item72.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item72.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item72.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item72.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item73.Height == 2
 Parent.BarItems.Item73.Size=COND ? Parent.BarItems.Item73.VisSize : Parent.BarItems.Item73.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item73.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item73.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item73.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
-
 Cond = Parent.Parent.Item74.Height == 2
 Parent.BarItems.Item74.Size=COND ? Parent.BarItems.Item74.VisSize : Parent.BarItems.Item74.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item74.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item74.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item74.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
 Cond = Parent.Parent.Item77.Height == 2
 Parent.BarItems.Item77.Size=COND ? Parent.BarItems.Item77.VisSize : Parent.BarItems.Item77.HidSize
 TempCurrentLocation = CurrentLocation + Parent.BarItems.Item77.Width
 ThisCurrentLocation = Cond ? TempCurrentLocation : CurrentLocation
 EndBar= ThisCurrentLocation '>=' ButtonTextAreaWidth
-NewTopVal=CurrTopVal+20
+NewTopVal=CurrTopVal+ItemHeight
 CurrTopVal= EndBar ? NewTopVal : CurrTopVal
 CurrentLocation= EndBar ? 0 : CurrentLocation
 Parent.BarItems.Item77.Location = CurrentLocation ## ',' ## CurrTopVal
 AddSpacing = CurrentLocation + Parent.BarItems.Item77.Width + ItemSpacing
 CurrentLocation=COND ? AddSpacing : CurrentLocation
-
 NCOND = (Parent.WC_Backdrop.Height == 20)
 TCOND = (CurrTopVal >= 1)
 PCOND = (Parent.Parent.ItemHoverSet.Height == 2)
@@ -1512,7 +1331,6 @@ HCOND = PCOND &amp;&amp; TCOND &amp;&amp; NCOND
 Parent.BarItems.Top = HIVAL
 Parent.BarItems.OnHoverIn = HCOND ? 'Top = -20' : ' '
 Parent.BarItems.OnHoverOut = HCOND ? 'Top = 0' : ' '
-
 Parent.ClearTimerCheck.Press=true
 "/>
 <Button Size="0,0" Name="ClearTimerCheck" iter="20" CTText="Parent.Timer.OnTextChanged=' ' Parent.BarCoverBack.Visible=False Parent.BarCoverBack.Countdown.Visible=False" OnPress="
@@ -1525,375 +1343,373 @@ Parent.ClearTimer.Press=true
 " />
 <Button Size="0,0" Name="ClearTimer" iter="0" OnPress="
 " />
-
-	<Page AbsorbsInput="true" BackgroundOpacity="0.000" Name="BarItems" Location="12,0" Packsize="a,a" PackLocation="NFN,FFF" ScrollExtent="776,20" ScrollSize="776,40" Size="776,40" UserScollable="False" MaximumSize="3000,100" OnSize="Parent.SetDisplay.Press=true">
-
-		<Page Size="0,0" VisSize="90,20" HidSize="0,0" Name="Item01">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="20,20">PP:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="20,0" Size="70,20" DynamicData="/GameData.Coins.Coin_3">10000</Text>
-		</Page>
-		<Page Size="0,0" VisSize="34,20" HidSize="0,0" Name="Item02">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="18,20">GP:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="20,0" Size="14,20" DynamicData="/GameData.Coins.Coin_2">88</Text>
-		</Page>
-		<Page Size="0,0" VisSize="34,20" HidSize="0,0" Name="Item03">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="18,20">SP:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="20,0" Size="14,20" DynamicData="/GameData.Coins.Coin_1">88</Text>
-		</Page>
-		<Page Size="0,0" VisSize="34,20" HidSize="0,0" Name="Item04">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="18,20">CP:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="20,0" Size="14,20" DynamicData="/GameData.Coins.Coin_0">88</Text>
-		</Page>
-		<Page Size="0,0" VisSize="67,20" HidSize="0,0" Name="Item05">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="22,20">Sta:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="24,0" Size="45,20" DynamicData="/GameData.Stats.Stamina">88888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="67,20" HidSize="0,0" Name="Item06">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="22,20">Str:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="24,0" Size="45,20" DynamicData="/GameData.Stats.Strength">88888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="67,20" HidSize="0,0" Name="Item07">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="22,20">Agi:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="24,0" Size="45,20" DynamicData="/GameData.Stats.Agility">88888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="67,20" HidSize="0,0" Name="Item08">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="22,20">Wis:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="24,0" Size="45,20" DynamicData="/GameData.Stats.Wisdom">88888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="67,20" HidSize="0,0" Name="Item09">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="22,20">Int:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="24,0" Size="45,20" DynamicData="/GameData.Stats.Intelligence">88888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="52,20" HidSize="0,0" Name="Item10">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,20">A.Lvl:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="21,20" DynamicData="/GameData.Self.Level">100</Text>
-		</Page>
-		<Page Size="0,0" VisSize="69,20" HidSize="0,0" Name="Item11">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">A.XP:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="37,20" DynamicData="/GameData.Self.ExperienceCurrent">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="68,20" HidSize="0,0" Name="Item12">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,20">A.Vit:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="37,20" DynamicData="/GameData.Self.Vitality">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="77,20" HidSize="0,0" Name="Item13">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,20">A.Debt:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="37,20" DynamicData="/GameData.Self.ExperienceDebtCurrent">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="52,20" HidSize="0,0" Name="Item14">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,20">T.Lvl:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="21,20" DynamicData="/GameData.Self.TradeskillLevel">100</Text>
-		</Page>
-		<Page Size="0,0" VisSize="69,20" HidSize="0,0" Name="Item15">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">T.XP:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="37,20" DynamicData="/GameData.Self.TradeskillExperienceCurrent">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="68,20" HidSize="0,0" Name="Item16">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,20">T.Vit:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="37,20" DynamicData="/GameData.Self.TSVitality">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="72,20" HidSize="0,0" Name="Item17">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="18,20">AA:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value1" TextAlignment="Right" Location="20,0" Size="21,20" DynamicData="/GameData.Achievement.AvailablePoints">888</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Valuea" TextAlignment="Center" Location="42,0" Size="8,20">/</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value2" TextAlignment="Left" Location="51,0" Size="21,20" DynamicData="/GameData.Achievement.Points">888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="75,20" HidSize="0,0" Name="Item18">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="36,20">AA XP:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="38,0" Size="37,20" DynamicData="/GameData.Achievement.ExperienceCurrent">88.8%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="52,20" HidSize="0,0" Name="Item19">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,20">G.Lvl:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="21,20" DynamicData="/GameData.Guild.Level">100</Text>
-		</Page>
-		<Page Size="0,0" VisSize="69,20" HidSize="0,0" Name="Item20">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">G.XP:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="37,20" DynamicData="/GameData.Guild.ExperienceFull">88.8%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="99,20" HidSize="0,0" Name="Item21">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">TS.CS Mod:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="62,0" Size="37,20" DynamicData="/GameData.Tradeskills.critsuccessmod">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="99,20" HidSize="0,0" Name="Item22">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">TS.SC Mod:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="62,0" Size="37,20" DynamicData="/GameData.Tradeskills.successmod">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="83,20" HidSize="0,0" Name="Item23">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">TS.PG Add:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="62,0" Size="21,20" DynamicData="/GameData.Tradeskills.progressadd">888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="99,20" HidSize="0,0" Name="Item24">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">TS.PG Mod:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="62,0" Size="37,20" DynamicData="/GameData.Tradeskills.progressmod">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="83,20" HidSize="0,0" Name="Item25">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">TS.DB Add:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="62,0" Size="21,20" DynamicData="/GameData.Tradeskills.durabilityadd">888</Text>
+	<Page AbsorbsInput="true" BackgroundOpacity="0.000" Name="BarItems" Location="16,2" Packsize="a,a" PackLocation="NFN,FFF" ScrollExtent="1009,26" ScrollSize="776,40" Size="1009,52" UserScollable="False" MaximumSize="3900,130" OnSize="Parent.SetDisplay.Press=true">
+		<Page Size="0,0" VisSize="95,26" HidSize="0,0" Name="Item01">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="23,26">PP:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="26,0" Size="70,26" DynamicData="/GameData.Coins.Coin_3">10000</Text>
+		</Page>
+		<Page Size="0,0" VisSize="44,26" HidSize="0,0" Name="Item02">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="23,26">GP:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="26,0" Size="18,26" DynamicData="/GameData.Coins.Coin_2">88</Text>
+		</Page>
+		<Page Size="0,0" VisSize="44,26" HidSize="0,0" Name="Item03">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="23,26">SP:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="26,0" Size="18,26" DynamicData="/GameData.Coins.Coin_1">88</Text>
+		</Page>
+		<Page Size="0,0" VisSize="44,26" HidSize="0,0" Name="Item04">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="23,26">CP:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="26,0" Size="18,26" DynamicData="/GameData.Coins.Coin_0">88</Text>
+		</Page>
+		<Page Size="0,0" VisSize="87,26" HidSize="0,0" Name="Item05">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,26">Sta:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="58,26" DynamicData="/GameData.Stats.Stamina">88888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="87,26" HidSize="0,0" Name="Item06">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,26">Str:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="58,26" DynamicData="/GameData.Stats.Strength">88888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="87,26" HidSize="0,0" Name="Item07">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,26">Agi:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="58,26" DynamicData="/GameData.Stats.Agility">88888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="87,26" HidSize="0,0" Name="Item08">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,26">Wis:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="58,26" DynamicData="/GameData.Stats.Wisdom">88888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="87,26" HidSize="0,0" Name="Item09">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,26">Int:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="58,26" DynamicData="/GameData.Stats.Intelligence">88888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="68,26" HidSize="0,0" Name="Item10">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,26">A.Lvl:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="27,26" DynamicData="/GameData.Self.Level">100</Text>
+		</Page>
+		<Page Size="0,0" VisSize="90,26" HidSize="0,0" Name="Item11">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="39,26">A.XP:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="42,0" Size="48,26" DynamicData="/GameData.Self.ExperienceCurrent">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="88,26" HidSize="0,0" Name="Item12">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,26">A.Vit:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="48,26" DynamicData="/GameData.Self.Vitality">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="100,26" HidSize="0,0" Name="Item13">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="49,26">A.Debt:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="52,0" Size="48,26" DynamicData="/GameData.Self.ExperienceDebtCurrent">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="68,26" HidSize="0,0" Name="Item14">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,26">T.Lvl:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="27,26" DynamicData="/GameData.Self.TradeskillLevel">100</Text>
+		</Page>
+		<Page Size="0,0" VisSize="90,26" HidSize="0,0" Name="Item15">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="39,26">T.XP:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="42,0" Size="48,26" DynamicData="/GameData.Self.TradeskillExperienceCurrent">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="88,26" HidSize="0,0" Name="Item16">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,26">T.Vit:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="48,26" DynamicData="/GameData.Self.TSVitality">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="94,26" HidSize="0,0" Name="Item17">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="23,26">AA:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value1" TextAlignment="Right" Location="26,0" Size="27,26" DynamicData="/GameData.Achievement.AvailablePoints">888</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Valuea" TextAlignment="Center" Location="55,0" Size="10,26">/</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value2" TextAlignment="Left" Location="66,0" Size="27,26" DynamicData="/GameData.Achievement.Points">888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="97,26" HidSize="0,0" Name="Item18">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="47,26">AA XP:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="49,0" Size="48,26" DynamicData="/GameData.Achievement.ExperienceCurrent">88.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="68,26" HidSize="0,0" Name="Item19">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,26">G.Lvl:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="27,26" DynamicData="/GameData.Guild.Level">100</Text>
+		</Page>
+		<Page Size="0,0" VisSize="90,26" HidSize="0,0" Name="Item20">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="39,26">G.XP:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="42,0" Size="48,26" DynamicData="/GameData.Guild.ExperienceFull">88.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="129,26" HidSize="0,0" Name="Item21">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="78,26">TS.CS Mod:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="81,0" Size="48,26" DynamicData="/GameData.Tradeskills.critsuccessmod">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="129,26" HidSize="0,0" Name="Item22">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="78,26">TS.SC Mod:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="81,0" Size="48,26" DynamicData="/GameData.Tradeskills.successmod">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="108,26" HidSize="0,0" Name="Item23">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="78,26">TS.PG Add:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="81,0" Size="27,26" DynamicData="/GameData.Tradeskills.progressadd">888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="129,26" HidSize="0,0" Name="Item24">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="78,26">TS.PG Mod:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="81,0" Size="48,26" DynamicData="/GameData.Tradeskills.progressmod">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="108,26" HidSize="0,0" Name="Item25">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="78,26">TS.DB Add:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="81,0" Size="27,26" DynamicData="/GameData.Tradeskills.durabilityadd">888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="129,26" HidSize="0,0" Name="Item26">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="78,26">TS.DB Mod:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="81,0" Size="48,26" DynamicData="/GameData.Tradeskills.durabilitymod">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="87,26" HidSize="0,0" Name="Item27">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="36,26">Run:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="39,0" Size="48,26" DynamicData="/GameData.Stats.Run_Speed">100.0%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="117,26" HidSize="0,0" Name="Item28">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="45,26">Status:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="48,0" Size="68,26" DynamicData="/GameData.Stats.CurrentStatus">8888888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="124,26" HidSize="0,0" Name="Item29">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="26,26">HP:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Top" MaxLines="2" Name="Value" TextAlignment="Left" Location="29,4" ScrollExtent="100,52" Size="100,26" DynamicData="/GameData.Stats.HealthRange">88888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="110,26" HidSize="0,0" Name="Item30">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="45,26">H.Rgn:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="48,0" Size="62,26" DynamicData="/GameData.Stats.HP_Regen">8888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="124,26" HidSize="0,0" Name="Item31">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="31,26">Pwr:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Top" MaxLines="2" Name="Value" TextAlignment="Left" Location="34,4" ScrollExtent="100,52" Size="100,26" DynamicData="/GameData.Stats.PowerRange">88888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="110,26" HidSize="0,0" Name="Item32">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="45,26">P.Rgn:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="48,0" Size="62,26" DynamicData="/GameData.Stats.Power_Regen">8888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="91,26" HidSize="0,0" Name="Item33">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="36,26">Arcn:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="39,0" Size="78,26" DynamicData="/GameData.Stats.Arcane">888888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="91,26" HidSize="0,0" Name="Item34">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="36,26">Elmt:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="39,0" Size="78,26" DynamicData="/GameData.Stats.Elemental">888888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="91,26" HidSize="0,0" Name="Item35">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,26">Nox:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="78,26" DynamicData="/GameData.Stats.Noxious">888888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="86,26" HidSize="0,0" Name="Item37">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="47,26">Tough:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="49,0" Size="36,26" DynamicData="/GameData.Stats.Defense_Toughness">8888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="113,26" HidSize="0,0" Name="Item38">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="61,26">HateMod:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="64,0" Size="62,26" DynamicData="/GameData.Stats.Hate_Mod">8888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="123,26" HidSize="0,0" Name="Item40">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="61,26">Resolve:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="64,0" Size="62,26" DynamicData="/GameData.Stats.Resolve">10000</Text>
+		</Page>
+		<Page Size="0,0" VisSize="70,26" HidSize="0,0" Name="Item41">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="25,26">Mit:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="27,0" Size="43,26" DynamicData="/GameData.Stats.Defense_Mitigation">88888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="74,26" HidSize="0,0" Name="Item42">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,26">Avd:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="43,26" DynamicData="/GameData.Stats.Defense_Avoidance">88888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="95,26" HidSize="0,0" Name="Item43">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="43,26">Shield:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="45,0" Size="49,26" DynamicData="/GameData.Stats.Shield_Effectiveness">888.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="101,26" HidSize="0,0" Name="Item45">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="49,26">SP. DA:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="52,0" Size="49,26" DynamicData="/GameData.Stats.SpellDoubleAttack">888.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="101,26" HidSize="0,0" Name="Item85">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="49,26">AB. DA:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="52,0" Size="49,26" DynamicData="/GameData.Stats.AbilityDoubleAttack">888.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="101,26" HidSize="0,0" Name="Item46">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="49,26">Fervor:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="52,0" Size="49,26" DynamicData="/GameData.Stats.Fervor">888.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="88,26" HidSize="0,0" Name="Item47">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="36,26">DPS:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="39,0" Size="49,26" DynamicData="/GameData.Stats.DPS">888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="86,26" HidSize="0,0" Name="Item48">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="34,26">HST:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="36,0" Size="49,26" DynamicData="/GameData.Stats.Haste">888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="82,26" HidSize="0,0" Name="Item44">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,26">Cst:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="49,26" DynamicData="/GameData.Stats.Spell_Cast_Percent">188.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="79,26" HidSize="0,0" Name="Item49">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="27,26">RU:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="30,0" Size="49,26" DynamicData="/GameData.Stats.Spell_Reuse_Percent">188.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="82,26" HidSize="0,0" Name="Item50">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,26">Rec:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="49,26" DynamicData="/GameData.Stats.Spell_Recovery_Percent">188.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="110,26" HidSize="0,0" Name="Item51">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="44,26">Crit:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="47,0" Size="65,26" DynamicData="/GameData.Stats.Crit_Chance">888.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="110,26" HidSize="0,0" Name="Item52">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="44,26">C.Bon:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="47,0" Size="65,26" DynamicData="/GameData.Stats.Crit_Bonus">188.8</Text>
+		</Page>
+		<Page Size="0,0" VisSize="115,26" HidSize="0,0" Name="Item53">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="47,26">A.Mod:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="49,0" Size="70,26" DynamicData="/GameData.Stats.Ability_Mod">888888</Text>
+		</Page>
+		<Page Size="0,0" VisSize="110,26" HidSize="0,0" Name="Item54">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="27,26">Pot:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="30,0" Size="80,26" DynamicData="/GameData.Stats.Potency">188.8</Text>
+		</Page>
+		<Page Size="0,0" VisSize="77,26" HidSize="0,0" Name="Item55">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="25,26">MA:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="27,0" Size="49,26" DynamicData="/GameData.Stats.Double_Atk_Percent">888.8%</Text>
+		</Page>
+		<Page Size="0,0" VisSize="91,26" HidSize="0,0" Name="Item56">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="39,26">Conc:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="42,0" Size="49,26" DynamicData="/GameData.Stats.ConcentrationRange">5/5</Text>
 		</Page>
-		<Page Size="0,0" VisSize="99,20" HidSize="0,0" Name="Item26">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">TS.DB Mod:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="62,0" Size="37,20" DynamicData="/GameData.Tradeskills.durabilitymod">100.0%</Text>
+		<Page Size="0,0" VisSize="108,26" HidSize="0,0" Name="Item57">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="56,26">AEAuto:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="58,0" Size="49,26" DynamicData="/GameData.Stats.AE_AutoAtk_Percent">188.8%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="67,20" HidSize="0,0" Name="Item27">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="28,20">Run:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="30,0" Size="37,20" DynamicData="/GameData.Stats.Run_Speed">100.0%</Text>
+		<Page Size="0,0" VisSize="78,26" HidSize="0,0" Name="Item58">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="26,26">Acc:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="29,0" Size="49,26" DynamicData="/GameData.Stats.Accuracy">188.8%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="90,20" HidSize="0,0" Name="Item28">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="35,20">Status:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="37,0" Size="55,20" DynamicData="/GameData.Stats.CurrentStatus">8888888</Text>
+		<Page Size="0,0" VisSize="75,26" HidSize="0,0" Name="Item59">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="23,26">Flr:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="26,0" Size="49,26" DynamicData="/GameData.Stats.Flurry">188.8%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="100,20" HidSize="0,0" Name="Item29">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="20,20">HP:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Top" MaxLines="2" Name="Value" TextAlignment="Left" Location="22,3" ScrollExtent="80,40" Size="80,16" DynamicData="/GameData.Stats.HealthRange" UserScrollable="false">9,999,999,999</Text>
+		<Page Size="0,0" VisSize="78,26" HidSize="0,0" Name="Item60">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="26,26">Stk:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="29,0" Size="49,26" DynamicData="/GameData.Stats.Strikethrough">188.8%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="95,20" HidSize="0,0" Name="Item30">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="35,20">H.Rgn:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="37,0" Size="60,20" DynamicData="/GameData.Stats.HP_Regen">8888</Text>
+		<Page Size="0,0" VisSize="156,26" HidSize="0,0" Name="Item61">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="49,26">P.Dmg:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="52,0" Size="104,26" DynamicData="/GameData.Stats.Primary_Damage_Range">88,888 - 88,888</Text>
 		</Page>
-		<Page Size="0,0" VisSize="100,20" HidSize="0,0" Name="Item31">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="24,20">Pwr:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Top" MaxLines="2" Name="Value" TextAlignment="Left" Location="26,3" ScrollExtent="80,40" Size="80,16" DynamicData="/GameData.Stats.PowerRange" UserScrollable="false">9,999,999,999</Text>
+		<Page Size="0,0" VisSize="68,26" HidSize="0,0" Name="Item62">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="39,26">P.Dly:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="42,0" Size="26,26" DynamicData="/GameData.Stats.Primary_Delay">8.8</Text>
 		</Page>
-		<Page Size="0,0" VisSize="95,20" HidSize="0,0" Name="Item32">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="35,20">P.Rgn:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="37,0" Size="60,20" DynamicData="/GameData.Stats.Power_Regen">8888</Text>
+		<Page Size="0,0" VisSize="156,26" HidSize="0,0" Name="Item63">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="49,26">S.Dmg:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="52,0" Size="104,26" DynamicData="/GameData.Stats.Secondary_Damage_Range">88,888 - 88,888</Text>
 		</Page>
-		<Page Size="0,0" VisSize="80,20" HidSize="0,0" Name="Item33">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">Arcn:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="30,0" Size="50,20" DynamicData="/GameData.Stats.Arcane">888888</Text>
+		<Page Size="0,0" VisSize="68,26" HidSize="0,0" Name="Item64">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="39,26">S.Dly:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="42,0" Size="26,26" DynamicData="/GameData.Stats.Secondary_Delay">8.8</Text>
 		</Page>
-		<Page Size="0,0" VisSize="80,20" HidSize="0,0" Name="Item34">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">Elmt:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="30,0" Size="50,20" DynamicData="/GameData.Stats.Elemental">888888</Text>
+		<Page Size="0,0" VisSize="156,26" HidSize="0,0" Name="Item65">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="49,26">R.Dmg:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="52,0" Size="104,26" DynamicData="/GameData.Stats.Ranged_Damage_Range">88,888 - 88,888</Text>
 		</Page>
-		<Page Size="0,0" VisSize="80,20" HidSize="0,0" Name="Item35">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">Nox:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="30,0" Size="50,20" DynamicData="/GameData.Stats.Noxious">888888</Text>
+		<Page Size="0,0" VisSize="68,26" HidSize="0,0" Name="Item66">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="39,26">R.Dly:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="42,0" Size="26,26" DynamicData="/GameData.Stats.Ranged_Delay">8.8</Text>
 		</Page>
-		<Page Size="0,0" VisSize="66,20" HidSize="0,0" Name="Item37">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="36,20">Tough:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="38,0" Size="28,20" DynamicData="/GameData.Stats.Defense_Toughness">8888</Text>
+		<Page Size="0,0" VisSize="83,26" HidSize="0,0" Name="Item67">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,26">PNG:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="43,26" DynamicData="/GameData.General.Ping">88888</Text>
 		</Page>
-		<Page Size="0,0" VisSize="87,20" HidSize="0,0" Name="Item38">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="47,20">HateMod:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="49,0" Size="48,20" DynamicData="/GameData.Stats.Hate_Mod">8888</Text>
+		<Page Size="0,0" VisSize="83,26" HidSize="0,0" Name="Item68">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,26">FPS:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="43,26" DynamicData="/GameData.General.FramesPerSecond">88888</Text>
 		</Page>
-		<Page Size="0,0" VisSize="95,20" HidSize="0,0" Name="Item40">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="47,20">Resolve:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="49,0" Size="48,20" DynamicData="/GameData.Stats.Resolve">10000</Text>
+		<Page Size="0,0" VisSize="83,26" HidSize="0,0" Name="Item69">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,26">BPS:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="43,26" DynamicData="/GameData.General.BytesPerSecond">88888</Text>
 		</Page>
-		<Page Size="0,0" VisSize="54,20" HidSize="0,0" Name="Item41">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="19,20">Mit:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="21,0" Size="33,20" DynamicData="/GameData.Stats.Defense_Mitigation">88888</Text>
+		<Page Size="0,0" VisSize="83,26" HidSize="0,0" Name="Item70">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,26">PKL:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="43,26" DynamicData="/GameData.General.PacketLoss">0</Text>
 		</Page>
-		<Page Size="0,0" VisSize="57,20" HidSize="0,0" Name="Item42">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="22,20">Avd:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="24,0" Size="33,20" DynamicData="/GameData.Stats.Defense_Avoidance">88888</Text>
+		<Page Size="0,0" VisSize="127,26" HidSize="0,0" Name="Item71">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="75,26">PvP Pot:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="78,0" Size="49,26" DynamicData="/GameData.Stats.PVPPotency">888.8%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="73,20" HidSize="0,0" Name="Item43">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="33,20">Shield:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="35,0" Size="38,20" DynamicData="/GameData.Stats.Shield_Effectiveness">888.8%</Text>
+		<Page Size="0,0" VisSize="130,26" HidSize="0,0" Name="Item72">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="78,26">PvP CrtBon:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="78,0" Size="49,26" DynamicData="/GameData.Stats.PVP_Crit_Bonus">888.8%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="78,20" HidSize="0,0" Name="Item45">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,20">SP. DA:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="38,20" DynamicData="/GameData.Stats.SpellDoubleAttack">888.8%</Text>
+		<Page Size="0,0" VisSize="127,26" HidSize="0,0" Name="Item73">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="75,26">PvP MA:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="78,0" Size="49,26" DynamicData="/GameData.Stats.PVP_Double_Atk_Percent">888.8%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="78,20" HidSize="0,0" Name="Item85">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,20">AB. DA:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="38,20" DynamicData="/GameData.Stats.AbilityDoubleAttack">888.8%</Text>
+		<Page Size="0,0" VisSize="138,26" HidSize="0,0" Name="Item74">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="86,26">PvP SP MA:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="88,0" Size="49,26" DynamicData="/GameData.Stats.PVPSpellDoubleAttack">888.8%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="78,20" HidSize="0,0" Name="Item46">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,20">Fervor:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="38,20" DynamicData="/GameData.Stats.Fervor">888.8%</Text>
+		<Page Size="0,0" VisSize="129,26" HidSize="0,0" Name="Item75">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="78,26">Bnt. Harv:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="81,0" Size="48,26" DynamicData="/GameData.Tradeskills.Bountiful_Harvest">100.0%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="68,20" HidSize="0,0" Name="Item47">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="28,20">DPS:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="30,0" Size="38,20" DynamicData="/GameData.Stats.DPS">888</Text>
+		<Page Size="0,0" VisSize="129,26" HidSize="0,0" Name="Item76">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="78,26">Rare Harv:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="81,0" Size="48,26" DynamicData="/GameData.Tradeskills.Rare_Harvest_Chance">100.0%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="66,20" HidSize="0,0" Name="Item48">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="26,20">HST:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="28,0" Size="38,20" DynamicData="/GameData.Stats.Haste">888</Text>
+		<Page Size="0,0" VisSize="136,26" HidSize="0,0" Name="Item77">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="86,26">PVP SW MA:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="88,0" Size="48,26" DynamicData="/GameData.Stats.PVP_Spell_Weapon_Double_Atk_Percent">100.0%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="63,20" HidSize="0,0" Name="Item44">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="23,20">Cst:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="25,0" Size="38,20" DynamicData="/GameData.Stats.Spell_Cast_Percent">188.8%</Text>
+		<Page Size="0,0" VisSize="113,26" HidSize="0,0" Name="Item83">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="62,26">WpDmg:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="65,0" Size="48,26" DynamicData="/GameData.Stats.Weapon_Damage_Bonus">100</Text>
 		</Page>
-		<Page Size="0,0" VisSize="61,20" HidSize="0,0" Name="Item49">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="21,20">RU:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="23,0" Size="38,20" DynamicData="/GameData.Stats.Spell_Reuse_Percent">188.8%</Text>
+		<Page Size="0,0" VisSize="123,26" HidSize="0,0" Name="Item84">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="73,26">SpWpDmg:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="75,0" Size="48,26" DynamicData="/GameData.Stats.Spell_Weapon_Damage_Bonus">100</Text>
 		</Page>
-		<Page Size="0,0" VisSize="63,20" HidSize="0,0" Name="Item50">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="23,20">Rec:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="25,0" Size="38,20" DynamicData="/GameData.Stats.Spell_Recovery_Percent">188.8%</Text>
+		<Page Size="0,0" VisSize="104,26" HidSize="0,0" Name="Item86">
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="52,26">FlrMult:</Text>
+			<Text Font="/TextStyles.Chat.ChatStyle" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="55,0" Size="49,26" DynamicData="/GameData.Stats.FlurryMult">999.9%</Text>
 		</Page>
-		<Page Size="0,0" VisSize="85,20" HidSize="0,0" Name="Item51">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="34,20">Crit:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="36,0" Size="50,20" DynamicData="/GameData.Stats.Crit_Chance">888.8%</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider1">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="85,20" HidSize="0,0" Name="Item52">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="34,20">C.Bon:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="36,0" Size="50,20" DynamicData="/GameData.Stats.Crit_Bonus">188.8</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider2">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="85,20" HidSize="0,0" Name="Item53">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="36,20">A.Mod:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="38,0" Size="50,20" DynamicData="/GameData.Stats.Ability_Mod">888888</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider3">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="95,20" HidSize="0,0" Name="Item54">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="21,20">Pot:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="23,0" Size="60,20" DynamicData="/GameData.Stats.Potency">188.8</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider4">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="59,20" HidSize="0,0" Name="Item55">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="19,20">MA:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="21,0" Size="38,20" DynamicData="/GameData.Stats.Double_Atk_Percent">888.8%</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider5">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="70,20" HidSize="0,0" Name="Item56">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">Conc:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="38,20" DynamicData="/GameData.Stats.ConcentrationRange">5/5</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider6">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="83,20" HidSize="0,0" Name="Item57">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="43,20">AEAuto:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="45,0" Size="38,20" DynamicData="/GameData.Stats.AE_AutoAtk_Percent">188.8%</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider7">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="60,20" HidSize="0,0" Name="Item58">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="20,20">Acc:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="22,0" Size="38,20" DynamicData="/GameData.Stats.Accuracy">188.8%</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider8">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="58,20" HidSize="0,0" Name="Item59">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="18,20">Flr:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="20,0" Size="38,20" DynamicData="/GameData.Stats.Flurry">188.8%</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider9">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="60,20" HidSize="0,0" Name="Item60">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="20,20">Stk:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="22,0" Size="38,20" DynamicData="/GameData.Stats.Strikethrough">188.8%</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider10">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="140,20" HidSize="0,0" Name="Item61">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,20">P.Dmg:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="100,20" DynamicData="/GameData.Stats.Primary_Damage_Range">88,888 - 88,888</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider11">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="52,20" HidSize="0,0" Name="Item62">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">P.Dly:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="20,20" DynamicData="/GameData.Stats.Primary_Delay">8.8</Text>
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider12">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
-		<Page Size="0,0" VisSize="140,20" HidSize="0,0" Name="Item63">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,20">S.Dmg:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="100,20" DynamicData="/GameData.Stats.Secondary_Damage_Range">88,888 - 88,888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="52,20" HidSize="0,0" Name="Item64">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">S.Dly:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="20,20" DynamicData="/GameData.Stats.Secondary_Delay">8.8</Text>
-		</Page>
-		<Page Size="0,0" VisSize="140,20" HidSize="0,0" Name="Item65">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="38,20">R.Dmg:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="40,0" Size="100,20" DynamicData="/GameData.Stats.Ranged_Damage_Range">88,888 - 88,888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="52,20" HidSize="0,0" Name="Item66">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="30,20">R.Dly:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="32,0" Size="20,20" DynamicData="/GameData.Stats.Ranged_Delay">8.8</Text>
-		</Page>
-		<Page Size="0,0" VisSize="64,20" HidSize="0,0" Name="Item67">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,20">PNG:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="33,20" DynamicData="/GameData.General.Ping">88888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="64,20" HidSize="0,0" Name="Item68">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,20">FPS:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="33,20" DynamicData="/GameData.General.FramesPerSecond">88888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="64,20" HidSize="0,0" Name="Item69">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,20">BPS:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="33,20" DynamicData="/GameData.General.BytesPerSecond">88888</Text>
-		</Page>
-		<Page Size="0,0" VisSize="64,20" HidSize="0,0" Name="Item70">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="29,20">PKL:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="31,0" Size="33,20" DynamicData="/GameData.General.PacketLoss">0</Text>
-		</Page>
-		<Page Size="0,0" VisSize="98,20" HidSize="0,0" Name="Item71">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="58,20">PvP Pot:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="60,0" Size="38,20" DynamicData="/GameData.Stats.PVPPotency">888.8%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="100,20" HidSize="0,0" Name="Item72">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">PvP CrtBon:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="60,0" Size="38,20" DynamicData="/GameData.Stats.PVP_Crit_Bonus">888.8%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="98,20" HidSize="0,0" Name="Item73">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="58,20">PvP MA:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="60,0" Size="38,20" DynamicData="/GameData.Stats.PVP_Double_Atk_Percent">888.8%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="106,20" HidSize="0,0" Name="Item74">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="66,20">PvP SP MA:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="68,0" Size="38,20" DynamicData="/GameData.Stats.PVPSpellDoubleAttack">888.8%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="99,20" HidSize="0,0" Name="Item75">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">Bnt. Harv:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="62,0" Size="37,20" DynamicData="/GameData.Tradeskills.Bountiful_Harvest">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="99,20" HidSize="0,0" Name="Item76">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">Rare Harv:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="62,0" Size="37,20" DynamicData="/GameData.Tradeskills.Rare_Harvest_Chance">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="105,20" HidSize="0,0" Name="Item77">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="66,20">PVP SW MA:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="68,0" Size="37,20" DynamicData="/GameData.Stats.PVP_Spell_Weapon_Double_Atk_Percent">100.0%</Text>
-		</Page>
-		<Page Size="0,0" VisSize="87,20" HidSize="0,0" Name="Item83">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="48,20">WpDmg:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="50,0" Size="37,20" DynamicData="/GameData.Stats.Weapon_Damage_Bonus">100</Text>
-		</Page>
-		<Page Size="0,0" VisSize="100,20" HidSize="0,0" Name="Item84">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="60,20">SpWpDmg:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="62,0" Size="37,20" DynamicData="/GameData.Stats.Spell_Weapon_Damage_Bonus">100</Text>
-		</Page>
-		<Page Size="0,0" VisSize="80,20" HidSize="0,0" Name="Item86">
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" TextColor="#CCCCCC" Name="Label" TextAlignment="Right" Size="40,20">FlrMlt:</Text>
-			<Text Font="/ProfitUI_Styles.Fonts.FontArial13T" TextAlignmentVertical="Center" MaxLines="1" Name="Value" TextAlignment="Left" Location="42,0" Size="38,20" DynamicData="/GameData.Stats.FlurryMult">999.9%</Text>
-		</Page>
-
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider1">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider2">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider3">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider4">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider5">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider6">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider7">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider8">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider9">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider10">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider11">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider12">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
-		</Page>
-		<Page Size="0,0" VisSize="13,20" HidSize="0,0" Name="Divider13">
-			<Button Location="0,1" Enabled="false" GetsInput="false" Name="Divider" PackSize="f,f" ScrollExtent="13,19" Size="13,19" Style="/ProfitUI_Styles.WindowElements.TitleBarInvertedBoxed" />
+		<Page Size="0,0" VisSize="17,26" HidSize="0,0" Name="Divider13">
+			<Page BackgroundOpacity="1.000" Location="0,-2" Name="Divider" ScrollExtent="17,26" Size="17,26" RStyleDefault="TitleBarInvertedBoxed_L" />
 		</Page>
 	</Page>
-	
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="800,20" Size="800,20">
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="BarBack" PackLocation="NFN,FFF" PackSize="absolute,absolute" ScrollExtent="800,20" Size="800,20" MaximumSize="3000,80">
-<Button Enabled="false" GetsInput="false" Name="TitleBar" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull"></Button>
-<Button Enabled="false" Location="0,20" GetsInput="false" Name="TitleBar2" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull"></Button>
-<Button Enabled="false" Location="0,40" GetsInput="false" Name="TitleBar3" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull"></Button>
-<Button Enabled="false" Location="0,60" GetsInput="false" Name="TitleBar4" PackSize="a,a" ScrollExtent="800,20" Size="800,20" PackLocation="NFN,NFN" SizeIncrement="1,0" Style="/ProfitUI_Styles.WindowElements.TitleBarFull"></Button>
-</Page>
-</Page>
+	<RectangleStyle Center="/ProfitUI_Styles.WindowElements.TitleBar.TitleBarMiddle" CenterShrinkH="true" CenterShrinkV="true" East="/ProfitUI_Styles.WindowElements.TitleBar.TitleBarRightTriangle" EastShrink="true" Name="TitleBarFull_L" West="/ProfitUI_Styles.WindowElements.TitleBar.TitleBarLeftTriangle" WestShrink="true" />
+	<RectangleStyle Center="/ProfitUI_Styles.WindowElements.TitleBar.TitleBarMiddle" CenterShrinkH="true" CenterShrinkV="true" East="/ProfitUI_Styles.WindowElements.TitleBar.TitleBarLeftBox" EastShrink="true" Name="TitleBarInvertedBoxed_L" West="/ProfitUI_Styles.WindowElements.TitleBar.TitleBarRightBox" WestShrink="true" />
+	<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1040,26" Size="1040,26">
+		<Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="BarBack" PackLocation="NFN,FFF" PackSize="absolute,absolute" ScrollExtent="1040,26" Size="1040,26" MaximumSize="3900,104">
+			<Page BackgroundOpacity="1.000" GetsInput="false" Name="TitleBar" PackSize="a,f" ScrollExtent="1040,26" Size="1040,26" RStyleDefault="TitleBarFull_L" />
+			<Page BackgroundOpacity="1.000" Location="0,26" GetsInput="false" Name="TitleBar2" PackSize="a,f" ScrollExtent="1040,26" Size="1040,26" PackLocation="NFN,NFN" SizeIncrement="1,0" RStyleDefault="TitleBarFull_L" />
+			<Page BackgroundOpacity="1.000" Location="0,52" GetsInput="false" Name="TitleBar3" PackSize="a,f" ScrollExtent="1040,26" Size="1040,26" PackLocation="NFN,NFN" SizeIncrement="1,0" RStyleDefault="TitleBarFull_L" />
+			<Page BackgroundOpacity="1.000" Location="0,78" GetsInput="false" Name="TitleBar4" PackSize="a,f" ScrollExtent="1040,26" Size="1040,26" PackLocation="NFN,NFN" SizeIncrement="1,0" RStyleDefault="TitleBarFull_L" />
+		</Page>
+	</Page>
 </Page>

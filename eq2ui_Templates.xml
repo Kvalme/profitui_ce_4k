@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-    <Namespace Name="Templates">
-        <Template Name="ranklisttemplate" Size="218,35">eq2ui_listrank_template.xml</Template>
-        <Template Name="ranklisttemplate2" Size="218,24">eq2ui_listrank_template2.xml</Template>
-        <Template Name="dropdowntemplate" Size="180,16">eq2ui_dropdown_template.xml</Template>
-        <Template Name="repliestemplate" Size="1024,18">eq2ui_convtexttemplate.xml</Template>
-        <Template Name="spelltemplate" Size="10,10">eq2ui_spelltemplate_small.xml</Template>
-    </Namespace>

@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-    <Namespace Name="Effects">
-        <OpacityEffector InitialOpacity="1.000" Name="FadeOut" SetOnEffect="true" Speed="2.000" />
-        <OpacityEffector Name="FadeIn" SetOnEffect="true" Speed="2.000" TargetOpacity="1.000" />
-    </Namespace>

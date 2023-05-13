@@ -1,34 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="0,621" MinimumSize="210,110" Name="MainChat" PackLocation="left,fff" ScrollExtent="314,128" Size="314,128" UserMovable="true" UserResizable="true">
-<Button Name="ShowInput" OnPress="gm9TEMP=Parent.ChatPage.ChatFrame.Height - Parent.ChatPage.ChatFrame.ChatInput.Height - 1&#xD;&#xA;gm9TEMP2=Parent.ChatPage.ChatFrame.Height - Parent.ChatPage.ChatFrame.ChatInput.Height&#xD;&#xA;Location=gm9TEMP ## &apos;,&apos; ## gm9TEMP2&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatDisplay.Height=Left&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatInput.visible=true&#xD;&#xA;Parent.ChatPage.ChatFrame.DefaultChannelBkg.visible=true&#xD;&#xA;Parent.ChatPage.ChatFrame.DefaultChannelButton.visible=true&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatScroll.Height=Top" Visible="false" />
-<Button Name="HideInput" OnActivate="gm9TEMP=Parent.ChatPage.ChatFrame.Height + 1&#xD;&#xA;Location=gm9TEMP ## &apos;,0&apos;&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatDisplay.Height=Parent.ChatPage.ChatFrame.Height&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatInput.visible=false&#xD;&#xA;Parent.ChatPage.ChatFrame.DefaultChannelBkg.visible=false&#xD;&#xA;Parent.ChatPage.ChatFrame.DefaultChannelButton.visible=false&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatScroll.Height=Left&#xD;&#xA;Activated=false" />
-<Button Location="282,0" Name="CloseButtonNoTab" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0" OnPress="Parent.WC_CloseButton.Press=true" Opacity="0.000" PackLocation="fff,top" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.close_button" Tooltip="Close" Visible="false" />
-<Button Location="282,19" Name="CloseButtonTab" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0" OnPress="Parent.WC_CloseButton.Press=true" Opacity="0.000" PackLocation="fff,top" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.close_button" Tooltip="Close" />
-<Button Name="WC_CloseButton" Visible="false" />
-<Page AbsorbsInput="false" Location="0,-1" Name="ChatPage" PackLocation="fff,fff" PackSize="a,a" ScrollExtent="314,129" Size="314,129">
-<Page Name="TabFrame" OnHide="Parent.Parent.CloseButtonTab.Visible=false&#xD;&#xA;Parent.Parent.CloseButtonNoTab.Visible=true" OnHoverIn="tableft.Opacity=1 tabright.Opacity=1" OnHoverOut="tableft.Opacity=0 tabright.Opacity=0" OnShow="Parent.Parent.CloseButtonNoTab.Visible=false&#xD;&#xA;Parent.Parent.CloseButtonTab.Visible=true" PackSize="a,f" ScrollExtent="314,19" Size="314,19" visibility="true">
-<Button BackdropControl="false" Enabled="false" Location="304,-1" Name="tableft" Opacity="0.000" PackLocation="right,top" Rotation="0.250" ScrollExtent="10,10" Size="10,10" Style="/ProfitUI_Styles.ButtonStyles.BankSelector_down" Visible="false" />
-<Button BackdropControl="false" Enabled="false" Location="304,9" Name="tabright" Opacity="0.000" PackLocation="right,top" Rotation="0.250" ScrollExtent="10,10" Size="10,10" Style="/ProfitUI_Styles.ButtonStyles.BankSelector_up" Visible="false" />
-<TabbedPane ActiveTab="0" DataSource="TabSource" Name="TabPane" PackSize="a,a" ScrollExtent="314,19" ScrollLeftButton="tableft" ScrollRightButton="tabright" Size="314,19" Style="/ProfitUI_Styles.tab_data.tabbed_pane_style" />
-</Page>
-<Page Location="0,19" Name="ChatFrame" PackLocation="left,fff" PackSize="a,a" ScrollExtent="314,110" Size="314,110">
-<Page AbsorbsInput="false" Location="294,0" Name="HoverControl" OnHoverIn="Parent.ChatScroll.Opacity=1&#xD;&#xA;Parent.DefaultChannelButton.Opacity=1&#xD;&#xA;Parent.DefaultChannelBkg.Opacity=1" OnHoverOut="Parent.ChatScroll.Opacity=0&#xD;&#xA;Parent.DefaultChannelButton.Opacity=0&#xD;&#xA;Parent.DefaultChannelBkg.Opacity=0" PackLocation="fff,top" PackSize="f,a" ScrollExtent="20,110" Size="20,110" />
-<Image Activated="true" GetsInput="true" Location="282,94" Name="MoveButton" OnHoverIn="Opacity=1.000" OnHoverOut="Opacity=0.000" Opacity="0.000" PackLocation="fff,fff" ScrollExtent="15,15" Size="15,15" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Tooltip="Grab to move" />
-<Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" framecontrol="true" GetsInput="false" Name="Frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="314,110" Size="314,110" />
-<Scrollbar ArrowPressSound="ui_pressed" Control="ChatDisplay" Location="293,-1" Name="ChatScroll" Opacity="0.000" PackLocation="fff,fff" PackSize="f,a" ScrollExtent="20,93" Size="20,93" Style="/CommonElements.ScrollbarVertical.data.style" />
-<Button Location="297,94" Name="DefaultChannelButton" Opacity="0.000" PackLocation="fff,fff" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.channel_button" Tooltip="Default Chat Channel" />
-<Image Location="297,94" Name="DefaultChannelBkg" Opacity="0.000" PackLocation="fff,fff" ScrollExtent="15,15" Size="15,15" SourceRect="122,219,137,234" SourceResource="images/widgets01.dds" />
-<Text Cursor="/Cursor.Text" Font="/Fonts.Font_Chat" GetsInput="false" Margin="3,0,0,1" Name="ChatDisplay" PackLocation="nfn,fff" PackSize="a,a" ScrollExtent="296,94" ShadowStyle="/ShadowStyles.Chat.Outline1" Size="296,94" TextAlignmentVertical="Bottom" />
-<Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="0,92" Name="ChatInput" PackLocation="nfn,fff" PackSize="a,f" ScrollExtent="297,17" Size="297,17" Style="chat_textbox" />
-<TextboxStyle CaratColor="#FBD246" CaratWidth="2" DisabledTextShadowStyle="/ShadowStyles.Chat.Outline1" DisabledTextStyle="/Fonts.Font_ChatInput" Name="chat_textbox" NormalTextShadowStyle="/ShadowStyles.Chat.Outline1" NormalTextStyle="/Fonts.Font_ChatInput" RStyleDefault="/rectlist.win_background" SelectedTextShadowStyle="/ShadowStyles.Chat.Outline1" SelectedTextStyle="/Fonts.Font_ChatInput" SelectionColor="#A0A0A0" SelectionOpacity="1.000" TextColor="#FFFFFF" TextPadding="4,1,4,1" />
-<Page BackgroundOpacity="0.200" Location="0,92" Name="ChatShadow" PackLocation="nfn,fff" PackSize="a,f" ScrollExtent="297,17" Size="297,17" Visible="false" />
-<Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Backdrop" PackSize="a,a" ScrollExtent="314,110" Size="314,110" />
-</Page>
-</Page>
-<DataSource Name="TabSource">
-<Data Name="One" text="One" />
-<Data Name="Two" text="Two" />
-</DataSource>
-<Page AbsorbsInput="false" Name="WC_Frame" OnHide="Parent.ShowInput.Press=true" OnShow="Parent.HideInput.Activated=true" Visible="false" />
-<Page AbsorbsInput="false" Name="WC_Titlebar" OnHide="Parent.HideInput.Activated=Parent.WC_Frame.Visible" OnShow="Parent.ShowInput.Press=true" Visible="false" />
+    <Button Name="ShowInput" OnPress="gm9TEMP=Parent.ChatPage.ChatFrame.Height - Parent.ChatPage.ChatFrame.ChatInput.Height - 1&#xD;&#xA;gm9TEMP2=Parent.ChatPage.ChatFrame.Height - Parent.ChatPage.ChatFrame.ChatInput.Height&#xD;&#xA;Location=gm9TEMP ## &apos;,&apos; ## gm9TEMP2&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatDisplay.Height=Left&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatInput.visible=true&#xD;&#xA;Parent.ChatPage.ChatFrame.DefaultChannelBkg.visible=true&#xD;&#xA;Parent.ChatPage.ChatFrame.DefaultChannelButton.visible=true&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatScroll.Height=Top" Visible="false" />
+    <Button Name="HideInput" OnActivate="gm9TEMP=Parent.ChatPage.ChatFrame.Height + 1&#xD;&#xA;Location=gm9TEMP ## &apos;,0&apos;&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatDisplay.Height=Parent.ChatPage.ChatFrame.Height&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatInput.visible=false&#xD;&#xA;Parent.ChatPage.ChatFrame.DefaultChannelBkg.visible=false&#xD;&#xA;Parent.ChatPage.ChatFrame.DefaultChannelButton.visible=false&#xD;&#xA;Parent.ChatPage.ChatFrame.ChatScroll.Height=Left&#xD;&#xA;Activated=false" />
+    <Button Location="282,0" Name="CloseButtonNoTab" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0" OnPress="Parent.WC_CloseButton.Press=true" Opacity="0.000" PackLocation="fff,top" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.close_button" Tooltip="Close" Visible="false" />
+    <Button Location="282,19" Name="CloseButtonTab" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0" OnPress="Parent.WC_CloseButton.Press=true" Opacity="0.000" PackLocation="fff,top" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.close_button" Tooltip="Close" />
+    <Button Name="WC_CloseButton" Visible="false" />
+    <Page AbsorbsInput="false" Location="0,-1" Name="ChatPage" PackLocation="fff,fff" PackSize="a,a" ScrollExtent="314,129" Size="314,129">
+        <Page Name="TabFrame" OnHide="Parent.Parent.CloseButtonTab.Visible=false&#xD;&#xA;Parent.Parent.CloseButtonNoTab.Visible=true" OnHoverIn="tableft.Opacity=1 tabright.Opacity=1" OnHoverOut="tableft.Opacity=0 tabright.Opacity=0" OnShow="Parent.Parent.CloseButtonNoTab.Visible=false&#xD;&#xA;Parent.Parent.CloseButtonTab.Visible=true" PackSize="a,f" ScrollExtent="314,19" Size="314,19" visibility="true">
+            <Button BackdropControl="false" Enabled="false" Location="304,-1" Name="tableft" Opacity="0.000" PackLocation="right,top" Rotation="0.250" ScrollExtent="10,10" Size="10,10" Style="/ProfitUI_Styles.ButtonStyles.BankSelector_down" Visible="false" />
+            <Button BackdropControl="false" Enabled="false" Location="304,9" Name="tabright" Opacity="0.000" PackLocation="right,top" Rotation="0.250" ScrollExtent="10,10" Size="10,10" Style="/ProfitUI_Styles.ButtonStyles.BankSelector_up" Visible="false" />
+            <TabbedPane ActiveTab="0" DataSource="TabSource" Name="TabPane" PackSize="a,a" ScrollExtent="314,19" ScrollLeftButton="tableft" ScrollRightButton="tabright" Size="314,19" Style="/ProfitUI_Styles.tab_data.tabbed_pane_style" />
+        </Page>
+        <Page Location="0,19" Name="ChatFrame" PackLocation="left,fff" PackSize="a,a" ScrollExtent="314,110" Size="314,110">
+            <Page AbsorbsInput="false" Location="294,0" Name="HoverControl" OnHoverIn="Parent.ChatScroll.Opacity=1&#xD;&#xA;Parent.DefaultChannelButton.Opacity=1&#xD;&#xA;Parent.DefaultChannelBkg.Opacity=1" OnHoverOut="Parent.ChatScroll.Opacity=0&#xD;&#xA;Parent.DefaultChannelButton.Opacity=0&#xD;&#xA;Parent.DefaultChannelBkg.Opacity=0" PackLocation="fff,top" PackSize="f,a" ScrollExtent="20,110" Size="20,110" />
+            <Image Activated="true" GetsInput="true" Location="282,94" Name="MoveButton" OnHoverIn="Opacity=1.000" OnHoverOut="Opacity=0.000" Opacity="0.000" PackLocation="fff,fff" ScrollExtent="15,15" Size="15,15" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Tooltip="Grab to move" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" framecontrol="true" GetsInput="false" Name="Frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="314,110" Size="314,110" />
+            <Scrollbar ArrowPressSound="ui_pressed" Control="ChatDisplay" Location="293,-1" Name="ChatScroll" Opacity="0.000" PackLocation="fff,fff" PackSize="f,a" ScrollExtent="20,88" Size="20,88" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Button Location="297,94" Name="DefaultChannelButton" Opacity="0.000" PackLocation="fff,fff" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.channel_button" Tooltip="Default Chat Channel" />
+            <Image Location="297,94" Name="DefaultChannelBkg" Opacity="0.000" PackLocation="fff,fff" ScrollExtent="15,15" Size="15,15" SourceRect="122,219,137,234" SourceResource="images/widgets01.dds" />
+            <Text Cursor="/Cursor.Text" Font="/Fonts.Font_Chat" GetsInput="false" Margin="3,0,0,1" Name="ChatDisplay" PackLocation="nfn,fff" PackSize="a,a" ScrollExtent="296,84" ShadowStyle="/ShadowStyles.Chat.Outline1" Size="296,84" TextAlignmentVertical="Bottom" />
+            <Textbox Color="#F0F0F0" Cursor="/Cursor.Text" Location="0,82" Name="ChatInput" PackLocation="nfn,fff" PackSize="a,f" ScrollExtent="297,27" Size="297,27" Style="chat_textbox" />
+            <TextboxStyle CaratColor="#FBD246" CaratWidth="2" DisabledTextShadowStyle="/ShadowStyles.Chat.Outline1" DisabledTextStyle="Font_ChatInput20" Name="chat_textbox" NormalTextShadowStyle="/ShadowStyles.Chat.Outline1" NormalTextStyle="Font_ChatInput20" RStyleDefault="/rectlist.win_background" SelectedTextShadowStyle="/ShadowStyles.Chat.Outline1" SelectedTextStyle="Font_ChatInput20" SelectionColor="#A0A0A0" SelectionOpacity="1.000" TextColor="#FFFFFF" TextPadding="6,2,6,1" />
+            <Page BackgroundOpacity="0.200" Location="0,92" Name="ChatShadow" PackLocation="nfn,fff" PackSize="a,f" ScrollExtent="297,17" Size="297,17" Visible="false" />
+            <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="Backdrop" PackSize="a,a" ScrollExtent="314,110" Size="314,110" />
+        </Page>
+    </Page>
+    <DataSource Name="TabSource">
+        <Data Name="One" text="One" />
+        <Data Name="Two" text="Two" />
+    </DataSource>
+    <Page AbsorbsInput="false" Name="WC_Frame" OnHide="Parent.ShowInput.Press=true" OnShow="Parent.HideInput.Activated=true" Visible="false" />
+    <Page AbsorbsInput="false" Name="WC_Titlebar" OnHide="Parent.HideInput.Activated=Parent.WC_Frame.Visible" OnShow="Parent.ShowInput.Press=true" Visible="false" />
+    <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="Font_ChatInput20" PointSize="20" UseCachedFont="true" />
 </Page>

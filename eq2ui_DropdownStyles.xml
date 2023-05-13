@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-    <Namespace Name="dropdownlist">
-        <DropdownboxStyle DropBy="150" Listbox.Style="/listboxlist.weaponconfig_listbox" Name="dropdown_default" Normal.Background="/imagelist.dropdown_back_normal" Normal.DownArrow="/imagelist.downarrow_normal" Padding="5,0,0,0" Scrollbar.Style="/ScrollStyles.default_vscroll" />
-    </Namespace>
