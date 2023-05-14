@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page allowcloseontop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="247,250" MaximumSize="800,16384" MinimumSize="374,248" Name="ZoneTeleporter" PackLocation="center,top" ScrollExtent="530,268" Size="530,268" UserMovable="true" UserResizable="true">
-            <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="30,34" Name="Title" PackLocation="top,left" PackSize="absolute,fixed" ScrollExtent="470,38" Size="470,26" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9" UserMovable="true" UserResizable="true">:847f7ec1cfc0b884:Select Destination</Text>
-            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="40,60" Name="Destinations" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="450,123" Size="450,123">
-                <List BackgroundColor="#00FF00" BackgroundOpacity="0.000" DataSource="DestinationSource" Location="10,10" MinimumScrollExtent="413,68" Name="DestinationList" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="413,103" SelectionAllowedMultiRow="false" Size="413,103" Style="list_style" />
-                <Scrollbar ArrowPressSound="sounds/button" Control="DestinationList" HideIfUnnecessary="true" Location="420,10" MaximumSize="22,16384" MinimumSize="22,80" Name="DestinationScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,103" Size="22,103" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
-                <DataSource Name="DestinationSource">
-                    <Data Name="Dest1" text=":847f7ec15c8bf563:Destination 1" />
-                    <Data Name="Dest2" text=":847f7ec1c582a4d9:Destination 2" />
-                    <Data Name="Dest3" text=":847f7ec1b285944f:Destination 3" />
-                    <Data Name="Dest4" text=":847f7ec12ce101ec:Destination 4" />
-                </DataSource>
-                <ListStyle CellPadding="0,1" DefaultTextStyle="/TextStyles.Normal.NormalStyle" Name="list_style" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
-            </Page>
-            <Button Location="135,190" MaximumSize="16384,38" MinimumSize="38,38" Name="ZoneButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:847f7ec113a7061a:Ok</Button>
-            <Button Location="275,190" MaximumSize="16384,38" MinimumSize="38,38" Name="WC_CloseButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:847f7ec1ae453fbb:Cancel</Button>
-            <Page BackgroundOpacity="1.000" Name="WindowFrame" PackSize="a,a" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="530,268" Size="530,268">
-                <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="470,208" Size="470,208" />
-            </Page>
-        </Page>
+<Page allowcloseontop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="247,250" MaximumSize="800,16384" MinimumSize="374,248" Name="ZoneTeleporter" PackLocation="center,top" ScrollExtent="530,268" Size="530,268" UserMovable="true" UserResizable="true" Visible="false">
+    <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="30,34" Name="Title" PackLocation="top,left" PackSize="absolute,fixed" ScrollExtent="470,38" Size="470,26" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9" UserMovable="true" UserResizable="true">:847f7ec1cfc0b884:Select Destination</Text>
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="40,60" Name="Destinations" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="450,123" Size="450,123">
+        <List BackgroundColor="#00FF00" BackgroundOpacity="0.000" DataSource="DestinationSource" Location="10,10" MinimumScrollExtent="413,96" Name="DestinationList" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="413,103" SelectedRow="0" SelectedRowCount="1" SelectionAllowedMultiRow="false" Size="413,103" Style="/CommonElements.List.data.list_style" />
+        <Scrollbar ArrowPressSound="sounds/button" Control="DestinationList" HideIfUnnecessary="true" Location="420,10" MaximumSize="22,16384" MinimumSize="22,80" Name="DestinationScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,103" Size="22,103" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+        <DataSource Name="DestinationSource">
+            <Data Name="Dest1" text=":847f7ec15c8bf563:Destination 1" />
+            <Data Name="Dest2" text=":847f7ec1c582a4d9:Destination 2" />
+            <Data Name="Dest3" text=":847f7ec1b285944f:Destination 3" />
+            <Data Name="Dest4" text=":847f7ec12ce101ec:Destination 4" />
+        </DataSource>
+        <ListStyle CellPadding="0,1" DefaultTextStyle="/TextStyles.Normal.NormalStyle" Name="list_style" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
+    </Page>
+    <Button Location="135,190" MaximumSize="16384,38" MinimumSize="38,38" Name="ZoneButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:847f7ec113a7061a:Ok</Button>
+    <Button Location="275,190" MaximumSize="16384,38" MinimumSize="38,38" Name="WC_CloseButton" PackLocation="cfc,bottom" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:847f7ec1ae453fbb:Cancel</Button>
+    <Page BackgroundOpacity="1.000" Name="WindowFrame" PackSize="a,a" RStyleDefault="/WindowElements.DialogFrame.data.frame.rect" ScrollExtent="530,268" Size="530,268">
+        <Page BackgroundOpacity="1.000" Location="30,30" Name="InteriorGrouper" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="470,208" Size="470,208" />
+    </Page>
+</Page>

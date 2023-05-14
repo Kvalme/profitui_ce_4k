@@ -1,49 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="true" Location="187,125" MinimumSize="529,472" Name="MercHire" PackLocation="top,center" ScrollExtent="529,500" Size="529,500" UserMovable="true" version="2">
-            <Page AbsorbsInput="false" Location="12,395" Name="ControlPage" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="505,102" Size="505,102">
-                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="10,11" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercBatIcon" ScrollExtent="42,42" Size="42,42" />
-                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="55,0" Name="BatText" ScrollExtent="153,23" Size="153,22" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">Battalion</Text>
-                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="55,21" Name="BatNameText" ScrollExtent="153,46" Size="153,44" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">Battalion Spell Name</Text>
-                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="213,21" Name="SalaryText" ScrollExtent="290,44" Size="290,44" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">Salary: 1 platinum 50 gold</Text>
-                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="213,0" Name="HireText" ScrollExtent="290,23" Size="290,22" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">Hire: 1 platinum 50 gold</Text>
-                <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="4,70" Name="QuestMerc" ScrollExtent="207,54" Size="207,28" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#00FF50" UserMovable="true">:57e23760e8556109:Hiring this mercenary will not dismiss your current mercenary.</Text>
-                <Button Location="223,66" MaximumSize="16384,32" MinimumSize="32,32" Name="HireButton" PackLocation="right,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:57e23760e7cc2e3d:Hire</Button>
-                <Button IsCancelButton="true" Location="366,66" MaximumSize="16384,32" MinimumSize="32,32" Name="CancelButton" PackLocation="right,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:57e23760ae453fbb:Cancel</Button>
-            </Page>
-            <Page BackgroundOpacity="1.000" Location="22,92" Name="MercInfoPage" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="486,303" Size="486,303">
-                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="204,11" Name="MercBio" PackLocation="fixed,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="271,126" Size="271,126">
-                    <Scrollbar ArrowPressSound="sounds/button" Control="MercBioText" HideIfUnnecessary="false" Location="242,8" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,110" Size="22,110" Style="/CommonElements.ScrollbarVertical.data.style" />
-                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="11,10" Name="MercBioText" ScrollExtent="236,115" Size="236,107" TextAlignment="Center" UserMovable="true">:57e2376025a5d655:This is a very exciting story about Zoltaroth.  
+<Page eq2usescomwndcontrols="true" Location="187,125" MinimumSize="529,472" Name="MercHire" PackLocation="top,center" ScrollExtent="529,500" Size="529,500" UserMovable="true" version="2">
+    <Page AbsorbsInput="false" Location="12,395" Name="ControlPage" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="505,102" Size="505,102">
+        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="10,11" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercBatIcon" ScrollExtent="42,42" Size="42,42" />
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="55,0" Name="BatText" ScrollExtent="153,23" Size="153,22" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">Battalion</Text>
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="55,21" Name="BatNameText" ScrollExtent="153,46" Size="153,44" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">Battalion Spell Name</Text>
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="213,21" Name="SalaryText" ScrollExtent="290,44" Size="290,44" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">Salary: 1 platinum 50 gold</Text>
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="213,0" Name="HireText" ScrollExtent="290,23" Size="290,22" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">Hire: 1 platinum 50 gold</Text>
+        <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="4,66" Name="QuestMerc" ScrollExtent="207,54" Size="207,36" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#00FF50" UserMovable="true">:57e23760e8556109:Hiring this mercenary will not dismiss your current mercenary.</Text>
+        <Button Location="223,66" MaximumSize="16384,32" MinimumSize="32,32" Name="HireButton" PackLocation="right,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:57e23760e7cc2e3d:Hire</Button>
+        <Button IsCancelButton="true" Location="366,66" MaximumSize="16384,32" MinimumSize="32,32" Name="CancelButton" PackLocation="right,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">:57e23760ae453fbb:Cancel</Button>
+    </Page>
+    <Page BackgroundOpacity="1.000" Location="22,92" Name="MercInfoPage" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="486,303" Size="486,303">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="204,11" Name="MercBio" PackLocation="fixed,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="271,126" Size="271,126">
+            <Scrollbar ArrowPressSound="sounds/button" Control="MercBioText" HideIfUnnecessary="false" Location="242,8" MaximumSize="22,16384" MinimumSize="22,80" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,110" Size="22,110" Style="/CommonElements.ScrollbarVertical.data.style" />
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="11,10" Name="MercBioText" ScrollExtent="236,115" Size="236,107" TextAlignment="Center" UserMovable="true">:57e2376025a5d655:This is a very exciting story about Zoltaroth.  
 
 He likes to hang out in Freeport on the docks.
 </Text>
-                </Page>
-                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="204,133" Name="MercSpellsPage" PackLocation="fixed,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="271,160" Size="271,160">
-                    <Scrollbar ArrowPressSound="sounds/button" Control="MercSpellsComposite" HideIfUnnecessary="true" Location="242,8" MaximumSize="22,16384" MinimumSize="22,80" Name="MercSpellsScrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,145" Size="22,145" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
-                    <Composite AbsorbsInput="false" Location="16,12" Name="MercSpellsComposite" PackSize="a,a" ScrollExtent="227,137" ScrollSize="33,33" Size="227,137" Spacing="1" SpacingType="Constant" />
-                </Page>
-                <Page AbsorbsInput="false" Name="MercSpellsTemplate" ScrollExtent="223,44" Size="223,44" Visible="false">
-                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell1" ScrollExtent="42,42" Size="42,42" />
-                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="45,0" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell2" ScrollExtent="42,42" Size="42,42" />
-                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="90,0" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell3" ScrollExtent="42,42" Size="42,42" />
-                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="135,0" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell4" ScrollExtent="42,42" Size="42,42" />
-                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="180,0" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell5" ScrollExtent="42,42" Size="42,42" />
-                </Page>
-                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="12,12" Name="MercPaperdollPage" PackLocation="fixed,fixed" ScrollExtent="191,276" Size="191,276">
-                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="8,249" Name="RarityText" ScrollExtent="177,23" Size="177,22" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">:x:TREASURED</Text>
-                    <PaperDoll Location="10,9" Name="MercPaperdoll" paperdollbackgroundcolor="/ColorStyles.paperdoll_background" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="172,263" Size="172,263" />
-                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,-1" Name="MercPDFrame" PackLocation="fixed,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="192,282" Size="192,282" />
-                </Page>
-            </Page>
-            <Page AbsorbsInput="false" Location="13,49" Name="MercNamePage" PackLocation="absolute,fixed" ScrollExtent="502,45" Size="502,45">
-                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="6,6" Name="BehaviorsDecoration" PackLocation="center,top" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="491,40" Size="491,40" />
-                <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" MaxLines="1" Name="MercName" PackSize="absolute,fixed" ScrollExtent="502,38" ShadowStyle="/ShadowStylesNew.Outline.style" Size="502,38" TextAlignment="Center" TextAlignmentVertical="Center">:57e2376005311487:Zoltaroth</Text>
-            </Page>
-            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="529,500" Size="529,500">
-                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,11" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="360,70" Size="360,70">
-                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="230,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="230,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:57e23760c6c26407:Hire Mercenary</Text>
-                </Page>
-                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,11" Name="Frame" PackLocation="center,center" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="528,502" Size="528,502" />
-                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,13" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="531,507" Size="531,507" />
-            </Page>
         </Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="204,133" Name="MercSpellsPage" PackLocation="fixed,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="271,160" Size="271,160">
+            <Scrollbar ArrowPressSound="sounds/button" Control="MercSpellsComposite" HideIfUnnecessary="true" Location="242,8" MaximumSize="22,16384" MinimumSize="22,80" Name="MercSpellsScrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,145" Size="22,145" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+            <Composite AbsorbsInput="false" Location="16,12" Name="MercSpellsComposite" PackSize="a,a" ScrollExtent="227,137" ScrollSize="33,33" Size="227,137" Spacing="1" SpacingType="Constant" />
+        </Page>
+        <Page AbsorbsInput="false" Name="MercSpellsTemplate" ScrollExtent="223,44" Size="223,44" Visible="false">
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell1" ScrollExtent="42,42" Size="42,42" />
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="45,0" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell2" ScrollExtent="42,42" Size="42,42" />
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="90,0" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell3" ScrollExtent="42,42" Size="42,42" />
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="135,0" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell4" ScrollExtent="42,42" Size="42,42" />
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="180,0" MaximumSize="42,42" MinimumSize="42,42" MouseOverColor="#FFFF00" Name="MercSpell5" ScrollExtent="42,42" Size="42,42" />
+        </Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="12,12" Name="MercPaperdollPage" PackLocation="fixed,fixed" ScrollExtent="191,276" Size="191,276">
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="8,249" Name="RarityText" ScrollExtent="177,23" Size="177,22" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">:x:TREASURED</Text>
+            <PaperDoll Location="10,9" Name="MercPaperdoll" paperdollbackgroundcolor="/ColorStyles.paperdoll_background" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="172,263" Size="172,263" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,-1" Name="MercPDFrame" PackLocation="fixed,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="192,282" Size="192,282" />
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" Location="13,49" Name="MercNamePage" PackLocation="absolute,fixed" ScrollExtent="502,45" Size="502,45">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="6,6" Name="BehaviorsDecoration" PackLocation="center,top" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="491,40" Size="491,40" />
+        <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="0,-5" MaxLines="1" Name="MercName" PackSize="absolute,fixed" ScrollExtent="502,38" ShadowStyle="/ShadowStylesNew.Outline.style" Size="502,38" TextAlignment="Center" TextAlignmentVertical="Center">:57e2376005311487:Zoltaroth</Text>
+    </Page>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="529,500" Size="529,500">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,11" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="360,70" Size="360,70">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="230,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="230,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:57e23760c6c26407:Hire Mercenary</Text>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,11" Name="Frame" PackLocation="center,center" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="528,502" Size="528,502" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,13" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="531,507" Size="531,507" />
+    </Page>
+</Page>
