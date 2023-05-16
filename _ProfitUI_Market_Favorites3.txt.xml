@@ -1,205 +1,205 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-                    <DataSource Name="FavSource3EN">
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="            Storage" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="10" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="STRONG BOXES (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Bubinga Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bubinga Box (48)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Box (44)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Swamp Ash Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Swamp Ash Box (44)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Box (40)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Box (36)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Redwood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Redwood Box (36)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Rosewood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Rosewood Box (31)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Box (32)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sandalwood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sandalwood Box (28)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Box (28)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Teak Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Teak Box (24)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Box (24)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Briarwood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Briarwood Box (20)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Box (20)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ash Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ash Box (16)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Bone Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bone Box (16)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Maple Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Maple Box (12)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Alder Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Alder Box (12)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Elm Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Elm Box (8)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="PACKS (Slots)(-Wt)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Metallic Reptile hide backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Reptile BP (48) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Spotted leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Spotted BP (44) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="bear hide backpack -thick" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bear Hide BP (44) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mottled leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mottled BP (40) (10%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Hidebound leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Hidebound BP (40) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Bristled leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bristled BP (36) (10%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Dragonhide Leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Dragonhide BP (36) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Horned Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Horned BP (32) (10%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Scaled Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Scaled BP (32) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Stonehide Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Stonehide BP (28) (10%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Augmented Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Augmented BP (28) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Strengthened Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Strengthened BP (24) (10%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Engraved Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Engraved BP (24) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Etched Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Etched BP (20) (10%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cuirboilli Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cuirboilli BP (20) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Boiled Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Boiled BP (16) (10%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cured Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cured BP (16) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Tanned Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Tanned BP (12) (10%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Waxed Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Waxed BP (12) (20%)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Rawhide Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Rawhide BP (8) (10%)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="SACKS (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Spotted leather sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Spotted Sack (26)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mottled leather sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mottled Sack (20)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="hidebound leather sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Hidebound Sack (24)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Dragonhide Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Dragonhide Sack (22)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Scaled Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Scaled Sack (20)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Augmented Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Augmented Sack (18)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="bristled leather sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bristled Sack (18)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Horned Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Horned Sack (16)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Engraved Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Engraved Sack (16)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Stonehide Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Stonehide Sack (14)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cuirboilli Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cuirboilli Sack (14)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Strengthened Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Strengthened Sack (12)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cured Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cured Sack (12)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Etched Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Etched Sack (10)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Waxed Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Waxed Sack (10)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Boiled Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Boiled Sack (8)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Tanned Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Tanned Sack (6)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Rawhide Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Rawhide Sack (5)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="QUIVERS (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Spotted leather quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Spotted Quiver (26)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Dragonhide Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Dragonhide Quiver (22)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mottled leather quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mottled Quiver (20)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Scaled Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Scaled Quiver (20)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Augmented Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Augmented Quiver (18)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="bristle leather quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bristle Quiver (18)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Horned Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Horned Quiver (16)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Engraved Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Engraved Quiver (16)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Stonehide Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Stonehide Quiver (14)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cuirboilli Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cuirboilli Quiver (14)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Strengthened Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Strengthened Quiver (12)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cured Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cured Quiver (12)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Etched Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Etched Quiver (10)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Waxed Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Waxed Quiver (10)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Boiled Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Boiled Quiver (8)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Tanned Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Tanned Quiver (6)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Rawhide Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Rawhide Quiver (5)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname=" " itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="        Sales Displays" tier="0" />
-                        <Data class="0" itemeffect=" " itemname=" " itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="CRATES (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Crate (76)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Crate (?)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Crate (68)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Crate (60)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Crate (52)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Crate (44)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Crate (36)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Crate (28)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Potion Cabinet" itemtype="31" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="Potion Cabinets (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Cabinet (96)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Cabinet (?)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Cabinet (88)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Cabinet (80)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Cabinet (72)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Cabinet (64)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Cabinet (56)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Cabinet (48)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Weapon Rack" itemtype="31" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="Weapon Racks (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Rack (96)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Rack (?)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Rack (88)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Rack (80)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Rack (72)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Rack (64)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Rack (56)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Rack (48)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="ARMOR &amp; SHIELD RACKS (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Rack (96)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Rack (?)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Rack (96)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Rack (88)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Rack (80)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Rack (72)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Rack (64)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Rack (56)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Rack (48)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="JEWELRY BOXES (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Box (96)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Box (?)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Box (88)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Box (80)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Box (72)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Box (64)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Box (56)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Box (48)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="BAG STANDS (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Stand (96)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Stand (?)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Stand (88)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Stand (80)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Stand (72)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Stand (64)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Stand (56)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Stand (48)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="SCROLL STANDS (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Stand (96)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac stand (?)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Stand (88)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Stand (80)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Stand (72)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Stand (64)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Stand (56)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Stand (48)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="31" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="FURNITURE SHELVES (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Shelf (96)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Shelf (?)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Shelf (88)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Shelf (80)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Shelf (72)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Shelf (64)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Shelf (56)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Shelf (48)" tier="0" />
-                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="PANTRIES (Slots)" tier="0" />
-                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Eucalyptus Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Pantry (96)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Sumac Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Pantry (?)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Mahogany Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Pantry (88)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ebony Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Pantry (80)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Ironwood Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Pantry (72)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Cedar Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Pantry (64)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Oak Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Pantry (56)" tier="0" />
-                        <Data class="0" itemeffect=" " itemname="Fir Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Pantry (48)" tier="0" />
-                    </DataSource>
+            <DataSource Name="FavSource3EN">
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="            Storage" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="10" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="STRONG BOXES (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Bubinga Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bubinga Box (48)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Box (44)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Swamp Ash Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Swamp Ash Box (44)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Box (40)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Box (36)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Redwood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Redwood Box (36)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Rosewood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Rosewood Box (31)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Box (32)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sandalwood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sandalwood Box (28)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Box (28)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Teak Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Teak Box (24)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Box (24)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Briarwood Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Briarwood Box (20)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Box (20)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ash Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ash Box (16)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Bone Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bone Box (16)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Maple Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Maple Box (12)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Alder Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Alder Box (12)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Elm Strong Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Elm Box (8)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="PACKS (Slots)(-Wt)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Metallic Reptile hide backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Reptile BP (48) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Spotted leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Spotted BP (44) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="bear hide backpack -thick" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bear Hide BP (44) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mottled leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mottled BP (40) (10%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Hidebound leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Hidebound BP (40) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Bristled leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bristled BP (36) (10%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Dragonhide Leather backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Dragonhide BP (36) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Horned Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Horned BP (32) (10%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Scaled Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Scaled BP (32) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Stonehide Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Stonehide BP (28) (10%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Augmented Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Augmented BP (28) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Strengthened Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Strengthened BP (24) (10%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Engraved Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Engraved BP (24) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Etched Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Etched BP (20) (10%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cuirboilli Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cuirboilli BP (20) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Boiled Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Boiled BP (16) (10%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cured Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cured BP (16) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Tanned Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Tanned BP (12) (10%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Waxed Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Waxed BP (12) (20%)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Rawhide Leather Backpack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Rawhide BP (8) (10%)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="SACKS (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Spotted leather sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Spotted Sack (26)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mottled leather sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mottled Sack (20)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="hidebound leather sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Hidebound Sack (24)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Dragonhide Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Dragonhide Sack (22)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Scaled Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Scaled Sack (20)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Augmented Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Augmented Sack (18)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="bristled leather sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bristled Sack (18)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Horned Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Horned Sack (16)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Engraved Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Engraved Sack (16)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Stonehide Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Stonehide Sack (14)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cuirboilli Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cuirboilli Sack (14)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Strengthened Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Strengthened Sack (12)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cured Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cured Sack (12)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Etched Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Etched Sack (10)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Waxed Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Waxed Sack (10)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Boiled Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Boiled Sack (8)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Tanned Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Tanned Sack (6)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Rawhide Leather Sack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Rawhide Sack (5)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="QUIVERS (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Spotted leather quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Spotted Quiver (26)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Dragonhide Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Dragonhide Quiver (22)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mottled leather quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mottled Quiver (20)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Scaled Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Scaled Quiver (20)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Augmented Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Augmented Quiver (18)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="bristle leather quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Bristle Quiver (18)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Horned Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Horned Quiver (16)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Engraved Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Engraved Quiver (16)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Stonehide Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Stonehide Quiver (14)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cuirboilli Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cuirboilli Quiver (14)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Strengthened Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Strengthened Quiver (12)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cured Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cured Quiver (12)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Etched Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Etched Quiver (10)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Waxed Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Waxed Quiver (10)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Boiled Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Boiled Quiver (8)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Tanned Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Tanned Quiver (6)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Rawhide Leather Quiver" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Rawhide Quiver (5)" tier="0" />
+                <Data class="0" itemeffect=" " itemname=" " itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="        Sales Displays" tier="0" />
+                <Data class="0" itemeffect=" " itemname=" " itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="CRATES (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Crate (76)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Crate (?)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Crate (68)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Crate (60)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Crate (52)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Crate (44)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Crate (36)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Salesman&apos;s Crate" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Crate (28)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Potion Cabinet" itemtype="31" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="Potion Cabinets (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Cabinet (96)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Cabinet (?)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Cabinet (88)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Cabinet (80)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Cabinet (72)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Cabinet (64)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Cabinet (56)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Potion Cabinet" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Cabinet (48)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Weapon Rack" itemtype="31" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="Weapon Racks (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Rack (96)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Rack (?)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Rack (88)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Rack (80)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Rack (72)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Rack (64)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Rack (56)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Weapon Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Rack (48)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="ARMOR &amp; SHIELD RACKS (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Rack (96)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Rack (?)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Rack (96)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Rack (88)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Rack (80)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Rack (72)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Rack (64)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Rack (56)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Armor and Shield Rack" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Rack (48)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="JEWELRY BOXES (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Box (96)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Box (?)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Box (88)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Box (80)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Box (72)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Box (64)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Box (56)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Jewelry Box" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Box (48)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="BAG STANDS (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Stand (96)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Stand (?)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Stand (88)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Stand (80)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Stand (72)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Stand (64)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Stand (56)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Bag Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Stand (48)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="SCROLL STANDS (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Stand (96)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac stand (?)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Stand (88)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Stand (80)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Stand (72)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Stand (64)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Stand (56)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Scroll Stand" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Stand (48)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="31" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="FURNITURE SHELVES (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Shelf (96)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Shelf (?)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Shelf (88)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Shelf (80)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Shelf (72)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Shelf (64)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Shelf (56)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Furniture Shelf" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Shelf (48)" tier="0" />
+                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="PANTRIES (Slots)" tier="0" />
+                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Eucalyptus Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Eucalyptus Pantry (96)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Sumac Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Sumac Pantry (?)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Mahogany Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Mahogany Pantry (88)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ebony Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ebony Pantry (80)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Ironwood Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Ironwood Pantry (72)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Cedar Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Cedar Pantry (64)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Oak Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Oak Pantry (56)" tier="0" />
+                <Data class="0" itemeffect=" " itemname="Fir Pantry" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Fir Pantry (48)" tier="0" />
+            </DataSource>
