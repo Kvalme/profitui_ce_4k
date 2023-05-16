@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-    <Page IgnoreTab="false" ismodule="true" Name="MainHUD" PackSize="1,1" ProfitUI_SubclassDetector.Detect.Press="true" ScrollExtent="2048,768" Size="2048,768" Visible="false" Volume.Location="2,27">
+    <Page IgnoreTab="false" ismodule="true" Name="MainHUD" PackSize="1,1" ProfitUI_SubclassDetector.Detect.Press="true" ScrollExtent="1024,768" Size="1024,768" Visible="false" Volume.Location="2,27">
 <include>eq2ui_mainhud_achievements.xml</include>
 <include>eq2ui_mainhud_achievementcast.xml</include>
 <include>eq2ui_mainhud_advancementbutton.xml</include>

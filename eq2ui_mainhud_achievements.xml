@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="553,-4" Name="Achievements" PackLocation="center,center" ScrollExtent="969,650" Size="969,650" UserMovable="true" version="2.1" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="41,-4" Name="Achievements" PackLocation="center,center" ScrollExtent="969,650" Size="969,650" UserMovable="true" version="2.1" Visible="false">
             <Page Name="RemoveOrRollbackPage" ScrollExtent="970,652" Size="970,652">
                 <Page AbsorbsInput="false" Location="354,156" Name="RemoveOrRollbackFrame" PackSize="absolute,absolute" ScrollExtent="344,261" Size="344,261">
                     <Button DynamicDataFilter="0005" Location="87,148" MaximumSize="16384,38" MinimumSize="38,32" Name="Choice1" PackLocation="right,top" ScrollExtent="165,32" Size="165,32" Style="/CommonElements.PushButton.data.style" Tooltip=":43f65d3d5b2596dc:Remove this AA">:43f65d3d90d3e7f9:Remove</Button>

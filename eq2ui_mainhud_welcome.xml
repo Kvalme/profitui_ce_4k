@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="false" hideonce="true" IgnoreTab="false" Location="624,72" MaximumSize="1024,1024" Name="Welcome" OnShow="visible=HideOnce&#xD;&#xA;HideOnce=true" PackLocation="center,center" ScrollExtent="702,496" Size="702,496" UserMovable="true" UserScrollable="false" version="2.0" Visible="false">
+        <Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="false" hideonce="true" IgnoreTab="false" Location="112,72" MaximumSize="1024,1024" Name="Welcome" OnShow="visible=HideOnce&#xD;&#xA;HideOnce=true" PackLocation="center,center" ScrollExtent="702,496" Size="702,496" UserMovable="true" UserScrollable="false" version="2.0" Visible="false">
             <Image Location="19,116" Name="Seperator" ScrollExtent="668,2" Size="668,2" Style="seperator_style" />
             <ImageStyle Filter="true" Name="seperator_style">
                 <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="297,302,371,304" />

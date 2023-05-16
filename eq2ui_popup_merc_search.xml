@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page eq2usescomwndcontrols="true" Location="187,125" MinimumSize="529,472" Name="MercSearch" PackLocation="top,center" ScrollExtent="696,500" Size="696,500" UserMovable="true" version="2">
-    <Page BackgroundOpacity="1.000" Location="20,92" Name="MercSearchPage" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="656,370" Size="656,370">
-        <Scrollbar ArrowPressSound="sounds/button" Control="MercSearchComposite" HideIfUnnecessary="true" Location="626,8" MaximumSize="22,16384" MinimumSize="22,80" Name="MercSearchScrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,356" Size="22,356" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
-        <Composite AbsorbsInput="false" Location="11,12" Name="MercSearchComposite" PackSize="a,a" ScrollExtent="634,348" ScrollSize="33,33" Size="634,348" Spacing="1" SpacingType="Constant" />
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="MercSearchTemplate" PackLocation="fixed,fixed" ScrollExtent="640,42" Size="640,42" Visible="false">
-            <Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="5,0" MouseOverColor="#FFFF00" Name="MercRole" ScrollExtent="42,42" Size="42,42" Tooltip="Mercenary Role" />
-            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="52,0" MaxLines="1" Name="MercName" PackSize="absolute,fixed" ScrollExtent="268,42" ShadowStyle="/ShadowStylesNew.Outline.style" Size="268,42" TextAlignmentVertical="Center">Bunji</Text>
-            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="319,0" MaxLines="1" Name="MercLoc" PackSize="absolute,fixed" ScrollExtent="264,42" ShadowStyle="/ShadowStylesNew.Outline.style" Size="264,42" TextAlignment="Center" TextAlignmentVertical="Center">City of Freeport</Text>
-            <Button Location="580,0" MaximumSize="16384,42" MinimumSize="26,26" Name="MercWaypointButton" ScrollExtent="43,42" Size="43,42" Style="/CommonElements.PushButton.data.style" Tooltip="Create Waypoint to Merc">WP</Button>
+        <Page eq2usescomwndcontrols="true" Location="187,125" MinimumSize="529,472" Name="MercSearch" PackLocation="top,center" ScrollExtent="696,500" Size="696,500" UserMovable="true" version="2">
+            <Page BackgroundOpacity="1.000" Location="20,92" Name="MercSearchPage" PackSize="absolute,fixed" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="656,370" Size="656,370">
+                <Scrollbar ArrowPressSound="sounds/button" Control="MercSearchComposite" HideIfUnnecessary="true" Location="626,8" MaximumSize="22,16384" MinimumSize="22,80" Name="MercSearchScrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,356" Size="22,356" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Composite AbsorbsInput="false" Location="11,12" Name="MercSearchComposite" PackSize="a,a" ScrollExtent="634,348" ScrollSize="33,33" Size="634,348" Spacing="1" SpacingType="Constant" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="MercSearchTemplate" PackLocation="fixed,fixed" ScrollExtent="640,42" Size="640,42" Visible="false">
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Items.Equipment" IconStyle="/IconStyles.inventory" Location="5,0" MouseOverColor="#FFFF00" Name="MercRole" ScrollExtent="42,42" Size="42,42" Tooltip="Mercenary Role" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="52,0" MaxLines="1" Name="MercName" PackSize="absolute,fixed" ScrollExtent="268,42" ShadowStyle="/ShadowStylesNew.Outline.style" Size="268,42" TextAlignmentVertical="Center">Bunji</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="319,0" MaxLines="1" Name="MercLoc" PackSize="absolute,fixed" ScrollExtent="264,42" ShadowStyle="/ShadowStylesNew.Outline.style" Size="264,42" TextAlignment="Center" TextAlignmentVertical="Center">City of Freeport</Text>
+                    <Button Location="580,0" MaximumSize="16384,42" MinimumSize="26,26" Name="MercWaypointButton" ScrollExtent="43,42" Size="43,42" Style="/CommonElements.PushButton.data.style" Tooltip="Create Waypoint to Merc">WP</Button>
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" Location="13,49" Name="MercSearchTitlePage" PackLocation="absolute,fixed" ScrollExtent="670,45" Size="670,45">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="90,6" Name="BehaviorsDecoration" PackLocation="center,top" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="491,40" Size="491,40" />
+                <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="0,-5" MaxLines="1" Name="MercSearchTitle" PackSize="absolute,fixed" ScrollExtent="670,38" ShadowStyle="/ShadowStylesNew.Outline.style" Size="670,38" TextAlignment="Center" TextAlignmentVertical="Center">Search For Mercenaries</Text>
+            </Page>
+            <Page Location="13,458" Name="MercControlsPage" PackSize="absolute,fixed" ScrollExtent="669,38" Size="669,38">
+                <Button IsCancelButton="true" Location="532,3" MaximumSize="16384,32" MinimumSize="32,32" Name="CancelButton" PackLocation="right,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">Close</Button>
+                <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="12,10" Margin="1,0,0,0" Name="FilterLabel" ScrollExtent="75,46" Size="75,19" TextAlignment="Center" TextColor="#EFEFEF">Merc Name:</Text>
+                <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" DragAccepts="icon" IME="true" Location="91,4" MaximumSize="16384,30" MinimumSize="30,30" Name="FilterText" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="190,30" Size="190,30" Style="/CommonElements.Textfield.data.style" Tooltip="Input merc name to search and press Enter" />
+            </Page>
+            <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="696,500" Size="696,500">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,11" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="330,70" Size="330,70">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="200,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="200,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">Mercenary Search</Text>
+                </Page>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,11" Name="Frame" PackLocation="center,center" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="696,502" Size="696,502" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,13" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="696,507" Size="696,507" />
+            </Page>
         </Page>
-    </Page>
-    <Page AbsorbsInput="false" Location="13,49" Name="MercSearchTitlePage" PackLocation="absolute,fixed" ScrollExtent="670,45" Size="670,45">
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="90,6" Name="BehaviorsDecoration" PackLocation="center,top" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="491,40" Size="491,40" />
-        <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="0,-5" MaxLines="1" Name="MercSearchTitle" PackSize="absolute,fixed" ScrollExtent="670,38" ShadowStyle="/ShadowStylesNew.Outline.style" Size="670,38" TextAlignment="Center" TextAlignmentVertical="Center">Search For Mercenaries</Text>
-    </Page>
-    <Page Location="13,458" Name="MercControlsPage" PackSize="absolute,fixed" ScrollExtent="669,38" Size="669,38">
-        <Button IsCancelButton="true" Location="532,3" MaximumSize="16384,32" MinimumSize="32,32" Name="CancelButton" PackLocation="right,top" ScrollExtent="127,32" Size="127,32" Style="/CommonElements.PushButton.data.style">Close</Button>
-        <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="12,10" Margin="1,0,0,0" Name="FilterLabel" ScrollExtent="75,46" Size="75,19" TextAlignment="Center" TextColor="#EFEFEF">Merc Name:</Text>
-        <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" DragAccepts="icon" IME="true" Location="91,4" MaximumSize="16384,30" MinimumSize="30,30" Name="FilterText" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="190,30" Size="190,30" Style="/CommonElements.Textfield.data.style" Tooltip="Input merc name to search and press Enter" />
-    </Page>
-    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="696,500" Size="696,500">
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,11" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="330,70" Size="330,70">
-            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="200,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="200,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">Mercenary Search</Text>
-        </Page>
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,11" Name="Frame" PackLocation="center,center" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="696,502" Size="696,502" />
-        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,13" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="696,507" Size="696,507" />
-    </Page>
-</Page>

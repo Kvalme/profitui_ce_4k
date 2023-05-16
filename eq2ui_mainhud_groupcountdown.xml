@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="true" Location="946,304" Name="GroupCountdown" PackLocation="center,center" ScrollExtent="222,173" Size="222,173" UserMovable="true" Visible="false">
+        <Page eq2usescomwndcontrols="true" Location="434,304" Name="GroupCountdown" PackLocation="center,center" ScrollExtent="222,173" Size="222,173" UserMovable="true" Visible="false">
             <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="0,43" Name="Label" PackLocation="top,left" PackSize="absolute" ScrollExtent="222,18" Size="222,18" TextAlignment="Center" TextAlignmentVertical="Center">:f:Set Duration</Text>
             <Composite Location="14,73" Name="SliderHComposite" Orientation="Horizontal" ScrollExtent="194,15" Size="194,15" Spacing="8" SpacingType="Constant">
                 <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" MinimumSize="32,15" Name="Min" PackLocation="top,left" PackSize="fixed,fixed" ScrollExtent="32,15" Size="32,15" TextAlignment="Center" TextAlignmentVertical="Center">1</Text>

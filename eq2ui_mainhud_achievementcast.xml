@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Location="844,572" MaximumSize="600,31" MinimumSize="200,31" Name="AchievementCast" PackLocation="center,center" ScrollExtent="360,31" Size="360,31" Visible="false">
+        <Page Location="332,572" MaximumSize="600,31" MinimumSize="200,31" Name="AchievementCast" PackLocation="center,center" ScrollExtent="360,31" Size="360,31" Visible="false">
             <Page AbsorbsInput="false" DynamicDataFilter="0001" Location="4,4" Name="CastingProgress" PackLocation="left,top" PackSize="a,a" ScrollExtent="355,22" Size="355,22">
                 <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Margin="1,0,2,2" Name="SpellName" PackSize="a,a" ScrollExtent="355,25" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="355,22" TextAlignment="Center" TextAlignmentVertical="Center">:411fa2fc5c3f3677:Commit AA Template</Text>
                 <Page Location="1,1" Name="Progress" PackSize="a,a" ScrollExtent="354,20" Size="354,20">

@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Name="dropdown_template" ScrollExtent="320,24" Size="320,24" Visible="false">
-            <Text Font="/TextStyles.Normal.NormalStyle" Location="5,0" Margin="1,1,1,1" Name="TextLine" PackSize="a,a" ScrollExtent="315,25" Size="315,24" TextColor="#FBF1D9">$text$</Text>
-        </Page>
+            <Page Name="dropdown_template" ScrollExtent="320,24" Size="320,24" Visible="false">
+                <Text Font="/TextStyles.Normal.NormalStyle" Location="5,0" Margin="1,1,1,1" Name="TextLine" PackSize="a,a" ScrollExtent="315,25" Size="315,24" TextColor="#FBF1D9">$text$</Text>
+            </Page>

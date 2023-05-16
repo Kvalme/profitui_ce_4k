@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="1559,85" MinimumSize="300,400" Name="Map" PackLocation="right,center" ScrollExtent="441,622" Size="441,622" UserMovable="true" UserResizable="true" version="1.1.0" Visible="false">
+        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="535,85" MinimumSize="300,400" Name="Map" PackLocation="right,center" ScrollExtent="441,622" Size="441,622" UserMovable="true" UserResizable="true" version="1.1.0" Visible="false">
             <Page Location="416,560" Name="ZoomControls" PackLocation="fff,fff" ScrollExtent="24,13" Size="24,13">
                 <Image GetsInput="true" Location="1,1" Name="ZoomIn" ScrollExtent="9,9" Size="9,9" SourceRect="217,322,226,331" SourceResource="images/commonelements.dds" Tooltip=":0df337557d461a46:Zoom In" />
                 <Image GetsInput="true" Location="11,1" Name="ZoomOut" ScrollExtent="9,9" Size="9,9" SourceRect="217,346,226,355" SourceResource="images/commonelements.dds" Tooltip=":0df337556511a0b2:Zoom Out" />

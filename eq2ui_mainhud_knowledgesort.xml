@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="1597,108" Name="KnowledgeSort" PackLocation="right,top" ScrollExtent="380,266" Size="380,266" UserMovable="true" Visible="false">
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="573,108" Name="KnowledgeSort" PackLocation="right,top" ScrollExtent="380,266" Size="380,266" UserMovable="true" Visible="false">
             <Text Color="#F0D080" Font="/TextStyles.Large.LargeStyle" Location="40,40" Name="SortType" ScrollExtent="130,26" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="130,23" TextAlignment="Center" TextAlignmentVertical="Center">:c3483390a5a2a907:Sort by:</Text>
             <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="50,65" MinimumSize="22,22" Name="Alpha" Radio="true" ScrollExtent="153,22" Size="153,22" Style="/CommonElements.RadioButton.data.style">:c3483390048effbe:Alphabetical</Checkbox>
             <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="50,87" MinimumSize="22,22" Name="Level" Radio="true" ScrollExtent="153,22" Size="153,22" Style="/CommonElements.RadioButton.data.style">:c3483390a4d41ce8:Level</Checkbox>

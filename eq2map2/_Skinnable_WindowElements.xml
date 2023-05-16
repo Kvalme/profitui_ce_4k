@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrameFull" PackSize="a,a" ScrollExtent="2072,784" Size="2072,784" Visible="false">
-                <Page GetsInput="false" Location="14,28" Name="MapRect" PackSize="a,a" ScrollExtent="2044,739" Size="2044,739" />
-                <Button Location="1995,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":69c2ff87ec278586:Window Settings" UserMovable="true" />
-                <Button Location="1975,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":69c2ff87574a0c6d:Help" UserMovable="true" />
-                <Button Location="2015,8" Name="Max" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.maximize.style" Tooltip=":69c2ff871095f1b1:Maximize" UserMovable="true" />
-                <Button Location="2035,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":69c2ff872d3f513f:Close" UserMovable="true" />
-                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="1861,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="210,70" Size="210,70" />
+            <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrameFull" PackSize="a,a" ScrollExtent="1048,784" Size="1048,784" Visible="false">
+                <Page GetsInput="false" Location="14,28" Name="MapRect" PackSize="a,a" ScrollExtent="1020,739" Size="1020,739" />
+                <Button Location="971,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":69c2ff87ec278586:Window Settings" UserMovable="true" />
+                <Button Location="951,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":69c2ff87574a0c6d:Help" UserMovable="true" />
+                <Button Location="991,8" Name="Max" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.maximize.style" Tooltip=":69c2ff871095f1b1:Maximize" UserMovable="true" />
+                <Button Location="1011,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":69c2ff872d3f513f:Close" UserMovable="true" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="837,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="210,70" Size="210,70" />
                 <Page AbsorbsInput="false" BackgroundOpacity="1.000" MaximumSize="400,70" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="384,70" Size="384,70">
                     <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="30,5" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="254,26" ShadowStyle="/ShadowStylesNew.Outline.style" Size="254,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:69c2ff87541f13a4:Map</Text>
                 </Page>
-                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="2071,784" Size="2071,784" />
-                <Page AbsorbsInput="false" Color="#000000" Location="0,2" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="2072,782" Size="2072,782" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="1047,784" Size="1047,784" />
+                <Page AbsorbsInput="false" Color="#000000" Location="0,2" Name="Bkg" PackSize="a,a" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="1048,782" Size="1048,782" />
             </Page>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page BackgroundColor="#00FF00" clientmarginframe="0,0,5,10" clientmarginnone="0,0,5,10" eq2usescomwndcontrols="true" Location="817,627" MaximumSize="1536,1024" MinimumSize="50,50" Name="Channeler" PackLocation="center,bottom" ScrollExtent="372,52" Size="372,52" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
+        <Page BackgroundColor="#00FF00" clientmarginframe="0,0,5,10" clientmarginnone="0,0,5,10" eq2usescomwndcontrols="true" Location="305,627" MaximumSize="1536,1024" MinimumSize="50,50" Name="Channeler" PackLocation="center,bottom" ScrollExtent="372,52" Size="372,52" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
             <Page Location="348,5" Name="EndPage" PackLocation="right,top" PackSize="f,a" ScrollExtent="20,42" Size="20,42">
                 <Image Location="1,0" Name="BkgImage" PackLocation="right,cfc" Rotation="1.000" ScrollExtent="18,42" Size="18,42" Stretch="false" Style="Bkg" />
                 <ImageStyle Name="Bkg">

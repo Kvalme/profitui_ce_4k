@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" MinimumSize="100,100" Name="Map2" OnHoverIn="ShiftingPOIsWorkaround.Press=true" OnShow="RecenterMap.Activated=&apos;!&apos;WindowFrame.IsMinimap ShiftingPOIsWorkaround.Press=true" PackSize="a,a" ScrollExtent="2051,774" Size="2051,774" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
+        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" MinimumSize="100,100" Name="Map2" OnHoverIn="ShiftingPOIsWorkaround.Press=true" OnShow="RecenterMap.Activated=&apos;!&apos;WindowFrame.IsMinimap ShiftingPOIsWorkaround.Press=true" PackSize="a,a" ScrollExtent="1027,774" Size="1027,774" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
             <Button Name="RecenterMap" OnActivate="map2_center_map_on_player&#xA;Activated=false" />
             <Button Name="ShiftingPOIsWorkaround" OnPress="Parent.MapSubGroup.MapPage.Icons.Location=0,0 Parent.MapSubGroup.MapPage.Icons.Size=Parent.MapSubGroup.MapPage.Size" />
 <include>eq2map2/_Skinnable_SearchBar.xml</include>
@@ -1552,9 +1552,9 @@
             </Namespace>
 <include>eq2map2/_Skinnable_WindowElementsMini.xml</include>
 <include>eq2map2/_Skinnable_WindowElements.xml</include>
-            <Page Activated="true" Location="2,25" Name="MapSubGroup" OnHoverIn="ToggleIcons.Visible=Parent.WindowFrame.IsMinimap" OnHoverOut="ToggleIcons.Visible=false" PackLocation="left,top" PackSize="a,a" ScrollExtent="2048,768" Size="2048,768">
+            <Page Activated="true" Location="2,25" Name="MapSubGroup" OnHoverIn="ToggleIcons.Visible=Parent.WindowFrame.IsMinimap" OnHoverOut="ToggleIcons.Visible=false" PackLocation="left,top" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768">
                 <Button Location="2,2" Name="ToggleIcons" OnPress="Parent.MapPage.Icons.Visible=&apos;!&apos;Parent.MapPage.Icons.Visible" ScrollExtent="15,15" Size="15,15" Style="Skinnable_Styles.ToggleIcons" Tooltip="Toggle Visibility of POI Icons" Visible="false" />
-                <Page AbsorbsInput="false" Location="4,88" Name="LocationPage" PackSize="a,a" ScrollExtent="1462,510" Size="1462,510" Visible="false">
+                <Page AbsorbsInput="false" Location="4,88" Name="LocationPage" PackSize="a,a" ScrollExtent="438,510" Size="438,510" Visible="false">
 <include>eq2map2/_Skinnable_Location_Images.xml</include>
 <include>eq2map2/_Skinnable_Location_Images.xml</include>
 <include>eq2map2/_Skinnable_Location_Images.xml</include>
@@ -1568,15 +1568,15 @@
 <include>eq2map2/_Skinnable_Location_Images.xml</include>
 <include>eq2map2/_Skinnable_Location_Images.xml</include>
                 </Page>
-                <Page Name="NoMap" PackSize="a,a" ScrollExtent="2048,768" Size="2048,768">
+                <Page Name="NoMap" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768">
 <include>eq2map2/core_nomap.xml</include>
                     <ImageStyle Name="NoMapBkg">
                         <ImageFrame Name="imageFrame" Source="images/maps2/dungeon_parch_blank.dds" SourceRect="0,0,436,506" />
                     </ImageStyle>
-                    <Image Location="2,2" Name="bkg" PackSize="a,a" ScrollExtent="2044,764" Size="2044,764" Style="NoMapBkg" />
+                    <Image Location="2,2" Name="bkg" PackSize="a,a" ScrollExtent="1020,764" Size="1020,764" Style="NoMapBkg" />
                 </Page>
-                <Page AbsorbsInput="false" Name="MapPage" PackSize="a,a" ScrollExtent="2048,768" Size="2048,768">
-                    <Page AbsorbsInput="false" Name="Icons" PackSize="a,a" ScrollExtent="2048,768" Size="2048,768">
+                <Page AbsorbsInput="false" Name="MapPage" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768">
+                    <Page AbsorbsInput="false" Name="Icons" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768">
 <include>eq2map2/_Skinnable_POI_Icons.xml</include>
 <include>eq2map2/_Skinnable_POI_Icons.xml</include>
 <include>eq2map2/_Skinnable_POI_Icons.xml</include>
@@ -1652,8 +1652,8 @@
 <include>eq2map2/_Skinnable_POI_Icons.xml</include>
                     </Page>
                 </Page>
-                <Page Name="MapControlPage" PackSize="a,a" ScrollExtent="2048,768" Size="2048,768">
-                    <Map AbsorbsInput="false" Name="MapControl" PackSize="a,a" ScrollExtent="2048,768" Size="2048,768" />
+                <Page Name="MapControlPage" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768">
+                    <Map AbsorbsInput="false" Name="MapControl" PackSize="a,a" ScrollExtent="1024,768" Size="1024,768" />
                 </Page>
             </Page>
 <include>eq2map2/_Skinnable_Styles.xml</include>

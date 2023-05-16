@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="1246,262" Name="GuildRecruiterSettings" PackLocation="right,top" ScrollExtent="560,315" Size="560,315" UserMovable="true" version="1" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="222,262" Name="GuildRecruiterSettings" PackLocation="right,top" ScrollExtent="560,315" Size="560,315" UserMovable="true" version="1" Visible="false">
             <Text Font="/TextStyles.Large.LargeStyle" Location="35,40" Name="Header" PackSize="a" ScrollExtent="480,52" Size="480,21" TextAlignment="Center">:a3a083ef16b4d84e:This is how you currently appear in the guild browser.</Text>
             <Page Location="40,70" Name="SampleRow" ScrollExtent="480,100" Size="480,100">
                 <ImageStyle Filter="true" Name="chat_bubble">

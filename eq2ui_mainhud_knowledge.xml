@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="708,133" MaximumSize="1024,1024" MinimumSize="287,108" Name="Knowledge" PackLocation="center,center" ScrollExtent="640,525" Size="640,525" UserMovable="true" Visible="false">
+        <Page Activated="true" eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="196,133" MaximumSize="1024,1024" MinimumSize="287,108" Name="Knowledge" PackLocation="center,center" ScrollExtent="640,525" Size="640,525" UserMovable="true" Visible="false">
             <Button Location="285,444" MaximumSize="16384,26" MinimumSize="26,26" Name="Sort" PackLocation="right,cfc" ScrollExtent="70,26" Size="70,26" Style="/CommonElements.SmallPushButton.data.style">:a26a52e70b418549:Sort...</Button>
             <Namespace Name="data">
                 <ImageStyle Name="tradeskills_bkg">

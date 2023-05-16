@@ -1,654 +1,654 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Namespace Name="ButtonStyles">
-    <Namespace Name="PushButton">
-        <Namespace Name="data">
-            <Namespace Name="pressed">
-                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="east" EastShrink="true" Name="rect" West="west" WestShrink="true" />
-                <ImageStyle Filter="true" Name="east">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="189,111,207,143" />
-                </ImageStyle>
-                <ImageStyle Filter="true" Name="west">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="109,111,127,143" />
-                </ImageStyle>
-                <ImageStyle Filter="true" Name="center">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="128,111,188,143" />
+        <Namespace Name="ButtonStyles">
+            <Namespace Name="PushButton">
+                <Namespace Name="data">
+                    <Namespace Name="pressed">
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="east" EastShrink="true" Name="rect" West="west" WestShrink="true" />
+                        <ImageStyle Filter="true" Name="east">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="189,111,207,143" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="west">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="109,111,127,143" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="128,111,188,143" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="mouseover">
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="east" EastShrink="true" Name="rect" West="west" WestShrink="true" />
+                        <ImageStyle Filter="true" Name="east">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="191,79,204,103" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="west">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="114,79,124,103" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="128,79,188,103" />
+                        </ImageStyle>
+                    </Namespace>
+                    <Namespace Name="disabled">
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="east" EastShrink="true" Name="rect" West="west" WestShrink="true" />
+                        <ImageStyle Filter="true" Name="east">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="191,43,204,67" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="west">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="114,43,124,67" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="128,43,188,67" />
+                        </ImageStyle>
+                    </Namespace>
+                    <ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" DisabledTextStyle="/TextStyles.Normal.NormalStyle" MouseOverSound="ui_mouseover" MouseOverTextColor="#FFFF00" MouseOverTextShadowStyle="/ShadowStylesNew.Drop.style" MouseOverTextStyle="/TextStyles.Normal.NormalStyle" Name="style" NormalTextColor="#F0D080" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/TextStyles.Normal.NormalStyle" PressedTextShadowStyle="/ShadowStylesNew.Drop.style" PressedTextStyle="/TextStyles.Normal.NormalStyle" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="pressed.rect" RStyleDefault="default.rect" RStyleDisabled="disabled.rect" RStyleMouseOver="mouseover.rect" RStyleMouseOverSelected="pressed.rect" RStyleSelected="pressed.rect" SelectedTextShadowStyle="/ShadowStylesNew.Drop.style" SelectedTextStyle="/TextStyles.Normal.NormalStyle" />
+                    <Namespace Name="default">
+                        <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="east" EastShrink="true" Name="rect" West="west" WestShrink="true" />
+                        <ImageStyle Filter="true" Name="east">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="191,7,204,31" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="west">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="114,7,124,31" />
+                        </ImageStyle>
+                        <ImageStyle Filter="true" Name="center">
+                            <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="128,7,188,31" />
+                        </ImageStyle>
+                    </Namespace>
+                </Namespace>
+            </Namespace>
+            <ButtonStyle Name="AutoBank" RStyleDefault="AutoBank_default" RStyleMouseOver="AutoBank_mouseover" />
+            <ButtonStyle DisabledTextColor="#404040" DisabledTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" DisabledTextStyle="Fonts.FontArial14T" MouseOverTextColor="#FFFF00" MouseOverTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" MouseOverTextStyle="Fonts.FontArial14T" Name="PersonaButton" NormalTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" NormalTextStyle="Fonts.FontArial14T" PressedTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" PressedTextStyle="Fonts.FontArial14T" PressSound="click" RStyleDefault="PersonaButtons.PersonaButton_default" RStyleMouseOver="PersonaButtons.PersonaButton_mouseover" SelectedTextColor="#FFFF00" SelectedTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" SelectedTextStyle="Fonts.FontArial14T" />
+            <ButtonStyle Name="ToggleBags" RStyleDefault="BankButtons.ToggleBags_default" RStyleMouseOver="BankButtons.ToggleBags_mouseover" />
+            <Namespace Name="PersonaButtons">
+                <RectangleStyle Center="PButton" CenterShrinkH="true" CenterShrinkV="true" Name="PersonaButton_default" />
+                <RectangleStyle Center="PButton" CenterShrinkH="true" CenterShrinkV="true" Name="PersonaButton_mouseover" />
+                <ImageStyle Filter="true" Name="PButton">
+                    <ImageFrame Name="image" Source="images/profit.dds" SourceRect="400,200,425,225" />
                 </ImageStyle>
             </Namespace>
-            <Namespace Name="mouseover">
-                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="east" EastShrink="true" Name="rect" West="west" WestShrink="true" />
-                <ImageStyle Filter="true" Name="east">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="191,79,204,103" />
+            <Namespace Name="BankButtons">
+                <ImageStyle Filter="true" Name="AutoBank">
+                    <ImageFrame Name="image" Source="images/icons/icon_as1.dds" SourceRect="127,168,168,210" />
                 </ImageStyle>
-                <ImageStyle Filter="true" Name="west">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="114,79,124,103" />
-                </ImageStyle>
-                <ImageStyle Filter="true" Name="center">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="128,79,188,103" />
+                <RectangleStyle Center="ToggleBags" CenterShrinkH="true" CenterShrinkV="true" Name="ToggleBags_default" />
+                <RectangleStyle Center="ToggleBags" CenterShrinkH="true" CenterShrinkV="true" Name="ToggleBags_mouseover" />
+                <ImageStyle Filter="true" Name="ToggleBags">
+                    <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="211,0,252,42" />
                 </ImageStyle>
             </Namespace>
-            <Namespace Name="disabled">
-                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="east" EastShrink="true" Name="rect" West="west" WestShrink="true" />
-                <ImageStyle Filter="true" Name="east">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="191,43,204,67" />
+            <CheckboxStyle Name="MaximizeCheckbox" RStyleActivated="Maximize.activated" RStyleDefault="Maximize.normal" />
+            <ButtonStyle DisabledTextColor="#404040" DisabledTextStyle="Fonts.FontArial12T" MouseOverTextColor="#FFFF00" MouseOverTextStyle="Fonts.FontArial12T" Name="box_button" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial12T" PressedTextStyle="Fonts.FontArial12T" PressSound="click" RStyleActivated="BoxButton.box_but_pressed" RStyleDefault="BoxButton.box_but_normal" RStyleDisabled="BoxButton.box_but_disabled" RStyleDisabledActivated="BoxButton.box_but_pressed_disabled" RStyleMouseOver="BoxButton.box_but_mouseover" RStyleMouseOverActivated="BoxButton.box_but_pressed" SelectedTextColor="#CCFFFF" SelectedTextStyle="Fonts.FontArial12T" />
+            <Namespace Name="Maximize">
+                <RectangleStyle Center="img_normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal" />
+                <ImageStyle Filter="true" Name="img_activated">
+                    <ImageFrame Name="image" Source="images/buttons_master.dds" SourceRect="54,216,71,235" />
                 </ImageStyle>
-                <ImageStyle Filter="true" Name="west">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="114,43,124,67" />
-                </ImageStyle>
-                <ImageStyle Filter="true" Name="center">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="128,43,188,67" />
-                </ImageStyle>
-            </Namespace>
-            <ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" DisabledTextStyle="/TextStyles.Normal.NormalStyle" MouseOverSound="ui_mouseover" MouseOverTextColor="#FFFF00" MouseOverTextShadowStyle="/ShadowStylesNew.Drop.style" MouseOverTextStyle="/TextStyles.Normal.NormalStyle" Name="style" NormalTextColor="#F0D080" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/TextStyles.Normal.NormalStyle" PressedTextShadowStyle="/ShadowStylesNew.Drop.style" PressedTextStyle="/TextStyles.Normal.NormalStyle" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="pressed.rect" RStyleDefault="default.rect" RStyleDisabled="disabled.rect" RStyleMouseOver="mouseover.rect" RStyleMouseOverSelected="pressed.rect" RStyleSelected="pressed.rect" SelectedTextShadowStyle="/ShadowStylesNew.Drop.style" SelectedTextStyle="/TextStyles.Normal.NormalStyle" />
-            <Namespace Name="default">
-                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" East="east" EastShrink="true" Name="rect" West="west" WestShrink="true" />
-                <ImageStyle Filter="true" Name="east">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="191,7,204,31" />
-                </ImageStyle>
-                <ImageStyle Filter="true" Name="west">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="114,7,124,31" />
-                </ImageStyle>
-                <ImageStyle Filter="true" Name="center">
-                    <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="128,7,188,31" />
+                <RectangleStyle Center="img_activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated" />
+                <ImageStyle Filter="true" Name="img_normal">
+                    <ImageFrame Name="image" Source="images/buttons_master.dds" SourceRect="32,216,49,235" />
                 </ImageStyle>
             </Namespace>
+            <Namespace Name="PetHide">
+                <RectangleStyle Center="img_normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal" />
+                <ImageStyle Filter="true" Name="img_normal">
+                    <ImageFrame Name="image" Source="images/profit.dds" SourceRect="9,434,30,454" />
+                </ImageStyle>
+            </Namespace>
+            <ButtonStyle Name="PetHideButton" RStyleDefault="PetHide.normal" />
+            <Namespace Name="Browser">
+                <ButtonStyle Name="GoButton" RStyleActivated="Go.activated" RStyleDefault="Go.normal" RStyleMouseOver="Go.activated" RStyleMouseOverActivated="Go.activated" />
+                <ButtonStyle Name="BrowserIconButton" RStyleActivated="BrowserIcon.activated" RStyleDefault="BrowserIcon.normal" RStyleMouseOver="BrowserIcon.activated" RStyleMouseOverActivated="BrowserIcon.activated" />
+                <Namespace Name="BrowserIcon">
+                    <RectangleStyle Center="img_activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated" />
+                    <RectangleStyle Center="img_normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal" />
+                    <ImageStyle Filter="true" Name="img_activated">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="32,35,48,51" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_normal">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="32,87,48,103" />
+                    </ImageStyle>
+                </Namespace>
+                <ButtonStyle Name="ForwardButton" RStyleActivated="Forward.activated" RStyleDefault="Forward.normal" RStyleDisabled="Forward.disabled" RStyleDisabledActivated="Forward.disabled" RStyleMouseOver="Forward.activated" RStyleMouseOverActivated="Forward.activated" />
+                <ButtonStyle Name="BookmarkButton" RStyleActivated="Bookmark.activated" RStyleDefault="Bookmark.normal" RStyleMouseOver="Bookmark.activated" RStyleMouseOverActivated="Bookmark.activated" />
+                <Namespace Name="Refresh">
+                    <RectangleStyle Center="img_activated" Name="activated" />
+                    <RectangleStyle Center="img_normal" Name="normal" />
+                    <ImageStyle Filter="true" Name="img_activated">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="0,70,16,86" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_normal">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="0,18,16,34" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="Go">
+                    <RectangleStyle Center="img_activated" Name="activated" />
+                    <RectangleStyle Center="img_normal" Name="normal" />
+                    <ImageStyle Filter="true" Name="img_activated">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="0,87,15,103" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_normal">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="0,35,16,51" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="Bookmark">
+                    <RectangleStyle Center="img_activated" Name="activated" />
+                    <RectangleStyle Center="img_normal" Name="normal" />
+                    <ImageStyle Filter="true" Name="img_activated">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="15,87,31,103" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_normal">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="15,35,31,51" />
+                    </ImageStyle>
+                </Namespace>
+                <ButtonStyle Name="RefreshButton" RStyleActivated="Refresh.activated" RStyleDefault="Refresh.normal" RStyleMouseOver="Refresh.activated" RStyleMouseOverActivated="Refresh.activated" />
+                <ButtonStyle Name="HomeButton" RStyleActivated="Home.activated" RStyleDefault="Home.normal" RStyleMouseOver="Home.activated" RStyleMouseOverActivated="Home.activated" />
+                <Namespace Name="Back">
+                    <RectangleStyle Center="img_activated" Name="activated" />
+                    <RectangleStyle Center="img_disabled" Name="disabled" />
+                    <RectangleStyle Center="img_normal" Name="normal" />
+                    <ImageStyle Filter="true" Name="img_disabled">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="64,1,80,17" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_activated">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="16,53,32,69" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_normal">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="16,1,32,17" />
+                    </ImageStyle>
+                </Namespace>
+                <ButtonStyle Name="BackButton" RStyleActivated="Back.activated" RStyleDefault="Back.normal" RStyleDisabled="Back.disabled" RStyleDisabledActivated="Back.disabled" RStyleMouseOver="Back.activated" RStyleMouseOverActivated="Back.activated" />
+                <Namespace Name="Stop">
+                    <RectangleStyle Center="img_activated" Name="activated" />
+                    <RectangleStyle Center="img_disabled" Name="disabled" />
+                    <RectangleStyle Center="img_normal" Name="normal" />
+                    <ImageStyle Filter="true" Name="img_disabled">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="81,18,97,34" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_activated">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="33,70,49,86" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_normal">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="33,18,49,34" />
+                    </ImageStyle>
+                </Namespace>
+                <ButtonStyle Name="StopButton" RStyleActivated="Stop.activated" RStyleDefault="Stop.normal" RStyleDisabled="Stop.disabled" RStyleDisabledActivated="Stop.disabled" RStyleMouseOver="Stop.activated" RStyleMouseOverActivated="Stop.activated" />
+                <Namespace Name="Forward">
+                    <RectangleStyle Center="img_activated" Name="activated" />
+                    <RectangleStyle Center="img_disabled" Name="disabled" />
+                    <RectangleStyle Center="img_normal" Name="normal" />
+                    <ImageStyle Filter="true" Name="img_disabled">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="80,1,96,17" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_activated">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="32,53,48,69" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_normal">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="32,1,48,17" />
+                    </ImageStyle>
+                </Namespace>
+                <Namespace Name="Home">
+                    <RectangleStyle Center="img_activated" Name="activated" />
+                    <RectangleStyle Center="img_normal" Name="normal" />
+                    <ImageStyle Filter="true" Name="img_activated">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="16,70,32,86" />
+                    </ImageStyle>
+                    <ImageStyle Filter="true" Name="img_normal">
+                        <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="16,18,32,34" />
+                    </ImageStyle>
+                </Namespace>
+            </Namespace>
+            <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF00" Name="BankSelector_down" RStyleDefault="BankSelector.rs_down" RStyleMouseOver="BankSelector.rs_down_over" />
+            <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF00" Name="BankSelector_up" RStyleDefault="BankSelector.rs_up" RStyleMouseOver="BankSelector.rs_up_over" />
+            <Namespace Name="BankSelector">
+                <ImageStyle Filter="true" Name="arrow_up">
+                    <ImageFrame Name="image" Source="images/profit.dds" SourceRect="26,323,40,337" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="arrow_down">
+                    <ImageFrame Name="image" Source="images/profit.dds" SourceRect="26,339,40,353" />
+                </ImageStyle>
+                <RectangleStyle Center="arrow_down" CenterShrinkH="true" CenterShrinkV="true" Name="rs_down" />
+                <ImageStyle Filter="true" Name="arrow_down_over">
+                    <ImageFrame Name="image" Source="images/profit.dds" SourceRect="42,339,56,353" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="arrow_up_over">
+                    <ImageFrame Name="image" Source="images/profit.dds" SourceRect="42,323,56,337" />
+                </ImageStyle>
+                <RectangleStyle Center="arrow_up" CenterShrinkH="true" CenterShrinkV="true" Name="rs_up" />
+                <RectangleStyle Center="arrow_up_over" CenterShrinkH="true" CenterShrinkV="true" Name="rs_up_over" />
+                <RectangleStyle Center="arrow_down_over" CenterShrinkH="true" CenterShrinkV="true" Name="rs_down_over" />
+            </Namespace>
+            <CheckboxStyle DisabledTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" DisabledTextStyle="Fonts.FontArial13T" Name="checkbox_textonly" NormalTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" NormalTextStyle="Fonts.FontArial13T" TextAlignment="Center" />
+            <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF80" Name="StartButton" NormalTextColor="#F0D080" RStyleActivated="StartButton.RStylePressed" RStyleDefault="StartButton.RStyleNormal" RStyleDisabled="StartButton.RStyleNormal" RStyleMouseOver="StartButton.RStyleMouseover" RStyleMouseOverSelected="StartButton.RStylePressed" RStyleSelected="StartButton.RStylePressed" />
+            <CheckboxStyle Name="InfocenterButton" RStyleActivated="InfocenterButton.activated_rect" RStyleDefault="InfocenterButton.default_rect" RStyleMouseOver="InfocenterButton.default_mouseover_rect" RStyleMouseOverActivated="InfocenterButton.activated_mouseover_rect" />
+            <Namespace Name="StartButton">
+                <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" EastStretch="false" Name="RStyleNormal" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+                <RectangleStyle Center="pressed" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" EastStretch="false" Name="RStylePressed" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+                <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" EastStretch="false" Name="RStyleMouseover" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+                <ImageStyle Name="mouseover">
+                    <ImageFrame Name="mouseover" Source="images/mugshots_female.dds" SourceRect="442,53,484,96" />
+                </ImageStyle>
+                <ImageStyle Name="pressed">
+                    <ImageFrame Name="pressed" Source="images/mugshots_female.dds" SourceRect="442,102,484,145" />
+                </ImageStyle>
+                <ImageStyle Name="normal">
+                    <ImageFrame Name="normal" Source="images/mugshots_female.dds" SourceRect="442,4,484,47" />
+                </ImageStyle>
+            </Namespace>
+            <Namespace Name="InfocenterButton">
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <RectangleStyle Center="activated_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="activated_mouseover_rect" />
+                <RectangleStyle Center="default" CenterShrinkH="true" CenterShrinkV="true" Name="default_rect" />
+                <RectangleStyle Center="default_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="default_mouseover_rect" />
+                <ImageStyle Filter="true" Name="default">
+                    <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="42,0,84,42" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="default_mouseover">
+                    <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="42,0,84,42" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="42,0,84,42" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="activated_mouseover">
+                    <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="42,0,84,42" />
+                </ImageStyle>
+            </Namespace>
+            <CheckboxStyle Name="PCCbutton" RStyleActivated="PCCbutton.activated_rect" RStyleDefault="PCCbutton.default_rect" RStyleMouseOver="PCCbutton.default_mouseover_rect" RStyleMouseOverActivated="PCCbutton.activated_mouseover_rect" />
+            <Namespace Name="PCCbutton">
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <RectangleStyle Center="activated_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="activated_mouseover_rect" />
+                <RectangleStyle Center="default" CenterShrinkH="true" CenterShrinkV="true" Name="default_rect" />
+                <RectangleStyle Center="default_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="default_mouseover_rect" />
+                <ImageStyle Filter="true" Name="default">
+                    <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="84,0,126,42" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="default_mouseover">
+                    <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="84,0,126,42" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="84,0,126,42" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="activated_mouseover">
+                    <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="84,0,126,42" />
+                </ImageStyle>
+            </Namespace>
+            <CheckboxStyle Name="NightVisionButton" RStyleActivated="NightVisionButton.activated_rect" RStyleDefault="NightVisionButton.default_rect" RStyleMouseOver="NightVisionButton.default_mouseover_rect" RStyleMouseOverActivated="NightVisionButton.activated_mouseover_rect" />
+            <Namespace Name="NightVisionButton">
+                <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
+                <RectangleStyle Center="activated_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="activated_mouseover_rect" />
+                <RectangleStyle Center="default" CenterShrinkH="true" CenterShrinkV="true" Name="default_rect" />
+                <RectangleStyle Center="default_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="default_mouseover_rect" />
+                <ImageStyle Filter="true" Name="default">
+                    <ImageFrame Name="image" Source="images/icons/icon_ss1.dds" SourceRect="211,1,252,42" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="default_mouseover">
+                    <ImageFrame Name="image" Source="images/icons/icon_ss1.dds" SourceRect="211,1,252,42" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="activated">
+                    <ImageFrame Name="image" Source="images/icons/icon_ss1.dds" SourceRect="211,1,252,42" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="activated_mouseover">
+                    <ImageFrame Name="image" Source="images/icons/icon_ss1.dds" SourceRect="211,1,252,42" />
+                </ImageStyle>
+            </Namespace>
+            <ButtonStyle Name="close_button" PressSound="click" RStyleActivated="CloseButton.close_but_pressed" RStyleDefault="CloseButton.close_but_normal" RStyleDisabled="CloseButton.close_but_disabled" RStyleDisabledActivated="CloseButton.close_but_disabled" RStyleMouseOver="CloseButton.close_but_mouseover" RStyleMouseOverActivated="CloseButton.close_but_pressed" />
+            <Namespace Name="CloseButton">
+                <RectangleStyle Center="close_button_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="close_but_mouseover" />
+                <RectangleStyle Center="close_button_mouseover" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="close_but_mouseover_disabled" />
+                <RectangleStyle Center="close_button_normal" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="close_but_disabled" />
+                <RectangleStyle Center="close_button_normal" CenterShrinkH="true" CenterShrinkV="true" Name="close_but_normal" />
+                <RectangleStyle Center="close_button_pressed" CenterShrinkH="true" CenterShrinkV="true" Name="close_but_pressed" />
+                <RectangleStyle Center="close_button_pressed" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="close_but_pressed_disabled" />
+                <ImageStyle Name="close_button_mouseover">
+                    <ImageFrame Name="close_button_mouseover" Source="images/profit.dds" SourceRect="58,339,72,353" />
+                </ImageStyle>
+                <ImageStyle Name="close_button_normal">
+                    <ImageFrame Name="close_button_normal" Source="images/profit.dds" SourceRect="74,339,88,353" />
+                </ImageStyle>
+                <ImageStyle Name="close_button_pressed">
+                    <ImageFrame Name="close_button_pressed" Source="images/profit.dds" SourceRect="58,339,72,353" />
+                </ImageStyle>
+            </Namespace>
+            <ButtonStyle DisabledTextColor="#404040" DisabledTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" DisabledTextStyle="Fonts.FontArial13T" MouseOverTextColor="#FFFF00" MouseOverTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" MouseOverTextStyle="Fonts.FontArial13T" Name="box_button_default" NormalTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" NormalTextStyle="Fonts.FontArial13T" PressedTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" PressedTextStyle="Fonts.FontArial13T" PressSound="click" RStyleDefault="ClosedBox" RStyleMouseOver="/ButtonStyles.ClosedBoxOver" RStyleMouseOverActivated="/ButtonStyles.ClosedBoxPress" RStyleMouseOverSelected="/ButtonStyles.ClosedBoxPress" RStyleSelected="/ButtonStyles.ClosedBoxPress" SelectedTextColor="#FFFF00" SelectedTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" SelectedTextStyle="Fonts.FontArial13T" />
+            <CheckboxStyle DisabledTextStyle="Fonts.FontArial12T" Name="box_checkbox" NormalTextStyle="Fonts.FontArial12T" RStyleActivated="BoxButton.box_but_pressed" RStyleDefault="BoxButton.box_but_normal" RStyleDisabled="BoxButton.box_but_disabled" RStyleDisabledActivated="BoxButton.box_but_disabled" RStyleMouseOver="BoxButton.box_but_mouseover" RStyleMouseOverActivated="BoxButton.box_but_pressed" TextAlignment="Center" />
+            <ButtonStyle DisabledTextColor="#404040" DisabledTextStyle="Fonts.FontArial12T" MouseOverTextColor="#FFFF00" MouseOverTextStyle="Fonts.FontArial12T" Name="button_textonly" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial12T" PressedTextStyle="Fonts.FontArial12T" PressSound="click" SelectedTextColor="#CCFFFF" SelectedTextStyle="Fonts.FontArial12T" TextAlignment="Left" />
+            <ButtonStyle DisabledTextColor="#404040" DisabledTextStyle="Fonts.FontArial12T" MouseOverTextColor="#FFFF00" MouseOverTextStyle="Fonts.FontArial12T" Name="button_textonly_c" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial12T" PressedTextStyle="Fonts.FontArial12T" PressSound="click" SelectedTextColor="#CCFFFF" SelectedTextStyle="Fonts.FontArial12T" />
+            <ButtonStyle DisabledTextColor="#404040" DisabledTextStyle="Fonts.FontArial12T" MouseOverTextColor="#FFFF00" MouseOverTextStyle="Fonts.FontArial12T" Name="button_textonly_r" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial12T" PressedTextStyle="Fonts.FontArial12T" PressSound="click" SelectedTextColor="#CCFFFF" SelectedTextStyle="Fonts.FontArial12T" TextAlignment="Right" />
+            <Namespace Name="BoxButton">
+                <RectangleStyle Center="box_button_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="box_but_mouseover" />
+                <RectangleStyle Center="box_button_mouseover" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="box_but_mouseover_disabled" />
+                <RectangleStyle Center="box_button_normal" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="box_but_disabled" />
+                <RectangleStyle Center="box_button_normal" CenterShrinkH="true" CenterShrinkV="true" Name="box_but_normal" />
+                <RectangleStyle Center="box_button_pressed" CenterShrinkH="true" CenterShrinkV="true" Name="box_but_pressed" />
+                <RectangleStyle Center="box_button_pressed" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="box_but_pressed_disabled" />
+                <ImageStyle Name="box_button_mouseover">
+                    <ImageFrame Name="box_button_mouseover" Source="images/profit.dds" SourceRect="104,19,119,34" />
+                </ImageStyle>
+                <ImageStyle Name="box_button_normal">
+                    <ImageFrame Name="box_button_normal" Source="images/profit.dds" SourceRect="104,2,119,17" />
+                </ImageStyle>
+                <ImageStyle Name="box_button_pressed">
+                    <ImageFrame Name="box_button_pressed" Source="images/profit.dds" SourceRect="104,36,119,51" />
+                </ImageStyle>
+            </Namespace>
         </Namespace>
-    </Namespace>
-    <ButtonStyle Name="AutoBank" RStyleDefault="AutoBank_default" RStyleMouseOver="AutoBank_mouseover" />
-    <ButtonStyle DisabledTextColor="#404040" DisabledTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" DisabledTextStyle="Fonts.FontArial14T" MouseOverTextColor="#FFFF00" MouseOverTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" MouseOverTextStyle="Fonts.FontArial14T" Name="PersonaButton" NormalTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" NormalTextStyle="Fonts.FontArial14T" PressedTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" PressedTextStyle="Fonts.FontArial14T" PressSound="click" RStyleDefault="PersonaButtons.PersonaButton_default" RStyleMouseOver="PersonaButtons.PersonaButton_mouseover" SelectedTextColor="#FFFF00" SelectedTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" SelectedTextStyle="Fonts.FontArial14T" />
-    <ButtonStyle Name="ToggleBags" RStyleDefault="BankButtons.ToggleBags_default" RStyleMouseOver="BankButtons.ToggleBags_mouseover" />
-    <Namespace Name="PersonaButtons">
-        <RectangleStyle Center="PButton" CenterShrinkH="true" CenterShrinkV="true" Name="PersonaButton_default" />
-        <RectangleStyle Center="PButton" CenterShrinkH="true" CenterShrinkV="true" Name="PersonaButton_mouseover" />
-        <ImageStyle Filter="true" Name="PButton">
-            <ImageFrame Name="image" Source="images/profit.dds" SourceRect="400,200,425,225" />
-        </ImageStyle>
-    </Namespace>
-    <Namespace Name="BankButtons">
-        <ImageStyle Filter="true" Name="AutoBank">
-            <ImageFrame Name="image" Source="images/icons/icon_as1.dds" SourceRect="127,168,168,210" />
-        </ImageStyle>
-        <RectangleStyle Center="ToggleBags" CenterShrinkH="true" CenterShrinkV="true" Name="ToggleBags_default" />
-        <RectangleStyle Center="ToggleBags" CenterShrinkH="true" CenterShrinkV="true" Name="ToggleBags_mouseover" />
-        <ImageStyle Filter="true" Name="ToggleBags">
-            <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="211,0,252,42" />
-        </ImageStyle>
-    </Namespace>
-    <CheckboxStyle Name="MaximizeCheckbox" RStyleActivated="Maximize.activated" RStyleDefault="Maximize.normal" />
-    <ButtonStyle DisabledTextColor="#404040" DisabledTextStyle="Fonts.FontArial12T" MouseOverTextColor="#FFFF00" MouseOverTextStyle="Fonts.FontArial12T" Name="box_button" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial12T" PressedTextStyle="Fonts.FontArial12T" PressSound="click" RStyleActivated="BoxButton.box_but_pressed" RStyleDefault="BoxButton.box_but_normal" RStyleDisabled="BoxButton.box_but_disabled" RStyleDisabledActivated="BoxButton.box_but_pressed_disabled" RStyleMouseOver="BoxButton.box_but_mouseover" RStyleMouseOverActivated="BoxButton.box_but_pressed" SelectedTextColor="#CCFFFF" SelectedTextStyle="Fonts.FontArial12T" />
-    <Namespace Name="Maximize">
-        <RectangleStyle Center="img_normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal" />
-        <ImageStyle Filter="true" Name="img_activated">
-            <ImageFrame Name="image" Source="images/buttons_master.dds" SourceRect="54,216,71,235" />
-        </ImageStyle>
-        <RectangleStyle Center="img_activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated" />
-        <ImageStyle Filter="true" Name="img_normal">
-            <ImageFrame Name="image" Source="images/buttons_master.dds" SourceRect="32,216,49,235" />
-        </ImageStyle>
-    </Namespace>
-    <Namespace Name="PetHide">
-        <RectangleStyle Center="img_normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal" />
-        <ImageStyle Filter="true" Name="img_normal">
-            <ImageFrame Name="image" Source="images/profit.dds" SourceRect="9,434,30,454" />
-        </ImageStyle>
-    </Namespace>
-    <ButtonStyle Name="PetHideButton" RStyleDefault="PetHide.normal" />
-    <Namespace Name="Browser">
-        <ButtonStyle Name="GoButton" RStyleActivated="Go.activated" RStyleDefault="Go.normal" RStyleMouseOver="Go.activated" RStyleMouseOverActivated="Go.activated" />
-        <ButtonStyle Name="BrowserIconButton" RStyleActivated="BrowserIcon.activated" RStyleDefault="BrowserIcon.normal" RStyleMouseOver="BrowserIcon.activated" RStyleMouseOverActivated="BrowserIcon.activated" />
-        <Namespace Name="BrowserIcon">
-            <RectangleStyle Center="img_activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated" />
-            <RectangleStyle Center="img_normal" CenterShrinkH="true" CenterShrinkV="true" Name="normal" />
-            <ImageStyle Filter="true" Name="img_activated">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="32,35,48,51" />
+        <Namespace Name="ClassBackdrops">
+            <ImageStyle Filter="true" Name="Assassin">
+                <ImageFrame Name="image" Source="images/backdrops/assassin.dds" SourceRect="0,0,512,415" />
             </ImageStyle>
-            <ImageStyle Filter="true" Name="img_normal">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="32,87,48,103" />
+            <ImageStyle Filter="true" Name="Beastlord">
+                <ImageFrame Name="image" Source="images/backdrops/beastlord.dds" SourceRect="0,0,512,415" />
             </ImageStyle>
-        </Namespace>
-        <ButtonStyle Name="ForwardButton" RStyleActivated="Forward.activated" RStyleDefault="Forward.normal" RStyleDisabled="Forward.disabled" RStyleDisabledActivated="Forward.disabled" RStyleMouseOver="Forward.activated" RStyleMouseOverActivated="Forward.activated" />
-        <ButtonStyle Name="BookmarkButton" RStyleActivated="Bookmark.activated" RStyleDefault="Bookmark.normal" RStyleMouseOver="Bookmark.activated" RStyleMouseOverActivated="Bookmark.activated" />
-        <Namespace Name="Refresh">
-            <RectangleStyle Center="img_activated" Name="activated" />
-            <RectangleStyle Center="img_normal" Name="normal" />
-            <ImageStyle Filter="true" Name="img_activated">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="0,70,16,86" />
+            <ImageStyle Filter="true" Name="Berserker">
+                <ImageFrame Name="image" Source="images/backdrops/berserker.dds" SourceRect="0,0,512,415" />
             </ImageStyle>
-            <ImageStyle Filter="true" Name="img_normal">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="0,18,16,34" />
+            <ImageStyle Filter="true" Name="Brigand">
+                <ImageFrame Name="image" Source="images/backdrops/brigand.dds" SourceRect="0,0,512,415" />
             </ImageStyle>
-        </Namespace>
-        <Namespace Name="Go">
-            <RectangleStyle Center="img_activated" Name="activated" />
-            <RectangleStyle Center="img_normal" Name="normal" />
-            <ImageStyle Filter="true" Name="img_activated">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="0,87,15,103" />
+            <ImageStyle Filter="true" Name="Bruiser">
+                <ImageFrame Name="image" Source="images/backdrops/bruiser.dds" SourceRect="0,0,512,415" />
             </ImageStyle>
-            <ImageStyle Filter="true" Name="img_normal">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="0,35,16,51" />
+            <ImageStyle Filter="true" Name="Channeler">
+                <ImageFrame Name="image" Source="images/backdrops/channeler.dds" SourceRect="0,0,512,415" />
             </ImageStyle>
-        </Namespace>
-        <Namespace Name="Bookmark">
-            <RectangleStyle Center="img_activated" Name="activated" />
-            <RectangleStyle Center="img_normal" Name="normal" />
-            <ImageStyle Filter="true" Name="img_activated">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="15,87,31,103" />
+            <ImageStyle Filter="true" Name="Coercer">
+                <ImageFrame Name="image" Source="images/backdrops/coercer.dds" SourceRect="0,0,512,415" />
             </ImageStyle>
-            <ImageStyle Filter="true" Name="img_normal">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="15,35,31,51" />
+            <ImageStyle Filter="true" Name="Conjuror">
+                <ImageFrame Name="image" Source="images/backdrops/conjurer.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Defiler">
+                <ImageFrame Name="image" Source="images/backdrops/defiler.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Dirge">
+                <ImageFrame Name="image" Source="images/backdrops/dirge.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Fury">
+                <ImageFrame Name="image" Source="images/backdrops/fury.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Guardian">
+                <ImageFrame Name="image" Source="images/backdrops/guardian.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Illusionist">
+                <ImageFrame Name="image" Source="images/backdrops/illusionist.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Inquisitor">
+                <ImageFrame Name="image" Source="images/backdrops/inquisitor.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Monk">
+                <ImageFrame Name="image" Source="images/backdrops/monk.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Mystic">
+                <ImageFrame Name="image" Source="images/backdrops/mystic.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Necromancer">
+                <ImageFrame Name="image" Source="images/backdrops/necromancer.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Paladin">
+                <ImageFrame Name="image" Source="images/backdrops/paladin.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Ranger">
+                <ImageFrame Name="image" Source="images/backdrops/ranger.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Shadowknight">
+                <ImageFrame Name="image" Source="images/backdrops/shadowknight.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Swashbuckler">
+                <ImageFrame Name="image" Source="images/backdrops/swashbuckler.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Templar">
+                <ImageFrame Name="image" Source="images/backdrops/templar.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Troubador">
+                <ImageFrame Name="image" Source="images/backdrops/troubador.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Warden">
+                <ImageFrame Name="image" Source="images/backdrops/warden.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Warlock">
+                <ImageFrame Name="image" Source="images/backdrops/warlock.dds" SourceRect="0,0,512,415" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="Wizard">
+                <ImageFrame Name="image" Source="images/backdrops/wizard.dds" SourceRect="0,0,512,415" />
             </ImageStyle>
         </Namespace>
-        <ButtonStyle Name="RefreshButton" RStyleActivated="Refresh.activated" RStyleDefault="Refresh.normal" RStyleMouseOver="Refresh.activated" RStyleMouseOverActivated="Refresh.activated" />
-        <ButtonStyle Name="HomeButton" RStyleActivated="Home.activated" RStyleDefault="Home.normal" RStyleMouseOver="Home.activated" RStyleMouseOverActivated="Home.activated" />
-        <Namespace Name="Back">
-            <RectangleStyle Center="img_activated" Name="activated" />
-            <RectangleStyle Center="img_disabled" Name="disabled" />
-            <RectangleStyle Center="img_normal" Name="normal" />
-            <ImageStyle Filter="true" Name="img_disabled">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="64,1,80,17" />
+        <Namespace Name="WeaponRanged">
+            <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="RStyleNormal" WestShrink="true" />
+            <RectangleStyle Center="pressed" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" Color="#777777" EastStretch="false" Name="RStylePressed" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+            <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" Color="#DDDDDD" EastStretch="false" Name="RStyleMouseover" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+            <ImageStyle Filter="true" Name="mouseover">
+                <ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="211,85,251,125" />
             </ImageStyle>
-            <ImageStyle Filter="true" Name="img_activated">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="16,53,32,69" />
+            <ImageStyle Filter="true" Name="pressed">
+                <ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="211,85,251,125" />
             </ImageStyle>
-            <ImageStyle Filter="true" Name="img_normal">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="16,1,32,17" />
+            <ImageStyle Filter="true" Name="normal">
+                <ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="0,127,40,167" />
             </ImageStyle>
         </Namespace>
-        <ButtonStyle Name="BackButton" RStyleActivated="Back.activated" RStyleDefault="Back.normal" RStyleDisabled="Back.disabled" RStyleDisabledActivated="Back.disabled" RStyleMouseOver="Back.activated" RStyleMouseOverActivated="Back.activated" />
-        <Namespace Name="Stop">
-            <RectangleStyle Center="img_activated" Name="activated" />
-            <RectangleStyle Center="img_disabled" Name="disabled" />
-            <RectangleStyle Center="img_normal" Name="normal" />
-            <ImageStyle Filter="true" Name="img_disabled">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="81,18,97,34" />
-            </ImageStyle>
-            <ImageStyle Filter="true" Name="img_activated">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="33,70,49,86" />
-            </ImageStyle>
-            <ImageStyle Filter="true" Name="img_normal">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="33,18,49,34" />
-            </ImageStyle>
+        <Namespace Name="Effects">
+            <IconStyle BackGlowRect="84,168,126,210" BackGlowResource="images/icons/icon_ss9.dds" BackRect="84,168,126,210" BackResource="images/icons/icon_ss9.dds" description="IconRect is different than button style" FrameRect="84,168,126,210" IconRect="84,168,126,210" IconResource="images/icons/icon_ss9.dds" MouseOverRect="84,168,126,210" MouseOverResource="images/icons/icon_ss9.dds" Name="EffectPurple" PressedRect="84,168,126,210" PressedResource="images/icons/icon_ss9.dds" ProgressRect="84,168,126,210" ProgressResource="images/icons/icon_ss9.dds" />
+            <IconStyle BackGlowRect="0,168,42,210" BackGlowResource="images/icons/icon_ss9.dds" BackRect="0,168,42,210" BackResource="images/icons/icon_ss9.dds" description="IconRect is different than button style" FrameRect="0,168,42,210" IconRect="0,168,42,210" IconResource="images/icons/icon_ss9.dds" MouseOverRect="0,168,42,210" MouseOverResource="images/icons/icon_ss9.dds" Name="EffectGreen" PressedRect="0,168,42,210" PressedResource="images/icons/icon_ss9.dds" ProgressRect="0,168,42,210" ProgressResource="images/icons/icon_ss9.dds" />
+            <IconStyle BackGlowRect="210,168,252,210" BackGlowResource="images/icons/icon_ss9.dds" BackRect="210,168,252,210" BackResource="images/icons/icon_ss9.dds" description="IconRect is different than button style" FrameRect="210,168,252,210" IconRect="210,168,252,210" IconResource="images/icons/icon_ss9.dds" MouseOverRect="210,168,252,210" MouseOverResource="images/icons/icon_ss9.dds" Name="EffectYellow" PressedRect="210,168,252,210" PressedResource="images/icons/icon_ss9.dds" ProgressRect="210,168,252,210" ProgressResource="images/icons/icon_ss9.dds" />
+            <IconStyle BackGlowRect="126,168,168,210" BackGlowResource="images/icons/icon_ss9.dds" BackRect="126,168,168,210" BackResource="images/icons/icon_ss9.dds" description="IconRect is different than button style" FrameRect="126,168,168,210" IconRect="126,168,168,210" IconResource="images/icons/icon_ss9.dds" MouseOverRect="126,168,168,210" MouseOverResource="images/icons/icon_ss9.dds" Name="EffectRed" PressedRect="126,168,168,210" PressedResource="images/icons/icon_ss9.dds" ProgressRect="126,168,168,210" ProgressResource="images/icons/icon_ss9.dds" />
+            <IconStyle BackGlowRect="210,168,252,210" BackGlowResource="images/icons/icon_ss22.dds" BackRect="210,168,252,210" BackResource="images/icons/icon_ss22.dds" description="IconRect is different than button style" FrameRect="210,168,252,210" IconRect="210,168,252,210" IconResource="images/icons/icon_ss22.dds" MouseOverRect="210,168,252,210" MouseOverResource="images/icons/icon_ss22.dds" Name="Effect5Style" PressedRect="210,168,252,210" PressedResource="images/icons/icon_ss22.dds" ProgressRect="210,168,252,210" ProgressResource="images/icons/icon_ss22.dds" />
+            <IconStyle BackGlowRect="210,0,252,42" BackGlowResource="images/icons/icon_ss5.dds" BackRect="210,0,252,42" BackResource="images/icons/icon_ss5.dds" description="IconRect is different than button style" FrameRect="210,0,252,42" IconRect="210,0,252,42" IconResource="images/icons/icon_ss5.dds" MouseOverRect="210,0,252,42" MouseOverResource="images/icons/icon_ss5.dds" Name="Effect4Style" PressedRect="210,0,252,42" PressedResource="images/icons/icon_ss5.dds" ProgressRect="210,0,252,42" ProgressResource="images/icons/icon_ss5.dds" />
+            <IconStyle BackGlowRect="168,0,210,42" BackGlowResource="images/icons/icon_ss5.dds" BackRect="168,0,210,42" BackResource="images/icons/icon_ss5.dds" description="IconRect is different than button style" FrameRect="168,0,210,42" IconRect="168,0,210,42" IconResource="images/icons/icon_ss5.dds" MouseOverRect="168,0,210,42" MouseOverResource="images/icons/icon_ss5.dds" Name="Effect3Style" PressedRect="168,0,210,42" PressedResource="images/icons/icon_ss5.dds" ProgressRect="168,0,210,42" ProgressResource="images/icons/icon_ss5.dds" />
+            <IconStyle BackGlowRect="0,42,42,84" BackGlowResource="images/icons/icon_ss5.dds" BackRect="0,42,42,84" BackResource="images/icons/icon_ss5.dds" description="IconRect is different than button style" FrameRect="0,42,42,84" IconRect="0,42,42,84" IconResource="images/icons/icon_ss5.dds" MouseOverRect="0,42,42,84" MouseOverResource="images/icons/icon_ss5.dds" Name="Effect2Style" PressedRect="0,42,42,84" PressedResource="images/icons/icon_ss5.dds" ProgressRect="0,42,42,84" ProgressResource="images/icons/icon_ss5.dds" />
+            <IconStyle BackGlowRect="126,0,168,42" BackGlowResource="images/icons/icon_ss5.dds" BackRect="126,0,168,42" BackResource="images/icons/icon_ss5.dds" description="IconRect is different than button style" FrameRect="126,0,168,42" IconRect="126,0,168,42" IconResource="images/icons/icon_ss5.dds" MouseOverRect="126,0,168,42" MouseOverResource="images/icons/icon_ss5.dds" Name="Effect1Style" PressedRect="126,0,168,42" PressedResource="images/icons/icon_ss5.dds" ProgressRect="126,0,168,42" ProgressResource="images/icons/icon_ss5.dds" />
         </Namespace>
-        <ButtonStyle Name="StopButton" RStyleActivated="Stop.activated" RStyleDefault="Stop.normal" RStyleDisabled="Stop.disabled" RStyleDisabledActivated="Stop.disabled" RStyleMouseOver="Stop.activated" RStyleMouseOverActivated="Stop.activated" />
-        <Namespace Name="Forward">
-            <RectangleStyle Center="img_activated" Name="activated" />
-            <RectangleStyle Center="img_disabled" Name="disabled" />
-            <RectangleStyle Center="img_normal" Name="normal" />
-            <ImageStyle Filter="true" Name="img_disabled">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="80,1,96,17" />
-            </ImageStyle>
-            <ImageStyle Filter="true" Name="img_activated">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="32,53,48,69" />
-            </ImageStyle>
-            <ImageStyle Filter="true" Name="img_normal">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="32,1,48,17" />
-            </ImageStyle>
+        <ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextStyle="/Fonts.FontArial14" MouseOverTextColor="#FFFF80" MouseOverTextStyle="/Fonts.FontArial14" Name="WeaponRanged" NormalTextColor="#F0D080" NormalTextStyle="/Fonts.FontArial14" PressedTextStyle="/Fonts.FontArial14" RStyleActivated="WeaponRanged.RStylePressed" RStyleDefault="WeaponRanged.RStyleNormal" RStyleDisabled="WeaponRanged.RStyleNormal" RStyleMouseOver="WeaponRanged.RStyleMouseover" RStyleMouseOverSelected="WeaponRanged.RStylePressed" RStyleSelected="WeaponRanged.RStylePressed" SelectedTextStyle="/Fonts.FontArial14" />
+        <Namespace Name="WindowElements">
+            <ButtonStyle Name="TitleBarInvertedBoxed" RStyleDefault="TitleBar.TitleBarInvertedBoxed" />
+            <ButtonStyle Name="TitleBarBoxed" RStyleDefault="TitleBar.TitleBarBoxed" />
+            <Namespace Name="TitleBar">
+                <RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" East="TitleBarLeftBox" EastStretch="false" Name="TitleBarInvertedBoxed" West="TitleBarRightBox" WestStretch="false" />
+                <RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" East="TitleBarRightTriangle" Name="TitleBarRight" West="TitleBarLeftBox" />
+                <RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" CenterShrinkV="true" East="TitleBarRightBox" EastShrink="true" Name="TitleBarBoxed" West="TitleBarLeftBox" WestShrink="true" />
+                <RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" East="TitleBarRightTriangle" EastStretch="false" Name="TitleBarFull" West="TitleBarLeftTriangle" WestStretch="false" />
+                <ImageStyle Name="TitleBarLeftBox">
+                    <ImageFrame Name="TitleBarLeftBox" Source="images/profit.dds" SourceRect="184,110,191,130" />
+                </ImageStyle>
+                <RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" CenterShrinkV="true" East="TitleBarRightBox" EastStretch="false" Name="TitleBarLeft" West="TitleBarLeftTriangle" WestStretch="false" />
+                <ImageStyle Name="TitleBarLeftTriangle">
+                    <ImageFrame Name="TitleBarLeftTriangle" Source="images/profit.dds" SourceRect="184,0,211,20" />
+                </ImageStyle>
+                <ImageStyle Name="TitleBarRightBox">
+                    <ImageFrame Name="TitleBarRightBox" Source="images/profit.dds" SourceRect="349,0,356,20" />
+                </ImageStyle>
+                <ImageStyle Name="TitleBarRightTriangle">
+                    <ImageFrame Name="TitleBarRightTriangle" Source="images/profit.dds" SourceRect="340,110,356,130" />
+                </ImageStyle>
+                <ImageStyle Name="TitleBarMiddle">
+                    <ImageFrame Name="TitleBarMiddle" Source="images/profit.dds" SourceRect="200,0,347,20" />
+                </ImageStyle>
+            </Namespace>
+            <ButtonStyle Name="TitleBarLeft" RStyleDefault="TitleBar.TitleBarLeft" />
+            <ButtonStyle Name="TitleBarRight" RStyleDefault="TitleBar.TitleBarRight" />
+            <ButtonStyle Name="TitleBarFull" RStyleDefault="TitleBar.TitleBarFull" />
         </Namespace>
-        <Namespace Name="Home">
-            <RectangleStyle Center="img_activated" Name="activated" />
-            <RectangleStyle Center="img_normal" Name="normal" />
-            <ImageStyle Filter="true" Name="img_activated">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="16,70,32,86" />
-            </ImageStyle>
-            <ImageStyle Filter="true" Name="img_normal">
-                <ImageFrame Name="image" Source="images/ProfitUI_browser.dds" SourceRect="16,18,32,34" />
-            </ImageStyle>
+        <ButtonStyle DisabledTextStyle="/Fonts.FontArial14" MouseOverTextStyle="/Fonts.FontArial14" Name="Combat" NormalTextStyle="/Fonts.FontArial14" PressedTextStyle="/Fonts.FontArial14" RStyleActivated="Weapon.RStyleNormal" RStyleDefault="Weapon.RStyleNormal" RStyleDisabled="Weapon.RStyleNormal" RStyleMouseOver="Weapon.RStyleNormal" RStyleMouseOverSelected="Weapon.RStyleNormal" RStyleSelected="Weapon.RStyleNormal" SelectedTextStyle="/Fonts.FontArial14" />
+        <Namespace Name="ListStyles">
+            <DropdownboxStyle DropBy="300" Listbox.Style="BlueListbox" Name="BlueDropdownNoTitle" Normal.DownArrow="/imagelist.downarrow_normal" Scrollbar.Style="/ScrollStyles.default_vscroll" />
+            <ListboxStyle GridStyle="/gridlist.gold_style" Name="BlueListbox" />
         </Namespace>
-    </Namespace>
-    <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF00" Name="BankSelector_down" RStyleDefault="BankSelector.rs_down" RStyleMouseOver="BankSelector.rs_down_over" />
-    <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF00" Name="BankSelector_up" RStyleDefault="BankSelector.rs_up" RStyleMouseOver="BankSelector.rs_up_over" />
-    <Namespace Name="BankSelector">
-        <ImageStyle Filter="true" Name="arrow_up">
-            <ImageFrame Name="image" Source="images/profit.dds" SourceRect="26,323,40,337" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="arrow_down">
-            <ImageFrame Name="image" Source="images/profit.dds" SourceRect="26,339,40,353" />
-        </ImageStyle>
-        <RectangleStyle Center="arrow_down" CenterShrinkH="true" CenterShrinkV="true" Name="rs_down" />
-        <ImageStyle Filter="true" Name="arrow_down_over">
-            <ImageFrame Name="image" Source="images/profit.dds" SourceRect="42,339,56,353" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="arrow_up_over">
-            <ImageFrame Name="image" Source="images/profit.dds" SourceRect="42,323,56,337" />
-        </ImageStyle>
-        <RectangleStyle Center="arrow_up" CenterShrinkH="true" CenterShrinkV="true" Name="rs_up" />
-        <RectangleStyle Center="arrow_up_over" CenterShrinkH="true" CenterShrinkV="true" Name="rs_up_over" />
-        <RectangleStyle Center="arrow_down_over" CenterShrinkH="true" CenterShrinkV="true" Name="rs_down_over" />
-    </Namespace>
-    <CheckboxStyle DisabledTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" DisabledTextStyle="Fonts.FontArial13T" Name="checkbox_textonly" NormalTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" NormalTextStyle="Fonts.FontArial13T" TextAlignment="Center" />
-    <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF80" Name="StartButton" NormalTextColor="#F0D080" RStyleActivated="StartButton.RStylePressed" RStyleDefault="StartButton.RStyleNormal" RStyleDisabled="StartButton.RStyleNormal" RStyleMouseOver="StartButton.RStyleMouseover" RStyleMouseOverSelected="StartButton.RStylePressed" RStyleSelected="StartButton.RStylePressed" />
-    <CheckboxStyle Name="InfocenterButton" RStyleActivated="InfocenterButton.activated_rect" RStyleDefault="InfocenterButton.default_rect" RStyleMouseOver="InfocenterButton.default_mouseover_rect" RStyleMouseOverActivated="InfocenterButton.activated_mouseover_rect" />
-    <Namespace Name="StartButton">
-        <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" EastStretch="false" Name="RStyleNormal" NorthStretch="false" SouthStretch="false" WestShrink="true" />
-        <RectangleStyle Center="pressed" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" EastStretch="false" Name="RStylePressed" NorthStretch="false" SouthStretch="false" WestShrink="true" />
-        <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" EastStretch="false" Name="RStyleMouseover" NorthStretch="false" SouthStretch="false" WestShrink="true" />
-        <ImageStyle Name="mouseover">
-            <ImageFrame Name="mouseover" Source="images/mugshots_female.dds" SourceRect="442,53,484,96" />
-        </ImageStyle>
-        <ImageStyle Name="pressed">
-            <ImageFrame Name="pressed" Source="images/mugshots_female.dds" SourceRect="442,102,484,145" />
-        </ImageStyle>
-        <ImageStyle Name="normal">
-            <ImageFrame Name="normal" Source="images/mugshots_female.dds" SourceRect="442,4,484,47" />
-        </ImageStyle>
-    </Namespace>
-    <Namespace Name="InfocenterButton">
-        <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
-        <RectangleStyle Center="activated_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="activated_mouseover_rect" />
-        <RectangleStyle Center="default" CenterShrinkH="true" CenterShrinkV="true" Name="default_rect" />
-        <RectangleStyle Center="default_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="default_mouseover_rect" />
-        <ImageStyle Filter="true" Name="default">
-            <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="42,0,84,42" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="default_mouseover">
-            <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="42,0,84,42" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="activated">
-            <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="42,0,84,42" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="activated_mouseover">
-            <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="42,0,84,42" />
-        </ImageStyle>
-    </Namespace>
-    <CheckboxStyle Name="PCCbutton" RStyleActivated="PCCbutton.activated_rect" RStyleDefault="PCCbutton.default_rect" RStyleMouseOver="PCCbutton.default_mouseover_rect" RStyleMouseOverActivated="PCCbutton.activated_mouseover_rect" />
-    <Namespace Name="PCCbutton">
-        <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
-        <RectangleStyle Center="activated_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="activated_mouseover_rect" />
-        <RectangleStyle Center="default" CenterShrinkH="true" CenterShrinkV="true" Name="default_rect" />
-        <RectangleStyle Center="default_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="default_mouseover_rect" />
-        <ImageStyle Filter="true" Name="default">
-            <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="84,0,126,42" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="default_mouseover">
-            <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="84,0,126,42" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="activated">
-            <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="84,0,126,42" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="activated_mouseover">
-            <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="84,0,126,42" />
-        </ImageStyle>
-    </Namespace>
-    <CheckboxStyle Name="NightVisionButton" RStyleActivated="NightVisionButton.activated_rect" RStyleDefault="NightVisionButton.default_rect" RStyleMouseOver="NightVisionButton.default_mouseover_rect" RStyleMouseOverActivated="NightVisionButton.activated_mouseover_rect" />
-    <Namespace Name="NightVisionButton">
-        <RectangleStyle Center="activated" CenterShrinkH="true" CenterShrinkV="true" Name="activated_rect" />
-        <RectangleStyle Center="activated_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="activated_mouseover_rect" />
-        <RectangleStyle Center="default" CenterShrinkH="true" CenterShrinkV="true" Name="default_rect" />
-        <RectangleStyle Center="default_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="default_mouseover_rect" />
-        <ImageStyle Filter="true" Name="default">
-            <ImageFrame Name="image" Source="images/icons/icon_ss1.dds" SourceRect="211,1,252,42" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="default_mouseover">
-            <ImageFrame Name="image" Source="images/icons/icon_ss1.dds" SourceRect="211,1,252,42" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="activated">
-            <ImageFrame Name="image" Source="images/icons/icon_ss1.dds" SourceRect="211,1,252,42" />
-        </ImageStyle>
-        <ImageStyle Filter="true" Name="activated_mouseover">
-            <ImageFrame Name="image" Source="images/icons/icon_ss1.dds" SourceRect="211,1,252,42" />
-        </ImageStyle>
-    </Namespace>
-    <ButtonStyle Name="close_button" PressSound="click" RStyleActivated="CloseButton.close_but_pressed" RStyleDefault="CloseButton.close_but_normal" RStyleDisabled="CloseButton.close_but_disabled" RStyleDisabledActivated="CloseButton.close_but_disabled" RStyleMouseOver="CloseButton.close_but_mouseover" RStyleMouseOverActivated="CloseButton.close_but_pressed" />
-    <Namespace Name="CloseButton">
-        <RectangleStyle Center="close_button_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="close_but_mouseover" />
-        <RectangleStyle Center="close_button_mouseover" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="close_but_mouseover_disabled" />
-        <RectangleStyle Center="close_button_normal" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="close_but_disabled" />
-        <RectangleStyle Center="close_button_normal" CenterShrinkH="true" CenterShrinkV="true" Name="close_but_normal" />
-        <RectangleStyle Center="close_button_pressed" CenterShrinkH="true" CenterShrinkV="true" Name="close_but_pressed" />
-        <RectangleStyle Center="close_button_pressed" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="close_but_pressed_disabled" />
-        <ImageStyle Name="close_button_mouseover">
-            <ImageFrame Name="close_button_mouseover" Source="images/profit.dds" SourceRect="58,339,72,353" />
-        </ImageStyle>
-        <ImageStyle Name="close_button_normal">
-            <ImageFrame Name="close_button_normal" Source="images/profit.dds" SourceRect="74,339,88,353" />
-        </ImageStyle>
-        <ImageStyle Name="close_button_pressed">
-            <ImageFrame Name="close_button_pressed" Source="images/profit.dds" SourceRect="58,339,72,353" />
-        </ImageStyle>
-    </Namespace>
-    <ButtonStyle DisabledTextColor="#404040" DisabledTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" DisabledTextStyle="Fonts.FontArial13T" MouseOverTextColor="#FFFF00" MouseOverTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" MouseOverTextStyle="Fonts.FontArial13T" Name="box_button_default" NormalTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" NormalTextStyle="Fonts.FontArial13T" PressedTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" PressedTextStyle="Fonts.FontArial13T" PressSound="click" RStyleDefault="ClosedBox" RStyleMouseOver="/ButtonStyles.ClosedBoxOver" RStyleMouseOverActivated="/ButtonStyles.ClosedBoxPress" RStyleMouseOverSelected="/ButtonStyles.ClosedBoxPress" RStyleSelected="/ButtonStyles.ClosedBoxPress" SelectedTextColor="#FFFF00" SelectedTextShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" SelectedTextStyle="Fonts.FontArial13T" />
-    <CheckboxStyle DisabledTextStyle="Fonts.FontArial12T" Name="box_checkbox" NormalTextStyle="Fonts.FontArial12T" RStyleActivated="BoxButton.box_but_pressed" RStyleDefault="BoxButton.box_but_normal" RStyleDisabled="BoxButton.box_but_disabled" RStyleDisabledActivated="BoxButton.box_but_disabled" RStyleMouseOver="BoxButton.box_but_mouseover" RStyleMouseOverActivated="BoxButton.box_but_pressed" TextAlignment="Center" />
-    <ButtonStyle DisabledTextColor="#404040" DisabledTextStyle="Fonts.FontArial12T" MouseOverTextColor="#FFFF00" MouseOverTextStyle="Fonts.FontArial12T" Name="button_textonly" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial12T" PressedTextStyle="Fonts.FontArial12T" PressSound="click" SelectedTextColor="#CCFFFF" SelectedTextStyle="Fonts.FontArial12T" TextAlignment="Left" />
-    <ButtonStyle DisabledTextColor="#404040" DisabledTextStyle="Fonts.FontArial12T" MouseOverTextColor="#FFFF00" MouseOverTextStyle="Fonts.FontArial12T" Name="button_textonly_c" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial12T" PressedTextStyle="Fonts.FontArial12T" PressSound="click" SelectedTextColor="#CCFFFF" SelectedTextStyle="Fonts.FontArial12T" />
-    <ButtonStyle DisabledTextColor="#404040" DisabledTextStyle="Fonts.FontArial12T" MouseOverTextColor="#FFFF00" MouseOverTextStyle="Fonts.FontArial12T" Name="button_textonly_r" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial12T" PressedTextStyle="Fonts.FontArial12T" PressSound="click" SelectedTextColor="#CCFFFF" SelectedTextStyle="Fonts.FontArial12T" TextAlignment="Right" />
-    <Namespace Name="BoxButton">
-        <RectangleStyle Center="box_button_mouseover" CenterShrinkH="true" CenterShrinkV="true" Name="box_but_mouseover" />
-        <RectangleStyle Center="box_button_mouseover" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="box_but_mouseover_disabled" />
-        <RectangleStyle Center="box_button_normal" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="box_but_disabled" />
-        <RectangleStyle Center="box_button_normal" CenterShrinkH="true" CenterShrinkV="true" Name="box_but_normal" />
-        <RectangleStyle Center="box_button_pressed" CenterShrinkH="true" CenterShrinkV="true" Name="box_but_pressed" />
-        <RectangleStyle Center="box_button_pressed" CenterShrinkH="true" CenterShrinkV="true" Color="#808080" Name="box_but_pressed_disabled" />
-        <ImageStyle Name="box_button_mouseover">
-            <ImageFrame Name="box_button_mouseover" Source="images/profit.dds" SourceRect="104,19,119,34" />
-        </ImageStyle>
-        <ImageStyle Name="box_button_normal">
-            <ImageFrame Name="box_button_normal" Source="images/profit.dds" SourceRect="104,2,119,17" />
-        </ImageStyle>
-        <ImageStyle Name="box_button_pressed">
-            <ImageFrame Name="box_button_pressed" Source="images/profit.dds" SourceRect="104,36,119,51" />
-        </ImageStyle>
-    </Namespace>
-</Namespace>
-<Namespace Name="ClassBackdrops">
-<ImageStyle Filter="true" Name="Assassin">
-<ImageFrame Name="image" Source="images/backdrops/assassin.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Beastlord">
-<ImageFrame Name="image" Source="images/backdrops/beastlord.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Berserker">
-<ImageFrame Name="image" Source="images/backdrops/berserker.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Brigand">
-<ImageFrame Name="image" Source="images/backdrops/brigand.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Bruiser">
-<ImageFrame Name="image" Source="images/backdrops/bruiser.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Channeler">
-<ImageFrame Name="image" Source="images/backdrops/channeler.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Coercer">
-<ImageFrame Name="image" Source="images/backdrops/coercer.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Conjuror">
-<ImageFrame Name="image" Source="images/backdrops/conjurer.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Defiler">
-<ImageFrame Name="image" Source="images/backdrops/defiler.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Dirge">
-<ImageFrame Name="image" Source="images/backdrops/dirge.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Fury">
-<ImageFrame Name="image" Source="images/backdrops/fury.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Guardian">
-<ImageFrame Name="image" Source="images/backdrops/guardian.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Illusionist">
-<ImageFrame Name="image" Source="images/backdrops/illusionist.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Inquisitor">
-<ImageFrame Name="image" Source="images/backdrops/inquisitor.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Monk">
-<ImageFrame Name="image" Source="images/backdrops/monk.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Mystic">
-<ImageFrame Name="image" Source="images/backdrops/mystic.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Necromancer">
-<ImageFrame Name="image" Source="images/backdrops/necromancer.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Paladin">
-<ImageFrame Name="image" Source="images/backdrops/paladin.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Ranger">
-<ImageFrame Name="image" Source="images/backdrops/ranger.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Shadowknight">
-<ImageFrame Name="image" Source="images/backdrops/shadowknight.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Swashbuckler">
-<ImageFrame Name="image" Source="images/backdrops/swashbuckler.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Templar">
-<ImageFrame Name="image" Source="images/backdrops/templar.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Troubador">
-<ImageFrame Name="image" Source="images/backdrops/troubador.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Warden">
-<ImageFrame Name="image" Source="images/backdrops/warden.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Warlock">
-<ImageFrame Name="image" Source="images/backdrops/warlock.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="Wizard">
-<ImageFrame Name="image" Source="images/backdrops/wizard.dds" SourceRect="0,0,512,415" />
-</ImageStyle>
-</Namespace>
-<Namespace Name="WeaponRanged">
-<RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="RStyleNormal" WestShrink="true" />
-<RectangleStyle Center="pressed" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" Color="#777777" EastStretch="false" Name="RStylePressed" NorthStretch="false" SouthStretch="false" WestShrink="true" />
-<RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" Color="#DDDDDD" EastStretch="false" Name="RStyleMouseover" NorthStretch="false" SouthStretch="false" WestShrink="true" />
-<ImageStyle Filter="true" Name="mouseover">
-<ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="211,85,251,125" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="pressed">
-<ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="211,85,251,125" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="normal">
-<ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="0,127,40,167" />
-</ImageStyle>
-</Namespace>
-<Namespace Name="Effects">
-<IconStyle BackGlowRect="84,168,126,210" BackGlowResource="images/icons/icon_ss9.dds" BackRect="84,168,126,210" BackResource="images/icons/icon_ss9.dds" description="IconRect is different than button style" FrameRect="84,168,126,210" IconRect="84,168,126,210" IconResource="images/icons/icon_ss9.dds" MouseOverRect="84,168,126,210" MouseOverResource="images/icons/icon_ss9.dds" Name="EffectPurple" PressedRect="84,168,126,210" PressedResource="images/icons/icon_ss9.dds" ProgressRect="84,168,126,210" ProgressResource="images/icons/icon_ss9.dds" />
-<IconStyle BackGlowRect="0,168,42,210" BackGlowResource="images/icons/icon_ss9.dds" BackRect="0,168,42,210" BackResource="images/icons/icon_ss9.dds" description="IconRect is different than button style" FrameRect="0,168,42,210" IconRect="0,168,42,210" IconResource="images/icons/icon_ss9.dds" MouseOverRect="0,168,42,210" MouseOverResource="images/icons/icon_ss9.dds" Name="EffectGreen" PressedRect="0,168,42,210" PressedResource="images/icons/icon_ss9.dds" ProgressRect="0,168,42,210" ProgressResource="images/icons/icon_ss9.dds" />
-<IconStyle BackGlowRect="210,168,252,210" BackGlowResource="images/icons/icon_ss9.dds" BackRect="210,168,252,210" BackResource="images/icons/icon_ss9.dds" description="IconRect is different than button style" FrameRect="210,168,252,210" IconRect="210,168,252,210" IconResource="images/icons/icon_ss9.dds" MouseOverRect="210,168,252,210" MouseOverResource="images/icons/icon_ss9.dds" Name="EffectYellow" PressedRect="210,168,252,210" PressedResource="images/icons/icon_ss9.dds" ProgressRect="210,168,252,210" ProgressResource="images/icons/icon_ss9.dds" />
-<IconStyle BackGlowRect="126,168,168,210" BackGlowResource="images/icons/icon_ss9.dds" BackRect="126,168,168,210" BackResource="images/icons/icon_ss9.dds" description="IconRect is different than button style" FrameRect="126,168,168,210" IconRect="126,168,168,210" IconResource="images/icons/icon_ss9.dds" MouseOverRect="126,168,168,210" MouseOverResource="images/icons/icon_ss9.dds" Name="EffectRed" PressedRect="126,168,168,210" PressedResource="images/icons/icon_ss9.dds" ProgressRect="126,168,168,210" ProgressResource="images/icons/icon_ss9.dds" />
-<IconStyle BackGlowRect="210,168,252,210" BackGlowResource="images/icons/icon_ss22.dds" BackRect="210,168,252,210" BackResource="images/icons/icon_ss22.dds" description="IconRect is different than button style" FrameRect="210,168,252,210" IconRect="210,168,252,210" IconResource="images/icons/icon_ss22.dds" MouseOverRect="210,168,252,210" MouseOverResource="images/icons/icon_ss22.dds" Name="Effect5Style" PressedRect="210,168,252,210" PressedResource="images/icons/icon_ss22.dds" ProgressRect="210,168,252,210" ProgressResource="images/icons/icon_ss22.dds" />
-<IconStyle BackGlowRect="210,0,252,42" BackGlowResource="images/icons/icon_ss5.dds" BackRect="210,0,252,42" BackResource="images/icons/icon_ss5.dds" description="IconRect is different than button style" FrameRect="210,0,252,42" IconRect="210,0,252,42" IconResource="images/icons/icon_ss5.dds" MouseOverRect="210,0,252,42" MouseOverResource="images/icons/icon_ss5.dds" Name="Effect4Style" PressedRect="210,0,252,42" PressedResource="images/icons/icon_ss5.dds" ProgressRect="210,0,252,42" ProgressResource="images/icons/icon_ss5.dds" />
-<IconStyle BackGlowRect="168,0,210,42" BackGlowResource="images/icons/icon_ss5.dds" BackRect="168,0,210,42" BackResource="images/icons/icon_ss5.dds" description="IconRect is different than button style" FrameRect="168,0,210,42" IconRect="168,0,210,42" IconResource="images/icons/icon_ss5.dds" MouseOverRect="168,0,210,42" MouseOverResource="images/icons/icon_ss5.dds" Name="Effect3Style" PressedRect="168,0,210,42" PressedResource="images/icons/icon_ss5.dds" ProgressRect="168,0,210,42" ProgressResource="images/icons/icon_ss5.dds" />
-<IconStyle BackGlowRect="0,42,42,84" BackGlowResource="images/icons/icon_ss5.dds" BackRect="0,42,42,84" BackResource="images/icons/icon_ss5.dds" description="IconRect is different than button style" FrameRect="0,42,42,84" IconRect="0,42,42,84" IconResource="images/icons/icon_ss5.dds" MouseOverRect="0,42,42,84" MouseOverResource="images/icons/icon_ss5.dds" Name="Effect2Style" PressedRect="0,42,42,84" PressedResource="images/icons/icon_ss5.dds" ProgressRect="0,42,42,84" ProgressResource="images/icons/icon_ss5.dds" />
-<IconStyle BackGlowRect="126,0,168,42" BackGlowResource="images/icons/icon_ss5.dds" BackRect="126,0,168,42" BackResource="images/icons/icon_ss5.dds" description="IconRect is different than button style" FrameRect="126,0,168,42" IconRect="126,0,168,42" IconResource="images/icons/icon_ss5.dds" MouseOverRect="126,0,168,42" MouseOverResource="images/icons/icon_ss5.dds" Name="Effect1Style" PressedRect="126,0,168,42" PressedResource="images/icons/icon_ss5.dds" ProgressRect="126,0,168,42" ProgressResource="images/icons/icon_ss5.dds" />
-</Namespace>
-<ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextStyle="/Fonts.FontArial14" MouseOverTextColor="#FFFF80" MouseOverTextStyle="/Fonts.FontArial14" Name="WeaponRanged" NormalTextColor="#F0D080" NormalTextStyle="/Fonts.FontArial14" PressedTextStyle="/Fonts.FontArial14" RStyleActivated="WeaponRanged.RStylePressed" RStyleDefault="WeaponRanged.RStyleNormal" RStyleDisabled="WeaponRanged.RStyleNormal" RStyleMouseOver="WeaponRanged.RStyleMouseover" RStyleMouseOverSelected="WeaponRanged.RStylePressed" RStyleSelected="WeaponRanged.RStylePressed" SelectedTextStyle="/Fonts.FontArial14" />
-<Namespace Name="WindowElements">
-<ButtonStyle Name="TitleBarInvertedBoxed" RStyleDefault="TitleBar.TitleBarInvertedBoxed" />
-<ButtonStyle Name="TitleBarBoxed" RStyleDefault="TitleBar.TitleBarBoxed" />
-<Namespace Name="TitleBar">
-<RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" East="TitleBarLeftBox" EastStretch="false" Name="TitleBarInvertedBoxed" West="TitleBarRightBox" WestStretch="false" />
-<RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" East="TitleBarRightTriangle" Name="TitleBarRight" West="TitleBarLeftBox" />
-<RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="true" CenterStretchV="true" East="TitleBarRightBox" EastShrink="true" EastStretch="true" Name="TitleBarBoxed" West="TitleBarLeftBox" WestShrink="true" WestStretch="true" />
-<RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" East="TitleBarRightTriangle" EastStretch="false" Name="TitleBarFull" West="TitleBarLeftTriangle" WestStretch="false" />
-<ImageStyle Name="TitleBarLeftBox">
-<ImageFrame Name="TitleBarLeftBox" Source="images/profit.dds" SourceRect="184,110,191,130" />
-</ImageStyle>
-<RectangleStyle Center="TitleBarMiddle" CenterShrinkH="true" CenterShrinkV="true" East="TitleBarRightBox" EastStretch="false" Name="TitleBarLeft" West="TitleBarLeftTriangle" WestStretch="false" />
-<ImageStyle Name="TitleBarLeftTriangle">
-<ImageFrame Name="TitleBarLeftTriangle" Source="images/profit.dds" SourceRect="184,0,211,20" />
-</ImageStyle>
-<ImageStyle Name="TitleBarRightBox">
-<ImageFrame Name="TitleBarRightBox" Source="images/profit.dds" SourceRect="349,0,356,20" />
-</ImageStyle>
-<ImageStyle Name="TitleBarRightTriangle">
-<ImageFrame Name="TitleBarRightTriangle" Source="images/profit.dds" SourceRect="340,110,356,130" />
-</ImageStyle>
-<ImageStyle Name="TitleBarMiddle">
-<ImageFrame Name="TitleBarMiddle" Source="images/profit.dds" SourceRect="200,0,347,20" />
-</ImageStyle>
-</Namespace>
-<ButtonStyle Name="TitleBarLeft" RStyleDefault="TitleBar.TitleBarLeft" />
-<ButtonStyle Name="TitleBarRight" RStyleDefault="TitleBar.TitleBarRight" />
-<ButtonStyle Name="TitleBarFull" RStyleDefault="TitleBar.TitleBarFull" />
-</Namespace>
-<ButtonStyle DisabledTextStyle="/Fonts.FontArial14" MouseOverTextStyle="/Fonts.FontArial14" Name="Combat" NormalTextStyle="/Fonts.FontArial14" PressedTextStyle="/Fonts.FontArial14" RStyleActivated="Weapon.RStyleNormal" RStyleDefault="Weapon.RStyleNormal" RStyleDisabled="Weapon.RStyleNormal" RStyleMouseOver="Weapon.RStyleNormal" RStyleMouseOverSelected="Weapon.RStyleNormal" RStyleSelected="Weapon.RStyleNormal" SelectedTextStyle="/Fonts.FontArial14" />
-<Namespace Name="ListStyles">
-<DropdownboxStyle DropBy="300" Listbox.Style="BlueListbox" Name="BlueDropdownNoTitle" Normal.DownArrow="/imagelist.downarrow_normal" Scrollbar.Style="/ScrollStyles.default_vscroll" />
-<ListboxStyle GridStyle="/gridlist.gold_style" Name="BlueListbox" />
-</Namespace>
-<Namespace Name="tab_data">
-<Namespace Name="active">
-<RectangleStyle Center="center" CenterShrinkH="true" CenterStretchV="false" East="east" Name="rect" West="west" />
-<ImageStyle Filter="true" Name="east">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="86,913,100,945" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="west">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="9,913,22,945" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="center">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="23,913,85,945" />
-</ImageStyle>
-</Namespace>
-<Namespace Name="inactive">
-<RectangleStyle Center="center" CenterShrinkH="true" CenterStretchV="false" East="east" Name="rect" West="west" />
-<ImageStyle Filter="true" Name="east">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="187,915,200,945" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="west">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="110,915,123,945" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="center">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="122,915,184,945" />
-</ImageStyle>
-</Namespace>
-<ButtonStyle DisabledTextStyle="Fonts.FontArial14T" MouseOverSound="ui_mouseover" MouseOverTextStyle="Fonts.FontArial14T" Name="tab_button_style" NormalTextColor="#B0B0B0" NormalTextStyle="Fonts.FontArial14T" PressedTextStyle="Fonts.FontArial14T" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="active.rect" RStyleDefault="inactive.rect" RStyleDisabled="active.rect" RStyleDisabledActivated="active.rect" RStyleMouseOver="inactive.rect" RStyleMouseOverActivated="active.rect" RStyleMouseOverSelected="active.rect" RStyleSelected="active.rect" SelectedTextStyle="Fonts.FontArial14T" />
-<TabbedPaneStyle ButtonStyle="tab_button_style" Name="tabbed_pane_style" />
-</Namespace>
-<Namespace Name="tab_data_inv">
-<Namespace Name="active">
-<RectangleStyle Center="center" CenterShrinkH="true" CenterStretchV="false" East="east" Name="rect" West="west" />
-<ImageStyle Filter="true" Name="east">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="286,916,300,940" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="west">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="210,916,228,940" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="center">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="226,916,280,940" />
-</ImageStyle>
-</Namespace>
-<Namespace Name="inactive">
-<RectangleStyle Center="center" CenterShrinkH="true" CenterStretchV="false" East="east" Name="rect" West="west" />
-<ImageStyle Filter="true" Name="east">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="382,915,400,945" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="west">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="311,915,330,945" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="center">
-<ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="328,915,382,945" />
-</ImageStyle>
-</Namespace>
-<ButtonStyle DisabledTextStyle="Fonts.FontArial14T" MouseOverSound="ui_mouseover" MouseOverTextStyle="Fonts.FontArial14T" Name="tab_button_style" NormalTextColor="#B0B0B0" NormalTextStyle="Fonts.FontArial14T" PressedTextStyle="Fonts.FontArial14T" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="active.rect" RStyleDefault="inactive.rect" RStyleDisabled="active.rect" RStyleDisabledActivated="active.rect" RStyleMouseOver="inactive.rect" RStyleMouseOverActivated="active.rect" RStyleMouseOverSelected="active.rect" RStyleSelected="active.rect" SelectedTextStyle="Fonts.FontArial14T" />
-<TabbedPaneStyle ButtonStyle="tab_button_style" Name="tabbed_pane_style" />
-</Namespace>
-<TextboxStyle CaratColor="#FFFFFF" Cursor="Text" DisabledTextStyle="Fonts.FontArial14T" Name="textbox" NormalTextStyle="Fonts.FontArial14T" RStyleDefault="normal" SelectionColor="#808080" TextColor="#FFFFFF" />
-<ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextStyle="Fonts.FontArial13T" MouseOverTextColor="#FFFF80" MouseOverTextStyle="Fonts.FontArial13T" Name="Weapon" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial13T" PressedTextStyle="Fonts.FontArial13T" RStyleActivated="Weapon.RStylePressed" RStyleDefault="Weapon.RStyleNormal" RStyleDisabled="Weapon.RStyleNormal" RStyleMouseOver="Weapon.RStyleMouseover" RStyleMouseOverSelected="Weapon.RStylePressed" RStyleSelected="Weapon.RStylePressed" SelectedTextStyle="Fonts.FontArial13T" />
-<ButtonStyle DisabledTextStyle="Fonts.FontArial13T" MouseOverTextStyle="Fonts.FontArial13T" Name="CombatRanged" NormalTextStyle="Fonts.FontArial13T" PressedTextStyle="Fonts.FontArial13T" RStyleActivated="WeaponRanged.RStyleNormal" RStyleDefault="WeaponRanged.RStyleNormal" RStyleDisabled="WeaponRanged.RStyleNormal" RStyleMouseOver="WeaponRanged.RStyleNormal" RStyleMouseOverSelected="WeaponRanged.RStyleNormal" RStyleSelected="WeaponRanged.RStyleNormal" SelectedTextStyle="Fonts.FontArial13T" />
-<Namespace Name="Fonts">
+        <Namespace Name="tab_data">
+            <Namespace Name="active">
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterStretchV="false" East="east" Name="rect" West="west" />
+                <ImageStyle Filter="true" Name="east">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="86,913,100,945" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="west">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="9,913,22,945" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="23,913,85,945" />
+                </ImageStyle>
+            </Namespace>
+            <Namespace Name="inactive">
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterStretchV="false" East="east" Name="rect" West="west" />
+                <ImageStyle Filter="true" Name="east">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="187,915,200,945" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="west">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="110,915,123,945" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="122,915,184,945" />
+                </ImageStyle>
+            </Namespace>
+            <ButtonStyle DisabledTextStyle="Fonts.FontArial14T" MouseOverSound="ui_mouseover" MouseOverTextStyle="Fonts.FontArial14T" Name="tab_button_style" NormalTextColor="#B0B0B0" NormalTextStyle="Fonts.FontArial14T" PressedTextStyle="Fonts.FontArial14T" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="active.rect" RStyleDefault="inactive.rect" RStyleDisabled="active.rect" RStyleDisabledActivated="active.rect" RStyleMouseOver="inactive.rect" RStyleMouseOverActivated="active.rect" RStyleMouseOverSelected="active.rect" RStyleSelected="active.rect" SelectedTextStyle="Fonts.FontArial14T" />
+            <TabbedPaneStyle ButtonStyle="tab_button_style" Name="tabbed_pane_style" />
+        </Namespace>
+        <Namespace Name="tab_data_inv">
+            <Namespace Name="active">
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterStretchV="false" East="east" Name="rect" West="west" />
+                <ImageStyle Filter="true" Name="east">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="286,916,300,940" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="west">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="210,916,228,940" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="226,916,280,940" />
+                </ImageStyle>
+            </Namespace>
+            <Namespace Name="inactive">
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterStretchV="false" East="east" Name="rect" West="west" />
+                <ImageStyle Filter="true" Name="east">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="382,915,400,945" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="west">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="311,915,330,945" />
+                </ImageStyle>
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/windowelements.dds" SourceRect="328,915,382,945" />
+                </ImageStyle>
+            </Namespace>
+            <ButtonStyle DisabledTextStyle="Fonts.FontArial14T" MouseOverSound="ui_mouseover" MouseOverTextStyle="Fonts.FontArial14T" Name="tab_button_style" NormalTextColor="#B0B0B0" NormalTextStyle="Fonts.FontArial14T" PressedTextStyle="Fonts.FontArial14T" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="active.rect" RStyleDefault="inactive.rect" RStyleDisabled="active.rect" RStyleDisabledActivated="active.rect" RStyleMouseOver="inactive.rect" RStyleMouseOverActivated="active.rect" RStyleMouseOverSelected="active.rect" RStyleSelected="active.rect" SelectedTextStyle="Fonts.FontArial14T" />
+            <TabbedPaneStyle ButtonStyle="tab_button_style" Name="tabbed_pane_style" />
+        </Namespace>
+        <TextboxStyle CaratColor="#FFFFFF" Cursor="Text" DisabledTextStyle="Fonts.FontArial14T" Name="textbox" NormalTextStyle="Fonts.FontArial14T" RStyleDefault="normal" SelectionColor="#808080" TextColor="#FFFFFF" />
+        <ButtonStyle DisabledTextColor="#A0A0A0" DisabledTextStyle="Fonts.FontArial13T" MouseOverTextColor="#FFFF80" MouseOverTextStyle="Fonts.FontArial13T" Name="Weapon" NormalTextColor="#F0D080" NormalTextStyle="Fonts.FontArial13T" PressedTextStyle="Fonts.FontArial13T" RStyleActivated="Weapon.RStylePressed" RStyleDefault="Weapon.RStyleNormal" RStyleDisabled="Weapon.RStyleNormal" RStyleMouseOver="Weapon.RStyleMouseover" RStyleMouseOverSelected="Weapon.RStylePressed" RStyleSelected="Weapon.RStylePressed" SelectedTextStyle="Fonts.FontArial13T" />
+        <ButtonStyle DisabledTextStyle="Fonts.FontArial13T" MouseOverTextStyle="Fonts.FontArial13T" Name="CombatRanged" NormalTextStyle="Fonts.FontArial13T" PressedTextStyle="Fonts.FontArial13T" RStyleActivated="WeaponRanged.RStyleNormal" RStyleDefault="WeaponRanged.RStyleNormal" RStyleDisabled="WeaponRanged.RStyleNormal" RStyleMouseOver="WeaponRanged.RStyleNormal" RStyleMouseOverSelected="WeaponRanged.RStyleNormal" RStyleSelected="WeaponRanged.RStyleNormal" SelectedTextStyle="Fonts.FontArial13T" />
+        <Namespace Name="Fonts">
 <include>_ProfitUI_FontHighspeed28.xml</include>
 <include>_ProfitUI_FontHighspeed56.xml</include>
 <include>_ProfitUI_FontTahoma12.xml</include>
 <include>_ProfitUI_FontTahoma13.xml</include>
 <include>_ProfitUI_FontFranklinGothicMedium16.xml</include>
-<TextStyle Algorithm="Simple" FontName="Speedline" Language="english" Leading="-6" Name="Font20" PointSize="20" PrivateFontPath="UI/Fonts/Speedline.ttf" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Speedline" Language="english" Name="Font22" PointSize="22" PrivateFontPath="UI/Fonts/Speedline.ttf" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Speedline" Language="english" Name="Font27" PointSize="27" PrivateFontPath="UI/Fonts/Speedline.ttf" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial10T" PointSize="10" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial12T" PointSize="12" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial13T" PointSize="13" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial14T" PointSize="14" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial16T" PointSize="16" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial18T" PointSize="18" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial20T" PointSize="20" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial22T" PointSize="22" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial24T" PointSize="24" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" FontName="Morpheus" Language="english" Name="FontMorpheus70" PointSize="70" PrivateFontPath="UI/Fonts/morpheus.TTF" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" UseCachedFont="true" />
-<TextStyle Algorithm="Simple" Language="english" Name="no_font" PointSize="1" />
-</Namespace>
-<ButtonStyle DisabledTextColor="#D7D7D7" DisabledTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" DisabledTextStyle="Fonts.FontArial14T" MouseOverSound="ui_mouseover" MouseOverTextColor="#EBDEAA" MouseOverTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" MouseOverTextStyle="Fonts.FontArial14T" Name="invisible" NormalTextColor="#EBDEAA" NormalTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" NormalTextStyle="Fonts.FontArial14T" PressedTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" PressedTextStyle="Fonts.FontArial14T" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="Invisible.rect_pressed" RStyleDefault="Invisible.rect_normal" RStyleDisabled="Invisible.rect_disabled" RStyleMouseOver="Invisible.rect_mouseover" RStyleMouseOverSelected="Invisible.rect_pressed" RStyleSelected="Invisible.rect_pressed" SelectedTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" SelectedTextStyle="/Fonts.FontArial14" />
-<Namespace Name="Invisible">
-<RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Color="#2C2C2C" East="e" EastStretch="false" Name="rect_disabled" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
-<RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" CenterStretchV="false" Color="#5F5F5F" East="e" EastStretch="false" Name="rect_mouseover" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
-<RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Color="#383838" East="e" EastStretch="false" Name="rect_normal" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
-<RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Color="#515151" East="e" EastStretch="false" Name="rect_pressed" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
-<RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Color="#595959" East="e" EastStretch="false" Name="rect_activated" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
-<ImageStyle Filter="true" Name="s">
-<ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="125,35,148,40" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="w">
-<ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="112,15,117,29" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="sw">
-<ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="112,35,117,40" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="se">
-<ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="155,34,160,39" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="nw">
-<ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="112,4,117,9" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="ne">
-<ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="155,4,160,9" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="n">
-<ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="124,4,149,9" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="e">
-<ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="155,20,160,31" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="center">
-<ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="133,18,150,29" />
-</ImageStyle>
-</Namespace>
-<Namespace Name="Weapon">
-<RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="RStyleNormal" WestShrink="true" />
-<RectangleStyle Center="pressed" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" Color="#777777" EastStretch="false" Name="RStylePressed" NorthStretch="false" SouthStretch="false" WestShrink="true" />
-<RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" Color="#DDDDDD" EastStretch="false" Name="RStyleMouseover" NorthStretch="false" SouthStretch="false" WestShrink="true" />
-<ImageStyle Filter="true" Name="mouseover">
-<ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="1,1,41,41" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="pressed">
-<ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="1,1,41,41" />
-</ImageStyle>
-<ImageStyle Filter="true" Name="normal">
-<ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="1,1,41,41" />
-</ImageStyle>
-</Namespace>
-<Namespace Name="Bars">
-<ProgressbarStyle Bar.Background="imagelist.prog_default_gradient_fill" Name="prog_default_gradient" />
-<ProgressbarStyle Bar.Background="imagelist.prog_power_fill" Name="prog_power" RStyleDefault=" " />
-<ProgressbarStyle Bar.Background="imagelist.prog_mob_health_fill" Name="prog_health_mob" />
-<ProgressbarStyle Bar.Background="imagelist.prog_group_power_fill" Bar.BackgroundEmpty="imagelist.prog_group_power_bg" Name="prog_group_power" />
-<ProgressbarStyle Bar.Background="imagelist.prog_mob_power_fill" Name="prog_power_mob" />
-<ProgressbarStyle Bar.Background="imagelist.prog_health_fill" Name="prog_health" />
-<ProgressbarStyle Bar.Background="imagelist.prog_default_fill" Name="prog_default" />
-</Namespace>
-<Namespace Name="imagelist">
-<IconStyle IconRect="5,457,45,497" IconResource="images/profit.dds" Name="speaker" />
-<IconStyle BackGlowRect="124,204,135,215" BackGlowResource="images/widgets01.dds" IconRect="124,204,135,215" IconResource="images/widgets01.dds" Name="speaking" />
-<ImageStyle Name="prog_default_gradient_fill">
-<ImageFrame Name="image" Source="images/specialelements.dds" SourceRect="10,44,186,65" />
-</ImageStyle>
-<ImageStyle Name="widget_check_off">
-<ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="122,476,137,491" />
-</ImageStyle>
-<ImageStyle Name="prog_mob_power_fill">
-<ImageFrame Name="prog_power_fill" Source="images/profit.dds" SourceRect="16,163,166,169" />
-</ImageStyle>
-<ImageStyle Name="prog_health_fill">
-<ImageFrame Name="prog_health_fill" Source="images/profit.dds" SourceRect="16,187,166,199" />
-</ImageStyle>
-<ImageStyle Name="prog_health_bg">
-<ImageFrame Name="prog_health_bg" Source="images/profit.dds" SourceRect="16,187,166,199" />
-</ImageStyle>
-<ImageStyle Name="prog_mob_power_bg">
-<ImageFrame Name="prog_power_bg" Source="images/profit.dds" SourceRect="16,90,166,96" />
-</ImageStyle>
-<ImageStyle Name="prog_default_fill">
-<ImageFrame Name="prog_default_fill" Source="images/profit.dds" SourceRect="16,215,166,227" />
-</ImageStyle>
-<ImageStyle Name="prog_power_bg">
-<ImageFrame Name="prog_power_bg" Source="images/profit.dds" SourceRect="16,187,166,199" />
-</ImageStyle>
-<ImageStyle Name="prog_group_power_bg">
-<ImageFrame Name="prog_group_power_bg" Source="images/profit.dds" SourceRect="16,187,166,199" />
-</ImageStyle>
-<ImageStyle Name="prog_power_fill">
-<ImageFrame Name="prog_power_fill" Source="images/profit.dds" SourceRect="16,201,166,213" />
-</ImageStyle>
-<ImageStyle Name="prog_group_power_fill">
-<ImageFrame Name="prog_group_power_fill" Source="images/profit.dds" SourceRect="16,215,166,227" />
-</ImageStyle>
-<ImageStyle Name="prog_default_bg">
-<ImageFrame Name="prog_default_bg" Source="images/profit.dds" SourceRect="16,187,166,199" />
-</ImageStyle>
-<ImageStyle Name="prog_mob_health_fill">
-<ImageFrame Name="prog_health_fill" Source="images/profit.dds" SourceRect="16,156,166,162" />
-</ImageStyle>
-<ImageStyle Name="prog_mob_health_bg">
-<ImageFrame Name="prog_health_bg" Source="images/profit.dds" SourceRect="16,83,166,89" />
-</ImageStyle>
-</Namespace>
+            <TextStyle Algorithm="Simple" FontName="Speedline" Language="english" Leading="-6" Name="Font20" PointSize="20" PrivateFontPath="UI/Fonts/Speedline.ttf" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Speedline" Language="english" Name="Font22" PointSize="22" PrivateFontPath="UI/Fonts/Speedline.ttf" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Speedline" Language="english" Name="Font27" PointSize="27" PrivateFontPath="UI/Fonts/Speedline.ttf" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial10T" PointSize="10" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial12T" PointSize="12" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial13T" PointSize="13" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial14T" PointSize="14" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial16T" PointSize="16" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial18T" PointSize="18" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial20T" PointSize="20" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial22T" PointSize="22" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Leading="-2" Name="FontArial24T" PointSize="24" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" FontName="Morpheus" Language="english" Name="FontMorpheus70" PointSize="70" PrivateFontPath="UI/Fonts/morpheus.TTF" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" UseCachedFont="true" />
+            <TextStyle Algorithm="Simple" Language="english" Name="no_font" PointSize="1" />
+        </Namespace>
+        <ButtonStyle DisabledTextColor="#D7D7D7" DisabledTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" DisabledTextStyle="Fonts.FontArial14T" MouseOverSound="ui_mouseover" MouseOverTextColor="#EBDEAA" MouseOverTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" MouseOverTextStyle="Fonts.FontArial14T" Name="invisible" NormalTextColor="#EBDEAA" NormalTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" NormalTextStyle="Fonts.FontArial14T" PressedTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" PressedTextStyle="Fonts.FontArial14T" PressSound="ui_pressed" ReleaseSound="ui_released" RStyleActivated="Invisible.rect_pressed" RStyleDefault="Invisible.rect_normal" RStyleDisabled="Invisible.rect_disabled" RStyleMouseOver="Invisible.rect_mouseover" RStyleMouseOverSelected="Invisible.rect_pressed" RStyleSelected="Invisible.rect_pressed" SelectedTextShadowStyle="/ShadowStyles.ChatSimple.Outline1" SelectedTextStyle="/Fonts.FontArial14" />
+        <Namespace Name="Invisible">
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Color="#2C2C2C" East="e" EastStretch="false" Name="rect_disabled" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" CenterStretchV="false" Color="#5F5F5F" East="e" EastStretch="false" Name="rect_mouseover" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Color="#383838" East="e" EastStretch="false" Name="rect_normal" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Color="#515151" East="e" EastStretch="false" Name="rect_pressed" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Color="#595959" East="e" EastStretch="false" Name="rect_activated" North="n" NorthEast="ne" NorthStretch="false" NorthWest="nw" South="s" SouthEast="se" SouthStretch="false" SouthWest="sw" TitleStretch="false" West="w" WestStretch="false" />
+            <ImageStyle Filter="true" Name="s">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="125,35,148,40" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="w">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="112,15,117,29" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="sw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="112,35,117,40" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="se">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="155,34,160,39" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="nw">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="112,4,117,9" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="ne">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="155,4,160,9" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="n">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="124,4,149,9" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="e">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="155,20,160,31" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="center">
+                <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="133,18,150,29" />
+            </ImageStyle>
+        </Namespace>
+        <Namespace Name="Weapon">
+            <RectangleStyle Center="normal" CenterShrinkH="true" CenterShrinkV="true" Name="RStyleNormal" WestShrink="true" />
+            <RectangleStyle Center="pressed" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" Color="#777777" EastStretch="false" Name="RStylePressed" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+            <RectangleStyle Center="mouseover" CenterShrinkH="true" CenterShrinkV="true" CenterStretchH="false" CenterStretchV="false" Color="#DDDDDD" EastStretch="false" Name="RStyleMouseover" NorthStretch="false" SouthStretch="false" WestShrink="true" />
+            <ImageStyle Filter="true" Name="mouseover">
+                <ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="1,1,41,41" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="pressed">
+                <ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="1,1,41,41" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="normal">
+                <ImageFrame Name="image" Source="images/icons/icon_is18.dds" SourceRect="1,1,41,41" />
+            </ImageStyle>
+        </Namespace>
+        <Namespace Name="Bars">
+            <ProgressbarStyle Bar.Background="imagelist.prog_default_gradient_fill" Name="prog_default_gradient" />
+            <ProgressbarStyle Bar.Background="imagelist.prog_power_fill" Name="prog_power" RStyleDefault=" " />
+            <ProgressbarStyle Bar.Background="imagelist.prog_mob_health_fill" Name="prog_health_mob" />
+            <ProgressbarStyle Bar.Background="imagelist.prog_group_power_fill" Bar.BackgroundEmpty="imagelist.prog_group_power_bg" Name="prog_group_power" />
+            <ProgressbarStyle Bar.Background="imagelist.prog_mob_power_fill" Name="prog_power_mob" />
+            <ProgressbarStyle Bar.Background="imagelist.prog_health_fill" Name="prog_health" />
+            <ProgressbarStyle Bar.Background="imagelist.prog_default_fill" Name="prog_default" />
+        </Namespace>
+        <Namespace Name="imagelist">
+            <IconStyle IconRect="5,457,45,497" IconResource="images/profit.dds" Name="speaker" />
+            <IconStyle BackGlowRect="124,204,135,215" BackGlowResource="images/widgets01.dds" IconRect="124,204,135,215" IconResource="images/widgets01.dds" Name="speaking" />
+            <ImageStyle Name="prog_default_gradient_fill">
+                <ImageFrame Name="image" Source="images/specialelements.dds" SourceRect="10,44,186,65" />
+            </ImageStyle>
+            <ImageStyle Name="widget_check_off">
+                <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="122,476,137,491" />
+            </ImageStyle>
+            <ImageStyle Name="prog_mob_power_fill">
+                <ImageFrame Name="prog_power_fill" Source="images/profit.dds" SourceRect="16,163,166,169" />
+            </ImageStyle>
+            <ImageStyle Name="prog_health_fill">
+                <ImageFrame Name="prog_health_fill" Source="images/profit.dds" SourceRect="16,187,166,199" />
+            </ImageStyle>
+            <ImageStyle Name="prog_health_bg">
+                <ImageFrame Name="prog_health_bg" Source="images/profit.dds" SourceRect="16,187,166,199" />
+            </ImageStyle>
+            <ImageStyle Name="prog_mob_power_bg">
+                <ImageFrame Name="prog_power_bg" Source="images/profit.dds" SourceRect="16,90,166,96" />
+            </ImageStyle>
+            <ImageStyle Name="prog_default_fill">
+                <ImageFrame Name="prog_default_fill" Source="images/profit.dds" SourceRect="16,215,166,227" />
+            </ImageStyle>
+            <ImageStyle Name="prog_power_bg">
+                <ImageFrame Name="prog_power_bg" Source="images/profit.dds" SourceRect="16,187,166,199" />
+            </ImageStyle>
+            <ImageStyle Name="prog_group_power_bg">
+                <ImageFrame Name="prog_group_power_bg" Source="images/profit.dds" SourceRect="16,187,166,199" />
+            </ImageStyle>
+            <ImageStyle Name="prog_power_fill">
+                <ImageFrame Name="prog_power_fill" Source="images/profit.dds" SourceRect="16,201,166,213" />
+            </ImageStyle>
+            <ImageStyle Name="prog_group_power_fill">
+                <ImageFrame Name="prog_group_power_fill" Source="images/profit.dds" SourceRect="16,215,166,227" />
+            </ImageStyle>
+            <ImageStyle Name="prog_default_bg">
+                <ImageFrame Name="prog_default_bg" Source="images/profit.dds" SourceRect="16,187,166,199" />
+            </ImageStyle>
+            <ImageStyle Name="prog_mob_health_fill">
+                <ImageFrame Name="prog_health_fill" Source="images/profit.dds" SourceRect="16,156,166,162" />
+            </ImageStyle>
+            <ImageStyle Name="prog_mob_health_bg">
+                <ImageFrame Name="prog_health_bg" Source="images/profit.dds" SourceRect="16,83,166,89" />
+            </ImageStyle>
+        </Namespace>

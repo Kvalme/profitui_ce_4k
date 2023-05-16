@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-                    <Page Location="912,194" Name="EQ2MAPInfo" PackLocation="cpc,cpc" ScrollExtent="256,380" Size="256,380">
+                    <Page Location="392,194" Name="EQ2MAPInfo" PackLocation="cpc,cpc" ScrollExtent="256,380" Size="256,380">
                         <Text Font="SuperLargeStyle" Location="62,100" Margin="1,1,3,3" Name="Sorry!" ScrollExtent="132,46" Size="132,46" TextAlignment="Center" TextAlignmentVertical="Center">Sorry!</Text>
                         <Text AbsorbsInput="false" BackgroundColor="#FFFFFF" Font="/Fonts.Font_Euro_ArialBold15" Location="10,149" Name="MapUnavailable" ScrollExtent="237,47" ShadowStyle="/ShadowStyles.Outline1" Size="237,47" TextAlignment="Center" TextAlignmentVertical="Center">There is no map for this zone yet,
 but you can help create one:</Text>

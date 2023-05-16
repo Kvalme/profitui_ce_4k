@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page eq2usescomwndcontrols="true" Location="500,539" MinimumSize="19,19" Name="StartButton" OnHoverIn="Volume.Enabled=true" OnHoverOut="Volume.Enabled=false" PackLocation="right,bottom" ScrollExtent="119,119" Size="119,119" UserMovable="true" UserResizable="true">
-    <VolumePage CellAlignmentH="left" CellCount="3,3" CellPadding="0,0" CellSelectable="false" CellSize="38,38" Enabled="false" MinimumScrollExtent="114,114" Name="Volume" PackLocation="fff,fff" PackSize="a,a" ScrollExtent="119,119" Size="119,119" VolumeFill="down_left2right">
-        <Page MaximumSize="38,38" MinimumSize="38,38" Name="SoundControls" ScrollExtent="38,38" Size="38,38">
-            <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
-            <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="SndToggle" OnSet="show_window Custom.ProfitUI_SoundControls&#xD;&#xA;Tooltip=&quot;Hide Sound Sliders&quot;" OnUnset="hide_window Custom.ProfitUI_SoundControls&#xD;&#xA;Tooltip=&quot;Show Sound Sliders&quot;" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.box_checkbox" Tooltip="Show Sound Sliders" UserScrollable="false">S</Checkbox>
+        <Page eq2usescomwndcontrols="true" Location="-524,539" MinimumSize="19,19" Name="StartButton" OnHoverIn="Volume.Enabled=true" OnHoverOut="Volume.Enabled=false" PackLocation="right,bottom" ScrollExtent="119,119" Size="119,119" UserMovable="true" UserResizable="true">
+            <VolumePage CellAlignmentH="left" CellCount="3,3" CellPadding="0,0" CellSelectable="false" CellSize="38,38" Enabled="false" MinimumScrollExtent="114,114" Name="Volume" PackLocation="fff,fff" PackSize="a,a" ScrollExtent="119,119" Size="119,119" VolumeFill="down_left2right">
+                <Page MaximumSize="38,38" MinimumSize="38,38" Name="SoundControls" ScrollExtent="38,38" Size="38,38">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="SndToggle" OnSet="show_window Custom.ProfitUI_SoundControls&#xD;&#xA;Tooltip=&quot;Hide Sound Sliders&quot;" OnUnset="hide_window Custom.ProfitUI_SoundControls&#xD;&#xA;Tooltip=&quot;Show Sound Sliders&quot;" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.box_checkbox" Tooltip="Show Sound Sliders" UserScrollable="false">S</Checkbox>
+                </Page>
+                <Page Location="0,38" MaximumSize="38,38" MinimumSize="38,38" Name="VideoControls" ScrollExtent="38,38" Size="38,38">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="VidToggle" OnSet="show_window Custom.ProfitUI_VideoControls&#xD;&#xA;Tooltip=&quot;Hide Video Controls&quot;" OnUnset="hide_window Custom.ProfitUI_VideoControls&#xD;&#xA;Tooltip=&quot;Show Video Controls&quot;" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.box_checkbox" Tooltip="Show Video Controls" UserScrollable="false">V</Checkbox>
+                </Page>
+                <Page Location="0,76" MaximumSize="38,38" MinimumSize="38,38" Name="NightVision" ScrollExtent="38,38" Size="38,38">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="NightVisionButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" OnSet="r_flat_ambient=true r_flat_ambient=true&#xD;&#xA;r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientMax.Text r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientMax.Text&#xD;&#xA;Tooltip=&apos;Turn Off Nightvision&apos;" OnUnset="r_flat_ambient=false r_flat_ambient=false&#xD;&#xA;r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientDefault.Text r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientDefault.Text&#xD;&#xA;Tooltip=&apos;Turn On NightVision&apos;" Opacity="0.750" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.NightVisionButton" TextColor="#EBDEAA" Tooltip="Turn On NightVision" />
+                </Page>
+                <Page Location="38,0" MaximumSize="38,38" MinimumSize="38,38" Name="PetHide" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" Opacity="0.750" ScrollExtent="38,38" Size="38,38">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" Visible="false" />
+                    <Button Name="PetHide" OnPress="pet hide" PackSize="a,a" ScrollExtent="38,38" Size="38,38" Style="/ProfitUI_Styles.ButtonStyles.PetHideButton" Tooltip="/pet hide" />
+                </Page>
+                <Page Location="38,38" MaximumSize="38,38" MinimumSize="38,38" Name="ZoneReuse" ScrollExtent="38,38" Size="38,38">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Icon ActionData="command zonereuse" BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="1,1" MouseOverColor="#FFFF00" Name="IconCommandZoneReuse" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" Opacity="0.750" PackSize="a,a" ScrollExtent="36,36" Size="36,36" TreatAsButton="true" />
+                </Page>
+                <Page Location="38,76" MaximumSize="38,38" MinimumSize="38,38" Name="Browser" ScrollExtent="38,38" Size="38,38">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" Visible="false" />
+                    <Button Name="OpenBrowser" OnPress="show_window MainHUD.Browser" PackSize="a,a" ScrollExtent="38,38" Size="38,38" Style="/ProfitUI_Styles.ButtonStyles.Browser.BrowserIconButton" Tooltip="Open Browser Window" />
+                </Page>
+                <Page Location="76,0" MaximumSize="38,38" MinimumSize="38,38" Name="PCC" ScrollExtent="38,38" Size="38,38">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="PCCButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" OnSet="show_window Custom.ProfitUI_ControlCenter&#xD;&#xA;Tooltip=&apos;Hide ProfitUI Control Center&apos;" OnUnset="hide_window Custom.ProfitUI_ControlCenter&#xD;&#xA;Tooltip=&apos;Show ProfitUI Control Center&apos;" Opacity="0.750" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.PCCbutton" TextColor="#F0D080" Tooltip="Show ProfitUI Control Center" />
+                </Page>
+                <Page Location="76,38" MaximumSize="38,38" MinimumSize="38,38" Name="Infocenter" ScrollExtent="38,38" Size="38,38">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="InfocenterButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" OnSet="show_window Custom.ProfitUI_InfoCenter&#xD;&#xA;Tooltip=&apos;Hide Infocenter&apos;" OnUnset="hide_window Custom.ProfitUI_InfoCenter&#xD;&#xA;Tooltip=&apos;Show Infocenter&apos;" Opacity="0.750" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.InfocenterButton" TextColor="#F0D080" Tooltip="Show Infocenter" />
+                </Page>
+                <Page Location="76,76" MaximumSize="38,38" MinimumSize="38,38" Name="Start" ScrollExtent="38,38" Size="38,38">
+                    <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
+                    <Button Name="Start" OnPress="togglestartmenu" PackSize="a,a" ScrollExtent="38,38" Size="38,38" Style="/ProfitUI_Styles.ButtonStyles.StartButton" Tooltip="Toggle Startmenu" />
+                </Page>
+            </VolumePage>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackSize="a,a" ScrollExtent="119,119" Size="119,119" />
         </Page>
-        <Page Location="0,38" MaximumSize="38,38" MinimumSize="38,38" Name="VideoControls" ScrollExtent="38,38" Size="38,38">
-            <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
-            <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="VidToggle" OnSet="show_window Custom.ProfitUI_VideoControls&#xD;&#xA;Tooltip=&quot;Hide Video Controls&quot;" OnUnset="hide_window Custom.ProfitUI_VideoControls&#xD;&#xA;Tooltip=&quot;Show Video Controls&quot;" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.box_checkbox" Tooltip="Show Video Controls" UserScrollable="false">V</Checkbox>
-        </Page>
-        <Page Location="0,76" MaximumSize="38,38" MinimumSize="38,38" Name="NightVision" ScrollExtent="38,38" Size="38,38">
-            <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
-            <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="NightVisionButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" OnSet="r_flat_ambient=true r_flat_ambient=true&#xD;&#xA;r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientMax.Text r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientMax.Text&#xD;&#xA;Tooltip=&apos;Turn Off Nightvision&apos;" OnUnset="r_flat_ambient=false r_flat_ambient=false&#xD;&#xA;r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientDefault.Text r_min_dir_ambient_intensity=Parent.Parent.Parent.Parent.Parent.Custom.ProfitUI_MiscSettings.Nightvision.AmbientDefault.Text&#xD;&#xA;Tooltip=&apos;Turn On NightVision&apos;" Opacity="0.750" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.NightVisionButton" TextColor="#EBDEAA" Tooltip="Turn On NightVision" />
-        </Page>
-        <Page Location="38,0" MaximumSize="38,38" MinimumSize="38,38" Name="PetHide" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" Opacity="0.750" ScrollExtent="38,38" Size="38,38">
-            <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" Visible="false" />
-            <Button Name="PetHide" OnPress="pet hide" PackSize="a,a" ScrollExtent="38,38" Size="38,38" Style="/ProfitUI_Styles.ButtonStyles.PetHideButton" Tooltip="/pet hide" />
-        </Page>
-        <Page Location="38,38" MaximumSize="38,38" MinimumSize="38,38" Name="ZoneReuse" ScrollExtent="38,38" Size="38,38">
-            <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
-            <Icon ActionData="command zonereuse" BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="1,1" MouseOverColor="#FFFF00" Name="IconCommandZoneReuse" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" Opacity="0.750" PackSize="a,a" ScrollExtent="36,36" Size="36,36" TreatAsButton="true" />
-        </Page>
-        <Page Location="38,76" MaximumSize="38,38" MinimumSize="38,38" Name="Browser" ScrollExtent="38,38" Size="38,38">
-            <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" Visible="false" />
-            <Button Name="OpenBrowser" OnPress="show_window MainHUD.Browser" PackSize="a,a" ScrollExtent="38,38" Size="38,38" Style="/ProfitUI_Styles.ButtonStyles.Browser.BrowserIconButton" Tooltip="Open Browser Window" />
-        </Page>
-        <Page Location="76,0" MaximumSize="38,38" MinimumSize="38,38" Name="PCC" ScrollExtent="38,38" Size="38,38">
-            <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
-            <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="PCCButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" OnSet="show_window Custom.ProfitUI_ControlCenter&#xD;&#xA;Tooltip=&apos;Hide ProfitUI Control Center&apos;" OnUnset="hide_window Custom.ProfitUI_ControlCenter&#xD;&#xA;Tooltip=&apos;Show ProfitUI Control Center&apos;" Opacity="0.750" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.PCCbutton" TextColor="#F0D080" Tooltip="Show ProfitUI Control Center" />
-        </Page>
-        <Page Location="76,38" MaximumSize="38,38" MinimumSize="38,38" Name="Infocenter" ScrollExtent="38,38" Size="38,38">
-            <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
-            <Checkbox BackgroundOpacity="1.000" Location="1,1" Name="InfocenterButton" OnHoverIn="Opacity=1" OnHoverOut="Opacity=0.75" OnSet="show_window Custom.ProfitUI_InfoCenter&#xD;&#xA;Tooltip=&apos;Hide Infocenter&apos;" OnUnset="hide_window Custom.ProfitUI_InfoCenter&#xD;&#xA;Tooltip=&apos;Show Infocenter&apos;" Opacity="0.750" PackSize="a,a" ScrollExtent="36,36" Size="36,36" Style="/ProfitUI_Styles.ButtonStyles.InfocenterButton" TextColor="#F0D080" Tooltip="Show Infocenter" />
-        </Page>
-        <Page Location="76,76" MaximumSize="38,38" MinimumSize="38,38" Name="Start" ScrollExtent="38,38" Size="38,38">
-            <Rectangle AbsorbsInput="false" Color="#888888" Enabled="false" GetsInput="false" Name="Frame" ScrollExtent="19,19" Size="19,19" />
-            <Button Name="Start" OnPress="togglestartmenu" PackSize="a,a" ScrollExtent="38,38" Size="38,38" Style="/ProfitUI_Styles.ButtonStyles.StartButton" Tooltip="Toggle Startmenu" />
-        </Page>
-    </VolumePage>
-    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Backdrop" PackSize="a,a" ScrollExtent="119,119" Size="119,119" />
-</Page>

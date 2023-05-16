@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" alwaysonbottom="false" eq2usescomwndcontrol="true" Location="1871,648" MaximumSize="1024,1024" Name="RestartTrialButton" PackLocation="right,bottom" savesettings="true" ScrollExtent="178,62" Size="178,62" UserMovable="true" Visible="false">
+        <Page Activated="true" alwaysonbottom="false" eq2usescomwndcontrol="true" Location="847,648" MaximumSize="1024,1024" Name="RestartTrialButton" PackLocation="right,bottom" savesettings="true" ScrollExtent="178,62" Size="178,62" UserMovable="true" Visible="false">
             <Button Location="12,11" MaximumSize="16384,38" MinimumSize="38,38" Name="Restart" PackLocation="cfc,cfc" PackSize="absolute,absolute" ScrollExtent="154,38" Size="154,38" Style="/CommonElements.LargePushButton.data.style">:da46b0877869456d:Restart Trial</Button>
             <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="178,62" Size="178,62">
                 <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="178,62" Size="178,62" />

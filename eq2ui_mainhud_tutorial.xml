@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page AlwaysOnTop="false" Location="624,74" MaximumSize="800,600" MinimumSize="800,600" Name="Tutorial" PackLocation="center,center" ScrollExtent="800,600" Size="800,600" UserMovable="true" Visible="false">
+        <Page AlwaysOnTop="false" Location="112,74" MaximumSize="800,600" MinimumSize="800,600" Name="Tutorial" PackLocation="center,center" ScrollExtent="800,600" Size="800,600" UserMovable="true" Visible="false">
             <Button Location="768,13" Name="CloseButton" OnPress="window_close MainHUD Tutorial" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.MiniWindowFrame.data.close.style" Tooltip=":3c66d8d42d3f513f:Close" UserMovable="true" />
             <Page Name="DungeonMakerEdit" ScrollExtent="800,600" Size="800,600">
                 <Page Name="TitlePage" ScrollExtent="800,70" Size="800,70">

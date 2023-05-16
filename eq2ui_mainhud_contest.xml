@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Location="724,179" Name="Contest" PackLocation="cfc,cfc" ScrollExtent="600,410" Size="600,410" UserMovable="true" Visible="false">
+        <Page Location="212,179" Name="Contest" PackLocation="cfc,cfc" ScrollExtent="600,410" Size="600,410" UserMovable="true" Visible="false">
             <Text AbsorbsInput="false" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="0,39" Name="Title" PackSize="a" ScrollExtent="600,42" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="600,42" TextAlignment="Center" UserMovable="true" UserResizable="true">:919134c499f7314b:Porkupuncture!</Text>
             <Splitter Enabled="false" Location="156,71" MaximumSize="16384,14" MinimumSize="100,14" Name="Rule" PackLocation="cfc" ScrollExtent="288,14" Size="288,14" Style="/CommonElements.Splitter.data.style" />
             <Button IsCancelButton="true" Location="240,350" MaximumSize="16384,32" MinimumSize="32,32" Name="Close" PackLocation="cfc,fff" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:919134c42d3f513f:Close</Button>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="552,60" Name="Deity" PackLocation="center,center" ScrollExtent="590,462" Size="590,462" UserMovable="true" version="1.1" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="40,60" Name="Deity" PackLocation="center,center" ScrollExtent="590,462" Size="590,462" UserMovable="true" version="1.1" Visible="false">
             <Page Location="250,33" Name="ButtonPage" ScrollExtent="85,32" Size="85,32">
                 <Icon BackgroundTint="#000000" IconRect="0,42,41,84" IconResource="/images/icons/icon_ms3.dds" Location="3,1" MaximumSize="28,28" MinimumSize="28,28" MouseOverColor="#FFFF00" Name="ShowAbilities2" ScrollExtent="28,28" Size="28,28" />
                 <Icon BackgroundTint="#000000" IconRect="0,42,41,84" IconResource="/images/icons/icon_ms3.dds" Location="52,1" MaximumSize="28,28" MinimumSize="28,28" MouseOverColor="#FFFF00" Name="ShowAbilities" ScrollExtent="28,28" Size="28,28" />

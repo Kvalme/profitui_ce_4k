@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Page Activated="true" allowcloseontop="true" alwaysontop="true" eq2usescomwndcontrols="true" Location="268,440" MaximumSize="1024,1024" Name="StartMenu" ScrollExtent="232,54" Size="232,54">
-    <Button Location="42,9" Margin="10,0,0,0" Name="ButtonTemplate" PressSound=" " ScrollExtent="178,32" Size="178,32" Style="/ButtonStyles.start_menu">:3b7bf4adff86467e:ButtonTemplate</Button>
-    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="10,9" MouseOverColor="#FFFF00" Name="IconTemplate" PackSize="fixed,fixed" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" Visible="false" />
-    <Image Location="1,-12" Name="ManaDoohickeyTop" ScrollExtent="227,15" Size="227,15" SourceRect="325,0,512,15" SourceResource="/images/Window_elements_specific.dds" Visible="false" />
-    <Image Location="1,49" Name="ManaDoohickeyBottom" PackLocation="left,bottom" Rotation="0.500" ScrollExtent="227,15" Size="227,15" SourceRect="325,0,512,15" SourceResource="/images/Window_elements_specific.dds" Visible="false" />
-    <Page BackgroundOpacity="1.000" Location="2,2" Name="WC_Frame" PackLocation="top,left" PackSize="a,a" RStyleDefault="/FrameStyles.win_gold_plain" ScrollExtent="228,49" Size="228,49" />
-    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="5,4" Name="WC_Backdrop" PackLocation="top,left" PackSize="a,a" ScrollExtent="217,42" Size="217,42" />
-</Page>
+        <Page Activated="true" allowcloseontop="true" alwaysontop="true" eq2usescomwndcontrols="true" Location="268,440" MaximumSize="1024,1024" Name="StartMenu" ScrollExtent="232,54" Size="232,54">
+            <Button Location="42,9" Margin="10,0,0,0" Name="ButtonTemplate" PressSound=" " ScrollExtent="178,32" Size="178,32" Style="/ButtonStyles.start_menu">:3b7bf4adff86467e:ButtonTemplate</Button>
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="10,9" MouseOverColor="#FFFF00" Name="IconTemplate" PackSize="fixed,fixed" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" Visible="false" />
+            <Image Location="1,-12" Name="ManaDoohickeyTop" ScrollExtent="227,15" Size="227,15" SourceRect="325,0,512,15" SourceResource="/images/Window_elements_specific.dds" Visible="false" />
+            <Image Location="1,49" Name="ManaDoohickeyBottom" PackLocation="left,bottom" Rotation="0.500" ScrollExtent="227,15" Size="227,15" SourceRect="325,0,512,15" SourceResource="/images/Window_elements_specific.dds" Visible="false" />
+            <Page BackgroundOpacity="1.000" Location="2,2" Name="WC_Frame" PackLocation="top,left" PackSize="a,a" RStyleDefault="/FrameStyles.win_gold_plain" ScrollExtent="228,49" Size="228,49" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="5,4" Name="WC_Backdrop" PackLocation="top,left" PackSize="a,a" ScrollExtent="217,42" Size="217,42" />
+        </Page>

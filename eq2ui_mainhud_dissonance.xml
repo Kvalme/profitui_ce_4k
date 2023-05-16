@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="true" Location="827,606" Name="Dissonance" PackLocation="center,bottom" ScrollExtent="395,22" Size="395,22" UserMovable="true" Visible="false">
+        <Page eq2usescomwndcontrols="true" Location="315,606" Name="Dissonance" PackLocation="center,bottom" ScrollExtent="395,22" Size="395,22" UserMovable="true" Visible="false">
             <Image AbsorbsInput="false" Name="DissonanceBar" PackLocation="p,p" PackSize="p,p" ScrollExtent="395,22" Size="395,22" StretchType="ProportionalBound" Style="dissonance_bar" />
             <Progressbar Color="#FF0000" DynamicData="/GameData.Self.Dissonance" Location="27,2" Name="Dissonance" PackLocation="p,p" PackSize="p,p" Progress="1.000" ScrollExtent="341,17" Size="341,17" Style="/SpecialElements.GreyscaleSkillProgressBar.data.style" />
             <Page BackgroundOpacity="1.000" Location="27,2" Name="Background" PackSize="a,a" RStyleDefault="/progressbarlist.Casting.Bkg.rect" ScrollExtent="341,17" Size="341,17" />
