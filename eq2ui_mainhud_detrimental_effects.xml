@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="true" Location="701,623" MaximumSize="1024,1024" MinimumSize="32,32" Name="DetrimentalEffects" PackLocation="fff,fff" ScrollExtent="222,126" Size="222,126" Tooltip=":cf23dbb127d9a94d:Detrimental Spell Effects" UserMovable="true" UserResizable="true" Visible="false">
+        <Page eq2usescomwndcontrols="true" Location="701,623" MaximumSize="1024,1024" MinimumSize="32,32" Name="DetrimentalEffects" PackLocation="fff,fff" ScrollExtent="222,126" Size="222,126" Tooltip=":cf23dbb127d9a94d:Detrimental Spell Effects" UserMovable="true" UserResizable="true">
             <VolumePage AbsorbsInput="false" CellCount="9,5" CellPadding="0,0" CellSelectable="false" CellSize="24,24" Location="3,3" MinimumScrollExtent="216,120" Name="Volume" PackSize="a,a" ScrollExtent="216,120" Size="216,120">
                 <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect1" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />
                 <Icon BackgroundTint="#000000" IconStyle="/IconStyles.effect" Location="24,0" MouseOverColor="#FFFF00" Name="Effect2" ScrollExtent="24,24" Size="24,24" TreatAsButton="true" />

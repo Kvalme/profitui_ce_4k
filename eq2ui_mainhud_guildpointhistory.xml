@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="false" Location="163,139" MaximumSize="1024,768" MinimumSize="620,340" Name="GuildPointHistory" ScrollExtent="720,440" Size="720,440" UserMovable="true" UserResizable="true" Visible="false">
+        <Page eq2usescomwndcontrols="false" Location="163,139" MaximumSize="1024,768" MinimumSize="620,340" Name="GuildPointHistory" ScrollExtent="720,440" Size="720,440" UserMovable="true" UserResizable="true">
             <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="20,21" Name="Title" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="680,38" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="680,29" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">[DEVL]Guild Point History for Groden</Text>
             <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="34,51" Margin="5,0,0,0" MaxLines="1" Name="Date" ScrollExtent="90,26" Size="90,20" TextAlignmentVertical="Center" TextColor="#EBDEAA">:94725db2f55367bb:Date</Text>
             <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="124,51" Margin="5,0,0,0" MaxLines="1" Name="ModifiedBy" ScrollExtent="126,26" Size="116,20" TextAlignmentVertical="Center" TextColor="#EBDEAA">:94725db296b333e5:Modified By</Text>

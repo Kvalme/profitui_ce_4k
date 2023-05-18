@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="215,177" Name="ChatOptions" ScrollExtent="620,470" Size="620,470" UserMovable="true" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="215,177" Name="ChatOptions" ScrollExtent="620,470" Size="620,470" UserMovable="true">
             <Button Location="320,430" Name="Cancel" PackSize="fixed,fixed" ScrollExtent="100,30" Size="100,30" Style="/CommonElements.PushButton.data.style">:156772d3ae453fbb:Cancel</Button>
             <Button Location="200,430" Name="Ok" PackSize="fixed,fixed" ScrollExtent="100,30" Size="100,30" Style="/CommonElements.PushButton.data.style">:156772d313a7061a:Ok</Button>
             <Text Font="/Fonts.FontZapf18" Location="16,31" Name="Title1" PackLocation="left,top" PackSize="absolute" ScrollExtent="196,20" Size="196,20" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#EBDEAA">:156772d367f4e0c1:Message Filter</Text>
@@ -10,7 +10,7 @@
                 <Page Location="1,2" Name="TreeContainer" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.ThinCornered.rect" ScrollExtent="189,265" Size="189,265">
                     <RectangleStyle Color="#FFDDAA" Name="RectStyle" />
                     <TreeViewStyle CellHeight="20" CellPadding="0,0" DefaultTextStyle="/Fonts.FontZapf15" DisabledTextColor="#A0A0A0" GridColor="#FFDDAA" ImageStyleChecked="/CommonElements.TreeView.data.checked" ImageStyleCollapsed="/CommonElements.TreeView.data.collapsed" ImageStyleExpanded="/CommonElements.TreeView.data.expanded" ImageStyleUnchecked="/CommonElements.TreeView.data.unchecked" Indentation="20" Name="StageTreeViewStyle" RStyleActivated="RectStyle" RStyleDefault="RectStyle" RStyleSelected="RectStyle" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" />
-                    <TreeView BackgroundColor="#FFFFFF" BackgroundOpacity="0.000" DataSourceContainer="StageTreeDSContainer" MinimumScrollExtent="189,0" Name="StageTreeView" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="189,266" SelectionAllowedMultiRow="false" Size="189,266" Style="StageTreeViewStyle" ToggleChecks="true" UserResizable="true" />
+                    <TreeView BackgroundColor="#FFFFFF" BackgroundOpacity="0.000" DataSourceContainer="StageTreeDSContainer" MinimumScrollExtent="189,40" Name="StageTreeView" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="189,266" SelectionAllowedMultiRow="false" Size="189,266" Style="StageTreeViewStyle" ToggleChecks="true" UserResizable="true" />
                     <DataSourceContainer Name="StageTreeDSContainer" text=":156772d3738c9ade:foo">
                         <DataSourceContainer disabled="true" Name="StageTreeDSContainer" text=":156772d3738c9ade_1:foo">
                             <DataSourceContainer Name="StageTreeDSContainer" text=":156772d3738c9ade_2:foo" />

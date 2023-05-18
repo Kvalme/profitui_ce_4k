@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="62,84" MinimumSize="676,584" Name="Help" ScrollExtent="876,584" Size="876,584" UserMovable="true" UserResizable="true" version="2" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="62,84" MinimumSize="676,584" Name="Help" ScrollExtent="876,584" Size="876,584" UserMovable="true" UserResizable="true" version="2">
             <Page Activated="true" Location="3,63" Name="TabPage" PackSize="a,a" RStyleMouseOver=" " RStyleMouseOverActivated=" " RStyleMouseOverSelected=" " RStyleSelected=" " ScrollExtent="870,515" Size="870,515">
                 <Page Activated="true" Name="TutorialPage" PackSize="a,a" ScrollExtent="870,515" Size="870,515">
                     <Page BackgroundOpacity="1.000" Location="5,5" Name="TutorialBackground" PackSize="f,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="250,470" Size="250,470">
@@ -9,7 +9,7 @@
                             </DataSourceContainer>
                             <DataSourceContainer Name="data 2" text=":fd00e2a6e4d42d26:[DEVL]2.0 Gameplay Overview" />
                         </DataSourceContainer>
-                        <TreeView BackgroundColor="#555555" BackgroundOpacity="0.000" DataSourceContainer="TutorialDSContainer" Location="10,10" MinimumScrollExtent="210,0" Name="TutorialTreeView" PackSize="a,a" ScrollExtent="210,450" SelectionAllowedMultiRow="false" ShowChecks="false" Size="210,450" Style="/CommonElements.TreeView.data.style" />
+                        <TreeView BackgroundColor="#555555" BackgroundOpacity="0.000" DataSourceContainer="TutorialDSContainer" Location="10,10" MinimumScrollExtent="210,138" Name="TutorialTreeView" PackSize="a,a" ScrollExtent="210,450" SelectionAllowedMultiRow="false" ShowChecks="false" Size="210,450" Style="/CommonElements.TreeView.data.style" />
                         <Scrollbar ArrowPressSound="sounds/button" Control="TutorialTreeView" HideIfUnnecessary="true" Location="218,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,450" Size="22,450" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
                     </Page>
                     <Page BackgroundOpacity="1.000" Location="255,5" Name="ContentBackground" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="610,470" Size="610,470">
@@ -36,7 +36,7 @@
                             </DataSourceContainer>
                             <DataSourceContainer Name="data 2" text=":834a1c39e4d42d26:[DEVL]2.0 Gameplay Overview" />
                         </DataSourceContainer>
-                        <TreeView BackgroundColor="#555555" BackgroundOpacity="0.000" DataSourceContainer="TopicDSContainer" Location="10,10" MinimumScrollExtent="210,0" Name="TopicTreeView" PackSize="a,a" ScrollExtent="210,450" SelectionAllowedMultiRow="false" ShowChecks="false" Size="210,450" Style="/CommonElements.TreeView.data.style" />
+                        <TreeView BackgroundColor="#555555" BackgroundOpacity="0.000" DataSourceContainer="TopicDSContainer" Location="10,10" MinimumScrollExtent="210,138" Name="TopicTreeView" PackSize="a,a" ScrollExtent="210,450" SelectionAllowedMultiRow="false" ShowChecks="false" Size="210,450" Style="/CommonElements.TreeView.data.style" />
                         <Scrollbar ArrowPressSound="sounds/button" Control="TopicTreeView" HideIfUnnecessary="true" Location="218,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,450" Size="22,450" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
                     </Page>
                     <Page BackgroundOpacity="1.000" Location="255,5" Name="ContentBackground" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="610,470" Size="610,470">

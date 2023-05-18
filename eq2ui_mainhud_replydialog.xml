@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" cascadelayout="true" eq2usescomwndcontrols="true" Location="342,342" Name="ReplyDialog" RStyleDefault=" " ScrollExtent="345,110" Size="345,110" UserMovable="true" Visible="false">
+        <Page Activated="true" cascadelayout="true" eq2usescomwndcontrols="true" Location="342,342" Name="ReplyDialog" RStyleDefault=" " ScrollExtent="345,110" Size="345,110" UserMovable="true">
             <Button Location="309,22" Name="WC_CloseButton" PackLocation="right,top" ScrollExtent="18,15" Size="18,15" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":b539cb812d3f513f:Close" UserMovable="true" />
             <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="5,84" Name="BottomEdge" PackLocation="left, bottom" PackSize="absolute" Rotation="0.500" RStyleDefault="/FrameStyles.FancyTopEdge.rect" ScrollExtent="333,20" Size="333,20" />
             <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="5,6" Name="TopEdge" PackLocation="left, top" PackSize="absolute" RStyleDefault="/FrameStyles.FancyTopEdge.rect" ScrollExtent="333,20" Size="333,20" />

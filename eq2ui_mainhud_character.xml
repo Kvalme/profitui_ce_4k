@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="true" Location="261,144" MinimumSize="488,415" Name="Character" ScrollExtent="509,470" Size="509,470" UserMovable="true" Visible="false">
+        <Page eq2usescomwndcontrols="true" Location="261,144" MinimumSize="488,415" Name="Character" ScrollExtent="509,470" Size="509,470" UserMovable="true">
             <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="23,151" Name="TradeskillDataFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="457,39" Size="457,39" />
             <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="27,155" Name="TSLevelLabel" ScrollExtent="163,13" Size="163,13" TextAlignment="Right">:6cfd5caff3981ea8:Tradeskill Level:</Text>
             <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="196,155" Name="TSLevel" ScrollExtent="45,13" Size="45,13">:6cfd5caf05e57d52:25</Text>

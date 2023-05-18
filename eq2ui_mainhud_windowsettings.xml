@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page allowcloseontop="true" alwaysontop="true" eq2opensound="ui_window_main_open" Location="325,193" Name="WindowSettings" ScrollExtent="384,405" Size="384,405" UserMovable="true" Visible="false">
+        <Page allowcloseontop="true" alwaysontop="true" eq2opensound="ui_window_main_open" Location="325,193" Name="WindowSettings" ScrollExtent="384,405" Size="384,405" UserMovable="true">
             <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="29,41" Name="Foreground" PackSize="absolute" ScrollExtent="182,23" Size="182,17" TextColor="#F0D080" UserMovable="true" UserResizable="true">:b7ec43cb73b70314:Window</Text>
             <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="47,57" Name="Label_No" PackLocation="top,left" PackSize="absolute" ScrollExtent="138,23" Size="138,18" TextAlignment="Center" TextAlignmentVertical="Center">:b7ec43cbb2fc1b5a_2:Normal Opacity</Text>
             <Sliderbar Location="47,72" MaximumSize="16384,26" MinimumSize="100,26" Name="Foreground_No" ScrollExtent="138,26" Size="138,26" Style="/CommonElements.Slider.data.style" textalignment="Right" UpperLimit="100" Value="50" />

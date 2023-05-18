@@ -4,5 +4,5 @@
                 <Scrollbar ArrowPressSound="sounds/button" Control="FindPoiListbox" HideIfUnnecessary="true" Location="276,-2" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="f,a" ScrollExtent="22,202" Size="22,202" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
                 <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,-3" Name="Frame" PackSize="a,a" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="282,202" Size="282,202" />
                 <Listbox BackgroundColor="#FFFFFF" DataSource="FindPoiDataSource" Location="9,8" Margin="10,10,10,10" Name="FindPoiListbox" PackSize="a,a" RowTemplate="/CommonElements.Listbox.data.row_template" ScrollExtent="260,180" Size="260,180" Style="/CommonElements.Listbox.data.listbox_style" UserResizable="true" />
-                <Page AbsorbsInput="false" BackgroundOpacity="0.733" Name="Bkg" PackSize="a,a" ScrollExtent="278,198" Size="278,198" />
+                <Page AbsorbsInput="false" BackgroundOpacity="0.729" Name="Bkg" PackSize="a,a" ScrollExtent="278,198" Size="278,198" />
             </Page>

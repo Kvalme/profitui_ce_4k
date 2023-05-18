@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="257,39" MinimumSize="380,543" Name="LFG" ScrollExtent="607,703" Size="607,703" UserMovable="true" version="2.0.0" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="257,39" MinimumSize="380,543" Name="LFG" ScrollExtent="607,703" Size="607,703" UserMovable="true" version="2.0.0">
             <TabbedPane ActiveTab="0" DataSource="MainPage.TabSource" Location="15,36" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="578,36" Size="578,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="MainPage.TabPages" />
             <Page Location="14,40" Name="MainPage" PackSize="absolute,absolute" ScrollExtent="577,644" Size="577,644">
                 <DataSource Name="TabSource">

@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
     <Namespace Name="Fonts">
-        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial16" PointSize="16" UseCachedFont="true" />
-<include>FontArial14.xml</include>
         <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial13" PointSize="13" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial14" PointSize="14" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial16" PointSize="16" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial18" PointSize="18" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial20" PointSize="20" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial22" PointSize="22" UseCachedFont="true" />
+        <TextStyle Algorithm="Simple" FontName="Arial" Language="english" Name="FontArial24" PointSize="24" UseCachedFont="true" />
         <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="Font_Tooltip_Large" PointSize="18" PrivateFontPath="UI/Fonts/zcal801b.TTF" UseCachedFont="true" />
         <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="Font_Tooltip" PointSize="15" PrivateFontPath="UI/Fonts/zcal801b.TTF" UseCachedFont="true" />
         <TextStyle Algorithm="Simple" FontName="Times New Roman" Language="japanese" Name="Font_Japan_Tooltip" PointSize="15" UseCachedFont="true" />

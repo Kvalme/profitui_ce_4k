@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="54,161" MinimumSize="400,400" Name="EditMacro" ScrollExtent="437,444" Size="437,444" UserMovable="true" UserResizable="true" version="2.2.0" Visible="false">
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="54,161" MinimumSize="400,400" Name="EditMacro" ScrollExtent="437,444" Size="437,444" UserMovable="true" UserResizable="true" version="2.2.0">
             <Page Location="2,26" Name="Header" PackSize="a,f" ScrollExtent="435,122" Size="435,122">
                 <RectangleStyle Center="arrow_left" CenterShrinkH="true" CenterShrinkV="true" EastShrink="true" Name="rs_left" North="drop_down_top" NorthShrink="true" South="drop_down_bottom" SouthShrink="true" WestShrink="true" />
                 <ButtonStyle DisabledTextColor="#A0A0A0" MouseOverTextColor="#FFFF00" Name="bs_left" RStyleDefault="rs_left" />

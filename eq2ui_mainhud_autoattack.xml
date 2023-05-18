@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="true" Location="375,511" MaximumSize="900,300" MinimumSize="150,34" Name="AutoAttack" ScrollExtent="361,100" Size="361,100" Tooltip=":d988c5de4015d786:Auto Attack Timer" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
+        <Page eq2usescomwndcontrols="true" Location="375,511" MaximumSize="900,300" MinimumSize="150,34" Name="AutoAttack" ScrollExtent="361,100" Size="361,100" Tooltip=":d988c5de4015d786:Auto Attack Timer" UserMovable="true" UserResizable="true" version="2.0">
             <ProgressbarStyle Bar.Background="progress_fill" Name="progress_style" />
             <ImageStyle Name="progress_fill">
                 <ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="221,483,379,489" />

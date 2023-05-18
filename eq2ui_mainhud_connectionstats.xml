@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="757,6" MaximumSize="300,300" Name="ConnectionStats" ScrollExtent="210,77" Size="210,77" UserMovable="true" UserScrollable="false" version="1.0.1" version_note="AbsorbsInput=false everywhere" Visible="false">
+        <Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="757,6" MaximumSize="300,300" Name="ConnectionStats" ScrollExtent="210,77" Size="210,77" UserMovable="true" UserScrollable="false" version="1.0.1" version_note="AbsorbsInput=false everywhere">
             <Page AbsorbsInput="false" Location="4,20" Name="Stats" PackLocation="nfn,cpc" PackSize="f,p" ScrollExtent="84,53" Size="84,53">
                 <Text AbsorbsInput="false" Color="#00FFFF" DynamicData="/GameData.General.Ping" Font="/TextStyles.Small.SmallStyle" Location="45,1" Name="PingValue" ScrollExtent="32,36" Size="32,16" TextAlignment="Right" Tooltip=":a48c658cb7608339:Ping in Milliseconds (Click to view graph)">:a48c658c4bd85ce8:1000</Text>
                 <Text AbsorbsInput="false" Color="#FF0000" DynamicData="/GameData.General.PacketLoss" Font="/TextStyles.Small.SmallStyle" Location="45,17" Name="PLValue" ScrollExtent="32,18" Size="32,16" TextAlignment="Right" Tooltip=":a48c658cb7608339_1:Packet Loss (Click to view graph)">:a48c658c5ea2da1e:10</Text>

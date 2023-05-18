@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2usescomwndcontrols="true" Location="345,284" Name="Lotto" PackLocation="center,center" ScrollExtent="335,300" Size="335,300" UserMovable="true" Visible="false">
+        <Page eq2usescomwndcontrols="true" Location="345,284" Name="Lotto" PackLocation="center,center" ScrollExtent="335,300" Size="335,300" UserMovable="true">
             <Page BackgroundOpacity="1.000" Location="30,50" Name="1" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="276,59" Size="276,59">
                 <Page BackgroundOpacity="1.000" Location="8,8" MaximumSize="44,44" MinimumSize="44,44" Name="1" RStyleDefault="/rectlist.win_plain" ScrollExtent="44,44" Size="44,44">
                     <Page Location="3,3" Name="Clip" ScrollExtent="38,38" Size="38,38">

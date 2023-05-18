@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page alwaysontop="true" DynamicData="/GameData.Spells.Window" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Location="419,515" MaximumSize="640,25" MinimumSize="270,25" Name="Casting" PackLocation="center,bottom" ScrollExtent="340,25" Size="340,25" UserMovable="true" UserResizable="true" Visible="false">
+        <Page alwaysontop="true" DynamicData="/GameData.Spells.Window" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Location="419,515" MaximumSize="640,25" MinimumSize="270,25" Name="Casting" PackLocation="center,bottom" ScrollExtent="340,25" Size="340,25" UserMovable="true" UserResizable="true">
             <Page AbsorbsInput="false" DynamicData="/GameData.Spells.Failure" DynamicDataFilter="0001" Location="0,-5" Name="CastingFailure" PackLocation="left,top" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="340,38" Size="340,38" Visible="false">
                 <Text AbsorbsInput="false" DynamicData="/GameData.Spells.Failure" Font="/ProfitUI_Styles.Fonts.Font27" Location="2,-8" Margin="1,1,1,1" Name="Text" PackSize="absolute,absolute" ScrollExtent="339,45" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="339,45" TextAlignment="Center" TextAlignmentVertical="Center">Already casting...</Text>
             </Page>

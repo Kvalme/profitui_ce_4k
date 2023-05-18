@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" AllowCloseOnTop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="25,25" MaximumSize="300,560" MinimumSize="209,280" Name="ThreatList" ScrollExtent="209,280" Size="209,280" UserMovable="true" UserResizable="true" Visible="false">
+        <Page Activated="true" AllowCloseOnTop="false" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="25,25" MaximumSize="300,560" MinimumSize="209,280" Name="ThreatList" ScrollExtent="209,280" Size="209,280" UserMovable="true" UserResizable="true">
             <DataSource Name="ThreatListDS" />
             <Page Location="0,20" Name="FullList" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="200,260" Size="200,260">
                 <Namespace Name="fulllistdata">

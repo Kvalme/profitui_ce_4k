@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="165,-8" Name="Customization" ScrollExtent="637,694" Size="637,694" UserMovable="true" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="165,-8" Name="Customization" ScrollExtent="637,694" Size="637,694" UserMovable="true">
             <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="0,17" Name="Header" ScrollExtent="637,38" ShadowStyle="/ShadowStyles.Outline1" Size="637,28" TextAlignment="Center" TextColor="#F2EACE">:c92f196a1a117ebf:Appearance</Text>
             <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="88,18" Name="HeaderDecoration" PackLocation="center,top" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="460,30" Size="460,30" />
             <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="338,303" Name="HeadShotCheckbox" ScrollExtent="140,20" Size="140,20" Style="/CheckboxStyles.widget_check" Tooltip=":c92f196ababe5f93:Toggles between Head and Body display.">:c92f196a0829ca94:Close-up</Checkbox>

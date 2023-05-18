@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="64,135" MinimumSize="735,482" Name="ZoneReuse" ScrollExtent="735,482" Size="735,482" UserMovable="true" UserResizable="true" version="3.0" Visible="false">
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="64,135" MinimumSize="735,482" Name="ZoneReuse" ScrollExtent="735,482" Size="735,482" UserMovable="true" UserResizable="true" version="3.0">
             <TabbedPane ActiveTab="0" DataSource="MainPage.TabSource" Location="5,446" Name="TabPane" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="724,27" Size="724,27" Style="/WindowElements.WindowFrame.data.lower_tab_data.tabbed_pane_style" TargetPage="MainPage.TabPages" />
             <Page Location="2,25" Name="MainPage" PackSize="absolute,absolute" ScrollExtent="730,422" Size="730,422">
                 <Page Location="0,8" Name="TabPages" PackSize="absolute,absolute" ScrollExtent="731,414" Size="731,414">

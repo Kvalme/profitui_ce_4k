@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2usescomwndcontrols="true" Location="374,185" MaximumSize="416,500" MinimumSize="10,10" Name="FloatingComboBox" ScrollExtent="150,156" Size="150,156" Visible="false">
+        <Page Activated="true" eq2usescomwndcontrols="true" Location="374,185" MaximumSize="416,500" MinimumSize="10,10" Name="FloatingComboBox" ScrollExtent="150,156" Size="150,156">
             <Page BackgroundOpacity="1.000" Location="0,6" Name="ListBox" PackLocation="top,left" PackSize="a,a" RStyleDefault="/CommonElements.Listbox.data.frame.rect" ScrollExtent="150,150" Size="150,150">
                 <List BackgroundColor="#000000" BackgroundOpacity="0.000" DataSource="ListDataSource" Location="12,8" Margin="10,10,10,10" MinimumScrollExtent="108,168" Name="List" PackLocation="top,left" PackSize="a,a" ScrollExtent="108,168" SelectionAllowedMultiRow="false" Size="108,134" Style="/CommonElements.List.data.list_style" />
                 <DataSource Name="ListDataSource">

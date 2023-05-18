@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="111,48" MinimumSize="700,482" Name="VoiceOptions" PackSize="f,f" ScrollExtent="700,482" Size="700,482" UserMovable="true" Visible="false">
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="111,48" MinimumSize="700,482" Name="VoiceOptions" PackSize="f,f" ScrollExtent="700,482" Size="700,482" UserMovable="true">
             <Button Location="297,436" Name="Ok" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="100,30" Size="100,30" Style="/CommonElements.PushButton.data.style">:d04a0e1813a7061a:Ok</Button>
             <Button Location="545,31" Name="OptionsButton" OnPress="options_game VoiceOptions" PackLocation="left,bottom" ScrollExtent="114,26" Size="114,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip="Edit more Voice Chat options.">:d04a0e187610020d:More Options</Button>
             <TabbedPane ActiveTab="0" DataSource="TabSource" Location="9,35" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="565,36" ScrollLeftButton="Achievements.tableft" ScrollRightButton="Achievements.tabright" Size="565,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="TabPages" />

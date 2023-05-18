@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="4,103" MinimumSize="214,220" Name="Waypoint" ScrollExtent="224,403" Size="224,403" UserMovable="true" UserResizable="true" Visible="false">
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="4,103" MinimumSize="214,220" Name="Waypoint" ScrollExtent="224,403" Size="224,403" UserMovable="true" UserResizable="true">
             <DataSourceContainer Name="TreeDSContainer" />
             <Text AbsorbsInput="false" Color="#C7C7C7" Font="/Fonts.FontZapf18" Location="15,362" Name="StatusText" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="194,20" Size="194,20" TextAlignment="Center">:fa6ca395b602881b:No waypoints</Text>
             <Button Location="56,361" Name="StopFollowingButton" PackLocation="center,bottom" ScrollExtent="113,32" Size="113,32" Style="/CommonElements.PushButton.data.style">:fa6ca395ae453fbb:Cancel</Button>

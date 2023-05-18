@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page alwaysontop="true" BackgroundColor="#401800" eq2usescomwndcontrols="true" Location="348,248" Name="Instruction" savessettings="true" ScrollExtent="329,113" Size="329,113" UserMovable="true" version="2.0" Visible="false">
+        <Page alwaysontop="true" BackgroundColor="#401800" eq2usescomwndcontrols="true" Location="348,248" Name="Instruction" savessettings="true" ScrollExtent="329,113" Size="329,113" UserMovable="true" version="2.0">
             <Button Location="296,4" Name="WC_CloseButton" PackLocation="right,top" ScrollExtent="18,15" Size="18,15" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":c259ab842d3f513f:Close" UserMovable="true" />
             <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="TopEdge" PackLocation="left, top" PackSize="absolute" RStyleDefault="/FrameStyles.FancyTopEdge.rect" ScrollExtent="328,20" Size="328,20" />
             <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,93" Name="BottomEdge" PackLocation="left, bottom" PackSize="absolute" Rotation="0.500" RStyleDefault="/FrameStyles.FancyTopEdge.rect" ScrollExtent="328,20" Size="328,20" />

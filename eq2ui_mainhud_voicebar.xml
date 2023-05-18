@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="10,683" MaximumSize="16384,29" MinimumSize="280,29" Name="VoiceBar" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="423,29" Size="423,29" UserMovable="true" UserResizable="true" Version="1.1" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="10,683" MaximumSize="16384,29" MinimumSize="280,29" Name="VoiceBar" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="423,29" Size="423,29" UserMovable="true" UserResizable="true" Version="1.1">
             <Page Location="5,0" Name="VoiceControlsPage" ScrollExtent="129,29" Size="129,29">
                 <Button BackgroundColor="#FFFFFF" DynamicData="/GameData.VoiceChat.Info.SelectedTalkIndicator" Location="69,5" Name="btnTalk" PackLocation="left,top" ScrollExtent="21,20" Size="21,20" Style="talk.style" Tooltip=":03c96663a9ea99e9:Talking" />
                 <Button BackgroundColor="#FFFFFF" Location="34,5" Name="btnChannel" OnPress="vcselect_session" PackLocation="left,top" ScrollExtent="29,20" Size="29,20" Style="channel.style" Tooltip=":03c96663f4e83d99:Select Channel" />

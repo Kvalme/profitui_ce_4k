@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Location="639,13" Name="VideoCapture" ScrollExtent="145,54" Size="145,54" UserMovable="true" UserScrollable="false" Visible="false">
+        <Page Location="639,13" Name="VideoCapture" ScrollExtent="145,54" Size="145,54" UserMovable="true" UserScrollable="false">
             <Text Font="/Fonts.FontZapf18" Location="2,2" Name="Title1" ScrollExtent="143,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="143,20" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#FBF1D9">:88a2ba88d0f8d12b:YouTube Controls</Text>
             <Button DynamicData="/GameData.VideoCapture.NotCapturing" Location="111,26" Name="SettingsButton" ScrollExtent="24,24" Size="24,24" Style="SettingsStyle.style" Tooltip=":88a2ba882ebff937:Video Capture Settings" />
             <Text AbsorbsInput="false" DynamicData="/GameData.VideoCapture.Elapsed" Font="/TextStyles.Large.LargeStyle" Location="43,26" Name="TimerText" ScrollExtent="61,26" Size="61,25" TextAlignment="Center" TextAlignmentVertical="Center">:88a2ba88b8b42edc:00:00</Text>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="27,118" MaximumSize="326,16384" MinimumSize="302,200" Name="Tracking" ScrollExtent="302,382" Size="302,382" UserMovable="true" UserResizable="true" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="27,118" MaximumSize="326,16384" MinimumSize="302,200" Name="Tracking" ScrollExtent="302,382" Size="302,382" UserMovable="true" UserResizable="true">
             <RectangleStyle Center="Checked" CenterShrinkH="true" CenterShrinkV="true" Name="CheckedRect" />
             <RectangleStyle Center="Unchecked" CenterShrinkH="true" CenterShrinkV="true" Name="UncheckedRect" />
             <ImageStyle Filter="true" Name="Unchecked">

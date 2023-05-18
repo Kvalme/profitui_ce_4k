@@ -1,206 +1,206 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-            <DataSource Name="FavSource4EN">
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="      House &amp; Status" tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="HOUSE ITEMS " tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="20" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="(House Expander)" tier="0" />
-                <Data itemeffect=" " itemname="Expander" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Expander" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="(Alter,Tables &amp;Counters)" tier="0" />
-                <Data itemeffect=" " itemname="Altar" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Altar" tier="0" />
-                <Data itemeffect=" " itemname="Counter" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Counter" tier="0" />
-                <Data itemeffect=" " itemname="Desk" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Desk" tier="0" />
-                <Data itemeffect=" " itemname="Table" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Table" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Art&amp; Music)" tier="0" />
-                <Data itemeffect=" " itemname="Paint Pot" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Paint&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Inkwell" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Inkwell" tier="0" />
-                <Data itemeffect=" " itemname="Easel" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Easel&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Drum" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Drums" tier="0" />
-                <Data itemeffect=" " itemname="Piano" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Piano" tier="0" />
-                <Data itemeffect=" " itemname="Mandolin" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Mandolin" tier="0" />
-                <Data itemeffect=" " itemname="Music Box" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Music Box" tier="0" />
-                <Data itemeffect=" " itemname="Painting" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Painting&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Portrait" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Portrait&apos;s" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Bed&amp; Bath)" tier="0" />
-                <Data itemeffect=" " itemname="Washstand" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Wash Stand&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Towel" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Towel Rack" tier="0" />
-                <Data itemeffect=" " itemname="Bed" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Bed&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Crib" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Crib&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Dresser" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Dresser&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Mirror" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Mirror&apos;s" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Book&apos;s&amp; Bookcase&apos;s)" tier="0" />
-                <Data itemeffect=" " itemname="Bookcase" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Bookcase&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Shelf" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Shelves" tier="0" />
-                <Data itemeffect=" " itemname="Library" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Library" tier="0" />
-                <Data itemeffect=" " itemname=" " itemtype="27" maxlvl="100" minlvl="0" sellername=" " text="-Player Made Book&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Notebook" itemtype="36" maxlvl="100" minlvl="0" sellername=" " text="-Notebook&apos;s" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Container&apos;s)" tier="0" />
-                <Data itemeffect=" " itemname="Barrel" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Barrel&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Basket" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Basket&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Cabinet" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cabinet" tier="0" />
-                <Data itemeffect=" " itemname="Chest" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Chest&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Vase" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Vases" tier="0" />
-                <Data itemeffect=" " itemname="Bottle" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Bottle&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Cup" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cup&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Pitcher" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Pitcher&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Keg" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Keg" tier="0" />
-                <Data itemeffect=" " itemname="Urn" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Urn" tier="0" />
-                <Data itemeffect=" " itemname="Flask" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Flask&apos;s" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Fire&amp; Construct&apos;s)" tier="0" />
-                <Data itemeffect=" " itemname="Display" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Display&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Firepit" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Firepit&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Hearth" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Fire Place" tier="0" />
-                <Data itemeffect=" " itemname="Column" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Column&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Pillar" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Pillar&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Platform" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Platform&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Pedestal" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Pedestal&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Hitching Post" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Post&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Pole" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Poles" tier="0" />
-                <Data itemeffect=" " itemname="Sculpture" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Sculpture" tier="0" />
-                <Data itemeffect=" " itemname="Statue" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Statue" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Water Works)" tier="0" />
-                <Data itemeffect=" " itemname="Pool" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Pool&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Fountain" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Fountian&apos;s" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Kitchen)" tier="0" />
-                <Data itemeffect=" " itemname="Cauldron" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cauldron&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Cupboard" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cupboard&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Wine Rack" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Wine Rack&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Apple" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Apple&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Cookie" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cookie&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Berry" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Berries" tier="0" />
-                <Data itemeffect=" " itemname="Basket of" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Fruit&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Roasted Fowl" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Turkey" tier="0" />
-                <Data itemeffect=" " itemname="Baked Ham" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Ham" tier="0" />
-                <Data itemeffect=" " itemname="Egg" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Egg&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Plate" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Plates" tier="0" />
-                <Data itemeffect=" " itemname="Stove" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Stoves" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Light&apos;s)" tier="0" />
-                <Data itemeffect=" " itemname="Candle" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Candle&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Candelabra" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Candelabra&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Sconce" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Sconce" tier="0" />
-                <Data itemeffect=" " itemname="Chadelier" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Chadelier&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Lantern" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Lantern&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Lamp" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Lamp&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Brazier" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Brazier&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Torch" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Torches" tier="0" />
-                <Data itemeffect=" " itemname="Firepot" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Firepot" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Seating)" tier="0" />
-                <Data itemeffect=" " itemname="Bench" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Benches" tier="0" />
-                <Data itemeffect=" " itemname="Chair" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Chair&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Couch" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Couches" tier="0" />
-                <Data itemeffect=" " itemname="Stool" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Stool&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Throne" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Throne&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Loveseat" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Loveseat&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Lounge" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Lounges" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Nature)" tier="0" />
-                <Data itemeffect=" " itemname="Lilie" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Lilies" tier="0" />
-                <Data itemeffect=" " itemname="Plant" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Plant&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Flower" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Flower&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Shrub" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Shrub&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Knoll" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Knoll&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Gem Cluster" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Gem&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Mushroom" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Mushroom&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Rose" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Rose" tier="0" />
-                <Data itemeffect=" " itemname="Shell" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Shell&apos;s" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Dungeon)" tier="0" />
-                <Data itemeffect=" " itemname="Coffin" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Coffin" tier="0" />
-                <Data itemeffect=" " itemname="Shackle" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Shackles" tier="0" />
-                <Data itemeffect=" " itemname="Cage" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cages" tier="0" />
-                <Data itemeffect=" " itemname="Skeleton" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Skeleton&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Spiderweb" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Spider Web&apos;s" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Misc.)" tier="0" />
-                <Data itemeffect=" " itemname="Plushie" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Plushies" tier="0" />
-                <Data itemeffect=" " itemname="Orb" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Orb&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Globe" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Globe" tier="0" />
-                <Data itemeffect=" " itemname="Bolt of" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Bolt&apos;s of Cloth" tier="0" />
-                <Data itemeffect=" " itemname="Map Scroll" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Map&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Mannequin" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Mannequin&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Tent" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Tent&apos;s" tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Building Room&apos;s)" tier="0" />
-                <Data itemeffect=" " itemname="Divider" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Divider&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Rug" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Rug&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Carpet" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Carpet&apos;s" tier="0" />
-                <Data itemeffect=" " itemname="Tile" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Tiles" tier="0" />
-                <Data itemeffect=" " itemname="Tapestry" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Tapestries" tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="STATUS ITEMS" tier="3" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Blackened Iron Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T2)" tier="3" />
-                <Data itemeffect=" " itemname="Coral Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T2)" tier="3" />
-                <Data itemeffect=" " itemname="Coral Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T2)" tier="3" />
-                <Data itemeffect=" " itemname="Paraffin Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T2)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Steel Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T3)" tier="3" />
-                <Data itemeffect=" " itemname="Jasper Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T3)" tier="3" />
-                <Data itemeffect=" " itemname="Jasper Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T3)" tier="3" />
-                <Data itemeffect=" " itemname="Tallow Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T3)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Feysteel Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T4)" tier="3" />
-                <Data itemeffect=" " itemname="Opal Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T4)" tier="3" />
-                <Data itemeffect=" " itemname="Opal Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T4)" tier="3" />
-                <Data itemeffect=" " itemname="Gel Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T4)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Ebon Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T5)" tier="3" />
-                <Data itemeffect=" " itemname="Ruby Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T5)" tier="3" />
-                <Data itemeffect=" " itemname="Ruby Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T5)" tier="3" />
-                <Data itemeffect=" " itemname="Beeswax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T5)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Indicolite Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T6)" tier="3" />
-                <Data itemeffect=" " itemname="Star Sapphire Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T6)" tier="3" />
-                <Data itemeffect=" " itemname="Star Sapphire Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T6)" tier="3" />
-                <Data itemeffect=" " itemname="Bayberry Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T6)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Xegonite Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T7)" tier="3" />
-                <Data itemeffect=" " itemname="Moonstone Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T7)" tier="3" />
-                <Data itemeffect=" " itemname="Moonstone Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T7)" tier="3" />
-                <Data itemeffect=" " itemname="Flamewrought Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T7)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Beryllium Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T8)" tier="3" />
-                <Data itemeffect=" " itemname="Emerald Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T8" tier="3" />
-                <Data itemeffect=" " itemname="Emerald Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T8)" tier="3" />
-                <Data itemeffect=" " itemname="Faywax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T8)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Deklium Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T9)" tier="3" />
-                <Data itemeffect=" " itemname="Kunzite Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T9)" tier="3" />
-                <Data itemeffect=" " itemname="Kunzite Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T9)" tier="3" />
-                <Data itemeffect=" " itemname="Apophelli Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T9)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Titanium Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T10)" tier="3" />
-                <Data itemeffect=" " itemname="Amber Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T10)" tier="3" />
-                <Data itemeffect=" " itemname="Amber Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T10)" tier="3" />
-                <Data itemeffect=" " itemname="Ozocerite Wax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T10)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Carbide Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T11)" tier="3" />
-                <Data itemeffect=" " itemname="Bixbite Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T11)" tier="3" />
-                <Data itemeffect=" " itemname="Bixbite Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T11)" tier="3" />
-                <Data itemeffect=" " itemname="Lumium Wax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T11)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemname="Glittervein Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T11 1/2)" tier="3" />
-                <Data itemeffect=" " itemname="Lumicite Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T11 1/2)" tier="3" />
-                <Data itemeffect=" " itemname="Lumicite Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T11 1/2)" tier="3" />
-                <Data itemeffect=" " itemname="Arcannium Wax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T11 1/2)" tier="3" />
-                <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                <Data itemeffect=" " itemname="..." itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="COURT ITEMS" tier="3" />
-                <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
-                <Data itemeffect=" " itemname="Blades Insignia Token" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Blades Insignia Tokens" tier="0" />
-                <Data itemeffect=" " itemname="Coin Insignia Token" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Coin Insignia Tokens" tier="0" />
-                <Data itemeffect=" " itemname="Truth Insignia Token" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Truth Insignia Tokens" tier="0" />
-            </DataSource>
+                    <DataSource Name="FavSource4EN">
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="      House &amp; Status" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="HOUSE ITEMS " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="20" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="(House Expander)" tier="0" />
+                        <Data itemeffect=" " itemname="Expander" itemtype="0" maxlvl="100" minlvl="0" sellername=" " slot="0" special="0" text="-Expander" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text="(Alter,Tables &amp;Counters)" tier="0" />
+                        <Data itemeffect=" " itemname="Altar" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Altar" tier="0" />
+                        <Data itemeffect=" " itemname="Counter" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Counter" tier="0" />
+                        <Data itemeffect=" " itemname="Desk" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Desk" tier="0" />
+                        <Data itemeffect=" " itemname="Table" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Table" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Art&amp; Music)" tier="0" />
+                        <Data itemeffect=" " itemname="Paint Pot" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Paint&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Inkwell" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Inkwell" tier="0" />
+                        <Data itemeffect=" " itemname="Easel" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Easel&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Drum" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Drums" tier="0" />
+                        <Data itemeffect=" " itemname="Piano" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Piano" tier="0" />
+                        <Data itemeffect=" " itemname="Mandolin" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Mandolin" tier="0" />
+                        <Data itemeffect=" " itemname="Music Box" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Music Box" tier="0" />
+                        <Data itemeffect=" " itemname="Painting" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Painting&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Portrait" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Portrait&apos;s" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Bed&amp; Bath)" tier="0" />
+                        <Data itemeffect=" " itemname="Washstand" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Wash Stand&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Towel" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Towel Rack" tier="0" />
+                        <Data itemeffect=" " itemname="Bed" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Bed&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Crib" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Crib&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Dresser" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Dresser&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Mirror" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Mirror&apos;s" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Book&apos;s&amp; Bookcase&apos;s)" tier="0" />
+                        <Data itemeffect=" " itemname="Bookcase" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Bookcase&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Shelf" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Shelves" tier="0" />
+                        <Data itemeffect=" " itemname="Library" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Library" tier="0" />
+                        <Data itemeffect=" " itemname=" " itemtype="27" maxlvl="100" minlvl="0" sellername=" " text="-Player Made Book&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Notebook" itemtype="36" maxlvl="100" minlvl="0" sellername=" " text="-Notebook&apos;s" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Container&apos;s)" tier="0" />
+                        <Data itemeffect=" " itemname="Barrel" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Barrel&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Basket" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Basket&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Cabinet" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cabinet" tier="0" />
+                        <Data itemeffect=" " itemname="Chest" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Chest&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Vase" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Vases" tier="0" />
+                        <Data itemeffect=" " itemname="Bottle" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Bottle&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Cup" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cup&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Pitcher" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Pitcher&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Keg" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Keg" tier="0" />
+                        <Data itemeffect=" " itemname="Urn" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Urn" tier="0" />
+                        <Data itemeffect=" " itemname="Flask" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Flask&apos;s" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Fire&amp; Construct&apos;s)" tier="0" />
+                        <Data itemeffect=" " itemname="Display" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Display&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Firepit" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Firepit&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Hearth" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Fire Place" tier="0" />
+                        <Data itemeffect=" " itemname="Column" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Column&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Pillar" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Pillar&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Platform" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Platform&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Pedestal" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Pedestal&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Hitching Post" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Post&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Pole" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Poles" tier="0" />
+                        <Data itemeffect=" " itemname="Sculpture" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Sculpture" tier="0" />
+                        <Data itemeffect=" " itemname="Statue" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Statue" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Water Works)" tier="0" />
+                        <Data itemeffect=" " itemname="Pool" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Pool&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Fountain" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Fountian&apos;s" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Kitchen)" tier="0" />
+                        <Data itemeffect=" " itemname="Cauldron" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cauldron&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Cupboard" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cupboard&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Wine Rack" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Wine Rack&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Apple" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Apple&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Cookie" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cookie&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Berry" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Berries" tier="0" />
+                        <Data itemeffect=" " itemname="Basket of" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Fruit&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Roasted Fowl" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Turkey" tier="0" />
+                        <Data itemeffect=" " itemname="Baked Ham" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Ham" tier="0" />
+                        <Data itemeffect=" " itemname="Egg" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Egg&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Plate" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Plates" tier="0" />
+                        <Data itemeffect=" " itemname="Stove" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Stoves" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Light&apos;s)" tier="0" />
+                        <Data itemeffect=" " itemname="Candle" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Candle&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Candelabra" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Candelabra&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Sconce" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Sconce" tier="0" />
+                        <Data itemeffect=" " itemname="Chadelier" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Chadelier&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Lantern" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Lantern&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Lamp" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Lamp&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Brazier" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Brazier&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Torch" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Torches" tier="0" />
+                        <Data itemeffect=" " itemname="Firepot" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Firepot" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Seating)" tier="0" />
+                        <Data itemeffect=" " itemname="Bench" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Benches" tier="0" />
+                        <Data itemeffect=" " itemname="Chair" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Chair&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Couch" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Couches" tier="0" />
+                        <Data itemeffect=" " itemname="Stool" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Stool&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Throne" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Throne&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Loveseat" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Loveseat&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Lounge" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Lounges" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Nature)" tier="0" />
+                        <Data itemeffect=" " itemname="Lilie" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Lilies" tier="0" />
+                        <Data itemeffect=" " itemname="Plant" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Plant&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Flower" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Flower&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Shrub" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Shrub&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Knoll" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Knoll&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Gem Cluster" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Gem&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Mushroom" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Mushroom&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Rose" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Rose" tier="0" />
+                        <Data itemeffect=" " itemname="Shell" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Shell&apos;s" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Dungeon)" tier="0" />
+                        <Data itemeffect=" " itemname="Coffin" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Coffin" tier="0" />
+                        <Data itemeffect=" " itemname="Shackle" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Shackles" tier="0" />
+                        <Data itemeffect=" " itemname="Cage" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Cages" tier="0" />
+                        <Data itemeffect=" " itemname="Skeleton" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Skeleton&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Spiderweb" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Spider Web&apos;s" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Misc.)" tier="0" />
+                        <Data itemeffect=" " itemname="Plushie" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Plushies" tier="0" />
+                        <Data itemeffect=" " itemname="Orb" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Orb&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Globe" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Globe" tier="0" />
+                        <Data itemeffect=" " itemname="Bolt of" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Bolt&apos;s of Cloth" tier="0" />
+                        <Data itemeffect=" " itemname="Map Scroll" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Map&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Mannequin" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Mannequin&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Tent" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Tent&apos;s" tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " text="(Building Room&apos;s)" tier="0" />
+                        <Data itemeffect=" " itemname="Divider" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Divider&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Rug" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Rug&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Carpet" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Carpet&apos;s" tier="0" />
+                        <Data itemeffect=" " itemname="Tile" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Tiles" tier="0" />
+                        <Data itemeffect=" " itemname="Tapestry" itemtype="20" maxlvl="100" minlvl="0" sellername=" " text="-Tapestries" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="STATUS ITEMS" tier="3" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Blackened Iron Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T2)" tier="3" />
+                        <Data itemeffect=" " itemname="Coral Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T2)" tier="3" />
+                        <Data itemeffect=" " itemname="Coral Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T2)" tier="3" />
+                        <Data itemeffect=" " itemname="Paraffin Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T2)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Steel Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T3)" tier="3" />
+                        <Data itemeffect=" " itemname="Jasper Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T3)" tier="3" />
+                        <Data itemeffect=" " itemname="Jasper Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T3)" tier="3" />
+                        <Data itemeffect=" " itemname="Tallow Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T3)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Feysteel Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T4)" tier="3" />
+                        <Data itemeffect=" " itemname="Opal Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T4)" tier="3" />
+                        <Data itemeffect=" " itemname="Opal Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T4)" tier="3" />
+                        <Data itemeffect=" " itemname="Gel Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T4)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Ebon Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T5)" tier="3" />
+                        <Data itemeffect=" " itemname="Ruby Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T5)" tier="3" />
+                        <Data itemeffect=" " itemname="Ruby Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T5)" tier="3" />
+                        <Data itemeffect=" " itemname="Beeswax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T5)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Indicolite Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T6)" tier="3" />
+                        <Data itemeffect=" " itemname="Star Sapphire Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T6)" tier="3" />
+                        <Data itemeffect=" " itemname="Star Sapphire Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T6)" tier="3" />
+                        <Data itemeffect=" " itemname="Bayberry Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T6)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Xegonite Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T7)" tier="3" />
+                        <Data itemeffect=" " itemname="Moonstone Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T7)" tier="3" />
+                        <Data itemeffect=" " itemname="Moonstone Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T7)" tier="3" />
+                        <Data itemeffect=" " itemname="Flamewrought Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T7)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Beryllium Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T8)" tier="3" />
+                        <Data itemeffect=" " itemname="Emerald Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T8" tier="3" />
+                        <Data itemeffect=" " itemname="Emerald Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T8)" tier="3" />
+                        <Data itemeffect=" " itemname="Faywax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T8)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Deklium Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T9)" tier="3" />
+                        <Data itemeffect=" " itemname="Kunzite Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T9)" tier="3" />
+                        <Data itemeffect=" " itemname="Kunzite Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T9)" tier="3" />
+                        <Data itemeffect=" " itemname="Apophelli Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T9)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Titanium Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T10)" tier="3" />
+                        <Data itemeffect=" " itemname="Amber Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T10)" tier="3" />
+                        <Data itemeffect=" " itemname="Amber Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T10)" tier="3" />
+                        <Data itemeffect=" " itemname="Ozocerite Wax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T10)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Carbide Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T11)" tier="3" />
+                        <Data itemeffect=" " itemname="Bixbite Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T11)" tier="3" />
+                        <Data itemeffect=" " itemname="Bixbite Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T11)" tier="3" />
+                        <Data itemeffect=" " itemname="Lumium Wax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T11)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemname="Glittervein Relic" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Relic (T11 1/2)" tier="3" />
+                        <Data itemeffect=" " itemname="Lumicite Amulet" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Amulet (T11 1/2)" tier="3" />
+                        <Data itemeffect=" " itemname="Lumicite Scrying Stone" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Stone (T11 1/2)" tier="3" />
+                        <Data itemeffect=" " itemname="Arcannium Wax Sealed Document" itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="-Document (T11 1/2)" tier="3" />
+                        <Data itemeffect=" " itemname="..." itemtype="0" maxlvl="0" minlvl="0" sellername=" " slot="0" special="0" text=" " tier="0" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="..." itemtype="24" maxlvl="100" minlvl="0" sellername=" " text="COURT ITEMS" tier="3" />
+                        <Data itemeffect=" " itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="====================" tier="0" />
+                        <Data itemeffect=" " itemname="Blades Insignia Token" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Blades Insignia Tokens" tier="0" />
+                        <Data itemeffect=" " itemname="Coin Insignia Token" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Coin Insignia Tokens" tier="0" />
+                        <Data itemeffect=" " itemname="Truth Insignia Token" itemtype="0" maxlvl="100" minlvl="0" sellername=" " text="-Truth Insignia Tokens" tier="0" />
+                    </DataSource>

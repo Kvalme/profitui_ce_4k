@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="192,168" Name="GuildCreation" PackLocation="right,top" ScrollExtent="640,510" Size="640,510" UserMovable="true" version="1" Visible="false">
+        <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="192,168" Name="GuildCreation" PackLocation="right,top" ScrollExtent="640,510" Size="640,510" UserMovable="true" version="1">
             <Text AbsorbsInput="false" Font="/TextStyles.SuperLarge.SuperLargeStyle" Location="0,32" Name="Title" PackSize="a" ScrollExtent="640,42" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="640,42" TextAlignment="Center" TextColor="#F0D080" UserMovable="true" UserResizable="true">:b7b5c6e09dd4b1dd:Create Guild</Text>
             <Page Location="176,76" Name="Rule" ScrollExtent="288,14" Size="288,14">
                 <Image Name="Left" ScrollExtent="48,14" Size="48,14" Style="/CommonElements.Splitter.data.startcap" />
@@ -14,7 +14,7 @@
                     <Icon BackgroundTint="#000000" IconRect="42,0,84,42" IconResource="images/icons/icon_ms1.dds" IconStyle="/IconStyles.button" Location="23,36" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
                     <Text AbsorbsInput="false" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="16,0" Margin="5,5,5,5" Name="Header" PackSize="a" ScrollExtent="550,48" Size="550,30" TextColor="#F0E0B0">:b7b5c6e026b2dac3:How Do I Create a New Guild?</Text>
                     <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="76,33" Name="InfoText" ScrollExtent="490,144" Size="490,105">:b7b5c6e0c9dc13ce:To create a guild, you must be the leader of a group of 6 characters. None of the characters in the group can already be in a guild. When the new guild is created the group leader will become the guild leader and the five other group members will become recruits in the guild.</Text>
-                    <Text AbsorbsInput="false" BackgroundOpacity="0.278" Color="#FF0000" Font="/TextStyles.Chat.ChatStyle" Location="76,141" Name="Errors" PackLocation=",fff" ScrollExtent="490,48" Size="490,48">:b7b5c6e01e17f5ef:Error 1 Error 2 Error 3</Text>
+                    <Text AbsorbsInput="false" BackgroundOpacity="0.275" Color="#FF0000" Font="/TextStyles.Chat.ChatStyle" Location="76,141" Name="Errors" PackLocation=",fff" ScrollExtent="490,48" Size="490,48">:b7b5c6e01e17f5ef:Error 1 Error 2 Error 3</Text>
                 </Page>
                 <Page Location="0,147" Name="CreatePage" ScrollExtent="580,181" Size="580,181" Visible="false">
                     <TextboxStyle CaratColor="#FFFFC0" CaratWidth="2" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontZapf18" Name="InputStyle" NormalTextStyle="/Fonts.FontZapf18" SelectedTextStyle="/Fonts.FontZapf18" SelectionColor="#222266" TextColor="#AAAAFF" TextPadding="3,2,3,0" />

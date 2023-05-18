@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page Location="311,175" Name="JunctionChoice" PackLocation="center,center" ScrollExtent="383,266" Size="383,266" Visible="false">
+        <Page Location="311,175" Name="JunctionChoice" PackLocation="center,center" ScrollExtent="383,266" Size="383,266">
             <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="26,33" Name="MessageText" ScrollExtent="331,58" Size="331,58" UserMovable="true" UserResizable="true">:c68b98150525ae19:You have died.  Please select an area to respawn at.</Text>
             <Scrollbar ArrowPressSound="sounds/button" Control="JunctionList" Location="331,97" Name="JunctionScroll" ScrollExtent="22,98" Size="22,98" Style="/CommonElements.ScrollbarVertical.data.style" />
             <List BackgroundColor="#000000" BackgroundOpacity="0.000" DataSource="JunctionSource" Location="26,97" MinimumScrollExtent="311,68" Name="JunctionList" ScrollExtent="311,95" SelectionAllowedMultiRow="false" Size="311,95" Style="/listboxlist.default_list" />

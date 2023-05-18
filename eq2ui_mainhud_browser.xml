@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="52,87" MinimumSize="155,150" Name="Browser" OnHoverOut="set_focus MainHUD.Browser" ScrollExtent="700,555" Size="700,555" UserMovable="true" UserResizable="true" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="52,87" MinimumSize="155,150" Name="Browser" OnHoverOut="set_focus MainHUD.Browser" ScrollExtent="700,555" Size="700,555" UserMovable="true" UserResizable="true">
 <include>_ProfitUI_Browser_Bookmarks.txt.xml</include>
             <DataSource Name="TabSource">
                 <Data Name="1" target="1" text="- 1 -" />

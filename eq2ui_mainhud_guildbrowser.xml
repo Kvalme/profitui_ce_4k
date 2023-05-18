@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="103,90" MinimumSize="776,559" Name="GuildRecruiting" ScrollExtent="776,604" Size="776,604" UserMovable="true" version="1.1" Visible="false">
+        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="103,90" MinimumSize="776,559" Name="GuildRecruiting" ScrollExtent="776,604" Size="776,604" UserMovable="true" version="1.1">
             <Button Location="477,564" MaximumSize="16384,32" MinimumSize="32,32" Name="FilterButton" ScrollExtent="140,32" Size="140,32" Style="/CommonElements.PushButton.data.style">:55ac57e6d299bc29:Filter...</Button>
             <Button Location="623,564" MaximumSize="16384,32" MinimumSize="32,32" Name="ClearButton" ScrollExtent="140,32" Size="140,32" Style="/CommonElements.PushButton.data.style">:55ac57e60dad5645:Clear Filter</Button>
             <Page BackgroundOpacity="1.000" Location="133,126" Name="FilterPage" RStyleDefault="/WindowElements.FloaterFrame.data.frame.rect" ScrollExtent="515,294" Size="515,294">

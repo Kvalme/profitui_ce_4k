@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_mail_open" eq2usescomwndcontrols="true" Location="45,92" MinimumSize="353,300" Name="OpenedMail" ScrollExtent="353,446" Size="353,446" UserMovable="true" UserResizable="true" Version="2.0" Visible="false">
+        <Page eq2opensound="ui_mail_open" eq2usescomwndcontrols="true" Location="45,92" MinimumSize="353,300" Name="OpenedMail" ScrollExtent="353,446" Size="353,446" UserMovable="true" UserResizable="true" Version="2.0">
             <Text AbsorbsInput="false" Color="#F0D090" Font="/Fonts.FontZapf15" Location="30,63" Name="SenderLabel" ScrollExtent="194,18" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="194,18" UserMovable="true" UserResizable="true">:3d99ddca7a8c8d59:From:</Text>
             <Text AbsorbsInput="false" Color="#F0D090" Font="/Fonts.FontZapf15" Location="19,81" Name="SubjectLabel" ScrollExtent="194,18" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="194,18" UserMovable="true" UserResizable="true">:3d99ddcaa2acfd8a:Subject:</Text>
             <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf18" Location="72,62" Name="Sender" ScrollExtent="261,18" ShadowStyle="/ShadowStyles.ChatSimple.Outline1" Size="261,18" UserMovable="true" UserResizable="true">:3d99ddcadc193be3:Dance like a fool</Text>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page alwaysonbottom="true" DynamicData="/GameData.Spells.MaintainedWindow" eq2usescomwndcontrols="true" Location="0,90" MinimumSize="37,37" Name="Maintained" OnShow="SpellTimer.AddBig.Press=true" PackLocation="left,nfn" PackSize="f,p" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="255,325" Size="255,325" sizefull="255,35" sizeicononly="32,35" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
+        <Page alwaysonbottom="true" DynamicData="/GameData.Spells.MaintainedWindow" eq2usescomwndcontrols="true" Location="0,90" MinimumSize="37,37" Name="Maintained" OnShow="SpellTimer.AddBig.Press=true" PackLocation="left,nfn" PackSize="f,p" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="255,325" Size="255,325" sizefull="255,35" sizeicononly="32,35" UserMovable="true" UserResizable="true" version="2.0">
             <Page Location="2,0" MinimumSize="37,1" Name="SpellTimer" PackLocation="left,top" PackSize="a,f" ScrollExtent="255,1" Size="255,1">
                 <ImageStyle Name="Progress_Fill">
                     <ImageFrame Name="image" Source="images/window_elements_generic.dds" SourceRect="221,483,379,489" />
@@ -545,7 +545,7 @@
                     </Page>
                 </Composite>
             </Page>
-            <Composite AbsorbsInput="false" Location="5,-4" Name="Volume" PackSize="a,a" ScrollExtent="250,960" ScrollSize="0,35" Size="250,318">
+            <Composite AbsorbsInput="false" Location="5,4" Name="Volume" PackSize="a,a" ScrollExtent="250,960" ScrollSize="0,35" Size="250,318">
                 <Page Name="Frame1" ScrollExtent="250,32" Size="250,32">
                     <Page Location="32,0" Name="MaintainedText" PackLocation="NFN,NFN" PackSize="a,a" ScrollExtent="220,32" Size="220,32">
                         <Text AbsorbsInput="false" DynamicData="/GameData.Maintained.Spell_1.AmountRemaining" Font="/ProfitUI_Styles.Fonts.FontArial14T" Location="129,18" Name="AmountRemaining" ScrollExtent="50,15" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" Size="50,15" />

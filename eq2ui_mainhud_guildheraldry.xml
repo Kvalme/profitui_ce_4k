@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="252,134" Name="GuildHeraldry" ScrollExtent="515,500" Size="515,500" UserMovable="true" version="1.0" Visible="false">
+        <Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="252,134" Name="GuildHeraldry" ScrollExtent="515,500" Size="515,500" UserMovable="true" version="1.0">
             <Namespace Name="Checkboxes">
                 <Namespace Name="Emblem">
                     <CheckboxStyle Name="style" RStyleActivated="checked.rect" RStyleDefault="unchecked.rect" RStyleMouseOver="mouseover.rect" />

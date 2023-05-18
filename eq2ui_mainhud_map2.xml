@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" MinimumSize="100,100" Name="Map2" OnHoverIn="ShiftingPOIsWorkaround.Press=true" OnShow="RecenterMap.Activated=&apos;!&apos;WindowFrame.IsMinimap ShiftingPOIsWorkaround.Press=true" PackSize="a,a" ScrollExtent="1027,774" Size="1027,774" UserMovable="true" UserResizable="true" version="2.0" Visible="false">
+        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" MinimumSize="100,100" Name="Map2" OnHoverIn="ShiftingPOIsWorkaround.Press=true" OnShow="RecenterMap.Activated=&apos;!&apos;WindowFrame.IsMinimap ShiftingPOIsWorkaround.Press=true" PackSize="a,a" ScrollExtent="1027,774" Size="1027,774" UserMovable="true" UserResizable="true" version="2.0">
             <Button Name="RecenterMap" OnActivate="map2_center_map_on_player&#xA;Activated=false" />
             <Button Name="ShiftingPOIsWorkaround" OnPress="Parent.MapSubGroup.MapPage.Icons.Location=0,0 Parent.MapSubGroup.MapPage.Icons.Size=Parent.MapSubGroup.MapPage.Size" />
 <include>eq2map2/_Skinnable_SearchBar.xml</include>

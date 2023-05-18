@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="127,97" MinimumSize="796,574" Name="Guild" ScrollExtent="796,574" Size="796,574" UserMovable="true" UserResizable="true" version="2" Visible="false">
+        <Page eq2opensound="ui_window_book_open" eq2usescomwndcontrols="true" Location="127,97" MinimumSize="796,574" Name="Guild" ScrollExtent="796,574" Size="796,574" UserMovable="true" UserResizable="true" version="2">
             <Button Location="22,37" Name="CalendarButton" OnPress="show_window Community.Calendar" ScrollExtent="110,26" Size="110,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip="Open Calendar Window">Calendar</Button>
             <Text DynamicData="/GameData.Guild.Name" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="187,34" Name="GuildNameText" PackLocation="center,top" ScrollExtent="430,76" ShadowStyle="/ShadowStyles.Outline1" Size="430,25" TextAlignment="Center" TextColor="#F2EACE">:01b178bdd5ae4dc3:Abcdefghijklmnopqrstuvwxyzabcd</Text>
             <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="147,34" Name="GuildNameDecoration" PackLocation="left,top" PackSize="a,f" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="510,30" Size="510,30" />
